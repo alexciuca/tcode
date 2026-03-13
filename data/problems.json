@@ -1,0 +1,51 @@
+[
+  {
+    "id": "001",
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "topic": "Hash Maps",
+    "constraint_n": 10000,
+    "expected_complexity": "O(n)",
+    "description": "Given an array nums and target, return indices of two numbers that add up to target.",
+    "examples": [
+      { "input": "nums = [2,7,11,15], target = 9", "output": "[0, 1]" }
+    ],
+    "test_cases": [
+      { "input": { "nums": [2, 7, 11, 15], "target": 9 }, "output": [0, 1] },
+      { "input": { "nums": [3, 2, 4], "target": 6 }, "output": [1, 2] },
+      { "input": { "nums": [3, 3], "target": 6 }, "output": [0, 1] }
+    ]
+  },
+  {
+    "id": "002",
+    "title": "Valid Anagram",
+    "difficulty": "Easy",
+    "topic": "Hash Maps",
+    "constraint_n": 100000,
+    "expected_complexity": "O(n)",
+    "description": "Given two strings s and t, return true if t is an anagram of s, and false otherwise.",
+    "examples": [
+      { "input": "s = \"anagram\", t = \"nagaram\"", "output": "true" }
+    ],
+    "test_cases": [
+      { "input": { "s": "anagram", "t": "nagaram" }, "output": true },
+      { "input": { "s": "rat", "t": "car" }, "output": false }
+    ]
+  },
+  {
+    "id": "003",
+    "title": "Best Time to Buy and Sell Stock",
+    "difficulty": "Easy",
+    "topic": "Arrays",
+    "constraint_n": 100000,
+    "expected_complexity": "O(n)",
+    "description": "Given an array prices, return the maximum profit you can achieve from a single buy and sell. If you cannot achieve any profit, return 0.",
+    "examples": [
+      { "input": "prices = [7,1,5,3,6,4]", "output": "5" }
+    ],
+    "test_cases": [
+      { "input": { "prices": [7, 1, 5, 3, 6, 4] }, "output": 5 },
+      { "input": { "prices": [7, 6, 4, 3, 1] }, "output": 0 }
+    ]
+  }
+]
