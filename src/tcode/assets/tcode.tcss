@@ -1,0 +1,13 @@
+#left {
+    width: 1fr;
+    height: 1fr;
+    border: solid $primary;
+    padding: 1;
+}
+
+#right {
+    width: 1fr;
+    height: 1fr;
+    border: solid $primary;
+    padding: 1;
+}

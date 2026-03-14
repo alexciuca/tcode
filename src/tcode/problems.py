@@ -5,32 +5,41 @@ from dataclasses import dataclass
 @dataclass(frozen=True)
 class Problem:
     id: str
+    slug: str
     title: str
     difficulty: str
-    topic: str
-    constraint_n: int
-    expected_complexity: str
+    topics: list
     description: str
-    examples : list
+    constraints: list
+    examples: list
+    hints: list
+    starter_code: str
     test_cases: list
 
-def load_problems() -> list[Problem]:
-    current = Path(__file__).resolve()
-    repo_root = current.parents[2]
-    path = repo_root / "data" / "problems.json"
-    raw = json.loads(path.read_text(encoding="utf-8"))
-    problems = []
-    for i in raw:
-        problems.append(Problem(
-            id=i["id"],
-            title=i["title"],
-            difficulty=i["difficulty"],
-            topic=i["topic"],
-            constraint_n=i["constraint_n"],
-            expected_complexity=i["expected_complexity"],
-            description=i["description"],
-            examples=i.get("examples", []),
-            test_cases=i.get("test_cases", []),
-            ))
-    return problems
+@dataclass(frozen=True)
+class ProblemMeta:
+    id: str
+    slug: str
+    title: str
+    difficulty: str
+    topics: list
+    file: str
 
+def load_index() -> list[ProblemMeta]:
+    """Load lightweight index only — fast startup."""
+    here = Path(__file__).resolve()
+    repo_root = here.parents[2]
+    path = repo_root / "data" / "index.json"
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    return [ProblemMeta(**item) for item in raw]
+
+def load_problem_by_id(problem_id: str) -> Problem:
+    """Load full problem only when needed."""
+    here = Path(__file__).resolve()
+    repo_root = here.parents[2]
+    problems_dir = repo_root / "data" / "problems"
+    matches = list(problems_dir.glob(f"{problem_id}-*.json"))
+    if not matches:
+        raise FileNotFoundError(f"Problem {problem_id} not found")
+    raw = json.loads(matches[0].read_text(encoding="utf-8"))
+    return Problem(**raw)
