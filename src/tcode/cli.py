@@ -11,6 +11,5 @@ def start(file: str) -> None:
     from tcode.home import TCodeApp
     TCodeApp().run()
 
-# Guard to prevent imports used in other files to execute the whole cli
 if __name__ == "__main__":
     cli()
