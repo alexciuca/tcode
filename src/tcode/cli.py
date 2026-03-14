@@ -8,8 +8,8 @@ def cli() -> None:
 @cli.command()
 @click.option("--file", "-f", required=True, type=click.Path(), help="Path to your solution file")
 def start(file: str) -> None:
-    from tcode.tui import TCodeApp
     from tcode.config import SessionConfig
+    from tcode.tui import TCodeApp
     TCodeApp().run()
 
 if __name__ == "__main__":

@@ -26,7 +26,6 @@ class ProblemMeta:
     file: str
 
 def load_index() -> list[ProblemMeta]:
-    """Load lightweight index only — fast startup."""
     here = Path(__file__).resolve()
     repo_root = here.parents[2]
     path = repo_root / "data" / "index.json"
