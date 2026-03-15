@@ -1,6 +1,7 @@
 import json
-from pathlib import Path
 from dataclasses import dataclass
+from pathlib import Path
+
 
 @dataclass(frozen=True)
 class Problem:
@@ -16,6 +17,7 @@ class Problem:
     starter_code: str
     test_cases: list
 
+
 @dataclass(frozen=True)
 class ProblemMeta:
     id: str
@@ -25,12 +27,14 @@ class ProblemMeta:
     topics: list
     file: str
 
+
 def load_index() -> list[ProblemMeta]:
     here = Path(__file__).resolve()
     repo_root = here.parents[2]
     path = repo_root / "data" / "index.json"
     raw = json.loads(path.read_text(encoding="utf-8"))
     return [ProblemMeta(**item) for item in raw]
+
 
 def load_problem_by_id(problem_id: str) -> Problem:
     """Load full problem only when needed."""

@@ -1,6 +1,9 @@
+from pathlib import Path
+
 from textual.app import App, ComposeResult
-from textual.containers import Horizontal, Vertical, Center
-from textual.widgets import Static, Button, RadioButton, RadioSet, Select, Label
+from textual.containers import Center, Horizontal, Vertical
+from textual.widgets import Button, RadioButton, RadioSet, Select, Static
+
 from tcode.search import SearchProblems
 
 TOPICS = [
@@ -12,10 +15,14 @@ TOPICS = [
     ("Sorting", "sorting"),
 ]
 
+
 class TCodeApp(App):
+    def __init__(self, watch_path: Path) -> None:
+        super().__init__()
+        self.watch_path = watch_path
 
     SCREENS = {"search": SearchProblems}
-    
+
     CSS = """
     Screen {
         align: center top;
@@ -81,7 +88,6 @@ class TCodeApp(App):
 
         with Center(id="middle"):
             with Vertical(id="middle-inner"):
-                
                 with RadioSet():
                     yield RadioButton("Easy", value=True)
                     yield RadioButton("Medium")
@@ -92,7 +98,7 @@ class TCodeApp(App):
 
         with Center(id="bottom"):
             yield Button("Start Session", id="select-btn", variant="primary")
-            
+
     def on_mount(self) -> None:
         self.query_one("#search").can_focus = True
         self.query_one("#generate").can_focus = True

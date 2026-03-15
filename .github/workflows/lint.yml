@@ -1,0 +1,26 @@
+name: lint
+
+on: [push, pull_request]
+
+jobs:
+  ruff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/ruff-action@v1
+```
+
+Now every push and PR automatically runs ruff. If the code isn't formatted correctly the check fails and GitHub blocks the merge.
+
+How to format code
+
+#Check for issues
+uv run ruff check .
+
+#Fix issues automatically
+uv run ruff check --fix .
+
+#Format code
+
+uv run ruff format .
+```
