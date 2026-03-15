@@ -17,3 +17,13 @@
     border: round cyan;
     color: cyan;
 }
+
+#pagination {
+    align: center middle;
+    height: auto;
+    margin: 1;
+}
+
+#page-label{
+    margin: 1
+}
