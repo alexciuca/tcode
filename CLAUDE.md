@@ -28,22 +28,23 @@ It is a **CLI companion** — not a code editor. The student writes code in thei
 
 ```
 src/tcode/
-  cli.py          # entrypoint — tcode start --file <path>
-  tui.py          # Textual app — two panes, keybinds
-  watcher.py      # watchdog file observer + 3s debounce
-  llm.py          # Anthropic wrapper — complexity + hint prompts
-  problems.py     # load problems from data/problems.json
-  runner.py       # subprocess execution of student code
-  storage.py      # read/write ~/.tcode/profile.json + sessions/
+  cli.py          # Click entrypoint — tcode start --file <path>
+  tui.py          # Textual menu app (TCodeApp)
+  search.py       # Problem picker screen (SearchProblems)
+  session.py      # Textual session app (SessionApp) — two panes
+  problems.py     # load problems via data/index.json + data/problems/*.json
+  config.py       # SessionConfig dataclass
 
 data/
-  problems.json   # problem bank — see schema below
+  index.json      # problem metadata index
+  problems/*.json # full problem payloads (one file per problem)
+
+scripts/
+  import_problems.py
+  build_index.py
 
 tests/
-  test_watcher.py
-  test_problems.py
-  test_runner.py
-  test_storage.py
+  (to be added)
 
 CLAUDE.md         # this file
 README.md
@@ -54,9 +55,21 @@ pyproject.toml
 
 ---
 
+## Runtime flow
+
+The CLI always starts in the menu.
+
+1. `tcode start --file solution.py`
+2. `TCodeApp` (menu) opens
+3. User selects a problem (via `SearchProblems`)
+4. Menu exits, returning the selected `problem_id`
+5. CLI launches `SessionApp(watch_path=..., config.problem_id=...)`
+
+---
+
 ## TUI layout
 
-Two panes only. No exceptions.
+The **session view** is two panes only. No exceptions.
 
 ```
 ┌─────────────────────────┬─────────────────────────┐
@@ -85,7 +98,7 @@ Two panes only. No exceptions.
 
 ---
 
-## The file watcher
+## The file watcher (planned)
 
 - Watches a single file passed via `--file` flag
 - Uses `watchdog` with a 3 second debounce (prevents API spam on auto-save)
@@ -128,7 +141,7 @@ The AI must follow these rules in every prompt. Never relax them.
 
 ---
 
-## Prompt contracts
+## Prompt contracts (planned)
 
 ### Complexity check (on every save)
 ```
@@ -169,24 +182,32 @@ Always pass: current code snapshot, problem statement, constraint_n, expected_co
 
 ## Data schemas
 
-### Problem (data/problems.json)
+### Problem (data/problems/<id>-<slug>.json)
 ```json
 {
-  "id": "001",
+  "id": "0001",
+  "slug": "two-sum",
   "title": "Two Sum",
   "difficulty": "Easy",
-  "topic": "Hash Maps",
-  "constraint_n": 10000,
-  "expected_complexity": "O(n)",
-  "description": "Given an array nums and target, return indices of two numbers that add up to target.",
-  "examples": [
-    {"input": "nums = [2,7,11,15], target = 9", "output": "[0, 1]"}
-  ],
-  "test_cases": [
-    {"input": {"nums": [2,7,11,15], "target": 9}, "output": [0,1]},
-    {"input": {"nums": [3,2,4], "target": 6}, "output": [1,2]},
-    {"input": {"nums": [3,3], "target": 6}, "output": [0,1]}
-  ]
+  "topics": ["Array", "Hash Table"],
+  "description": "…",
+  "constraints": ["…"],
+  "examples": [{"example_text": "…"}],
+  "hints": ["…"],
+  "starter_code": "…",
+  "test_cases": []
+}
+```
+
+### Index entry (data/index.json)
+```json
+{
+  "id": "0001",
+  "slug": "two-sum",
+  "title": "Two Sum",
+  "difficulty": "Easy",
+  "topics": ["Array", "Hash Table"],
+  "file": "0001-two-sum.json"
 }
 ```
 
@@ -223,7 +244,7 @@ Always pass: current code snapshot, problem statement, constraint_n, expected_co
 
 ---
 
-## Code execution
+## Code execution (planned)
 
 - MVP: Python only. No other languages.
 - Uses `subprocess.run` with `timeout=5`
@@ -244,7 +265,7 @@ result = subprocess.run(
 
 ---
 
-## Environment variables
+## Environment variables (planned)
 
 ```bash
 TCODE_API_KEY=        # Anthropic API key — required
@@ -280,12 +301,8 @@ Never hardcode API keys. Never commit `.env`. Only `.env.example` is committed.
 ## Dev setup
 
 ```bash
-git clone https://github.com/yourhandle/tcode
-cd tcode
 uv sync
-cp .env.example .env
-# add your TCODE_API_KEY to .env
-uv run python -m tcode.cli start --file solution.py
+uv run tcode start --file solution.py
 ```
 
 ## Running tests

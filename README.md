@@ -5,13 +5,34 @@ tcode is a terminal-based AI training engine for CS students learning data struc
 ## Dev setup
 
 ```bash
+git clone https://github.com/alexandru356/tcode.git
+cd tcode
 uv sync
-cp .env.example .env
-# set TCODE_API_KEY in .env (optional for now)
+```
+## Running the app
+```bash
 uv run tcode start --file path/to/solution.py
 ```
+## Running tests
+```bash
+uv run pytest
+```
+
+## Formatting and linting
+```bash
+# check for issues
+uv run ruff check .
+
+# fix automatically
+uv run ruff check --fix .
+
+# format code
+uv run ruff format .
+```
+
 
 ## Notes
 
-- `tcode start --file <path>` launches the Textual TUI and watches the file for changes.
-- If `TCODE_API_KEY` is not set, hint/complexity features run in a stubbed mode.
+- Flow: `tcode start` → menu (`TCodeApp`) → select a problem → session view (`SessionApp`).
+- `--file` is the path to the student's solution file (used by the session UI; file watching is planned).
+
