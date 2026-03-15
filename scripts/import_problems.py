@@ -1,4 +1,5 @@
 """Convert neenza/leetcode-problems format to tcode format."""
+
 import json
 from pathlib import Path
 
@@ -20,9 +21,7 @@ for file in sorted(SOURCE.glob("*.json")):
     # extract examples from their format
     examples = []
     for ex in raw.get("examples", []):
-        examples.append({
-            "example_text": ex.get("example_text", "")
-        })
+        examples.append({"example_text": ex.get("example_text", "")})
 
     problem = {
         "id": str(raw.get("frontend_id", raw.get("problem_id", ""))).zfill(4),
@@ -35,7 +34,7 @@ for file in sorted(SOURCE.glob("*.json")):
         "examples": examples,
         "hints": raw.get("hints", []),
         "starter_code": raw.get("code_snippets", {}).get("python3", ""),
-        "test_cases": []  # not in their dataset, you add manually for key problems
+        "test_cases": [],  # not in their dataset, you add manually for key problems
     }
 
     slug = problem["slug"] or file.stem
