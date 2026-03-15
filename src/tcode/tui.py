@@ -2,7 +2,7 @@ from pathlib import Path
 
 from textual.app import App, ComposeResult
 from textual.containers import Center, Horizontal, Vertical
-from textual.widgets import Button, Label, RadioButton, RadioSet, Select, Static
+from textual.widgets import Button, RadioButton, RadioSet, Select, Static
 
 from tcode.search import SearchProblems
 
@@ -17,7 +17,6 @@ TOPICS = [
 
 
 class TCodeApp(App):
-
     def __init__(self, watch_path: Path) -> None:
         super().__init__()
         self.watch_path = watch_path
@@ -89,7 +88,6 @@ class TCodeApp(App):
 
         with Center(id="middle"):
             with Vertical(id="middle-inner"):
-
                 with RadioSet():
                     yield RadioButton("Easy", value=True)
                     yield RadioButton("Medium")

@@ -11,4 +11,3 @@ class SearchProblems(Screen):
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "back-button":
             self.app.pop_screen()
-
