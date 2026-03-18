@@ -1,5 +1,4 @@
 """Build index.json from all problems in data/problems/."""
-
 import json
 from pathlib import Path
 
