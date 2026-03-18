@@ -40,7 +40,11 @@ class SearchProblems(Screen):
              )
         with Grid(id="problems-grid"):
             for p in self.get_page():
-                yield Static(f"[b] #{p.id} · {p.title}[/b] · {p.difficulty}\nTopics: {', '.join(p.topics)}", classes="card", id=f"problem-{p.id}")
+                content = (
+                    f"[b] #{p.id} · {p.title}[/b] · {p.difficulty}\n"
+                    f"Topics: {', '.join(p.topics)}"
+                )
+                yield Static(content, classes="card", id=f"problem-{p.id}")
         with Horizontal(id="pagination"):
             yield Button("← Prev", id="prev", disabled=True)
             yield Label(f"Page 1 / {self.total_pages()}", id="page-label")
@@ -61,7 +65,13 @@ class SearchProblems(Screen):
         grid = self.query_one("#problems-grid", Grid)
         grid.remove_children()
         for p in self.get_page():
-            grid.mount(Static(f"[b] #{p.id} · {p.title}[/b] · {p.difficulty}\nTopics: {', '.join(p.topics)}", classes="card", id=f"problem-{p.id}"))
-        self.query_one("#page-label", Label).update(f"Page {self.page + 1} / {self.total_pages()}")
+            content = (
+                f"[b] #{p.id} · {p.title}[/b] · {p.difficulty}\n"
+                f"Topics: {', '.join(p.topics)}"
+            )
+            grid.mount(Static(content, classes="card", id=f"problem-{p.id}"))
+        self.query_one("#page-label", Label).update(
+            f"Page {self.page + 1} / {self.total_pages()}"
+        )
         self.query_one("#prev", Button).disabled = self.page == 0
         self.query_one("#next", Button).disabled = self.page >= self.total_pages() - 1
