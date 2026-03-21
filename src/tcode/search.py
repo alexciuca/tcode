@@ -1,11 +1,11 @@
 from textual.app import ComposeResult
-from textual.screen import Screen
-from textual.widgets import Label, Button, Static, Input, Select
 from textual.containers import Grid, Horizontal
 from textual.events import Click
 from tcode.config import SessionConfig
 from tcode.problems import load_index, load_problem_by_id
 from tcode.session import SessionApp
+from textual.screen import Screen
+from textual.widgets import Button, Input, Label, Select, Static
 
 PAGE_SIZE = 20
 
