@@ -1,17 +1,17 @@
 import re
 from pathlib import Path
 
-from textual.app import App, ComposeResult
+from textual.app import ComposeResult
 from textual.containers import Horizontal
-from textual.widgets import Footer, Header, Static
+from textual.screen import Screen
+from textual.widgets import Button, Footer, Header, Static
 
 from tcode.config import SessionConfig
 from tcode.problems import load_problem_by_id
 
 
-class SessionApp(App):
+class SessionApp(Screen):
     CSS_PATH = "assets/tcode.tcss"
-    TITLE = "tcode"
 
     BINDINGS = [
         ("h", "hint", "Hint"),
@@ -21,13 +21,11 @@ class SessionApp(App):
 
     def __init__(self, watch_path: Path, config: SessionConfig) -> None:
         super().__init__()
-        self.watch_path = watch_path
         self.config = config
+        self.watch_path = watch_path
         self._startup_warning: str | None = None
-
         if config.problem_id is None:
             raise RuntimeError("No problem selected.")
-
         try:
             self.active_problem = load_problem_by_id(config.problem_id)
         except FileNotFoundError:
@@ -41,27 +39,20 @@ class SessionApp(App):
             Static("", id="right"),
         )
         yield Footer()
+        yield Button("Back", id="back-button")
+
+    def on_button_pressed(self, event: Button.Pressed) -> None:
+        if event.button.id == "back-button":
+            self.app.pop_screen()
 
     def on_mount(self) -> None:
         self._update_left()
-
-        if not self.watch_path.exists():
-            self._update_right(
-                f"⚠ File not found: {self.watch_path}\n\n"
-                "Create the file in your editor to begin."
-            )
-            return
-
-        header = f"Watching: {self.watch_path}\n{('─' * 45)}\n\n"
-        warning = f"⚠ {self._startup_warning}\n\n" if self._startup_warning else ""
         self._update_right(
-            header
-            + warning
-            + "Ready. Save your file to begin.\n\n"
+            "Ready. Save your file to begin.\n\n"
             + "Keys:\n"
             + "  h      → hint\n"
             + "  enter  → run tests\n"
-            + "  q      → quit"
+            + "  q      → back"
         )
 
     def _clean_description(self, description: str) -> str:
@@ -95,10 +86,3 @@ class SessionApp(App):
 
     def _update_right(self, text: str) -> None:
         self.query_one("#right", Static).update(text)
-
-
-if __name__ == "__main__":
-    app = SessionApp(
-        watch_path=Path("solution.py"), config=SessionConfig(problem_id="0001")
-    )
-    app.run()
