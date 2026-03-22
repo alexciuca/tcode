@@ -9,6 +9,7 @@ from textual.widgets import Button, Footer, Header, Static
 from tcode.config import SessionConfig
 from tcode.problems import load_problem_by_id
 
+
 class SessionApp(Screen):
     CSS_PATH = "assets/tcode.tcss"
 
@@ -39,7 +40,7 @@ class SessionApp(Screen):
         )
         yield Footer()
         yield Button("Back", id="back-button")
-        
+
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "back-button":
             self.app.pop_screen()
