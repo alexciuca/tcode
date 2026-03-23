@@ -32,6 +32,10 @@ line-length = 88
 [tool.ruff.lint]
 select = ["E", "F", "I"]
 
+[tool.basedpyright]
+typeCheckingMode = "basic"
+reportAttributeAccessIssue = "none"
+
 [dependency-groups]
 dev = [
     "ruff>=0.15.6",
