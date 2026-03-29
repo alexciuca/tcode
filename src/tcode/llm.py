@@ -6,7 +6,7 @@ from anthropic import Anthropic
 
 from tcode.problems import Problem
 
-DEFAULT_ANTHROPIC_MODEL = "claude-3-5-haiku-latest"
+DEFAULT_ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
 
 
 class MissingAnthropicAPIKeyError(Exception):
@@ -51,7 +51,11 @@ def _call_llm(system: str, user: str) -> dict:
         messages=[{"role": "user", "content": user}],
     )
 
-    response_text = response.content[0].text
+    response_text = response.content[0].text.strip()
+    if response_text.startswith("```"):
+        response_text = response_text.split("\n", 1)[1]
+        response_text = response_text.rsplit("```", 1)[0]
+    response_text = response_text.strip()
 
     try:
         return json.loads(response_text)
