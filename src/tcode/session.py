@@ -57,7 +57,8 @@ class SessionApp(Screen):
             return
         if self.hints_used >= 4:
             self._update_right(
-                "Maximum hints reached.\n\nTry working through it — you have all the information you need."
+                "Maximum hints reached.\n\n"
+                "Try working through it — you have all the information you need."
             )
             return
         self._llm_loading = True

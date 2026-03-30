@@ -67,12 +67,21 @@ def _call_llm(system: str, user: str) -> dict:
 
 def check_complexity(code: str, problem: Problem) -> ComplexityResult:
     system = """
-            You are a code complexity analyzer. Given student code and a problem constraint, analyze the time complexity and output ONLY valid JSON with no markdown, no explanation outside the JSON.
-            Output schema:{"complexity_estimate": "O(n²)", "risk_flag": true, "explanation": "Nested loop detected. At n=10,000 this is ~100M operations and will likely timeout."}
-            If the code is too short or empty to analyze:{"complexity_estimate": "unknown", "risk_flag": false, "explanation": "Not enough code to analyze yet."}
+            You are a code complexity analyzer. Given student code
+            and a problem constraint, analyze the time complexity 
+            and output ONLY valid JSON with no markdown, 
+            no explanation outside the JSON.
+            Output schema:{"complexity_estimate": "O(n²)", "risk_flag"
+            : true, "explanation": "Nested loop detected. 
+            At n=10,000 this is ~100M operations and will likely timeout."}
+            If the code is too short or empty to analyze:
+            {"complexity_estimate": "unknown", "risk_flag": 
+            false, "explanation": "Not enough code to analyze yet."}
             Never output anything outside the JSON object.
             """
-    user = f"Problem: {problem.title}\nConstraints: {', '.join(problem.constraints)}\n\nStudent code:\n{code}"
+    user = f"Problem: {problem.title}\nConstraints: {
+        ', '.join(problem.constraints)
+    }\n\nStudent code:\n{code}"
 
     data = _call_llm(system, user)
 
@@ -88,7 +97,9 @@ def check_complexity(code: str, problem: Problem) -> ComplexityResult:
 
 def get_hint(code: str, problem: Problem, hints_used: int) -> HintResult:
     system = """
-        You are a Socratic coding tutor. You never give the answer directly. You guide students to discover solutions themselves. Output ONLY valid JSON with no markdown.
+        You are a Socratic coding tutor. You never give the answer directly.
+        You guide students to discover solutions themselves.
+        Output ONLY valid JSON with no markdown.
 
         Hint ladder:
         - Level 1: Conceptual — challenge their mental model, no code reference
@@ -99,11 +110,16 @@ def get_hint(code: str, problem: Problem, hints_used: int) -> HintResult:
         Never exceed level 4. Never give the answer directly.
 
         Output schema:
-        {"hint_level": 2, "message": "Your outer loop variable is i — what could you store about nums[i] as you iterate?"}
+        {"hint_level": 2, "message": "Your outer loop variable is i
+        — what could you store about nums[i] as you iterate?"}
 
         Never output anything outside the JSON object.
         """
-    user = f"Problem: {problem.title}\nConstraints: {', '.join(problem.constraints)}\nHints already given: {hints_used}\n\nStudent code:\n{code}\n\nGive hint number {min(hints_used + 1, 4)}."
+    user = f"Problem: {problem.title}\nConstraints: {
+        ', '.join(problem.constraints)
+    }\nHints already given: {hints_used}\n\nStudent code:\n{code}\n\nGive hint number {
+        min(hints_used + 1, 4)
+    }."
 
     data = _call_llm(system, user)
 
@@ -118,13 +134,18 @@ def get_hint(code: str, problem: Problem, hints_used: int) -> HintResult:
 
 def explain_failure(code: str, problem: Problem, test_output: str) -> FailureResult:
     system = """
-        You are a Socratic coding tutor. You never give the answer directly. You help students understand why their code failed and guide them toward the fix. Output ONLY valid JSON with no markdown.
+        You are a Socratic coding tutor. You never give the answer directly.
+        You help students understand why their code failed and guide them 
+        toward the fix. Output ONLY valid JSON with no markdown.
         Output schema:
-        {"message": "Your function returns None when the list has duplicate values. What happens to your loop when nums[i] equals nums[j]?"}
+        {"message": "Your function returns None when the list has duplicate
+        values. What happens to your loop when nums[i] equals nums[j]?"}
 
         Never output anything outside the JSON object. Never give the solution directly.
     """
-    user = f"Problem: {problem.title}\nConstraints: {', '.join(problem.constraints)}\nStudent code:\n{code}\nTest output: {test_output}."
+    user = f"Problem: {problem.title}\nConstraints: {
+        ', '.join(problem.constraints)
+    }\nStudent code:\n{code}\nTest output: {test_output}."
 
     data = _call_llm(system, user)
 
