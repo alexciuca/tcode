@@ -9,6 +9,18 @@ from textual.widgets import Button, Footer, Header, Static
 from tcode.config import SessionConfig
 from tcode.problems import load_problem_by_id
 
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+import time
+
+class _file_handler(FileSystemEventHandler):
+    def __init__(self, file: Path, callback):
+        self.file = file.resolve()
+        self.callback = callback
+        
+    def on_modified(self, event):
+        if Path(event.src_path).resolve() == self.file:
+            self.callback()
 
 class SessionApp(Screen):
     CSS_PATH = "assets/tcode.tcss"
@@ -18,11 +30,12 @@ class SessionApp(Screen):
         ("enter", "run", "Run"),
         ("q", "quit", "Quit"),
     ]
-
+    
     def __init__(self, watch_path: Path, config: SessionConfig) -> None:
         super().__init__()
         self.config = config
         self.watch_path = watch_path
+        self._right_content = ""
         self._startup_warning: str | None = None
         if config.problem_id is None:
             raise RuntimeError("No problem selected.")
@@ -39,11 +52,14 @@ class SessionApp(Screen):
             Static("", id="right"),
         )
         yield Footer()
+        yield Button("Test", id="test-button")
         yield Button("Back", id="back-button")
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "back-button":
             self.app.pop_screen()
+        elif event.button.id == "test-button":
+            print("Run tests (not implemented)")
 
     def on_mount(self) -> None:
         self._update_left()
@@ -52,9 +68,26 @@ class SessionApp(Screen):
             + "Keys:\n"
             + "  h      → hint\n"
             + "  enter  → run tests\n"
-            + "  q      → back"
+            + "  q      → back" 
         )
-
+        self._start_watching()
+        
+    #setup watchdog file watcher
+    def _start_watching(self) -> None:
+        handler = _file_handler(self.watch_path, self._on_file_saved)
+        self.observer = Observer()
+        self.observer.schedule(handler, str(self.watch_path.parent), recursive=False)
+        self.observer.start()
+        
+        #impoleemnt ai
+    def _on_file_saved(self) -> None:
+        self.app.call_from_thread(self._update_right, "File saved! Cehcking with AI...")      
+        
+    def on_unmount(self) -> None:
+        if hasattr(self, 'observer'):
+            self.observer.stop()
+            self.observer.join()                               
+                                     
     def _clean_description(self, description: str) -> str:
         for marker in ["Example 1:", "Example 2:", "Examples:", "Constraints:"]:
             if marker in description:
@@ -85,4 +118,5 @@ class SessionApp(Screen):
         self.query_one("#left", Static).update(text)
 
     def _update_right(self, text: str) -> None:
-        self.query_one("#right", Static).update(text)
+        self._right_content += f"\n\n{text}" if self._right_content else text
+        self.query_one("#right", Static).update(self._right_content)
