@@ -80,12 +80,19 @@ class SessionApp(Screen):
     def _start_watching(self) -> None:
         handler = _file_handler(self.watch_path, self._on_file_saved)
         self.observer = Observer()
-        self.observer.schedule(handler, str(self.watch_path.parent), recursive=False)
+        self.observer.schedule(
+            handler, 
+            str(self.watch_path.parent), 
+            recursive=False
+        )
         self.observer.start()
         
         #impoleemnt ai
     def _on_file_saved(self) -> None:
-        self.app.call_from_thread(self._update_right, "File saved! Cehcking with AI...")      
+        self.app.call_from_thread(
+            self._update_right, 
+            "File saved! Cehcking with AI..."
+        )      
         
     def on_unmount(self) -> None:
         if hasattr(self, 'observer'):
