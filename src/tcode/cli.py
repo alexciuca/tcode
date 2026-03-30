@@ -17,6 +17,9 @@ def cli() -> None:
     help="Path to your solution file",
 )
 def start(file: Path) -> None:
+    from dotenv import load_dotenv
+
+    load_dotenv()
     from tcode.config import SessionConfig
     from tcode.session import SessionApp
     from tcode.tui import TCodeApp

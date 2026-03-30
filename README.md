@@ -4,7 +4,10 @@ tcode is a terminal-based AI training engine for CS students learning data struc
 
 ## Dev setup
 
+
 ```bash
+#Set a ANTHROPIC_API_KEY variable in the .env
+touch .env 
 git clone https://github.com/alexandru356/tcode.git
 cd tcode
 uv sync
