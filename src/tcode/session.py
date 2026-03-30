@@ -7,6 +7,7 @@ from textual.screen import Screen
 from textual.widgets import Button, Footer, Header, Static
 
 from tcode.config import SessionConfig
+from tcode.llm import get_hint
 from tcode.problems import load_problem_by_id
 
 
@@ -23,6 +24,16 @@ class SessionApp(Screen):
         super().__init__()
         self.config = config
         self.watch_path = watch_path
+        self._llm_loading = False
+        self.hints_used = 0
+        # HARDCODED! code_snapshot, replace when watchdog impletemented
+        self.code_snapshot = """class Solution:
+                def twoSum(self, nums, target):
+                    for i in range(len(nums)):
+                        for j in range(len(nums)):
+                            if nums[i] + nums[j] == target:
+                                return [i, j]
+            """
         self._startup_warning: str | None = None
         if config.problem_id is None:
             raise RuntimeError("No problem selected.")
@@ -40,6 +51,36 @@ class SessionApp(Screen):
         )
         yield Footer()
         yield Button("Back", id="back-button")
+
+    def action_hint(self) -> None:
+        if self._llm_loading:
+            return
+        if self.hints_used >= 4:
+            self._update_right(
+                "Maximum hints reached.\n\n"
+                "Try working through it — you have all the information you need."
+            )
+            return
+        self._llm_loading = True
+        self._update_right("Thinking...")
+        self.run_worker(self._fetch_hint, thread=True)
+
+    def _fetch_hint(self) -> None:
+        try:
+            result = get_hint(
+                code=self.code_snapshot,
+                problem=self.active_problem,
+                hints_used=self.hints_used,
+            )
+            self.hints_used += 1
+            self.app.call_from_thread(
+                self._update_right,
+                f"Hint {self.hints_used}/4\n{'─' * 45}\n\n{result.message}",
+            )
+        except Exception as e:
+            self.app.call_from_thread(self._update_right, f"Error getting hint: {e}")
+        finally:
+            self._llm_loading = False
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "back-button":

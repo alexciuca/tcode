@@ -2,12 +2,14 @@
     width: 1fr;
     height: 1fr;
     border: solid $primary;
-    padding: 1;
+    padding: 1 2;  /* more horizontal padding, easier to read */
+    overflow-y: auto;  /* scroll if content overflows */
 }
 
 #right {
     width: 1fr;
     height: 1fr;
-    border: solid $primary;
-    padding: 1;
+    border: solid $accent;  /* different color to distinguish panes */
+    padding: 1 2;
+    overflow-y: auto;
 }
