@@ -1,17 +1,16 @@
 import re
+import time
 from pathlib import Path
 
 from textual.app import ComposeResult
 from textual.containers import Horizontal
 from textual.screen import Screen
 from textual.widgets import Button, Footer, Header, Static
+from watchdog.events import FileSystemEventHandler
+from watchdog.observers import Observer
 
 from tcode.config import SessionConfig
 from tcode.problems import load_problem_by_id
-
-from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
-import time
 
 class _file_handler(FileSystemEventHandler):
     def __init__(self, file: Path, callback):

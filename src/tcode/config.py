@@ -1,9 +1,10 @@
 import json
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 from pathlib import Path
 
 # Set where session will be stored locally
 STATE_FILE = Path.home() / ".tcode" / "session.json"
+
 
 @dataclass
 class SessionConfig:
@@ -14,9 +15,8 @@ class SessionConfig:
 
     def save_session(self) -> None:
         STATE_FILE.parent.mkdir(exist_ok=True)
-        # convert dataclass dict to JSON
         STATE_FILE.write_text(json.dumps(asdict(self)))
-        
+
     @classmethod
     def load_session(cls) -> "SessionConfig":
         if not STATE_FILE.exists():
