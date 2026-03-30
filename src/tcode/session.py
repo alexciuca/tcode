@@ -17,9 +17,14 @@ class _file_handler(FileSystemEventHandler):
     def __init__(self, file: Path, callback):
         self.file = file.resolve()
         self.callback = callback
+        self.last_fired = 0
         
     def on_modified(self, event):
         if Path(event.src_path).resolve() == self.file:
+            now = time.time()
+            if now - self.last_fired < 0.5:
+                return
+            self.last_fired = now
             self.callback()
 
 class SessionApp(Screen):
