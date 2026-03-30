@@ -13,7 +13,7 @@ def cli() -> None:
     "--file",
     "-f",
     required=True,
-    type=click.Path(path_type=Path),
+    type=click.Path(path_type=Path, exists=True),
     help="Path to your solution file",
 )
 def start(file: Path) -> None:

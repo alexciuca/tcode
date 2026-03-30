@@ -1,14 +1,32 @@
 import re
+import time
 from pathlib import Path
 
 from textual.app import ComposeResult
 from textual.containers import Horizontal
 from textual.screen import Screen
 from textual.widgets import Button, Footer, Header, Static
+from watchdog.events import FileSystemEventHandler
+from watchdog.observers import Observer
 
 from tcode.config import SessionConfig
 from tcode.llm import get_hint
 from tcode.problems import load_problem_by_id
+
+
+class _file_handler(FileSystemEventHandler):
+    def __init__(self, file: Path, callback):
+        self.file = file.resolve()
+        self.callback = callback
+        self.last_fired = 0
+
+    def on_modified(self, event):
+        if Path(event.src_path).resolve() == self.file:
+            now = time.time()
+            if now - self.last_fired < 0.5:
+                return
+            self.last_fired = now
+            self.callback()
 
 
 class SessionApp(Screen):
@@ -24,6 +42,7 @@ class SessionApp(Screen):
         super().__init__()
         self.config = config
         self.watch_path = watch_path
+        self._right_content = ""
         self._llm_loading = False
         self.hints_used = 0
         # HARDCODED! code_snapshot, replace when watchdog impletemented
@@ -50,6 +69,7 @@ class SessionApp(Screen):
             Static("", id="right"),
         )
         yield Footer()
+        yield Button("Test", id="test-button")
         yield Button("Back", id="back-button")
 
     def action_hint(self) -> None:
@@ -85,6 +105,8 @@ class SessionApp(Screen):
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "back-button":
             self.app.pop_screen()
+        elif event.button.id == "test-button":
+            print("Run tests (not implemented)")
 
     def on_mount(self) -> None:
         self._update_left()
@@ -95,6 +117,24 @@ class SessionApp(Screen):
             + "  enter  → run tests\n"
             + "  q      → back"
         )
+        self._start_watching()
+
+    # setup watchdog file watcher
+    def _start_watching(self) -> None:
+        handler = _file_handler(self.watch_path, self._on_file_saved)
+        self.observer = Observer()
+        self.observer.schedule(handler, str(self.watch_path.parent), recursive=False)
+        self.observer.start()
+
+        # impoleemnt ai
+
+    def _on_file_saved(self) -> None:
+        self.app.call_from_thread(self._update_right, "File saved! Cehcking with AI...")
+
+    def on_unmount(self) -> None:
+        if hasattr(self, "observer"):
+            self.observer.stop()
+            self.observer.join()
 
     def _clean_description(self, description: str) -> str:
         for marker in ["Example 1:", "Example 2:", "Examples:", "Constraints:"]:
@@ -126,4 +166,5 @@ class SessionApp(Screen):
         self.query_one("#left", Static).update(text)
 
     def _update_right(self, text: str) -> None:
-        self.query_one("#right", Static).update(text)
+        self._right_content += f"\n\n{text}" if self._right_content else text
+        self.query_one("#right", Static).update(self._right_content)
