@@ -12,12 +12,13 @@ from watchdog.observers import Observer
 from tcode.config import SessionConfig
 from tcode.problems import load_problem_by_id
 
+
 class _file_handler(FileSystemEventHandler):
     def __init__(self, file: Path, callback):
         self.file = file.resolve()
         self.callback = callback
         self.last_fired = 0
-        
+
     def on_modified(self, event):
         if Path(event.src_path).resolve() == self.file:
             now = time.time()
@@ -25,6 +26,7 @@ class _file_handler(FileSystemEventHandler):
                 return
             self.last_fired = now
             self.callback()
+
 
 class SessionApp(Screen):
     CSS_PATH = "assets/tcode.tcss"
@@ -34,7 +36,7 @@ class SessionApp(Screen):
         ("enter", "run", "Run"),
         ("q", "quit", "Quit"),
     ]
-    
+
     def __init__(self, watch_path: Path, config: SessionConfig) -> None:
         super().__init__()
         self.config = config
@@ -72,33 +74,27 @@ class SessionApp(Screen):
             + "Keys:\n"
             + "  h      → hint\n"
             + "  enter  → run tests\n"
-            + "  q      → back" 
+            + "  q      → back"
         )
         self._start_watching()
-        
-    #setup watchdog file watcher
+
+    # setup watchdog file watcher
     def _start_watching(self) -> None:
         handler = _file_handler(self.watch_path, self._on_file_saved)
         self.observer = Observer()
-        self.observer.schedule(
-            handler, 
-            str(self.watch_path.parent), 
-            recursive=False
-        )
+        self.observer.schedule(handler, str(self.watch_path.parent), recursive=False)
         self.observer.start()
-        
-        #impoleemnt ai
+
+        # impoleemnt ai
+
     def _on_file_saved(self) -> None:
-        self.app.call_from_thread(
-            self._update_right, 
-            "File saved! Cehcking with AI..."
-        )      
-        
+        self.app.call_from_thread(self._update_right, "File saved! Cehcking with AI...")
+
     def on_unmount(self) -> None:
-        if hasattr(self, 'observer'):
+        if hasattr(self, "observer"):
             self.observer.stop()
-            self.observer.join()                               
-                                     
+            self.observer.join()
+
     def _clean_description(self, description: str) -> str:
         for marker in ["Example 1:", "Example 2:", "Examples:", "Constraints:"]:
             if marker in description:
