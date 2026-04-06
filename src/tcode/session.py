@@ -48,7 +48,6 @@ class SessionApp(Screen):
         self._test_running = False
         self.hints_used = 0
         self._last_failing_cases: set[int] = set()
-        # HARDCODED! code_snapshot, replace when watchdog impletemented
         self.code_snapshot = ""
         self._startup_warning: str | None = None
         if config.problem_id is None:
@@ -149,7 +148,9 @@ class SessionApp(Screen):
 
     def _refresh_coach_title(self) -> None:
         remaining = 4 - self.hints_used
-        self.query_one("#right-scroll").border_title = (
+        self.query_one(
+            "#right-scroll"
+        ).border_title = (
             f" Coach  ·  {remaining} hint{'s' if remaining != 1 else ''} remaining "
         )
 
@@ -162,7 +163,9 @@ class SessionApp(Screen):
 
     def _on_file_saved(self) -> None:
         self.code_snapshot = self.watch_path.read_text()
-        self.app.call_from_thread(self._update_right, "File saved! Checking complexity...")
+        self.app.call_from_thread(
+            self._update_right, "File saved! Checking complexity..."
+        )
         self.app.call_from_thread(self.run_worker, self._check_complexity, thread=True)
 
     def _check_complexity(self) -> None:
@@ -173,10 +176,14 @@ class SessionApp(Screen):
             prefix = "⚠ " if result.risk_flag else "✓ "
             self.app.call_from_thread(
                 self._update_right,
-                f"Complexity: {prefix}{result.complexity_estimate}\n{'─' * 45}\n\n{result.explanation}",
+                f"Complexity: {prefix}{result.complexity_estimate}\n{'─' * 45}\n\n{
+                    result.explanation
+                }",
             )
         except Exception as e:
-            self.app.call_from_thread(self._update_right, f"Error checking complexity: {e}")
+            self.app.call_from_thread(
+                self._update_right, f"Error checking complexity: {e}"
+            )
 
     def on_unmount(self) -> None:
         if hasattr(self, "observer"):
