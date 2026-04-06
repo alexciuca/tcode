@@ -10,7 +10,7 @@ from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
 from tcode.config import SessionConfig
-from tcode.llm import get_hint
+from tcode.llm import get_hint, explain_failure
 from tcode.problems import load_problem_by_id
 
 
@@ -124,7 +124,25 @@ class SessionApp(Screen):
 
     def _on_file_saved(self) -> None:
         self.code_snapshot = self.watch_path.read_text()
-        self.app.call_from_thread(self._update_right, "File saved! Cehcking with AI...")
+        self.app.call_from_thread(
+                self._update_right, 
+                "File saved! Checking code with AI for any major issues ..."
+            )
+        self.app.call_from_thread(self.run_worker, self._analyze_code, thread=True)
+            
+    def _analyze_code(self) -> None:
+        try:
+            result = explain_failure(
+                code=self.code_snapshot,
+                problem=self.active_problem,
+                test_output=self._test_output if hasattr(self, "_test_output") else ""
+            )
+            self.app.call_from_thread(
+                self._update_right,
+                f"AI Analysis:\n{'─' * 45}\n\n{result.message}",
+            )
+        except Exception as e:
+            self.app.call_from_thread(self._update_right, f"Error analyzing code: {e}")
 
     def on_unmount(self) -> None:
         if hasattr(self, "observer"):

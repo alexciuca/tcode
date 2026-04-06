@@ -142,6 +142,7 @@ def explain_failure(code: str, problem: Problem, test_output: str) -> FailureRes
         values. What happens to your loop when nums[i] equals nums[j]?"}
 
         Never output anything outside the JSON object. Never give the solution directly.
+        
     """
     user = f"Problem: {problem.title}\nConstraints: {
         ', '.join(problem.constraints)
