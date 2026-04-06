@@ -3,15 +3,16 @@ import time
 from pathlib import Path
 
 from textual.app import ComposeResult
-from textual.containers import Horizontal
+from textual.containers import Horizontal, ScrollableContainer
 from textual.screen import Screen
-from textual.widgets import Button, Footer, Header, Static
+from textual.widgets import Footer, Header, Static
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
 from tcode.config import SessionConfig
-from tcode.llm import check_complexity, get_hint
+from tcode.llm import check_complexity, explain_failure, get_hint
 from tcode.problems import load_problem_by_id
+from tcode.runner import format_results, run_tests
 
 
 class _file_handler(FileSystemEventHandler):
@@ -44,8 +45,9 @@ class SessionApp(Screen):
         self.watch_path = watch_path
         self._right_content = ""
         self._llm_loading = False
+        self._test_running = False
         self.hints_used = 0
-        # HARDCODED! code_snapshot, replace when watchdog impletemented
+        self._last_failing_cases: set[int] = set()
         self.code_snapshot = ""
         self._startup_warning: str | None = None
         if config.problem_id is None:
@@ -59,12 +61,10 @@ class SessionApp(Screen):
     def compose(self) -> ComposeResult:
         yield Header()
         yield Horizontal(
-            Static("", id="left"),
-            Static("", id="right"),
+            ScrollableContainer(Static("", id="left"), id="left-scroll"),
+            ScrollableContainer(Static("", id="right"), id="right-scroll"),
         )
         yield Footer()
-        yield Button("Test", id="test-button")
-        yield Button("Back", id="back-button")
 
     def action_hint(self) -> None:
         if self._llm_loading:
@@ -87,6 +87,7 @@ class SessionApp(Screen):
                 hints_used=self.hints_used,
             )
             self.hints_used += 1
+            self.app.call_from_thread(self._refresh_coach_title)
             self.app.call_from_thread(
                 self._update_right,
                 f"Hint {self.hints_used}/4\n{'─' * 45}\n\n{result.message}",
@@ -96,22 +97,62 @@ class SessionApp(Screen):
         finally:
             self._llm_loading = False
 
-    def on_button_pressed(self, event: Button.Pressed) -> None:
-        if event.button.id == "back-button":
-            self.app.pop_screen()
-        elif event.button.id == "test-button":
-            print("Run tests (not implemented)")
+    def action_run(self) -> None:
+        if self._test_running:
+            return
+        self._test_running = True
+        self._update_right("Running tests...")
+        self.run_worker(self._execute_tests, thread=True)
+
+    def _execute_tests(self) -> None:
+        try:
+            results = run_tests(self.code_snapshot, self.active_problem)
+            summary = format_results(results)
+            self.app.call_from_thread(self._update_right, summary)
+
+            failures = [r for r in results if not r.passed]
+            failing_cases = {r.case for r in failures}
+            if failures and failing_cases != self._last_failing_cases:
+                failure_text = "\n".join(
+                    r.error or f"Expected {r.expected}, got {r.actual}"
+                    for r in failures
+                )
+                try:
+                    explanation = explain_failure(
+                        code=self.code_snapshot,
+                        problem=self.active_problem,
+                        test_output=failure_text,
+                    )
+                    self.app.call_from_thread(
+                        self._update_right,
+                        f"Coach\n{'─' * 45}\n\n{explanation.message}",
+                    )
+                except Exception:
+                    pass
+            self._last_failing_cases = failing_cases
+        except Exception as e:
+            self.app.call_from_thread(self._update_right, f"Error running tests: {e}")
+        finally:
+            self._test_running = False
+
+    def action_quit(self) -> None:
+        self.app.pop_screen()
 
     def on_mount(self) -> None:
+        p = self.active_problem
+        self.query_one("#left-scroll").border_title = f" {p.title} · {p.difficulty} "
+        self._refresh_coach_title()
         self._update_left()
-        self._update_right(
-            "Ready. Save your file to begin.\n\n"
-            + "Keys:\n"
-            + "  h      → hint\n"
-            + "  enter  → run tests\n"
-            + "  q      → back"
-        )
+        self._update_right("Save your file to begin.")
         self._start_watching()
+
+    def _refresh_coach_title(self) -> None:
+        remaining = 4 - self.hints_used
+        self.query_one(
+            "#right-scroll"
+        ).border_title = (
+            f" Coach  ·  {remaining} hint{'s' if remaining != 1 else ''} remaining "
+        )
 
     # setup watchdog file watcher
     def _start_watching(self) -> None:
@@ -120,13 +161,10 @@ class SessionApp(Screen):
         self.observer.schedule(handler, str(self.watch_path.parent), recursive=False)
         self.observer.start()
 
-    # impoleemnt ai
-
     def _on_file_saved(self) -> None:
         self.code_snapshot = self.watch_path.read_text()
         self.app.call_from_thread(
-            self._update_right,
-            "File saved! Checking code with AI for any major issues ...",
+            self._update_right, "File saved! Checking complexity..."
         )
         self.app.call_from_thread(self.run_worker, self._check_complexity, thread=True)
 
@@ -135,9 +173,12 @@ class SessionApp(Screen):
             result = check_complexity(
                 code=self.code_snapshot, problem=self.active_problem
             )
+            prefix = "⚠ " if result.risk_flag else "✓ "
             self.app.call_from_thread(
                 self._update_right,
-                f"AI Complexity Analysis:\n{'─' * 45}\n\n{result.complexity_estimate}",
+                f"Complexity: {prefix}{result.complexity_estimate}\n{'─' * 45}\n\n{
+                    result.explanation
+                }",
             )
         except Exception as e:
             self.app.call_from_thread(
@@ -162,20 +203,18 @@ class SessionApp(Screen):
     def _update_left(self) -> None:
         p = self.active_problem
         description = self._clean_description(p.description)
-        text = (
-            f"{p.title}   #{p.id} · {p.difficulty}\n"
-            f"{'─' * 45}\n"
-            f"Topics: {', '.join(p.topics)}\n\n"
-            f"Description:\n{description}\n\n"
-        )
+        sep = f"\n{'─' * 45}\n"
+        text = f"Topics: {', '.join(p.topics)}\n{sep}\n{description}\n"
         if p.examples:
-            text += "Examples:\n"
+            text += f"{sep}\nExamples\n\n"
             for ex in p.examples:
                 text += f"{ex['example_text']}\n\n"
         if p.constraints:
-            text += "Constraints:\n"
+            text += f"{sep}\nConstraints\n\n"
             for c in p.constraints:
                 text += f"  · {self._clean_constraint(c)}\n"
+        if p.starter_code:
+            text += f"{sep}\nStarter code\n\n{p.starter_code}\n"
         self.query_one("#left", Static).update(text)
 
     def _update_right(self, text: str) -> None:
