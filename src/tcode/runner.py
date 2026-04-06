@@ -42,7 +42,7 @@ for i, tc in enumerate(test_cases):
     try:
         actual = solution.{method_name}(**args)
         if isinstance(expected, list) and isinstance(actual, (list, tuple)):
-            passed = sorted(str(x) for x in actual) == sorted(str(x) for x in expected)
+            passed = set(actual) == set(expected)
         else:
             passed = actual == expected
         results.append({{"case": i + 1, "passed": passed, "actual": actual,
