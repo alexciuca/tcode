@@ -1,15 +1,27 @@
-#left {
+#left-scroll {
     width: 1fr;
     height: 1fr;
     border: solid $primary;
-    padding: 1 2;  /* more horizontal padding, easier to read */
-    overflow-y: auto;  /* scroll if content overflows */
+    overflow-y: auto;
+    border-title-color: $primary;
+    border-title-style: bold;
+    border-title-align: left;
+}
+
+#right-scroll {
+    width: 1fr;
+    height: 1fr;
+    border: solid $accent;
+    overflow-y: auto;
+    border-title-color: $accent;
+    border-title-style: bold;
+    border-title-align: left;
+}
+
+#left {
+    padding: 1 2;
 }
 
 #right {
-    width: 1fr;
-    height: 1fr;
-    border: solid $accent;  /* different color to distinguish panes */
     padding: 1 2;
-    overflow-y: auto;
 }

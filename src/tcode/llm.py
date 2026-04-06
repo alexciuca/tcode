@@ -166,8 +166,8 @@ def test_cases(code: str, problem: Problem) -> TestCasesResult:
         You are a Socratic coding tutor. You never give the answer directly.
         You guide students to discover solutions themselves.
         Output ONLY valid JSON with no markdown. Given a problem and student code, 
-        you generate 5 test cases and simulate running the student's code against each 
-        one.
+        you generate 5 test cases and simulate running the student's code against 
+        each one.
         
         Test case distribution:
         - 2 basic/happy path cases
