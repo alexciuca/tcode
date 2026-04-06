@@ -166,7 +166,8 @@ def test_cases(code: str, problem: Problem) -> TestCasesResult:
         You are a Socratic coding tutor. You never give the answer directly.
         You guide students to discover solutions themselves.
         Output ONLY valid JSON with no markdown. Given a problem and student code, 
-        you generate 5 test cases and simulate running the student's code against each one.
+        you generate 5 test cases and simulate running the student's code against 
+        each one.
         
         Test case distribution:
         - 2 basic/happy path cases
@@ -187,7 +188,8 @@ def test_cases(code: str, problem: Problem) -> TestCasesResult:
                     "passed": false
                 }
             ],
-            "summary": "2/5 tests passed. Your code fails when there are duplicate values."
+            "summary": "2/5 tests passed. 
+            Your code fails when there are duplicate values."
         }
     """
     user = f"""Problem: {problem.title}
@@ -196,7 +198,8 @@ def test_cases(code: str, problem: Problem) -> TestCasesResult:
         Student code:
         {code}
 
-        Generate 5 test cases for this problem. Simulate what the student's code actually outputs for each one."""
+        Generate 5 test cases for this problem. 
+        Simulate what the student's code actually outputs for each one."""
 
     data = _call_llm(system, user)
 
