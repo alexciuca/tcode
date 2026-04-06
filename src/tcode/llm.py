@@ -153,12 +153,14 @@ def explain_failure(code: str, problem: Problem, test_output: str) -> FailureRes
         return FailureResult(message=data["message"])
     except KeyError as e:
         raise InvalidModelResponseError(f"Missing key in response: {e}")
-    
+
+
 @dataclass(frozen=True)
 class TestCasesResult:
     results: list
     summary: str
-    
+
+
 def test_cases(code: str, problem: Problem) -> TestCasesResult:
     system = """
         You are a Socratic coding tutor. You never give the answer directly.
@@ -189,7 +191,7 @@ def test_cases(code: str, problem: Problem) -> TestCasesResult:
         }
     """
     user = f"""Problem: {problem.title}
-        Constraints: {', '.join(problem.constraints)}
+        Constraints: {", ".join(problem.constraints)}
 
         Student code:
         {code}
