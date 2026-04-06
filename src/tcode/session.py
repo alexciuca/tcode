@@ -46,13 +46,7 @@ class SessionApp(Screen):
         self._llm_loading = False
         self.hints_used = 0
         # HARDCODED! code_snapshot, replace when watchdog impletemented
-        self.code_snapshot = """class Solution:
-                def twoSum(self, nums, target):
-                    for i in range(len(nums)):
-                        for j in range(len(nums)):
-                            if nums[i] + nums[j] == target:
-                                return [i, j]
-            """
+        self.code_snapshot = ""
         self._startup_warning: str | None = None
         if config.problem_id is None:
             raise RuntimeError("No problem selected.")
@@ -126,9 +120,10 @@ class SessionApp(Screen):
         self.observer.schedule(handler, str(self.watch_path.parent), recursive=False)
         self.observer.start()
 
-        # impoleemnt ai
+    # impoleemnt ai
 
     def _on_file_saved(self) -> None:
+        self.code_snapshot = self.watch_path.read_text()
         self.app.call_from_thread(self._update_right, "File saved! Cehcking with AI...")
 
     def on_unmount(self) -> None:
