@@ -10,7 +10,7 @@ from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
 from tcode.config import SessionConfig
-from tcode.llm import get_hint
+from tcode.llm import check_complexity, get_hint
 from tcode.problems import load_problem_by_id
 
 
@@ -46,13 +46,7 @@ class SessionApp(Screen):
         self._llm_loading = False
         self.hints_used = 0
         # HARDCODED! code_snapshot, replace when watchdog impletemented
-        self.code_snapshot = """class Solution:
-                def twoSum(self, nums, target):
-                    for i in range(len(nums)):
-                        for j in range(len(nums)):
-                            if nums[i] + nums[j] == target:
-                                return [i, j]
-            """
+        self.code_snapshot = ""
         self._startup_warning: str | None = None
         if config.problem_id is None:
             raise RuntimeError("No problem selected.")
@@ -126,10 +120,29 @@ class SessionApp(Screen):
         self.observer.schedule(handler, str(self.watch_path.parent), recursive=False)
         self.observer.start()
 
-        # impoleemnt ai
+    # impoleemnt ai
 
     def _on_file_saved(self) -> None:
-        self.app.call_from_thread(self._update_right, "File saved! Cehcking with AI...")
+        self.code_snapshot = self.watch_path.read_text()
+        self.app.call_from_thread(
+            self._update_right,
+            "File saved! Checking code with AI for any major issues ...",
+        )
+        self.app.call_from_thread(self.run_worker, self._check_complexity, thread=True)
+
+    def _check_complexity(self) -> None:
+        try:
+            result = check_complexity(
+                code=self.code_snapshot, problem=self.active_problem
+            )
+            self.app.call_from_thread(
+                self._update_right,
+                f"AI Complexity Analysis:\n{'─' * 45}\n\n{result.complexity_estimate}",
+            )
+        except Exception as e:
+            self.app.call_from_thread(
+                self._update_right, f"Error checking complexity: {e}"
+            )
 
     def on_unmount(self) -> None:
         if hasattr(self, "observer"):
