@@ -41,7 +41,7 @@ for i, tc in enumerate(test_cases):
     expected = tc["expected"]
     try:
         actual = solution.{method_name}(**args)
-        if isinstance(expected, list) and isinstance(actual, list):
+        if isinstance(expected, list) and isinstance(actual, (list, tuple)):
             passed = sorted(str(x) for x in actual) == sorted(str(x) for x in expected)
         else:
             passed = actual == expected

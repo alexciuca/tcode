@@ -143,7 +143,11 @@ class SessionApp(Screen):
         self.query_one("#left-scroll").border_title = f" {p.title} · {p.difficulty} "
         self._refresh_coach_title()
         self._update_left()
-        self._update_right("Save your file to begin.")
+        if self.watch_path.exists():
+            self.code_snapshot = self.watch_path.read_text()
+            self._update_right("Ready. Press Enter to run tests or h for a hint.")
+        else:
+            self._update_right("Save your file to begin.")
         self._start_watching()
 
     def _refresh_coach_title(self) -> None:
