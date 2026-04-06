@@ -2,7 +2,7 @@
 
 .env
 .venv/
-
+solution.py
 # python
 __pycache__/
 *.pyc
