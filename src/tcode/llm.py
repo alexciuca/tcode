@@ -188,7 +188,7 @@ def test_cases(code: str, problem: Problem) -> TestCasesResult:
                     "passed": false
                 }
             ],
-            "summary": "2/5 tests passed. 
+            "summary": "2/5 tests passed.
             Your code fails when there are duplicate values."
         }
     """
@@ -198,8 +198,8 @@ def test_cases(code: str, problem: Problem) -> TestCasesResult:
         Student code:
         {code}
 
-        Generate 5 test cases for this problem. 
-        Simulate what the student's code actually outputs for each one."""
+        Generate 5 test cases for this problem. Simulate what the student's 
+        code actually outputs for each one."""
 
     data = _call_llm(system, user)
 
