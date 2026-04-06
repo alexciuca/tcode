@@ -142,7 +142,6 @@ def explain_failure(code: str, problem: Problem, test_output: str) -> FailureRes
         values. What happens to your loop when nums[i] equals nums[j]?"}
 
         Never output anything outside the JSON object. Never give the solution directly.
-        
     """
     user = f"Problem: {problem.title}\nConstraints: {
         ', '.join(problem.constraints)
@@ -152,5 +151,62 @@ def explain_failure(code: str, problem: Problem, test_output: str) -> FailureRes
 
     try:
         return FailureResult(message=data["message"])
+    except KeyError as e:
+        raise InvalidModelResponseError(f"Missing key in response: {e}")
+
+
+@dataclass(frozen=True)
+class TestCasesResult:
+    results: list
+    summary: str
+
+
+def test_cases(code: str, problem: Problem) -> TestCasesResult:
+    system = """
+        You are a Socratic coding tutor. You never give the answer directly.
+        You guide students to discover solutions themselves.
+        Output ONLY valid JSON with no markdown. Given a problem and student code, 
+        you generate 5 test cases and simulate running the student's code against 
+        each one.
+        
+        Test case distribution:
+        - 2 basic/happy path cases
+        - 2 edge cases (empty, single element, duplicates, negatives, etc.)
+        - 1 larger input to catch performance issues
+        
+        For each test case, simulate what the student's code would actually output
+        given its logic — do not assume it is correct.
+        
+        Output ONLY valid JSON with no markdown. No text outside the JSON object.
+        Output schema:
+        {
+            "results": [
+                {
+                    "input": "nums = [2,7,11,15], target = 9",
+                    "expected": "[0, 1]",
+                    "actual": "[0, 0]",
+                    "passed": false
+                }
+            ],
+            "summary": "2/5 tests passed. 
+            Your code fails when there are duplicate values."
+        }
+    """
+    user = f"""Problem: {problem.title}
+        Constraints: {", ".join(problem.constraints)}
+
+        Student code:
+        {code}
+
+        Generate 5 test cases for this problem. 
+        Simulate what the student's code actually outputs for each one."""
+
+    data = _call_llm(system, user)
+
+    try:
+        return TestCasesResult(
+            results=data["results"],
+            summary=data["summary"],
+        )
     except KeyError as e:
         raise InvalidModelResponseError(f"Missing key in response: {e}")
