@@ -10,7 +10,7 @@ from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
 from tcode.config import SessionConfig
-from tcode.llm import check_complexity, explain_failure, get_hint
+from tcode.llm import check_complexity get_hint
 from tcode.problems import load_problem_by_id
 
 
@@ -136,14 +136,14 @@ class SessionApp(Screen):
     #         result = explain_failure(
     #             code=self.code_snapshot,
     #             problem=self.active_problem,
-    #             test_output=self._test_output if hasattr(self, "_test_output") else "",
+    #             test_output=self._test_output if hasattr(self,"_test_output") else "",
     #         )
     #         self.app.call_from_thread(
     #             self._update_right,
     #             f"AI Code Analysis:\n{'─' * 45}\n\n{result.message}",
     #         )
     #     except Exception as e:
-    #         self.app.call_from_thread(self._update_right, f"Error analyzing code: {e}")
+    #         self.app.call_from_thread(self._update_right, f"Error analyzing code:{e}")
 
     def _check_complexity(self) -> None:
         try:
