@@ -45,7 +45,6 @@ class SessionApp(Screen):
         self._right_content = ""
         self._llm_loading = False
         self.hints_used = 0
-        # HARDCODED! code_snapshot, replace when watchdog impletemented
         self.code_snapshot = ""
         self._startup_warning: str | None = None
         if config.problem_id is None:
