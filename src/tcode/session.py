@@ -1,4 +1,3 @@
-import json
 import re
 import time
 from pathlib import Path
@@ -11,7 +10,7 @@ from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
 from tcode.config import SessionConfig
-from tcode.llm import check_complexity, explain_failure, generate_test_cases, get_hint
+from tcode.llm import check_complexity, generate_test_cases, get_hint
 from tcode.problems import load_problem_by_id
 from tcode.runner import format_results, run_tests
 
@@ -117,9 +116,9 @@ class SessionApp(Screen):
             self.app.call_from_thread(self._update_right, summary)
             # uncommment to see the test cases in the UI after running tests
             # self.app.call_from_thread(
-            #     self._update_right, 
+            #     self._update_right,
             #     f"Generated cases:\n{json.dumps(
-            #         self.active_problem.test_cases, 
+            #         self.active_problem.test_cases,
             #         indent=2)}"
             # )
         except Exception as e:
@@ -137,8 +136,12 @@ class SessionApp(Screen):
         self._update_left()
         if self.watch_path.exists():
             self.code_snapshot = self.watch_path.read_text()
-            self._update_right("Ready. Press Enter to run tests or h for a hint.\n\n" +
-                               "Your file is being watched, so every time you save, your code's time complexity will be analyzed to help you find the fastest solution.")
+            self._update_right(
+                "Ready. Press Enter to run tests or h for a hint.\n\n"
+                + """Your file is being watched, so every time you save, 
+                your code's time complexity will be analyzed to help you 
+                find the fastest solution."""
+            )
         else:
             self._update_right("Save your file to begin.")
         self._start_watching()
