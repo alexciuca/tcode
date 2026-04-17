@@ -115,13 +115,13 @@ class SessionApp(Screen):
             results = run_tests(self.code_snapshot, self.active_problem)
             summary = format_results(results)
             self.app.call_from_thread(self._update_right, summary)
-            # rest of your existing _execute_tests logic...
-            self.app.call_from_thread(
-                self._update_right, 
-                f"Generated cases:\n{json.dumps(
-                    self.active_problem.test_cases, 
-                    indent=2)}"
-            )
+            # uncommment to see the test cases in the UI after running tests
+            # self.app.call_from_thread(
+            #     self._update_right, 
+            #     f"Generated cases:\n{json.dumps(
+            #         self.active_problem.test_cases, 
+            #         indent=2)}"
+            # )
         except Exception as e:
             self.app.call_from_thread(self._update_right, f"Error: {e}")
         finally:
@@ -137,7 +137,8 @@ class SessionApp(Screen):
         self._update_left()
         if self.watch_path.exists():
             self.code_snapshot = self.watch_path.read_text()
-            self._update_right("Ready. Press Enter to run tests or h for a hint.")
+            self._update_right("Ready. Press Enter to run tests or h for a hint.\n\n" +
+                               "Your file is being watched, so every time you save, your code's time complexity will be analyzed to help you find the fastest solution.")
         else:
             self._update_right("Save your file to begin.")
         self._start_watching()

@@ -1,8 +1,15 @@
 import json
 import os
+import re
+import subprocess
+import sys
+import tempfile
+
 from dataclasses import dataclass
 
 from anthropic import Anthropic
+
+from pathlib import Path
 
 from tcode.problems import Problem
 
@@ -154,33 +161,79 @@ def explain_failure(code: str, problem: Problem, test_output: str) -> FailureRes
     except KeyError as e:
         raise InvalidModelResponseError(f"Missing key in response: {e}")
 
-def generate_test_cases(problem: Problem) -> list[dict]:
+def _generate_reference_solution(problem: Problem) -> str:
     system = """
-        You are a test case generator for coding problems.
-        Output ONLY valid JSON with no markdown. No text outside the JSON object.
-        Output schema:
-        {
-            "test_cases": [
-                {"args": {"nums": [2,7,11,15], "target": 9}, "expected": [0, 1]}
-            ]
-        }
-        Rules:
-        - Keep inputs small and simple (arrays of 4-6 elements max)
-        - Verify your expected output is correct by manually tracing through the problem
-        - Args must match the parameter names in the starter code exactly
-        Test case distribution:
-        - 2 basic/happy path cases
-        - 2 edge cases (duplicates, negatives, zeros)
-        - 1 case with no solution if the problem allows it, otherwise another edge case
+        You are an expert competitive programmer.
+        Write a correct Python Solution class for the given problem.
+        Output ONLY raw Python code, no markdown, no explanation, no backticks.
+        The class must be named Solution and match the starter code signature exactly.
     """
-    user = f"""Problem: {problem.title}
-        Constraints: {', '.join(problem.constraints)}
-        Starter code: {problem.starter_code}
+    user = f"Problem: {problem.title}\nDescription: {problem.description}\nStarter code: {problem.starter_code}"
+    client = _build_client()
+    response = client.messages.create(
+        model=DEFAULT_ANTHROPIC_MODEL,
+        max_tokens=1024,
+        system=system,
+        messages=[{"role": "user", "content": user}],
+    )
+    raw = response.content[0].text.strip()
 
-        Generate 5 test cases."""
+    match = re.search(r"```(?:python)?\n(.*?)```", raw, re.DOTALL)
+    if match:
+        return match.group(1).strip()
+    return raw
 
+
+def _generate_inputs(problem: Problem) -> list[dict]:
+    system = """
+        You are a test input generator for coding problems.
+        Output ONLY valid JSON with no markdown. No text outside the JSON object.
+        Output schema: {"inputs": [{"nums": [2,7,11,15], "target": 9}, ...]}
+        Rules:
+        - Args must match the parameter names in the starter code exactly
+        - Keep arrays small (4-6 elements max)
+        - Distribution: 2 basic cases, 2 edge cases (negatives, duplicates, zeros), 1 stress case
+        - Do NOT include expected outputs
+    """
+    user = f"Problem: {problem.title}\nConstraints: {', '.join(problem.constraints)}\nStarter code: {problem.starter_code}\nGenerate 5 input cases."
     data = _call_llm(system, user)
     try:
-        return data["test_cases"]
+        return data["inputs"]
     except KeyError as e:
         raise InvalidModelResponseError(f"Missing key in response: {e}")
+
+
+def _compute_expected(reference_code: str, inputs: list[dict], problem: Problem) -> list[dict]:
+    from tcode.runner import _extract_method_name  # reuse what you already have
+    method_name = _extract_method_name(problem.starter_code)
+    harness = (
+        "from typing import Dict, List, Optional, Set, Tuple\n"
+        + reference_code
+        + "\nimport json\n"
+        "inputs = " + json.dumps(inputs) + "\n"
+        "solution = Solution()\n"
+        "results = []\n"
+        "for args in inputs:\n"
+        f"    actual = solution.{method_name}(**args)\n"
+        '    results.append({"args": args, "expected": actual})\n'
+        "print(json.dumps(results))\n"
+    )
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".py", delete=False, encoding="utf-8") as f:
+        f.write(harness)
+        path = Path(f.name)
+    try:
+        result = subprocess.run(
+            [sys.executable, str(path)],
+            capture_output=True, text=True, timeout=5,
+        )
+        if result.returncode != 0:
+            raise InvalidModelResponseError(f"Reference solution failed:\n{result.stderr}")
+        return json.loads(result.stdout)
+    finally:
+        path.unlink(missing_ok=True)
+
+
+def generate_test_cases(problem: Problem) -> list[dict]:
+    inputs = _generate_inputs(problem)
+    reference_code = _generate_reference_solution(problem)
+    return _compute_expected(reference_code, inputs, problem)
