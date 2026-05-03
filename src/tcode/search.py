@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from textual.app import ComposeResult
 from textual.containers import Grid, Horizontal
 from textual.events import Click
@@ -5,8 +7,9 @@ from textual.screen import Screen
 from textual.widgets import Button, Input, Label, Select, Static
 
 from tcode.config import SessionConfig
-from tcode.problems import load_index
+from tcode.problems import load_index, load_problem_by_id
 from tcode.session import SessionApp
+from tcode.solution_file import write_starter_code_if_needed
 
 PAGE_SIZE = 20
 
@@ -19,7 +22,7 @@ DIFFICULTIES = [
 
 
 class SearchProblems(Screen):
-    CSS_PATH = "assets/search.tcss"
+    CSS_PATH = str(Path(__file__).with_name("assets") / "search.tcss")
 
     def __init__(self) -> None:
         super().__init__()
@@ -57,6 +60,8 @@ class SearchProblems(Screen):
         widget = event.widget
         if isinstance(widget, Static) and widget.has_class("card"):
             problem_id = widget.id.split("-")[1]
+            problem = load_problem_by_id(problem_id)
+            write_starter_code_if_needed(self.app.watch_path, problem.starter_code)
             self.app.push_screen(
                 SessionApp(
                     watch_path=self.app.watch_path,

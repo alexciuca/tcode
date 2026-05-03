@@ -14,6 +14,8 @@ from tcode.llm import check_complexity, get_hint
 from tcode.problems import load_problem_by_id
 from tcode.runner import format_results, run_tests
 
+PANE_IDS = ("#left-scroll", "#right-scroll")
+
 
 class _file_handler(FileSystemEventHandler):
     def __init__(self, file: Path, callback):
@@ -22,6 +24,8 @@ class _file_handler(FileSystemEventHandler):
         self.last_fired = 0
 
     def on_modified(self, event):
+        if getattr(event, "is_directory", False):
+            return
         if Path(event.src_path).resolve() == self.file:
             now = time.time()
             if now - self.last_fired < 0.5:
@@ -29,12 +33,18 @@ class _file_handler(FileSystemEventHandler):
             self.last_fired = now
             self.callback()
 
+    def on_created(self, event):
+        self.on_modified(event)
+
 
 class SessionApp(Screen):
-    CSS_PATH = "assets/tcode.tcss"
+    CSS_PATH = str(Path(__file__).with_name("assets") / "tcode.tcss")
 
     BINDINGS = [
         ("h", "hint", "Hint"),
+        ("c", "complexity", "Complexity"),
+        ("r", "reset_hints", "Reset Hints"),
+        ("tab", "toggle_focus", "Switch Pane"),
         ("enter", "run", "Run"),
         ("q", "quit", "Quit"),
     ]
@@ -45,10 +55,12 @@ class SessionApp(Screen):
         self.watch_path = watch_path
         self._right_content = ""
         self._llm_loading = False
+        self._complexity_running = False
         self._test_running = False
         self.hints_used = 0
         self._last_failing_cases: set[int] = set()
         self.code_snapshot = ""
+        self._focused_pane = 1
         self._startup_warning: str | None = None
         if config.problem_id is None:
             raise RuntimeError("No problem selected.")
@@ -121,18 +133,38 @@ class SessionApp(Screen):
         finally:
             self._test_running = False
 
+    def action_complexity(self) -> None:
+        if self._complexity_running:
+            return
+        self._refresh_code_snapshot()
+        self._complexity_running = True
+        self._update_right("Checking complexity...")
+        self.run_worker(self._check_complexity, thread=True)
+
+    def action_reset_hints(self) -> None:
+        self.hints_used = 0
+        self._refresh_coach_title()
+        self._update_right("Hint history reset. You have 4 hints available.")
+
+    def action_toggle_focus(self) -> None:
+        self._focused_pane = 1 - self._focused_pane
+        self.query_one(PANE_IDS[self._focused_pane]).focus()
+
     def action_quit(self) -> None:
         self.app.pop_screen()
 
     def on_mount(self) -> None:
         p = self.active_problem
+        for pane_id in PANE_IDS:
+            self.query_one(pane_id).can_focus = True
         self.query_one("#left-scroll").border_title = f" {p.title} · {p.difficulty} "
         self._refresh_coach_title()
         self._update_left()
+        self._refresh_code_snapshot()
         if self.watch_path.exists():
-            self.code_snapshot = self.watch_path.read_text()
             self._update_right(
-                "Ready. Press Enter to run tests or h for a hint.\n\n"
+                "Ready. Press Enter to run tests, c for complexity, "
+                "or h for a hint.\n\n"
                 + """Your file is being watched, so every time you save, 
                 your code's time complexity will be analyzed to help you 
                 find the fastest solution."""
@@ -151,17 +183,28 @@ class SessionApp(Screen):
 
     # setup watchdog file watcher
     def _start_watching(self) -> None:
+        if not self.watch_path.parent.exists():
+            self._update_right(f"Cannot watch missing folder: {self.watch_path.parent}")
+            return
         handler = _file_handler(self.watch_path, self._on_file_saved)
         self.observer = Observer()
         self.observer.schedule(handler, str(self.watch_path.parent), recursive=False)
         self.observer.start()
 
     def _on_file_saved(self) -> None:
-        self.code_snapshot = self.watch_path.read_text()
+        self._refresh_code_snapshot()
         self.app.call_from_thread(
             self._update_right, "File saved! Checking complexity..."
         )
         self.app.call_from_thread(self.run_worker, self._check_complexity, thread=True)
+
+    def _refresh_code_snapshot(self) -> None:
+        try:
+            self.code_snapshot = self.watch_path.read_text(encoding="utf-8")
+        except FileNotFoundError:
+            self.code_snapshot = ""
+        except OSError:
+            self.code_snapshot = ""
 
     def _check_complexity(self) -> None:
         try:
@@ -179,6 +222,8 @@ class SessionApp(Screen):
             self.app.call_from_thread(
                 self._update_right, f"Error checking complexity: {e}"
             )
+        finally:
+            self._complexity_running = False
 
     def on_unmount(self) -> None:
         if hasattr(self, "observer"):
