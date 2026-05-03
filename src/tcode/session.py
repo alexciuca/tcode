@@ -77,6 +77,11 @@ class SessionApp(Screen):
             ScrollableContainer(Static("", id="right"), id="right-scroll"),
         )
         yield Footer()
+        yield Button("Back", id="back-button")
+
+    def on_button_pressed(self, event: Button.Pressed) -> None:
+        if event.button.id == "back-button":
+            self.app.pop_screen()
 
     def action_hint(self) -> None:
         if self._llm_loading:
