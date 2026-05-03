@@ -29,5 +29,58 @@
     "Try all the numbers in the range [1, mn] and check the largest number which divides both of them."
   ],
   "starter_code": "class Solution:\n    def findGCD(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          5,
+          6,
+          9
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          12,
+          8,
+          4
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          17,
+          19,
+          23
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          50,
+          25,
+          10,
+          5
+        ]
+      },
+      "expected": 5
+    }
+  ]
 }

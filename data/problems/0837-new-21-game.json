@@ -27,5 +27,46 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def new21Game(self, n: int, k: int, maxPts: int) -> float:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 10,
+        "k": 1,
+        "maxPts": 10
+      },
+      "expected": 1.0
+    },
+    {
+      "args": {
+        "n": 21,
+        "k": 17,
+        "maxPts": 10
+      },
+      "expected": 0.7327777870686082
+    },
+    {
+      "args": {
+        "n": 0,
+        "k": 0,
+        "maxPts": 1
+      },
+      "expected": 1.0
+    },
+    {
+      "args": {
+        "n": 20,
+        "k": 0,
+        "maxPts": 10
+      },
+      "expected": 1.0
+    },
+    {
+      "args": {
+        "n": 10000,
+        "k": 10000,
+        "maxPts": 10000
+      },
+      "expected": 0.0002717874139411285
+    }
+  ]
 }

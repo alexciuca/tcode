@@ -25,5 +25,36 @@
     "Assign digits to num1 and num2 alternatively."
   ],
   "starter_code": "class Solution:\n    def splitNum(self, num: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": 4325
+      },
+      "expected": 59
+    },
+    {
+      "args": {
+        "num": 10
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "num": 123456789
+      },
+      "expected": 16047
+    },
+    {
+      "args": {
+        "num": 1000000000
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "num": 9876543210
+      },
+      "expected": 16047
+    }
+  ]
 }

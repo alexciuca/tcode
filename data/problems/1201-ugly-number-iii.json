@@ -31,5 +31,51 @@
     "Find all ugly numbers in [1, LCM(a, b, c)] (LCM is Least Common Multiple). Use inclusion-exclusion principle to expand the result."
   ],
   "starter_code": "class Solution:\n    def nthUglyNumber(self, n: int, a: int, b: int, c: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 10,
+        "a": 2,
+        "b": 3,
+        "c": 5
+      },
+      "expected": 14
+    },
+    {
+      "args": {
+        "n": 1,
+        "a": 2,
+        "b": 3,
+        "c": 5
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 1000000000,
+        "a": 2,
+        "b": 3,
+        "c": 5
+      },
+      "expected": 1363636364
+    },
+    {
+      "args": {
+        "n": 15,
+        "a": 1,
+        "b": 1,
+        "c": 1
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "n": 100,
+        "a": 999999937,
+        "b": 999999929,
+        "c": 999999893
+      },
+      "expected": 2000000000
+    }
+  ]
 }

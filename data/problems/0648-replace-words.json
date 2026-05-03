@@ -31,5 +31,67 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def replaceWords(self, dictionary: List[str], sentence: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "dictionary": [
+          "cat",
+          "bat",
+          "rat"
+        ],
+        "sentence": "the cattle was rattled by the bat"
+      },
+      "expected": "the cat was rat by the bat"
+    },
+    {
+      "args": {
+        "dictionary": [
+          "a",
+          "b",
+          "c"
+        ],
+        "sentence": "aadsfasf absbs bbab cadsfafs"
+      },
+      "expected": "a a b c"
+    },
+    {
+      "args": {
+        "dictionary": [
+          "ab",
+          "ba",
+          "aaab",
+          "abab",
+          "baa"
+        ],
+        "sentence": "a aa aab aabab abab aba ababb baa baab b"
+      },
+      "expected": "a aa aab aabab ab ab ab ba ba b"
+    },
+    {
+      "args": {
+        "dictionary": [
+          "z"
+        ],
+        "sentence": "z zz zzz zzzz zzzzz"
+      },
+      "expected": "z z z z z"
+    },
+    {
+      "args": {
+        "dictionary": [
+          "abc",
+          "def",
+          "ghi",
+          "jkl",
+          "mno",
+          "pqr",
+          "stu",
+          "vwx",
+          "yz"
+        ],
+        "sentence": "abcdefghijklmnopqrstuvwxyz this is a long sentence with many words that need to be replaced"
+      },
+      "expected": "abc this is a long sentence with many words that need to be replaced"
+    }
+  ]
 }

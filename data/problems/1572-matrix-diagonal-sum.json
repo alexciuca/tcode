@@ -28,5 +28,117 @@
     "There will be overlap of elements in the primary and secondary diagonals if and only if the length of the matrix is odd, which is at the center."
   ],
   "starter_code": "class Solution:\n    def diagonalSum(self, mat: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "mat": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6
+          ],
+          [
+            7,
+            8,
+            9
+          ]
+        ]
+      },
+      "expected": 25
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            5
+          ]
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          [
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          [
+            21,
+            22,
+            23,
+            24,
+            25
+          ]
+        ]
+      },
+      "expected": 117
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            100,
+            50,
+            25
+          ],
+          [
+            10,
+            100,
+            5
+          ],
+          [
+            1,
+            2,
+            100
+          ]
+        ]
+      },
+      "expected": 326
+    }
+  ]
 }

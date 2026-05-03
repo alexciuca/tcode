@@ -23,5 +23,123 @@
     "Use brute force"
   ],
   "starter_code": "class Solution:\n    def earliestFinishTime(self, landStartTime: List[int], landDuration: List[int], waterStartTime: List[int], waterDuration: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "landStartTime": [
+          1,
+          5
+        ],
+        "landDuration": [
+          2,
+          3
+        ],
+        "waterStartTime": [
+          2,
+          8
+        ],
+        "waterDuration": [
+          1,
+          2
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "landStartTime": [
+          10
+        ],
+        "landDuration": [
+          5
+        ],
+        "waterStartTime": [
+          15
+        ],
+        "waterDuration": [
+          3
+        ]
+      },
+      "expected": 18
+    },
+    {
+      "args": {
+        "landStartTime": [
+          1,
+          1,
+          1
+        ],
+        "landDuration": [
+          1,
+          1,
+          1
+        ],
+        "waterStartTime": [
+          1,
+          1
+        ],
+        "waterDuration": [
+          1,
+          1
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "landStartTime": [
+          100,
+          50,
+          1
+        ],
+        "landDuration": [
+          1000,
+          500,
+          10
+        ],
+        "waterStartTime": [
+          1,
+          999
+        ],
+        "waterDuration": [
+          1000,
+          1
+        ]
+      },
+      "expected": 1000
+    },
+    {
+      "args": {
+        "landStartTime": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "landDuration": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "waterStartTime": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "waterDuration": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "expected": 201
+    }
+  ]
 }

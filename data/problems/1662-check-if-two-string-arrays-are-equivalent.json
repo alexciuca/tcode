@@ -30,5 +30,69 @@
     "Both arrays represent the same string if and only if the generated strings are the same."
   ],
   "starter_code": "class Solution:\n    def arrayStringsAreEqual(self, word1: List[str], word2: List[str]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word1": [
+          "ab",
+          "c"
+        ],
+        "word2": [
+          "a",
+          "bc"
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "word1": [
+          "a",
+          "bc"
+        ],
+        "word2": [
+          "ab",
+          "c"
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "word1": [
+          "a"
+        ],
+        "word2": [
+          "b"
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "word1": [
+          "abc"
+        ],
+        "word2": [
+          "abc"
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "word1": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "word2": [
+          "abcde"
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

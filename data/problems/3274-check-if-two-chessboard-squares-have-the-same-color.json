@@ -25,5 +25,41 @@
     "The color of the chessboard is black the sum of row coordinates and column coordinates is even. Otherwise, it's white."
   ],
   "starter_code": "class Solution:\n    def checkTwoChessboards(self, coordinate1: str, coordinate2: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "coordinate1": "a1",
+        "coordinate2": "c3"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "coordinate1": "h8",
+        "coordinate2": "a1"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "coordinate1": "a1",
+        "coordinate2": "a2"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "coordinate1": "h1",
+        "coordinate2": "a8"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "coordinate1": "d4",
+        "coordinate2": "d4"
+      },
+      "expected": true
+    }
+  ]
 }

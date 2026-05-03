@@ -34,5 +34,88 @@
     "Define f(i, j) as the number of increasing paths starting from cell (i, j). Try to find how f(i, j) is related to each of f(i, j+1), f(i, j-1), f(i+1, j) and f(i-1, j)."
   ],
   "starter_code": "class Solution:\n    def countPaths(self, grid: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            100000,
+            99999,
+            99998
+          ],
+          [
+            50000,
+            50001,
+            50002
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ]
+      },
+      "expected": 67
+    }
+  ]
 }

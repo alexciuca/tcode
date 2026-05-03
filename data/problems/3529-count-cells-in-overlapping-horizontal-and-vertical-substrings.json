@@ -36,5 +36,118 @@
     "Track the positions of each match and count only the cells that appear in both horizontal and vertical matches."
   ],
   "starter_code": "class Solution:\n    def countCells(self, grid: List[List[str]], pattern: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          [
+            "a",
+            "b",
+            "c"
+          ],
+          [
+            "d",
+            "e",
+            "f"
+          ],
+          [
+            "g",
+            "h",
+            "i"
+          ]
+        ],
+        "pattern": "abc"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            "x",
+            "y",
+            "z"
+          ],
+          [
+            "x",
+            "y",
+            "z"
+          ],
+          [
+            "x",
+            "y",
+            "z"
+          ]
+        ],
+        "pattern": "xyz"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            "a"
+          ]
+        ],
+        "pattern": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            "a",
+            "a",
+            "a"
+          ],
+          [
+            "a",
+            "a",
+            "a"
+          ],
+          [
+            "a",
+            "a",
+            "a"
+          ]
+        ],
+        "pattern": "aaa"
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            "p",
+            "q",
+            "r",
+            "s"
+          ],
+          [
+            "t",
+            "u",
+            "v",
+            "w"
+          ],
+          [
+            "x",
+            "y",
+            "z",
+            "a"
+          ],
+          [
+            "b",
+            "c",
+            "d",
+            "e"
+          ]
+        ],
+        "pattern": "ptvx"
+      },
+      "expected": 0
+    }
+  ]
 }

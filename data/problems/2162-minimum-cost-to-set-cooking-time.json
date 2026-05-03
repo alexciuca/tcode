@@ -28,5 +28,51 @@
     "Be careful in some cases when ss is not in the valid range [0, 99]."
   ],
   "starter_code": "class Solution:\n    def minCostSetTime(self, startAt: int, moveCost: int, pushCost: int, targetSeconds: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "startAt": 0,
+        "moveCost": 1,
+        "pushCost": 1,
+        "targetSeconds": 600
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "startAt": 5,
+        "moveCost": 2,
+        "pushCost": 3,
+        "targetSeconds": 125
+      },
+      "expected": 20
+    },
+    {
+      "args": {
+        "startAt": 0,
+        "moveCost": 100000,
+        "pushCost": 1,
+        "targetSeconds": 1
+      },
+      "expected": 100004
+    },
+    {
+      "args": {
+        "startAt": 9,
+        "moveCost": 1,
+        "pushCost": 100000,
+        "targetSeconds": 6039
+      },
+      "expected": Infinity
+    },
+    {
+      "args": {
+        "startAt": 3,
+        "moveCost": 50000,
+        "pushCost": 50000,
+        "targetSeconds": 3661
+      },
+      "expected": 400000
+    }
+  ]
 }

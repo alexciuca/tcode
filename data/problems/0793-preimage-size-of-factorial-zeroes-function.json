@@ -24,5 +24,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def preimageSizeFZF(self, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "k": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "k": 5
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "k": 10
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "k": 1000000000
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "k": 24
+      },
+      "expected": 5
+    }
+  ]
 }

@@ -25,5 +25,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isPowerOfTwo(self, n: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 1
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 16
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 3
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "n": 0
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "n": 1073741824
+      },
+      "expected": true
+    }
+  ]
 }

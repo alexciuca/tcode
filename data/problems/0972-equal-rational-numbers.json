@@ -28,5 +28,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isRationalEqual(self, s: str, t: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "0.(7)",
+        "t": "0.7777"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "1",
+        "t": "1.00"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "2.1(06)",
+        "t": "2.1060606"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "0.9(9)",
+        "t": "1"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "0.1(2)",
+        "t": "0.1222"
+      },
+      "expected": false
+    }
+  ]
 }

@@ -29,5 +29,36 @@
     "Is there a quick way of calculating the number of possibilities for the previous number if we know that it must have less than or equal to d digits? Try to do some pre-processing."
   ],
   "starter_code": "class Solution:\n    def numberOfCombinations(self, num: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": "165462"
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "num": "238182"
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "num": "0"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "num": "00011"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "num": "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+      },
+      "expected": 23843418
+    }
+  ]
 }

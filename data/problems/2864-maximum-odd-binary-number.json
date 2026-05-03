@@ -26,5 +26,36 @@
     "The binary representation of an odd number contains <code>'1'</code> in the least significant place."
   ],
   "starter_code": "class Solution:\n    def maximumOddBinaryNumber(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "010"
+      },
+      "expected": "001"
+    },
+    {
+      "args": {
+        "s": "0101"
+      },
+      "expected": "1001"
+    },
+    {
+      "args": {
+        "s": "1"
+      },
+      "expected": "1"
+    },
+    {
+      "args": {
+        "s": "0000001"
+      },
+      "expected": "0000001"
+    },
+    {
+      "args": {
+        "s": "11111111110"
+      },
+      "expected": "11111111101"
+    }
+  ]
 }

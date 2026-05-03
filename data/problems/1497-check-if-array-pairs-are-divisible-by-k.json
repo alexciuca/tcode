@@ -33,5 +33,70 @@
     "Take care of the case when i == k - i and when i == 0"
   ],
   "starter_code": "class Solution:\n    def canArrange(self, arr: List[int], k: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "k": 5
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          10,
+          10,
+          10,
+          10
+        ],
+        "k": 5
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          -1,
+          1,
+          -2,
+          2
+        ],
+        "k": 3
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          0,
+          0
+        ],
+        "k": 1
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          999999999,
+          -999999999,
+          1,
+          -1,
+          2,
+          -2,
+          3,
+          -3,
+          4,
+          -4
+        ],
+        "k": 100000
+      },
+      "expected": true
+    }
+  ]
 }

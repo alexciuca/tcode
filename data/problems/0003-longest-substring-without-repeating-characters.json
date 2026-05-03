@@ -28,5 +28,42 @@
     "Generate all possible substrings & check for each substring if it's valid and keep updating maxLen accordingly."
   ],
   "starter_code": "class Solution:\n    def lengthOfLongestSubstring(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abcabcbb"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "bbbbb"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "pwwkew"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": ""
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abc"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "abcad"
+      },
+      "expected": 4
+    }
+  ]
 }

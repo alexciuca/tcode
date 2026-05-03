@@ -29,5 +29,62 @@
     "Once you fix the position of the shortest person, what can you say about the position of the second shortest person?"
   ],
   "starter_code": "class Solution:\n    def reconstructQueue(self, people: List[List[int]]) -> List[List[int]]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "people": [
+          [
+            7,
+            0
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            5,
+            2
+          ]
+        ]
+      },
+      "expected": [
+        [
+          5,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          7,
+          1
+        ]
+      ]
+    }
+  ]
 }

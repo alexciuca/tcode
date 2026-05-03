@@ -28,5 +28,36 @@
     "For each character in the given string, greedily match it to a possible \"croak\"."
   ],
   "starter_code": "class Solution:\n    def minNumberOfFrogs(self, croakOfFrogs: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "croakOfFrogs": "croakcroak"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "croakOfFrogs": "croacroak"
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "croakOfFrogs": "ccroak"
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "croakOfFrogs": "croak"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "croakOfFrogs": "ccrrooak"
+      },
+      "expected": -1
+    }
+  ]
 }

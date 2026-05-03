@@ -30,5 +30,36 @@
     "Checking if a clock time is valid can be done with Regex."
   ],
   "starter_code": "class Solution:\n    def countTime(self, time: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "time": "?5:00"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "time": "12:?5"
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "time": "?3:5?"
+      },
+      "expected": 30
+    },
+    {
+      "args": {
+        "time": "??:??"
+      },
+      "expected": 1440
+    },
+    {
+      "args": {
+        "time": "2?:5?"
+      },
+      "expected": 40
+    }
+  ]
 }

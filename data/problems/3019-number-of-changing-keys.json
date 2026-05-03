@@ -23,5 +23,36 @@
     "Change all the characters to lowercase and then return the number of indices where the character does not match with the last index character."
   ],
   "starter_code": "class Solution:\n    def countKeyChanges(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aAbBcC"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "AaAaAa"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      },
+      "expected": 51
+    },
+    {
+      "args": {
+        "s": "aabbccddee"
+      },
+      "expected": 4
+    }
+  ]
 }

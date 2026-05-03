@@ -40,5 +40,60 @@
     "Use a Trie to check prefix matching."
   ],
   "starter_code": "class Solution:\n    def minValidStrings(self, words: List[str], target: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "abc",
+          "def",
+          "ghi"
+        ],
+        "target": "abcdefghi"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "words": [
+          "a",
+          "b",
+          "c"
+        ],
+        "target": "abc"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "words": [
+          "xyz"
+        ],
+        "target": "xyz"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words": [
+          "ab",
+          "ba"
+        ],
+        "target": "ababa"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "words": [
+          "abcde",
+          "bcdef",
+          "cdefg",
+          "defgh",
+          "efghi"
+        ],
+        "target": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": -1
+    }
+  ]
 }

@@ -25,5 +25,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def repeatedSubstringPattern(self, s: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abab"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "aba"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "abcabcabcabc"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "abcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdef"
+      },
+      "expected": true
+    }
+  ]
 }

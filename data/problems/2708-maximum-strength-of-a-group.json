@@ -31,5 +31,65 @@
     "Use negative integers only in pairs such that their product becomes positive."
   ],
   "starter_code": "class Solution:\n    def maxStrength(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          3,
+          2,
+          7
+        ]
+      },
+      "expected": 42
+    },
+    {
+      "args": {
+        "nums": [
+          9,
+          2,
+          -7,
+          8
+        ]
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "nums": [
+          -2,
+          -3,
+          -4
+        ]
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "nums": [
+          0
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          -9,
+          -8,
+          -7,
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": 6
+    }
+  ]
 }

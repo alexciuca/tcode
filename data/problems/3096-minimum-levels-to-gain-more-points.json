@@ -28,5 +28,112 @@
     "We need to find the shortest non-empty prefix of the new possible array such that the sum of elements in it is strictly larger than the remaining part."
   ],
   "starter_code": "class Solution:\n    def minimumLevels(self, possible: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "possible": [
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "possible": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "possible": [
+          1,
+          1
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "possible": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "possible": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

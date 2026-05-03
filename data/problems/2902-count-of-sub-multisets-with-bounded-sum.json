@@ -34,5 +34,68 @@
     "Use coin change dp to transition between states."
   ],
   "starter_code": "class Solution:\n    def countSubMultisets(self, nums: List[int], l: int, r: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3
+        ],
+        "l": 2,
+        "r": 4
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5
+        ],
+        "l": 5,
+        "r": 15
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          0
+        ],
+        "l": 0,
+        "r": 0
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "l": 0,
+        "r": 3
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "l": 7,
+        "r": 15
+      },
+      "expected": 40
+    }
+  ]
 }

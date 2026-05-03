@@ -24,5 +24,56 @@
     "Iterate from right to left and find pair with the minimum distance between marked numbers."
   ],
   "starter_code": "class Solution:\n    def closestPrimes(self, left: int, right: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "left": 10,
+        "right": 19
+      },
+      "expected": [
+        11,
+        13
+      ]
+    },
+    {
+      "args": {
+        "left": 1,
+        "right": 8
+      },
+      "expected": [
+        2,
+        3
+      ]
+    },
+    {
+      "args": {
+        "left": 2,
+        "right": 2
+      },
+      "expected": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "left": 1,
+        "right": 1
+      },
+      "expected": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "left": 999900,
+        "right": 1000000
+      },
+      "expected": [
+        999959,
+        999961
+      ]
+    }
+  ]
 }

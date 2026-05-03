@@ -34,5 +34,72 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "catsandcatsdog",
+        "wordDict": [
+          "cat",
+          "cats",
+          "and",
+          "sand",
+          "dog"
+        ]
+      },
+      "expected": [
+        "cat sand cats dog",
+        "cats and cats dog"
+      ]
+    },
+    {
+      "args": {
+        "s": "pineapplepenapple",
+        "wordDict": [
+          "apple",
+          "pen",
+          "applepen",
+          "pine",
+          "pineapple"
+        ]
+      },
+      "expected": [
+        "pine apple pen apple",
+        "pine applepen apple",
+        "pineapple pen apple"
+      ]
+    },
+    {
+      "args": {
+        "s": "a",
+        "wordDict": [
+          "a"
+        ]
+      },
+      "expected": [
+        "a"
+      ]
+    },
+    {
+      "args": {
+        "s": "ab",
+        "wordDict": [
+          "a"
+        ]
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "s": "aaaaaaaaaaaaaaaaaab",
+        "wordDict": [
+          "a",
+          "aa",
+          "aaa",
+          "aaaa",
+          "aaaaa"
+        ]
+      },
+      "expected": []
+    }
+  ]
 }

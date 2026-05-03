@@ -25,5 +25,41 @@
     "Apply a brute-force approach by checking each possible number."
   ],
   "starter_code": "class Solution:\n    def smallestNumber(self, n: int, t: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 10,
+        "t": 2
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "n": 1,
+        "t": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 5,
+        "t": 7
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "n": 100,
+        "t": 10
+      },
+      "expected": 100
+    },
+    {
+      "args": {
+        "n": 15,
+        "t": 3
+      },
+      "expected": 16
+    }
+  ]
 }

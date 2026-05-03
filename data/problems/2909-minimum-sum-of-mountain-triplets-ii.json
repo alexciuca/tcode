@@ -27,5 +27,73 @@
     "To find <code>i</code> and <code>k</code>, preprocess the prefix minimum array <code>prefix_min[i] = min(nums[0], nums[1], ..., nums[i])</code>, and the suffix minimum array <code>suffix_min[i] = min(nums[i], nums[i + 1], ..., nums[i - 1])</code>."
   ],
   "starter_code": "class Solution:\n    def minimumSum(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          8,
+          6,
+          1,
+          5,
+          3
+        ]
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          4,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          100000000,
+          1,
+          100000000,
+          1,
+          100000000
+        ]
+      },
+      "expected": 100000002
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          5,
+          3,
+          7,
+          2,
+          4,
+          6,
+          8,
+          9,
+          10,
+          15,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": 4
+    }
+  ]
 }

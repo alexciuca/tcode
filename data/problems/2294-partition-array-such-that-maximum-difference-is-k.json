@@ -31,5 +31,70 @@
     "Sort the array."
   ],
   "starter_code": "class Solution:\n    def partitionArray(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          3,
+          4,
+          6,
+          7
+        ],
+        "k": 6
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          5,
+          7,
+          9,
+          10,
+          15
+        ],
+        "k": 3
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ],
+        "k": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          10000,
+          25000,
+          50000,
+          75000,
+          99999,
+          100000
+        ],
+        "k": 100000
+      },
+      "expected": 1
+    }
+  ]
 }

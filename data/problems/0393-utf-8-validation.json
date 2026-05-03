@@ -29,5 +29,73 @@
     "Similarly, if it is not 2-bytes data, try 3-bytes then 4-bytes. If you read four integers and it still does not match any pattern, return false."
   ],
   "starter_code": "class Solution:\n    def validUtf8(self, data: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "data": [
+          197,
+          130,
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "data": [
+          235,
+          140,
+          4
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "data": [
+          240,
+          163,
+          145,
+          132
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "data": [
+          248,
+          130,
+          130,
+          130
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "data": [
+          65,
+          66,
+          67,
+          0,
+          240,
+          163,
+          145,
+          132,
+          1,
+          2,
+          3,
+          200,
+          201,
+          202,
+          127,
+          128,
+          255,
+          254
+        ]
+      },
+      "expected": false
+    }
+  ]
 }

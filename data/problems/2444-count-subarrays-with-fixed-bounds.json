@@ -28,5 +28,90 @@
     "Divide the array into multiple subarrays such that each number in each subarray is between minK and maxK inclusive, solve the previous problem for each subarray, and sum all the answers."
   ],
   "starter_code": "class Solution:\n    def countSubarrays(self, nums: List[int], minK: int, maxK: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          3,
+          5,
+          2,
+          7,
+          5
+        ],
+        "minK": 1,
+        "maxK": 5
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          1,
+          1,
+          1,
+          3
+        ],
+        "minK": 1,
+        "maxK": 3
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1000000,
+          1,
+          2,
+          3
+        ],
+        "minK": 1,
+        "maxK": 3
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "minK": 5,
+        "maxK": 5
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "minK": 3,
+        "maxK": 7
+      },
+      "expected": 2
+    }
+  ]
 }

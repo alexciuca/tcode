@@ -26,5 +26,36 @@
     "Use Longest Prefix Suffix (KMP-table) or String Hashing."
   ],
   "starter_code": "class Solution:\n    def longestPrefix(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "level"
+      },
+      "expected": "l"
+    },
+    {
+      "args": {
+        "s": "ababab"
+      },
+      "expected": "abab"
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "abcdefg"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ]
 }

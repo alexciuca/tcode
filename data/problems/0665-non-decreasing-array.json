@@ -22,5 +22,64 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def checkPossibility(self, nums: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          2,
+          3
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          3,
+          4,
+          4,
+          3
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          -100,
+          -50,
+          0,
+          50,
+          100
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

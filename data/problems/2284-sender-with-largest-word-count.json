@@ -33,5 +33,81 @@
     "Use a hash map to count the total number of words from each sender."
   ],
   "starter_code": "class Solution:\n    def largestWordCount(self, messages: List[str], senders: List[str]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "messages": [
+          "Hello world",
+          "Hi there friend"
+        ],
+        "senders": [
+          "Alice",
+          "Bob"
+        ]
+      },
+      "expected": "Bob"
+    },
+    {
+      "args": {
+        "messages": [
+          "a b c d e f g h i j"
+        ],
+        "senders": [
+          "Charlie"
+        ]
+      },
+      "expected": "Charlie"
+    },
+    {
+      "args": {
+        "messages": [
+          "one",
+          "two three",
+          "four five six",
+          "seven eight nine ten"
+        ],
+        "senders": [
+          "Alice",
+          "Bob",
+          "Charlie",
+          "Diana"
+        ]
+      },
+      "expected": "Diana"
+    },
+    {
+      "args": {
+        "messages": [
+          "word",
+          "word word",
+          "word word word word word word word word word word"
+        ],
+        "senders": [
+          "Alice",
+          "Alice",
+          "Bob"
+        ]
+      },
+      "expected": "Bob"
+    },
+    {
+      "args": {
+        "messages": [
+          "The quick brown fox jumps over the lazy dog",
+          "a",
+          "hello world test case scenario example",
+          "single",
+          "multiple words here in this message for testing purposes"
+        ],
+        "senders": [
+          "Alice",
+          "Bob",
+          "Charlie",
+          "Diana",
+          "Eve"
+        ]
+      },
+      "expected": "Eve"
+    }
+  ]
 }

@@ -25,5 +25,20 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def longestSubstring(self, s: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aaabb",
+        "k": 3
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "ababbc",
+        "k": 2
+      },
+      "expected": 5
+    }
+  ]
 }

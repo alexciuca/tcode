@@ -27,5 +27,129 @@
     "Compare each interval to all others and check if it is covered by any interval."
   ],
   "starter_code": "class Solution:\n    def removeCoveredIntervals(self, intervals: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "intervals": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "intervals": [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "intervals": [
+          [
+            1,
+            10
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "intervals": [
+          [
+            1,
+            100
+          ],
+          [
+            11,
+            20
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            21,
+            30
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "intervals": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            100000
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      "expected": 5
+    }
+  ]
 }

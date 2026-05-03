@@ -28,5 +28,68 @@
     "Maintain the number of consecutive zeros behind the current element, count the number of zero-filled subarrays that end on each index, sum it up to get the answer."
   ],
   "starter_code": "class Solution:\n    def zeroFilledSubarray(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          3,
+          0,
+          0,
+          2
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          0
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 55
+    }
+  ]
 }

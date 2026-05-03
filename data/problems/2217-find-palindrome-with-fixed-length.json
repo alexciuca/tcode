@@ -26,5 +26,81 @@
     "Since a palindrome reads the same forwards and backwards, consider how you can efficiently find the first half (ceil(intLength/2) digits) of the palindrome."
   ],
   "starter_code": "class Solution:\n    def kthPalindrome(self, queries: List[int], intLength: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "queries": [
+          1,
+          2,
+          3
+        ],
+        "intLength": 3
+      },
+      "expected": [
+        101,
+        111,
+        121
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          2,
+          4,
+          8
+        ],
+        "intLength": 4
+      },
+      "expected": [
+        1111,
+        1331,
+        1771
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          1
+        ],
+        "intLength": 1
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          1000000
+        ],
+        "intLength": 5
+      },
+      "expected": [
+        -1
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          100,
+          1000
+        ],
+        "intLength": 7
+      },
+      "expected": [
+        1000001,
+        1001001,
+        1002001,
+        1003001,
+        1004001,
+        1099901,
+        1999991
+      ]
+    }
+  ]
 }

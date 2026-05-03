@@ -29,5 +29,69 @@
     "Select the remaining pizzas for the even-numbered days."
   ],
   "starter_code": "class Solution:\n    def maxWeight(self, pizzas: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "pizzas": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "pizzas": [
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "expected": 40
+    },
+    {
+      "args": {
+        "pizzas": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "pizzas": [
+          100000,
+          100000,
+          100000,
+          100000
+        ]
+      },
+      "expected": 100000
+    },
+    {
+      "args": {
+        "pizzas": [
+          2,
+          3,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          14,
+          15,
+          19,
+          22
+        ]
+      },
+      "expected": 56
+    }
+  ]
 }

@@ -29,5 +29,46 @@
     "Recursively, solve the small sub-problems first. Optimize your answer by stopping the search if you exceeded k changes."
   ],
   "starter_code": "class Solution:\n    def numOfArrays(self, n: int, m: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 1,
+        "m": 1,
+        "k": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 3,
+        "m": 2,
+        "k": 1
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "n": 2,
+        "m": 3,
+        "k": 2
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "n": 1,
+        "m": 100,
+        "k": 1
+      },
+      "expected": 100
+    },
+    {
+      "args": {
+        "n": 50,
+        "m": 100,
+        "k": 0
+      },
+      "expected": 0
+    }
+  ]
 }

@@ -22,5 +22,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def strWithout3a3b(self, a: int, b: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": 4,
+        "b": 1
+      },
+      "expected": "aabaa"
+    },
+    {
+      "args": {
+        "a": 1,
+        "b": 4
+      },
+      "expected": "bbabb"
+    },
+    {
+      "args": {
+        "a": 0,
+        "b": 5
+      },
+      "expected": "bbbbb"
+    },
+    {
+      "args": {
+        "a": 5,
+        "b": 0
+      },
+      "expected": "aaaaa"
+    },
+    {
+      "args": {
+        "a": 100,
+        "b": 100
+      },
+      "expected": "bbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabbbaaabba"
+    }
+  ]
 }

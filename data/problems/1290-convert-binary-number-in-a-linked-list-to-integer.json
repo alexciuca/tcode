@@ -26,5 +26,94 @@
     "You can solve the problem in O(1) memory using bits operation. use shift left operation ( << ) and or operation ( | ) to get the decimal value in one operation."
   ],
   "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def getDecimalValue(self, head: Optional[ListNode]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "head": [
+          1,
+          0,
+          1
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "head": [
+          0
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 18880
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 1073741823
+    }
+  ]
 }

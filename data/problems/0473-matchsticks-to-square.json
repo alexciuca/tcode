@@ -31,5 +31,30 @@
     "When all matchsticks have been used we simply need to see the length of all 4 sides. If they're equal, we have a square on our hands!"
   ],
   "starter_code": "class Solution:\n    def makesquare(self, matchsticks: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          3,
+          3,
+          3,
+          3,
+          4
+        ]
+      },
+      "expected": false
+    }
+  ]
 }

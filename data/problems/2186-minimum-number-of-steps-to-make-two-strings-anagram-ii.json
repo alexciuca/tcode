@@ -27,5 +27,41 @@
     "For each letter, its contribution to the answer is the absolute difference between its frequency in s and t."
   ],
   "starter_code": "class Solution:\n    def minSteps(self, s: str, t: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ab",
+        "t": "ba"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "intention",
+        "t": "execution"
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "s": "a",
+        "t": "a"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abc",
+        "t": "def"
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "s": "aabbccddee",
+        "t": "aabbccddeeffffffffgggggggggghhhhhhhhhhiiiiiiiiiijjjjjjjjjjkkkkkkkkkkllllllllllmmmmmmmmmmnnnnnnnnnnooooooooooppppppppppqqqqqqqqqqrrrrrrrrrrsssssssssstt"
+      },
+      "expected": 140
+    }
+  ]
 }

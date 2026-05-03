@@ -24,5 +24,18 @@
     "You may check the breaking results of <i>n</i> ranging from 7 to 10 to discover the regularities."
   ],
   "starter_code": "class Solution:\n    def integerBreak(self, n: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 2
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 10
+      },
+      "expected": 36
+    }
+  ]
 }

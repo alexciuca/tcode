@@ -25,5 +25,27 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def predictTheWinner(self, nums: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          5,
+          2
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          5,
+          233,
+          7
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

@@ -28,5 +28,148 @@
     "To maintain the same relative order for equal mapped values, use the index in the original input array as a tiebreaker."
   ],
   "starter_code": "class Solution:\n    def sortJumbled(self, mapping: List[int], nums: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "mapping": [
+          8,
+          9,
+          4,
+          0,
+          2,
+          1,
+          3,
+          5,
+          7,
+          6
+        ],
+        "nums": [
+          991,
+          332,
+          766,
+          13
+        ]
+      },
+      "expected": [
+        332,
+        13,
+        766,
+        991
+      ]
+    },
+    {
+      "args": {
+        "mapping": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "nums": [
+          12,
+          45,
+          23,
+          51,
+          19
+        ]
+      },
+      "expected": [
+        12,
+        19,
+        23,
+        45,
+        51
+      ]
+    },
+    {
+      "args": {
+        "mapping": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "nums": [
+          0,
+          1,
+          10
+        ]
+      },
+      "expected": [
+        1,
+        0,
+        10
+      ]
+    },
+    {
+      "args": {
+        "mapping": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          6,
+          7,
+          8,
+          9
+        ],
+        "nums": [
+          100,
+          200,
+          300
+        ]
+      },
+      "expected": [
+        300,
+        200,
+        100
+      ]
+    },
+    {
+      "args": {
+        "mapping": [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "nums": [
+          999999999,
+          500000000,
+          1,
+          0,
+          123456789,
+          987654321
+        ]
+      },
+      "expected": [
+        1,
+        0,
+        123456789,
+        500000000,
+        987654321,
+        999999999
+      ]
+    }
+  ]
 }

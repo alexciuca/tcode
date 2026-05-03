@@ -31,5 +31,41 @@
     "What if the answer was 1?"
   ],
   "starter_code": "class Solution:\n    def minLength(self, s: str, numOps: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ababab",
+        "numOps": 2
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "0000",
+        "numOps": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "01",
+        "numOps": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "0101010101",
+        "numOps": 5
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "00110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011",
+        "numOps": 50000
+      },
+      "expected": 1
+    }
+  ]
 }

@@ -32,5 +32,36 @@
     "Iterate over all possible pairs of indices <code>i &lt; j</code> such that <code>num[i] * 10 + num[j]</code> is in <code>[00,25,50,75]</code>. Then, set the answer to <code> min(answer, n - i - 2) </code>."
   ],
   "starter_code": "class Solution:\n    def minimumOperations(self, num: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": "2245047"
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "num": "5071"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "num": "0"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "num": "123456789"
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "num": "999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+      },
+      "expected": 99
+    }
+  ]
 }

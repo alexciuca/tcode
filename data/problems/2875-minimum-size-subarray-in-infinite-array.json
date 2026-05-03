@@ -31,5 +31,66 @@
     "You can solve the problem for those two separate cases using hash map and prefix sums."
   ],
   "starter_code": "class Solution:\n    def minSizeSubarray(self, nums: List[int], target: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          4,
+          4,
+          7,
+          6
+        ],
+        "target": 11
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          2,
+          3
+        ],
+        "target": 4
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3
+        ],
+        "target": 1000000000
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          100000
+        ],
+        "target": 100000
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30
+        ],
+        "target": 999999999
+      },
+      "expected": -1
+    }
+  ]
 }

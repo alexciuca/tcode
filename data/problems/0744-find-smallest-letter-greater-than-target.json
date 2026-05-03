@@ -30,5 +30,70 @@
     "Try to find whether each of 26 next letters are in the given string array."
   ],
   "starter_code": "class Solution:\n    def nextGreatestLetter(self, letters: List[str], target: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "letters": [
+          "c",
+          "f",
+          "j"
+        ],
+        "target": "a"
+      },
+      "expected": "c"
+    },
+    {
+      "args": {
+        "letters": [
+          "c",
+          "f",
+          "j"
+        ],
+        "target": "c"
+      },
+      "expected": "f"
+    },
+    {
+      "args": {
+        "letters": [
+          "c",
+          "f",
+          "j"
+        ],
+        "target": "d"
+      },
+      "expected": "f"
+    },
+    {
+      "args": {
+        "letters": [
+          "a",
+          "a",
+          "b",
+          "b",
+          "z"
+        ],
+        "target": "z"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "letters": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j"
+        ],
+        "target": "m"
+      },
+      "expected": "a"
+    }
+  ]
 }

@@ -22,5 +22,51 @@
     "Implement formulas that are given in the statement."
   ],
   "starter_code": "class Solution:\n    def convertTemperature(self, celsius: float) -> List[float]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "celsius": 0.0
+      },
+      "expected": [
+        273.15,
+        32.0
+      ]
+    },
+    {
+      "args": {
+        "celsius": 36.5
+      },
+      "expected": [
+        309.65,
+        97.7
+      ]
+    },
+    {
+      "args": {
+        "celsius": 100.0
+      },
+      "expected": [
+        373.15,
+        212.0
+      ]
+    },
+    {
+      "args": {
+        "celsius": 1000.0
+      },
+      "expected": [
+        1273.15,
+        1832.0
+      ]
+    },
+    {
+      "args": {
+        "celsius": -273.15
+      },
+      "expected": [
+        0.0,
+        -459.66999999999996
+      ]
+    }
+  ]
 }

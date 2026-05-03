@@ -28,5 +28,41 @@
     "Iterate through every pair of characters word1[i] and word2[j], and see if some palindrome begins with word1[i] and ends with word2[j]. This ensures that the subsequences are non-empty."
   ],
   "starter_code": "class Solution:\n    def longestPalindrome(self, word1: str, word2: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word1": "abccccdd",
+        "word2": "dccccadab"
+      },
+      "expected": 13
+    },
+    {
+      "args": {
+        "word1": "abc",
+        "word2": "abc"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "word1": "a",
+        "word2": "a"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "word1": "xyz",
+        "word2": "abc"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word1": "aabbccddeefffggghhhiiijjjkkklllmmmnnnooopppqqqrrrssstttuuuvvvwwwxxx",
+        "word2": "xxxwwwvvvuuutttssrrrqqqpppooonnmmmllkkkjjjiiihhggfffeeeddccbbaa"
+      },
+      "expected": 124
+    }
+  ]
 }

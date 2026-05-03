@@ -29,5 +29,56 @@
     "Subtract the largest with the rest of the array, and put the new element into the array. Repeat until all elements become one"
   ],
   "starter_code": "class Solution:\n    def isPossible(self, target: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "target": [
+          9,
+          3,
+          5
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "target": [
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "target": [
+          8,
+          5
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "target": [
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "target": [
+          1,
+          1000000000,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": false
+    }
+  ]
 }

@@ -28,5 +28,32 @@
     "For every word in the input list, we can check whether all prefixes of that word are in the input list by using a Set."
   ],
   "starter_code": "class Solution:\n    def longestWord(self, words: List[str]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "w",
+          "wo",
+          "wor",
+          "worl",
+          "world"
+        ]
+      },
+      "expected": "world"
+    },
+    {
+      "args": {
+        "words": [
+          "a",
+          "banana",
+          "app",
+          "appl",
+          "ap",
+          "apply",
+          "apple"
+        ]
+      },
+      "expected": "apple"
+    }
+  ]
 }

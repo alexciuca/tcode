@@ -36,5 +36,66 @@
     "Additionally use a 2D dynamic programming to respond in O(1) if a piece of pizza contains at least one apple."
   ],
   "starter_code": "class Solution:\n    def ways(self, pizza: List[str], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "pizza": [
+          "A..",
+          "AAA",
+          "A.."
+        ],
+        "k": 3
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "pizza": [
+          "A",
+          "A",
+          "A"
+        ],
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "pizza": [
+          "A.A.A",
+          "A.A.A",
+          "A.A.A"
+        ],
+        "k": 2
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "pizza": [
+          "A"
+        ],
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "pizza": [
+          "AAAAAAAAAA",
+          "AAAAAAAAAA",
+          "AAAAAAAAAA",
+          "AAAAAAAAAA",
+          "AAAAAAAAAA",
+          "AAAAAAAAAA",
+          "AAAAAAAAAA",
+          "AAAAAAAAAA",
+          "AAAAAAAAAA",
+          "AAAAAAAAAA"
+        ],
+        "k": 10
+      },
+      "expected": 5280932
+    }
+  ]
 }

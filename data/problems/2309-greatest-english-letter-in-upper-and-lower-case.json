@@ -29,5 +29,36 @@
     "From Z to A, check whether both the uppercase and lowercase version occur in the set."
   ],
   "starter_code": "class Solution:\n    def greatestLetter(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abBbaAcC"
+      },
+      "expected": "C"
+    },
+    {
+      "args": {
+        "s": "arRAzz"
+      },
+      "expected": "R"
+    },
+    {
+      "args": {
+        "s": "aA"
+      },
+      "expected": "A"
+    },
+    {
+      "args": {
+        "s": "aBcDeFgHiJkLmNoPqRsT"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "zZ"
+      },
+      "expected": "Z"
+    }
+  ]
 }

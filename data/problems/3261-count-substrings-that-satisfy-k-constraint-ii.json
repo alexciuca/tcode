@@ -34,5 +34,126 @@
     "Using the precomputed left boundaries and a range data structure, you can now answer the queries optimally."
   ],
   "starter_code": "class Solution:\n    def countKConstraintSubstrings(self, s: str, k: int, queries: List[List[int]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "0001",
+        "k": 1,
+        "queries": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected": [
+        10,
+        3
+      ]
+    },
+    {
+      "args": {
+        "s": "010110",
+        "k": 2,
+        "queries": [
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "expected": [
+        20,
+        6,
+        6
+      ]
+    },
+    {
+      "args": {
+        "s": "0",
+        "k": 1,
+        "queries": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "s": "1111",
+        "k": 1,
+        "queries": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        10,
+        3,
+        1
+      ]
+    },
+    {
+      "args": {
+        "s": "01010101010101",
+        "k": 1,
+        "queries": [
+          [
+            0,
+            13
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            11,
+            13
+          ]
+        ]
+      },
+      "expected": [
+        39,
+        15,
+        18,
+        6,
+        6
+      ]
+    }
+  ]
 }

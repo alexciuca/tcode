@@ -27,5 +27,63 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def bagOfTokensScore(self, tokens: List[int], power: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "tokens": [
+          23,
+          23,
+          45,
+          56,
+          100
+        ],
+        "power": 50
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "tokens": [
+          55,
+          71,
+          82
+        ],
+        "power": 54
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "tokens": [],
+        "power": 100
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "tokens": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "power": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "tokens": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "power": 9999
+      },
+      "expected": 6
+    }
+  ]
 }

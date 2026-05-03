@@ -31,5 +31,36 @@
     "Could you find the maximum length palindrome in each subsequence for a pair of disjoint subsequences?"
   ],
   "starter_code": "class Solution:\n    def maxProduct(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abab"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "aabcba"
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "s": "abcdefg"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aabbaa"
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "s": "aaaabbbb"
+      },
+      "expected": 16
+    }
+  ]
 }

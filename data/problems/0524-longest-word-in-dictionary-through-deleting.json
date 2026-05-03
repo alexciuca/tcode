@@ -26,5 +26,70 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findLongestWord(self, s: str, dictionary: List[str]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abpcplea",
+        "dictionary": [
+          "ale",
+          "apple",
+          "monkey",
+          "plea"
+        ]
+      },
+      "expected": "apple"
+    },
+    {
+      "args": {
+        "s": "abpcplea",
+        "dictionary": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "abc",
+        "dictionary": [
+          "abc",
+          "abc",
+          "abc"
+        ]
+      },
+      "expected": "abc"
+    },
+    {
+      "args": {
+        "s": "aaaaaa",
+        "dictionary": [
+          "aaa",
+          "aaaa",
+          "aa",
+          "a"
+        ]
+      },
+      "expected": "aaaa"
+    },
+    {
+      "args": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "dictionary": [
+          "z",
+          "zz",
+          "zzz",
+          "zzzz",
+          "zzzzz",
+          "zzzzzz",
+          "zzzzzzz",
+          "zzzzzzzz",
+          "zzzzzzzzz",
+          "zzzzzzzzzz"
+        ]
+      },
+      "expected": "zzzzzzzzzz"
+    }
+  ]
 }

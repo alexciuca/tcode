@@ -25,5 +25,66 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def numFactoredBinaryTrees(self, arr: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          2,
+          4,
+          8,
+          16
+        ]
+      },
+      "expected": 23
+    },
+    {
+      "args": {
+        "arr": [
+          2,
+          3,
+          5,
+          7
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "arr": [
+          2,
+          4,
+          5,
+          10,
+          16,
+          20
+        ]
+      },
+      "expected": 23
+    },
+    {
+      "args": {
+        "arr": [
+          2
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "arr": [
+          2,
+          3,
+          4,
+          6,
+          8,
+          12,
+          24,
+          48,
+          96,
+          192
+        ]
+      },
+      "expected": 3207
+    }
+  ]
 }

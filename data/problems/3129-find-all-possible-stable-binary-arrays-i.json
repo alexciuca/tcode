@@ -27,5 +27,46 @@
     "Try each case by appending a 0/1 at last to get the inductions."
   ],
   "starter_code": "class Solution:\n    def numberOfStableArrays(self, zero: int, one: int, limit: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "zero": 1,
+        "one": 1,
+        "limit": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "zero": 3,
+        "one": 3,
+        "limit": 2
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "zero": 1,
+        "one": 1,
+        "limit": 1
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "zero": 2,
+        "one": 2,
+        "limit": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "zero": 200,
+        "one": 200,
+        "limit": 200
+      },
+      "expected": 517385469
+    }
+  ]
 }

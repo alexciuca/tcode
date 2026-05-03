@@ -35,5 +35,130 @@
     "Sort the points by <code>max(abs(x), abs(y))</code> and try each edge length, check the included point tags."
   ],
   "starter_code": "class Solution:\n    def maxPointsInsideSquare(self, points: List[List[int]], s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "points": [
+          [
+            2,
+            2
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "s": "abab"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "points": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "s": "aabbc"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "points": [
+          [
+            -1000000000,
+            -1000000000
+          ],
+          [
+            1000000000,
+            1000000000
+          ]
+        ],
+        "s": "ab"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "s": "aaaa"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "points": [
+          [
+            -100,
+            50
+          ],
+          [
+            75,
+            -60
+          ],
+          [
+            30,
+            80
+          ],
+          [
+            -50,
+            -70
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            99,
+            99
+          ]
+        ],
+        "s": "abcdef"
+      },
+      "expected": 6
+    }
+  ]
 }

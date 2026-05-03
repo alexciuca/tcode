@@ -31,5 +31,168 @@
     "For each creator, iterate through all their videos and use three variables to keep track of their popularity, their most popular video, and the id of their most popular video."
   ],
   "starter_code": "class Solution:\n    def mostPopularCreator(self, creators: List[str], ids: List[str], views: List[int]) -> List[List[str]]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "creators": [
+          "alice",
+          "bob",
+          "alice",
+          "chris"
+        ],
+        "ids": [
+          "one",
+          "one",
+          "two",
+          "one"
+        ],
+        "views": [
+          5,
+          10,
+          2,
+          3
+        ]
+      },
+      "expected": [
+        [
+          "bob",
+          "one"
+        ]
+      ]
+    },
+    {
+      "args": {
+        "creators": [
+          "alice"
+        ],
+        "ids": [
+          "a"
+        ],
+        "views": [
+          5
+        ]
+      },
+      "expected": [
+        [
+          "alice",
+          "a"
+        ]
+      ]
+    },
+    {
+      "args": {
+        "creators": [
+          "alice",
+          "bob",
+          "charlie",
+          "alice",
+          "bob"
+        ],
+        "ids": [
+          "x",
+          "y",
+          "z",
+          "y",
+          "x"
+        ],
+        "views": [
+          100,
+          100,
+          50,
+          200,
+          150
+        ]
+      },
+      "expected": [
+        [
+          "alice",
+          "y"
+        ]
+      ]
+    },
+    {
+      "args": {
+        "creators": [
+          "a",
+          "a",
+          "a",
+          "b",
+          "b",
+          "c"
+        ],
+        "ids": [
+          "v1",
+          "v2",
+          "v3",
+          "v1",
+          "v2",
+          "v1"
+        ],
+        "views": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      "expected": [
+        [
+          "b",
+          "v1"
+        ]
+      ]
+    },
+    {
+      "args": {
+        "creators": [
+          "creator1",
+          "creator2",
+          "creator3",
+          "creator4",
+          "creator5",
+          "creator1",
+          "creator2",
+          "creator3",
+          "creator4",
+          "creator5"
+        ],
+        "ids": [
+          "vid1",
+          "vid2",
+          "vid3",
+          "vid4",
+          "vid5",
+          "vid6",
+          "vid7",
+          "vid8",
+          "vid9",
+          "vid10"
+        ],
+        "views": [
+          100000,
+          99999,
+          100000,
+          50000,
+          75000,
+          100000,
+          99999,
+          100000,
+          50001,
+          75001
+        ]
+      },
+      "expected": [
+        [
+          "creator1",
+          "vid1"
+        ],
+        [
+          "creator3",
+          "vid3"
+        ]
+      ]
+    }
+  ]
 }

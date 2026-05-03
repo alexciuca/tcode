@@ -31,5 +31,41 @@
     "For each index i, check the smallest digit in a window of size k and append it to the answer. Update the indices of all digits in this range accordingly."
   ],
   "starter_code": "class Solution:\n    def minInteger(self, num: str, k: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": "4321",
+        "k": 4
+      },
+      "expected": "1342"
+    },
+    {
+      "args": {
+        "num": "100",
+        "k": 1
+      },
+      "expected": "010"
+    },
+    {
+      "args": {
+        "num": "36789",
+        "k": 1000
+      },
+      "expected": "36789"
+    },
+    {
+      "args": {
+        "num": "9",
+        "k": 0
+      },
+      "expected": "9"
+    },
+    {
+      "args": {
+        "num": "999999999888888888777777777",
+        "k": 1000000000
+      },
+      "expected": "777777777888888888999999999"
+    }
+  ]
 }

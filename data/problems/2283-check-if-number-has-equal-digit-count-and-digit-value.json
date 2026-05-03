@@ -26,5 +26,36 @@
     "Count the frequency of each digit in num."
   ],
   "starter_code": "class Solution:\n    def digitCount(self, num: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": "1210"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "num": "030"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "num": "1"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "num": "0000"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "num": "9999999999"
+      },
+      "expected": false
+    }
+  ]
 }

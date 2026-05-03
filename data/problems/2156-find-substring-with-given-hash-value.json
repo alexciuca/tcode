@@ -30,5 +30,56 @@
     "Use the rolling hash method."
   ],
   "starter_code": "class Solution:\n    def subStrHash(self, s: str, power: int, modulo: int, k: int, hashValue: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abcd",
+        "power": 2,
+        "modulo": 1000000007,
+        "k": 2,
+        "hashValue": 0
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "aabbccdd",
+        "power": 31,
+        "modulo": 1000000007,
+        "k": 3,
+        "hashValue": 425
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "a",
+        "power": 1,
+        "modulo": 1000000007,
+        "k": 1,
+        "hashValue": 0
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "zzzzzzzzz",
+        "power": 2,
+        "modulo": 1000000007,
+        "k": 4,
+        "hashValue": 999999937
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrst",
+        "power": 31,
+        "modulo": 1000000007,
+        "k": 5,
+        "hashValue": 12345678
+      },
+      "expected": ""
+    }
+  ]
 }

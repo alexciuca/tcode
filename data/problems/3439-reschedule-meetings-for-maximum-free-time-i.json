@@ -33,5 +33,93 @@
     "Use a sliding window of <code>K + 1</code> size to store sum of gaps and take the maximum."
   ],
   "starter_code": "class Solution:\n    def maxFreeTime(self, eventTime: int, k: int, startTime: List[int], endTime: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "eventTime": 100,
+        "k": 1,
+        "startTime": [
+          10,
+          50
+        ],
+        "endTime": [
+          20,
+          60
+        ]
+      },
+      "expected": 90
+    },
+    {
+      "args": {
+        "eventTime": 1000,
+        "k": 2,
+        "startTime": [
+          100,
+          300,
+          600
+        ],
+        "endTime": [
+          150,
+          400,
+          700
+        ]
+      },
+      "expected": 1050
+    },
+    {
+      "args": {
+        "eventTime": 10,
+        "k": 1,
+        "startTime": [
+          0,
+          5
+        ],
+        "endTime": [
+          3,
+          8
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "eventTime": 1000000000,
+        "k": 5,
+        "startTime": [
+          1,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "endTime": [
+          50,
+          200,
+          5000,
+          50000,
+          500000
+        ]
+      },
+      "expected": 1000444050
+    },
+    {
+      "args": {
+        "eventTime": 500,
+        "k": 3,
+        "startTime": [
+          10,
+          100,
+          200,
+          350
+        ],
+        "endTime": [
+          50,
+          150,
+          250,
+          450
+        ]
+      },
+      "expected": 650
+    }
+  ]
 }

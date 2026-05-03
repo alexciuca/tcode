@@ -26,5 +26,46 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isInterleave(self, s1: str, s2: str, s3: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s1": "aab",
+        "s2": "dbbca",
+        "s3": "aadbbcbac"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s1": "ab",
+        "s2": "cd",
+        "s3": "acbd"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s1": "a",
+        "s2": "b",
+        "s3": "ab"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s1": "",
+        "s2": "abc",
+        "s3": "abc"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s1": "aabcc",
+        "s2": "dbbca",
+        "s3": "aadbbcbaccc"
+      },
+      "expected": false
+    }
+  ]
 }

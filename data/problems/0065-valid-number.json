@@ -24,5 +24,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isNumber(self, s: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "0"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "2.5e3"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "-90.5e+2"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "e9"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "+.5e-10"
+      },
+      "expected": true
+    }
+  ]
 }

@@ -29,5 +29,61 @@
     "Otherwise, the answer is the sum of all unique values that are greater than or equal to zero."
   ],
   "starter_code": "class Solution:\n    def maxSum(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          -2,
+          3
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          5,
+          5
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          -10,
+          -20,
+          -5
+        ]
+      },
+      "expected": -5
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          -50,
+          75,
+          -25,
+          50,
+          25
+        ]
+      },
+      "expected": 175
+    }
+  ]
 }

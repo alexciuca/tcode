@@ -24,5 +24,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def pushDominoes(self, dominoes: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "dominoes": "RR.L|..|L.|R.."
+      },
+      "expected": "RR.LLLLLL..RRR"
+    },
+    {
+      "args": {
+        "dominoes": "..R..L.."
+      },
+      "expected": "..RRLL.."
+    },
+    {
+      "args": {
+        "dominoes": "R"
+      },
+      "expected": "R"
+    },
+    {
+      "args": {
+        "dominoes": "."
+      },
+      "expected": "."
+    },
+    {
+      "args": {
+        "dominoes": "R.R.L..L..R.L.R.L.L.R..L.R"
+      },
+      "expected": "RRR.LLLL..R.L.R.LLL.RRLL.R"
+    }
+  ]
 }

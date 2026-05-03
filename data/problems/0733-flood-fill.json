@@ -30,5 +30,47 @@
     "Write a recursive function that paints the pixel if it's the correct color, then recurses on neighboring pixels."
   ],
   "starter_code": "class Solution:\n    def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "image": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "sr": 1,
+        "sc": 1,
+        "newColor": 2
+      },
+      "expected": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ]
+    }
+  ]
 }

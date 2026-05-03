@@ -46,5 +46,171 @@
     "Skip buying for <code>u</code>, then add the best <code>max_profit</code> values of its children"
   ],
   "starter_code": "class Solution:\n    def maxProfit(self, n: int, present: List[int], future: List[int], hierarchy: List[List[int]], budget: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 4,
+        "present": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "future": [
+          8,
+          13,
+          18,
+          25
+        ],
+        "hierarchy": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "budget": 20
+      },
+      "expected": 11
+    },
+    {
+      "args": {
+        "n": 3,
+        "present": [
+          10,
+          10,
+          10
+        ],
+        "future": [
+          20,
+          20,
+          20
+        ],
+        "hierarchy": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "budget": 15
+      },
+      "expected": 20
+    },
+    {
+      "args": {
+        "n": 5,
+        "present": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "future": [
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "hierarchy": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "budget": 10
+      },
+      "expected": 245
+    },
+    {
+      "args": {
+        "n": 2,
+        "present": [
+          50,
+          50
+        ],
+        "future": [
+          50,
+          50
+        ],
+        "hierarchy": [
+          [
+            1,
+            2
+          ]
+        ],
+        "budget": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 6,
+        "present": [
+          5,
+          10,
+          8,
+          12,
+          15,
+          7
+        ],
+        "future": [
+          12,
+          18,
+          14,
+          20,
+          25,
+          13
+        ],
+        "hierarchy": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "budget": 50
+      },
+      "expected": 45
+    }
+  ]
 }

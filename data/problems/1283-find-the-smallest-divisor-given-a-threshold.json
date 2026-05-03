@@ -26,5 +26,73 @@
     "Use binary search to reduce the time complexity."
   ],
   "starter_code": "class Solution:\n    def smallestDivisor(self, nums: List[int], threshold: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          5,
+          9
+        ],
+        "threshold": 6
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          44,
+          22,
+          33,
+          11,
+          1
+        ],
+        "threshold": 5
+      },
+      "expected": 44
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ],
+        "threshold": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1000000,
+          1000000,
+          1000000
+        ],
+        "threshold": 3
+      },
+      "expected": 1000000
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          100,
+          200,
+          300,
+          400,
+          500
+        ],
+        "threshold": 500
+      },
+      "expected": 4
+    }
+  ]
 }

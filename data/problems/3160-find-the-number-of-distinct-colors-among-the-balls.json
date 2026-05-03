@@ -28,5 +28,176 @@
     "Use two HashMaps to maintain the color of each ball and the set of balls with each color."
   ],
   "starter_code": "class Solution:\n    def queryResults(self, limit: int, queries: List[List[int]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "limit": 4,
+        "queries": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "args": {
+        "limit": 1,
+        "queries": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "args": {
+        "limit": 1000000000,
+        "queries": [
+          [
+            999999999,
+            1
+          ],
+          [
+            999999998,
+            2
+          ],
+          [
+            999999999,
+            2
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "args": {
+        "limit": 5,
+        "queries": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "args": {
+        "limit": 100000,
+        "queries": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        6,
+        6,
+        6
+      ]
+    }
+  ]
 }

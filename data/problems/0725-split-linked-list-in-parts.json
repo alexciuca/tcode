@@ -24,5 +24,121 @@
     "If there are N nodes in the list, and k parts, then every part has N/k elements, except the first N%k parts have an extra one."
   ],
   "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def splitListToParts(self, head: Optional[ListNode], k: int) -> List[Optional[ListNode]]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "k": 3
+      },
+      "expected": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "k": 2
+      },
+      "expected": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "args": {
+        "head": [],
+        "k": 3
+      },
+      "expected": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          1
+        ],
+        "k": 1
+      },
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "k": 5
+      },
+      "expected": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ]
+    }
+  ]
 }

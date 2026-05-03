@@ -27,5 +27,41 @@
     "The answer is <code>m * (m + 1) / 2</code>."
   ],
   "starter_code": "class Solution:\n    def countSubstrings(self, s: str, c: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abaca",
+        "c": "a"
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "s": "abc",
+        "c": "b"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aaaa",
+        "c": "a"
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "s": "a",
+        "c": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "c": "a"
+      },
+      "expected": 10
+    }
+  ]
 }

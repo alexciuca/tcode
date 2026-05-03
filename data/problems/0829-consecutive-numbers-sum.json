@@ -24,5 +24,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def consecutiveNumbersSum(self, n: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 15
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "n": 5
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 2
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 1000000000
+      },
+      "expected": 10
+    }
+  ]
 }

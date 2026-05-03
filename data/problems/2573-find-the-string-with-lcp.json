@@ -33,5 +33,160 @@
     "Build the LCP matrix of the resulting string then check if it is equal to the target LCP."
   ],
   "starter_code": "class Solution:\n    def findTheString(self, lcp: List[List[int]]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "lcp": [
+          [
+            4,
+            3,
+            2,
+            1
+          ],
+          [
+            3,
+            3,
+            2,
+            1
+          ],
+          [
+            2,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": "aaaa"
+    },
+    {
+      "args": {
+        "lcp": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "lcp": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "lcp": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "lcp": [
+          [
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          [
+            4,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": ""
+    }
+  ]
 }

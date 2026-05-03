@@ -28,5 +28,56 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def minDeletionSize(self, strs: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "strs": [
+          "cdc",
+          "day",
+          "caa"
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "strs": [
+          "ba",
+          "ab",
+          "ca"
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "strs": [
+          "a"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "strs": [
+          "aa",
+          "aa",
+          "aa"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "strs": [
+          "abcdefghij",
+          "bcdefghijk",
+          "cdefghijkl",
+          "defghijklm",
+          "efghijklmn"
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

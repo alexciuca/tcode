@@ -25,5 +25,75 @@
     "Divide the number by 10 again and again to get the number of digits."
   ],
   "starter_code": "class Solution:\n    def findNumbers(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          12,
+          345,
+          2,
+          6,
+          9852
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          22,
+          333,
+          4444
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          99999,
+          9999,
+          999,
+          99,
+          9,
+          1,
+          11,
+          111,
+          1111,
+          11111,
+          99998,
+          88,
+          777,
+          6666,
+          55555
+        ]
+      },
+      "expected": 6
+    }
+  ]
 }

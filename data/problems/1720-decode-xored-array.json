@@ -27,5 +27,106 @@
     "Iterate on i from beginning to end, and set arr[i+1] = encoded[i] XOR arr[i]."
   ],
   "starter_code": "class Solution:\n    def decode(self, encoded: List[int], first: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "encoded": [
+          1,
+          2,
+          3
+        ],
+        "first": 1
+      },
+      "expected": [
+        1,
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "args": {
+        "encoded": [
+          6,
+          5,
+          4,
+          6,
+          7,
+          4,
+          15,
+          32,
+          27
+        ],
+        "first": 5
+      },
+      "expected": [
+        5,
+        3,
+        6,
+        2,
+        4,
+        3,
+        7,
+        8,
+        40,
+        51
+      ]
+    },
+    {
+      "args": {
+        "encoded": [
+          0
+        ],
+        "first": 0
+      },
+      "expected": [
+        0,
+        0
+      ]
+    },
+    {
+      "args": {
+        "encoded": [
+          100000,
+          100000
+        ],
+        "first": 100000
+      },
+      "expected": [
+        100000,
+        0,
+        100000
+      ]
+    },
+    {
+      "args": {
+        "encoded": [
+          65535,
+          32768,
+          16384,
+          8192,
+          4096,
+          2048,
+          1024,
+          512,
+          256,
+          128
+        ],
+        "first": 0
+      },
+      "expected": [
+        0,
+        65535,
+        32767,
+        16383,
+        8191,
+        4095,
+        2047,
+        1023,
+        511,
+        255,
+        127
+      ]
+    }
+  ]
 }

@@ -30,5 +30,63 @@
     "To check if an element is a palindrome, can you reverse the string?"
   ],
   "starter_code": "class Solution:\n    def firstPalindrome(self, words: List[str]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "abc",
+          "car",
+          "ada",
+          "racecar",
+          "cool"
+        ]
+      },
+      "expected": "ada"
+    },
+    {
+      "args": {
+        "words": [
+          "def",
+          "ghi",
+          "jkl"
+        ]
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "words": [
+          "a"
+        ]
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "words": [
+          "ab",
+          "ba",
+          "aba",
+          "abba",
+          "abc"
+        ]
+      },
+      "expected": "aba"
+    },
+    {
+      "args": {
+        "words": [
+          "x",
+          "y",
+          "z",
+          "level",
+          "noon",
+          "world",
+          "racecar",
+          "programming"
+        ]
+      },
+      "expected": "x"
+    }
+  ]
 }

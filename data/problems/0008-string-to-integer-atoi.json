@@ -27,5 +27,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def myAtoi(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "42"
+      },
+      "expected": 42
+    },
+    {
+      "args": {
+        "s": "   -42"
+      },
+      "expected": -42
+    },
+    {
+      "args": {
+        "s": "4193 with words"
+      },
+      "expected": 4193
+    },
+    {
+      "args": {
+        "s": "-91283472332"
+      },
+      "expected": -2147483648
+    },
+    {
+      "args": {
+        "s": "+-42"
+      },
+      "expected": 0
+    }
+  ]
 }

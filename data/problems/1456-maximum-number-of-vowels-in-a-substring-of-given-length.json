@@ -29,5 +29,41 @@
     "Keep moving the window and update the number of vowels while moving. Answer is max number of vowels of any window."
   ],
   "starter_code": "class Solution:\n    def maxVowels(self, s: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abciiidef",
+        "k": 3
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "aeiou",
+        "k": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "bcdfg",
+        "k": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "a",
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiou",
+        "k": 50
+      },
+      "expected": 50
+    }
+  ]
 }

@@ -29,5 +29,66 @@
     "Locate the closest point of the square to the circle, you can then find the distance from this point to the center of the circle and check if this is less than or equal to the radius."
   ],
   "starter_code": "class Solution:\n    def checkOverlap(self, radius: int, xCenter: int, yCenter: int, x1: int, y1: int, x2: int, y2: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "radius": 1,
+        "xCenter": 0,
+        "yCenter": 0,
+        "x1": -1,
+        "y1": -1,
+        "x2": 1,
+        "y2": 1
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "radius": 5,
+        "xCenter": 10,
+        "yCenter": 10,
+        "x1": 0,
+        "y1": 0,
+        "x2": 5,
+        "y2": 5
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "radius": 2000,
+        "xCenter": 0,
+        "yCenter": 0,
+        "x1": -10000,
+        "y1": -10000,
+        "x2": 10000,
+        "y2": 10000
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "radius": 1,
+        "xCenter": -5000,
+        "yCenter": -5000,
+        "x1": 5000,
+        "y1": 5000,
+        "x2": 10000,
+        "y2": 10000
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "radius": 8,
+        "xCenter": -3,
+        "yCenter": 4,
+        "x1": -10,
+        "y1": -5,
+        "x2": 5,
+        "y2": 10
+      },
+      "expected": true
+    }
+  ]
 }

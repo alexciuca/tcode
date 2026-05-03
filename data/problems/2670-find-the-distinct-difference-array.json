@@ -25,5 +25,116 @@
     "Iterate over all possible prefix sizes. Then, use a nested loop to add the elements of the prefix to a set, and another nested loop to add the elements of the suffix to another set."
   ],
   "starter_code": "class Solution:\n    def distinctDifferenceArray(self, nums: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": [
+        -3,
+        -1,
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          3,
+          2,
+          3,
+          4,
+          2
+        ]
+      },
+      "expected": [
+        -2,
+        -1,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "expected": [
+        -18,
+        -16,
+        -14,
+        -12,
+        -10,
+        -8,
+        -6,
+        -4,
+        -2,
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ]
+    }
+  ]
 }

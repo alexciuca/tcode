@@ -24,5 +24,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def reorderedPowerOf2(self, n: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 1
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 256
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 100
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "n": 1000000000
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "n": 46
+      },
+      "expected": true
+    }
+  ]
 }

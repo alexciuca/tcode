@@ -26,5 +26,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def clearStars(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aaba*b*c"
+      },
+      "expected": "babc"
+    },
+    {
+      "args": {
+        "s": "abc"
+      },
+      "expected": "abc"
+    },
+    {
+      "args": {
+        "s": "a*b*c"
+      },
+      "expected": "c"
+    },
+    {
+      "args": {
+        "s": "zzz*a*"
+      },
+      "expected": "zz"
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz*abcdefghijklmnopqrstuvwxyz*abcdefghijklmnopqrstuvwxyz*"
+      },
+      "expected": "bcdefghijklmnopqrstuvwxyzbcdefghijklmnopqrstuvwxyzbcdefghijklmnopqrstuvwxyz"
+    }
+  ]
 }

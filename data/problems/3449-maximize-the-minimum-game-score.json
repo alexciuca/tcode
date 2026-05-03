@@ -28,5 +28,70 @@
     "We should go from i to (i + 1) back and forth, making the value for each index i (from left to right) no less than x."
   ],
   "starter_code": "class Solution:\n    def maxScore(self, points: List[int], m: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "points": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "m": 10
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "points": [
+          10,
+          20,
+          30
+        ],
+        "m": 50
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "points": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "m": 2
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "points": [
+          1000000,
+          1000000
+        ],
+        "m": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "points": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ],
+        "m": 1000000000
+      },
+      "expected": 99999999
+    }
+  ]
 }

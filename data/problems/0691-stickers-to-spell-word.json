@@ -33,5 +33,67 @@
     "We want to perform an exhaustive search, but we need to speed it up based on the input data being random.  \r\n\r\nFor all stickers, we can ignore any letters that are not in the target word.  \r\n\r\nWhen our candidate answer won't be smaller than an answer we have already found, we can stop searching this path.  \r\n\r\nWhen a sticker dominates another, we shouldn't include the dominated sticker in our sticker collection.  [Here, we say a sticker `A` dominates `B` if `A.count(letter) >= B.count(letter)` for all letters.]"
   ],
   "starter_code": "class Solution:\n    def minStickers(self, stickers: List[str], target: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "stickers": [
+          "with",
+          "example",
+          "science"
+        ],
+        "target": "thehat"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "stickers": [
+          "notice",
+          "possible"
+        ],
+        "target": "basicbasic"
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "stickers": [
+          "a"
+        ],
+        "target": "b"
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "stickers": [
+          "ab",
+          "ba",
+          "aaab",
+          "abab",
+          "baa"
+        ],
+        "target": "aaaabbbbab"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "stickers": [
+          "abcdefghij",
+          "bcdefghijk",
+          "cdefghijkl",
+          "defghijklm",
+          "efghijklmn",
+          "fghijklmno",
+          "ghijklmnop",
+          "hijklmnopq",
+          "ijklmnopqr",
+          "jklmnopqrs"
+        ],
+        "target": "abcdefghijklmnopqrs"
+      },
+      "expected": 2
+    }
+  ]
 }

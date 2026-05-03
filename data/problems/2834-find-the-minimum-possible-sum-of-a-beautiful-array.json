@@ -27,5 +27,41 @@
     "<div class=\"_1l1MA\">Greedily try to add the smallest possible number in the array <code>nums</code>, such that <code>nums</code> contains distinct positive integers, and there are no two indices <code>i</code> and <code>j</code> with <code>nums[i] + nums[j] == target</code>.</div>"
   ],
   "starter_code": "class Solution:\n    def minimumPossibleSum(self, n: int, target: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 4,
+        "target": 6
+      },
+      "expected": 16
+    },
+    {
+      "args": {
+        "n": 5,
+        "target": 8
+      },
+      "expected": 23
+    },
+    {
+      "args": {
+        "n": 1,
+        "target": 1000000000
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 2,
+        "target": 2
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "n": 1000000000,
+        "target": 1000000000
+      },
+      "expected": 750000035
+    }
+  ]
 }

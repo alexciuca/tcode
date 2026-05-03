@@ -28,5 +28,41 @@
     "Every substring that starts at <code>left</code> and ends after <code>right</code> satisfies the condition."
   ],
   "starter_code": "class Solution:\n    def numberOfSubstrings(self, s: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aaabbbccc",
+        "k": 3
+      },
+      "expected": 22
+    },
+    {
+      "args": {
+        "s": "abcdefg",
+        "k": 1
+      },
+      "expected": 28
+    },
+    {
+      "args": {
+        "s": "aaa",
+        "k": 3
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "abababab",
+        "k": 2
+      },
+      "expected": 21
+    },
+    {
+      "args": {
+        "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "k": 10
+      },
+      "expected": 946
+    }
+  ]
 }

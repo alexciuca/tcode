@@ -28,5 +28,36 @@
     "Try to count the mismatched positions with each valid string of length n."
   ],
   "starter_code": "class Solution:\n    def minSwaps(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "111"
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "s": "010"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "0000"
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "s": "1"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "11110000111100001111000011110000111100001111000011110000111100001111000011110000111100001111000011110000111100001111000011110000111100001111000011110000111100001111000011110000111100001111000011110000"
+      },
+      "expected": 50
+    }
+  ]
 }

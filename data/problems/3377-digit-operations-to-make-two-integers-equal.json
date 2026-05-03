@@ -31,5 +31,41 @@
     "Apply a shortest path algorithm on this graph to find the shortest path from <code>n</code> to <code>m</code>."
   ],
   "starter_code": "class Solution:\n    def minOperations(self, n: int, m: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 123,
+        "m": 456
+      },
+      "expected": 861
+    },
+    {
+      "args": {
+        "n": 1000,
+        "m": 9999
+      },
+      "expected": 20286
+    },
+    {
+      "args": {
+        "n": 5555,
+        "m": 5555
+      },
+      "expected": 5555
+    },
+    {
+      "args": {
+        "n": 1234,
+        "m": 4321
+      },
+      "expected": 12221
+    },
+    {
+      "args": {
+        "n": 9999,
+        "m": 1000
+      },
+      "expected": 20286
+    }
+  ]
 }

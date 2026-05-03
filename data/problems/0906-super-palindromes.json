@@ -26,5 +26,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def superpalindromesInRange(self, left: str, right: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "left": "1",
+        "right": "2"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "left": "4",
+        "right": "1000"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "left": "1",
+        "right": "10"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "left": "9474",
+        "right": "9475"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "left": "1",
+        "right": "999999999999999999"
+      },
+      "expected": 65
+    }
+  ]
 }

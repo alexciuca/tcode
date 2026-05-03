@@ -31,5 +31,36 @@
     "Why does the difference between the number of question marks on the left and right side matter?"
   ],
   "starter_code": "class Solution:\n    def sumGame(self, num: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": "5?8"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "num": "6??9"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "num": "?3295895"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "num": "??"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "num": "1?3?5?7?9?"
+      },
+      "expected": true
+    }
+  ]
 }

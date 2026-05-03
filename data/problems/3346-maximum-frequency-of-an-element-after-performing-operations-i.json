@@ -29,5 +29,81 @@
     "Sort the array and try each value in range as a candidate."
   ],
   "starter_code": "class Solution:\n    def maxFrequency(self, nums: List[int], k: int, numOperations: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          4,
+          4,
+          2,
+          4
+        ],
+        "k": 3,
+        "numOperations": 2
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "k": 0,
+        "numOperations": 1
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "k": 1,
+        "numOperations": 5
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          100000
+        ],
+        "k": 0,
+        "numOperations": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "k": 2,
+        "numOperations": 10
+      },
+      "expected": 10
+    }
+  ]
 }

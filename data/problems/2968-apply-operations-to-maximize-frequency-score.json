@@ -29,5 +29,78 @@
     "You can use binary search to find the longest subarray where we can make the elements equal in at most <code>k</code> operations."
   ],
   "starter_code": "class Solution:\n    def maxFrequencyScore(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "k": 6
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 0
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          10,
+          100
+        ],
+        "k": 1000000000000
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "k": 5
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "k": 100
+      },
+      "expected": 14
+    }
+  ]
 }

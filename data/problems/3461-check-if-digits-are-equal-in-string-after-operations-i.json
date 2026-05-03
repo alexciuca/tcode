@@ -27,5 +27,36 @@
     "Simulate the operations as described."
   ],
   "starter_code": "class Solution:\n    def hasSameDigits(self, s: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "123"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "1122"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "999"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "100"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "123456789012345678901234567890"
+      },
+      "expected": false
+    }
+  ]
 }

@@ -29,5 +29,74 @@
     "Use a variable to store the value after each operation."
   ],
   "starter_code": "class Solution:\n    def finalValueAfterOperations(self, operations: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "operations": [
+          "++X",
+          "++X",
+          "++X"
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "operations": [
+          "++X",
+          "X++",
+          "--X",
+          "X--"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "operations": [
+          "X++"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "operations": [
+          "--X",
+          "--X",
+          "--X",
+          "--X",
+          "--X"
+        ]
+      },
+      "expected": -5
+    },
+    {
+      "args": {
+        "operations": [
+          "++X",
+          "++X",
+          "X++",
+          "--X",
+          "X--",
+          "++X",
+          "X++",
+          "--X",
+          "++X",
+          "X++",
+          "X++",
+          "++X",
+          "--X",
+          "X--",
+          "++X",
+          "X++",
+          "++X",
+          "X++",
+          "X++",
+          "++X"
+        ]
+      },
+      "expected": 10
+    }
+  ]
 }

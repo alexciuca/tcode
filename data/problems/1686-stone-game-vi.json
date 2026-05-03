@@ -33,5 +33,107 @@
     "Greedily choose the stone with the maximum aliceValues[i] + bobValues[i]."
   ],
   "starter_code": "class Solution:\n    def stoneGameVI(self, aliceValues: List[int], bobValues: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "aliceValues": [
+          1,
+          3
+        ],
+        "bobValues": [
+          2,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "aliceValues": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "bobValues": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "aliceValues": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "bobValues": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "aliceValues": [
+          1
+        ],
+        "bobValues": [
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "aliceValues": [
+          50,
+          80,
+          70,
+          60,
+          75,
+          85,
+          40,
+          65,
+          55,
+          90,
+          95,
+          100,
+          45,
+          72,
+          88
+        ],
+        "bobValues": [
+          100,
+          99,
+          98,
+          97,
+          96,
+          95,
+          94,
+          93,
+          92,
+          91,
+          90,
+          89,
+          88,
+          87,
+          86
+        ]
+      },
+      "expected": -1
+    }
+  ]
 }

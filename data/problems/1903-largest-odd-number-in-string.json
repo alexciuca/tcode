@@ -29,5 +29,36 @@
     "If an odd number exists, where must the number start from?"
   ],
   "starter_code": "class Solution:\n    def largestOddNumber(self, num: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": "52"
+      },
+      "expected": "5"
+    },
+    {
+      "args": {
+        "num": "4206"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "num": "35427"
+      },
+      "expected": "35427"
+    },
+    {
+      "args": {
+        "num": "2468"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "num": "9"
+      },
+      "expected": "9"
+    }
+  ]
 }

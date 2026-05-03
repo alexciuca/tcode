@@ -27,5 +27,102 @@
     "Sort by the number of 1's ascending and by the value in case of tie."
   ],
   "starter_code": "class Solution:\n    def sortByBits(self, arr: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "expected": [
+        0,
+        1,
+        2,
+        4,
+        3,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          1024,
+          512,
+          256,
+          128
+        ]
+      },
+      "expected": [
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          0
+        ]
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          15,
+          15,
+          15,
+          1,
+          1
+        ]
+      },
+      "expected": [
+        1,
+        1,
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          10000,
+          9999,
+          8888,
+          7777,
+          6666,
+          5555,
+          4444,
+          3333,
+          2222,
+          1111
+        ]
+      },
+      "expected": [
+        3333,
+        6666,
+        10000,
+        1111,
+        2222,
+        4444,
+        8888,
+        7777,
+        5555,
+        9999
+      ]
+    }
+  ]
 }

@@ -29,5 +29,103 @@
     "For each <code>i</code>, you can iterate over all <code>j</code>s and determine if <code>i</code> is beautiful or not."
   ],
   "starter_code": "class Solution:\n    def beautifulIndices(self, s: str, a: str, b: str, k: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aabcaabcaab",
+        "a": "ab",
+        "b": "ba",
+        "k": 3
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "s": "abcdefg",
+        "a": "abc",
+        "b": "def",
+        "k": 2
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "s": "aaaa",
+        "a": "aa",
+        "b": "aa",
+        "k": 1
+      },
+      "expected": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "args": {
+        "s": "abcd",
+        "a": "xy",
+        "b": "zw",
+        "k": 5
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "s": "ababababababababababababababababababababababababababababababababababababababababababababababab",
+        "a": "ab",
+        "b": "ba",
+        "k": 1
+      },
+      "expected": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        60,
+        62,
+        64,
+        66,
+        68,
+        70,
+        72,
+        74,
+        76,
+        78,
+        80,
+        82,
+        84,
+        86,
+        88,
+        90,
+        92
+      ]
+    }
+  ]
 }

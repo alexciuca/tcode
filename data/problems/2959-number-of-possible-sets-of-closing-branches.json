@@ -37,5 +37,151 @@
     "On the vertices that are not closed, use Floyd-Warshall algorithm to find the shortest paths."
   ],
   "starter_code": "class Solution:\n    def numberOfSets(self, n: int, maxDistance: int, roads: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 3,
+        "maxDistance": 5,
+        "roads": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ]
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "n": 4,
+        "maxDistance": 10,
+        "roads": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            0,
+            3,
+            5
+          ]
+        ]
+      },
+      "expected": 14
+    },
+    {
+      "args": {
+        "n": 2,
+        "maxDistance": 1,
+        "roads": [
+          [
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "n": 5,
+        "maxDistance": 3,
+        "roads": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ]
+        ]
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "n": 10,
+        "maxDistance": 100000,
+        "roads": [
+          [
+            0,
+            1,
+            500
+          ],
+          [
+            1,
+            2,
+            600
+          ],
+          [
+            2,
+            3,
+            700
+          ],
+          [
+            3,
+            4,
+            800
+          ],
+          [
+            4,
+            5,
+            900
+          ],
+          [
+            5,
+            6,
+            1000
+          ],
+          [
+            6,
+            7,
+            100
+          ],
+          [
+            7,
+            8,
+            200
+          ],
+          [
+            8,
+            9,
+            300
+          ]
+        ]
+      },
+      "expected": 56
+    }
+  ]
 }

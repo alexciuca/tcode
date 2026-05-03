@@ -29,5 +29,81 @@
     "When selecting an element with any parity, try to select the earliest one."
   ],
   "starter_code": "class Solution:\n    def maximumLength(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          10000000,
+          10000000,
+          10000000
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "expected": 10
+    }
+  ]
 }

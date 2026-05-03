@@ -26,5 +26,41 @@
     "In each step of the binary search you should calculate the number of the set bits in the <code>i<sup>th</sup></code> position. Then calculate the sum of them."
   ],
   "starter_code": "class Solution:\n    def findMaximumNumber(self, k: int, x: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "k": 10,
+        "x": 1
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "k": 100,
+        "x": 2
+      },
+      "expected": 71
+    },
+    {
+      "args": {
+        "k": 1000000000000000,
+        "x": 8
+      },
+      "expected": 343778878348159
+    },
+    {
+      "args": {
+        "k": 1,
+        "x": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "k": 999999999999999,
+        "x": 4
+      },
+      "expected": 175556110774958
+    }
+  ]
 }

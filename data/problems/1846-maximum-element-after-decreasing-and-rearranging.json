@@ -29,5 +29,62 @@
     "Decrement each element to the largest integer that satisfies the conditions."
   ],
   "starter_code": "class Solution:\n    def maximumElementAfterDecrementingAndRearranging(self, arr: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "arr": [
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": 3
+    }
+  ]
 }

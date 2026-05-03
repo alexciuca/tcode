@@ -24,5 +24,83 @@
     "Each time you find a number 1, check whether or not it is K or more places away from the next one. If it's not, return false."
   ],
   "starter_code": "class Solution:\n    def kLengthApart(self, nums: List[int], k: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "k": 2
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "k": 2
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1
+        ],
+        "k": 1
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0
+        ],
+        "k": 3
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "k": 10
+      },
+      "expected": true
+    }
+  ]
 }

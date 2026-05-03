@@ -29,5 +29,36 @@
     "Try add the numbers together and look for a pattern."
   ],
   "starter_code": "class Solution:\n    def squareIsWhite(self, coordinates: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "coordinates": "a1"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "coordinates": "h8"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "coordinates": "a8"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "coordinates": "h1"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "coordinates": "d4"
+      },
+      "expected": false
+    }
+  ]
 }

@@ -24,5 +24,46 @@
     "Sum up the number of ways to buy pens for each amount of pencils purchased to get the answer."
   ],
   "starter_code": "class Solution:\n    def waysToBuyPensPencils(self, total: int, cost1: int, cost2: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "total": 10,
+        "cost1": 2,
+        "cost2": 3
+      },
+      "expected": 14
+    },
+    {
+      "args": {
+        "total": 5,
+        "cost1": 5,
+        "cost2": 5
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "total": 1000000,
+        "cost1": 1,
+        "cost2": 1
+      },
+      "expected": 500001500001
+    },
+    {
+      "args": {
+        "total": 100,
+        "cost1": 999999,
+        "cost2": 1000000
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "total": 1000000,
+        "cost1": 1000000,
+        "cost2": 999999
+      },
+      "expected": 3
+    }
+  ]
 }

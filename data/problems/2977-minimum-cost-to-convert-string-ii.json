@@ -40,5 +40,110 @@
     "The answer is <code>dp[n]</code> where <code>n</code> is <code>source.length</code>."
   ],
   "starter_code": "class Solution:\n    def minimumCost(self, source: str, target: str, original: List[str], changed: List[str], cost: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "source": "abcd",
+        "target": "acbd",
+        "original": [
+          "ab",
+          "cd"
+        ],
+        "changed": [
+          "ac",
+          "db"
+        ],
+        "cost": [
+          1,
+          5
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "source": "aaaa",
+        "target": "bbbb",
+        "original": [
+          "a"
+        ],
+        "changed": [
+          "b"
+        ],
+        "cost": [
+          3
+        ]
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "source": "abc",
+        "target": "abc",
+        "original": [
+          "ab"
+        ],
+        "changed": [
+          "ba"
+        ],
+        "cost": [
+          100
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "source": "abcabc",
+        "target": "defdef",
+        "original": [
+          "ab",
+          "c",
+          "de",
+          "f"
+        ],
+        "changed": [
+          "de",
+          "f",
+          "gh",
+          "i"
+        ],
+        "cost": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "source": "aabbccdd",
+        "target": "aabbccdd",
+        "original": [
+          "aa",
+          "bb",
+          "cc",
+          "dd",
+          "ab"
+        ],
+        "changed": [
+          "ba",
+          "cc",
+          "dd",
+          "ee",
+          "ba"
+        ],
+        "cost": [
+          10,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

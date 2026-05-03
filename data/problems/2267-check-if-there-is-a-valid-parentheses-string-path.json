@@ -29,5 +29,86 @@
     "Could you use dynamic programming?"
   ],
   "starter_code": "class Solution:\n    def hasValidPath(self, grid: List[List[str]]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          [
+            "(",
+            ")"
+          ]
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            "(",
+            ")"
+          ],
+          [
+            ")",
+            "("
+          ]
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            "(",
+            "(",
+            ")"
+          ]
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            ")",
+            ")"
+          ]
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            "(",
+            "(",
+            "(",
+            "("
+          ],
+          [
+            ")",
+            ")",
+            ")",
+            ")"
+          ],
+          [
+            "(",
+            "(",
+            "(",
+            ")"
+          ],
+          [
+            "(",
+            ")",
+            ")",
+            ")"
+          ]
+        ]
+      },
+      "expected": false
+    }
+  ]
 }

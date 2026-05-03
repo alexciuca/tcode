@@ -27,5 +27,65 @@
     "Find the largest and second largest element with maximum digits equal to x where 1<=x<=9."
   ],
   "starter_code": "class Solution:\n    def maxSum(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          7,
+          11,
+          15
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          9999,
+          10000,
+          5000,
+          1
+        ]
+      },
+      "expected": 10001
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          200
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10000
+        ]
+      },
+      "expected": 10001
+    }
+  ]
 }

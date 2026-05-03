@@ -24,5 +24,29 @@
   ],
   "hints": [],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def tree2str(self, root: Optional[TreeNode]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "root": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": "1(2(4))(3)"
+    },
+    {
+      "args": {
+        "root": [
+          1,
+          2,
+          3,
+          null,
+          4
+        ]
+      },
+      "expected": "1(2()(4))(3)"
+    }
+  ]
 }

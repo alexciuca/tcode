@@ -24,5 +24,20 @@
     "Write a helper function to count the number of set bits in a number, then check whether the number of set bits is 2, 3, 5, 7, 11, 13, 17 or 19."
   ],
   "starter_code": "class Solution:\n    def countPrimeSetBits(self, left: int, right: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "L": 6,
+        "R": 10
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "L": 10,
+        "R": 15
+      },
+      "expected": 5
+    }
+  ]
 }

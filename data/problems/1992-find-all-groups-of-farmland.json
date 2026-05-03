@@ -34,5 +34,158 @@
     "Use DFS to traverse through different groups of farmlands and keep track of the smallest and largest x-coordinate and y-coordinates you have seen in each group."
   ],
   "starter_code": "class Solution:\n    def findFarmland(self, land: List[List[int]]) -> List[List[int]]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "land": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "args": {
+        "land": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "args": {
+        "land": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "land": [
+          [
+            1
+          ]
+        ]
+      },
+      "expected": [
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "args": {
+        "land": [
+          [
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          2,
+          2,
+          3,
+          3
+        ]
+      ]
+    }
+  ]
 }

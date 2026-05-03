@@ -32,5 +32,150 @@
     "The number of nodes with an odd degree in the original graph should be either 0, 2, or 4. Try to work on each of these cases."
   ],
   "starter_code": "class Solution:\n    def isPossible(self, n: int, edges: List[List[int]]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 4,
+        "edges": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 5,
+        "edges": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            1
+          ]
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 3,
+        "edges": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 6,
+        "edges": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 100000,
+        "edges": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            1
+          ]
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

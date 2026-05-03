@@ -23,5 +23,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def orderlyQueue(self, s: str, k: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "cba",
+        "k": 1
+      },
+      "expected": "acb"
+    },
+    {
+      "args": {
+        "s": "baaca",
+        "k": 3
+      },
+      "expected": "aaabc"
+    },
+    {
+      "args": {
+        "s": "dcba",
+        "k": 2
+      },
+      "expected": "abcd"
+    },
+    {
+      "args": {
+        "s": "a",
+        "k": 1
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "zyxwvutsrqponmlkjihgfedcba",
+        "k": 2
+      },
+      "expected": "abcdefghijklmnopqrstuvwxyz"
+    }
+  ]
 }

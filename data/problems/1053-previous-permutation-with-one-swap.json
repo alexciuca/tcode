@@ -27,5 +27,132 @@
     "You need to swap two values, one larger than the other.  Where is the larger one located?"
   ],
   "starter_code": "class Solution:\n    def prevPermOpt1(self, arr: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          3,
+          1,
+          2
+        ]
+      },
+      "expected": [
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          1,
+          5
+        ]
+      },
+      "expected": [
+        1,
+        1,
+        5
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          1
+        ]
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          9,
+          4,
+          6,
+          2,
+          6
+        ]
+      },
+      "expected": [
+        1,
+        9,
+        4,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          5,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected": [
+        5,
+        1,
+        1,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ]
 }

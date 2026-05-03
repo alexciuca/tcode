@@ -33,5 +33,78 @@
     "To find the maximum frequency of a value consider the biggest elements smaller than or equal to this value"
   ],
   "starter_code": "class Solution:\n    def maxFrequency(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          4
+        ],
+        "k": 5
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "k": 3
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          9,
+          9,
+          9,
+          9
+        ],
+        "k": 0
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          100000
+        ],
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "k": 100000
+      },
+      "expected": 17
+    }
+  ]
 }

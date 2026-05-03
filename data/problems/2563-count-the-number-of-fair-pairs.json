@@ -30,5 +30,78 @@
     "As you move to larger number, both boundaries move down."
   ],
   "starter_code": "class Solution:\n    def countFairPairs(self, nums: List[int], lower: int, upper: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          0,
+          1,
+          4,
+          7
+        ],
+        "lower": 2,
+        "upper": 7
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          5,
+          7,
+          9
+        ],
+        "lower": 11,
+        "upper": 11
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          -1000000000,
+          1000000000
+        ],
+        "lower": -1000000000,
+        "upper": 1000000000
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "lower": 0,
+        "upper": 0
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums": [
+          -10,
+          -8,
+          -5,
+          -3,
+          0,
+          2,
+          4,
+          6,
+          7,
+          8,
+          12,
+          15
+        ],
+        "lower": -15,
+        "upper": 20
+      },
+      "expected": 61
+    }
+  ]
 }

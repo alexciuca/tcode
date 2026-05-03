@@ -36,5 +36,36 @@
     "Use dynamic programming where <code>dp[i]</code> is the minimum number of operations required to make <code>occ[0..i]</code> good. You will need to use the above observations to come up with the transitions."
   ],
   "starter_code": "class Solution:\n    def makeStringGood(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aab"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aaabbbccc"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "aaaa"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abcabcabcabcabcabcabcabcabcabcabc"
+      },
+      "expected": 0
+    }
+  ]
 }

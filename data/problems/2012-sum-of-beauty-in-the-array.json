@@ -28,5 +28,75 @@
     "suffix[i] records the minimum value in range (i + 1, n - 1) inclusive."
   ],
   "starter_code": "class Solution:\n    def sumOfBeauties(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          4,
+          6,
+          2,
+          3,
+          2,
+          5
+        ]
+      },
+      "expected": 13
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          100000,
+          100000,
+          100000,
+          100000
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

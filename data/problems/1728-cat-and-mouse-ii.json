@@ -37,5 +37,70 @@
     "Try working backward: consider all trivial states you know to be winning or losing, and work backward to determine which other states can be labeled as winning or losing."
   ],
   "starter_code": "class Solution:\n    def canMouseWin(self, grid: List[str], catJump: int, mouseJump: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          "M.C",
+          "...",
+          ".F."
+        ],
+        "catJump": 1,
+        "mouseJump": 1
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "grid": [
+          "M.C.F"
+        ],
+        "catJump": 2,
+        "mouseJump": 3
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "grid": [
+          "C",
+          "M",
+          "F"
+        ],
+        "catJump": 8,
+        "mouseJump": 8
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "grid": [
+          "M.#.C",
+          ".....",
+          "#...#",
+          ".....",
+          ".F..."
+        ],
+        "catJump": 1,
+        "mouseJump": 2
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "grid": [
+          "M.....C",
+          ".......",
+          ".......",
+          "...#...",
+          ".......",
+          ".......",
+          ".....F."
+        ],
+        "catJump": 3,
+        "mouseJump": 4
+      },
+      "expected": false
+    }
+  ]
 }

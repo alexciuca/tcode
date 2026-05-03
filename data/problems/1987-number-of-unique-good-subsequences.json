@@ -28,5 +28,36 @@
     "Find the answer at each index based on the previous indexes' answers."
   ],
   "starter_code": "class Solution:\n    def numberOfUniqueGoodSubsequences(self, binary: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "binary": "001"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "binary": "101"
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "binary": "0"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "binary": "1"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "binary": "00110110101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010"
+      },
+      "expected": 191690598
+    }
+  ]
 }

@@ -26,5 +26,136 @@
     "Iterate on each item, and check if each one matches the rule according to the statement."
   ],
   "starter_code": "class Solution:\n    def countMatches(self, items: List[List[str]], ruleKey: str, ruleValue: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "items": [
+          [
+            "phone",
+            "blue",
+            "pixel"
+          ],
+          [
+            "computer",
+            "silver",
+            "lenovo"
+          ],
+          [
+            "phone",
+            "gold",
+            "iphone"
+          ]
+        ],
+        "ruleKey": "type",
+        "ruleValue": "phone"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "items": [
+          [
+            "phone",
+            "blue",
+            "pixel"
+          ],
+          [
+            "computer",
+            "silver",
+            "lenovo"
+          ],
+          [
+            "phone",
+            "gold",
+            "iphone"
+          ]
+        ],
+        "ruleKey": "color",
+        "ruleValue": "silver"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "items": [
+          [
+            "item1",
+            "red",
+            "name1"
+          ],
+          [
+            "item2",
+            "red",
+            "name2"
+          ],
+          [
+            "item3",
+            "red",
+            "name3"
+          ],
+          [
+            "item4",
+            "red",
+            "name4"
+          ]
+        ],
+        "ruleKey": "color",
+        "ruleValue": "red"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "items": [
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ],
+        "ruleKey": "name",
+        "ruleValue": "c"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "items": [
+          [
+            "type1",
+            "color1",
+            "name1"
+          ],
+          [
+            "type2",
+            "color2",
+            "name2"
+          ],
+          [
+            "type3",
+            "color3",
+            "name3"
+          ],
+          [
+            "type4",
+            "color4",
+            "name4"
+          ],
+          [
+            "type5",
+            "color5",
+            "name5"
+          ],
+          [
+            "type6",
+            "color6",
+            "name6"
+          ]
+        ],
+        "ruleKey": "name",
+        "ruleValue": "nonexistent"
+      },
+      "expected": 0
+    }
+  ]
 }

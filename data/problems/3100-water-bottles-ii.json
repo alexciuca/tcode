@@ -24,5 +24,41 @@
     "Simulate the process step by step. At each step, drink <code>numExchange</code> bottles of water then exchange them for a full bottle. Keep repeating this step until you cannot exchange  bottles anymore."
   ],
   "starter_code": "class Solution:\n    def maxBottlesDrunk(self, numBottles: int, numExchange: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "numBottles": 9,
+        "numExchange": 3
+      },
+      "expected": 11
+    },
+    {
+      "args": {
+        "numBottles": 1,
+        "numExchange": 1
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "numBottles": 100,
+        "numExchange": 1
+      },
+      "expected": 114
+    },
+    {
+      "args": {
+        "numBottles": 1,
+        "numExchange": 100
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "numBottles": 15,
+        "numExchange": 4
+      },
+      "expected": 18
+    }
+  ]
 }

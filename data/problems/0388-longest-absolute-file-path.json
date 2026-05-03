@@ -30,5 +30,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def lengthLongestPath(self, input: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "input": "file1.txt"
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "input": "dir\n\tsubdir1\n\t\tfile1.txt\n\tsubdir2\n\t\tfile2.chats"
+      },
+      "expected": 23
+    },
+    {
+      "args": {
+        "input": "a\n\tb\n\t\tc.txt"
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "input": "dir1\n\tfile1.txt\ndir2\n\tsubdir\n\t\tfile2.doc"
+      },
+      "expected": 21
+    },
+    {
+      "args": {
+        "input": "a\n\tb\n\t\tc\n\t\t\td\n\t\t\t\te\n\t\t\t\t\tf.txt\n\tg.txt"
+      },
+      "expected": 15
+    }
+  ]
 }

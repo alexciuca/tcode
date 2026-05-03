@@ -26,5 +26,66 @@
     "Use binary search to find the maximum c as the answer."
   ],
   "starter_code": "class Solution:\n    def maximumCandies(self, candies: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "candies": [
+          5,
+          8,
+          6
+        ],
+        "k": 3
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "candies": [
+          2,
+          5
+        ],
+        "k": 11
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "candies": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 4
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "candies": [
+          10000000
+        ],
+        "k": 1000000000000
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "candies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "k": 100
+      },
+      "expected": 0
+    }
+  ]
 }

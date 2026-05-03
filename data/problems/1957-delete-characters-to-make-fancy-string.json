@@ -27,5 +27,36 @@
     "If three or more consecutive characters are equal, keep two of them and delete the rest."
   ],
   "starter_code": "class Solution:\n    def makeFancyString(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aab"
+      },
+      "expected": "aab"
+    },
+    {
+      "args": {
+        "s": "aaabccccdd"
+      },
+      "expected": "aabccdd"
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "aaaaaaaaaaaa"
+      },
+      "expected": "aa"
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijk"
+      },
+      "expected": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijk"
+    }
+  ]
 }

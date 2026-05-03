@@ -24,5 +24,41 @@
     "For each integer in range [1,1000], check if it’s divisible by both A and B."
   ],
   "starter_code": "class Solution:\n    def commonFactors(self, a: int, b: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": 12,
+        "b": 8
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "a": 25,
+        "b": 30
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "a": 1,
+        "b": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "a": 997,
+        "b": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "a": 1000,
+        "b": 1000
+      },
+      "expected": 16
+    }
+  ]
 }

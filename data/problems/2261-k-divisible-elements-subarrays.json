@@ -30,5 +30,88 @@
     "Use any suitable method to hash the subarrays to avoid duplicates."
   ],
   "starter_code": "class Solution:\n    def countDistinct(self, nums: List[int], k: int, p: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          5,
+          2,
+          9,
+          1,
+          4
+        ],
+        "k": 2,
+        "p": 3
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "k": 2,
+        "p": 2
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          6,
+          6,
+          6
+        ],
+        "k": 1,
+        "p": 6
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 3,
+        "p": 1
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          7,
+          14,
+          21,
+          28,
+          35,
+          42,
+          49,
+          56,
+          63,
+          70,
+          77,
+          84,
+          91,
+          98,
+          105,
+          112,
+          119,
+          126,
+          133,
+          140
+        ],
+        "k": 5,
+        "p": 7
+      },
+      "expected": 90
+    }
+  ]
 }

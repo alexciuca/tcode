@@ -31,5 +31,78 @@
     "Note that the number of edges should not be less than 3."
   ],
   "starter_code": "class Solution:\n    def largestPerimeter(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "expected": 18
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          100,
+          1000,
+          1000000
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      "expected": 230
+    }
+  ]
 }

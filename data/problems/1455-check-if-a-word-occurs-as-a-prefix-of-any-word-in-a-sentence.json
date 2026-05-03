@@ -32,5 +32,41 @@
     "If searchWord doesn't exist as a prefix of any word return the default value (-1)."
   ],
   "starter_code": "class Solution:\n    def isPrefixOfWord(self, sentence: str, searchWord: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "sentence": "i love eating burger",
+        "searchWord": "burg"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "sentence": "this problem is an easy problem",
+        "searchWord": "pro"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "sentence": "a",
+        "searchWord": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "sentence": "hello world test case",
+        "searchWord": "xyz"
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "sentence": "the quick brown fox jumps over the lazy dog",
+        "searchWord": "t"
+      },
+      "expected": 1
+    }
+  ]
 }

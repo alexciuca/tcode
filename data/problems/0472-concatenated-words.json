@@ -29,5 +29,45 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findAllConcatenatedWordsInADict(self, words: List[str]) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "cat",
+          "cats",
+          "catsdogcats",
+          "dog",
+          "dogcatsdog",
+          "hippopotamuses",
+          "rat",
+          "ratcatdogcat"
+        ]
+      },
+      "expected": [
+        "catsdogcats",
+        "dogcatsdog",
+        "ratcatdogcat"
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "cat",
+          "dog",
+          "catdog"
+        ]
+      },
+      "expected": [
+        "catdog"
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          ""
+        ]
+      },
+      "expected": []
+    }
+  ]
 }

@@ -33,5 +33,121 @@
     "The adjacent pairs are like edges of a graph. Perform a depth-first search from the first element."
   ],
   "starter_code": "class Solution:\n    def restoreArray(self, adjacentPairs: List[List[int]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "adjacentPairs": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "args": {
+        "adjacentPairs": [
+          [
+            4,
+            -7
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      },
+      "expected": [
+        -7,
+        4,
+        3,
+        2,
+        null
+      ]
+    },
+    {
+      "args": {
+        "adjacentPairs": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        null,
+        null
+      ]
+    },
+    {
+      "args": {
+        "adjacentPairs": [
+          [
+            -100000,
+            100000
+          ],
+          [
+            100000,
+            -100000
+          ]
+        ]
+      },
+      "expected": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "args": {
+        "adjacentPairs": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ]
 }

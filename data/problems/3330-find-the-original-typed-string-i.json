@@ -26,5 +26,36 @@
     "Any group of consecutive characters might have been the mistake."
   ],
   "starter_code": "class Solution:\n    def possibleStringCount(self, word: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "hello"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "word": "aaa"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "word": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "aabbcc"
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "word": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst"
+      },
+      "expected": 1
+    }
+  ]
 }

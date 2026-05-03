@@ -25,5 +25,36 @@
     "Check if the number of found characters equals the alphabet length."
   ],
   "starter_code": "class Solution:\n    def checkIfPangram(self, sentence: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "sentence": "thequickbrownfoxjumpsoverthelazydog"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "sentence": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "sentence": "abc"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "sentence": "abcdefghijklmnopqrstuvwxyza"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "sentence": "thequickbrownfoxjumpsoverthelazydog thequickbrownfoxjumpsoverthelazydog thequickbrownfoxjumpsoverthelazydog thequickbrownfoxjumpsoverthelazydog thequickbrownfoxjumpsoverthelazydog thequickbrownfoxjumpsoverthelazydog"
+      },
+      "expected": false
+    }
+  ]
 }

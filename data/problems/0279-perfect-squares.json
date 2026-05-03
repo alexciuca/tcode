@@ -22,5 +22,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def numSquares(self, n: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 12
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "n": 13
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 128
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 43
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "n": 48
+      },
+      "expected": 3
+    }
+  ]
 }

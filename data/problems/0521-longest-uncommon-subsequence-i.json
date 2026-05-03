@@ -28,5 +28,41 @@
     "Otherwise, the answer is the string <code>a</code> or the string <code>b</code>."
   ],
   "starter_code": "class Solution:\n    def findLUSlength(self, a: str, b: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": "aba",
+        "b": "cdc"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "a": "abc",
+        "b": "abc"
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "a": "a",
+        "b": "b"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "a": "abcdefghijklmnopqrstuvwxyz",
+        "b": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected": 26
+    },
+    {
+      "args": {
+        "a": "aaa",
+        "b": "aa"
+      },
+      "expected": 3
+    }
+  ]
 }

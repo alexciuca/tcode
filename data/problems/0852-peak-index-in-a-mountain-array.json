@@ -26,5 +26,27 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def peakIndexInMountainArray(self, arr: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": [
+          0,
+          1,
+          0
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "a": [
+          0,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

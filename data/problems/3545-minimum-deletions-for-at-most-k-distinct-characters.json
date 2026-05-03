@@ -34,5 +34,41 @@
     "Otherwise, the minimum deletions is the sum of the first <code>d</code> entries in <code>counts</code> (removing the <code>d</code> least-frequent characters)."
   ],
   "starter_code": "class Solution:\n    def minDeletion(self, s: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abcd",
+        "k": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "aaabbbccc",
+        "k": 2
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "a",
+        "k": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnop",
+        "k": 1
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "s": "aaaaaa",
+        "k": 3
+      },
+      "expected": 0
+    }
+  ]
 }

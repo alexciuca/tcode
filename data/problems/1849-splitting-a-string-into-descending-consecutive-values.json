@@ -29,5 +29,36 @@
     "Look out for trailing zeros in string"
   ],
   "starter_code": "class Solution:\n    def splitString(self, s: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "1234"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "91098987"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "1"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "10987654321"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "12345678901234567890"
+      },
+      "expected": false
+    }
+  ]
 }

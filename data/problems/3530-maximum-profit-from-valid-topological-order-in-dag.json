@@ -36,5 +36,139 @@
     "Try maintaining the <code>degrees</code> across function calls."
   ],
   "starter_code": "class Solution:\n    def maxProfit(self, n: int, edges: List[List[int]], score: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 4,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "score": [
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "expected": 300
+    },
+    {
+      "args": {
+        "n": 3,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "score": [
+          100,
+          50,
+          50
+        ]
+      },
+      "expected": 350
+    },
+    {
+      "args": {
+        "n": 5,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "score": [
+          1,
+          1,
+          100000,
+          1,
+          1
+        ]
+      },
+      "expected": 300012
+    },
+    {
+      "args": {
+        "n": 2,
+        "edges": [],
+        "score": [
+          50000,
+          50000
+        ]
+      },
+      "expected": 150000
+    },
+    {
+      "args": {
+        "n": 6,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "score": [
+          100,
+          200,
+          150,
+          250,
+          300,
+          350
+        ]
+      },
+      "expected": 5550
+    }
+  ]
 }

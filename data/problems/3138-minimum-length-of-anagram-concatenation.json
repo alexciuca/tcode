@@ -29,5 +29,36 @@
     "Check each candidate naively."
   ],
   "starter_code": "class Solution:\n    def minAnagramLength(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abab"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "cat"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "aabbccdd"
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected": 1
+    }
+  ]
 }

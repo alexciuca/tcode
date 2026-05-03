@@ -30,5 +30,41 @@
     "Find the longest suffix which is also a prefix and the length is multiple of <code>k</code>."
   ],
   "starter_code": "class Solution:\n    def minimumTimeToInitialState(self, word: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "abacabad",
+        "k": 3
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "word": "abcdefghij",
+        "k": 2
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "word": "a",
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "aaaa",
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "k": 1
+      },
+      "expected": 26
+    }
+  ]
 }

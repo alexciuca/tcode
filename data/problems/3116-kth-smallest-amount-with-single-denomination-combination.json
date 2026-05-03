@@ -31,5 +31,58 @@
     "Use the inclusion-exclusion principle to count the number of distinct amounts that can be made up to <code>x</code>."
   ],
   "starter_code": "class Solution:\n    def findKthSmallest(self, coins: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "coins": [
+          3,
+          6,
+          9
+        ],
+        "k": 3
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "coins": [
+          5,
+          2
+        ],
+        "k": 7
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "coins": [
+          1
+        ],
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "coins": [
+          3,
+          7,
+          11
+        ],
+        "k": 1
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "coins": [
+          3,
+          5,
+          7
+        ],
+        "k": 2000000000
+      },
+      "expected": 2957746480
+    }
+  ]
 }

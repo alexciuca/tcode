@@ -25,5 +25,36 @@
     "Beware of overflow when you reverse the integer."
   ],
   "starter_code": "class Solution:\n    def isPalindrome(self, x: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "x": 121
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "x": -121
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "x": 10
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "x": 0
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "x": 2147483647
+      },
+      "expected": false
+    }
+  ]
 }

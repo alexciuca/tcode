@@ -4,7 +4,10 @@ tcode is a terminal-based AI training engine for CS students learning data struc
 
 ## Dev setup
 
+
 ```bash
+#Set a ANTHROPIC_API_KEY variable in the .env
+touch .env 
 git clone https://github.com/alexandru356/tcode.git
 cd tcode
 uv sync
@@ -13,11 +16,6 @@ uv sync
 ```bash
 uv run tcode start --file path/to/solution.py
 ```
-## Running tests
-```bash
-uv run pytest
-```
-
 ## Formatting and linting
 ```bash
 # check for issues
@@ -33,6 +31,6 @@ uv run ruff format .
 
 ## Notes
 
-- Flow: `tcode start` → menu (`TCodeApp`) → select a problem → session view (`SessionApp`).
+- Flow: `tcode start` -> menu (`TCodeApp`) -> select a problem -> session view (`SessionApp`).
 - `--file` is the path to the student's solution file (used by the session UI; file watching is planned).
-
+- Problem test cases are imported and curated from public LeetCode-style datasets.

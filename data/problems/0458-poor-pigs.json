@@ -27,5 +27,30 @@
     "Find minimum <code>x</code> such that <code>(T+1)^x >= N</code>"
   ],
   "starter_code": "class Solution:\n    def poorPigs(self, buckets: int, minutesToDie: int, minutesToTest: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "buckets": 1000,
+        "minutesToDie": 15,
+        "minutesToTest": 60
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "buckets": 65,
+        "minutesToDie": 15,
+        "minutesToTest": 59
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "buckets": 3,
+        "minutesToDie": 15,
+        "minutesToTest": 59
+      },
+      "expected": 1
+    }
+  ]
 }

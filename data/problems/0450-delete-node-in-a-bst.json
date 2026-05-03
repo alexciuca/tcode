@@ -29,5 +29,106 @@
   ],
   "hints": [],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "root": [
+          5,
+          3,
+          7,
+          2,
+          4,
+          6,
+          8
+        ],
+        "key": 3
+      },
+      "expected": [
+        5,
+        4,
+        7,
+        2,
+        null,
+        6,
+        8
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          5,
+          3,
+          7,
+          2,
+          4,
+          6,
+          8
+        ],
+        "key": 0
+      },
+      "expected": [
+        5,
+        3,
+        7,
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          5
+        ],
+        "key": 5
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "root": [
+          5,
+          3,
+          7
+        ],
+        "key": 7
+      },
+      "expected": [
+        5,
+        3
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          10,
+          5,
+          15,
+          3,
+          7,
+          12,
+          20,
+          null,
+          null,
+          6,
+          8
+        ],
+        "key": 5
+      },
+      "expected": [
+        10,
+        6,
+        15,
+        3,
+        7,
+        12,
+        20,
+        null,
+        null,
+        null,
+        8
+      ]
+    }
+  ]
 }

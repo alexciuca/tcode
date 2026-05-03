@@ -27,5 +27,80 @@
     "Try to update the row and column of the snake after each command."
   ],
   "starter_code": "class Solution:\n    def finalPositionOfSnake(self, n: int, commands: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 2,
+        "commands": [
+          "RIGHT",
+          "DOWN"
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "n": 3,
+        "commands": [
+          "DOWN",
+          "RIGHT",
+          "UP",
+          "LEFT"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 2,
+        "commands": [
+          "DOWN",
+          "RIGHT"
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "n": 10,
+        "commands": [
+          "RIGHT",
+          "RIGHT",
+          "RIGHT",
+          "RIGHT",
+          "RIGHT",
+          "DOWN",
+          "DOWN",
+          "DOWN",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "expected": 55
+    },
+    {
+      "args": {
+        "n": 5,
+        "commands": [
+          "DOWN",
+          "DOWN",
+          "DOWN",
+          "DOWN",
+          "RIGHT",
+          "RIGHT",
+          "RIGHT",
+          "RIGHT",
+          "UP",
+          "UP",
+          "UP",
+          "UP",
+          "LEFT",
+          "LEFT",
+          "LEFT",
+          "LEFT"
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

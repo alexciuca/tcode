@@ -26,5 +26,30 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def scoreOfParentheses(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "S": "()"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "S": "(())"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "S": "()()"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "S": "(()(()))"
+      },
+      "expected": 6
+    }
+  ]
 }

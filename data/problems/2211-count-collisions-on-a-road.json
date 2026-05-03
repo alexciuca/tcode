@@ -27,5 +27,36 @@
     "Will stationary cars contribute towards the answer?"
   ],
   "starter_code": "class Solution:\n    def countCollisions(self, directions: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "directions": "RRSL"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "directions": "RLRS"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "directions": "S"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "directions": "LLRR"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "directions": "RRRRLLLLSSSSRRRLLLSSS"
+      },
+      "expected": 12
+    }
+  ]
 }

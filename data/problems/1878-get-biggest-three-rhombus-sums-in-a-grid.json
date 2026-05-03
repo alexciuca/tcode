@@ -34,5 +34,178 @@
     "The limits are small enough for you to iterate over all rhombus sizes then iterate over all possible borders to get the sums"
   ],
   "starter_code": "class Solution:\n    def getBiggestThree(self, grid: List[List[int]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          [
+            3,
+            4,
+            5,
+            1
+          ],
+          [
+            2,
+            10,
+            1,
+            6
+          ],
+          [
+            5,
+            7,
+            3,
+            2
+          ]
+        ]
+      },
+      "expected": [
+        27,
+        10,
+        8
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6
+          ],
+          [
+            7,
+            8,
+            9
+          ]
+        ]
+      },
+      "expected": [
+        18,
+        9,
+        8
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            100000
+          ]
+        ]
+      },
+      "expected": [
+        100000
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        8,
+        4,
+        1
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            50,
+            60,
+            70,
+            80,
+            90,
+            100
+          ],
+          [
+            40,
+            1,
+            2,
+            3,
+            4,
+            110
+          ],
+          [
+            30,
+            5,
+            6,
+            7,
+            8,
+            120
+          ],
+          [
+            20,
+            9,
+            10,
+            11,
+            12,
+            130
+          ],
+          [
+            10,
+            99999,
+            99998,
+            99997,
+            99996,
+            140
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            150
+          ]
+        ]
+      },
+      "expected": [
+        300003,
+        300001,
+        200280
+      ]
+    }
+  ]
 }

@@ -25,5 +25,84 @@
     "The number to be eliminated must have a frequency of 1, same as the others or the same +1."
   ],
   "starter_code": "class Solution:\n    def maxEqualFreq(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "expected": 16
+    }
+  ]
 }

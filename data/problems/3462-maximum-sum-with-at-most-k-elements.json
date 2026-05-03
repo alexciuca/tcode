@@ -32,5 +32,124 @@
     "Use a max-heap to efficiently pick the largest <code>k</code> elements across all rows."
   ],
   "starter_code": "class Solution:\n    def maxSum(self, grid: List[List[int]], limits: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6
+          ],
+          [
+            7,
+            8,
+            9
+          ]
+        ],
+        "limits": [
+          1,
+          2,
+          3
+        ],
+        "k": 3
+      },
+      "expected": 24
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            10,
+            20
+          ],
+          [
+            30,
+            40
+          ]
+        ],
+        "limits": [
+          2,
+          2
+        ],
+        "k": 4
+      },
+      "expected": 100
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            100
+          ]
+        ],
+        "limits": [
+          0
+        ],
+        "k": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            5,
+            5,
+            5
+          ],
+          [
+            5,
+            5,
+            5
+          ]
+        ],
+        "limits": [
+          0,
+          3
+        ],
+        "k": 2
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          [
+            100,
+            200,
+            300,
+            400,
+            500
+          ]
+        ],
+        "limits": [
+          2,
+          3,
+          5
+        ],
+        "k": 8
+      },
+      "expected": 1620
+    }
+  ]
 }

@@ -36,5 +36,60 @@
     "From left to right, insert each word into the trie, and increase our final result by each node's counter when going down the trie during insertion. This means there was at least one word that is both a prefix and a suffix of the current word before."
   ],
   "starter_code": "class Solution:\n    def countPrefixSuffixPairs(self, words: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "a",
+          "aba",
+          "ab",
+          "ba"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words": [
+          "abab",
+          "ab",
+          "ba"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "words": [
+          "a"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "words": [
+          "abc",
+          "abc",
+          "abc"
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "words": [
+          "abcdefghij",
+          "abcdefg",
+          "fghij",
+          "hijklmn",
+          "abc",
+          "ab",
+          "a",
+          "bcdefghij"
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

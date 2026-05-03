@@ -27,5 +27,67 @@
     "You just need two states in DP which are last_ind in the permutation and the mask of numbers already used."
   ],
   "starter_code": "class Solution:\n    def specialPerm(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          3,
+          6
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 24
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          4,
+          3
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

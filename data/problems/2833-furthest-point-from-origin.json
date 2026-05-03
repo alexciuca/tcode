@@ -28,5 +28,36 @@
     "<div class=\"_1l1MA\">Replace all characters of <code>'_’</code> with the character that occurs the most. </div>"
   ],
   "starter_code": "class Solution:\n    def furthestDistanceFromOrigin(self, moves: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "moves": "LRLGLRLLGRL"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "moves": "L_RL__R"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "moves": "L"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "moves": "_______________________________"
+      },
+      "expected": 31
+    },
+    {
+      "args": {
+        "moves": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"
+      },
+      "expected": 48
+    }
+  ]
 }

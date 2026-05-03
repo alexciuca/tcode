@@ -31,5 +31,78 @@
     "Handle the 2s in the factors of elements separately"
   ],
   "starter_code": "class Solution:\n    def maxGCDScore(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          4,
+          8,
+          16
+        ],
+        "k": 2
+      },
+      "expected": 32
+    },
+    {
+      "args": {
+        "nums": [
+          12,
+          18,
+          24,
+          36
+        ],
+        "k": 3
+      },
+      "expected": 72
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 1
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          7,
+          13,
+          19,
+          23
+        ],
+        "k": 2
+      },
+      "expected": 46
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          50,
+          25,
+          150,
+          75,
+          200,
+          60,
+          40,
+          80,
+          120,
+          90,
+          110,
+          130,
+          70,
+          140
+        ],
+        "k": 5
+      },
+      "expected": 400
+    }
+  ]
 }

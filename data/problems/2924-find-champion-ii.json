@@ -29,5 +29,141 @@
     "The champion(s) should have in-degree <code>0</code> in the DAG."
   ],
   "starter_code": "class Solution:\n    def findChampion(self, n: int, edges: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 3,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 4,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 2,
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 5,
+        "edges": []
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "n": 100,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            13
+          ],
+          [
+            5,
+            14
+          ],
+          [
+            6,
+            15
+          ],
+          [
+            7,
+            16
+          ],
+          [
+            8,
+            17
+          ],
+          [
+            9,
+            18
+          ]
+        ]
+      },
+      "expected": -1
+    }
+  ]
 }

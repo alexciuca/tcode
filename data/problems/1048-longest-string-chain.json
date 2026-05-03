@@ -33,5 +33,75 @@
     "For each word in order of length, for each word2 which is word with one character removed, length[word2] = max(length[word2], length[word] + 1)."
   ],
   "starter_code": "class Solution:\n    def longestStrChain(self, words: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "a",
+          "b",
+          "ba",
+          "bca",
+          "bda",
+          "bdca"
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "words": [
+          "1",
+          "ae",
+          "abc",
+          "abd",
+          "ade",
+          "abde",
+          "abcde"
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "words": [
+          "a"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words": [
+          "a",
+          "aa",
+          "aaa",
+          "aaaa",
+          "aaaaa",
+          "aaaaaa",
+          "aaaaaaa"
+        ]
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "words": [
+          "yz",
+          "abc",
+          "def",
+          "ghi",
+          "jkl",
+          "mno",
+          "pqr",
+          "stu",
+          "vwx",
+          "abcd",
+          "defg",
+          "ghij",
+          "jklm"
+        ]
+      },
+      "expected": 2
+    }
+  ]
 }

@@ -29,5 +29,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def titleToNumber(self, columnTitle: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "columnTitle": "A"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "columnTitle": "Z"
+      },
+      "expected": 26
+    },
+    {
+      "args": {
+        "columnTitle": "AA"
+      },
+      "expected": 27
+    },
+    {
+      "args": {
+        "columnTitle": "AB"
+      },
+      "expected": 28
+    },
+    {
+      "args": {
+        "columnTitle": "FXSHRXW"
+      },
+      "expected": 2147483647
+    }
+  ]
 }

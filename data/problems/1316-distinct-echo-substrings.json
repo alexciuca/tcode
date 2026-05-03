@@ -28,5 +28,36 @@
     "Try all substrings and use hashing to check them."
   ],
   "starter_code": "class Solution:\n    def distinctEchoSubstrings(self, text: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "text": "abab"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "text": "aaaaaa"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "text": "a"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "text": "abcabcabcabc"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "text": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu"
+      },
+      "expected": 130
+    }
+  ]
 }

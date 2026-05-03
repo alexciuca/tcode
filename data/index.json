@@ -252,19 +252,6 @@
     "file": "0022-generate-parentheses.json"
   },
   {
-    "id": "0023",
-    "slug": "merge-k-sorted-lists",
-    "title": "Merge k Sorted Lists",
-    "difficulty": "Hard",
-    "topics": [
-      "Linked List",
-      "Divide and Conquer",
-      "Heap (Priority Queue)",
-      "Merge Sort"
-    ],
-    "file": "0023-merge-k-sorted-lists.json"
-  },
-  {
     "id": "0024",
     "slug": "swap-nodes-in-pairs",
     "title": "Swap Nodes in Pairs",
@@ -398,31 +385,6 @@
       "Binary Search"
     ],
     "file": "0035-search-insert-position.json"
-  },
-  {
-    "id": "0036",
-    "slug": "valid-sudoku",
-    "title": "Valid Sudoku",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Matrix"
-    ],
-    "file": "0036-valid-sudoku.json"
-  },
-  {
-    "id": "0037",
-    "slug": "sudoku-solver",
-    "title": "Sudoku Solver",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Backtracking",
-      "Matrix"
-    ],
-    "file": "0037-sudoku-solver.json"
   },
   {
     "id": "0038",
@@ -1560,19 +1522,6 @@
     "file": "0132-palindrome-partitioning-ii.json"
   },
   {
-    "id": "0133",
-    "slug": "clone-graph",
-    "title": "Clone Graph",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Depth-First Search",
-      "Breadth-First Search",
-      "Graph"
-    ],
-    "file": "0133-clone-graph.json"
-  },
-  {
     "id": "0134",
     "slug": "gas-station",
     "title": "Gas Station",
@@ -1615,17 +1564,6 @@
       "Bit Manipulation"
     ],
     "file": "0137-single-number-ii.json"
-  },
-  {
-    "id": "0138",
-    "slug": "copy-list-with-random-pointer",
-    "title": "Copy List with Random Pointer",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Linked List"
-    ],
-    "file": "0138-copy-list-with-random-pointer.json"
   },
   {
     "id": "0139",
@@ -1671,18 +1609,6 @@
     "file": "0141-linked-list-cycle.json"
   },
   {
-    "id": "0142",
-    "slug": "linked-list-cycle-ii",
-    "title": "Linked List Cycle II",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Linked List",
-      "Two Pointers"
-    ],
-    "file": "0142-linked-list-cycle-ii.json"
-  },
-  {
     "id": "0143",
     "slug": "reorder-list",
     "title": "Reorder List",
@@ -1720,19 +1646,6 @@
       "Binary Tree"
     ],
     "file": "0145-binary-tree-postorder-traversal.json"
-  },
-  {
-    "id": "0146",
-    "slug": "lru-cache",
-    "title": "LRU Cache",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Linked List",
-      "Design",
-      "Doubly-Linked List"
-    ],
-    "file": "0146-lru-cache.json"
   },
   {
     "id": "0147",
@@ -1827,29 +1740,6 @@
       "Binary Search"
     ],
     "file": "0154-find-minimum-in-rotated-sorted-array-ii.json"
-  },
-  {
-    "id": "0155",
-    "slug": "min-stack",
-    "title": "Min Stack",
-    "difficulty": "Medium",
-    "topics": [
-      "Stack",
-      "Design"
-    ],
-    "file": "0155-min-stack.json"
-  },
-  {
-    "id": "0160",
-    "slug": "intersection-of-two-linked-lists",
-    "title": "Intersection of Two Linked Lists",
-    "difficulty": "Easy",
-    "topics": [
-      "Hash Table",
-      "Linked List",
-      "Two Pointers"
-    ],
-    "file": "0160-intersection-of-two-linked-lists.json"
   },
   {
     "id": "0162",
@@ -1957,21 +1847,6 @@
     "file": "0172-factorial-trailing-zeroes.json"
   },
   {
-    "id": "0173",
-    "slug": "binary-search-tree-iterator",
-    "title": "Binary Search Tree Iterator",
-    "difficulty": "Medium",
-    "topics": [
-      "Stack",
-      "Tree",
-      "Design",
-      "Binary Search Tree",
-      "Binary Tree",
-      "Iterator"
-    ],
-    "file": "0173-binary-search-tree-iterator.json"
-  },
-  {
     "id": "0174",
     "slug": "dungeon-game",
     "title": "Dungeon Game",
@@ -1982,46 +1857,6 @@
       "Matrix"
     ],
     "file": "0174-dungeon-game.json"
-  },
-  {
-    "id": "0175",
-    "slug": "combine-two-tables",
-    "title": "Combine Two Tables",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0175-combine-two-tables.json"
-  },
-  {
-    "id": "0176",
-    "slug": "second-highest-salary",
-    "title": "Second Highest Salary",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "0176-second-highest-salary.json"
-  },
-  {
-    "id": "0177",
-    "slug": "nth-highest-salary",
-    "title": "Nth Highest Salary",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "0177-nth-highest-salary.json"
-  },
-  {
-    "id": "0178",
-    "slug": "rank-scores",
-    "title": "Rank Scores",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "0178-rank-scores.json"
   },
   {
     "id": "0179",
@@ -2035,66 +1870,6 @@
       "Sorting"
     ],
     "file": "0179-largest-number.json"
-  },
-  {
-    "id": "0180",
-    "slug": "consecutive-numbers",
-    "title": "Consecutive Numbers",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "0180-consecutive-numbers.json"
-  },
-  {
-    "id": "0181",
-    "slug": "employees-earning-more-than-their-managers",
-    "title": "Employees Earning More Than Their Managers",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0181-employees-earning-more-than-their-managers.json"
-  },
-  {
-    "id": "0182",
-    "slug": "duplicate-emails",
-    "title": "Duplicate Emails",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0182-duplicate-emails.json"
-  },
-  {
-    "id": "0183",
-    "slug": "customers-who-never-order",
-    "title": "Customers Who Never Order",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0183-customers-who-never-order.json"
-  },
-  {
-    "id": "0184",
-    "slug": "department-highest-salary",
-    "title": "Department Highest Salary",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "0184-department-highest-salary.json"
-  },
-  {
-    "id": "0185",
-    "slug": "department-top-three-salaries",
-    "title": "Department Top Three Salaries",
-    "difficulty": "Hard",
-    "topics": [
-      "Database"
-    ],
-    "file": "0185-department-top-three-salaries.json"
   },
   {
     "id": "0187",
@@ -2157,66 +1932,6 @@
     "file": "0191-number-of-1-bits.json"
   },
   {
-    "id": "0192",
-    "slug": "word-frequency",
-    "title": "Word Frequency",
-    "difficulty": "Medium",
-    "topics": [
-      "Shell"
-    ],
-    "file": "0192-word-frequency.json"
-  },
-  {
-    "id": "0193",
-    "slug": "valid-phone-numbers",
-    "title": "Valid Phone Numbers",
-    "difficulty": "Easy",
-    "topics": [
-      "Shell"
-    ],
-    "file": "0193-valid-phone-numbers.json"
-  },
-  {
-    "id": "0194",
-    "slug": "transpose-file",
-    "title": "Transpose File",
-    "difficulty": "Medium",
-    "topics": [
-      "Shell"
-    ],
-    "file": "0194-transpose-file.json"
-  },
-  {
-    "id": "0195",
-    "slug": "tenth-line",
-    "title": "Tenth Line",
-    "difficulty": "Easy",
-    "topics": [
-      "Shell"
-    ],
-    "file": "0195-tenth-line.json"
-  },
-  {
-    "id": "0196",
-    "slug": "delete-duplicate-emails",
-    "title": "Delete Duplicate Emails",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0196-delete-duplicate-emails.json"
-  },
-  {
-    "id": "0197",
-    "slug": "rising-temperature",
-    "title": "Rising Temperature",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0197-rising-temperature.json"
-  },
-  {
     "id": "0198",
     "slug": "house-robber",
     "title": "House Robber",
@@ -2239,20 +1954,6 @@
       "Binary Tree"
     ],
     "file": "0199-binary-tree-right-side-view.json"
-  },
-  {
-    "id": "0200",
-    "slug": "number-of-islands",
-    "title": "Number of Islands",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Depth-First Search",
-      "Breadth-First Search",
-      "Union Find",
-      "Matrix"
-    ],
-    "file": "0200-number-of-islands.json"
   },
   {
     "id": "0201",
@@ -2336,19 +2037,6 @@
     "file": "0207-course-schedule.json"
   },
   {
-    "id": "0208",
-    "slug": "implement-trie-prefix-tree",
-    "title": "Implement Trie (Prefix Tree)",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "String",
-      "Design",
-      "Trie"
-    ],
-    "file": "0208-implement-trie-prefix-tree.json"
-  },
-  {
     "id": "0209",
     "slug": "minimum-size-subarray-sum",
     "title": "Minimum Size Subarray Sum",
@@ -2373,19 +2061,6 @@
       "Topological Sort"
     ],
     "file": "0210-course-schedule-ii.json"
-  },
-  {
-    "id": "0211",
-    "slug": "design-add-and-search-words-data-structure",
-    "title": "Design Add and Search Words Data Structure",
-    "difficulty": "Medium",
-    "topics": [
-      "String",
-      "Depth-First Search",
-      "Design",
-      "Trie"
-    ],
-    "file": "0211-design-add-and-search-words-data-structure.json"
   },
   {
     "id": "0212",
@@ -2517,19 +2192,6 @@
     "file": "0221-maximal-square.json"
   },
   {
-    "id": "0222",
-    "slug": "count-complete-tree-nodes",
-    "title": "Count Complete Tree Nodes",
-    "difficulty": "Easy",
-    "topics": [
-      "Binary Search",
-      "Bit Manipulation",
-      "Tree",
-      "Binary Tree"
-    ],
-    "file": "0222-count-complete-tree-nodes.json"
-  },
-  {
     "id": "0223",
     "slug": "rectangle-area",
     "title": "Rectangle Area",
@@ -2552,18 +2214,6 @@
       "Recursion"
     ],
     "file": "0224-basic-calculator.json"
-  },
-  {
-    "id": "0225",
-    "slug": "implement-stack-using-queues",
-    "title": "Implement Stack using Queues",
-    "difficulty": "Easy",
-    "topics": [
-      "Stack",
-      "Design",
-      "Queue"
-    ],
-    "file": "0225-implement-stack-using-queues.json"
   },
   {
     "id": "0226",
@@ -2639,18 +2289,6 @@
     "file": "0231-power-of-two.json"
   },
   {
-    "id": "0232",
-    "slug": "implement-queue-using-stacks",
-    "title": "Implement Queue using Stacks",
-    "difficulty": "Easy",
-    "topics": [
-      "Stack",
-      "Design",
-      "Queue"
-    ],
-    "file": "0232-implement-queue-using-stacks.json"
-  },
-  {
     "id": "0233",
     "slug": "number-of-digit-one",
     "title": "Number of Digit One",
@@ -2676,19 +2314,6 @@
     "file": "0234-palindrome-linked-list.json"
   },
   {
-    "id": "0235",
-    "slug": "lowest-common-ancestor-of-a-binary-search-tree",
-    "title": "Lowest Common Ancestor of a Binary Search Tree",
-    "difficulty": "Medium",
-    "topics": [
-      "Tree",
-      "Depth-First Search",
-      "Binary Search Tree",
-      "Binary Tree"
-    ],
-    "file": "0235-lowest-common-ancestor-of-a-binary-search-tree.json"
-  },
-  {
     "id": "0236",
     "slug": "lowest-common-ancestor-of-a-binary-tree",
     "title": "Lowest Common Ancestor of a Binary Tree",
@@ -2699,16 +2324,6 @@
       "Binary Tree"
     ],
     "file": "0236-lowest-common-ancestor-of-a-binary-tree.json"
-  },
-  {
-    "id": "0237",
-    "slug": "delete-node-in-a-linked-list",
-    "title": "Delete Node in a Linked List",
-    "difficulty": "Medium",
-    "topics": [
-      "Linked List"
-    ],
-    "file": "0237-delete-node-in-a-linked-list.json"
   },
   {
     "id": "0238",
@@ -2812,16 +2427,6 @@
     "file": "0260-single-number-iii.json"
   },
   {
-    "id": "0262",
-    "slug": "trips-and-users",
-    "title": "Trips and Users",
-    "difficulty": "Hard",
-    "topics": [
-      "Database"
-    ],
-    "file": "0262-trips-and-users.json"
-  },
-  {
     "id": "0263",
     "slug": "ugly-number",
     "title": "Ugly Number",
@@ -2895,17 +2500,6 @@
     "file": "0275-h-index-ii.json"
   },
   {
-    "id": "0278",
-    "slug": "first-bad-version",
-    "title": "First Bad Version",
-    "difficulty": "Easy",
-    "topics": [
-      "Binary Search",
-      "Interactive"
-    ],
-    "file": "0278-first-bad-version.json"
-  },
-  {
     "id": "0279",
     "slug": "perfect-squares",
     "title": "Perfect Squares",
@@ -2939,18 +2533,6 @@
       "Two Pointers"
     ],
     "file": "0283-move-zeroes.json"
-  },
-  {
-    "id": "0284",
-    "slug": "peeking-iterator",
-    "title": "Peeking Iterator",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Design",
-      "Iterator"
-    ],
-    "file": "0284-peeking-iterator.json"
   },
   {
     "id": "0287",
@@ -3001,35 +2583,6 @@
     "file": "0292-nim-game.json"
   },
   {
-    "id": "0295",
-    "slug": "find-median-from-data-stream",
-    "title": "Find Median from Data Stream",
-    "difficulty": "Hard",
-    "topics": [
-      "Two Pointers",
-      "Design",
-      "Sorting",
-      "Heap (Priority Queue)",
-      "Data Stream"
-    ],
-    "file": "0295-find-median-from-data-stream.json"
-  },
-  {
-    "id": "0297",
-    "slug": "serialize-and-deserialize-binary-tree",
-    "title": "Serialize and Deserialize Binary Tree",
-    "difficulty": "Hard",
-    "topics": [
-      "String",
-      "Tree",
-      "Depth-First Search",
-      "Breadth-First Search",
-      "Design",
-      "Binary Tree"
-    ],
-    "file": "0297-serialize-and-deserialize-binary-tree.json"
-  },
-  {
     "id": "0299",
     "slug": "bulls-and-cows",
     "title": "Bulls and Cows",
@@ -3066,31 +2619,6 @@
     "file": "0301-remove-invalid-parentheses.json"
   },
   {
-    "id": "0303",
-    "slug": "range-sum-query-immutable",
-    "title": "Range Sum Query - Immutable",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Design",
-      "Prefix Sum"
-    ],
-    "file": "0303-range-sum-query-immutable.json"
-  },
-  {
-    "id": "0304",
-    "slug": "range-sum-query-2d-immutable",
-    "title": "Range Sum Query 2D - Immutable",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Design",
-      "Matrix",
-      "Prefix Sum"
-    ],
-    "file": "0304-range-sum-query-2d-immutable.json"
-  },
-  {
     "id": "0306",
     "slug": "additive-number",
     "title": "Additive Number",
@@ -3100,19 +2628,6 @@
       "Backtracking"
     ],
     "file": "0306-additive-number.json"
-  },
-  {
-    "id": "0307",
-    "slug": "range-sum-query-mutable",
-    "title": "Range Sum Query - Mutable",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Design",
-      "Binary Indexed Tree",
-      "Segment Tree"
-    ],
-    "file": "0307-range-sum-query-mutable.json"
   },
   {
     "id": "0309",
@@ -3509,18 +3024,6 @@
     "file": "0350-intersection-of-two-arrays-ii.json"
   },
   {
-    "id": "0352",
-    "slug": "data-stream-as-disjoint-intervals",
-    "title": "Data Stream as Disjoint Intervals",
-    "difficulty": "Hard",
-    "topics": [
-      "Binary Search",
-      "Design",
-      "Ordered Set"
-    ],
-    "file": "0352-data-stream-as-disjoint-intervals.json"
-  },
-  {
     "id": "0354",
     "slug": "russian-doll-envelopes",
     "title": "Russian Doll Envelopes",
@@ -3532,19 +3035,6 @@
       "Sorting"
     ],
     "file": "0354-russian-doll-envelopes.json"
-  },
-  {
-    "id": "0355",
-    "slug": "design-twitter",
-    "title": "Design Twitter",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Linked List",
-      "Design",
-      "Heap (Priority Queue)"
-    ],
-    "file": "0355-design-twitter.json"
   },
   {
     "id": "0357",
@@ -3642,17 +3132,6 @@
     "file": "0373-find-k-pairs-with-smallest-sums.json"
   },
   {
-    "id": "0374",
-    "slug": "guess-number-higher-or-lower",
-    "title": "Guess Number Higher or Lower",
-    "difficulty": "Easy",
-    "topics": [
-      "Binary Search",
-      "Interactive"
-    ],
-    "file": "0374-guess-number-higher-or-lower.json"
-  },
-  {
     "id": "0375",
     "slug": "guess-number-higher-or-lower-ii",
     "title": "Guess Number Higher or Lower II",
@@ -3702,47 +3181,6 @@
     "file": "0378-kth-smallest-element-in-a-sorted-matrix.json"
   },
   {
-    "id": "0380",
-    "slug": "insert-delete-getrandom-o1",
-    "title": "Insert Delete GetRandom O(1)",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Math",
-      "Design",
-      "Randomized"
-    ],
-    "file": "0380-insert-delete-getrandom-o1.json"
-  },
-  {
-    "id": "0381",
-    "slug": "insert-delete-getrandom-o1-duplicates-allowed",
-    "title": "Insert Delete GetRandom O(1) - Duplicates allowed",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Math",
-      "Design",
-      "Randomized"
-    ],
-    "file": "0381-insert-delete-getrandom-o1-duplicates-allowed.json"
-  },
-  {
-    "id": "0382",
-    "slug": "linked-list-random-node",
-    "title": "Linked List Random Node",
-    "difficulty": "Medium",
-    "topics": [
-      "Linked List",
-      "Math",
-      "Reservoir Sampling",
-      "Randomized"
-    ],
-    "file": "0382-linked-list-random-node.json"
-  },
-  {
     "id": "0383",
     "slug": "ransom-note",
     "title": "Ransom Note",
@@ -3753,31 +3191,6 @@
       "Counting"
     ],
     "file": "0383-ransom-note.json"
-  },
-  {
-    "id": "0384",
-    "slug": "shuffle-an-array",
-    "title": "Shuffle an Array",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Math",
-      "Design",
-      "Randomized"
-    ],
-    "file": "0384-shuffle-an-array.json"
-  },
-  {
-    "id": "0385",
-    "slug": "mini-parser",
-    "title": "Mini Parser",
-    "difficulty": "Medium",
-    "topics": [
-      "String",
-      "Stack",
-      "Depth-First Search"
-    ],
-    "file": "0385-mini-parser.json"
   },
   {
     "id": "0386",
@@ -3925,19 +3338,6 @@
       "Memoization"
     ],
     "file": "0397-integer-replacement.json"
-  },
-  {
-    "id": "0398",
-    "slug": "random-pick-index",
-    "title": "Random Pick Index",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Math",
-      "Reservoir Sampling",
-      "Randomized"
-    ],
-    "file": "0398-random-pick-index.json"
   },
   {
     "id": "0399",
@@ -4211,30 +3611,6 @@
     "file": "0424-longest-repeating-character-replacement.json"
   },
   {
-    "id": "0427",
-    "slug": "construct-quad-tree",
-    "title": "Construct Quad Tree",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Divide and Conquer",
-      "Tree",
-      "Matrix"
-    ],
-    "file": "0427-construct-quad-tree.json"
-  },
-  {
-    "id": "0429",
-    "slug": "n-ary-tree-level-order-traversal",
-    "title": "N-ary Tree Level Order Traversal",
-    "difficulty": "Medium",
-    "topics": [
-      "Tree",
-      "Breadth-First Search"
-    ],
-    "file": "0429-n-ary-tree-level-order-traversal.json"
-  },
-  {
     "id": "0430",
     "slug": "flatten-a-multilevel-doubly-linked-list",
     "title": "Flatten a Multilevel Doubly Linked List",
@@ -4245,19 +3621,6 @@
       "Doubly-Linked List"
     ],
     "file": "0430-flatten-a-multilevel-doubly-linked-list.json"
-  },
-  {
-    "id": "0432",
-    "slug": "all-oone-data-structure",
-    "title": "All O`one Data Structure",
-    "difficulty": "Hard",
-    "topics": [
-      "Hash Table",
-      "Linked List",
-      "Design",
-      "Doubly-Linked List"
-    ],
-    "file": "0432-all-oone-data-structure.json"
   },
   {
     "id": "0433",
@@ -4408,22 +3771,6 @@
     "file": "0448-find-all-numbers-disappeared-in-an-array.json"
   },
   {
-    "id": "0449",
-    "slug": "serialize-and-deserialize-bst",
-    "title": "Serialize and Deserialize BST",
-    "difficulty": "Medium",
-    "topics": [
-      "String",
-      "Tree",
-      "Depth-First Search",
-      "Breadth-First Search",
-      "Design",
-      "Binary Search Tree",
-      "Binary Tree"
-    ],
-    "file": "0449-serialize-and-deserialize-bst.json"
-  },
-  {
     "id": "0450",
     "slug": "delete-node-in-a-bst",
     "title": "Delete Node in a BST",
@@ -4547,19 +3894,6 @@
     "file": "0459-repeated-substring-pattern.json"
   },
   {
-    "id": "0460",
-    "slug": "lfu-cache",
-    "title": "LFU Cache",
-    "difficulty": "Hard",
-    "topics": [
-      "Hash Table",
-      "Linked List",
-      "Design",
-      "Doubly-Linked List"
-    ],
-    "file": "0460-lfu-cache.json"
-  },
-  {
     "id": "0461",
     "slug": "hamming-distance",
     "title": "Hamming Distance",
@@ -4642,19 +3976,6 @@
     "file": "0468-validate-ip-address.json"
   },
   {
-    "id": "0470",
-    "slug": "implement-rand10-using-rand7",
-    "title": "Implement Rand10() Using Rand7()",
-    "difficulty": "Medium",
-    "topics": [
-      "Math",
-      "Rejection Sampling",
-      "Randomized",
-      "Probability and Statistics"
-    ],
-    "file": "0470-implement-rand10-using-rand7.json"
-  },
-  {
     "id": "0472",
     "slug": "concatenated-words",
     "title": "Concatenated Words",
@@ -4729,19 +4050,6 @@
       "Bit Manipulation"
     ],
     "file": "0477-total-hamming-distance.json"
-  },
-  {
-    "id": "0478",
-    "slug": "generate-random-point-in-a-circle",
-    "title": "Generate Random Point in a Circle",
-    "difficulty": "Medium",
-    "topics": [
-      "Math",
-      "Geometry",
-      "Rejection Sampling",
-      "Randomized"
-    ],
-    "file": "0478-generate-random-point-in-a-circle.json"
   },
   {
     "id": "0479",
@@ -4913,22 +4221,6 @@
     "file": "0496-next-greater-element-i.json"
   },
   {
-    "id": "0497",
-    "slug": "random-point-in-non-overlapping-rectangles",
-    "title": "Random Point in Non-overlapping Rectangles",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Math",
-      "Binary Search",
-      "Reservoir Sampling",
-      "Prefix Sum",
-      "Ordered Set",
-      "Randomized"
-    ],
-    "file": "0497-random-point-in-non-overlapping-rectangles.json"
-  },
-  {
     "id": "0498",
     "slug": "diagonal-traverse",
     "title": "Diagonal Traverse",
@@ -5050,16 +4342,6 @@
     "file": "0509-fibonacci-number.json"
   },
   {
-    "id": "0511",
-    "slug": "game-play-analysis-i",
-    "title": "Game Play Analysis I",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0511-game-play-analysis-i.json"
-  },
-  {
     "id": "0513",
     "slug": "find-bottom-left-tree-value",
     "title": "Find Bottom Left Tree Value",
@@ -5130,19 +4412,6 @@
       "Dynamic Programming"
     ],
     "file": "0518-coin-change-ii.json"
-  },
-  {
-    "id": "0519",
-    "slug": "random-flip-matrix",
-    "title": "Random Flip Matrix",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Math",
-      "Reservoir Sampling",
-      "Randomized"
-    ],
-    "file": "0519-random-flip-matrix.json"
   },
   {
     "id": "0520",
@@ -5231,20 +4500,6 @@
     "file": "0526-beautiful-arrangement.json"
   },
   {
-    "id": "0528",
-    "slug": "random-pick-with-weight",
-    "title": "Random Pick with Weight",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Math",
-      "Binary Search",
-      "Prefix Sum",
-      "Randomized"
-    ],
-    "file": "0528-random-pick-with-weight.json"
-  },
-  {
     "id": "0529",
     "slug": "minesweeper",
     "title": "Minesweeper",
@@ -5284,19 +4539,6 @@
       "Sorting"
     ],
     "file": "0532-k-diff-pairs-in-an-array.json"
-  },
-  {
-    "id": "0535",
-    "slug": "encode-and-decode-tinyurl",
-    "title": "Encode and Decode TinyURL",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "String",
-      "Design",
-      "Hash Function"
-    ],
-    "file": "0535-encode-and-decode-tinyurl.json"
   },
   {
     "id": "0537",
@@ -5409,16 +4651,6 @@
     "file": "0547-number-of-provinces.json"
   },
   {
-    "id": "0550",
-    "slug": "game-play-analysis-iv",
-    "title": "Game Play Analysis IV",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "0550-game-play-analysis-iv.json"
-  },
-  {
     "id": "0551",
     "slug": "student-attendance-record-i",
     "title": "Student Attendance Record I",
@@ -5483,29 +4715,6 @@
       "String"
     ],
     "file": "0557-reverse-words-in-a-string-iii.json"
-  },
-  {
-    "id": "0558",
-    "slug": "logical-or-of-two-binary-grids-represented-as-quad-trees",
-    "title": "Logical OR of Two Binary Grids Represented as Quad-Trees",
-    "difficulty": "Medium",
-    "topics": [
-      "Divide and Conquer",
-      "Tree"
-    ],
-    "file": "0558-logical-or-of-two-binary-grids-represented-as-quad-trees.json"
-  },
-  {
-    "id": "0559",
-    "slug": "maximum-depth-of-n-ary-tree",
-    "title": "Maximum Depth of N-ary Tree",
-    "difficulty": "Easy",
-    "topics": [
-      "Tree",
-      "Depth-First Search",
-      "Breadth-First Search"
-    ],
-    "file": "0559-maximum-depth-of-n-ary-tree.json"
   },
   {
     "id": "0560",
@@ -5592,16 +4801,6 @@
     "file": "0567-permutation-in-string.json"
   },
   {
-    "id": "0570",
-    "slug": "managers-with-at-least-5-direct-reports",
-    "title": "Managers with at Least 5 Direct Reports",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "0570-managers-with-at-least-5-direct-reports.json"
-  },
-  {
     "id": "0572",
     "slug": "subtree-of-another-tree",
     "title": "Subtree of Another Tree",
@@ -5637,16 +4836,6 @@
     "file": "0576-out-of-boundary-paths.json"
   },
   {
-    "id": "0577",
-    "slug": "employee-bonus",
-    "title": "Employee Bonus",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0577-employee-bonus.json"
-  },
-  {
     "id": "0581",
     "slug": "shortest-unsorted-continuous-subarray",
     "title": "Shortest Unsorted Continuous Subarray",
@@ -5673,36 +4862,6 @@
     "file": "0583-delete-operation-for-two-strings.json"
   },
   {
-    "id": "0584",
-    "slug": "find-customer-referee",
-    "title": "Find Customer Referee",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0584-find-customer-referee.json"
-  },
-  {
-    "id": "0585",
-    "slug": "investments-in-2016",
-    "title": "Investments in 2016",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "0585-investments-in-2016.json"
-  },
-  {
-    "id": "0586",
-    "slug": "customer-placing-the-largest-number-of-orders",
-    "title": "Customer Placing the Largest Number of Orders",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0586-customer-placing-the-largest-number-of-orders.json"
-  },
-  {
     "id": "0587",
     "slug": "erect-the-fence",
     "title": "Erect the Fence",
@@ -5713,30 +4872,6 @@
       "Geometry"
     ],
     "file": "0587-erect-the-fence.json"
-  },
-  {
-    "id": "0589",
-    "slug": "n-ary-tree-preorder-traversal",
-    "title": "N-ary Tree Preorder Traversal",
-    "difficulty": "Easy",
-    "topics": [
-      "Stack",
-      "Tree",
-      "Depth-First Search"
-    ],
-    "file": "0589-n-ary-tree-preorder-traversal.json"
-  },
-  {
-    "id": "0590",
-    "slug": "n-ary-tree-postorder-traversal",
-    "title": "N-ary Tree Postorder Traversal",
-    "difficulty": "Easy",
-    "topics": [
-      "Stack",
-      "Tree",
-      "Depth-First Search"
-    ],
-    "file": "0590-n-ary-tree-postorder-traversal.json"
   },
   {
     "id": "0591",
@@ -5787,26 +4922,6 @@
     "file": "0594-longest-harmonious-subsequence.json"
   },
   {
-    "id": "0595",
-    "slug": "big-countries",
-    "title": "Big Countries",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0595-big-countries.json"
-  },
-  {
-    "id": "0596",
-    "slug": "classes-with-at-least-5-students",
-    "title": "Classes With at Least 5 Students",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0596-classes-with-at-least-5-students.json"
-  },
-  {
     "id": "0598",
     "slug": "range-addition-ii",
     "title": "Range Addition II",
@@ -5840,26 +4955,6 @@
     "file": "0600-non-negative-integers-without-consecutive-ones.json"
   },
   {
-    "id": "0601",
-    "slug": "human-traffic-of-stadium",
-    "title": "Human Traffic of Stadium",
-    "difficulty": "Hard",
-    "topics": [
-      "Database"
-    ],
-    "file": "0601-human-traffic-of-stadium.json"
-  },
-  {
-    "id": "0602",
-    "slug": "friend-requests-ii-who-has-the-most-friends",
-    "title": "Friend Requests II: Who Has the Most Friends",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "0602-friend-requests-ii-who-has-the-most-friends.json"
-  },
-  {
     "id": "0605",
     "slug": "can-place-flowers",
     "title": "Can Place Flowers",
@@ -5884,26 +4979,6 @@
     "file": "0606-construct-string-from-binary-tree.json"
   },
   {
-    "id": "0607",
-    "slug": "sales-person",
-    "title": "Sales Person",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0607-sales-person.json"
-  },
-  {
-    "id": "0608",
-    "slug": "tree-node",
-    "title": "Tree Node",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "0608-tree-node.json"
-  },
-  {
     "id": "0609",
     "slug": "find-duplicate-file-in-system",
     "title": "Find Duplicate File in System",
@@ -5914,16 +4989,6 @@
       "String"
     ],
     "file": "0609-find-duplicate-file-in-system.json"
-  },
-  {
-    "id": "0610",
-    "slug": "triangle-judgement",
-    "title": "Triangle Judgement",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0610-triangle-judgement.json"
   },
   {
     "id": "0611",
@@ -5953,26 +5018,6 @@
     "file": "0617-merge-two-binary-trees.json"
   },
   {
-    "id": "0619",
-    "slug": "biggest-single-number",
-    "title": "Biggest Single Number",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0619-biggest-single-number.json"
-  },
-  {
-    "id": "0620",
-    "slug": "not-boring-movies",
-    "title": "Not Boring Movies",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0620-not-boring-movies.json"
-  },
-  {
     "id": "0621",
     "slug": "task-scheduler",
     "title": "Task Scheduler",
@@ -5986,19 +5031,6 @@
       "Counting"
     ],
     "file": "0621-task-scheduler.json"
-  },
-  {
-    "id": "0622",
-    "slug": "design-circular-queue",
-    "title": "Design Circular Queue",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Linked List",
-      "Design",
-      "Queue"
-    ],
-    "file": "0622-design-circular-queue.json"
   },
   {
     "id": "0623",
@@ -6023,26 +5055,6 @@
       "Greedy"
     ],
     "file": "0624-maximum-distance-in-arrays.json"
-  },
-  {
-    "id": "0626",
-    "slug": "exchange-seats",
-    "title": "Exchange Seats",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "0626-exchange-seats.json"
-  },
-  {
-    "id": "0627",
-    "slug": "swap-salary",
-    "title": "Swap Salary",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "0627-swap-salary.json"
   },
   {
     "id": "0628",
@@ -6167,19 +5179,6 @@
       "Simulation"
     ],
     "file": "0640-solve-the-equation.json"
-  },
-  {
-    "id": "0641",
-    "slug": "design-circular-deque",
-    "title": "Design Circular Deque",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Linked List",
-      "Design",
-      "Queue"
-    ],
-    "file": "0641-design-circular-deque.json"
   },
   {
     "id": "0643",
@@ -6309,19 +5308,6 @@
       "Binary Tree"
     ],
     "file": "0654-maximum-binary-tree.json"
-  },
-  {
-    "id": "0655",
-    "slug": "print-binary-tree",
-    "title": "Print Binary Tree",
-    "difficulty": "Medium",
-    "topics": [
-      "Tree",
-      "Depth-First Search",
-      "Breadth-First Search",
-      "Binary Tree"
-    ],
-    "file": "0655-print-binary-tree.json"
   },
   {
     "id": "0657",
@@ -6513,33 +5499,6 @@
       "Matrix"
     ],
     "file": "0675-cut-off-trees-for-golf-event.json"
-  },
-  {
-    "id": "0676",
-    "slug": "implement-magic-dictionary",
-    "title": "Implement Magic Dictionary",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "String",
-      "Depth-First Search",
-      "Design",
-      "Trie"
-    ],
-    "file": "0676-implement-magic-dictionary.json"
-  },
-  {
-    "id": "0677",
-    "slug": "map-sum-pairs",
-    "title": "Map Sum Pairs",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "String",
-      "Design",
-      "Trie"
-    ],
-    "file": "0677-map-sum-pairs.json"
   },
   {
     "id": "0678",
@@ -6808,21 +5767,6 @@
     "file": "0701-insert-into-a-binary-search-tree.json"
   },
   {
-    "id": "0703",
-    "slug": "kth-largest-element-in-a-stream",
-    "title": "Kth Largest Element in a Stream",
-    "difficulty": "Easy",
-    "topics": [
-      "Tree",
-      "Design",
-      "Binary Search Tree",
-      "Heap (Priority Queue)",
-      "Binary Tree",
-      "Data Stream"
-    ],
-    "file": "0703-kth-largest-element-in-a-stream.json"
-  },
-  {
     "id": "0704",
     "slug": "binary-search",
     "title": "Binary Search",
@@ -6834,45 +5778,6 @@
     "file": "0704-binary-search.json"
   },
   {
-    "id": "0705",
-    "slug": "design-hashset",
-    "title": "Design HashSet",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Linked List",
-      "Design",
-      "Hash Function"
-    ],
-    "file": "0705-design-hashset.json"
-  },
-  {
-    "id": "0706",
-    "slug": "design-hashmap",
-    "title": "Design HashMap",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Linked List",
-      "Design",
-      "Hash Function"
-    ],
-    "file": "0706-design-hashmap.json"
-  },
-  {
-    "id": "0707",
-    "slug": "design-linked-list",
-    "title": "Design Linked List",
-    "difficulty": "Medium",
-    "topics": [
-      "Linked List",
-      "Design"
-    ],
-    "file": "0707-design-linked-list.json"
-  },
-  {
     "id": "0709",
     "slug": "to-lower-case",
     "title": "To Lower Case",
@@ -6881,21 +5786,6 @@
       "String"
     ],
     "file": "0709-to-lower-case.json"
-  },
-  {
-    "id": "0710",
-    "slug": "random-pick-with-blacklist",
-    "title": "Random Pick with Blacklist",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Math",
-      "Binary Search",
-      "Sorting",
-      "Randomized"
-    ],
-    "file": "0710-random-pick-with-blacklist.json"
   },
   {
     "id": "0712",
@@ -6932,18 +5822,6 @@
       "Greedy"
     ],
     "file": "0714-best-time-to-buy-and-sell-stock-with-transaction-fee.json"
-  },
-  {
-    "id": "0715",
-    "slug": "range-module",
-    "title": "Range Module",
-    "difficulty": "Hard",
-    "topics": [
-      "Design",
-      "Segment Tree",
-      "Ordered Set"
-    ],
-    "file": "0715-range-module.json"
   },
   {
     "id": "0717",
@@ -7069,20 +5947,6 @@
     "file": "0728-self-dividing-numbers.json"
   },
   {
-    "id": "0729",
-    "slug": "my-calendar-i",
-    "title": "My Calendar I",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Binary Search",
-      "Design",
-      "Segment Tree",
-      "Ordered Set"
-    ],
-    "file": "0729-my-calendar-i.json"
-  },
-  {
     "id": "0730",
     "slug": "count-different-palindromic-subsequences",
     "title": "Count Different Palindromic Subsequences",
@@ -7092,35 +5956,6 @@
       "Dynamic Programming"
     ],
     "file": "0730-count-different-palindromic-subsequences.json"
-  },
-  {
-    "id": "0731",
-    "slug": "my-calendar-ii",
-    "title": "My Calendar II",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Binary Search",
-      "Design",
-      "Segment Tree",
-      "Prefix Sum",
-      "Ordered Set"
-    ],
-    "file": "0731-my-calendar-ii.json"
-  },
-  {
-    "id": "0732",
-    "slug": "my-calendar-iii",
-    "title": "My Calendar III",
-    "difficulty": "Hard",
-    "topics": [
-      "Binary Search",
-      "Design",
-      "Segment Tree",
-      "Prefix Sum",
-      "Ordered Set"
-    ],
-    "file": "0732-my-calendar-iii.json"
   },
   {
     "id": "0733",
@@ -7233,20 +6068,6 @@
     "file": "0744-find-smallest-letter-greater-than-target.json"
   },
   {
-    "id": "0745",
-    "slug": "prefix-and-suffix-search",
-    "title": "Prefix and Suffix Search",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "String",
-      "Design",
-      "Trie"
-    ],
-    "file": "0745-prefix-and-suffix-search.json"
-  },
-  {
     "id": "0746",
     "slug": "min-cost-climbing-stairs",
     "title": "Min Cost Climbing Stairs",
@@ -7306,18 +6127,6 @@
       "Breadth-First Search"
     ],
     "file": "0752-open-the-lock.json"
-  },
-  {
-    "id": "0753",
-    "slug": "cracking-the-safe",
-    "title": "Cracking the Safe",
-    "difficulty": "Hard",
-    "topics": [
-      "Depth-First Search",
-      "Graph",
-      "Eulerian Circuit"
-    ],
-    "file": "0753-cracking-the-safe.json"
   },
   {
     "id": "0754",
@@ -8313,20 +7122,6 @@
     "file": "0842-split-array-into-fibonacci-sequence.json"
   },
   {
-    "id": "0843",
-    "slug": "guess-the-word",
-    "title": "Guess the Word",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Math",
-      "String",
-      "Interactive",
-      "Game Theory"
-    ],
-    "file": "0843-guess-the-word.json"
-  },
-  {
     "id": "0844",
     "slug": "backspace-string-compare",
     "title": "Backspace String Compare",
@@ -8464,18 +7259,6 @@
     "file": "0854-k-similar-strings.json"
   },
   {
-    "id": "0855",
-    "slug": "exam-room",
-    "title": "Exam Room",
-    "difficulty": "Medium",
-    "topics": [
-      "Design",
-      "Heap (Priority Queue)",
-      "Ordered Set"
-    ],
-    "file": "0855-exam-room.json"
-  },
-  {
     "id": "0856",
     "slug": "score-of-parentheses",
     "title": "Score of Parentheses",
@@ -8561,20 +7344,6 @@
       "Monotonic Queue"
     ],
     "file": "0862-shortest-subarray-with-sum-at-least-k.json"
-  },
-  {
-    "id": "0863",
-    "slug": "all-nodes-distance-k-in-binary-tree",
-    "title": "All Nodes Distance K in Binary Tree",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Tree",
-      "Depth-First Search",
-      "Breadth-First Search",
-      "Binary Tree"
-    ],
-    "file": "0863-all-nodes-distance-k-in-binary-tree.json"
   },
   {
     "id": "0864",
@@ -8959,19 +7728,6 @@
     "file": "0894-all-possible-full-binary-trees.json"
   },
   {
-    "id": "0895",
-    "slug": "maximum-frequency-stack",
-    "title": "Maximum Frequency Stack",
-    "difficulty": "Hard",
-    "topics": [
-      "Hash Table",
-      "Stack",
-      "Design",
-      "Ordered Set"
-    ],
-    "file": "0895-maximum-frequency-stack.json"
-  },
-  {
     "id": "0896",
     "slug": "monotonic-array",
     "title": "Monotonic Array",
@@ -9020,32 +7776,6 @@
     "file": "0899-orderly-queue.json"
   },
   {
-    "id": "0900",
-    "slug": "rle-iterator",
-    "title": "RLE Iterator",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Design",
-      "Counting",
-      "Iterator"
-    ],
-    "file": "0900-rle-iterator.json"
-  },
-  {
-    "id": "0901",
-    "slug": "online-stock-span",
-    "title": "Online Stock Span",
-    "difficulty": "Medium",
-    "topics": [
-      "Stack",
-      "Design",
-      "Monotonic Stack",
-      "Data Stream"
-    ],
-    "file": "0901-online-stock-span.json"
-  },
-  {
     "id": "0902",
     "slug": "numbers-at-most-n-given-digit-set",
     "title": "Numbers At Most N Given Digit Set",
@@ -9082,18 +7812,6 @@
       "Sliding Window"
     ],
     "file": "0904-fruit-into-baskets.json"
-  },
-  {
-    "id": "0905",
-    "slug": "sort-array-by-parity",
-    "title": "Sort Array By Parity",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Two Pointers",
-      "Sorting"
-    ],
-    "file": "0905-sort-array-by-parity.json"
   },
   {
     "id": "0906",
@@ -9155,19 +7873,6 @@
       "Sorting"
     ],
     "file": "0910-smallest-range-ii.json"
-  },
-  {
-    "id": "0911",
-    "slug": "online-election",
-    "title": "Online Election",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Binary Search",
-      "Design"
-    ],
-    "file": "0911-online-election.json"
   },
   {
     "id": "0912",
@@ -9263,19 +7968,6 @@
     "file": "0918-maximum-sum-circular-subarray.json"
   },
   {
-    "id": "0919",
-    "slug": "complete-binary-tree-inserter",
-    "title": "Complete Binary Tree Inserter",
-    "difficulty": "Medium",
-    "topics": [
-      "Tree",
-      "Breadth-First Search",
-      "Design",
-      "Binary Tree"
-    ],
-    "file": "0919-complete-binary-tree-inserter.json"
-  },
-  {
     "id": "0920",
     "slug": "number-of-music-playlists",
     "title": "Number of Music Playlists",
@@ -9298,18 +7990,6 @@
       "Greedy"
     ],
     "file": "0921-minimum-add-to-make-parentheses-valid.json"
-  },
-  {
-    "id": "0922",
-    "slug": "sort-array-by-parity-ii",
-    "title": "Sort Array By Parity II",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Two Pointers",
-      "Sorting"
-    ],
-    "file": "0922-sort-array-by-parity-ii.json"
   },
   {
     "id": "0923",
@@ -9438,18 +8118,6 @@
     "file": "0932-beautiful-array.json"
   },
   {
-    "id": "0933",
-    "slug": "number-of-recent-calls",
-    "title": "Number of Recent Calls",
-    "difficulty": "Easy",
-    "topics": [
-      "Design",
-      "Queue",
-      "Data Stream"
-    ],
-    "file": "0933-number-of-recent-calls.json"
-  },
-  {
     "id": "0934",
     "slug": "shortest-bridge",
     "title": "Shortest Bridge",
@@ -9544,19 +8212,6 @@
       "Array"
     ],
     "file": "0941-valid-mountain-array.json"
-  },
-  {
-    "id": "0942",
-    "slug": "di-string-match",
-    "title": "DI String Match",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Two Pointers",
-      "String",
-      "Greedy"
-    ],
-    "file": "0942-di-string-match.json"
   },
   {
     "id": "0943",
@@ -10036,19 +8691,6 @@
       "Matrix"
     ],
     "file": "0980-unique-paths-iii.json"
-  },
-  {
-    "id": "0981",
-    "slug": "time-based-key-value-store",
-    "title": "Time Based Key-Value Store",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "String",
-      "Binary Search",
-      "Design"
-    ],
-    "file": "0981-time-based-key-value-store.json"
   },
   {
     "id": "0982",
@@ -10660,20 +9302,6 @@
     "file": "1031-maximum-sum-of-two-non-overlapping-subarrays.json"
   },
   {
-    "id": "1032",
-    "slug": "stream-of-characters",
-    "title": "Stream of Characters",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "String",
-      "Design",
-      "Trie",
-      "Data Stream"
-    ],
-    "file": "1032-stream-of-characters.json"
-  },
-  {
     "id": "1033",
     "slug": "moving-stones-until-consecutive",
     "title": "Moving Stones Until Consecutive",
@@ -10783,18 +9411,6 @@
     "file": "1041-robot-bounded-in-circle.json"
   },
   {
-    "id": "1042",
-    "slug": "flower-planting-with-no-adjacent",
-    "title": "Flower Planting With No Adjacent",
-    "difficulty": "Medium",
-    "topics": [
-      "Depth-First Search",
-      "Breadth-First Search",
-      "Graph"
-    ],
-    "file": "1042-flower-planting-with-no-adjacent.json"
-  },
-  {
     "id": "1043",
     "slug": "partition-array-for-maximum-sum",
     "title": "Partition Array for Maximum Sum",
@@ -10819,16 +9435,6 @@
       "Hash Function"
     ],
     "file": "1044-longest-duplicate-substring.json"
-  },
-  {
-    "id": "1045",
-    "slug": "customers-who-bought-all-products",
-    "title": "Customers Who Bought All Products",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "1045-customers-who-bought-all-products.json"
   },
   {
     "id": "1046",
@@ -10877,16 +9483,6 @@
       "Dynamic Programming"
     ],
     "file": "1049-last-stone-weight-ii.json"
-  },
-  {
-    "id": "1050",
-    "slug": "actors-and-directors-who-cooperated-at-least-three-times",
-    "title": "Actors and Directors Who Cooperated At Least Three Times",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1050-actors-and-directors-who-cooperated-at-least-three-times.json"
   },
   {
     "id": "1051",
@@ -10949,26 +9545,6 @@
     "file": "1061-lexicographically-smallest-equivalent-string.json"
   },
   {
-    "id": "1068",
-    "slug": "product-sales-analysis-i",
-    "title": "Product Sales Analysis I",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1068-product-sales-analysis-i.json"
-  },
-  {
-    "id": "1070",
-    "slug": "product-sales-analysis-iii",
-    "title": "Product Sales Analysis III",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "1070-product-sales-analysis-iii.json"
-  },
-  {
     "id": "1071",
     "slug": "greatest-common-divisor-of-strings",
     "title": "Greatest Common Divisor of Strings",
@@ -11014,16 +9590,6 @@
       "Prefix Sum"
     ],
     "file": "1074-number-of-submatrices-that-sum-to-target.json"
-  },
-  {
-    "id": "1075",
-    "slug": "project-employees-i",
-    "title": "Project Employees I",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1075-project-employees-i.json"
   },
   {
     "id": "1078",
@@ -11074,16 +9640,6 @@
     "file": "1081-smallest-subsequence-of-distinct-characters.json"
   },
   {
-    "id": "1084",
-    "slug": "sales-analysis-iii",
-    "title": "Sales Analysis III",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1084-sales-analysis-iii.json"
-  },
-  {
     "id": "1089",
     "slug": "duplicate-zeros",
     "title": "Duplicate Zeros",
@@ -11132,18 +9688,6 @@
     "file": "1092-shortest-common-supersequence.json"
   },
   {
-    "id": "1093",
-    "slug": "statistics-from-a-large-sample",
-    "title": "Statistics from a Large Sample",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Math",
-      "Probability and Statistics"
-    ],
-    "file": "1093-statistics-from-a-large-sample.json"
-  },
-  {
     "id": "1094",
     "slug": "car-pooling",
     "title": "Car Pooling",
@@ -11156,18 +9700,6 @@
       "Prefix Sum"
     ],
     "file": "1094-car-pooling.json"
-  },
-  {
-    "id": "1095",
-    "slug": "find-in-mountain-array",
-    "title": "Find in Mountain Array",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Binary Search",
-      "Interactive"
-    ],
-    "file": "1095-find-in-mountain-array.json"
   },
   {
     "id": "1096",
@@ -11217,18 +9749,6 @@
     "file": "1105-filling-bookcase-shelves.json"
   },
   {
-    "id": "1106",
-    "slug": "parsing-a-boolean-expression",
-    "title": "Parsing A Boolean Expression",
-    "difficulty": "Hard",
-    "topics": [
-      "String",
-      "Stack",
-      "Recursion"
-    ],
-    "file": "1106-parsing-a-boolean-expression.json"
-  },
-  {
     "id": "1108",
     "slug": "defanging-an-ip-address",
     "title": "Defanging an IP Address",
@@ -11273,46 +9793,6 @@
       "Stack"
     ],
     "file": "1111-maximum-nesting-depth-of-two-valid-parentheses-strings.json"
-  },
-  {
-    "id": "1114",
-    "slug": "print-in-order",
-    "title": "Print in Order",
-    "difficulty": "Easy",
-    "topics": [
-      "Concurrency"
-    ],
-    "file": "1114-print-in-order.json"
-  },
-  {
-    "id": "1115",
-    "slug": "print-foobar-alternately",
-    "title": "Print FooBar Alternately",
-    "difficulty": "Medium",
-    "topics": [
-      "Concurrency"
-    ],
-    "file": "1115-print-foobar-alternately.json"
-  },
-  {
-    "id": "1116",
-    "slug": "print-zero-even-odd",
-    "title": "Print Zero Even Odd",
-    "difficulty": "Medium",
-    "topics": [
-      "Concurrency"
-    ],
-    "file": "1116-print-zero-even-odd.json"
-  },
-  {
-    "id": "1117",
-    "slug": "building-h2o",
-    "title": "Building H2O",
-    "difficulty": "Medium",
-    "topics": [
-      "Concurrency"
-    ],
-    "file": "1117-building-h2o.json"
   },
   {
     "id": "1122",
@@ -11466,16 +9946,6 @@
     "file": "1140-stone-game-ii.json"
   },
   {
-    "id": "1141",
-    "slug": "user-activity-for-the-past-30-days-i",
-    "title": "User Activity for the Past 30 Days I",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1141-user-activity-for-the-past-30-days-i.json"
-  },
-  {
     "id": "1143",
     "slug": "longest-common-subsequence",
     "title": "Longest Common Subsequence",
@@ -11510,19 +9980,6 @@
     "file": "1145-binary-tree-coloring-game.json"
   },
   {
-    "id": "1146",
-    "slug": "snapshot-array",
-    "title": "Snapshot Array",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Binary Search",
-      "Design"
-    ],
-    "file": "1146-snapshot-array.json"
-  },
-  {
     "id": "1147",
     "slug": "longest-chunked-palindrome-decomposition",
     "title": "Longest Chunked Palindrome Decomposition",
@@ -11536,16 +9993,6 @@
       "Hash Function"
     ],
     "file": "1147-longest-chunked-palindrome-decomposition.json"
-  },
-  {
-    "id": "1148",
-    "slug": "article-views-i",
-    "title": "Article Views I",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1148-article-views-i.json"
   },
   {
     "id": "1154",
@@ -11579,30 +10026,6 @@
       "Sliding Window"
     ],
     "file": "1156-swap-for-longest-repeated-character-substring.json"
-  },
-  {
-    "id": "1157",
-    "slug": "online-majority-element-in-subarray",
-    "title": "Online Majority Element In Subarray",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Binary Search",
-      "Design",
-      "Binary Indexed Tree",
-      "Segment Tree"
-    ],
-    "file": "1157-online-majority-element-in-subarray.json"
-  },
-  {
-    "id": "1158",
-    "slug": "market-analysis-i",
-    "title": "Market Analysis I",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "1158-market-analysis-i.json"
   },
   {
     "id": "1160",
@@ -11655,16 +10078,6 @@
     "file": "1163-last-substring-in-lexicographical-order.json"
   },
   {
-    "id": "1164",
-    "slug": "product-price-at-a-given-date",
-    "title": "Product Price at a Given Date",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "1164-product-price-at-a-given-date.json"
-  },
-  {
     "id": "1169",
     "slug": "invalid-transactions",
     "title": "Invalid Transactions",
@@ -11703,29 +10116,6 @@
     "file": "1171-remove-zero-sum-consecutive-nodes-from-linked-list.json"
   },
   {
-    "id": "1172",
-    "slug": "dinner-plate-stacks",
-    "title": "Dinner Plate Stacks",
-    "difficulty": "Hard",
-    "topics": [
-      "Hash Table",
-      "Stack",
-      "Design",
-      "Heap (Priority Queue)"
-    ],
-    "file": "1172-dinner-plate-stacks.json"
-  },
-  {
-    "id": "1174",
-    "slug": "immediate-food-delivery-ii",
-    "title": "Immediate Food Delivery II",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "1174-immediate-food-delivery-ii.json"
-  },
-  {
     "id": "1175",
     "slug": "prime-arrangements",
     "title": "Prime Arrangements",
@@ -11762,16 +10152,6 @@
       "Trie"
     ],
     "file": "1178-number-of-valid-words-for-each-puzzle.json"
-  },
-  {
-    "id": "1179",
-    "slug": "reformat-department-table",
-    "title": "Reformat Department Table",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1179-reformat-department-table.json"
   },
   {
     "id": "1184",
@@ -11864,26 +10244,6 @@
     "file": "1192-critical-connections-in-a-network.json"
   },
   {
-    "id": "1193",
-    "slug": "monthly-transactions-i",
-    "title": "Monthly Transactions I",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "1193-monthly-transactions-i.json"
-  },
-  {
-    "id": "1195",
-    "slug": "fizz-buzz-multithreaded",
-    "title": "Fizz Buzz Multithreaded",
-    "difficulty": "Medium",
-    "topics": [
-      "Concurrency"
-    ],
-    "file": "1195-fizz-buzz-multithreaded.json"
-  },
-  {
     "id": "1200",
     "slug": "minimum-absolute-difference",
     "title": "Minimum Absolute Difference",
@@ -11937,27 +10297,6 @@
     "file": "1203-sort-items-by-groups-respecting-dependencies.json"
   },
   {
-    "id": "1204",
-    "slug": "last-person-to-fit-in-the-bus",
-    "title": "Last Person to Fit in the Bus",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "1204-last-person-to-fit-in-the-bus.json"
-  },
-  {
-    "id": "1206",
-    "slug": "design-skiplist",
-    "title": "Design Skiplist",
-    "difficulty": "Hard",
-    "topics": [
-      "Linked List",
-      "Design"
-    ],
-    "file": "1206-design-skiplist.json"
-  },
-  {
     "id": "1207",
     "slug": "unique-number-of-occurrences",
     "title": "Unique Number of Occurrences",
@@ -12003,16 +10342,6 @@
       "Matrix"
     ],
     "file": "1210-minimum-moves-to-reach-target-with-rotations.json"
-  },
-  {
-    "id": "1211",
-    "slug": "queries-quality-and-percentage",
-    "title": "Queries Quality and Percentage",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1211-queries-quality-and-percentage.json"
   },
   {
     "id": "1217",
@@ -12107,16 +10436,6 @@
     "file": "1224-maximum-equal-frequency.json"
   },
   {
-    "id": "1226",
-    "slug": "the-dining-philosophers",
-    "title": "The Dining Philosophers",
-    "difficulty": "Medium",
-    "topics": [
-      "Concurrency"
-    ],
-    "file": "1226-the-dining-philosophers.json"
-  },
-  {
     "id": "1227",
     "slug": "airplane-seat-assignment-probability",
     "title": "Airplane Seat Assignment Probability",
@@ -12177,19 +10496,6 @@
       "Sorting"
     ],
     "file": "1235-maximum-profit-in-job-scheduling.json"
-  },
-  {
-    "id": "1237",
-    "slug": "find-positive-integer-solution-for-a-given-equation",
-    "title": "Find Positive Integer Solution for a Given Equation",
-    "difficulty": "Medium",
-    "topics": [
-      "Math",
-      "Two Pointers",
-      "Binary Search",
-      "Interactive"
-    ],
-    "file": "1237-find-positive-integer-solution-for-a-given-equation.json"
   },
   {
     "id": "1238",
@@ -12276,16 +10582,6 @@
     "file": "1250-check-if-it-is-a-good-array.json"
   },
   {
-    "id": "1251",
-    "slug": "average-selling-price",
-    "title": "Average Selling Price",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1251-average-selling-price.json"
-  },
-  {
     "id": "1252",
     "slug": "cells-with-odd-values-in-a-matrix",
     "title": "Cells with Odd Values in a Matrix",
@@ -12349,21 +10645,6 @@
       "Simulation"
     ],
     "file": "1260-shift-2d-grid.json"
-  },
-  {
-    "id": "1261",
-    "slug": "find-elements-in-a-contaminated-binary-tree",
-    "title": "Find Elements in a Contaminated Binary Tree",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Tree",
-      "Depth-First Search",
-      "Breadth-First Search",
-      "Design",
-      "Binary Tree"
-    ],
-    "file": "1261-find-elements-in-a-contaminated-binary-tree.json"
   },
   {
     "id": "1262",
@@ -12457,16 +10738,6 @@
     "file": "1275-find-winner-on-a-tic-tac-toe-game.json"
   },
   {
-    "id": "1276",
-    "slug": "number-of-burgers-with-no-waste-of-ingredients",
-    "title": "Number of Burgers with No Waste of Ingredients",
-    "difficulty": "Medium",
-    "topics": [
-      "Math"
-    ],
-    "file": "1276-number-of-burgers-with-no-waste-of-ingredients.json"
-  },
-  {
     "id": "1277",
     "slug": "count-square-submatrices-with-all-ones",
     "title": "Count Square Submatrices with All Ones",
@@ -12488,16 +10759,6 @@
       "Dynamic Programming"
     ],
     "file": "1278-palindrome-partitioning-iii.json"
-  },
-  {
-    "id": "1280",
-    "slug": "students-and-examinations",
-    "title": "Students and Examinations",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1280-students-and-examinations.json"
   },
   {
     "id": "1281",
@@ -12545,19 +10806,6 @@
       "Matrix"
     ],
     "file": "1284-minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix.json"
-  },
-  {
-    "id": "1286",
-    "slug": "iterator-for-combination",
-    "title": "Iterator for Combination",
-    "difficulty": "Medium",
-    "topics": [
-      "String",
-      "Backtracking",
-      "Design",
-      "Iterator"
-    ],
-    "file": "1286-iterator-for-combination.json"
   },
   {
     "id": "1287",
@@ -12784,16 +11032,6 @@
     "file": "1307-verbal-arithmetic-puzzle.json"
   },
   {
-    "id": "1309",
-    "slug": "decrypt-string-from-alphabet-to-integer-mapping",
-    "title": "Decrypt String from Alphabet to Integer Mapping",
-    "difficulty": "Easy",
-    "topics": [
-      "String"
-    ],
-    "file": "1309-decrypt-string-from-alphabet-to-integer-mapping.json"
-  },
-  {
     "id": "1310",
     "slug": "xor-queries-of-a-subarray",
     "title": "XOR Queries of a Subarray",
@@ -12923,27 +11161,6 @@
     "file": "1320-minimum-distance-to-type-a-word-using-two-fingers.json"
   },
   {
-    "id": "1321",
-    "slug": "restaurant-growth",
-    "title": "Restaurant Growth",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "1321-restaurant-growth.json"
-  },
-  {
-    "id": "1323",
-    "slug": "maximum-69-number",
-    "title": "Maximum 69 Number",
-    "difficulty": "Easy",
-    "topics": [
-      "Math",
-      "Greedy"
-    ],
-    "file": "1323-maximum-69-number.json"
-  },
-  {
     "id": "1324",
     "slug": "print-words-vertically",
     "title": "Print Words Vertically",
@@ -12978,16 +11195,6 @@
       "Greedy"
     ],
     "file": "1326-minimum-number-of-taps-to-open-to-water-a-garden.json"
-  },
-  {
-    "id": "1327",
-    "slug": "list-the-products-ordered-in-a-period",
-    "title": "List the Products Ordered in a Period",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1327-list-the-products-ordered-in-a-period.json"
   },
   {
     "id": "1328",
@@ -13046,17 +11253,6 @@
       "String"
     ],
     "file": "1332-remove-palindromic-subsequences.json"
-  },
-  {
-    "id": "1333",
-    "slug": "filter-restaurants-by-vegan-friendly-price-and-distance",
-    "title": "Filter Restaurants by Vegan-Friendly, Price and Distance",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Sorting"
-    ],
-    "file": "1333-filter-restaurants-by-vegan-friendly-price-and-distance.json"
   },
   {
     "id": "1334",
@@ -13134,16 +11330,6 @@
     "file": "1340-jump-game-v.json"
   },
   {
-    "id": "1341",
-    "slug": "movie-rating",
-    "title": "Movie Rating",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "1341-movie-rating.json"
-  },
-  {
     "id": "1342",
     "slug": "number-of-steps-to-reduce-a-number-to-zero",
     "title": "Number of Steps to Reduce a Number to Zero",
@@ -13214,20 +11400,6 @@
     "file": "1347-minimum-number-of-steps-to-make-two-strings-anagram.json"
   },
   {
-    "id": "1348",
-    "slug": "tweet-counts-per-frequency",
-    "title": "Tweet Counts Per Frequency",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Binary Search",
-      "Design",
-      "Sorting",
-      "Ordered Set"
-    ],
-    "file": "1348-tweet-counts-per-frequency.json"
-  },
-  {
     "id": "1349",
     "slug": "maximum-students-taking-exam",
     "title": "Maximum Students Taking Exam",
@@ -13252,20 +11424,6 @@
       "Matrix"
     ],
     "file": "1351-count-negative-numbers-in-a-sorted-matrix.json"
-  },
-  {
-    "id": "1352",
-    "slug": "product-of-the-last-k-numbers",
-    "title": "Product of the Last K Numbers",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Math",
-      "Design",
-      "Data Stream",
-      "Prefix Sum"
-    ],
-    "file": "1352-product-of-the-last-k-numbers.json"
   },
   {
     "id": "1353",
@@ -13305,18 +11463,6 @@
     "file": "1356-sort-integers-by-the-number-of-1-bits.json"
   },
   {
-    "id": "1357",
-    "slug": "apply-discount-every-n-orders",
-    "title": "Apply Discount Every n Orders",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Design"
-    ],
-    "file": "1357-apply-discount-every-n-orders.json"
-  },
-  {
     "id": "1358",
     "slug": "number-of-substrings-containing-all-three-characters",
     "title": "Number of Substrings Containing All Three Characters",
@@ -13327,18 +11473,6 @@
       "Sliding Window"
     ],
     "file": "1358-number-of-substrings-containing-all-three-characters.json"
-  },
-  {
-    "id": "1359",
-    "slug": "count-all-valid-pickup-and-delivery-options",
-    "title": "Count All Valid Pickup and Delivery Options",
-    "difficulty": "Hard",
-    "topics": [
-      "Math",
-      "Dynamic Programming",
-      "Combinatorics"
-    ],
-    "file": "1359-count-all-valid-pickup-and-delivery-options.json"
   },
   {
     "id": "1360",
@@ -13543,29 +11677,6 @@
     "file": "1377-frog-position-after-t-seconds.json"
   },
   {
-    "id": "1378",
-    "slug": "replace-employee-id-with-the-unique-identifier",
-    "title": "Replace Employee ID With The Unique Identifier",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1378-replace-employee-id-with-the-unique-identifier.json"
-  },
-  {
-    "id": "1379",
-    "slug": "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
-    "title": "Find a Corresponding Node of a Binary Tree in a Clone of That Tree",
-    "difficulty": "Easy",
-    "topics": [
-      "Tree",
-      "Depth-First Search",
-      "Breadth-First Search",
-      "Binary Tree"
-    ],
-    "file": "1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.json"
-  },
-  {
     "id": "1380",
     "slug": "lucky-numbers-in-a-matrix",
     "title": "Lucky Numbers in a Matrix",
@@ -13575,33 +11686,6 @@
       "Matrix"
     ],
     "file": "1380-lucky-numbers-in-a-matrix.json"
-  },
-  {
-    "id": "1381",
-    "slug": "design-a-stack-with-increment-operation",
-    "title": "Design a Stack With Increment Operation",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Stack",
-      "Design"
-    ],
-    "file": "1381-design-a-stack-with-increment-operation.json"
-  },
-  {
-    "id": "1382",
-    "slug": "balance-a-binary-search-tree",
-    "title": "Balance a Binary Search Tree",
-    "difficulty": "Medium",
-    "topics": [
-      "Divide and Conquer",
-      "Greedy",
-      "Tree",
-      "Depth-First Search",
-      "Binary Search Tree",
-      "Binary Tree"
-    ],
-    "file": "1382-balance-a-binary-search-tree.json"
   },
   {
     "id": "1383",
@@ -13717,16 +11801,6 @@
     "file": "1392-longest-happy-prefix.json"
   },
   {
-    "id": "1393",
-    "slug": "capital-gainloss",
-    "title": "Capital Gain/Loss",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "1393-capital-gainloss.json"
-  },
-  {
     "id": "1394",
     "slug": "find-lucky-integer-in-an-array",
     "title": "Find Lucky Integer in an Array",
@@ -13750,18 +11824,6 @@
       "Segment Tree"
     ],
     "file": "1395-count-number-of-teams.json"
-  },
-  {
-    "id": "1396",
-    "slug": "design-underground-system",
-    "title": "Design Underground System",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "String",
-      "Design"
-    ],
-    "file": "1396-design-underground-system.json"
   },
   {
     "id": "1397",
@@ -13871,16 +11933,6 @@
       "Game Theory"
     ],
     "file": "1406-stone-game-iii.json"
-  },
-  {
-    "id": "1407",
-    "slug": "top-travellers",
-    "title": "Top Travellers",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1407-top-travellers.json"
   },
   {
     "id": "1408",
@@ -14480,21 +12532,6 @@
     "file": "1471-the-k-strongest-values-in-an-array.json"
   },
   {
-    "id": "1472",
-    "slug": "design-browser-history",
-    "title": "Design Browser History",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Linked List",
-      "Stack",
-      "Design",
-      "Doubly-Linked List",
-      "Data Stream"
-    ],
-    "file": "1472-design-browser-history.json"
-  },
-  {
     "id": "1473",
     "slug": "paint-house-iii",
     "title": "Paint House III",
@@ -14516,18 +12553,6 @@
       "Monotonic Stack"
     ],
     "file": "1475-final-prices-with-a-special-discount-in-a-shop.json"
-  },
-  {
-    "id": "1476",
-    "slug": "subrectangle-queries",
-    "title": "Subrectangle Queries",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Design",
-      "Matrix"
-    ],
-    "file": "1476-subrectangle-queries.json"
   },
   {
     "id": "1477",
@@ -14591,31 +12616,6 @@
       "Binary Search"
     ],
     "file": "1482-minimum-number-of-days-to-make-m-bouquets.json"
-  },
-  {
-    "id": "1483",
-    "slug": "kth-ancestor-of-a-tree-node",
-    "title": "Kth Ancestor of a Tree Node",
-    "difficulty": "Hard",
-    "topics": [
-      "Binary Search",
-      "Dynamic Programming",
-      "Tree",
-      "Depth-First Search",
-      "Breadth-First Search",
-      "Design"
-    ],
-    "file": "1483-kth-ancestor-of-a-tree-node.json"
-  },
-  {
-    "id": "1484",
-    "slug": "group-sold-products-by-the-date",
-    "title": "Group Sold Products By The Date",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1484-group-sold-products-by-the-date.json"
   },
   {
     "id": "1486",
@@ -14914,16 +12914,6 @@
     "file": "1515-best-position-for-a-service-centre.json"
   },
   {
-    "id": "1517",
-    "slug": "find-users-with-valid-e-mails",
-    "title": "Find Users With Valid E-Mails",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1517-find-users-with-valid-e-mails.json"
-  },
-  {
     "id": "1518",
     "slug": "water-bottles",
     "title": "Water Bottles",
@@ -15021,27 +13011,6 @@
       "Monotonic Stack"
     ],
     "file": "1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array.json"
-  },
-  {
-    "id": "1527",
-    "slug": "patients-with-a-condition",
-    "title": "Patients With a Condition",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1527-patients-with-a-condition.json"
-  },
-  {
-    "id": "1528",
-    "slug": "shuffle-string",
-    "title": "Shuffle String",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "String"
-    ],
-    "file": "1528-shuffle-string.json"
   },
   {
     "id": "1529",
@@ -15229,16 +13198,6 @@
     "file": "1550-three-consecutive-odds.json"
   },
   {
-    "id": "1551",
-    "slug": "minimum-operations-to-make-array-equal",
-    "title": "Minimum Operations to Make Array Equal",
-    "difficulty": "Medium",
-    "topics": [
-      "Math"
-    ],
-    "file": "1551-minimum-operations-to-make-array-equal.json"
-  },
-  {
     "id": "1552",
     "slug": "magnetic-force-between-two-balls",
     "title": "Magnetic Force Between Two Balls",
@@ -15280,18 +13239,6 @@
       "Graph"
     ],
     "file": "1557-minimum-number-of-vertices-to-reach-all-nodes.json"
-  },
-  {
-    "id": "1558",
-    "slug": "minimum-numbers-of-function-calls-to-make-target-array",
-    "title": "Minimum Numbers of Function Calls to Make Target Array",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Greedy",
-      "Bit Manipulation"
-    ],
-    "file": "1558-minimum-numbers-of-function-calls-to-make-target-array.json"
   },
   {
     "id": "1559",
@@ -15499,27 +13446,6 @@
     "file": "1578-minimum-time-to-make-rope-colorful.json"
   },
   {
-    "id": "1579",
-    "slug": "remove-max-number-of-edges-to-keep-graph-fully-traversable",
-    "title": "Remove Max Number of Edges to Keep Graph Fully Traversable",
-    "difficulty": "Hard",
-    "topics": [
-      "Union Find",
-      "Graph"
-    ],
-    "file": "1579-remove-max-number-of-edges-to-keep-graph-fully-traversable.json"
-  },
-  {
-    "id": "1581",
-    "slug": "customer-who-visited-but-did-not-make-any-transactions",
-    "title": "Customer Who Visited but Did Not Make Any Transactions",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1581-customer-who-visited-but-did-not-make-any-transactions.json"
-  },
-  {
     "id": "1582",
     "slug": "special-positions-in-a-binary-matrix",
     "title": "Special Positions in a Binary Matrix",
@@ -15565,16 +13491,6 @@
       "Sorting"
     ],
     "file": "1585-check-if-string-is-transformable-with-substring-sort-operations.json"
-  },
-  {
-    "id": "1587",
-    "slug": "bank-account-summary-ii",
-    "title": "Bank Account Summary II",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1587-bank-account-summary-ii.json"
   },
   {
     "id": "1588",
@@ -15661,20 +13577,6 @@
     "file": "1594-maximum-non-negative-product-in-a-matrix.json"
   },
   {
-    "id": "1595",
-    "slug": "minimum-cost-to-connect-two-groups-of-points",
-    "title": "Minimum Cost to Connect Two Groups of Points",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Dynamic Programming",
-      "Bit Manipulation",
-      "Matrix",
-      "Bitmask"
-    ],
-    "file": "1595-minimum-cost-to-connect-two-groups-of-points.json"
-  },
-  {
     "id": "1598",
     "slug": "crawler-log-folder",
     "title": "Crawler Log Folder",
@@ -15698,19 +13600,6 @@
     "file": "1599-maximum-profit-of-operating-a-centennial-wheel.json"
   },
   {
-    "id": "1600",
-    "slug": "throne-inheritance",
-    "title": "Throne Inheritance",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Tree",
-      "Depth-First Search",
-      "Design"
-    ],
-    "file": "1600-throne-inheritance.json"
-  },
-  {
     "id": "1601",
     "slug": "maximum-number-of-achievable-transfer-requests",
     "title": "Maximum Number of Achievable Transfer Requests",
@@ -15722,18 +13611,6 @@
       "Enumeration"
     ],
     "file": "1601-maximum-number-of-achievable-transfer-requests.json"
-  },
-  {
-    "id": "1603",
-    "slug": "design-parking-system",
-    "title": "Design Parking System",
-    "difficulty": "Easy",
-    "topics": [
-      "Design",
-      "Simulation",
-      "Counting"
-    ],
-    "file": "1603-design-parking-system.json"
   },
   {
     "id": "1604",
@@ -15904,18 +13781,6 @@
     "file": "1621-number-of-sets-of-k-non-overlapping-line-segments.json"
   },
   {
-    "id": "1622",
-    "slug": "fancy-sequence",
-    "title": "Fancy Sequence",
-    "difficulty": "Hard",
-    "topics": [
-      "Math",
-      "Design",
-      "Segment Tree"
-    ],
-    "file": "1622-fancy-sequence.json"
-  },
-  {
     "id": "1624",
     "slug": "largest-substring-between-two-equal-characters",
     "title": "Largest Substring Between Two Equal Characters",
@@ -16017,16 +13882,6 @@
       "Matrix"
     ],
     "file": "1632-rank-transform-of-a-matrix.json"
-  },
-  {
-    "id": "1633",
-    "slug": "percentage-of-users-attended-a-contest",
-    "title": "Percentage of Users Attended a Contest",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1633-percentage-of-users-attended-a-contest.json"
   },
   {
     "id": "1636",
@@ -16149,21 +14004,6 @@
     "file": "1647-minimum-deletions-to-make-character-frequencies-unique.json"
   },
   {
-    "id": "1648",
-    "slug": "sell-diminishing-valued-colored-balls",
-    "title": "Sell Diminishing-Valued Colored Balls",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Math",
-      "Binary Search",
-      "Greedy",
-      "Sorting",
-      "Heap (Priority Queue)"
-    ],
-    "file": "1648-sell-diminishing-valued-colored-balls.json"
-  },
-  {
     "id": "1649",
     "slug": "create-sorted-array-through-instructions",
     "title": "Create Sorted Array through Instructions",
@@ -16229,19 +14069,6 @@
     "file": "1655-distribute-repeating-integers.json"
   },
   {
-    "id": "1656",
-    "slug": "design-an-ordered-stream",
-    "title": "Design an Ordered Stream",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Design",
-      "Data Stream"
-    ],
-    "file": "1656-design-an-ordered-stream.json"
-  },
-  {
     "id": "1657",
     "slug": "determine-if-two-strings-are-close",
     "title": "Determine if Two Strings Are Close",
@@ -16280,16 +14107,6 @@
       "Bitmask"
     ],
     "file": "1659-maximize-grid-happiness.json"
-  },
-  {
-    "id": "1661",
-    "slug": "average-time-of-process-per-machine",
-    "title": "Average Time of Process per Machine",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1661-average-time-of-process-per-machine.json"
   },
   {
     "id": "1662",
@@ -16337,16 +14154,6 @@
     "file": "1665-minimum-initial-energy-to-finish-tasks.json"
   },
   {
-    "id": "1667",
-    "slug": "fix-names-in-a-table",
-    "title": "Fix Names in a Table",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1667-fix-names-in-a-table.json"
-  },
-  {
     "id": "1668",
     "slug": "maximum-repeating-substring",
     "title": "Maximum Repeating Substring",
@@ -16367,20 +14174,6 @@
       "Linked List"
     ],
     "file": "1669-merge-in-between-linked-lists.json"
-  },
-  {
-    "id": "1670",
-    "slug": "design-front-middle-back-queue",
-    "title": "Design Front Middle Back Queue",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Linked List",
-      "Design",
-      "Queue",
-      "Data Stream"
-    ],
-    "file": "1670-design-front-middle-back-queue.json"
   },
   {
     "id": "1671",
@@ -16493,16 +14286,6 @@
     "file": "1681-minimum-incompatibility.json"
   },
   {
-    "id": "1683",
-    "slug": "invalid-tweets",
-    "title": "Invalid Tweets",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1683-invalid-tweets.json"
-  },
-  {
     "id": "1684",
     "slug": "count-the-number-of-consistent-strings",
     "title": "Count the Number of Consistent Strings",
@@ -16605,16 +14388,6 @@
       "Sorting"
     ],
     "file": "1691-maximum-height-by-stacking-cuboids.json"
-  },
-  {
-    "id": "1693",
-    "slug": "daily-leads-and-partners",
-    "title": "Daily Leads and Partners",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1693-daily-leads-and-partners.json"
   },
   {
     "id": "1694",
@@ -16955,26 +14728,6 @@
     "file": "1728-cat-and-mouse-ii.json"
   },
   {
-    "id": "1729",
-    "slug": "find-followers-count",
-    "title": "Find Followers Count",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1729-find-followers-count.json"
-  },
-  {
-    "id": "1731",
-    "slug": "the-number-of-employees-which-report-to-each-employee",
-    "title": "The Number of Employees Which Report to Each Employee",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1731-the-number-of-employees-which-report-to-each-employee.json"
-  },
-  {
     "id": "1732",
     "slug": "find-the-highest-altitude",
     "title": "Find the Highest Altitude",
@@ -17074,16 +14827,6 @@
       "Greedy"
     ],
     "file": "1739-building-boxes.json"
-  },
-  {
-    "id": "1741",
-    "slug": "find-total-time-spent-by-each-employee",
-    "title": "Find Total Time Spent by Each Employee",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1741-find-total-time-spent-by-each-employee.json"
   },
   {
     "id": "1742",
@@ -17226,16 +14969,6 @@
       "Bitmask"
     ],
     "file": "1755-closest-subsequence-sum.json"
-  },
-  {
-    "id": "1757",
-    "slug": "recyclable-and-low-fat-products",
-    "title": "Recyclable and Low Fat Products",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1757-recyclable-and-low-fat-products.json"
   },
   {
     "id": "1758",
@@ -17461,22 +15194,6 @@
     "file": "1781-sum-of-beauty-of-all-substrings.json"
   },
   {
-    "id": "1782",
-    "slug": "count-pairs-of-nodes",
-    "title": "Count Pairs Of Nodes",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Two Pointers",
-      "Binary Search",
-      "Graph",
-      "Sorting",
-      "Counting"
-    ],
-    "file": "1782-count-pairs-of-nodes.json"
-  },
-  {
     "id": "1784",
     "slug": "check-if-binary-string-has-at-most-one-segment-of-ones",
     "title": "Check if Binary String Has at Most One Segment of Ones",
@@ -17522,16 +15239,6 @@
       "Bit Manipulation"
     ],
     "file": "1787-make-the-xor-of-all-segments-equal-to-zero.json"
-  },
-  {
-    "id": "1789",
-    "slug": "primary-department-for-each-employee",
-    "title": "Primary Department for Each Employee",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1789-primary-department-for-each-employee.json"
   },
   {
     "id": "1790",
@@ -17582,16 +15289,6 @@
     "file": "1793-maximum-score-of-a-good-subarray.json"
   },
   {
-    "id": "1795",
-    "slug": "rearrange-products-table",
-    "title": "Rearrange Products Table",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1795-rearrange-products-table.json"
-  },
-  {
     "id": "1796",
     "slug": "second-largest-digit-in-a-string",
     "title": "Second Largest Digit in a String",
@@ -17601,19 +15298,6 @@
       "String"
     ],
     "file": "1796-second-largest-digit-in-a-string.json"
-  },
-  {
-    "id": "1797",
-    "slug": "design-authentication-manager",
-    "title": "Design Authentication Manager",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Linked List",
-      "Design",
-      "Doubly-Linked List"
-    ],
-    "file": "1797-design-authentication-manager.json"
   },
   {
     "id": "1798",
@@ -17664,18 +15348,6 @@
       "Simulation"
     ],
     "file": "1801-number-of-orders-in-the-backlog.json"
-  },
-  {
-    "id": "1802",
-    "slug": "maximum-value-at-a-given-index-in-a-bounded-array",
-    "title": "Maximum Value at a Given Index in a Bounded Array",
-    "difficulty": "Medium",
-    "topics": [
-      "Math",
-      "Binary Search",
-      "Greedy"
-    ],
-    "file": "1802-maximum-value-at-a-given-index-in-a-bounded-array.json"
   },
   {
     "id": "1803",
@@ -17872,20 +15544,6 @@
     "file": "1824-minimum-sideway-jumps.json"
   },
   {
-    "id": "1825",
-    "slug": "finding-mk-average",
-    "title": "Finding MK Average",
-    "difficulty": "Hard",
-    "topics": [
-      "Design",
-      "Queue",
-      "Heap (Priority Queue)",
-      "Data Stream",
-      "Ordered Set"
-    ],
-    "file": "1825-finding-mk-average.json"
-  },
-  {
     "id": "1827",
     "slug": "minimum-operations-to-make-the-array-increasing",
     "title": "Minimum Operations to Make the Array Increasing",
@@ -17969,18 +15627,6 @@
     "file": "1834-single-threaded-cpu.json"
   },
   {
-    "id": "1835",
-    "slug": "find-xor-sum-of-all-pairs-bitwise-and",
-    "title": "Find XOR Sum of All Pairs Bitwise AND",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Math",
-      "Bit Manipulation"
-    ],
-    "file": "1835-find-xor-sum-of-all-pairs-bitwise-and.json"
-  },
-  {
     "id": "1837",
     "slug": "sum-of-digits-in-base-k",
     "title": "Sum of Digits in Base K",
@@ -18029,27 +15675,6 @@
     "file": "1840-maximum-building-height.json"
   },
   {
-    "id": "1844",
-    "slug": "replace-all-digits-with-characters",
-    "title": "Replace All Digits with Characters",
-    "difficulty": "Easy",
-    "topics": [
-      "String"
-    ],
-    "file": "1844-replace-all-digits-with-characters.json"
-  },
-  {
-    "id": "1845",
-    "slug": "seat-reservation-manager",
-    "title": "Seat Reservation Manager",
-    "difficulty": "Medium",
-    "topics": [
-      "Design",
-      "Heap (Priority Queue)"
-    ],
-    "file": "1845-seat-reservation-manager.json"
-  },
-  {
     "id": "1846",
     "slug": "maximum-element-after-decreasing-and-rearranging",
     "title": "Maximum Element After Decreasing and Rearranging",
@@ -18095,18 +15720,6 @@
       "Enumeration"
     ],
     "file": "1849-splitting-a-string-into-descending-consecutive-values.json"
-  },
-  {
-    "id": "1850",
-    "slug": "minimum-adjacent-swaps-to-reach-the-kth-smallest-number",
-    "title": "Minimum Adjacent Swaps to Reach the Kth Smallest Number",
-    "difficulty": "Medium",
-    "topics": [
-      "Two Pointers",
-      "String",
-      "Greedy"
-    ],
-    "file": "1850-minimum-adjacent-swaps-to-reach-the-kth-smallest-number.json"
   },
   {
     "id": "1851",
@@ -18248,18 +15861,6 @@
     "file": "1864-minimum-number-of-swaps-to-make-the-binary-string-alternating.json"
   },
   {
-    "id": "1865",
-    "slug": "finding-pairs-with-a-certain-sum",
-    "title": "Finding Pairs With a Certain Sum",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Design"
-    ],
-    "file": "1865-finding-pairs-with-a-certain-sum.json"
-  },
-  {
     "id": "1866",
     "slug": "number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
     "title": "Number of Ways to Rearrange Sticks With K Sticks Visible",
@@ -18318,16 +15919,6 @@
       "Game Theory"
     ],
     "file": "1872-stone-game-viii.json"
-  },
-  {
-    "id": "1873",
-    "slug": "calculate-special-bonus",
-    "title": "Calculate Special Bonus",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1873-calculate-special-bonus.json"
   },
   {
     "id": "1876",
@@ -18483,16 +16074,6 @@
       "Prefix Sum"
     ],
     "file": "1889-minimum-space-wasted-from-packaging.json"
-  },
-  {
-    "id": "1890",
-    "slug": "the-latest-login-in-2020",
-    "title": "The Latest Login in 2020",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1890-the-latest-login-in-2020.json"
   },
   {
     "id": "1893",
@@ -18652,16 +16233,6 @@
     "file": "1906-minimum-absolute-difference-queries.json"
   },
   {
-    "id": "1907",
-    "slug": "count-salary-categories",
-    "title": "Count Salary Categories",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "1907-count-salary-categories.json"
-  },
-  {
     "id": "1909",
     "slug": "remove-one-element-to-make-the-array-strictly-increasing",
     "title": "Remove One Element to Make the Array Strictly Increasing",
@@ -18682,31 +16253,6 @@
       "Simulation"
     ],
     "file": "1910-remove-all-occurrences-of-a-substring.json"
-  },
-  {
-    "id": "1911",
-    "slug": "maximum-alternating-subsequence-sum",
-    "title": "Maximum Alternating Subsequence Sum",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Dynamic Programming"
-    ],
-    "file": "1911-maximum-alternating-subsequence-sum.json"
-  },
-  {
-    "id": "1912",
-    "slug": "design-movie-rental-system",
-    "title": "Design Movie Rental System",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Design",
-      "Heap (Priority Queue)",
-      "Ordered Set"
-    ],
-    "file": "1912-design-movie-rental-system.json"
   },
   {
     "id": "1913",
@@ -18888,30 +16434,6 @@
       "Dynamic Programming"
     ],
     "file": "1931-painting-a-grid-with-three-different-colors.json"
-  },
-  {
-    "id": "1932",
-    "slug": "merge-bsts-to-create-single-bst",
-    "title": "Merge BSTs to Create Single BST",
-    "difficulty": "Hard",
-    "topics": [
-      "Hash Table",
-      "Binary Search",
-      "Tree",
-      "Depth-First Search",
-      "Binary Tree"
-    ],
-    "file": "1932-merge-bsts-to-create-single-bst.json"
-  },
-  {
-    "id": "1934",
-    "slug": "confirmation-rate",
-    "title": "Confirmation Rate",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "1934-confirmation-rate.json"
   },
   {
     "id": "1935",
@@ -19117,18 +16639,6 @@
     "file": "1957-delete-characters-to-make-fancy-string.json"
   },
   {
-    "id": "1958",
-    "slug": "check-if-move-is-legal",
-    "title": "Check if Move is Legal",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Matrix",
-      "Enumeration"
-    ],
-    "file": "1958-check-if-move-is-legal.json"
-  },
-  {
     "id": "1959",
     "slug": "minimum-total-space-wasted-with-k-resizing-operations",
     "title": "Minimum Total Space Wasted With K Resizing Operations",
@@ -19199,16 +16709,6 @@
       "Binary Indexed Tree"
     ],
     "file": "1964-find-the-longest-valid-obstacle-course-at-each-position.json"
-  },
-  {
-    "id": "1965",
-    "slug": "employees-with-missing-information",
-    "title": "Employees With Missing Information",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1965-employees-with-missing-information.json"
   },
   {
     "id": "1967",
@@ -19322,16 +16822,6 @@
     "file": "1977-number-of-ways-to-separate-numbers.json"
   },
   {
-    "id": "1978",
-    "slug": "employees-whose-manager-left-the-company",
-    "title": "Employees Whose Manager Left the Company",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "1978-employees-whose-manager-left-the-company.json"
-  },
-  {
     "id": "1979",
     "slug": "find-greatest-common-divisor-of-array",
     "title": "Find Greatest Common Divisor of Array",
@@ -19367,17 +16857,6 @@
       "Matrix"
     ],
     "file": "1981-minimize-the-difference-between-target-and-chosen-elements.json"
-  },
-  {
-    "id": "1982",
-    "slug": "find-array-given-subset-sums",
-    "title": "Find Array Given Subset Sums",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Divide and Conquer"
-    ],
-    "file": "1982-find-array-given-subset-sums.json"
   },
   {
     "id": "1984",
@@ -19454,21 +16933,6 @@
       "Matrix"
     ],
     "file": "1992-find-all-groups-of-farmland.json"
-  },
-  {
-    "id": "1993",
-    "slug": "operations-on-tree",
-    "title": "Operations on Tree",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Tree",
-      "Depth-First Search",
-      "Breadth-First Search",
-      "Design"
-    ],
-    "file": "1993-operations-on-tree.json"
   },
   {
     "id": "1994",
@@ -19666,19 +17130,6 @@
     "file": "2012-sum-of-beauty-in-the-array.json"
   },
   {
-    "id": "2013",
-    "slug": "detect-squares",
-    "title": "Detect Squares",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Design",
-      "Counting"
-    ],
-    "file": "2013-detect-squares.json"
-  },
-  {
     "id": "2014",
     "slug": "longest-subsequence-repeated-k-times",
     "title": "Longest Subsequence Repeated k Times",
@@ -19869,20 +17320,6 @@
     "file": "2033-minimum-operations-to-make-a-uni-value-grid.json"
   },
   {
-    "id": "2034",
-    "slug": "stock-price-fluctuation",
-    "title": "Stock Price Fluctuation ",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Design",
-      "Heap (Priority Queue)",
-      "Data Stream",
-      "Ordered Set"
-    ],
-    "file": "2034-stock-price-fluctuation.json"
-  },
-  {
     "id": "2035",
     "slug": "partition-array-into-two-arrays-to-minimize-sum-difference",
     "title": "Partition Array Into Two Arrays to Minimize Sum Difference",
@@ -19910,19 +17347,6 @@
       "Counting Sort"
     ],
     "file": "2037-minimum-number-of-moves-to-seat-everyone.json"
-  },
-  {
-    "id": "2038",
-    "slug": "remove-colored-pieces-if-both-neighbors-are-the-same-color",
-    "title": "Remove Colored Pieces if Both Neighbors are the Same Color",
-    "difficulty": "Medium",
-    "topics": [
-      "Math",
-      "String",
-      "Greedy",
-      "Game Theory"
-    ],
-    "file": "2038-remove-colored-pieces-if-both-neighbors-are-the-same-color.json"
   },
   {
     "id": "2039",
@@ -19956,19 +17380,6 @@
       "String"
     ],
     "file": "2042-check-if-numbers-are-ascending-in-a-sentence.json"
-  },
-  {
-    "id": "2043",
-    "slug": "simple-bank-system",
-    "title": "Simple Bank System",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Design",
-      "Simulation"
-    ],
-    "file": "2043-simple-bank-system.json"
   },
   {
     "id": "2044",
@@ -20018,19 +17429,6 @@
       "Enumeration"
     ],
     "file": "2048-next-greater-numerically-balanced-number.json"
-  },
-  {
-    "id": "2049",
-    "slug": "count-nodes-with-the-highest-score",
-    "title": "Count Nodes With the Highest Score",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Tree",
-      "Depth-First Search",
-      "Binary Tree"
-    ],
-    "file": "2049-count-nodes-with-the-highest-score.json"
   },
   {
     "id": "2050",
@@ -20130,17 +17528,6 @@
     "file": "2059-minimum-operations-to-convert-number.json"
   },
   {
-    "id": "2060",
-    "slug": "check-if-an-original-string-exists-given-two-encoded-strings",
-    "title": "Check if an Original String Exists Given Two Encoded Strings",
-    "difficulty": "Hard",
-    "topics": [
-      "String",
-      "Dynamic Programming"
-    ],
-    "file": "2060-check-if-an-original-string-exists-given-two-encoded-strings.json"
-  },
-  {
     "id": "2062",
     "slug": "count-vowel-substrings-of-a-string",
     "title": "Count Vowel Substrings of a String",
@@ -20150,19 +17537,6 @@
       "String"
     ],
     "file": "2062-count-vowel-substrings-of-a-string.json"
-  },
-  {
-    "id": "2063",
-    "slug": "vowels-of-all-substrings",
-    "title": "Vowels of All Substrings",
-    "difficulty": "Medium",
-    "topics": [
-      "Math",
-      "String",
-      "Dynamic Programming",
-      "Combinatorics"
-    ],
-    "file": "2063-vowels-of-all-substrings.json"
   },
   {
     "id": "2064",
@@ -20199,17 +17573,6 @@
       "Counting"
     ],
     "file": "2068-check-whether-two-strings-are-almost-equivalent.json"
-  },
-  {
-    "id": "2069",
-    "slug": "walking-robot-simulation-ii",
-    "title": "Walking Robot Simulation II",
-    "difficulty": "Medium",
-    "topics": [
-      "Design",
-      "Simulation"
-    ],
-    "file": "2069-walking-robot-simulation-ii.json"
   },
   {
     "id": "2070",
@@ -20306,20 +17669,6 @@
     "file": "2079-watering-plants.json"
   },
   {
-    "id": "2080",
-    "slug": "range-frequency-queries",
-    "title": "Range Frequency Queries",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Binary Search",
-      "Design",
-      "Segment Tree"
-    ],
-    "file": "2080-range-frequency-queries.json"
-  },
-  {
     "id": "2081",
     "slug": "sum-of-k-mirror-numbers",
     "title": "Sum of k-Mirror Numbers",
@@ -20354,17 +17703,6 @@
       "Greedy"
     ],
     "file": "2086-minimum-number-of-food-buckets-to-feed-the-hamsters.json"
-  },
-  {
-    "id": "2087",
-    "slug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
-    "title": "Minimum Cost Homecoming of a Robot in a Grid",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Greedy"
-    ],
-    "file": "2087-minimum-cost-homecoming-of-a-robot-in-a-grid.json"
   },
   {
     "id": "2088",
@@ -20516,19 +17854,6 @@
     "file": "2101-detonate-the-maximum-bombs.json"
   },
   {
-    "id": "2102",
-    "slug": "sequentially-ordinal-rank-tracker",
-    "title": "Sequentially Ordinal Rank Tracker",
-    "difficulty": "Hard",
-    "topics": [
-      "Design",
-      "Heap (Priority Queue)",
-      "Data Stream",
-      "Ordered Set"
-    ],
-    "file": "2102-sequentially-ordinal-rank-tracker.json"
-  },
-  {
     "id": "2103",
     "slug": "rings-and-rods",
     "title": "Rings and Rods",
@@ -20648,18 +17973,6 @@
       "Topological Sort"
     ],
     "file": "2115-find-all-possible-recipes-from-given-supplies.json"
-  },
-  {
-    "id": "2116",
-    "slug": "check-if-a-parentheses-string-can-be-valid",
-    "title": "Check if a Parentheses String Can Be Valid",
-    "difficulty": "Medium",
-    "topics": [
-      "String",
-      "Stack",
-      "Greedy"
-    ],
-    "file": "2116-check-if-a-parentheses-string-can-be-valid.json"
   },
   {
     "id": "2117",
@@ -20786,20 +18099,6 @@
       "Stack"
     ],
     "file": "2130-maximum-twin-sum-of-a-linked-list.json"
-  },
-  {
-    "id": "2131",
-    "slug": "longest-palindrome-by-concatenating-two-letter-words",
-    "title": "Longest Palindrome by Concatenating Two Letter Words",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "String",
-      "Greedy",
-      "Counting"
-    ],
-    "file": "2131-longest-palindrome-by-concatenating-two-letter-words.json"
   },
   {
     "id": "2132",
@@ -20947,18 +18246,6 @@
     "file": "2146-k-highest-ranked-items-within-a-price-range.json"
   },
   {
-    "id": "2147",
-    "slug": "number-of-ways-to-divide-a-long-corridor",
-    "title": "Number of Ways to Divide a Long Corridor",
-    "difficulty": "Hard",
-    "topics": [
-      "Math",
-      "String",
-      "Dynamic Programming"
-    ],
-    "file": "2147-number-of-ways-to-divide-a-long-corridor.json"
-  },
-  {
     "id": "2148",
     "slug": "count-elements-with-strictly-smaller-and-greater-elements",
     "title": "Count Elements With Strictly Smaller and Greater Elements ",
@@ -21056,18 +18343,6 @@
     "file": "2157-groups-of-strings.json"
   },
   {
-    "id": "2160",
-    "slug": "minimum-sum-of-four-digit-number-after-splitting-digits",
-    "title": "Minimum Sum of Four Digit Number After Splitting Digits",
-    "difficulty": "Easy",
-    "topics": [
-      "Math",
-      "Greedy",
-      "Sorting"
-    ],
-    "file": "2160-minimum-sum-of-four-digit-number-after-splitting-digits.json"
-  },
-  {
     "id": "2161",
     "slug": "partition-array-according-to-given-pivot",
     "title": "Partition Array According to Given Pivot",
@@ -21091,18 +18366,6 @@
     "file": "2162-minimum-cost-to-set-cooking-time.json"
   },
   {
-    "id": "2163",
-    "slug": "minimum-difference-in-sums-after-removal-of-elements",
-    "title": "Minimum Difference in Sums After Removal of Elements",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Dynamic Programming",
-      "Heap (Priority Queue)"
-    ],
-    "file": "2163-minimum-difference-in-sums-after-removal-of-elements.json"
-  },
-  {
     "id": "2164",
     "slug": "sort-even-and-odd-indices-independently",
     "title": "Sort Even and Odd Indices Independently",
@@ -21123,19 +18386,6 @@
       "Sorting"
     ],
     "file": "2165-smallest-value-of-the-rearranged-number.json"
-  },
-  {
-    "id": "2166",
-    "slug": "design-bitset",
-    "title": "Design Bitset",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "String",
-      "Design"
-    ],
-    "file": "2166-design-bitset.json"
   },
   {
     "id": "2167",
@@ -21249,17 +18499,6 @@
     "file": "2179-count-good-triplets-in-an-array.json"
   },
   {
-    "id": "2180",
-    "slug": "count-integers-with-even-digit-sum",
-    "title": "Count Integers With Even Digit Sum",
-    "difficulty": "Easy",
-    "topics": [
-      "Math",
-      "Simulation"
-    ],
-    "file": "2180-count-integers-with-even-digit-sum.json"
-  },
-  {
     "id": "2181",
     "slug": "merge-nodes-in-between-zeros",
     "title": "Merge Nodes in Between Zeros",
@@ -21343,18 +18582,6 @@
     "file": "2188-minimum-time-to-finish-the-race.json"
   },
   {
-    "id": "2190",
-    "slug": "most-frequent-number-following-key-in-an-array",
-    "title": "Most Frequent Number Following Key In an Array",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Counting"
-    ],
-    "file": "2190-most-frequent-number-following-key-in-an-array.json"
-  },
-  {
     "id": "2191",
     "slug": "sort-the-jumbled-numbers",
     "title": "Sort the Jumbled Numbers",
@@ -21377,19 +18604,6 @@
       "Topological Sort"
     ],
     "file": "2192-all-ancestors-of-a-node-in-a-directed-acyclic-graph.json"
-  },
-  {
-    "id": "2193",
-    "slug": "minimum-number-of-moves-to-make-palindrome",
-    "title": "Minimum Number of Moves to Make Palindrome",
-    "difficulty": "Hard",
-    "topics": [
-      "Two Pointers",
-      "String",
-      "Greedy",
-      "Binary Indexed Tree"
-    ],
-    "file": "2193-minimum-number-of-moves-to-make-palindrome.json"
   },
   {
     "id": "2194",
@@ -21462,17 +18676,6 @@
       "Simulation"
     ],
     "file": "2201-count-artifacts-that-can-be-extracted.json"
-  },
-  {
-    "id": "2202",
-    "slug": "maximize-the-topmost-element-after-k-moves",
-    "title": "Maximize the Topmost Element After K Moves",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Greedy"
-    ],
-    "file": "2202-maximize-the-topmost-element-after-k-moves.json"
   },
   {
     "id": "2203",
@@ -21714,20 +18917,6 @@
     "file": "2226-maximum-candies-allocated-to-k-children.json"
   },
   {
-    "id": "2227",
-    "slug": "encrypt-and-decrypt-strings",
-    "title": "Encrypt and Decrypt Strings",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "String",
-      "Design",
-      "Trie"
-    ],
-    "file": "2227-encrypt-and-decrypt-strings.json"
-  },
-  {
     "id": "2231",
     "slug": "largest-number-after-digit-swaps-by-parity",
     "title": "Largest Number After Digit Swaps by Parity",
@@ -21737,17 +18926,6 @@
       "Heap (Priority Queue)"
     ],
     "file": "2231-largest-number-after-digit-swaps-by-parity.json"
-  },
-  {
-    "id": "2232",
-    "slug": "minimize-result-by-adding-parentheses-to-expression",
-    "title": "Minimize Result by Adding Parentheses to Expression",
-    "difficulty": "Medium",
-    "topics": [
-      "String",
-      "Enumeration"
-    ],
-    "file": "2232-minimize-result-by-adding-parentheses-to-expression.json"
   },
   {
     "id": "2233",
@@ -21820,18 +18998,6 @@
     "file": "2240-number-of-ways-to-buy-pens-and-pencils.json"
   },
   {
-    "id": "2241",
-    "slug": "design-an-atm-machine",
-    "title": "Design an ATM Machine",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Greedy",
-      "Design"
-    ],
-    "file": "2241-design-an-atm-machine.json"
-  },
-  {
     "id": "2242",
     "slug": "maximum-score-of-a-node-sequence",
     "title": "Maximum Score of a Node Sequence",
@@ -21843,17 +19009,6 @@
       "Enumeration"
     ],
     "file": "2242-maximum-score-of-a-node-sequence.json"
-  },
-  {
-    "id": "2243",
-    "slug": "calculate-digit-sum-of-a-string",
-    "title": "Calculate Digit Sum of a String",
-    "difficulty": "Easy",
-    "topics": [
-      "String",
-      "Simulation"
-    ],
-    "file": "2243-calculate-digit-sum-of-a-string.json"
   },
   {
     "id": "2244",
@@ -22038,18 +19193,6 @@
     "file": "2261-k-divisible-elements-subarrays.json"
   },
   {
-    "id": "2262",
-    "slug": "total-appeal-of-a-string",
-    "title": "Total Appeal of A String",
-    "difficulty": "Hard",
-    "topics": [
-      "Hash Table",
-      "String",
-      "Dynamic Programming"
-    ],
-    "file": "2262-total-appeal-of-a-string.json"
-  },
-  {
     "id": "2264",
     "slug": "largest-3-same-digit-number-in-string",
     "title": "Largest 3-Same-Digit Number in String",
@@ -22183,18 +19326,6 @@
     "file": "2275-largest-combination-with-bitwise-and-greater-than-zero.json"
   },
   {
-    "id": "2276",
-    "slug": "count-integers-in-intervals",
-    "title": "Count Integers in Intervals",
-    "difficulty": "Hard",
-    "topics": [
-      "Design",
-      "Segment Tree",
-      "Ordered Set"
-    ],
-    "file": "2276-count-integers-in-intervals.json"
-  },
-  {
     "id": "2278",
     "slug": "percentage-of-letter-in-string",
     "title": "Percentage of Letter in String",
@@ -22282,19 +19413,6 @@
     "file": "2285-maximum-total-importance-of-roads.json"
   },
   {
-    "id": "2286",
-    "slug": "booking-concert-tickets-in-groups",
-    "title": "Booking Concert Tickets in Groups",
-    "difficulty": "Hard",
-    "topics": [
-      "Binary Search",
-      "Design",
-      "Binary Indexed Tree",
-      "Segment Tree"
-    ],
-    "file": "2286-booking-concert-tickets-in-groups.json"
-  },
-  {
     "id": "2287",
     "slug": "rearrange-characters-to-make-target-string",
     "title": "Rearrange Characters to Make Target String",
@@ -22315,19 +19433,6 @@
       "String"
     ],
     "file": "2288-apply-discount-to-prices.json"
-  },
-  {
-    "id": "2289",
-    "slug": "steps-to-make-array-non-decreasing",
-    "title": "Steps to Make Array Non-decreasing",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Linked List",
-      "Stack",
-      "Monotonic Stack"
-    ],
-    "file": "2289-steps-to-make-array-non-decreasing.json"
   },
   {
     "id": "2290",
@@ -22378,21 +19483,6 @@
       "Simulation"
     ],
     "file": "2295-replace-elements-in-an-array.json"
-  },
-  {
-    "id": "2296",
-    "slug": "design-a-text-editor",
-    "title": "Design a Text Editor",
-    "difficulty": "Hard",
-    "topics": [
-      "Linked List",
-      "String",
-      "Stack",
-      "Design",
-      "Simulation",
-      "Doubly-Linked List"
-    ],
-    "file": "2296-design-a-text-editor.json"
   },
   {
     "id": "2299",
@@ -22455,18 +19545,6 @@
     "file": "2303-calculate-amount-paid-in-taxes.json"
   },
   {
-    "id": "2304",
-    "slug": "minimum-path-cost-in-a-grid",
-    "title": "Minimum Path Cost in a Grid",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Dynamic Programming",
-      "Matrix"
-    ],
-    "file": "2304-minimum-path-cost-in-a-grid.json"
-  },
-  {
     "id": "2305",
     "slug": "fair-distribution-of-cookies",
     "title": "Fair Distribution of Cookies",
@@ -22520,19 +19598,6 @@
     "file": "2310-sum-of-numbers-with-units-digit-k.json"
   },
   {
-    "id": "2311",
-    "slug": "longest-binary-subsequence-less-than-or-equal-to-k",
-    "title": "Longest Binary Subsequence Less Than or Equal to K",
-    "difficulty": "Medium",
-    "topics": [
-      "String",
-      "Dynamic Programming",
-      "Greedy",
-      "Memoization"
-    ],
-    "file": "2311-longest-binary-subsequence-less-than-or-equal-to-k.json"
-  },
-  {
     "id": "2312",
     "slug": "selling-pieces-of-wood",
     "title": "Selling Pieces of Wood",
@@ -22566,18 +19631,6 @@
       "Graph"
     ],
     "file": "2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph.json"
-  },
-  {
-    "id": "2317",
-    "slug": "maximum-xor-after-operations",
-    "title": "Maximum XOR After Operations ",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Math",
-      "Bit Manipulation"
-    ],
-    "file": "2317-maximum-xor-after-operations.json"
   },
   {
     "id": "2318",
@@ -22728,19 +19781,6 @@
     "file": "2333-minimum-sum-of-squared-difference.json"
   },
   {
-    "id": "2334",
-    "slug": "subarray-with-elements-greater-than-varying-threshold",
-    "title": "Subarray With Elements Greater Than Varying Threshold",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Stack",
-      "Union Find",
-      "Monotonic Stack"
-    ],
-    "file": "2334-subarray-with-elements-greater-than-varying-threshold.json"
-  },
-  {
     "id": "2335",
     "slug": "minimum-amount-of-time-to-fill-cups",
     "title": "Minimum Amount of Time to Fill Cups",
@@ -22754,19 +19794,6 @@
     "file": "2335-minimum-amount-of-time-to-fill-cups.json"
   },
   {
-    "id": "2336",
-    "slug": "smallest-number-in-infinite-set",
-    "title": "Smallest Number in Infinite Set",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Design",
-      "Heap (Priority Queue)",
-      "Ordered Set"
-    ],
-    "file": "2336-smallest-number-in-infinite-set.json"
-  },
-  {
     "id": "2337",
     "slug": "move-pieces-to-obtain-a-string",
     "title": "Move Pieces to Obtain a String",
@@ -22776,19 +19803,6 @@
       "String"
     ],
     "file": "2337-move-pieces-to-obtain-a-string.json"
-  },
-  {
-    "id": "2338",
-    "slug": "count-the-number-of-ideal-arrays",
-    "title": "Count the Number of Ideal Arrays",
-    "difficulty": "Hard",
-    "topics": [
-      "Math",
-      "Dynamic Programming",
-      "Combinatorics",
-      "Number Theory"
-    ],
-    "file": "2338-count-the-number-of-ideal-arrays.json"
   },
   {
     "id": "2341",
@@ -22869,19 +19883,6 @@
     "file": "2348-number-of-zero-filled-subarrays.json"
   },
   {
-    "id": "2349",
-    "slug": "design-a-number-container-system",
-    "title": "Design a Number Container System",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Design",
-      "Heap (Priority Queue)",
-      "Ordered Set"
-    ],
-    "file": "2349-design-a-number-container-system.json"
-  },
-  {
     "id": "2350",
     "slug": "shortest-impossible-sequence-of-rolls",
     "title": "Shortest Impossible Sequence of Rolls",
@@ -22920,21 +19921,6 @@
     "file": "2352-equal-row-and-column-pairs.json"
   },
   {
-    "id": "2353",
-    "slug": "design-a-food-rating-system",
-    "title": "Design a Food Rating System",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "String",
-      "Design",
-      "Heap (Priority Queue)",
-      "Ordered Set"
-    ],
-    "file": "2353-design-a-food-rating-system.json"
-  },
-  {
     "id": "2354",
     "slug": "number-of-excellent-pairs",
     "title": "Number of Excellent Pairs",
@@ -22946,16 +19932,6 @@
       "Bit Manipulation"
     ],
     "file": "2354-number-of-excellent-pairs.json"
-  },
-  {
-    "id": "2356",
-    "slug": "number-of-unique-subjects-taught-by-each-teacher",
-    "title": "Number of Unique Subjects Taught by Each Teacher",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "2356-number-of-unique-subjects-taught-by-each-teacher.json"
   },
   {
     "id": "2357",
@@ -23181,18 +20157,6 @@
     "file": "2380-time-needed-to-rearrange-a-binary-string.json"
   },
   {
-    "id": "2381",
-    "slug": "shifting-letters-ii",
-    "title": "Shifting Letters II",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "String",
-      "Prefix Sum"
-    ],
-    "file": "2381-shifting-letters-ii.json"
-  },
-  {
     "id": "2382",
     "slug": "maximum-segment-sum-after-removals",
     "title": "Maximum Segment Sum After Removals",
@@ -23342,22 +20306,6 @@
       "Enumeration"
     ],
     "file": "2397-maximum-rows-covered-by-columns.json"
-  },
-  {
-    "id": "2398",
-    "slug": "maximum-number-of-robots-within-budget",
-    "title": "Maximum Number of Robots Within Budget",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Binary Search",
-      "Queue",
-      "Sliding Window",
-      "Heap (Priority Queue)",
-      "Prefix Sum",
-      "Monotonic Queue"
-    ],
-    "file": "2398-maximum-number-of-robots-within-budget.json"
   },
   {
     "id": "2399",
@@ -23625,35 +20573,6 @@
     "file": "2423-remove-letter-to-equalize-frequency.json"
   },
   {
-    "id": "2424",
-    "slug": "longest-uploaded-prefix",
-    "title": "Longest Uploaded Prefix",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Binary Search",
-      "Union Find",
-      "Design",
-      "Binary Indexed Tree",
-      "Segment Tree",
-      "Heap (Priority Queue)",
-      "Ordered Set"
-    ],
-    "file": "2424-longest-uploaded-prefix.json"
-  },
-  {
-    "id": "2425",
-    "slug": "bitwise-xor-of-all-pairings",
-    "title": "Bitwise XOR of All Pairings",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Bit Manipulation",
-      "Brainteaser"
-    ],
-    "file": "2425-bitwise-xor-of-all-pairings.json"
-  },
-  {
     "id": "2426",
     "slug": "number-of-pairs-satisfying-inequality",
     "title": "Number of Pairs Satisfying Inequality",
@@ -23774,18 +20693,6 @@
       "Enumeration"
     ],
     "file": "2437-number-of-valid-clock-times.json"
-  },
-  {
-    "id": "2438",
-    "slug": "range-product-queries-of-powers",
-    "title": "Range Product Queries of Powers",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Bit Manipulation",
-      "Prefix Sum"
-    ],
-    "file": "2438-range-product-queries-of-powers.json"
   },
   {
     "id": "2439",
@@ -24379,18 +21286,6 @@
     "file": "2497-maximum-star-sum-of-a-graph.json"
   },
   {
-    "id": "2498",
-    "slug": "frog-jump-ii",
-    "title": "Frog Jump II",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Binary Search",
-      "Greedy"
-    ],
-    "file": "2498-frog-jump-ii.json"
-  },
-  {
     "id": "2499",
     "slug": "minimum-total-cost-to-make-arrays-unequal",
     "title": "Minimum Total Cost to Make Arrays Unequal",
@@ -24430,19 +21325,6 @@
       "Sorting"
     ],
     "file": "2501-longest-square-streak-in-an-array.json"
-  },
-  {
-    "id": "2502",
-    "slug": "design-memory-allocator",
-    "title": "Design Memory Allocator",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Design",
-      "Simulation"
-    ],
-    "file": "2502-design-memory-allocator.json"
   },
   {
     "id": "2503",
@@ -24508,17 +21390,6 @@
       "Binary Tree"
     ],
     "file": "2509-cycle-length-queries-in-a-tree.json"
-  },
-  {
-    "id": "2511",
-    "slug": "maximum-enemy-forts-that-can-be-captured",
-    "title": "Maximum Enemy Forts That Can Be Captured",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Two Pointers"
-    ],
-    "file": "2511-maximum-enemy-forts-that-can-be-captured.json"
   },
   {
     "id": "2512",
@@ -24597,17 +21468,6 @@
     "file": "2517-maximum-tastiness-of-candy-basket.json"
   },
   {
-    "id": "2518",
-    "slug": "number-of-great-partitions",
-    "title": "Number of Great Partitions",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Dynamic Programming"
-    ],
-    "file": "2518-number-of-great-partitions.json"
-  },
-  {
     "id": "2520",
     "slug": "count-the-digits-that-divide-a-number",
     "title": "Count the Digits That Divide a Number",
@@ -24662,20 +21522,6 @@
       "Math"
     ],
     "file": "2525-categorize-box-according-to-criteria.json"
-  },
-  {
-    "id": "2526",
-    "slug": "find-consecutive-integers-from-a-data-stream",
-    "title": "Find Consecutive Integers from a Data Stream",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Design",
-      "Queue",
-      "Counting",
-      "Data Stream"
-    ],
-    "file": "2526-find-consecutive-integers-from-a-data-stream.json"
   },
   {
     "id": "2527",
@@ -24741,18 +21587,6 @@
     "file": "2531-make-number-of-distinct-characters-equal.json"
   },
   {
-    "id": "2532",
-    "slug": "time-to-cross-a-bridge",
-    "title": "Time to Cross a Bridge",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Heap (Priority Queue)",
-      "Simulation"
-    ],
-    "file": "2532-time-to-cross-a-bridge.json"
-  },
-  {
     "id": "2535",
     "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
     "title": "Difference Between Element Sum and Digit Sum of an Array",
@@ -24774,18 +21608,6 @@
       "Prefix Sum"
     ],
     "file": "2536-increment-submatrices-by-one.json"
-  },
-  {
-    "id": "2537",
-    "slug": "count-the-number-of-good-subarrays",
-    "title": "Count the Number of Good Subarrays",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Sliding Window"
-    ],
-    "file": "2537-count-the-number-of-good-subarrays.json"
   },
   {
     "id": "2538",
@@ -24812,18 +21634,6 @@
       "Binary Search"
     ],
     "file": "2540-minimum-common-value.json"
-  },
-  {
-    "id": "2541",
-    "slug": "minimum-operations-to-make-array-equal-ii",
-    "title": "Minimum Operations to Make Array Equal II",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Math",
-      "Greedy"
-    ],
-    "file": "2541-minimum-operations-to-make-array-equal-ii.json"
   },
   {
     "id": "2542",
@@ -24894,19 +21704,6 @@
       "Counting"
     ],
     "file": "2547-minimum-cost-to-split-an-array.json"
-  },
-  {
-    "id": "2549",
-    "slug": "count-distinct-numbers-on-board",
-    "title": "Count Distinct Numbers on Board",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Math",
-      "Simulation"
-    ],
-    "file": "2549-count-distinct-numbers-on-board.json"
   },
   {
     "id": "2550",
@@ -25022,19 +21819,6 @@
     "file": "2559-count-vowel-strings-in-ranges.json"
   },
   {
-    "id": "2560",
-    "slug": "house-robber-iv",
-    "title": "House Robber IV",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Binary Search",
-      "Dynamic Programming",
-      "Greedy"
-    ],
-    "file": "2560-house-robber-iv.json"
-  },
-  {
     "id": "2561",
     "slug": "rearranging-fruits",
     "title": "Rearranging Fruits",
@@ -25131,17 +21915,6 @@
       "Brainteaser"
     ],
     "file": "2568-minimum-impossible-or.json"
-  },
-  {
-    "id": "2569",
-    "slug": "handling-sum-queries-after-update",
-    "title": "Handling Sum Queries After Update",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Segment Tree"
-    ],
-    "file": "2569-handling-sum-queries-after-update.json"
   },
   {
     "id": "2570",
@@ -25261,16 +22034,6 @@
     "file": "2578-split-with-minimum-sum.json"
   },
   {
-    "id": "2579",
-    "slug": "count-total-number-of-colored-cells",
-    "title": "Count Total Number of Colored Cells",
-    "difficulty": "Medium",
-    "topics": [
-      "Math"
-    ],
-    "file": "2579-count-total-number-of-colored-cells.json"
-  },
-  {
     "id": "2580",
     "slug": "count-ways-to-group-overlapping-ranges",
     "title": "Count Ways to Group Overlapping Ranges",
@@ -25280,31 +22043,6 @@
       "Sorting"
     ],
     "file": "2580-count-ways-to-group-overlapping-ranges.json"
-  },
-  {
-    "id": "2581",
-    "slug": "count-number-of-possible-root-nodes",
-    "title": "Count Number of Possible Root Nodes",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Dynamic Programming",
-      "Tree",
-      "Depth-First Search"
-    ],
-    "file": "2581-count-number-of-possible-root-nodes.json"
-  },
-  {
-    "id": "2582",
-    "slug": "pass-the-pillow",
-    "title": "Pass the Pillow",
-    "difficulty": "Easy",
-    "topics": [
-      "Math",
-      "Simulation"
-    ],
-    "file": "2582-pass-the-pillow.json"
   },
   {
     "id": "2583",
@@ -25455,20 +22193,6 @@
     "file": "2595-number-of-even-and-odd-bits.json"
   },
   {
-    "id": "2596",
-    "slug": "check-knight-tour-configuration",
-    "title": "Check Knight Tour Configuration",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Depth-First Search",
-      "Breadth-First Search",
-      "Matrix",
-      "Simulation"
-    ],
-    "file": "2596-check-knight-tour-configuration.json"
-  },
-  {
     "id": "2597",
     "slug": "the-number-of-beautiful-subsets",
     "title": "The Number of Beautiful Subsets",
@@ -25483,19 +22207,6 @@
       "Combinatorics"
     ],
     "file": "2597-the-number-of-beautiful-subsets.json"
-  },
-  {
-    "id": "2598",
-    "slug": "smallest-missing-non-negative-integer-after-operations",
-    "title": "Smallest Missing Non-negative Integer After Operations",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Math",
-      "Greedy"
-    ],
-    "file": "2598-smallest-missing-non-negative-integer-after-operations.json"
   },
   {
     "id": "2600",
@@ -25599,16 +22310,6 @@
     "file": "2608-shortest-cycle-in-a-graph.json"
   },
   {
-    "id": "2609",
-    "slug": "find-the-longest-balanced-substring-of-a-binary-string",
-    "title": "Find the Longest Balanced Substring of a Binary String",
-    "difficulty": "Easy",
-    "topics": [
-      "String"
-    ],
-    "file": "2609-find-the-longest-balanced-substring-of-a-binary-string.json"
-  },
-  {
     "id": "2610",
     "slug": "convert-an-array-into-a-2d-array-with-conditions",
     "title": "Convert an Array Into a 2D Array With Conditions",
@@ -25701,134 +22402,6 @@
     "file": "2617-minimum-number-of-visited-cells-in-a-grid.json"
   },
   {
-    "id": "2618",
-    "slug": "check-if-object-instance-of-class",
-    "title": "Check if Object Instance of Class",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2618-check-if-object-instance-of-class.json"
-  },
-  {
-    "id": "2619",
-    "slug": "array-prototype-last",
-    "title": "Array Prototype Last",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2619-array-prototype-last.json"
-  },
-  {
-    "id": "2620",
-    "slug": "counter",
-    "title": "Counter",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2620-counter.json"
-  },
-  {
-    "id": "2621",
-    "slug": "sleep",
-    "title": "Sleep",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2621-sleep.json"
-  },
-  {
-    "id": "2622",
-    "slug": "cache-with-time-limit",
-    "title": "Cache With Time Limit",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2622-cache-with-time-limit.json"
-  },
-  {
-    "id": "2623",
-    "slug": "memoize",
-    "title": "Memoize",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2623-memoize.json"
-  },
-  {
-    "id": "2624",
-    "slug": "snail-traversal",
-    "title": "Snail Traversal",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2624-snail-traversal.json"
-  },
-  {
-    "id": "2625",
-    "slug": "flatten-deeply-nested-array",
-    "title": "Flatten Deeply Nested Array",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2625-flatten-deeply-nested-array.json"
-  },
-  {
-    "id": "2626",
-    "slug": "array-reduce-transformation",
-    "title": "Array Reduce Transformation",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2626-array-reduce-transformation.json"
-  },
-  {
-    "id": "2627",
-    "slug": "debounce",
-    "title": "Debounce",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2627-debounce.json"
-  },
-  {
-    "id": "2629",
-    "slug": "function-composition",
-    "title": "Function Composition",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2629-function-composition.json"
-  },
-  {
-    "id": "2630",
-    "slug": "memoize-ii",
-    "title": "Memoize II",
-    "difficulty": "Hard",
-    "topics": [],
-    "file": "2630-memoize-ii.json"
-  },
-  {
-    "id": "2631",
-    "slug": "group-by",
-    "title": "Group By",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2631-group-by.json"
-  },
-  {
-    "id": "2634",
-    "slug": "filter-elements-from-array",
-    "title": "Filter Elements from Array",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2634-filter-elements-from-array.json"
-  },
-  {
-    "id": "2635",
-    "slug": "apply-transform-over-each-element-in-array",
-    "title": "Apply Transform Over Each Element in Array",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2635-apply-transform-over-each-element-in-array.json"
-  },
-  {
-    "id": "2637",
-    "slug": "promise-time-limit",
-    "title": "Promise Time Limit",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2637-promise-time-limit.json"
-  },
-  {
     "id": "2639",
     "slug": "find-the-width-of-columns-of-a-grid",
     "title": "Find the Width of Columns of a Grid",
@@ -25863,19 +22436,6 @@
       "Binary Tree"
     ],
     "file": "2641-cousins-in-binary-tree-ii.json"
-  },
-  {
-    "id": "2642",
-    "slug": "design-graph-with-shortest-path-calculator",
-    "title": "Design Graph With Shortest Path Calculator",
-    "difficulty": "Hard",
-    "topics": [
-      "Graph",
-      "Design",
-      "Heap (Priority Queue)",
-      "Shortest Path"
-    ],
-    "file": "2642-design-graph-with-shortest-path-calculator.json"
   },
   {
     "id": "2643",
@@ -25924,30 +22484,6 @@
       "Graph"
     ],
     "file": "2646-minimize-the-total-price-of-the-trips.json"
-  },
-  {
-    "id": "2648",
-    "slug": "generate-fibonacci-sequence",
-    "title": "Generate Fibonacci Sequence",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2648-generate-fibonacci-sequence.json"
-  },
-  {
-    "id": "2649",
-    "slug": "nested-array-generator",
-    "title": "Nested Array Generator",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2649-nested-array-generator.json"
-  },
-  {
-    "id": "2650",
-    "slug": "design-cancellable-function",
-    "title": "Design Cancellable Function",
-    "difficulty": "Hard",
-    "topics": [],
-    "file": "2650-design-cancellable-function.json"
   },
   {
     "id": "2651",
@@ -26094,30 +22630,6 @@
     "file": "2663-lexicographically-smallest-beautiful-string.json"
   },
   {
-    "id": "2665",
-    "slug": "counter-ii",
-    "title": "Counter II",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2665-counter-ii.json"
-  },
-  {
-    "id": "2666",
-    "slug": "allow-one-function-call",
-    "title": "Allow One Function Call",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2666-allow-one-function-call.json"
-  },
-  {
-    "id": "2667",
-    "slug": "create-hello-world-function",
-    "title": "Create Hello World Function",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2667-create-hello-world-function.json"
-  },
-  {
     "id": "2670",
     "slug": "find-the-distinct-difference-array",
     "title": "Find the Distinct Difference Array",
@@ -26127,17 +22639,6 @@
       "Hash Table"
     ],
     "file": "2670-find-the-distinct-difference-array.json"
-  },
-  {
-    "id": "2671",
-    "slug": "frequency-tracker",
-    "title": "Frequency Tracker",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Design"
-    ],
-    "file": "2671-frequency-tracker.json"
   },
   {
     "id": "2672",
@@ -26162,14 +22663,6 @@
       "Binary Tree"
     ],
     "file": "2673-make-costs-of-paths-equal-in-a-binary-tree.json"
-  },
-  {
-    "id": "2677",
-    "slug": "chunk-array",
-    "title": "Chunk Array",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2677-chunk-array.json"
   },
   {
     "id": "2678",
@@ -26272,30 +22765,6 @@
     "file": "2685-count-the-number-of-complete-components.json"
   },
   {
-    "id": "2693",
-    "slug": "call-function-with-custom-context",
-    "title": "Call Function with Custom Context",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2693-call-function-with-custom-context.json"
-  },
-  {
-    "id": "2694",
-    "slug": "event-emitter",
-    "title": "Event Emitter",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2694-event-emitter.json"
-  },
-  {
-    "id": "2695",
-    "slug": "array-wrapper",
-    "title": "Array Wrapper",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2695-array-wrapper.json"
-  },
-  {
     "id": "2696",
     "slug": "minimum-string-length-after-removing-substrings",
     "title": "Minimum String Length After Removing Substrings",
@@ -26329,42 +22798,6 @@
       "Backtracking"
     ],
     "file": "2698-find-the-punishment-number-of-an-integer.json"
-  },
-  {
-    "id": "2699",
-    "slug": "modify-graph-edge-weights",
-    "title": "Modify Graph Edge Weights",
-    "difficulty": "Hard",
-    "topics": [
-      "Graph",
-      "Heap (Priority Queue)",
-      "Shortest Path"
-    ],
-    "file": "2699-modify-graph-edge-weights.json"
-  },
-  {
-    "id": "2703",
-    "slug": "return-length-of-arguments-passed",
-    "title": "Return Length of Arguments Passed",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2703-return-length-of-arguments-passed.json"
-  },
-  {
-    "id": "2704",
-    "slug": "to-be-or-not-to-be",
-    "title": "To Be Or Not To Be",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2704-to-be-or-not-to-be.json"
-  },
-  {
-    "id": "2705",
-    "slug": "compact-object",
-    "title": "Compact Object",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2705-compact-object.json"
   },
   {
     "id": "2706",
@@ -26473,14 +22906,6 @@
     "file": "2713-maximum-strictly-increasing-cells-in-a-matrix.json"
   },
   {
-    "id": "2715",
-    "slug": "timeout-cancellation",
-    "title": "Timeout Cancellation",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2715-timeout-cancellation.json"
-  },
-  {
     "id": "2716",
     "slug": "minimize-string-length",
     "title": "Minimize String Length",
@@ -26524,62 +22949,6 @@
       "Dynamic Programming"
     ],
     "file": "2719-count-of-integers.json"
-  },
-  {
-    "id": "2721",
-    "slug": "execute-asynchronous-functions-in-parallel",
-    "title": "Execute Asynchronous Functions in Parallel",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2721-execute-asynchronous-functions-in-parallel.json"
-  },
-  {
-    "id": "2722",
-    "slug": "join-two-arrays-by-id",
-    "title": "Join Two Arrays by ID",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "2722-join-two-arrays-by-id.json"
-  },
-  {
-    "id": "2723",
-    "slug": "add-two-promises",
-    "title": "Add Two Promises",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2723-add-two-promises.json"
-  },
-  {
-    "id": "2724",
-    "slug": "sort-by",
-    "title": "Sort By",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2724-sort-by.json"
-  },
-  {
-    "id": "2725",
-    "slug": "interval-cancellation",
-    "title": "Interval Cancellation",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2725-interval-cancellation.json"
-  },
-  {
-    "id": "2726",
-    "slug": "calculator-with-method-chaining",
-    "title": "Calculator with Method Chaining",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2726-calculator-with-method-chaining.json"
-  },
-  {
-    "id": "2727",
-    "slug": "is-object-empty",
-    "title": "Is Object Empty",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2727-is-object-empty.json"
   },
   {
     "id": "2729",
@@ -26763,19 +23132,6 @@
     "file": "2746-decremental-string-concatenation.json"
   },
   {
-    "id": "2747",
-    "slug": "count-zero-request-servers",
-    "title": "Count Zero Request Servers",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Sliding Window",
-      "Sorting"
-    ],
-    "file": "2747-count-zero-request-servers.json"
-  },
-  {
     "id": "2748",
     "slug": "number-of-beautiful-pairs",
     "title": "Number of Beautiful Pairs",
@@ -26900,19 +23256,6 @@
       "Simulation"
     ],
     "file": "2766-relocate-marbles.json"
-  },
-  {
-    "id": "2767",
-    "slug": "partition-string-into-minimum-beautiful-substrings",
-    "title": "Partition String Into Minimum Beautiful Substrings",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "String",
-      "Dynamic Programming",
-      "Backtracking"
-    ],
-    "file": "2767-partition-string-into-minimum-beautiful-substrings.json"
   },
   {
     "id": "2768",
@@ -27085,20 +23428,6 @@
     "file": "2789-largest-element-in-an-array-after-merge-operations.json"
   },
   {
-    "id": "2790",
-    "slug": "maximum-number-of-groups-with-increasing-length",
-    "title": "Maximum Number of Groups With Increasing Length",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Math",
-      "Binary Search",
-      "Greedy",
-      "Sorting"
-    ],
-    "file": "2790-maximum-number-of-groups-with-increasing-length.json"
-  },
-  {
     "id": "2791",
     "slug": "count-paths-that-can-form-a-palindrome-in-a-tree",
     "title": "Count Paths That Can Form a Palindrome in a Tree",
@@ -27178,17 +23507,6 @@
       "Number Theory"
     ],
     "file": "2807-insert-greatest-common-divisors-in-linked-list.json"
-  },
-  {
-    "id": "2808",
-    "slug": "minimum-seconds-to-equalize-a-circular-array",
-    "title": "Minimum Seconds to Equalize a Circular Array",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table"
-    ],
-    "file": "2808-minimum-seconds-to-equalize-a-circular-array.json"
   },
   {
     "id": "2809",
@@ -27425,30 +23743,6 @@
     "file": "2834-find-the-minimum-possible-sum-of-a-beautiful-array.json"
   },
   {
-    "id": "2835",
-    "slug": "minimum-operations-to-form-subsequence-with-target-sum",
-    "title": "Minimum Operations to Form Subsequence With Target Sum",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Greedy",
-      "Bit Manipulation"
-    ],
-    "file": "2835-minimum-operations-to-form-subsequence-with-target-sum.json"
-  },
-  {
-    "id": "2836",
-    "slug": "maximize-value-of-function-in-a-ball-passing-game",
-    "title": "Maximize Value of Function in a Ball Passing Game",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Dynamic Programming",
-      "Bit Manipulation"
-    ],
-    "file": "2836-maximize-value-of-function-in-a-ball-passing-game.json"
-  },
-  {
     "id": "2839",
     "slug": "check-if-strings-can-be-made-equal-with-operations-i",
     "title": "Check if Strings Can be Made Equal With Operations I",
@@ -27556,29 +23850,6 @@
       "Prefix Sum"
     ],
     "file": "2848-points-that-intersect-with-cars.json"
-  },
-  {
-    "id": "2849",
-    "slug": "determine-if-a-cell-is-reachable-at-a-given-time",
-    "title": "Determine if a Cell Is Reachable at a Given Time",
-    "difficulty": "Medium",
-    "topics": [
-      "Math"
-    ],
-    "file": "2849-determine-if-a-cell-is-reachable-at-a-given-time.json"
-  },
-  {
-    "id": "2850",
-    "slug": "minimum-moves-to-spread-stones-over-grid",
-    "title": "Minimum Moves to Spread Stones Over Grid",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Dynamic Programming",
-      "Breadth-First Search",
-      "Matrix"
-    ],
-    "file": "2850-minimum-moves-to-spread-stones-over-grid.json"
   },
   {
     "id": "2851",
@@ -27833,126 +24104,6 @@
     "file": "2876-count-visited-nodes-in-a-directed-graph.json"
   },
   {
-    "id": "2877",
-    "slug": "create-a-dataframe-from-list",
-    "title": "Create a DataFrame from List",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2877-create-a-dataframe-from-list.json"
-  },
-  {
-    "id": "2878",
-    "slug": "get-the-size-of-a-dataframe",
-    "title": "Get the Size of a DataFrame",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2878-get-the-size-of-a-dataframe.json"
-  },
-  {
-    "id": "2879",
-    "slug": "display-the-first-three-rows",
-    "title": "Display the First Three Rows",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2879-display-the-first-three-rows.json"
-  },
-  {
-    "id": "2880",
-    "slug": "select-data",
-    "title": "Select Data",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2880-select-data.json"
-  },
-  {
-    "id": "2881",
-    "slug": "create-a-new-column",
-    "title": "Create a New Column",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2881-create-a-new-column.json"
-  },
-  {
-    "id": "2882",
-    "slug": "drop-duplicate-rows",
-    "title": "Drop Duplicate Rows",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2882-drop-duplicate-rows.json"
-  },
-  {
-    "id": "2883",
-    "slug": "drop-missing-data",
-    "title": "Drop Missing Data",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2883-drop-missing-data.json"
-  },
-  {
-    "id": "2884",
-    "slug": "modify-columns",
-    "title": "Modify Columns",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2884-modify-columns.json"
-  },
-  {
-    "id": "2885",
-    "slug": "rename-columns",
-    "title": "Rename Columns",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2885-rename-columns.json"
-  },
-  {
-    "id": "2886",
-    "slug": "change-data-type",
-    "title": "Change Data Type",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2886-change-data-type.json"
-  },
-  {
-    "id": "2887",
-    "slug": "fill-missing-data",
-    "title": "Fill Missing Data",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2887-fill-missing-data.json"
-  },
-  {
-    "id": "2888",
-    "slug": "reshape-data-concatenate",
-    "title": "Reshape Data: Concatenate",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2888-reshape-data-concatenate.json"
-  },
-  {
-    "id": "2889",
-    "slug": "reshape-data-pivot",
-    "title": "Reshape Data: Pivot",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2889-reshape-data-pivot.json"
-  },
-  {
-    "id": "2890",
-    "slug": "reshape-data-melt",
-    "title": "Reshape Data: Melt",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2890-reshape-data-melt.json"
-  },
-  {
-    "id": "2891",
-    "slug": "method-chaining",
-    "title": "Method Chaining",
-    "difficulty": "Easy",
-    "topics": [],
-    "file": "2891-method-chaining.json"
-  },
-  {
     "id": "2894",
     "slug": "divisible-and-non-divisible-sums-difference",
     "title": "Divisible and Non-divisible Sums Difference",
@@ -27961,18 +24112,6 @@
       "Math"
     ],
     "file": "2894-divisible-and-non-divisible-sums-difference.json"
-  },
-  {
-    "id": "2895",
-    "slug": "minimum-processing-time",
-    "title": "Minimum Processing Time",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Greedy",
-      "Sorting"
-    ],
-    "file": "2895-minimum-processing-time.json"
   },
   {
     "id": "2896",
@@ -28125,18 +24264,6 @@
     "file": "2910-minimum-number-of-groups-to-create-a-valid-assignment.json"
   },
   {
-    "id": "2911",
-    "slug": "minimum-changes-to-make-k-semi-palindromes",
-    "title": "Minimum Changes to Make K Semi-palindromes",
-    "difficulty": "Hard",
-    "topics": [
-      "Two Pointers",
-      "String",
-      "Dynamic Programming"
-    ],
-    "file": "2911-minimum-changes-to-make-k-semi-palindromes.json"
-  },
-  {
     "id": "2913",
     "slug": "subarrays-distinct-element-sum-of-squares-i",
     "title": "Subarrays Distinct Element Sum of Squares I",
@@ -28287,44 +24414,6 @@
       "Enumeration"
     ],
     "file": "2928-distribute-candies-among-children-i.json"
-  },
-  {
-    "id": "2929",
-    "slug": "distribute-candies-among-children-ii",
-    "title": "Distribute Candies Among Children II",
-    "difficulty": "Medium",
-    "topics": [
-      "Math",
-      "Combinatorics",
-      "Enumeration"
-    ],
-    "file": "2929-distribute-candies-among-children-ii.json"
-  },
-  {
-    "id": "2930",
-    "slug": "number-of-strings-which-can-be-rearranged-to-contain-substring",
-    "title": "Number of Strings Which Can Be Rearranged to Contain Substring",
-    "difficulty": "Medium",
-    "topics": [
-      "Math",
-      "Dynamic Programming",
-      "Combinatorics"
-    ],
-    "file": "2930-number-of-strings-which-can-be-rearranged-to-contain-substring.json"
-  },
-  {
-    "id": "2931",
-    "slug": "maximum-spending-after-buying-items",
-    "title": "Maximum Spending After Buying Items",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Greedy",
-      "Sorting",
-      "Heap (Priority Queue)",
-      "Matrix"
-    ],
-    "file": "2931-maximum-spending-after-buying-items.json"
   },
   {
     "id": "2932",
@@ -28809,19 +24898,6 @@
     "file": "2975-maximum-square-area-by-removing-fences-from-a-field.json"
   },
   {
-    "id": "2976",
-    "slug": "minimum-cost-to-convert-string-i",
-    "title": "Minimum Cost to Convert String I",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "String",
-      "Graph",
-      "Shortest Path"
-    ],
-    "file": "2976-minimum-cost-to-convert-string-i.json"
-  },
-  {
     "id": "2977",
     "slug": "minimum-cost-to-convert-string-ii",
     "title": "Minimum Cost to Convert String II",
@@ -28921,18 +24997,6 @@
       "Memoization"
     ],
     "file": "2998-minimum-number-of-operations-to-make-x-and-y-equal.json"
-  },
-  {
-    "id": "2999",
-    "slug": "count-the-number-of-powerful-integers",
-    "title": "Count the Number of Powerful Integers",
-    "difficulty": "Hard",
-    "topics": [
-      "Math",
-      "String",
-      "Dynamic Programming"
-    ],
-    "file": "2999-count-the-number-of-powerful-integers.json"
   },
   {
     "id": "3000",
@@ -29035,18 +25099,6 @@
     "file": "3008-find-beautiful-indices-in-the-given-array-ii.json"
   },
   {
-    "id": "3010",
-    "slug": "divide-an-array-into-subarrays-with-minimum-cost-i",
-    "title": "Divide an Array Into Subarrays With Minimum Cost I",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Sorting",
-      "Enumeration"
-    ],
-    "file": "3010-divide-an-array-into-subarrays-with-minimum-cost-i.json"
-  },
-  {
     "id": "3011",
     "slug": "find-if-array-can-be-sorted",
     "title": "Find if Array Can Be Sorted",
@@ -29070,19 +25122,6 @@
       "Number Theory"
     ],
     "file": "3012-minimize-length-of-array-using-operations.json"
-  },
-  {
-    "id": "3013",
-    "slug": "divide-an-array-into-subarrays-with-minimum-cost-ii",
-    "title": "Divide an Array Into Subarrays With Minimum Cost II",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Sliding Window",
-      "Heap (Priority Queue)"
-    ],
-    "file": "3013-divide-an-array-into-subarrays-with-minimum-cost-ii.json"
   },
   {
     "id": "3014",
@@ -29123,17 +25162,6 @@
     "file": "3016-minimum-number-of-pushes-to-type-word-ii.json"
   },
   {
-    "id": "3017",
-    "slug": "count-the-number-of-houses-at-a-certain-distance-ii",
-    "title": "Count the Number of Houses at a Certain Distance II",
-    "difficulty": "Hard",
-    "topics": [
-      "Graph",
-      "Prefix Sum"
-    ],
-    "file": "3017-count-the-number-of-houses-at-a-certain-distance-ii.json"
-  },
-  {
     "id": "3019",
     "slug": "number-of-changing-keys",
     "title": "Number of Changing Keys",
@@ -29154,16 +25182,6 @@
       "Enumeration"
     ],
     "file": "3020-find-the-maximum-number-of-elements-in-subset.json"
-  },
-  {
-    "id": "3021",
-    "slug": "alice-and-bob-playing-flower-game",
-    "title": "Alice and Bob Playing Flower Game",
-    "difficulty": "Medium",
-    "topics": [
-      "Math"
-    ],
-    "file": "3021-alice-and-bob-playing-flower-game.json"
   },
   {
     "id": "3022",
@@ -29473,19 +25491,6 @@
     "file": "3048-earliest-second-to-mark-indices-i.json"
   },
   {
-    "id": "3049",
-    "slug": "earliest-second-to-mark-indices-ii",
-    "title": "Earliest Second to Mark Indices II",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Binary Search",
-      "Greedy",
-      "Heap (Priority Queue)"
-    ],
-    "file": "3049-earliest-second-to-mark-indices-ii.json"
-  },
-  {
     "id": "3065",
     "slug": "minimum-operations-to-exceed-threshold-value-i",
     "title": "Minimum Operations to Exceed Threshold Value I",
@@ -29544,18 +25549,6 @@
       "Simulation"
     ],
     "file": "3069-distribute-elements-into-two-arrays-i.json"
-  },
-  {
-    "id": "3070",
-    "slug": "count-submatrices-with-top-left-element-and-sum-less-than-k",
-    "title": "Count Submatrices with Top-Left Element and Sum Less Than k",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Matrix",
-      "Prefix Sum"
-    ],
-    "file": "3070-count-submatrices-with-top-left-element-and-sum-less-than-k.json"
   },
   {
     "id": "3071",
@@ -29744,18 +25737,6 @@
       "Sliding Window"
     ],
     "file": "3090-maximum-length-substring-with-two-occurrences.json"
-  },
-  {
-    "id": "3091",
-    "slug": "apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k",
-    "title": "Apply Operations to Make Sum of Array Greater Than or Equal to k",
-    "difficulty": "Medium",
-    "topics": [
-      "Math",
-      "Greedy",
-      "Enumeration"
-    ],
-    "file": "3091-apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k.json"
   },
   {
     "id": "3092",
@@ -30108,17 +26089,6 @@
     "file": "3129-find-all-possible-stable-binary-arrays-i.json"
   },
   {
-    "id": "3130",
-    "slug": "find-all-possible-stable-binary-arrays-ii",
-    "title": "Find All Possible Stable Binary Arrays II",
-    "difficulty": "Hard",
-    "topics": [
-      "Dynamic Programming",
-      "Prefix Sum"
-    ],
-    "file": "3130-find-all-possible-stable-binary-arrays-ii.json"
-  },
-  {
     "id": "3131",
     "slug": "find-the-integer-added-to-array-i",
     "title": "Find the Integer Added to Array I",
@@ -30127,19 +26097,6 @@
       "Array"
     ],
     "file": "3131-find-the-integer-added-to-array-i.json"
-  },
-  {
-    "id": "3132",
-    "slug": "find-the-integer-added-to-array-ii",
-    "title": "Find the Integer Added to Array II",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Two Pointers",
-      "Sorting",
-      "Enumeration"
-    ],
-    "file": "3132-find-the-integer-added-to-array-ii.json"
   },
   {
     "id": "3133",
@@ -30249,18 +26206,6 @@
     "file": "3144-minimum-substring-partition-of-equal-character-frequency.json"
   },
   {
-    "id": "3145",
-    "slug": "find-products-of-elements-of-big-array",
-    "title": "Find Products of Elements of Big Array",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Binary Search",
-      "Bit Manipulation"
-    ],
-    "file": "3145-find-products-of-elements-of-big-array.json"
-  },
-  {
     "id": "3146",
     "slug": "permutation-difference-between-two-strings",
     "title": "Permutation Difference between Two Strings",
@@ -30343,20 +26288,6 @@
     "file": "3153-sum-of-digit-differences-of-all-pairs.json"
   },
   {
-    "id": "3154",
-    "slug": "find-number-of-ways-to-reach-the-k-th-stair",
-    "title": "Find Number of Ways to Reach the K-th Stair",
-    "difficulty": "Hard",
-    "topics": [
-      "Math",
-      "Dynamic Programming",
-      "Bit Manipulation",
-      "Memoization",
-      "Combinatorics"
-    ],
-    "file": "3154-find-number-of-ways-to-reach-the-k-th-stair.json"
-  },
-  {
     "id": "3158",
     "slug": "find-the-xor-of-numbers-which-appear-twice",
     "title": "Find the XOR of Numbers Which Appear Twice",
@@ -30390,19 +26321,6 @@
       "Simulation"
     ],
     "file": "3160-find-the-number-of-distinct-colors-among-the-balls.json"
-  },
-  {
-    "id": "3161",
-    "slug": "block-placement-queries",
-    "title": "Block Placement Queries",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Binary Search",
-      "Binary Indexed Tree",
-      "Segment Tree"
-    ],
-    "file": "3161-block-placement-queries.json"
   },
   {
     "id": "3162",
@@ -30509,17 +26427,6 @@
       "Simulation"
     ],
     "file": "3174-clear-digits.json"
-  },
-  {
-    "id": "3175",
-    "slug": "find-the-first-player-to-win-k-games-in-a-row",
-    "title": "Find The First Player to win K Games in a Row",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Simulation"
-    ],
-    "file": "3175-find-the-first-player-to-win-k-games-in-a-row.json"
   },
   {
     "id": "3176",
@@ -30927,16 +26834,6 @@
     "file": "3219-minimum-cost-for-cutting-cake-ii.json"
   },
   {
-    "id": "3220",
-    "slug": "odd-and-even-transactions",
-    "title": "Odd and Even Transactions",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "3220-odd-and-even-transactions.json"
-  },
-  {
     "id": "3222",
     "slug": "find-the-winning-player-in-coin-game",
     "title": "Find the Winning Player in Coin Game",
@@ -31119,33 +27016,6 @@
       "Matrix"
     ],
     "file": "3240-minimum-number-of-flips-to-make-binary-grid-palindromic-ii.json"
-  },
-  {
-    "id": "3241",
-    "slug": "time-taken-to-mark-all-nodes",
-    "title": "Time Taken to Mark All Nodes",
-    "difficulty": "Hard",
-    "topics": [
-      "Dynamic Programming",
-      "Tree",
-      "Depth-First Search",
-      "Graph"
-    ],
-    "file": "3241-time-taken-to-mark-all-nodes.json"
-  },
-  {
-    "id": "3242",
-    "slug": "design-neighbor-sum-service",
-    "title": "Design Neighbor Sum Service",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Design",
-      "Matrix",
-      "Simulation"
-    ],
-    "file": "3242-design-neighbor-sum-service.json"
   },
   {
     "id": "3243",
@@ -31360,18 +27230,6 @@
     "file": "3265-count-almost-equal-pairs-i.json"
   },
   {
-    "id": "3266",
-    "slug": "final-array-state-after-k-multiplication-operations-ii",
-    "title": "Final Array State After K Multiplication Operations II",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Heap (Priority Queue)",
-      "Simulation"
-    ],
-    "file": "3266-final-array-state-after-k-multiplication-operations-ii.json"
-  },
-  {
     "id": "3267",
     "slug": "count-almost-equal-pairs-ii",
     "title": "Count Almost Equal Pairs II",
@@ -31405,19 +27263,6 @@
       "Simulation"
     ],
     "file": "3271-hash-divided-string.json"
-  },
-  {
-    "id": "3272",
-    "slug": "find-the-count-of-good-integers",
-    "title": "Find the Count of Good Integers",
-    "difficulty": "Hard",
-    "topics": [
-      "Hash Table",
-      "Math",
-      "Combinatorics",
-      "Enumeration"
-    ],
-    "file": "3272-find-the-count-of-good-integers.json"
   },
   {
     "id": "3273",
@@ -31512,21 +27357,6 @@
       "Greedy"
     ],
     "file": "3282-reach-end-of-array-with-max-score.json"
-  },
-  {
-    "id": "3283",
-    "slug": "maximum-number-of-moves-to-kill-all-pawns",
-    "title": "Maximum Number of Moves to Kill All Pawns",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Math",
-      "Bit Manipulation",
-      "Breadth-First Search",
-      "Game Theory",
-      "Bitmask"
-    ],
-    "file": "3283-maximum-number-of-moves-to-kill-all-pawns.json"
   },
   {
     "id": "3285",
@@ -31746,30 +27576,6 @@
     "file": "3304-find-the-k-th-character-in-string-game-i.json"
   },
   {
-    "id": "3305",
-    "slug": "count-of-substrings-containing-every-vowel-and-k-consonants-i",
-    "title": "Count of Substrings Containing Every Vowel and K Consonants I",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "String",
-      "Sliding Window"
-    ],
-    "file": "3305-count-of-substrings-containing-every-vowel-and-k-consonants-i.json"
-  },
-  {
-    "id": "3306",
-    "slug": "count-of-substrings-containing-every-vowel-and-k-consonants-ii",
-    "title": "Count of Substrings Containing Every Vowel and K Consonants II",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "String",
-      "Sliding Window"
-    ],
-    "file": "3306-count-of-substrings-containing-every-vowel-and-k-consonants-ii.json"
-  },
-  {
     "id": "3307",
     "slug": "find-the-k-th-character-in-string-game-ii",
     "title": "Find the K-th Character in String Game II",
@@ -31847,17 +27653,6 @@
     "file": "3314-construct-the-minimum-bitwise-array-i.json"
   },
   {
-    "id": "3315",
-    "slug": "construct-the-minimum-bitwise-array-ii",
-    "title": "Construct the Minimum Bitwise Array II",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Bit Manipulation"
-    ],
-    "file": "3315-construct-the-minimum-bitwise-array-ii.json"
-  },
-  {
     "id": "3316",
     "slug": "find-maximum-removals-from-source-string",
     "title": "Find Maximum Removals From Source String",
@@ -31908,17 +27703,6 @@
       "Binary Tree"
     ],
     "file": "3319-k-th-largest-perfect-subtree-size-in-binary-tree.json"
-  },
-  {
-    "id": "3320",
-    "slug": "count-the-number-of-winning-sequences",
-    "title": "Count The Number of Winning Sequences",
-    "difficulty": "Hard",
-    "topics": [
-      "String",
-      "Dynamic Programming"
-    ],
-    "file": "3320-count-the-number-of-winning-sequences.json"
   },
   {
     "id": "3321",
@@ -32009,18 +27793,6 @@
     "file": "3331-find-subtree-sizes-after-changes.json"
   },
   {
-    "id": "3332",
-    "slug": "maximum-points-tourist-can-earn",
-    "title": "Maximum Points Tourist Can Earn",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Dynamic Programming",
-      "Matrix"
-    ],
-    "file": "3332-maximum-points-tourist-can-earn.json"
-  },
-  {
     "id": "3333",
     "slug": "find-the-original-typed-string-ii",
     "title": "Find the Original Typed String II",
@@ -32072,20 +27844,6 @@
     "file": "3336-find-the-number-of-subsequences-with-equal-gcd.json"
   },
   {
-    "id": "3337",
-    "slug": "total-characters-in-string-after-transformations-ii",
-    "title": "Total Characters in String After Transformations II",
-    "difficulty": "Hard",
-    "topics": [
-      "Hash Table",
-      "Math",
-      "String",
-      "Dynamic Programming",
-      "Counting"
-    ],
-    "file": "3337-total-characters-in-string-after-transformations-ii.json"
-  },
-  {
     "id": "3340",
     "slug": "check-balanced-string",
     "title": "Check Balanced String",
@@ -32124,19 +27882,6 @@
     "file": "3342-find-minimum-time-to-reach-last-room-ii.json"
   },
   {
-    "id": "3343",
-    "slug": "count-number-of-balanced-permutations",
-    "title": "Count Number of Balanced Permutations",
-    "difficulty": "Hard",
-    "topics": [
-      "Math",
-      "String",
-      "Dynamic Programming",
-      "Combinatorics"
-    ],
-    "file": "3343-count-number-of-balanced-permutations.json"
-  },
-  {
     "id": "3345",
     "slug": "smallest-divisible-digit-product-i",
     "title": "Smallest Divisible Digit Product I",
@@ -32160,20 +27905,6 @@
       "Prefix Sum"
     ],
     "file": "3346-maximum-frequency-of-an-element-after-performing-operations-i.json"
-  },
-  {
-    "id": "3347",
-    "slug": "maximum-frequency-of-an-element-after-performing-operations-ii",
-    "title": "Maximum Frequency of an Element After Performing Operations II",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Binary Search",
-      "Sliding Window",
-      "Sorting",
-      "Prefix Sum"
-    ],
-    "file": "3347-maximum-frequency-of-an-element-after-performing-operations-ii.json"
   },
   {
     "id": "3348",
@@ -32221,19 +27952,6 @@
       "Dynamic Programming"
     ],
     "file": "3351-sum-of-good-subsequences.json"
-  },
-  {
-    "id": "3352",
-    "slug": "count-k-reducible-numbers-less-than-n",
-    "title": "Count K-Reducible Numbers Less Than N",
-    "difficulty": "Hard",
-    "topics": [
-      "Math",
-      "String",
-      "Dynamic Programming",
-      "Combinatorics"
-    ],
-    "file": "3352-count-k-reducible-numbers-less-than-n.json"
   },
   {
     "id": "3354",
@@ -32427,16 +28145,6 @@
     "file": "3373-maximize-the-number-of-target-nodes-after-connecting-trees-ii.json"
   },
   {
-    "id": "3374",
-    "slug": "first-letter-capitalization-ii",
-    "title": "First Letter Capitalization II",
-    "difficulty": "Hard",
-    "topics": [
-      "Database"
-    ],
-    "file": "3374-first-letter-capitalization-ii.json"
-  },
-  {
     "id": "3375",
     "slug": "minimum-operations-to-make-array-values-equal-to-k",
     "title": "Minimum Operations to Make Array Values Equal to K",
@@ -32604,19 +28312,6 @@
     "file": "3392-count-subarrays-of-length-three-with-a-condition.json"
   },
   {
-    "id": "3393",
-    "slug": "count-paths-with-the-given-xor-value",
-    "title": "Count Paths With the Given XOR Value",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Dynamic Programming",
-      "Bit Manipulation",
-      "Matrix"
-    ],
-    "file": "3393-count-paths-with-the-given-xor-value.json"
-  },
-  {
     "id": "3394",
     "slug": "check-if-grid-can-be-cut-into-sections",
     "title": "Check if Grid can be Cut into Sections",
@@ -32724,17 +28419,6 @@
     "file": "3404-count-special-subsequences.json"
   },
   {
-    "id": "3405",
-    "slug": "count-the-number-of-arrays-with-k-matching-adjacent-elements",
-    "title": "Count the Number of Arrays with K Matching Adjacent Elements",
-    "difficulty": "Hard",
-    "topics": [
-      "Math",
-      "Combinatorics"
-    ],
-    "file": "3405-count-the-number-of-arrays-with-k-matching-adjacent-elements.json"
-  },
-  {
     "id": "3407",
     "slug": "substring-matching-pattern",
     "title": "Substring Matching Pattern",
@@ -32744,19 +28428,6 @@
       "String Matching"
     ],
     "file": "3407-substring-matching-pattern.json"
-  },
-  {
-    "id": "3408",
-    "slug": "design-task-manager",
-    "title": "Design Task Manager",
-    "difficulty": "Medium",
-    "topics": [
-      "Hash Table",
-      "Design",
-      "Heap (Priority Queue)",
-      "Ordered Set"
-    ],
-    "file": "3408-design-task-manager.json"
   },
   {
     "id": "3409",
@@ -32889,16 +28560,6 @@
       "Monotonic Queue"
     ],
     "file": "3420-count-non-decreasing-subarrays-after-k-operations.json"
-  },
-  {
-    "id": "3421",
-    "slug": "find-students-who-improved",
-    "title": "Find Students Who Improved",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "3421-find-students-who-improved.json"
   },
   {
     "id": "3423",
@@ -33035,31 +28696,6 @@
       "Prefix Sum"
     ],
     "file": "3434-maximum-frequency-after-subarray-operation.json"
-  },
-  {
-    "id": "3435",
-    "slug": "frequencies-of-shortest-supersequences",
-    "title": "Frequencies of Shortest Supersequences",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "String",
-      "Bit Manipulation",
-      "Graph",
-      "Topological Sort",
-      "Enumeration"
-    ],
-    "file": "3435-frequencies-of-shortest-supersequences.json"
-  },
-  {
-    "id": "3436",
-    "slug": "find-valid-emails",
-    "title": "Find Valid Emails",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "3436-find-valid-emails.json"
   },
   {
     "id": "3438",
@@ -33208,16 +28844,6 @@
     "file": "3449-maximize-the-minimum-game-score.json"
   },
   {
-    "id": "3451",
-    "slug": "find-invalid-ip-addresses",
-    "title": "Find Invalid IP Addresses",
-    "difficulty": "Hard",
-    "topics": [
-      "Database"
-    ],
-    "file": "3451-find-invalid-ip-addresses.json"
-  },
-  {
     "id": "3452",
     "slug": "sum-of-good-numbers",
     "title": "Sum of Good Numbers",
@@ -33250,19 +28876,6 @@
       "Line Sweep"
     ],
     "file": "3454-separate-squares-ii.json"
-  },
-  {
-    "id": "3455",
-    "slug": "shortest-matching-substring",
-    "title": "Shortest Matching Substring",
-    "difficulty": "Hard",
-    "topics": [
-      "Two Pointers",
-      "String",
-      "Binary Search",
-      "String Matching"
-    ],
-    "file": "3455-shortest-matching-substring.json"
   },
   {
     "id": "3456",
@@ -33367,16 +28980,6 @@
     "file": "3464-maximize-the-distance-between-points-on-a-square.json"
   },
   {
-    "id": "3465",
-    "slug": "find-products-with-valid-serial-numbers",
-    "title": "Find Products with Valid Serial Numbers",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "3465-find-products-with-valid-serial-numbers.json"
-  },
-  {
     "id": "3467",
     "slug": "transform-array-by-parity",
     "title": "Transform Array by Parity",
@@ -33458,28 +29061,6 @@
     "file": "3473-sum-of-k-subarrays-with-length-at-least-m.json"
   },
   {
-    "id": "3474",
-    "slug": "lexicographically-smallest-generated-string",
-    "title": "Lexicographically Smallest Generated String",
-    "difficulty": "Hard",
-    "topics": [
-      "String",
-      "Greedy",
-      "String Matching"
-    ],
-    "file": "3474-lexicographically-smallest-generated-string.json"
-  },
-  {
-    "id": "3475",
-    "slug": "dna-pattern-recognition",
-    "title": "DNA Pattern Recognition ",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "3475-dna-pattern-recognition.json"
-  },
-  {
     "id": "3477",
     "slug": "fruits-into-baskets-ii",
     "title": "Fruits Into Baskets II",
@@ -33532,16 +29113,6 @@
     "file": "3480-maximize-subarrays-after-removing-one-conflicting-pair.json"
   },
   {
-    "id": "3482",
-    "slug": "analyze-organization-hierarchy",
-    "title": "Analyze Organization Hierarchy",
-    "difficulty": "Hard",
-    "topics": [
-      "Database"
-    ],
-    "file": "3482-analyze-organization-hierarchy.json"
-  },
-  {
     "id": "3483",
     "slug": "unique-3-digit-even-numbers",
     "title": "Unique 3-Digit Even Numbers",
@@ -33553,20 +29124,6 @@
       "Enumeration"
     ],
     "file": "3483-unique-3-digit-even-numbers.json"
-  },
-  {
-    "id": "3484",
-    "slug": "design-spreadsheet",
-    "title": "Design Spreadsheet",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "String",
-      "Design",
-      "Matrix"
-    ],
-    "file": "3484-design-spreadsheet.json"
   },
   {
     "id": "3485",
@@ -33630,16 +29187,6 @@
     "file": "3489-zero-array-transformation-iv.json"
   },
   {
-    "id": "3490",
-    "slug": "count-beautiful-numbers",
-    "title": "Count Beautiful Numbers",
-    "difficulty": "Hard",
-    "topics": [
-      "Dynamic Programming"
-    ],
-    "file": "3490-count-beautiful-numbers.json"
-  },
-  {
     "id": "3492",
     "slug": "maximum-containers-on-a-ship",
     "title": "Maximum Containers on a Ship",
@@ -33675,28 +29222,6 @@
       "Prefix Sum"
     ],
     "file": "3494-find-the-minimum-amount-of-time-to-brew-potions.json"
-  },
-  {
-    "id": "3495",
-    "slug": "minimum-operations-to-make-array-elements-zero",
-    "title": "Minimum Operations to Make Array Elements Zero",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Math",
-      "Bit Manipulation"
-    ],
-    "file": "3495-minimum-operations-to-make-array-elements-zero.json"
-  },
-  {
-    "id": "3497",
-    "slug": "analyze-subscription-conversion",
-    "title": "Analyze Subscription Conversion ",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "3497-analyze-subscription-conversion.json"
   },
   {
     "id": "3498",
@@ -33769,18 +29294,6 @@
     "file": "3503-longest-palindrome-after-substring-concatenation-i.json"
   },
   {
-    "id": "3504",
-    "slug": "longest-palindrome-after-substring-concatenation-ii",
-    "title": "Longest Palindrome After Substring Concatenation II",
-    "difficulty": "Hard",
-    "topics": [
-      "Two Pointers",
-      "String",
-      "Dynamic Programming"
-    ],
-    "file": "3504-longest-palindrome-after-substring-concatenation-ii.json"
-  },
-  {
     "id": "3505",
     "slug": "minimum-operations-to-make-elements-within-k-subarrays-equal",
     "title": "Minimum Operations to Make Elements Within K Subarrays Equal",
@@ -33812,21 +29325,6 @@
     "file": "3507-minimum-pair-removal-to-sort-array-i.json"
   },
   {
-    "id": "3508",
-    "slug": "implement-router",
-    "title": "Implement Router",
-    "difficulty": "Medium",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Binary Search",
-      "Design",
-      "Queue",
-      "Ordered Set"
-    ],
-    "file": "3508-implement-router.json"
-  },
-  {
     "id": "3509",
     "slug": "maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k",
     "title": "Maximum Product of Subsequences With an Alternating Sum Equal to K",
@@ -33837,22 +29335,6 @@
       "Dynamic Programming"
     ],
     "file": "3509-maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k.json"
-  },
-  {
-    "id": "3510",
-    "slug": "minimum-pair-removal-to-sort-array-ii",
-    "title": "Minimum Pair Removal to Sort Array II",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "Linked List",
-      "Heap (Priority Queue)",
-      "Simulation",
-      "Doubly-Linked List",
-      "Ordered Set"
-    ],
-    "file": "3510-minimum-pair-removal-to-sort-array-ii.json"
   },
   {
     "id": "3512",
@@ -33951,16 +29433,6 @@
       "Dynamic Programming"
     ],
     "file": "3519-count-numbers-with-non-decreasing-digits.json"
-  },
-  {
-    "id": "3521",
-    "slug": "find-product-recommendation-pairs",
-    "title": "Find Product Recommendation Pairs",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "3521-find-product-recommendation-pairs.json"
   },
   {
     "id": "3522",
@@ -34107,20 +29579,6 @@
     "file": "3533-concatenated-divisibility.json"
   },
   {
-    "id": "3534",
-    "slug": "path-existence-queries-in-a-graph-ii",
-    "title": "Path Existence Queries in a Graph II",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Binary Search",
-      "Greedy",
-      "Graph",
-      "Sorting"
-    ],
-    "file": "3534-path-existence-queries-in-a-graph-ii.json"
-  },
-  {
     "id": "3536",
     "slug": "maximum-product-of-two-digits",
     "title": "Maximum Product of Two Digits",
@@ -34142,18 +29600,6 @@
       "Matrix"
     ],
     "file": "3537-fill-a-special-grid.json"
-  },
-  {
-    "id": "3538",
-    "slug": "merge-operations-for-minimum-travel-time",
-    "title": "Merge Operations for Minimum Travel Time",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Dynamic Programming",
-      "Prefix Sum"
-    ],
-    "file": "3538-merge-operations-for-minimum-travel-time.json"
   },
   {
     "id": "3539",
@@ -34249,19 +29695,6 @@
     "file": "3546-equal-sum-grid-partition-i.json"
   },
   {
-    "id": "3547",
-    "slug": "maximum-sum-of-edge-values-in-a-graph",
-    "title": "Maximum Sum of Edge Values in a Graph",
-    "difficulty": "Hard",
-    "topics": [
-      "Greedy",
-      "Depth-First Search",
-      "Graph",
-      "Sorting"
-    ],
-    "file": "3547-maximum-sum-of-edge-values-in-a-graph.json"
-  },
-  {
     "id": "3548",
     "slug": "equal-sum-grid-partition-ii",
     "title": "Equal Sum Grid Partition II",
@@ -34324,16 +29757,6 @@
     "file": "3553-minimum-weighted-subgraph-with-the-required-paths-ii.json"
   },
   {
-    "id": "3554",
-    "slug": "find-category-recommendation-pairs",
-    "title": "Find Category Recommendation Pairs",
-    "difficulty": "Hard",
-    "topics": [
-      "Database"
-    ],
-    "file": "3554-find-category-recommendation-pairs.json"
-  },
-  {
     "id": "3556",
     "slug": "sum-of-largest-prime-substrings",
     "title": "Sum of Largest Prime Substrings",
@@ -34387,16 +29810,6 @@
     "file": "3559-number-of-ways-to-assign-edge-weights-ii.json"
   },
   {
-    "id": "3560",
-    "slug": "find-minimum-log-transportation-cost",
-    "title": "Find Minimum Log Transportation Cost",
-    "difficulty": "Easy",
-    "topics": [
-      "Math"
-    ],
-    "file": "3560-find-minimum-log-transportation-cost.json"
-  },
-  {
     "id": "3561",
     "slug": "resulting-string-after-adjacent-removals",
     "title": "Resulting String After Adjacent Removals",
@@ -34431,16 +29844,6 @@
       "Dynamic Programming"
     ],
     "file": "3563-lexicographically-smallest-string-after-adjacent-removals.json"
-  },
-  {
-    "id": "3564",
-    "slug": "seasonal-sales-analysis",
-    "title": "Seasonal Sales Analysis",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "3564-seasonal-sales-analysis.json"
   },
   {
     "id": "3566",
@@ -34493,16 +29896,6 @@
       "Number Theory"
     ],
     "file": "3569-maximize-count-of-distinct-primes-after-split.json"
-  },
-  {
-    "id": "3570",
-    "slug": "find-books-with-no-available-copies",
-    "title": "Find Books with No Available Copies",
-    "difficulty": "Easy",
-    "topics": [
-      "Database"
-    ],
-    "file": "3570-find-books-with-no-available-copies.json"
   },
   {
     "id": "3572",
@@ -34597,28 +29990,6 @@
     "file": "3578-count-partitions-with-max-min-difference-at-most-k.json"
   },
   {
-    "id": "3579",
-    "slug": "minimum-steps-to-convert-string-with-operations",
-    "title": "Minimum Steps to Convert String with Operations",
-    "difficulty": "Hard",
-    "topics": [
-      "String",
-      "Dynamic Programming",
-      "Greedy"
-    ],
-    "file": "3579-minimum-steps-to-convert-string-with-operations.json"
-  },
-  {
-    "id": "3580",
-    "slug": "find-consistently-improving-employees",
-    "title": "Find Consistently Improving Employees",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "3580-find-consistently-improving-employees.json"
-  },
-  {
     "id": "3582",
     "slug": "generate-tag-for-video-caption",
     "title": "Generate Tag for Video Caption",
@@ -34665,16 +30036,6 @@
       "Depth-First Search"
     ],
     "file": "3585-find-weighted-median-node-in-tree.json"
-  },
-  {
-    "id": "3586",
-    "slug": "find-covid-recovery-patients",
-    "title": "Find COVID Recovery Patients",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "3586-find-covid-recovery-patients.json"
   },
   {
     "id": "3587",
@@ -34822,30 +30183,6 @@
     "file": "3599-partition-array-to-minimize-xor.json"
   },
   {
-    "id": "3600",
-    "slug": "maximize-spanning-tree-stability-with-upgrades",
-    "title": "Maximize Spanning Tree Stability with Upgrades",
-    "difficulty": "Hard",
-    "topics": [
-      "Binary Search",
-      "Greedy",
-      "Union Find",
-      "Graph",
-      "Minimum Spanning Tree"
-    ],
-    "file": "3600-maximize-spanning-tree-stability-with-upgrades.json"
-  },
-  {
-    "id": "3601",
-    "slug": "find-drivers-with-improved-fuel-efficiency",
-    "title": "Find Drivers with Improved Fuel Efficiency",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "3601-find-drivers-with-improved-fuel-efficiency.json"
-  },
-  {
     "id": "3602",
     "slug": "hexadecimal-and-hexatrigesimal-conversion",
     "title": "Hexadecimal and Hexatrigesimal Conversion",
@@ -34896,19 +30233,6 @@
     "file": "3605-minimum-stability-factor-of-array.json"
   },
   {
-    "id": "3606",
-    "slug": "coupon-code-validator",
-    "title": "Coupon Code Validator",
-    "difficulty": "Easy",
-    "topics": [
-      "Array",
-      "Hash Table",
-      "String",
-      "Sorting"
-    ],
-    "file": "3606-coupon-code-validator.json"
-  },
-  {
     "id": "3607",
     "slug": "power-grid-maintenance",
     "title": "Power Grid Maintenance",
@@ -34937,26 +30261,6 @@
       "Sorting"
     ],
     "file": "3608-minimum-time-for-k-connected-components.json"
-  },
-  {
-    "id": "3609",
-    "slug": "minimum-moves-to-reach-target-in-grid",
-    "title": "Minimum Moves to Reach Target in Grid",
-    "difficulty": "Hard",
-    "topics": [
-      "Math"
-    ],
-    "file": "3609-minimum-moves-to-reach-target-in-grid.json"
-  },
-  {
-    "id": "3611",
-    "slug": "find-overbooked-employees",
-    "title": "Find Overbooked Employees",
-    "difficulty": "Medium",
-    "topics": [
-      "Database"
-    ],
-    "file": "3611-find-overbooked-employees.json"
   },
   {
     "id": "3612",
@@ -35008,14 +30312,6 @@
     "file": "3615-longest-palindromic-path-in-graph.json"
   },
   {
-    "id": "3617",
-    "slug": "find-students-with-study-spiral-pattern",
-    "title": "Find Students with Study Spiral Pattern",
-    "difficulty": "Hard",
-    "topics": [],
-    "file": "3617-find-students-with-study-spiral-pattern.json"
-  },
-  {
     "id": "3618",
     "slug": "split-array-by-prime-indices",
     "title": "Split Array by Prime Indices",
@@ -35058,18 +30354,6 @@
     "file": "3620-network-recovery-pathways.json"
   },
   {
-    "id": "3621",
-    "slug": "number-of-integers-with-popcount-depth-equal-to-k-i",
-    "title": "Number of Integers With Popcount-Depth Equal to K I",
-    "difficulty": "Hard",
-    "topics": [
-      "Math",
-      "Dynamic Programming",
-      "Combinatorics"
-    ],
-    "file": "3621-number-of-integers-with-popcount-depth-equal-to-k-i.json"
-  },
-  {
     "id": "3622",
     "slug": "check-divisibility-by-digit-sum-and-product",
     "title": "Check Divisibility by Digit Sum and Product",
@@ -35093,17 +30377,6 @@
     "file": "3623-count-number-of-trapezoids-i.json"
   },
   {
-    "id": "3624",
-    "slug": "number-of-integers-with-popcount-depth-equal-to-k-ii",
-    "title": "Number of Integers With Popcount-Depth Equal to K II",
-    "difficulty": "Hard",
-    "topics": [
-      "Array",
-      "Segment Tree"
-    ],
-    "file": "3624-number-of-integers-with-popcount-depth-equal-to-k-ii.json"
-  },
-  {
     "id": "3625",
     "slug": "count-number-of-trapezoids-ii",
     "title": "Count Number of Trapezoids II",
@@ -35115,14 +30388,6 @@
       "Geometry"
     ],
     "file": "3625-count-number-of-trapezoids-ii.json"
-  },
-  {
-    "id": "3626",
-    "slug": "find-stores-with-inventory-imbalance",
-    "title": "Find Stores with Inventory Imbalance",
-    "difficulty": "Medium",
-    "topics": [],
-    "file": "3626-find-stores-with-inventory-imbalance.json"
   },
   {
     "id": "3627",

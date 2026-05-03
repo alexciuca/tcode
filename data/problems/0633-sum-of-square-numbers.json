@@ -22,5 +22,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def judgeSquareSum(self, c: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "c": 5
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "c": 3
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "c": 0
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "c": 1
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "c": 2147483647
+      },
+      "expected": false
+    }
+  ]
 }

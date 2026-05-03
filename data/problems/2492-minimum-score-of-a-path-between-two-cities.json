@@ -34,5 +34,151 @@
     "How to solve the general problem in a similar way? Remove all the nodes that are not connected to 1 and n, then apply the previous solution in the new graph."
   ],
   "starter_code": "class Solution:\n    def minScore(self, n: int, roads: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 4,
+        "roads": [
+          [
+            1,
+            2,
+            9
+          ],
+          [
+            2,
+            3,
+            6
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            1,
+            4,
+            7
+          ]
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "n": 2,
+        "roads": [
+          [
+            1,
+            2,
+            10
+          ]
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "n": 5,
+        "roads": [
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            100
+          ],
+          [
+            3,
+            4,
+            50
+          ],
+          [
+            4,
+            5,
+            25
+          ],
+          [
+            1,
+            5,
+            5
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 6,
+        "roads": [
+          [
+            1,
+            2,
+            15
+          ],
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            4,
+            8
+          ],
+          [
+            4,
+            5,
+            12
+          ],
+          [
+            5,
+            6,
+            2
+          ],
+          [
+            1,
+            6,
+            100
+          ]
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 100,
+        "roads": [
+          [
+            1,
+            50,
+            10000
+          ],
+          [
+            50,
+            75,
+            9999
+          ],
+          [
+            75,
+            100,
+            9998
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            100,
+            9997
+          ]
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

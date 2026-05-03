@@ -29,5 +29,99 @@
     "Can we use dynamic programming to solve this efficiently using the precomputed values?"
   ],
   "starter_code": "class Solution:\n    def minimumFinishTime(self, tires: List[List[int]], changeTime: int, numLaps: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "tires": [
+          [
+            4,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "changeTime": 5,
+        "numLaps": 3
+      },
+      "expected": 16
+    },
+    {
+      "args": {
+        "tires": [
+          [
+            1,
+            2
+          ]
+        ],
+        "changeTime": 10,
+        "numLaps": 5
+      },
+      "expected": 20
+    },
+    {
+      "args": {
+        "tires": [
+          [
+            100000,
+            2
+          ],
+          [
+            1,
+            100000
+          ]
+        ],
+        "changeTime": 100000,
+        "numLaps": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "tires": [
+          [
+            50,
+            50
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            99999,
+            99999
+          ]
+        ],
+        "changeTime": 1,
+        "numLaps": 1000
+      },
+      "expected": 1999
+    },
+    {
+      "args": {
+        "tires": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "changeTime": 3,
+        "numLaps": 10
+      },
+      "expected": 42
+    }
+  ]
 }

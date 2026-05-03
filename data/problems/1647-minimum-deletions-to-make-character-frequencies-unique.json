@@ -31,5 +31,36 @@
     "Iterate on the alphabet characters, keep decreasing the frequency of the current character until it reaches a value that has not appeared before."
   ],
   "starter_code": "class Solution:\n    def minDeletions(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aaabbbccc"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 25
+    },
+    {
+      "args": {
+        "s": "aaaa"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "aabbccddeeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz"
+      },
+      "expected": 47
+    }
+  ]
 }

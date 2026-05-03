@@ -30,5 +30,113 @@
     "The way to shrink or expand a window would be based on the number of zeros that can still be flipped and so on."
   ],
   "starter_code": "class Solution:\n    def longestOnes(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 2
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 3
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 0
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "k": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "k": 5
+      },
+      "expected": 19
+    }
+  ]
 }

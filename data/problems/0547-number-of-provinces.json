@@ -28,5 +28,81 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findCircleNum(self, isConnected: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "isConnected": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "isConnected": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "isConnected": [
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

@@ -27,5 +27,36 @@
     "Change the last character to 'b'."
   ],
   "starter_code": "class Solution:\n    def breakPalindrome(self, palindrome: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "palindrome": "abccccba"
+      },
+      "expected": "aaccccba"
+    },
+    {
+      "args": {
+        "palindrome": "a"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "palindrome": "aa"
+      },
+      "expected": "ab"
+    },
+    {
+      "args": {
+        "palindrome": "racecar"
+      },
+      "expected": "aacecar"
+    },
+    {
+      "args": {
+        "palindrome": "abacabaxabacaba"
+      },
+      "expected": "aaacabaxabacaba"
+    }
+  ]
 }

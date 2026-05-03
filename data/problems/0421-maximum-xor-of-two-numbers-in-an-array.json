@@ -24,5 +24,70 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findMaximumXOR(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          3,
+          10,
+          5,
+          25,
+          2,
+          8
+        ]
+      },
+      "expected": 28
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          4,
+          8
+        ]
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          2147483647,
+          0,
+          1
+        ]
+      },
+      "expected": 2147483647
+    },
+    {
+      "args": {
+        "nums": [
+          14,
+          70,
+          53,
+          83,
+          49,
+          91,
+          36,
+          80,
+          92,
+          51,
+          66,
+          70
+        ]
+      },
+      "expected": 127
+    }
+  ]
 }

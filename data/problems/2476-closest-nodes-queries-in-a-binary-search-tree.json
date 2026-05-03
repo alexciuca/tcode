@@ -32,5 +32,197 @@
     "How do you solve each query in O(log(n)) time using the array of the tree?"
   ],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def closestNodes(self, root: Optional[TreeNode], queries: List[int]) -> List[List[int]]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "root": [
+          6,
+          2,
+          13,
+          1,
+          4,
+          9,
+          15,
+          null,
+          null,
+          3,
+          5,
+          8,
+          11,
+          14,
+          null
+        ],
+        "queries": [
+          13,
+          8,
+          4
+        ]
+      },
+      "expected": [
+        [
+          11,
+          13
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          1,
+          null,
+          2
+        ],
+        "queries": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          -1
+        ]
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          500000,
+          100000,
+          900000
+        ],
+        "queries": [
+          1,
+          500000,
+          1000000
+        ]
+      },
+      "expected": [
+        [
+          -1,
+          100000
+        ],
+        [
+          100000,
+          500000
+        ],
+        [
+          900000,
+          -1
+        ]
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          50,
+          25,
+          75,
+          10,
+          30,
+          60,
+          80,
+          5,
+          15,
+          27,
+          35,
+          55,
+          65,
+          77,
+          90
+        ],
+        "queries": [
+          0,
+          5,
+          26,
+          100
+        ]
+      },
+      "expected": [
+        [
+          -1,
+          5
+        ],
+        [
+          -1,
+          5
+        ],
+        [
+          25,
+          27
+        ],
+        [
+          90,
+          -1
+        ]
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          500,
+          250,
+          750,
+          125,
+          375,
+          625,
+          875,
+          62,
+          187,
+          312,
+          437,
+          562,
+          687,
+          812,
+          937
+        ],
+        "queries": [
+          1,
+          250,
+          500,
+          750,
+          1000000
+        ]
+      },
+      "expected": [
+        [
+          -1,
+          62
+        ],
+        [
+          187,
+          250
+        ],
+        [
+          437,
+          500
+        ],
+        [
+          687,
+          750
+        ],
+        [
+          937,
+          -1
+        ]
+      ]
+    }
+  ]
 }

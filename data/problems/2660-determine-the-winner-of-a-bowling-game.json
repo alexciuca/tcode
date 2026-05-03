@@ -32,5 +32,109 @@
     "Iterate over each element and check the previous two elements. See if one of them is 10 and can affect the score."
   ],
   "starter_code": "class Solution:\n    def isWinner(self, player1: List[int], player2: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "player1": [
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        "player2": [
+          3,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "player1": [
+          10,
+          10,
+          10
+        ],
+        "player2": [
+          9,
+          9,
+          9
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "player1": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "player2": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "player1": [
+          10,
+          5,
+          3,
+          10,
+          2
+        ],
+        "player2": [
+          5,
+          10,
+          4,
+          9,
+          10
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "player1": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "player2": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

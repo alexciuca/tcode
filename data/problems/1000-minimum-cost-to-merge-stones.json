@@ -28,5 +28,90 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def mergeStones(self, stones: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "stones": [
+          3,
+          2,
+          4,
+          1
+        ],
+        "k": 2
+      },
+      "expected": 20
+    },
+    {
+      "args": {
+        "stones": [
+          3,
+          5,
+          1,
+          2,
+          6
+        ],
+        "k": 3
+      },
+      "expected": 25
+    },
+    {
+      "args": {
+        "stones": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 2
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "stones": [
+          100
+        ],
+        "k": 2
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "stones": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "k": 30
+      },
+      "expected": 465
+    }
+  ]
 }

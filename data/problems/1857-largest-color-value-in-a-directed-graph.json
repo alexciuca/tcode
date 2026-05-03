@@ -33,5 +33,165 @@
     "let dp[u][c] := the maximum count of vertices with color c of any path starting from vertex u. (by JerryJin2905)"
   ],
   "starter_code": "class Solution:\n    def largestPathValue(self, colors: str, edges: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "colors": "abaca",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "colors": "a",
+        "edges": []
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "colors": "aaaa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "colors": "abcdefghij",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "colors": "aaaaaaaaaaaaaaaaaaaaa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "expected": 21
+    }
+  ]
 }

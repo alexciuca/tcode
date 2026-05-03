@@ -27,5 +27,36 @@
     "<code>dp[i]</code> can be calculated as the <code>min(dp[j])</code> over all <code>j</code> such that <code>j < i</code> and <code>word[j+1…i]</code> is valid."
   ],
   "starter_code": "class Solution:\n    def minimumSubstringsInPartition(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aab"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aaabbbcc"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "abcdefghij"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aaaaaaaaaa"
+      },
+      "expected": 1
+    }
+  ]
 }

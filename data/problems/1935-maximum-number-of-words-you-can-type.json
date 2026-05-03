@@ -31,5 +31,41 @@
     "A word can be typed if all its letters are not broken."
   ],
   "starter_code": "class Solution:\n    def canBeTypedWords(self, text: str, brokenLetters: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "text": "hello world",
+        "brokenLetters": "ad"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "text": "leet code",
+        "brokenLetters": "lt"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "text": "a",
+        "brokenLetters": ""
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "text": "abcdefghijklmnopqrstuvwxyz",
+        "brokenLetters": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "text": "the quick brown fox jumps over the lazy dog",
+        "brokenLetters": "bcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 0
+    }
+  ]
 }

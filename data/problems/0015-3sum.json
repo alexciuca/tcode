@@ -30,5 +30,78 @@
     "The second train of thought for two-sum is, without changing the array, can we use additional space somehow? Like maybe a hash map to speed up the search?"
   ],
   "starter_code": "class Solution:\n    def threeSum(self, nums: List[int]) -> List[List[int]]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          -1,
+          0,
+          1,
+          2,
+          -1,
+          -4
+        ]
+      },
+      "expected": [
+        [
+          -1,
+          -1,
+          2
+        ],
+        [
+          -1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          -1,
+          -1,
+          0,
+          1
+        ]
+      },
+      "expected": [
+        [
+          -1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "args": {
+        "nums": []
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "nums": [
+          0
+        ]
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  ]
 }

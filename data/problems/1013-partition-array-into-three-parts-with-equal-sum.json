@@ -27,5 +27,59 @@
     "If we have three parts with the same sum, what is the sum of each?\r\nIf you can find the first part, can you find the second part?"
   ],
   "starter_code": "class Solution:\n    def canThreePartsEqualSum(self, arr: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "A": [
+          0,
+          2,
+          1,
+          -6,
+          6,
+          -7,
+          9,
+          1,
+          2,
+          0,
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "A": [
+          0,
+          2,
+          1,
+          -6,
+          6,
+          7,
+          9,
+          -1,
+          2,
+          0,
+          1
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "A": [
+          3,
+          3,
+          6,
+          5,
+          -2,
+          2,
+          5,
+          1,
+          -9,
+          4
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

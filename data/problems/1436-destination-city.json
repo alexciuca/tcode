@@ -32,5 +32,133 @@
     "Eventually, you will reach a city with no path outgoing, this is the destination city."
   ],
   "starter_code": "class Solution:\n    def destCity(self, paths: List[List[str]]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "paths": [
+          [
+            "London",
+            "New York"
+          ],
+          [
+            "New York",
+            "Lima"
+          ],
+          [
+            "Lima",
+            "Tokyo"
+          ]
+        ]
+      },
+      "expected": "Tokyo"
+    },
+    {
+      "args": {
+        "paths": [
+          [
+            "B",
+            "C"
+          ],
+          [
+            "D",
+            "B"
+          ],
+          [
+            "C",
+            "D"
+          ]
+        ]
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "paths": [
+          [
+            "A",
+            "Z"
+          ]
+        ]
+      },
+      "expected": "Z"
+    },
+    {
+      "args": {
+        "paths": [
+          [
+            "City A",
+            "City B"
+          ],
+          [
+            "City C",
+            "City A"
+          ],
+          [
+            "City B",
+            "City D"
+          ],
+          [
+            "City D",
+            "City E"
+          ],
+          [
+            "City F",
+            "City C"
+          ]
+        ]
+      },
+      "expected": "City E"
+    },
+    {
+      "args": {
+        "paths": [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "c",
+            "d"
+          ],
+          [
+            "d",
+            "e"
+          ],
+          [
+            "e",
+            "f"
+          ],
+          [
+            "f",
+            "g"
+          ],
+          [
+            "g",
+            "h"
+          ],
+          [
+            "h",
+            "i"
+          ],
+          [
+            "i",
+            "j"
+          ],
+          [
+            "j",
+            "k"
+          ],
+          [
+            "k",
+            "l"
+          ],
+          [
+            "l",
+            "m"
+          ]
+        ]
+      },
+      "expected": "b"
+    }
+  ]
 }

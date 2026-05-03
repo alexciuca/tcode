@@ -32,5 +32,62 @@
     "Compare which of the three scenarios results in the minimum number of moves."
   ],
   "starter_code": "class Solution:\n    def minimumDeletions(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          10
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          -100,
+          0,
+          50,
+          100
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          -5,
+          -3,
+          -1,
+          2,
+          7,
+          15
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          -100000,
+          -50000,
+          0,
+          50000,
+          100000
+        ]
+      },
+      "expected": 2
+    }
+  ]
 }

@@ -30,5 +30,75 @@
     "Use 2-pointers to maintain the size, the number of unique elements, and the sum of all the elements in all subarrays of size k from left to right dynamically.****"
   ],
   "starter_code": "class Solution:\n    def maxSum(self, nums: List[int], m: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "m": 1,
+        "k": 3
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "m": 1,
+        "k": 2
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          3
+        ],
+        "m": 2,
+        "k": 3
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ],
+        "m": 1,
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          999999999,
+          1000000000,
+          999999999,
+          1000000000,
+          999999999,
+          1000000000
+        ],
+        "m": 3,
+        "k": 5
+      },
+      "expected": 0
+    }
+  ]
 }

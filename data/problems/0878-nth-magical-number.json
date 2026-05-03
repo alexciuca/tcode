@@ -22,5 +22,46 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def nthMagicalNumber(self, n: int, a: int, b: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 1,
+        "a": 2,
+        "b": 3
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 15,
+        "a": 2,
+        "b": 3
+      },
+      "expected": 22
+    },
+    {
+      "args": {
+        "n": 1000000000,
+        "a": 39999,
+        "b": 40000
+      },
+      "expected": 999860007
+    },
+    {
+      "args": {
+        "n": 5,
+        "a": 6,
+        "b": 9
+      },
+      "expected": 24
+    },
+    {
+      "args": {
+        "n": 100,
+        "a": 2,
+        "b": 2
+      },
+      "expected": 200
+    }
+  ]
 }

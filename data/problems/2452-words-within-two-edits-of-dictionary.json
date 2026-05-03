@@ -29,5 +29,90 @@
     "If there is a maximum of two edit differences, the word should be present in answer."
   ],
   "starter_code": "class Solution:\n    def twoEditWords(self, queries: List[str], dictionary: List[str]) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "queries": [
+          "hello",
+          "world"
+        ],
+        "dictionary": [
+          "hallo",
+          "wprld"
+        ]
+      },
+      "expected": [
+        "hello",
+        "world"
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          "cat"
+        ],
+        "dictionary": [
+          "cat"
+        ]
+      },
+      "expected": [
+        "cat"
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          "abc",
+          "def"
+        ],
+        "dictionary": [
+          "xyz",
+          "uvw"
+        ]
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "queries": [
+          "a",
+          "b",
+          "c"
+        ],
+        "dictionary": [
+          "a",
+          "d",
+          "e"
+        ]
+      },
+      "expected": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          "abcde",
+          "fghij",
+          "klmno"
+        ],
+        "dictionary": [
+          "abcde",
+          "abcdx",
+          "abxde",
+          "xbcde",
+          "fghxx",
+          "fgxij",
+          "fxhij",
+          "xghij"
+        ]
+      },
+      "expected": [
+        "abcde",
+        "fghij"
+      ]
+    }
+  ]
 }

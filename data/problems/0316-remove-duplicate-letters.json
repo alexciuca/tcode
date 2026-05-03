@@ -26,5 +26,24 @@
     "Greedily try to add one missing character. How to check if adding some character will not cause problems ? Use bit-masks to check whether you will be able to complete the sub-sequence if you add the character at some index i."
   ],
   "starter_code": "class Solution:\n    def removeDuplicateLetters(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "bcabc"
+      },
+      "expected": "abc"
+    },
+    {
+      "args": {
+        "s": "cbacdcbc"
+      },
+      "expected": "acdb"
+    },
+    {
+      "args": {
+        "s": "bcab"
+      },
+      "expected": "bca"
+    }
+  ]
 }

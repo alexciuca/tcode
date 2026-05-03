@@ -26,5 +26,63 @@
     "Try to check the parity of each element and its previous element."
   ],
   "starter_code": "class Solution:\n    def isArraySpecial(self, nums: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          1,
+          4,
+          3
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

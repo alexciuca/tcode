@@ -39,5 +39,93 @@
     "Use bits (integer) to represent which digits are used."
   ],
   "starter_code": "class Solution:\n    def goodSubtreeSum(self, vals: List[int], par: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "vals": [
+          1,
+          5,
+          3
+        ],
+        "par": [
+          -1,
+          0,
+          0
+        ]
+      },
+      "expected": 17
+    },
+    {
+      "args": {
+        "vals": [
+          2,
+          10,
+          8,
+          1
+        ],
+        "par": [
+          -1,
+          0,
+          1,
+          1
+        ]
+      },
+      "expected": 47
+    },
+    {
+      "args": {
+        "vals": [
+          1000000000,
+          1,
+          1,
+          1
+        ],
+        "par": [
+          -1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 1000000003
+    },
+    {
+      "args": {
+        "vals": [
+          1
+        ],
+        "par": [
+          -1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "vals": [
+          5,
+          15,
+          20,
+          10,
+          5,
+          8,
+          3,
+          12,
+          7
+        ],
+        "par": [
+          -1,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4
+        ]
+      },
+      "expected": 203
+    }
+  ]
 }

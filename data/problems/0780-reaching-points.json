@@ -23,5 +23,51 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def reachingPoints(self, sx: int, sy: int, tx: int, ty: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "sx": 1,
+        "sy": 1,
+        "tx": 3,
+        "ty": 2
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "sx": 1,
+        "sy": 1,
+        "tx": 2,
+        "ty": 2
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "sx": 1,
+        "sy": 1,
+        "tx": 1,
+        "ty": 1
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "sx": 1,
+        "sy": 1,
+        "tx": 1000000000,
+        "ty": 1000000000
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "sx": 1,
+        "sy": 1,
+        "tx": 2,
+        "ty": 3
+      },
+      "expected": true
+    }
+  ]
 }

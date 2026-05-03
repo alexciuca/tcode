@@ -30,5 +30,40 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def countSmaller(self, nums: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          5,
+          2,
+          6,
+          1
+        ]
+      },
+      "expected": [
+        2,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          7,
+          8,
+          5
+        ]
+      },
+      "expected": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    }
+  ]
 }

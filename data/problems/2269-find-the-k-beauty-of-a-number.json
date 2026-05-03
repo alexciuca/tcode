@@ -26,5 +26,41 @@
     "We can more easily obtain the substrings by converting num into a string and converting back to an integer to check for divisibility."
   ],
   "starter_code": "class Solution:\n    def divisorSubstrings(self, num: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": 1248,
+        "k": 2
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "num": 430043,
+        "k": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "num": 1,
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "num": 1000000000,
+        "k": 10
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "num": 102303,
+        "k": 3
+      },
+      "expected": 0
+    }
+  ]
 }

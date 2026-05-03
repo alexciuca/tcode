@@ -26,5 +26,109 @@
     "Find the maximum value between all years."
   ],
   "starter_code": "class Solution:\n    def maximumPopulation(self, logs: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "logs": [
+          [
+            1993,
+            1999
+          ],
+          [
+            2000,
+            2010
+          ],
+          [
+            1975,
+            2003
+          ]
+        ]
+      },
+      "expected": 1993
+    },
+    {
+      "args": {
+        "logs": [
+          [
+            2005,
+            2010
+          ],
+          [
+            1960,
+            1970
+          ]
+        ]
+      },
+      "expected": 1960
+    },
+    {
+      "args": {
+        "logs": [
+          [
+            1950,
+            1951
+          ]
+        ]
+      },
+      "expected": 1950
+    },
+    {
+      "args": {
+        "logs": [
+          [
+            2000,
+            2001
+          ],
+          [
+            2000,
+            2001
+          ],
+          [
+            2000,
+            2001
+          ],
+          [
+            1999,
+            2000
+          ],
+          [
+            1999,
+            2000
+          ]
+        ]
+      },
+      "expected": 2000
+    },
+    {
+      "args": {
+        "logs": [
+          [
+            1950,
+            2050
+          ],
+          [
+            1951,
+            2049
+          ],
+          [
+            1952,
+            2048
+          ],
+          [
+            1953,
+            2047
+          ],
+          [
+            1954,
+            2046
+          ],
+          [
+            1955,
+            2045
+          ]
+        ]
+      },
+      "expected": 1955
+    }
+  ]
 }

@@ -24,5 +24,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def originalDigits(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "owoztneoer"
+      },
+      "expected": "012"
+    },
+    {
+      "args": {
+        "s": "fvieekaehfoohbariicbiviiivdhedxylobarasorixihhhbwwuqihulppqottqsuyquikmp"
+      },
+      "expected": "22333333344446699999999999"
+    },
+    {
+      "args": {
+        "s": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "zzzzzzzzzzfivefivefivefivefive"
+      },
+      "expected": "000000000055555"
+    },
+    {
+      "args": {
+        "s": "zeroonetwothreefourfivesixseveneightnine"
+      },
+      "expected": "0123456789"
+    }
+  ]
 }

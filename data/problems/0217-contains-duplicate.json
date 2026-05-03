@@ -26,5 +26,59 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def containsDuplicate(self, nums: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          -1000000000,
+          1000000000,
+          -1000000000
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          99,
+          99,
+          99,
+          99,
+          99
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

@@ -28,5 +28,36 @@
     "Use your language’s mod operator to see if a number is a divisor of another."
   ],
   "starter_code": "class Solution:\n    def countDigits(self, num: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": 12
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "num": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "num": 123456789
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "num": 1248
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "num": 999999999
+      },
+      "expected": 9
+    }
+  ]
 }

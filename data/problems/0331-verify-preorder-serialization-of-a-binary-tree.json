@@ -27,5 +27,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isValidSerialization(self, preorder: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "preorder": "9,3,4,#,#,1,#,#,2,#,6,#,#"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "preorder": "1,#"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "preorder": "9,#,#,1"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "preorder": "#"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "preorder": "#,1,#"
+      },
+      "expected": false
+    }
+  ]
 }

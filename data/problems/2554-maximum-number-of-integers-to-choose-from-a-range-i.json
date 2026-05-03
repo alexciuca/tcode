@@ -33,5 +33,77 @@
     "Keep adding numbers while they are not banned, and their sum is less than or equal to k."
   ],
   "starter_code": "class Solution:\n    def maxCount(self, banned: List[int], n: int, maxSum: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "banned": [
+          1,
+          6,
+          5
+        ],
+        "n": 5,
+        "maxSum": 5
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "banned": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "n": 8,
+        "maxSum": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "banned": [
+          11
+        ],
+        "n": 7,
+        "maxSum": 50
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "banned": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "n": 5,
+        "maxSum": 1000000000
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "banned": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20
+        ],
+        "n": 20,
+        "maxSum": 100
+      },
+      "expected": 10
+    }
+  ]
 }

@@ -24,5 +24,46 @@
   ],
   "hints": [],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def longestUnivaluePath(self, root: Optional[TreeNode]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "root": [
+          5,
+          4,
+          5,
+          1,
+          1,
+          5
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "root": [
+          1,
+          4,
+          5,
+          4,
+          4,
+          5
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "root": []
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "root": [
+          1
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

@@ -23,5 +23,64 @@
     "Iterate over the elements of array hours and check if the value is greater than or equal to target."
   ],
   "starter_code": "class Solution:\n    def numberOfEmployeesWhoMetTarget(self, hours: List[int], target: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "hours": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "target": 3
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "hours": [
+          5,
+          1,
+          4,
+          2,
+          2
+        ],
+        "target": 6
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "hours": [
+          100000,
+          100000,
+          100000
+        ],
+        "target": 100000
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "hours": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "target": 0
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "hours": [
+          1
+        ],
+        "target": 1
+      },
+      "expected": 1
+    }
+  ]
 }

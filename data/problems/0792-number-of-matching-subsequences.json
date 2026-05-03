@@ -29,5 +29,30 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def numMatchingSubseq(self, s: str, words: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "S": "abcde",
+        "words": [
+          "a",
+          "bb",
+          "acd",
+          "ace"
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "S": "dsahjpjauf",
+        "words": [
+          "ahjpjau",
+          "ja",
+          "ahbwzgqnuk",
+          "tnmlanowax"
+        ]
+      },
+      "expected": 2
+    }
+  ]
 }

@@ -24,5 +24,19 @@
     "Simulate the process.  We can do it with a heap, or by sorting some list of stones every time we take a turn."
   ],
   "starter_code": "class Solution:\n    def lastStoneWeight(self, stones: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "stones": [
+          2,
+          7,
+          4,
+          1,
+          8,
+          1
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

@@ -26,5 +26,41 @@
     "Find lexicographically largest substring of size <code>n - numFriends + 1</code> or less starting at every index."
   ],
   "starter_code": "class Solution:\n    def answerString(self, word: str, numFriends: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "dbaca",
+        "numFriends": 2
+      },
+      "expected": "dbac"
+    },
+    {
+      "args": {
+        "word": "aaabbbccc",
+        "numFriends": 3
+      },
+      "expected": "abbbccc"
+    },
+    {
+      "args": {
+        "word": "a",
+        "numFriends": 1
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "word": "zyxwvutsrqponmlkjihgfedcba",
+        "numFriends": 26
+      },
+      "expected": "z"
+    },
+    {
+      "args": {
+        "word": "aaaaaa",
+        "numFriends": 1
+      },
+      "expected": "aaaaaa"
+    }
+  ]
 }

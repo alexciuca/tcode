@@ -25,5 +25,20 @@
     "For each stone, check if it is a jewel."
   ],
   "starter_code": "class Solution:\n    def numJewelsInStones(self, jewels: str, stones: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "j": "aA",
+        "s": "aAAbbbb"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "j": "z",
+        "s": "ZZ"
+      },
+      "expected": 0
+    }
+  ]
 }

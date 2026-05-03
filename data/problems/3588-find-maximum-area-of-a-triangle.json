@@ -31,5 +31,137 @@
     "Sort to find the maximum base for each fixed <code>x</code> (or <code>y</code>), then the maximum height comes from the extreme values of the other coordinate."
   ],
   "starter_code": "class Solution:\n    def maxArea(self, coords: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "coords": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "coords": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            100
+          ],
+          [
+            100,
+            0
+          ]
+        ]
+      },
+      "expected": 10000
+    },
+    {
+      "args": {
+        "coords": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "coords": [
+          [
+            1,
+            1
+          ],
+          [
+            1000000,
+            1
+          ],
+          [
+            1000000,
+            1000000
+          ],
+          [
+            1,
+            1000000
+          ]
+        ]
+      },
+      "expected": 999998000001
+    },
+    {
+      "args": {
+        "coords": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            10,
+            4
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            9
+          ]
+        ]
+      },
+      "expected": 48
+    }
+  ]
 }

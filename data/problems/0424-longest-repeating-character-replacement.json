@@ -24,5 +24,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def characterReplacement(self, s: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ABAB",
+        "k": 2
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "AABBCCDD",
+        "k": 3
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "s": "A",
+        "k": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "AAAA",
+        "k": 0
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "k": 50000
+      },
+      "expected": 130
+    }
+  ]
 }

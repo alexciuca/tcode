@@ -28,5 +28,36 @@
     "If we know the longest palindromic sub-sequence is x and the length of the string is n then, what is the answer to this problem? It is n - x as we need n - x insertions to make the remaining characters also palindrome."
   ],
   "starter_code": "class Solution:\n    def minInsertions(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "zzz"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abcd"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abcba"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected": 0
+    }
+  ]
 }

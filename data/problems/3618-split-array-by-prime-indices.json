@@ -26,5 +26,75 @@
     "Iterate through <code>nums</code>, adding <code>nums[i]</code> to <code>sumA</code> if <code>i</code> is prime, otherwise to <code>sumB</code>, then return <code>|sumA - sumB|</code>."
   ],
   "starter_code": "class Solution:\n    def splitArray(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      "expected": 50
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          100
+        ]
+      },
+      "expected": 100
+    },
+    {
+      "args": {
+        "nums": [
+          -5,
+          0,
+          5,
+          -10,
+          15,
+          20,
+          25
+        ]
+      },
+      "expected": 40
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          -1000000000,
+          999999999,
+          -999999999,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected": 25
+    }
+  ]
 }

@@ -26,5 +26,36 @@
     "You need to check at most 2 characters to determine which character comes next."
   ],
   "starter_code": "class Solution:\n    def interpret(self, command: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "command": "G()(al)"
+      },
+      "expected": "Goal"
+    },
+    {
+      "args": {
+        "command": "G(al)G(al)()(al)G"
+      },
+      "expected": "GalGaloalG"
+    },
+    {
+      "args": {
+        "command": "G"
+      },
+      "expected": "G"
+    },
+    {
+      "args": {
+        "command": "()()()(al)(al)(al)"
+      },
+      "expected": "oooalalal"
+    },
+    {
+      "args": {
+        "command": "G(al)()(al)G(al)()(al)G(al)()(al)G(al)()(al)G(al)()(al)G(al)()(al)G(al)()(al)G(al)()(al)G(al)()(al)"
+      },
+      "expected": "GaloalGaloalGaloalGaloalGaloalGaloalGaloalGaloalGaloal"
+    }
+  ]
 }

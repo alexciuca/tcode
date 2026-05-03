@@ -25,5 +25,28 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findTargetSumWays(self, nums: List[int], target: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "S": 3
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ],
+        "S": 1
+      },
+      "expected": 1
+    }
+  ]
 }

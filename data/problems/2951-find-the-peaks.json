@@ -24,5 +24,83 @@
     "If <code>nums[i] > num[i - 1]</code> and <code>nums[i] > nums[i + 1]</code> <code>nums[i]</code> is a peak."
   ],
   "starter_code": "class Solution:\n    def findPeaks(self, mountain: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "mountain": [
+          1,
+          2,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": [
+        2
+      ]
+    },
+    {
+      "args": {
+        "mountain": [
+          1,
+          4,
+          3,
+          5,
+          2,
+          1
+        ]
+      },
+      "expected": [
+        1,
+        3
+      ]
+    },
+    {
+      "args": {
+        "mountain": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "mountain": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "mountain": [
+          1,
+          3,
+          2,
+          4,
+          3,
+          5,
+          2,
+          1,
+          6,
+          2,
+          1
+        ]
+      },
+      "expected": [
+        1,
+        3,
+        5,
+        8
+      ]
+    }
+  ]
 }
