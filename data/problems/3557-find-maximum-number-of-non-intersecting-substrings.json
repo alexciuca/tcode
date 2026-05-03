@@ -29,5 +29,36 @@
     "For each index, also store the maximum for <b>any</b> substring ending before that index in the dp."
   ],
   "starter_code": "class Solution:\n    def maxSubstrings(self, word: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "ababab"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "abcdefghij"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "word": "aaa"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "word": "a"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "word": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc"
+      },
+      "expected": 136
+    }
+  ]
 }

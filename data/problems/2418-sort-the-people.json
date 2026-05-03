@@ -30,5 +30,104 @@
     "Find the tallest person and swap with the first person, then find the second tallest person and swap with the second person, etc. Repeat until you fix all n people."
   ],
   "starter_code": "class Solution:\n    def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "names": [
+          "Alice",
+          "Bob",
+          "Charlie"
+        ],
+        "heights": [
+          155,
+          180,
+          165
+        ]
+      },
+      "expected": [
+        "Bob",
+        "Charlie",
+        "Alice"
+      ]
+    },
+    {
+      "args": {
+        "names": [
+          "Mary",
+          "John"
+        ],
+        "heights": [
+          120,
+          130
+        ]
+      },
+      "expected": [
+        "John",
+        "Mary"
+      ]
+    },
+    {
+      "args": {
+        "names": [
+          "a"
+        ],
+        "heights": [
+          100000
+        ]
+      },
+      "expected": [
+        "a"
+      ]
+    },
+    {
+      "args": {
+        "names": [
+          "ZeusApollo",
+          "aaa",
+          "MikeJohn",
+          "b"
+        ],
+        "heights": [
+          99999,
+          1,
+          50000,
+          75000
+        ]
+      },
+      "expected": [
+        "ZeusApollo",
+        "b",
+        "MikeJohn",
+        "aaa"
+      ]
+    },
+    {
+      "args": {
+        "names": [
+          "Alice",
+          "Bob",
+          "Charlie",
+          "Diana",
+          "Eve",
+          "Frank"
+        ],
+        "heights": [
+          160,
+          185,
+          170,
+          155,
+          180,
+          175
+        ]
+      },
+      "expected": [
+        "Bob",
+        "Eve",
+        "Frank",
+        "Charlie",
+        "Alice",
+        "Diana"
+      ]
+    }
+  ]
 }

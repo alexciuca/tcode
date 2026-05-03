@@ -38,5 +38,157 @@
     "For each query, get the corresponding set of numbers which will be the sub-array represented by the query, sort it, and check if the result sequence is arithmetic."
   ],
   "starter_code": "class Solution:\n    def checkArithmeticSubarrays(self, nums: List[int], l: List[int], r: List[int]) -> List[bool]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          4,
+          6,
+          5,
+          9,
+          3,
+          7
+        ],
+        "l": [
+          0,
+          0,
+          2
+        ],
+        "r": [
+          2,
+          3,
+          5
+        ]
+      },
+      "expected": [
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "l": [
+          0,
+          1,
+          2
+        ],
+        "r": [
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "l": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "r": [
+          2,
+          4,
+          3,
+          4
+        ]
+      },
+      "expected": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          -5,
+          -2,
+          1,
+          4,
+          7,
+          10
+        ],
+        "l": [
+          0,
+          2
+        ],
+        "r": [
+          5,
+          4
+        ]
+      },
+      "expected": [
+        true,
+        true
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          -100000,
+          0,
+          100000,
+          -50000,
+          50000,
+          -25000,
+          25000,
+          0,
+          -100000
+        ],
+        "l": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "r": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          8
+        ]
+      },
+      "expected": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true
+      ]
+    }
+  ]
 }

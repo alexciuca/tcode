@@ -25,5 +25,25 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": "this apple is sweet",
+        "b": "this apple is sour"
+      },
+      "expected": [
+        "sweet",
+        "sour"
+      ]
+    },
+    {
+      "args": {
+        "a": "apple apple",
+        "b": "banana"
+      },
+      "expected": [
+        "banana"
+      ]
+    }
+  ]
 }

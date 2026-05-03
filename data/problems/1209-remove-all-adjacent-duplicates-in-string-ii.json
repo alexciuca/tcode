@@ -29,5 +29,41 @@
     "To make it more efficient, use a pair to store the value and the count of each character."
   ],
   "starter_code": "class Solution:\n    def removeDuplicates(self, s: str, k: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abcd",
+        "k": 2
+      },
+      "expected": "abcd"
+    },
+    {
+      "args": {
+        "s": "deeedbbcccbcaddd",
+        "k": 3
+      },
+      "expected": "ddca"
+    },
+    {
+      "args": {
+        "s": "aaabbbccc",
+        "k": 3
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "a",
+        "k": 2
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "aaaaaaaaaabbbbbbbbbbcccccccccc",
+        "k": 10
+      },
+      "expected": ""
+    }
+  ]
 }

@@ -28,5 +28,36 @@
     "There are two cases:  a block of characters, or two blocks of characters between one different character. \r\n By keeping a run-length encoded version of the string, we can easily check these cases."
   ],
   "starter_code": "class Solution:\n    def maxRepOpt1(self, text: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "text": "ababa"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "text": "aabaab"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "text": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "text": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "text": "aaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected": 24
+    }
+  ]
 }

@@ -21,5 +21,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findNthDigit(self, n: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 3
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "n": 10
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 11
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 190
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 2147483647
+      },
+      "expected": 2
+    }
+  ]
 }

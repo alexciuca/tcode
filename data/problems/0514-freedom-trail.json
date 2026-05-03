@@ -25,5 +25,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findRotateSteps(self, ring: str, key: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "ring": "godding",
+        "key": "gd"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "ring": "abcde",
+        "key": "ace"
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "ring": "aaaa",
+        "key": "aaaa"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "ring": "abcdefghijklmnopqrstuvwxyz",
+        "key": "za"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "ring": "zzzzzzzzzzabcdefghijklmnopqrstuvwxy",
+        "key": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected": 51
+    }
+  ]
 }

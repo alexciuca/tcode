@@ -25,5 +25,36 @@
     "The constraints are small. Construct the string by simulating the operations."
   ],
   "starter_code": "class Solution:\n    def kthCharacter(self, k: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "k": 1
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "k": 2
+      },
+      "expected": "b"
+    },
+    {
+      "args": {
+        "k": 4
+      },
+      "expected": "c"
+    },
+    {
+      "args": {
+        "k": 500
+      },
+      "expected": "h"
+    },
+    {
+      "args": {
+        "k": 256
+      },
+      "expected": "i"
+    }
+  ]
 }

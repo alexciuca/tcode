@@ -22,5 +22,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def soupServings(self, n: int) -> float:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 0
+      },
+      "expected": 0.5
+    },
+    {
+      "args": {
+        "n": 1
+      },
+      "expected": 0.625
+    },
+    {
+      "args": {
+        "n": 50
+      },
+      "expected": 0.625
+    },
+    {
+      "args": {
+        "n": 4800
+      },
+      "expected": 0.999994994425816
+    },
+    {
+      "args": {
+        "n": 1000000000
+      },
+      "expected": 1.0
+    }
+  ]
 }

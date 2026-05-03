@@ -32,5 +32,78 @@
     "Use binary search to maximize the minimum."
   ],
   "starter_code": "class Solution:\n    def maxPower(self, stations: List[int], r: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "stations": [
+          1,
+          2,
+          4,
+          5,
+          0
+        ],
+        "r": 1,
+        "k": 2
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "stations": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "r": 0,
+        "k": 0
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "stations": [
+          1
+        ],
+        "r": 0,
+        "k": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "stations": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "r": 2,
+        "k": 5
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "stations": [
+          10,
+          5,
+          8,
+          3,
+          6,
+          12,
+          4,
+          7,
+          2,
+          9,
+          11,
+          1
+        ],
+        "r": 3,
+        "k": 25
+      },
+      "expected": 51
+    }
+  ]
 }

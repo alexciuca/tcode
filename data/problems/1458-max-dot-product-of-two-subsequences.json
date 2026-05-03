@@ -27,5 +27,81 @@
     "Use dynamic programming, define DP[i][j] as the maximum dot product of two subsequences starting in the position i of nums1 and position j of nums2."
   ],
   "starter_code": "class Solution:\n    def maxDotProduct(self, nums1: List[int], nums2: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums1": [
+          2,
+          1,
+          -2,
+          5
+        ],
+        "nums2": [
+          3,
+          0,
+          -6,
+          1
+        ]
+      },
+      "expected": 23
+    },
+    {
+      "args": {
+        "nums1": [
+          3,
+          -2
+        ],
+        "nums2": [
+          4,
+          6
+        ]
+      },
+      "expected": 18
+    },
+    {
+      "args": {
+        "nums1": [
+          -1000
+        ],
+        "nums2": [
+          -1000
+        ]
+      },
+      "expected": 1000000
+    },
+    {
+      "args": {
+        "nums1": [
+          -5,
+          -3,
+          -1
+        ],
+        "nums2": [
+          -4,
+          -2,
+          -1
+        ]
+      },
+      "expected": 27
+    },
+    {
+      "args": {
+        "nums1": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "nums2": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": 46
+    }
+  ]
 }

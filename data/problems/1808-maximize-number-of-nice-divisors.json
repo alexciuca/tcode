@@ -27,5 +27,36 @@
     "Keep adding 3s as long as n ≥ 5."
   ],
   "starter_code": "class Solution:\n    def maxNiceDivisors(self, primeFactors: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "primeFactors": 5
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "primeFactors": 8
+      },
+      "expected": 48
+    },
+    {
+      "args": {
+        "primeFactors": 1
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "primeFactors": 2
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "primeFactors": 1000000000
+      },
+      "expected": 70781637
+    }
+  ]
 }

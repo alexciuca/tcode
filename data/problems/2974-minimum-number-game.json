@@ -27,5 +27,98 @@
     "Sort the array in increasing order and then swap the adjacent elements."
   ],
   "starter_code": "class Solution:\n    def numberGame(self, nums: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          4,
+          5,
+          6
+        ]
+      },
+      "expected": [
+        4,
+        2,
+        6,
+        5
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": [
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          99,
+          100
+        ]
+      },
+      "expected": [
+        2,
+        1,
+        100,
+        99
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "expected": [
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100
+        ]
+      },
+      "expected": [
+        92,
+        91,
+        94,
+        93,
+        96,
+        95,
+        98,
+        97,
+        100,
+        99
+      ]
+    }
+  ]
 }

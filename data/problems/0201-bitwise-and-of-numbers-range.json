@@ -23,5 +23,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def rangeBitwiseAnd(self, left: int, right: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "left": 5,
+        "right": 7
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "left": 0,
+        "right": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "left": 1,
+        "right": 2147483647
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "left": 8,
+        "right": 10
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "left": 1073741824,
+        "right": 2147483647
+      },
+      "expected": 1073741824
+    }
+  ]
 }

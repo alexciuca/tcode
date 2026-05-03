@@ -28,5 +28,70 @@
     "Starting from a sum, what are the two next largest sums that you can obtain from it?"
   ],
   "starter_code": "class Solution:\n    def kSum(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "k": 2
+      },
+      "expected": 14
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          20,
+          30
+        ],
+        "k": 3
+      },
+      "expected": 40
+    },
+    {
+      "args": {
+        "nums": [
+          -5,
+          -2,
+          0,
+          1,
+          3
+        ],
+        "k": 2
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "k": 4
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          -1000000000,
+          -999999999,
+          -1,
+          0,
+          1,
+          999999999,
+          1000000000
+        ],
+        "k": 2
+      },
+      "expected": 3000000000
+    }
+  ]
 }

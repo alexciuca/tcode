@@ -31,5 +31,86 @@
     "<div class=\"_1l1MA\">The answer is the minimum value of <code>t</code>, such that <code>0 <= t <= n</code> and <code>sum(nums1) + sum(nums2) * t - dp[n][t] <= x</code>, or <code>-1</code> if it doesn’t exist.</div>"
   ],
   "starter_code": "class Solution:\n    def minimumTime(self, nums1: List[int], nums2: List[int], x: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums1": [
+          1,
+          2,
+          3
+        ],
+        "nums2": [
+          1,
+          1,
+          1
+        ],
+        "x": 4
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums1": [
+          5,
+          10,
+          15
+        ],
+        "nums2": [
+          2,
+          3,
+          4
+        ],
+        "x": 20
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums1": [
+          1
+        ],
+        "nums2": [
+          1
+        ],
+        "x": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums1": [
+          1000,
+          1000,
+          1000
+        ],
+        "nums2": [
+          0,
+          0,
+          0
+        ],
+        "x": 1
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums1": [
+          100,
+          200,
+          300,
+          400,
+          500
+        ],
+        "nums2": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ],
+        "x": 1000000
+      },
+      "expected": 0
+    }
+  ]
 }

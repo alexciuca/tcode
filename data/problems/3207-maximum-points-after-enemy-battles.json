@@ -28,5 +28,63 @@
     "Note that the initial energy should be no less than the smallest enemy."
   ],
   "starter_code": "class Solution:\n    def maximumPoints(self, enemyEnergies: List[int], currentEnergy: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "enemyEnergies": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "currentEnergy": 5
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "enemyEnergies": [
+          1,
+          2,
+          5,
+          8
+        ],
+        "currentEnergy": 10
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "enemyEnergies": [
+          1
+        ],
+        "currentEnergy": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "enemyEnergies": [
+          5,
+          5,
+          5
+        ],
+        "currentEnergy": 14
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "enemyEnergies": [
+          1,
+          1,
+          1,
+          1,
+          1000000000
+        ],
+        "currentEnergy": 1000000000
+      },
+      "expected": 4
+    }
+  ]
 }

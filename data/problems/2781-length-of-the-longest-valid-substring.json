@@ -27,5 +27,56 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def longestValidSubstring(self, word: str, forbidden: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "cadsqin",
+        "forbidden": [
+          "ad",
+          "qa"
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "word": "abcdefg",
+        "forbidden": [
+          "xyz"
+        ]
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "word": "aaaa",
+        "forbidden": [
+          "aa"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "abcabcabcabc",
+        "forbidden": [
+          "abc"
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "word": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefg",
+        "forbidden": [
+          "ab",
+          "cd",
+          "ef",
+          "gh",
+          "ij"
+        ]
+      },
+      "expected": 18
+    }
+  ]
 }

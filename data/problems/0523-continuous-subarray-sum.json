@@ -29,5 +29,85 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def checkSubarraySum(self, nums: List[int], k: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          23,
+          2,
+          4,
+          6,
+          7
+        ],
+        "k": 6
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          23,
+          2,
+          6,
+          4,
+          7
+        ],
+        "k": 6
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ],
+        "k": 0
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "k": 0
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "k": 0
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0
+        ],
+        "k": 0
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          2
+        ],
+        "k": 2
+      },
+      "expected": false
+    }
+  ]
 }

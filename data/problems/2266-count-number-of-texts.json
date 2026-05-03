@@ -27,5 +27,36 @@
     "How can dynamic programming help us calculate the required answer?"
   ],
   "starter_code": "class Solution:\n    def countTexts(self, pressedKeys: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "pressedKeys": "22"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "pressedKeys": "222"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "pressedKeys": "23"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "pressedKeys": "2223333322222222223333332222222223333333"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "pressedKeys": "999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+      },
+      "expected": 0
+    }
+  ]
 }

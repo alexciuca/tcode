@@ -26,5 +26,36 @@
     "Build the answer digit by digit, adding the largest possible one that would make the number still less than or equal to N."
   ],
   "starter_code": "class Solution:\n    def monotoneIncreasingDigits(self, n: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 54321
+      },
+      "expected": 49999
+    },
+    {
+      "args": {
+        "n": 10
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "n": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 1000000000
+      },
+      "expected": 999999999
+    },
+    {
+      "args": {
+        "n": 232
+      },
+      "expected": 229
+    }
+  ]
 }

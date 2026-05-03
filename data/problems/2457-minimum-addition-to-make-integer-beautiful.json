@@ -29,5 +29,41 @@
     "Turn the rightmost non-zero digit to zero until the digit sum is greater than target."
   ],
   "starter_code": "class Solution:\n    def makeIntegerBeautiful(self, n: int, target: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 16,
+        "target": 6
+      },
+      "expected": -5
+    },
+    {
+      "args": {
+        "n": 467,
+        "target": 6
+      },
+      "expected": -57
+    },
+    {
+      "args": {
+        "n": 1,
+        "target": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 999999999999,
+        "target": 150
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 99,
+        "target": 9
+      },
+      "expected": -89
+    }
+  ]
 }

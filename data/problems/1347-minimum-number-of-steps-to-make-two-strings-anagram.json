@@ -30,5 +30,41 @@
     "Loop over all characters if the frequency of a character in t is less than the frequency of the same character in s then add the difference between the frequencies to the answer."
   ],
   "starter_code": "class Solution:\n    def minSteps(self, s: str, t: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "bab",
+        "t": "aaab"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "leetcode",
+        "t": "practice"
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "s": "a",
+        "t": "a"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abcd",
+        "t": "dcba"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "aabbccddee",
+        "t": "eeddccbbaa"
+      },
+      "expected": 0
+    }
+  ]
 }

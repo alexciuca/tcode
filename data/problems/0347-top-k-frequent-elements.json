@@ -30,5 +30,102 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def topKFrequent(self, nums: List[int], k: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          3
+        ],
+        "k": 2
+      },
+      "expected": [
+        1,
+        2
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          4,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3
+        ],
+        "k": 1
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          5
+        ],
+        "k": 2
+      },
+      "expected": [
+        0,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "k": 5
+      },
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          100,
+          100,
+          100,
+          50,
+          50,
+          50,
+          25,
+          25,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "k": 3
+      },
+      "expected": [
+        10,
+        100,
+        50
+      ]
+    }
+  ]
 }

@@ -27,5 +27,68 @@
     "How do we calculate the minimum number of changes efficiently if we fix the value of <code>X</code> before applying any changes?"
   ],
   "starter_code": "class Solution:\n    def minChanges(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "k": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          10,
+          1,
+          4
+        ],
+        "k": 10
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "k": 5
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          100000,
+          0
+        ],
+        "k": 100000
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          50000,
+          25000,
+          75000,
+          12500,
+          87500,
+          37500,
+          62500,
+          25000
+        ],
+        "k": 100000
+      },
+      "expected": 2
+    }
+  ]
 }

@@ -25,5 +25,134 @@
     "Use dynamic programming:  dp(i) will be the answer to the problem for books[i:]."
   ],
   "starter_code": "class Solution:\n    def minHeightShelves(self, books: List[List[int]], shelfWidth: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "books": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "shelfWidth": 4
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "books": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "shelfWidth": 5
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "books": [
+          [
+            1,
+            1
+          ]
+        ],
+        "shelfWidth": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "books": [
+          [
+            10,
+            1
+          ],
+          [
+            1,
+            100
+          ],
+          [
+            1,
+            100
+          ]
+        ],
+        "shelfWidth": 10
+      },
+      "expected": 101
+    },
+    {
+      "args": {
+        "books": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "shelfWidth": 15
+      },
+      "expected": 36
+    }
+  ]
 }

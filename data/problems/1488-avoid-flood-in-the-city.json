@@ -32,5 +32,99 @@
     "When it rains over a lake, check the first possible day you can dry this lake and assign this day to this lake."
   ],
   "starter_code": "class Solution:\n    def avoidFlood(self, rains: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "rains": [
+          2,
+          3,
+          4,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": [
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "rains": [
+          0,
+          1,
+          1
+        ]
+      },
+      "expected": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "args": {
+        "rains": [
+          1,
+          0,
+          2,
+          0,
+          2,
+          0,
+          3
+        ]
+      },
+      "expected": [
+        0,
+        -1,
+        0,
+        2,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "args": {
+        "rains": [
+          1,
+          1
+        ]
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "rains": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1000000000,
+          0,
+          1000000000
+        ]
+      },
+      "expected": [
+        -1,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1000000000,
+        0
+      ]
+    }
+  ]
 }

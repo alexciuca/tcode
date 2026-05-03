@@ -23,5 +23,74 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def sumSubseqWidths(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 23
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          100000
+        ]
+      },
+      "expected": 99999
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "expected": 17825815
+    }
+  ]
 }

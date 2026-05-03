@@ -26,5 +26,64 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findLUSlength(self, strs: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "strs": [
+          "aba",
+          "dcadca",
+          "zbopt",
+          "z",
+          "hello"
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "strs": [
+          "aaa",
+          "aaa",
+          "aa"
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "strs": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "strs": [
+          "abcdefghij",
+          "abcdefghi",
+          "abcdefgh"
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "strs": [
+          "aa",
+          "ba",
+          "ca",
+          "da",
+          "ea",
+          "fa"
+        ]
+      },
+      "expected": 2
+    }
+  ]
 }

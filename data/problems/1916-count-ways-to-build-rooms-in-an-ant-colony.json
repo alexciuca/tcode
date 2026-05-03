@@ -33,5 +33,80 @@
     "Imagine you are trying to fill an array with the order of traversal, dp[i] equals the multiplications of the number of ways to distribute the subtrees of the children of i on the array using combinatorics, multiplied bu their dp values."
   ],
   "starter_code": "class Solution:\r\n    def waysToBuildRooms(self, prevRoom: List[int]) -> int:",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "prevRoom": [
+          -1,
+          0,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "prevRoom": [
+          -1,
+          0,
+          0,
+          1,
+          2
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "prevRoom": [
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "prevRoom": [
+          -1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 24
+    },
+    {
+      "args": {
+        "prevRoom": [
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

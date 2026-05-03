@@ -35,5 +35,121 @@
     "How would you generalize this approach?"
   ],
   "starter_code": "class Solution:\n    def minimumTime(self, n: int, relations: List[List[int]], time: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 3,
+        "relations": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "time": [
+          10,
+          20,
+          30
+        ]
+      },
+      "expected": 60
+    },
+    {
+      "args": {
+        "n": 4,
+        "relations": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "time": [
+          5,
+          15,
+          10,
+          20
+        ]
+      },
+      "expected": 40
+    },
+    {
+      "args": {
+        "n": 1,
+        "relations": [],
+        "time": [
+          100
+        ]
+      },
+      "expected": 100
+    },
+    {
+      "args": {
+        "n": 5,
+        "relations": [],
+        "time": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "n": 6,
+        "relations": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "time": [
+          1000,
+          5000,
+          3000,
+          4000,
+          2000,
+          6000
+        ]
+      },
+      "expected": 16000
+    }
+  ]
 }

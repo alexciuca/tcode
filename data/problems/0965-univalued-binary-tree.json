@@ -24,5 +24,32 @@
   ],
   "hints": [],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def isUnivalTree(self, root: Optional[TreeNode]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "root": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "root": [
+          2,
+          2,
+          2,
+          5,
+          2
+        ]
+      },
+      "expected": false
+    }
+  ]
 }

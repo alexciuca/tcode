@@ -27,5 +27,28 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def shortestSuperstring(self, words: List[str]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "alex",
+          "loves",
+          "leetcode"
+        ]
+      },
+      "expected": "alexlovesleetcode"
+    },
+    {
+      "args": {
+        "words": [
+          "catg",
+          "ctaagt",
+          "gcta",
+          "ttca",
+          "atgcatc"
+        ]
+      },
+      "expected": "gctaagttcatgcatc"
+    }
+  ]
 }

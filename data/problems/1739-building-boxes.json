@@ -28,5 +28,36 @@
     "The first box should always start in the corner"
   ],
   "starter_code": "class Solution:\n    def minimumBoxes(self, n: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 10
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "n": 100
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "n": 1000
+      },
+      "expected": 182
+    },
+    {
+      "args": {
+        "n": 1000000000
+      },
+      "expected": 1558479
+    }
+  ]
 }

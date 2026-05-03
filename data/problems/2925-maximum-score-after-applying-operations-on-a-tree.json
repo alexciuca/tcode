@@ -33,5 +33,166 @@
     "<code>dp[x] = max(value[x] + sigma(dp[y]), sigma(sum[y]))</code>, where <code>y</code> is a direct child of <code>x</code>."
   ],
   "starter_code": "class Solution:\n    def maximumScoreAfterOperations(self, edges: List[List[int]], values: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "values": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "values": [
+          5,
+          10,
+          15,
+          20
+        ]
+      },
+      "expected": 100
+    },
+    {
+      "args": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "values": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "values": [
+          1000000000,
+          999999999,
+          500000000,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 2000000007
+    },
+    {
+      "args": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        "values": [
+          100,
+          50,
+          75,
+          25,
+          30,
+          60,
+          80,
+          10,
+          20
+        ]
+      },
+      "expected": 605
+    }
+  ]
 }

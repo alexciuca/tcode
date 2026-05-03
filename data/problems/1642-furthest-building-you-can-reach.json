@@ -32,5 +32,94 @@
     "Iterate on the buildings, maintaining the largest r jumps and the sum of the remaining ones so far, and stop whenever this sum exceeds b."
   ],
   "starter_code": "class Solution:\n    def furthestBuilding(self, heights: List[int], bricks: int, ladders: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "heights": [
+          4,
+          2,
+          7,
+          6,
+          9,
+          14,
+          12
+        ],
+        "bricks": 5,
+        "ladders": 1
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "heights": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "bricks": 0,
+        "ladders": 0
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "heights": [
+          1,
+          5,
+          1,
+          2,
+          3,
+          4,
+          10000000
+        ],
+        "bricks": 4,
+        "ladders": 1
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "heights": [
+          5,
+          5,
+          10,
+          5,
+          5
+        ],
+        "bricks": 10,
+        "ladders": 2
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "heights": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "bricks": 1000000000,
+        "ladders": 100000
+      },
+      "expected": 19
+    }
+  ]
 }

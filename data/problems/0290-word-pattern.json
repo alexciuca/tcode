@@ -29,5 +29,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def wordPattern(self, pattern: str, s: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "pattern": "abba",
+        "s": "dog cat cat dog"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "pattern": "abab",
+        "s": "dog cat dog cat"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "pattern": "aaaa",
+        "s": "dog dog dog dog"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "pattern": "abc",
+        "s": "dog cat bird dog"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "pattern": "aabbcc",
+        "s": "apple apple banana banana cherry cherry"
+      },
+      "expected": true
+    }
+  ]
 }

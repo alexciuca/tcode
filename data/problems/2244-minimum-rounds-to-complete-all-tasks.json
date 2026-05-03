@@ -28,5 +28,67 @@
     "When can we not complete all tasks of a difficulty level?"
   ],
   "starter_code": "class Solution:\n    def minimumRounds(self, tasks: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "tasks": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "tasks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "tasks": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "tasks": [
+          1
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "tasks": [
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000
+        ]
+      },
+      "expected": 4
+    }
+  ]
 }

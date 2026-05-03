@@ -22,5 +22,49 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def lemonadeChange(self, bills: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "bills": [
+          5,
+          5,
+          5,
+          10,
+          20
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "bills": [
+          5,
+          5,
+          10
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "bills": [
+          10,
+          10
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "bills": [
+          5,
+          5,
+          10,
+          10,
+          20
+        ]
+      },
+      "expected": false
+    }
+  ]
 }

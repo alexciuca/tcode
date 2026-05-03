@@ -30,5 +30,103 @@
     "You can use a nested loop to compare each pair of indices <code>(i, j)</code> and check if the conditions are satisfied."
   ],
   "starter_code": "class Solution:\n    def findIndices(self, nums: List[int], indexDifference: int, valueDifference: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          5,
+          1,
+          4,
+          1,
+          5
+        ],
+        "indexDifference": 2,
+        "valueDifference": 4
+      },
+      "expected": [
+        0,
+        3
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "indexDifference": 1,
+        "valueDifference": 0
+      },
+      "expected": [
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "indexDifference": 2,
+        "valueDifference": 0
+      },
+      "expected": [
+        0,
+        2
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          50,
+          0,
+          50
+        ],
+        "indexDifference": 2,
+        "valueDifference": 50
+      },
+      "expected": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "indexDifference": 5,
+        "valueDifference": 3
+      },
+      "expected": [
+        0,
+        5
+      ]
+    }
+  ]
 }

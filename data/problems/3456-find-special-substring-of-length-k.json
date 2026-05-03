@@ -23,5 +23,41 @@
     "Return <code>true</code> if there is a sequence of consecutive characters of length <code>k</code>"
   ],
   "starter_code": "class Solution:\n    def hasSpecialSubstring(self, s: str, k: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aaabbb",
+        "k": 3
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "abcdef",
+        "k": 2
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "aaaaaa",
+        "k": 1
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "a",
+        "k": 1
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv",
+        "k": 50
+      },
+      "expected": false
+    }
+  ]
 }

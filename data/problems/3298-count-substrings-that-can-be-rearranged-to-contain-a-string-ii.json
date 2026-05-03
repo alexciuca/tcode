@@ -30,5 +30,41 @@
     "Use constant space to store the frequency of characters."
   ],
   "starter_code": "class Solution:\n    def validSubstringCount(self, word1: str, word2: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word1": "ababab",
+        "word2": "ab"
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "word1": "abcdefg",
+        "word2": "xyz"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "word1": "aaa",
+        "word2": "aaa"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word1": "a",
+        "word2": "aa"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "word1": "aabbccddeeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 4
+    }
+  ]
 }

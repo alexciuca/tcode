@@ -29,5 +29,70 @@
     "Do an iterative depth first search, parsing dashes from the string to inform you how to link the nodes together."
   ],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def recoverFromPreorder(self, traversal: str) -> Optional[TreeNode]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "traversal": "1-2--3--4-5--6--7"
+      },
+      "expected": [
+        1,
+        2,
+        5,
+        3,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "args": {
+        "traversal": "1-2-3"
+      },
+      "expected": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "args": {
+        "traversal": "1"
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "traversal": "1-2--3---4----5-----6------7"
+      },
+      "expected": [
+        1,
+        2,
+        null,
+        3,
+        null,
+        4,
+        null,
+        5,
+        null,
+        6,
+        null,
+        7
+      ]
+    },
+    {
+      "args": {
+        "traversal": "1000000000-999999999--999999998---1--2--3"
+      },
+      "expected": [
+        1000000000,
+        999999999,
+        null,
+        999999998,
+        3,
+        1
+      ]
+    }
+  ]
 }

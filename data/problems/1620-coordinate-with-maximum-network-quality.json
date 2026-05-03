@@ -29,5 +29,136 @@
     "The constraints are small enough to consider every possible coordinate and calculate its quality."
   ],
   "starter_code": "class Solution:\n    def bestCoordinate(self, towers: List[List[int]], radius: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "towers": [
+          [
+            1,
+            2,
+            13
+          ],
+          [
+            2,
+            1,
+            7
+          ],
+          [
+            0,
+            9,
+            43
+          ]
+        ],
+        "radius": 9
+      },
+      "expected": [
+        0,
+        9
+      ]
+    },
+    {
+      "args": {
+        "towers": [
+          [
+            0,
+            0,
+            5
+          ]
+        ],
+        "radius": 1
+      },
+      "expected": [
+        0,
+        0
+      ]
+    },
+    {
+      "args": {
+        "towers": [
+          [
+            10,
+            10,
+            50
+          ],
+          [
+            20,
+            20,
+            50
+          ],
+          [
+            30,
+            30,
+            50
+          ]
+        ],
+        "radius": 15
+      },
+      "expected": [
+        20,
+        20
+      ]
+    },
+    {
+      "args": {
+        "towers": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            3
+          ]
+        ],
+        "radius": 1
+      },
+      "expected": [
+        0,
+        0
+      ]
+    },
+    {
+      "args": {
+        "towers": [
+          [
+            5,
+            5,
+            10
+          ],
+          [
+            15,
+            15,
+            20
+          ],
+          [
+            25,
+            25,
+            30
+          ],
+          [
+            35,
+            35,
+            40
+          ],
+          [
+            45,
+            45,
+            50
+          ]
+        ],
+        "radius": 50
+      },
+      "expected": [
+        45,
+        45
+      ]
+    }
+  ]
 }

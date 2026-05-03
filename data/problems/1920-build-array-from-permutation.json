@@ -26,5 +26,88 @@
     "Notice that you can't apply it on the same array directly since some elements will change after application"
   ],
   "starter_code": "class Solution:\n    def buildArray(self, nums: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          0,
+          1,
+          2
+        ]
+      },
+      "expected": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          4,
+          2,
+          0,
+          1,
+          3
+        ]
+      },
+      "expected": [
+        3,
+        0,
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          0
+        ]
+      },
+      "expected": [
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          0
+        ]
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ]
 }

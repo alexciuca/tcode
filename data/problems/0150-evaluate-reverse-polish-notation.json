@@ -26,5 +26,74 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def evalRPN(self, tokens: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "tokens": [
+          "2",
+          "1",
+          "+",
+          "3",
+          "*"
+        ]
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "tokens": [
+          "4",
+          "13",
+          "5",
+          "/",
+          "+"
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "tokens": [
+          "10"
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "tokens": [
+          "0",
+          "0",
+          "+",
+          "-200",
+          "*",
+          "100",
+          "/"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "tokens": [
+          "15",
+          "7",
+          "1",
+          "1",
+          "-",
+          "-",
+          "/",
+          "3",
+          "*",
+          "2",
+          "1",
+          "1",
+          "+",
+          "+",
+          "-"
+        ]
+      },
+      "expected": 2
+    }
+  ]
 }

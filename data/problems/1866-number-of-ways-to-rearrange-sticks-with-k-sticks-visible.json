@@ -29,5 +29,41 @@
     "How many ways are there if we fix the position of one stick?"
   ],
   "starter_code": "class Solution:\n    def rearrangeSticks(self, n: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 3,
+        "k": 2
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "n": 5,
+        "k": 5
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 1,
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 4,
+        "k": 1
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "n": 1000,
+        "k": 500
+      },
+      "expected": 761367694
+    }
+  ]
 }

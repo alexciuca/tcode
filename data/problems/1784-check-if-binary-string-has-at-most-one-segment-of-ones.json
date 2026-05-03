@@ -25,5 +25,36 @@
     "The string size is small so you can count all segments of ones with no that have no adjacent ones."
   ],
   "starter_code": "class Solution:\n    def checkOnesSegment(self, s: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "1"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "110"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "1001"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "10101"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "1111111111"
+      },
+      "expected": true
+    }
+  ]
 }

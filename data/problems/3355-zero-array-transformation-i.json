@@ -27,5 +27,135 @@
     "Can we use difference array and prefix sum to check if an index can be made zero?"
   ],
   "starter_code": "class Solution:\n    def isZeroArray(self, nums: List[int], queries: List[List[int]]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          0,
+          1
+        ],
+        "queries": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          4,
+          3,
+          2,
+          1
+        ],
+        "queries": [
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0
+        ],
+        "queries": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          2
+        ],
+        "queries": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "queries": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      },
+      "expected": false
+    }
+  ]
 }

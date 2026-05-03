@@ -25,5 +25,61 @@
     "The answer will be <code>1</code> if the queen is on the path of the rook or bishop and none of them is in between."
   ],
   "starter_code": "class Solution:\n    def minMovesToCaptureTheQueen(self, a: int, b: int, c: int, d: int, e: int, f: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": 1,
+        "b": 1,
+        "c": 2,
+        "d": 2,
+        "e": 8,
+        "f": 8
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "a": 4,
+        "b": 4,
+        "c": 5,
+        "d": 5,
+        "e": 4,
+        "f": 6
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "a": 1,
+        "b": 1,
+        "c": 8,
+        "d": 8,
+        "e": 1,
+        "f": 8
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "a": 5,
+        "b": 5,
+        "c": 1,
+        "d": 1,
+        "e": 5,
+        "f": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "a": 3,
+        "b": 3,
+        "c": 6,
+        "d": 6,
+        "e": 3,
+        "f": 5
+      },
+      "expected": 1
+    }
+  ]
 }

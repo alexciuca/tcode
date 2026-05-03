@@ -22,5 +22,96 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def partitionDisjoint(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          0,
+          6,
+          12,
+          10,
+          8,
+          5,
+          5,
+          8,
+          1,
+          2,
+          1
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          32,
+          64,
+          72,
+          69,
+          65,
+          81,
+          85,
+          36,
+          3,
+          22,
+          37,
+          5,
+          28,
+          7,
+          23,
+          25,
+          32,
+          84,
+          91,
+          100
+        ]
+      },
+      "expected": 18
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          0,
+          3,
+          8,
+          6
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "expected": 9
+    }
+  ]
 }

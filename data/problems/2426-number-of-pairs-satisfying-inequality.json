@@ -33,5 +33,118 @@
     "Iterate through the array backwards."
   ],
   "starter_code": "class Solution:\n    def numberOfPairs(self, nums1: List[int], nums2: List[int], diff: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums1": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "nums2": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "diff": 3
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums1": [
+          10,
+          10,
+          10,
+          10
+        ],
+        "nums2": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "diff": 5
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums1": [
+          -10000,
+          0,
+          10000
+        ],
+        "nums2": [
+          -10000,
+          0,
+          10000
+        ],
+        "diff": 0
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums1": [
+          -5,
+          -3,
+          0,
+          2,
+          4
+        ],
+        "nums2": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "diff": -10000
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums1": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "nums2": [
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "diff": 10000
+      },
+      "expected": 105
+    }
+  ]
 }

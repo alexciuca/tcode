@@ -33,5 +33,70 @@
     "Can we use recursion to generate all possible strings?"
   ],
   "starter_code": "class Solution:\n    def findDifferentBinaryString(self, nums: List[str]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          "0",
+          "1"
+        ]
+      },
+      "expected": "10"
+    },
+    {
+      "args": {
+        "nums": [
+          "00",
+          "01",
+          "11"
+        ]
+      },
+      "expected": "010"
+    },
+    {
+      "args": {
+        "nums": [
+          "0"
+        ]
+      },
+      "expected": "1"
+    },
+    {
+      "args": {
+        "nums": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ]
+      },
+      "expected": "0000111"
+    },
+    {
+      "args": {
+        "nums": [
+          "0000",
+          "0001",
+          "0010",
+          "0011",
+          "0100",
+          "0101",
+          "0110",
+          "0111",
+          "1000",
+          "1001",
+          "1010",
+          "1011",
+          "1100",
+          "1101",
+          "1110",
+          "1111"
+        ]
+      },
+      "expected": "0000000000010000"
+    }
+  ]
 }

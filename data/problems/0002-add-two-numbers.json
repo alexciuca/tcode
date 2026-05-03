@@ -27,5 +27,109 @@
   ],
   "hints": [],
   "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "l1": [
+          2,
+          4,
+          3
+        ],
+        "l2": [
+          5,
+          6,
+          4
+        ]
+      },
+      "expected": [
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "args": {
+        "l1": [
+          0
+        ],
+        "l2": [
+          0
+        ]
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "args": {
+        "l1": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "l2": [
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "expected": [
+        8,
+        9,
+        9,
+        9,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "l1": [
+          9,
+          9
+        ],
+        "l2": [
+          1
+        ]
+      },
+      "expected": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "l1": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "l2": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "expected": [
+        6,
+        8,
+        0,
+        3,
+        5,
+        1
+      ]
+    }
+  ]
 }

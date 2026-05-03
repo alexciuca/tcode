@@ -33,5 +33,133 @@
     "dp(peopleMask, idHat) number of ways to wear different hats given a bitmask (people visited) and used hats from 1 to idHat-1."
   ],
   "starter_code": "class Solution:\n    def numberWays(self, hats: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "hats": [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "hats": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "hats": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "hats": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        ]
+      },
+      "expected": 20
+    },
+    {
+      "args": {
+        "hats": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6
+          ],
+          [
+            7,
+            8,
+            9
+          ],
+          [
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15
+          ],
+          [
+            16,
+            17,
+            18
+          ],
+          [
+            19,
+            20,
+            21
+          ],
+          [
+            22,
+            23,
+            24
+          ],
+          [
+            25,
+            26,
+            27
+          ],
+          [
+            28,
+            29,
+            30
+          ]
+        ]
+      },
+      "expected": 59049
+    }
+  ]
 }

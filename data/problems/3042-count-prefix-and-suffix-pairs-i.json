@@ -33,5 +33,64 @@
     "The answer is the total number of pairs where <code>isPrefixAndSuffix(words[i], words[j]) == true</code>."
   ],
   "starter_code": "class Solution:\n    def countPrefixSuffixPairs(self, words: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "a",
+          "aba",
+          "abab",
+          "ab"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words": [
+          "pa",
+          "papa",
+          "ap",
+          "ap"
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "words": [
+          "abab",
+          "ab"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "words": [
+          "a",
+          "a",
+          "a"
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "words": [
+          "abcdefghij",
+          "abcdefghij",
+          "abcdefghij",
+          "abcdefghij",
+          "abcdefghij",
+          "abc",
+          "abcabcabca",
+          "abcabc",
+          "ab",
+          "a"
+        ]
+      },
+      "expected": 11
+    }
+  ]
 }

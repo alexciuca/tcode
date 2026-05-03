@@ -26,5 +26,67 @@
     "Use three nested loops to find all the triplets."
   ],
   "starter_code": "class Solution:\n    def maximumTripletValue(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          12,
+          6,
+          1,
+          2,
+          7
+        ]
+      },
+      "expected": 77
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1000000,
+          1,
+          1000000,
+          1,
+          1000000
+        ]
+      },
+      "expected": 999999000000
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1000000,
+          2,
+          999999,
+          3,
+          500000
+        ]
+      },
+      "expected": 999997000002
+    }
+  ]
 }

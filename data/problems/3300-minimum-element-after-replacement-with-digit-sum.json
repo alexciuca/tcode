@@ -27,5 +27,64 @@
     "Convert to string and calculate the sum for each element."
   ],
   "starter_code": "class Solution:\n    def minElement(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          10,
+          12,
+          13,
+          14
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          9999,
+          9998,
+          9997
+        ]
+      },
+      "expected": 34
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

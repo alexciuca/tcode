@@ -29,5 +29,65 @@
     "After sorting, it can be seen that the maximum height that we can assign to the <code>i<sup>th</sup></code> element is <code>min(maximumHeight[i], maximumHeight[i - 1] - 1)</code>."
   ],
   "starter_code": "class Solution:\n    def maximumTotalSum(self, maximumHeight: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "maximumHeight": [
+          5,
+          4,
+          3,
+          2
+        ]
+      },
+      "expected": 14
+    },
+    {
+      "args": {
+        "maximumHeight": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "maximumHeight": [
+          10
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "maximumHeight": [
+          5,
+          5,
+          5,
+          1,
+          1
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "maximumHeight": [
+          1000000000,
+          999999999,
+          999999998,
+          999999997,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": -1
+    }
+  ]
 }

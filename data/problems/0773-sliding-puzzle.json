@@ -33,5 +33,74 @@
     "Perform a breadth-first-search, where the nodes are the puzzle boards and edges are if two puzzle boards can be transformed into one another with one move."
   ],
   "starter_code": "class Solution:\n    def slidingPuzzle(self, board: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "board": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            0,
+            5
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "board": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            5,
+            4,
+            0
+          ]
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "board": [
+          [
+            4,
+            1,
+            2
+          ],
+          [
+            5,
+            0,
+            3
+          ]
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "board": [
+          [
+            3,
+            2,
+            4
+          ],
+          [
+            1,
+            5,
+            0
+          ]
+        ]
+      },
+      "expected": 14
+    }
+  ]
 }

@@ -28,5 +28,102 @@
     "Observe that no matter how many subarrays we have, if we have the first subarray on the left, the total cost of the previous subarrays increases by <code>k * total_cost_of_the_subarray</code>. This is because when we increase <code>i</code> to <code>(i + 1)</code>, the cost increase is just the suffix sum of the cost array."
   ],
   "starter_code": "class Solution:\n    def minimumCost(self, nums: List[int], cost: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 2
+      },
+      "expected": 16
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          20,
+          30
+        ],
+        "cost": [
+          5,
+          3,
+          2
+        ],
+        "k": 1
+      },
+      "expected": 70
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "cost": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 1
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          100
+        ],
+        "cost": [
+          1000
+        ],
+        "k": 1
+      },
+      "expected": 200
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          3,
+          8,
+          2,
+          1,
+          4,
+          7,
+          6,
+          9,
+          10
+        ],
+        "cost": [
+          10,
+          5,
+          8,
+          3,
+          1,
+          6,
+          7,
+          4,
+          9,
+          2
+        ],
+        "k": 5
+      },
+      "expected": 56
+    }
+  ]
 }

@@ -26,5 +26,36 @@
     "Perform the replacements simultaneously, and return the number of times the process repeats."
   ],
   "starter_code": "class Solution:\n    def secondsToRemoveOccurrences(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "0110"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "11010110111"
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "s": "0"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "1"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "00001111000011110000111100001111"
+      },
+      "expected": 19
+    }
+  ]
 }

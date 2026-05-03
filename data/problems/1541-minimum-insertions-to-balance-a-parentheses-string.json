@@ -29,5 +29,42 @@
     "If you have '))' with empty stack, add 1 to the answer, If after finishing you have x opening remaining in the stack, add 2x to the answer."
   ],
   "starter_code": "class Solution:\n    def minInsertions(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "())"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "(()))()()"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "()(())"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "))()("
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "(((())))"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": ")))))(((("
+      },
+      "expected": 12
+    }
+  ]
 }

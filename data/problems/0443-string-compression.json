@@ -27,5 +27,101 @@
     "How do you know if you are at the end of a consecutive group of characters?"
   ],
   "starter_code": "class Solution:\n    def compress(self, chars: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "chars": [
+          "a",
+          "2",
+          "b",
+          "2",
+          "c",
+          "3",
+          "c"
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "chars": [
+          "a"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "chars": [
+          "a",
+          "b",
+          "1",
+          "2",
+          "b",
+          "b",
+          "b",
+          "b",
+          "b",
+          "b",
+          "b",
+          "b",
+          "b"
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "chars": [
+          "a",
+          "2",
+          "6",
+          "b",
+          "2",
+          "c",
+          "3",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "b",
+          "b",
+          "c",
+          "c",
+          "c"
+        ]
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "chars": [
+          "A",
+          "1",
+          "!",
+          "@",
+          "Z",
+          "4",
+          "Z",
+          "Z"
+        ]
+      },
+      "expected": 6
+    }
+  ]
 }

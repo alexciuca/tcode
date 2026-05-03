@@ -34,5 +34,160 @@
     "In the remaining tree, remove each leaf node and its parent from the tree. The remaining nodes in the tree are the ones that must be visited. Hence, the answer is equal to (# remaining nodes -1) * 2"
   ],
   "starter_code": "class Solution:\n    def collectTheCoins(self, coins: List[int], edges: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "coins": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "coins": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "coins": [
+          1
+        ],
+        "edges": []
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "coins": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "coins": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ]
+        ]
+      },
+      "expected": 18
+    }
+  ]
 }

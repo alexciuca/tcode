@@ -24,5 +24,67 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def numRabbits(self, answers: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "answers": [
+          1,
+          1,
+          2
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "answers": [
+          10,
+          10,
+          10
+        ]
+      },
+      "expected": 11
+    },
+    {
+      "args": {
+        "answers": []
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "answers": [
+          2,
+          2,
+          2
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "answers": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "answers": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected": 9
+    }
+  ]
 }

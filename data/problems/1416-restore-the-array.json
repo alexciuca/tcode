@@ -29,5 +29,41 @@
     "Keep in mind that the answer is modulo 10^9 + 7 and take the mod for each operation."
   ],
   "starter_code": "class Solution:\n    def numberOfArrays(self, s: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "165462",
+        "k": 60
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "s": "0",
+        "k": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "1",
+        "k": 1000000000
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "1234567890",
+        "k": 100
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901",
+        "k": 1000000000
+      },
+      "expected": 0
+    }
+  ]
 }

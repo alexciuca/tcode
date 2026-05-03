@@ -33,5 +33,69 @@
     "Count the number of pairs with concatenation equals to target."
   ],
   "starter_code": "class Solution:\n    def numOfPairs(self, nums: List[str], target: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          "1",
+          "0",
+          "1"
+        ],
+        "target": "101"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          "2",
+          "3",
+          "5"
+        ],
+        "target": "25"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "target": "11"
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "nums": [
+          "9",
+          "8",
+          "7"
+        ],
+        "target": "97"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          "12",
+          "34",
+          "56",
+          "78",
+          "90",
+          "11",
+          "22",
+          "33",
+          "44",
+          "55"
+        ],
+        "target": "1234"
+      },
+      "expected": 1
+    }
+  ]
 }

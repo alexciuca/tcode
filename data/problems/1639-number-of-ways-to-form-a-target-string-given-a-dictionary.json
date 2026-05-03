@@ -29,5 +29,65 @@
     "Use dynamic programing to calculate the number of ways to get the target string using the frequency array."
   ],
   "starter_code": "class Solution:\n    def numWays(self, words: List[str], target: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "acca",
+          "bbbb",
+          "acca"
+        ],
+        "target": "aba"
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "words": [
+          "abba",
+          "baab"
+        ],
+        "target": "baa"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "words": [
+          "a"
+        ],
+        "target": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words": [
+          "abc",
+          "def",
+          "ghi"
+        ],
+        "target": "abcd"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "words": [
+          "aaa",
+          "aaa",
+          "aaa",
+          "aaa",
+          "aaa",
+          "aaa",
+          "aaa",
+          "aaa",
+          "aaa",
+          "aaa"
+        ],
+        "target": "aaaaaaaaaa"
+      },
+      "expected": 0
+    }
+  ]
 }

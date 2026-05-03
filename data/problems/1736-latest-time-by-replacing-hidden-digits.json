@@ -28,5 +28,36 @@
     "To check if the solution is okay, you need to find out if it's valid and matches every character"
   ],
   "starter_code": "class Solution:\n    def maximumTime(self, time: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "time": "2?:?0"
+      },
+      "expected": "23:50"
+    },
+    {
+      "args": {
+        "time": "23:5?"
+      },
+      "expected": "23:59"
+    },
+    {
+      "args": {
+        "time": "??:??"
+      },
+      "expected": "23:59"
+    },
+    {
+      "args": {
+        "time": "0?:0?"
+      },
+      "expected": "09:09"
+    },
+    {
+      "args": {
+        "time": "1?:5?"
+      },
+      "expected": "19:59"
+    }
+  ]
 }

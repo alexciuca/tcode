@@ -27,5 +27,28 @@
     "Split the string into words, then look at adjacent triples of words."
   ],
   "starter_code": "class Solution:\n    def findOcurrences(self, text: str, first: str, second: str) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "text": "alice is a good girl she is a good student",
+        "first": "a",
+        "second": "good"
+      },
+      "expected": [
+        "girl",
+        "student"
+      ]
+    },
+    {
+      "args": {
+        "text": "we will we will rock you",
+        "first": "we",
+        "second": "will"
+      },
+      "expected": [
+        "we",
+        "rock"
+      ]
+    }
+  ]
 }

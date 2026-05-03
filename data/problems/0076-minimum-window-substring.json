@@ -33,5 +33,62 @@
     "Continue expanding the right and left pointers until you reach the end of s."
   ],
   "starter_code": "class Solution:\n    def minWindow(self, s: str, t: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ADOBECODEBANC",
+        "t": "ABC"
+      },
+      "expected": "BANC"
+    },
+    {
+      "args": {
+        "s": "a",
+        "t": "a"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "this is a test string",
+        "t": "tist"
+      },
+      "expected": "t stri"
+    },
+    {
+      "args": {
+        "s": "geeksforgeeks",
+        "t": "ork"
+      },
+      "expected": "ksfor"
+    },
+    {
+      "args": {
+        "s": "abc",
+        "t": ""
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "abc",
+        "t": "b"
+      },
+      "expected": "b"
+    },
+    {
+      "args": {
+        "s": "abc",
+        "t": "d"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "abc",
+        "t": "abcd"
+      },
+      "expected": ""
+    }
+  ]
 }

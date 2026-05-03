@@ -27,5 +27,36 @@
     "Keep repeating until the frequency of all characters is zero."
   ],
   "starter_code": "class Solution:\n    def sortString(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ecdba"
+      },
+      "expected": "aebdc"
+    },
+    {
+      "args": {
+        "s": "aab"
+      },
+      "expected": "aba"
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "zzaabbcc"
+      },
+      "expected": "azazbcbc"
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": "azazbybycxcxdwdwevevfufugtgthshsirirjqjqkpkplolomnmn"
+    }
+  ]
 }

@@ -27,5 +27,72 @@
     "Group the array elements by the sum of their digits, and find the largest two elements of each group."
   ],
   "starter_code": "class Solution:\n    def maximumSum(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          18,
+          43,
+          36,
+          13,
+          7
+        ]
+      },
+      "expected": 54
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          12,
+          19,
+          14
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          999999999,
+          1000000000,
+          111111111
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          10,
+          1,
+          99,
+          9,
+          90,
+          81,
+          72,
+          63,
+          54,
+          45,
+          36,
+          27,
+          18
+        ]
+      },
+      "expected": 171
+    }
+  ]
 }

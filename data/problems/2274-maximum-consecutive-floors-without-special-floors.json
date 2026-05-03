@@ -28,5 +28,66 @@
     "To consider these cases, we have answer = max(answer, special[0] – bottom, top – special[n-1])."
   ],
   "starter_code": "class Solution:\n    def maxConsecutive(self, bottom: int, top: int, special: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "bottom": 1,
+        "top": 10,
+        "special": [
+          2,
+          5,
+          8
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "bottom": 1,
+        "top": 100,
+        "special": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      "expected": 50
+    },
+    {
+      "args": {
+        "bottom": 1,
+        "top": 5,
+        "special": [
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "bottom": 1000000000,
+        "top": 1000000009,
+        "special": [
+          1000000001,
+          1000000005,
+          1000000008
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "bottom": 1,
+        "top": 1000000000,
+        "special": [
+          500000000
+        ]
+      },
+      "expected": 500000000
+    }
+  ]
 }

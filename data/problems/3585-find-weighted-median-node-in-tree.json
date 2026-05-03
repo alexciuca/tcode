@@ -41,5 +41,201 @@
     "In both cases, binary lifting with sparse tables lets you jump by powers of two while tracking cumulative weights to locate the weighted median in O(log n)"
   ],
   "starter_code": "class Solution:\n    def findMedian(self, n: int, edges: List[List[int]], queries: List[List[int]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 3,
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ],
+        "queries": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "n": 5,
+        "edges": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            4
+          ]
+        ],
+        "queries": [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        1
+      ]
+    },
+    {
+      "args": {
+        "n": 2,
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "queries": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        0
+      ]
+    },
+    {
+      "args": {
+        "n": 7,
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            1000000000
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            1
+          ],
+          [
+            2,
+            5,
+            1
+          ],
+          [
+            2,
+            6,
+            1
+          ]
+        ],
+        "queries": [
+          [
+            0,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "args": {
+        "n": 4,
+        "edges": [
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            2,
+            3,
+            5
+          ]
+        ],
+        "queries": [
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "expected": [
+        2,
+        1,
+        2,
+        1
+      ]
+    }
+  ]
 }

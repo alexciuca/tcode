@@ -34,5 +34,74 @@
     "Use a heap with the sliding window technique to optimize the dp."
   ],
   "starter_code": "class Solution:\n    def constrainedSubsetSum(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          10,
+          -2,
+          -10,
+          -5,
+          20
+        ],
+        "k": 2
+      },
+      "expected": 23
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          -1,
+          -2,
+          5
+        ],
+        "k": 1
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          -5,
+          -4,
+          -3
+        ],
+        "k": 2
+      },
+      "expected": -3
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          5,
+          -1,
+          0
+        ],
+        "k": 3
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          1000,
+          -1000,
+          1000,
+          -1000,
+          1000,
+          -1000,
+          1000,
+          -1000,
+          1000,
+          -1000
+        ],
+        "k": 5
+      },
+      "expected": 5000
+    }
+  ]
 }

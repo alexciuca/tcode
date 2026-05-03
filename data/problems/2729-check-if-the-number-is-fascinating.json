@@ -24,5 +24,36 @@
     "Check if the resulting number contains all the digits from 1 to 9 exactly once."
   ],
   "starter_code": "class Solution:\n    def isFascinating(self, n: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 192
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 100
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "n": 999
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "n": 123
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "n": 345
+      },
+      "expected": false
+    }
+  ]
 }

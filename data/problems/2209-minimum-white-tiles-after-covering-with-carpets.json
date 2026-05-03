@@ -28,5 +28,46 @@
     "The transition will be whether to put down the carpet at position i (if possible), or not."
   ],
   "starter_code": "class Solution:\n    def minimumWhiteTiles(self, floor: str, numCarpets: int, carpetLen: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "floor": "10110",
+        "numCarpets": 2,
+        "carpetLen": 2
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "floor": "0000000",
+        "numCarpets": 1,
+        "carpetLen": 3
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "floor": "1111111",
+        "numCarpets": 2,
+        "carpetLen": 3
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "floor": "101010101",
+        "numCarpets": 1,
+        "carpetLen": 9
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "floor": "1010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010",
+        "numCarpets": 50,
+        "carpetLen": 2
+      },
+      "expected": 0
+    }
+  ]
 }

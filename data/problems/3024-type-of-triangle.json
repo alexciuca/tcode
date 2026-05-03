@@ -26,5 +26,56 @@
     "Simply count the number of unique edge lengths after checking it’s a valid triangle."
   ],
   "starter_code": "class Solution:\n    def triangleType(self, nums: List[int]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": "scalene"
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          2,
+          2
+        ]
+      },
+      "expected": "equilateral"
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          2
+        ]
+      },
+      "expected": "none"
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          100,
+          100
+        ]
+      },
+      "expected": "equilateral"
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": "none"
+    }
+  ]
 }

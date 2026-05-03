@@ -27,5 +27,36 @@
     "Can the solution be optimized using a stack?"
   ],
   "starter_code": "class Solution:\n    def minLength(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ABCD"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "AAABBBCCC"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "CA"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "ACBACA"
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "s": "ABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABAB"
+      },
+      "expected": 0
+    }
+  ]
 }

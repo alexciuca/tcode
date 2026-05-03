@@ -27,5 +27,41 @@
     "For the first 2 conditions, take care that you can only change characters to lowercase letters, so you can't make 'z' the smallest letter in one of the strings or 'a' the largest letter in one of them."
   ],
   "starter_code": "class Solution:\n    def minCharacters(self, a: str, b: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": "aba",
+        "b": "ccd"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "a": "abcd",
+        "b": "aaaa"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "a": "z",
+        "b": "z"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "a": "aaaaaa",
+        "b": "bbbbbb"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "a": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "b": "zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected": 0
+    }
+  ]
 }

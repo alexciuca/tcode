@@ -28,5 +28,94 @@
     "If you are given the middle node, the node before it, and the node after it, how can you modify the linked list?"
   ],
   "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          1
+        ]
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          2
+        ]
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ]
 }

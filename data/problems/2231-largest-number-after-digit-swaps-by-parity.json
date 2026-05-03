@@ -25,5 +25,36 @@
     "Reconstruct the number by giving the earlier digits the highest available digit of the same parity."
   ],
   "starter_code": "class Solution:\n    def largestInteger(self, num: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": 123456
+      },
+      "expected": 563412
+    },
+    {
+      "args": {
+        "num": 2468
+      },
+      "expected": 8642
+    },
+    {
+      "args": {
+        "num": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "num": 9876543210
+      },
+      "expected": 9876543210
+    },
+    {
+      "args": {
+        "num": 1000000000
+      },
+      "expected": 1000000000
+    }
+  ]
 }

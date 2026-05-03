@@ -30,5 +30,41 @@
     "Use Binary Search."
   ],
   "starter_code": "class Solution:\n    def validSubstringCount(self, word1: str, word2: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word1": "ababab",
+        "word2": "ab"
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "word1": "aabbcc",
+        "word2": "abc"
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "word1": "a",
+        "word2": "aa"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "word1": "zzz",
+        "word2": "z"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "word1": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopq",
+        "word2": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 2496
+    }
+  ]
 }

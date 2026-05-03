@@ -25,5 +25,24 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def numDecodings(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "12"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "226"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "101"
+      },
+      "expected": 1
+    }
+  ]
 }

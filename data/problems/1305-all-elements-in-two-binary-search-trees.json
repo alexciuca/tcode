@@ -28,5 +28,107 @@
     "Merge the two trees in one list and sort it."
   ],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def getAllElements(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "root1": [
+          2,
+          1,
+          4
+        ],
+        "root2": [
+          1,
+          0,
+          3
+        ]
+      },
+      "expected": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "args": {
+        "root1": [
+          0,
+          -10,
+          10
+        ],
+        "root2": [
+          5,
+          1,
+          7,
+          0,
+          2
+        ]
+      },
+      "expected": [
+        -10,
+        0,
+        0,
+        1,
+        2,
+        5,
+        7,
+        10
+      ]
+    },
+    {
+      "args": {
+        "root1": [],
+        "root2": [
+          5,
+          1,
+          7,
+          0,
+          2
+        ]
+      },
+      "expected": [
+        0,
+        1,
+        2,
+        5,
+        7
+      ]
+    },
+    {
+      "args": {
+        "root1": [
+          0,
+          -10,
+          10
+        ],
+        "root2": []
+      },
+      "expected": [
+        -10,
+        0,
+        10
+      ]
+    },
+    {
+      "args": {
+        "root1": [
+          1,
+          null,
+          8
+        ],
+        "root2": [
+          8,
+          1
+        ]
+      },
+      "expected": [
+        1,
+        1,
+        8,
+        8
+      ]
+    }
+  ]
 }

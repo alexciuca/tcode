@@ -23,5 +23,51 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def getMaxRepetitions(self, s1: str, n1: int, s2: str, n2: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s1": "acb",
+        "n1": 4,
+        "s2": "ab",
+        "n2": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s1": "abc",
+        "n1": 5,
+        "s2": "abc",
+        "n2": 1
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "s1": "a",
+        "n1": 100,
+        "s2": "aa",
+        "n2": 1
+      },
+      "expected": 50
+    },
+    {
+      "args": {
+        "s1": "aab",
+        "n1": 1,
+        "s2": "baa",
+        "n2": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s1": "ab",
+        "n1": 1000000,
+        "s2": "ba",
+        "n2": 1000000
+      },
+      "expected": 0
+    }
+  ]
 }

@@ -31,5 +31,63 @@
     "After removing some subarray, the result is the concatenation of a sorted prefix and a sorted suffix, where the last element of the prefix is smaller than the first element of the suffix."
   ],
   "starter_code": "class Solution:\n    def findLengthOfShortestSubarray(self, arr: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          10,
+          0,
+          11,
+          12
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "arr": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "arr": [
+          1
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "arr": [
+          2,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "arr": [
+          0,
+          0,
+          0,
+          1000000000,
+          1000000000,
+          999999999,
+          1000000000
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

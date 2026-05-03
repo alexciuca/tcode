@@ -32,5 +32,73 @@
     "How can we combine <code>sp[a][i]</code> with <code>sp[b][i + 2^a]</code> to find the answer for the subarray <code>nums[i...i + 2^a + 2^b - 1]</code>?"
   ],
   "starter_code": "class Solution:\n    def countNonDecreasingSubarrays(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          4,
+          2,
+          3,
+          5,
+          1
+        ],
+        "k": 2
+      },
+      "expected": 11
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "k": 1
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "k": 0
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 1000000000
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          1,
+          999999999,
+          2,
+          500000000,
+          3,
+          1,
+          999999998
+        ],
+        "k": 1000000000
+      },
+      "expected": 25
+    }
+  ]
 }

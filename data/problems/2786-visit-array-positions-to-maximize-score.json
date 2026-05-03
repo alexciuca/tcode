@@ -25,5 +25,73 @@
     "Let dp[i] be the answer to the subarray nums[0…i]. What are the transitions of this dp?"
   ],
   "starter_code": "class Solution:\n    def maxScore(self, nums: List[int], x: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          3,
+          6,
+          1,
+          9,
+          2
+        ],
+        "x": 5
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "x": 1
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "x": 3
+      },
+      "expected": 25
+    },
+    {
+      "args": {
+        "nums": [
+          1000000,
+          999999,
+          1000000
+        ],
+        "x": 1
+      },
+      "expected": 2999999
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20
+        ],
+        "x": 2
+      },
+      "expected": 110
+    }
+  ]
 }

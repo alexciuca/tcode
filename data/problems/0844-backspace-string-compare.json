@@ -27,5 +27,34 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def backspaceCompare(self, s: str, t: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ab#c",
+        "t": "ad#c"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "ab##",
+        "t": "c#d#"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "a##c",
+        "t": "#a#c"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "a#c",
+        "t": "b"
+      },
+      "expected": false
+    }
+  ]
 }

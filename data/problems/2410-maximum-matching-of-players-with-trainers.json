@@ -27,5 +27,162 @@
     "Construct the matching greedily."
   ],
   "starter_code": "class Solution:\n    def matchPlayersAndTrainers(self, players: List[int], trainers: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "players": [
+          4,
+          7,
+          9
+        ],
+        "trainers": [
+          2,
+          5,
+          8,
+          8
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "players": [
+          1,
+          1,
+          1
+        ],
+        "trainers": [
+          10
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "players": [
+          5
+        ],
+        "trainers": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "players": [
+          999999999,
+          1000000000
+        ],
+        "trainers": [
+          999999998,
+          1000000000
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "players": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          6,
+          6,
+          6,
+          6,
+          7,
+          7,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "trainers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "expected": 40
+    }
+  ]
 }

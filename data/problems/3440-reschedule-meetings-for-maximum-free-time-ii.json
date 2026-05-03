@@ -34,5 +34,80 @@
     "If we reschedule a meeting earlier or later, we need to find a gap of length at least <code>endTime[i] - startTime[i]</code>. Try maintaining the gaps in some sorted data structure."
   ],
   "starter_code": "class Solution:\n    def maxFreeTime(self, eventTime: int, startTime: List[int], endTime: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "eventTime": 10,
+        "startTime": [
+          1,
+          5
+        ],
+        "endTime": [
+          2,
+          6
+        ]
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "eventTime": 100,
+        "startTime": [
+          10,
+          30,
+          60
+        ],
+        "endTime": [
+          15,
+          45,
+          80
+        ]
+      },
+      "expected": 45
+    },
+    {
+      "args": {
+        "eventTime": 1000000000,
+        "startTime": [
+          1
+        ],
+        "endTime": [
+          999999999
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "eventTime": 20,
+        "startTime": [
+          0,
+          10
+        ],
+        "endTime": [
+          5,
+          20
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "eventTime": 1000000000,
+        "startTime": [
+          1,
+          100000,
+          500000000,
+          999999998
+        ],
+        "endTime": [
+          50000,
+          200000,
+          600000000,
+          999999999
+        ]
+      },
+      "expected": 899799998
+    }
+  ]
 }

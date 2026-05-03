@@ -29,5 +29,133 @@
     "Choose two distinct groups (two horizontal lines), and from each group select two points to form a trapezoid."
   ],
   "starter_code": "class Solution:\n    def countTrapezoids(self, points: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "points": [
+          [
+            -100000000,
+            -100000000
+          ],
+          [
+            100000000,
+            100000000
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            50000000,
+            50000000
+          ],
+          [
+            25000000,
+            -25000000
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            1
+          ]
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

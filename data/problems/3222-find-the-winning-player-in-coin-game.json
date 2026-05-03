@@ -26,5 +26,41 @@
     "Determine the winner from its parity."
   ],
   "starter_code": "class Solution:\n    def winningPlayer(self, x: int, y: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "x": 8,
+        "y": 11
+      },
+      "expected": "Bob"
+    },
+    {
+      "args": {
+        "x": 1,
+        "y": 2
+      },
+      "expected": "Bob"
+    },
+    {
+      "args": {
+        "x": 1,
+        "y": 1
+      },
+      "expected": "Bob"
+    },
+    {
+      "args": {
+        "x": 100,
+        "y": 100
+      },
+      "expected": "Alice"
+    },
+    {
+      "args": {
+        "x": 50,
+        "y": 25
+      },
+      "expected": "Bob"
+    }
+  ]
 }

@@ -25,5 +25,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isValid(self, s: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aabcbc"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "abcabcababcc"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "aaabbbccc"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "aabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbcc"
+      },
+      "expected": false
+    }
+  ]
 }

@@ -24,5 +24,40 @@
   ],
   "hints": [],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def minDepth(self, root: Optional[TreeNode]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "root": [
+          5,
+          4,
+          8,
+          11,
+          null,
+          13,
+          4,
+          7,
+          2,
+          null,
+          null,
+          null,
+          1
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "root": []
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "root": [
+          1
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

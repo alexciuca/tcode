@@ -25,5 +25,77 @@
     "Add <code>min(nums[i] % 3, 3 - (num[i] % 3))</code> to the count of operations."
   ],
   "starter_code": "class Solution:\n    def minimumOperations(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          6,
+          9,
+          10,
+          3
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          4,
+          5,
+          7,
+          8
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          3,
+          6,
+          9,
+          12,
+          15
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          5,
+          8,
+          11,
+          14,
+          17,
+          20,
+          23,
+          26,
+          29,
+          32,
+          35,
+          38,
+          41,
+          44,
+          47,
+          50
+        ]
+      },
+      "expected": 17
+    }
+  ]
 }

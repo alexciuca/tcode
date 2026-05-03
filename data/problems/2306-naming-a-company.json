@@ -32,5 +32,107 @@
     "We can efficiently count the valid pairings for an idea if we already know how many ideas starting with a letter x are within a group that does not contain any ideas with starting letter y for all letters x and y."
   ],
   "starter_code": "class Solution:\n    def distinctNames(self, ideas: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "ideas": [
+          "coffee",
+          "donuts",
+          "time",
+          "toffee"
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "ideas": [
+          "lack",
+          "back",
+          "pack",
+          "sack",
+          "track",
+          "lack"
+        ]
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "ideas": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "ideas": [
+          "aa",
+          "aaa",
+          "bbb",
+          "ccc",
+          "ddd"
+        ]
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "ideas": [
+          "ab",
+          "ba",
+          "ac",
+          "ca",
+          "ad",
+          "da",
+          "ae",
+          "ea",
+          "af",
+          "fa",
+          "ag",
+          "ga",
+          "ah",
+          "ha",
+          "ai",
+          "ia",
+          "aj",
+          "ja",
+          "ak",
+          "ka",
+          "al",
+          "la",
+          "am",
+          "ma",
+          "an",
+          "na",
+          "ao",
+          "oa",
+          "ap",
+          "pa",
+          "aq",
+          "qa",
+          "ar",
+          "ra",
+          "as",
+          "sa",
+          "at",
+          "ta",
+          "au",
+          "ua",
+          "av",
+          "va",
+          "aw",
+          "wa",
+          "ax",
+          "xa",
+          "ay",
+          "ya"
+        ]
+      },
+      "expected": 600
+    }
+  ]
 }

@@ -28,5 +28,101 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "k": 4,
+        "x": 3
+      },
+      "expected": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          1,
+          1,
+          10,
+          20,
+          30
+        ],
+        "k": 2,
+        "x": 15
+      },
+      "expected": [
+        10,
+        20
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          -10,
+          -5,
+          0,
+          5,
+          10
+        ],
+        "k": 3,
+        "x": 0
+      },
+      "expected": [
+        -5,
+        0,
+        5
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          -10000,
+          -9999,
+          9999,
+          10000
+        ],
+        "k": 1,
+        "x": -10000
+      },
+      "expected": [
+        -10000
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "k": 5,
+        "x": 7
+      },
+      "expected": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ]
 }

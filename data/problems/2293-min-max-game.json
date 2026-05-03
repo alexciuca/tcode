@@ -26,5 +26,74 @@
     "Note that the size of the array decreases exponentially, so the process will terminate after just O(log n) steps."
   ],
   "starter_code": "class Solution:\n    def minMaxGame(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          3,
+          5,
+          4
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          3
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          3,
+          5,
+          4,
+          2,
+          8,
+          7,
+          6
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000
+        ]
+      },
+      "expected": 1000000000
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

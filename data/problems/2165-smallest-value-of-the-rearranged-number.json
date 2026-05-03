@@ -24,5 +24,36 @@
     "For negative numbers, the digits should be arranged in descending order."
   ],
   "starter_code": "class Solution:\n    def smallestNumber(self, num: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": 54321
+      },
+      "expected": 12345
+    },
+    {
+      "args": {
+        "num": -54321
+      },
+      "expected": -54321
+    },
+    {
+      "args": {
+        "num": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "num": -1
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "num": 1000000000000000
+      },
+      "expected": 1000000000000000
+    }
+  ]
 }

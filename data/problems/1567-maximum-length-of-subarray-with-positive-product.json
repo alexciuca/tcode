@@ -30,5 +30,78 @@
     "Otherwise, we have two choices, either - remove the prefix till the first negative element in this subarray, or remove the suffix starting from the last negative element in this subarray."
   ],
   "starter_code": "class Solution:\n    def getMaxLen(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          -2,
+          -3,
+          4
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          1,
+          -2,
+          -3,
+          -4
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          -1
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          1,
+          2,
+          3,
+          4,
+          5,
+          -1,
+          -1,
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected": 13
+    }
+  ]
 }

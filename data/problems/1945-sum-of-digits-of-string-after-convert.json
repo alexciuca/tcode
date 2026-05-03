@@ -29,5 +29,41 @@
     "After The first transform, we can just do the rest of the transforms by brute force"
   ],
   "starter_code": "class Solution:\n    def getLucky(self, s: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "dbk",
+        "k": 2
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "s": "a",
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aabbcc",
+        "k": 3
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "z",
+        "k": 10
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "k": 5
+      },
+      "expected": 9
+    }
+  ]
 }

@@ -28,5 +28,111 @@
     "After prime factorizing ki, suppose there are x amount of prime factor. There are (x + n - 1) choose (n - 1) ways to distribute the x prime factors into n positions, allowing repetitions."
   ],
   "starter_code": "class Solution:\n    def waysToFillArray(self, queries: List[List[int]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "queries": [
+          [
+            6,
+            4
+          ]
+        ]
+      },
+      "expected": [
+        21
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        2
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          [
+            5,
+            1
+          ],
+          [
+            3,
+            10000
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        225
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            3,
+            12
+          ]
+        ]
+      },
+      "expected": [
+        3,
+        20,
+        18
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          [
+            10,
+            9999
+          ],
+          [
+            8,
+            7560
+          ],
+          [
+            6,
+            5040
+          ],
+          [
+            4,
+            1260
+          ],
+          [
+            7,
+            2310
+          ]
+        ]
+      },
+      "expected": [
+        5500,
+        921600,
+        95256,
+        1600,
+        16807
+      ]
+    }
+  ]
 }

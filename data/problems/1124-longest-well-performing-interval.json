@@ -28,5 +28,81 @@
     "Using prefix sums (PrefixSum[i+1] = A[0] + A[1] + ... + A[i]), you need to find for each j, the smallest i < j with PrefixSum[i] + 1 == PrefixSum[j]."
   ],
   "starter_code": "class Solution:\n    def longestWPI(self, hours: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "hours": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "hours": [
+          6,
+          6,
+          6
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "hours": [
+          9
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "hours": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          9
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "hours": [
+          9,
+          8,
+          9,
+          8,
+          9,
+          8,
+          9,
+          8,
+          9,
+          8,
+          9,
+          8,
+          9,
+          8,
+          9,
+          8,
+          9,
+          8,
+          9,
+          8
+        ]
+      },
+      "expected": 19
+    }
+  ]
 }

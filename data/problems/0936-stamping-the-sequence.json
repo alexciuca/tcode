@@ -24,5 +24,64 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def movesToStamp(self, stamp: str, target: str) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "stamp": "abc",
+        "target": "ababc"
+      },
+      "expected": [
+        0,
+        2
+      ]
+    },
+    {
+      "args": {
+        "stamp": "ab",
+        "target": "ba"
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "stamp": "a",
+        "target": "aaaa"
+      },
+      "expected": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "args": {
+        "stamp": "xyz",
+        "target": "xyzxyzxyz"
+      },
+      "expected": [
+        6,
+        3,
+        0
+      ]
+    },
+    {
+      "args": {
+        "stamp": "abcdefghij",
+        "target": "abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij"
+      },
+      "expected": [
+        90,
+        80,
+        70,
+        60,
+        50,
+        40,
+        30,
+        20,
+        10,
+        0
+      ]
+    }
+  ]
 }

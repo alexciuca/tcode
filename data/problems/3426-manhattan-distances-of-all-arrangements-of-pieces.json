@@ -26,5 +26,46 @@
     "A particular pair of positions will be counted exactly <code>C(m * n - 2, k - 2)</code> times. Calculate the total distance for all pairs of positions and multiply it with <code>C(m * n - 2, k - 2)</code>."
   ],
   "starter_code": "class Solution:\n    def distanceSum(self, m: int, n: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "m": 2,
+        "n": 2,
+        "k": 2
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "m": 3,
+        "n": 3,
+        "k": 2
+      },
+      "expected": 72
+    },
+    {
+      "args": {
+        "m": 1,
+        "n": 5,
+        "k": 2
+      },
+      "expected": 20
+    },
+    {
+      "args": {
+        "m": 2,
+        "n": 3,
+        "k": 6
+      },
+      "expected": 25
+    },
+    {
+      "args": {
+        "m": 100,
+        "n": 1000,
+        "k": 2
+      },
+      "expected": 314987169
+    }
+  ]
 }

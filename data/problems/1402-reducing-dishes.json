@@ -31,5 +31,65 @@
     "If adding the current element to the previous best like-time coefficient and its corresponding element sum would increase the best like-time coefficient, then go ahead and add it. Otherwise, keep the previous best like-time coefficient."
   ],
   "starter_code": "class Solution:\n    def maxSatisfaction(self, satisfaction: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "satisfaction": [
+          -2,
+          -1,
+          0,
+          3,
+          5
+        ]
+      },
+      "expected": 33
+    },
+    {
+      "args": {
+        "satisfaction": [
+          10
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "satisfaction": [
+          -1000,
+          -1000,
+          -1000
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "satisfaction": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 55
+    },
+    {
+      "args": {
+        "satisfaction": [
+          -100,
+          -80,
+          -50,
+          -30,
+          25,
+          40,
+          50,
+          60,
+          75,
+          100
+        ]
+      },
+      "expected": 2340
+    }
+  ]
 }

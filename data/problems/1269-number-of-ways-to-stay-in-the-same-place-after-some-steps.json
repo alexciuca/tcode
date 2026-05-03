@@ -27,5 +27,41 @@
     "Notice that the computational complexity does not depend of \"arrlen\"."
   ],
   "starter_code": "class Solution:\n    def numWays(self, steps: int, arrLen: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "steps": 3,
+        "arrLen": 2
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "steps": 2,
+        "arrLen": 4
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "steps": 1,
+        "arrLen": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "steps": 500,
+        "arrLen": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "steps": 500,
+        "arrLen": 1000000
+      },
+      "expected": 374847123
+    }
+  ]
 }

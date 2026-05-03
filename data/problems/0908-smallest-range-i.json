@@ -26,5 +26,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def smallestRangeI(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": [
+          1
+        ],
+        "k": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "a": [
+          0,
+          10
+        ],
+        "k": 2
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "a": [
+          1,
+          3,
+          6
+        ],
+        "k": 3
+      },
+      "expected": 0
+    }
+  ]
 }

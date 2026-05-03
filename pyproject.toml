@@ -41,10 +41,4 @@ reportAttributeAccessIssue = "none"
 [dependency-groups]
 dev = [
     "ruff>=0.15.6",
-    "pytest>=8.0.0",
 ]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-addopts = "-q"
-pythonpath = ["src"]

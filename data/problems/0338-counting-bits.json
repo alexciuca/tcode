@@ -25,5 +25,19 @@
     "Or does the odd/even status of the number help you in calculating the number of 1s?"
   ],
   "starter_code": "class Solution:\n    def countBits(self, n: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": 5
+      },
+      "expected": [
+        0,
+        1,
+        1,
+        2,
+        1,
+        2
+      ]
+    }
+  ]
 }

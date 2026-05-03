@@ -20,17 +20,171 @@ class TestResult:
 
 
 def _extract_method_name(starter_code: str) -> str:
+    # Find first method inside Solution, skipping commented helper classes.
+    solution_match = re.search(r"^class Solution", starter_code, re.MULTILINE)
+    if solution_match:
+        after_solution = starter_code[solution_match.start() :]
+        method_match = re.search(r"def (\w+)\(self", after_solution)
+        if method_match:
+            return method_match.group(1)
+    # Fallback: first def with self anywhere
     match = re.search(r"def (\w+)\(self", starter_code)
     return match.group(1) if match else "solve"
 
 
-def _build_harness(code: str, method_name: str, test_cases: list) -> str:
+_NODE_HELPERS = """\
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+class Node:
+    def __init__(self, val=0, neighbors=None, left=None, right=None,
+                 next=None, children=None, random=None):
+        self.val = val
+        self.neighbors = neighbors if neighbors is not None else []
+        self.left = left
+        self.right = right
+        self.next = next
+        self.children = children if children is not None else []
+        self.random = random
+
+def _list_to_tree(arr):
+    if not arr or arr[0] is None:
+        return None
+    root = TreeNode(arr[0])
+    queue = [root]
+    i = 1
+    while queue and i < len(arr):
+        node = queue.pop(0)
+        if i < len(arr) and arr[i] is not None:
+            node.left = TreeNode(arr[i])
+            queue.append(node.left)
+        i += 1
+        if i < len(arr) and arr[i] is not None:
+            node.right = TreeNode(arr[i])
+            queue.append(node.right)
+        i += 1
+    return root
+
+def _tree_to_list(root):
+    if not root:
+        return []
+    result = []
+    queue = [root]
+    while queue:
+        node = queue.pop(0)
+        if node:
+            result.append(node.val)
+            queue.append(node.left)
+            queue.append(node.right)
+        else:
+            result.append(None)
+    while result and result[-1] is None:
+        result.pop()
+    return result
+
+def _list_to_linked(arr):
+    if not arr:
+        return None
+    head = ListNode(arr[0])
+    current = head
+    for val in arr[1:]:
+        current.next = ListNode(val)
+        current = current.next
+    return head
+
+def _linked_to_list(head):
+    result = []
+    while head:
+        result.append(head.val)
+        head = head.next
+    return result
+
+def _convert_arg(name, value, type_hint):
+    if value is None:
+        return None
+    if "TreeNode" in type_hint and isinstance(value, list):
+        return _list_to_tree(value)
+    if "ListNode" in type_hint and isinstance(value, list):
+        return _list_to_linked(value)
+    return value
+
+def _convert_result(value):
+    if isinstance(value, TreeNode):
+        return _tree_to_list(value)
+    if isinstance(value, ListNode):
+        return _linked_to_list(value)
+    if isinstance(value, list):
+        return [_convert_result(v) for v in value]
+    return value
+"""
+
+
+def _needs_node_helpers(starter_code: str) -> bool:
+    return any(kw in starter_code for kw in ("TreeNode", "ListNode", "Node"))
+
+
+def _extract_param_types(starter_code: str) -> dict[str, str]:
+    """Extract parameter name -> type hint string from the Solution method."""
+    # Only inspect Solution, not commented TreeNode/ListNode helpers.
+    solution_match = re.search(r"^class Solution", starter_code, re.MULTILINE)
+    search_text = (
+        starter_code[solution_match.start() :] if solution_match else starter_code
+    )
+    match = re.search(r"def \w+\(self,?\s*(.*?)\)", search_text, re.DOTALL)
+    if not match:
+        return {}
+    params_str = match.group(1)
+    result = {}
+    for param in params_str.split(","):
+        param = param.strip()
+        if ":" in param:
+            name, type_hint = param.split(":", 1)
+            result[name.strip()] = type_hint.strip()
+        elif param:
+            result[param.strip()] = ""
+    return result
+
+
+def _build_harness(
+    code: str, method_name: str, test_cases: list, starter_code: str = ""
+) -> str:
+    uses_nodes = _needs_node_helpers(starter_code)
+    param_types = _extract_param_types(starter_code) if uses_nodes else {}
+
+    node_block = _NODE_HELPERS if uses_nodes else ""
+    param_types_json = json.dumps(param_types)
+
+    if uses_nodes:
+        convert_block = f"""\
+        param_types = {param_types_json}
+        converted = {{}}
+        for k, v in args.items():
+            hint = param_types.get(k, '')
+            converted[k] = _convert_arg(k, v, hint)
+        actual = solution.{method_name}(**converted)
+        actual = _convert_result(actual)"""
+    else:
+        convert_block = f"        actual = solution.{method_name}(**args)"
+
     return f"""\
 from typing import Dict, List, Optional, Set, Tuple
 
+{node_block}
 {code}
 
 import json
+
+null = None
+true = True
+false = False
 
 results = []
 test_cases = {json.dumps(test_cases)}
@@ -40,11 +194,8 @@ for i, tc in enumerate(test_cases):
     args = tc["args"]
     expected = tc["expected"]
     try:
-        actual = solution.{method_name}(**args)
-        if isinstance(expected, list) and isinstance(actual, (list, tuple)):
-            passed = set(actual) == set(expected)
-        else:
-            passed = actual == expected
+{convert_block}
+        passed = actual == expected
         results.append({{"case": i + 1, "passed": passed, "actual": actual,
         "expected": expected}})
     except Exception as e:
@@ -60,7 +211,12 @@ def run_tests(code: str, problem: Problem) -> list[TestResult]:
         return []
 
     method_name = _extract_method_name(problem.starter_code)
-    harness = _build_harness(code, method_name, problem.test_cases)
+    harness = _build_harness(
+        code,
+        method_name,
+        problem.test_cases,
+        problem.starter_code,
+    )
 
     with tempfile.NamedTemporaryFile(
         mode="w", suffix=".py", delete=False, encoding="utf-8"

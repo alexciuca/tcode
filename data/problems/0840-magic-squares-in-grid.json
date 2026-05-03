@@ -26,5 +26,31 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def numMagicSquaresInside(self, grid: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          [
+            4,
+            3,
+            8,
+            4
+          ],
+          [
+            9,
+            5,
+            1,
+            9
+          ],
+          [
+            2,
+            7,
+            6,
+            2
+          ]
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

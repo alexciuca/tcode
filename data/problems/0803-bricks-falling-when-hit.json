@@ -30,5 +30,115 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def hitBricks(self, grid: List[List[int]], hits: List[List[int]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        "hits": [
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        2
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ]
+        ],
+        "hits": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        0
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "hits": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    }
+  ]
 }

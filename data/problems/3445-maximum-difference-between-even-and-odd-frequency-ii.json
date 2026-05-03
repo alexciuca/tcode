@@ -32,5 +32,41 @@
     "Use prefix sum (maintain 2 characters' parities as status)."
   ],
   "starter_code": "class Solution:\n    def maxDifference(self, s: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "0011",
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "001122",
+        "k": 2
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "000",
+        "k": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "01234012340123401234",
+        "k": 3
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "00000000000000000000000000000000",
+        "k": 1
+      },
+      "expected": 0
+    }
+  ]
 }

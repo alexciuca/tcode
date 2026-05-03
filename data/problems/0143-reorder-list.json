@@ -30,5 +30,61 @@
   ],
   "hints": [],
   "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def reorderList(self, head: Optional[ListNode]) -> None:\n        \"\"\"\n        Do not return anything, modify head in-place instead.\n        \"\"\"\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "head": [
+          1
+        ]
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          2
+        ]
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "expected": null
+    }
+  ]
 }

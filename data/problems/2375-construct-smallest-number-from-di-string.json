@@ -27,5 +27,36 @@
     "Yes we can. Now we just need to check if the string meets all the conditions."
   ],
   "starter_code": "class Solution:\n    def smallestNumber(self, pattern: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "pattern": "IIID"
+      },
+      "expected": "12354"
+    },
+    {
+      "args": {
+        "pattern": "DI"
+      },
+      "expected": "213"
+    },
+    {
+      "args": {
+        "pattern": "I"
+      },
+      "expected": "12"
+    },
+    {
+      "args": {
+        "pattern": "DDDD"
+      },
+      "expected": "54321"
+    },
+    {
+      "args": {
+        "pattern": "IDID"
+      },
+      "expected": "13254"
+    }
+  ]
 }

@@ -33,5 +33,95 @@
     "For each index of <code>nums</code> from <code>0</code> to <code>nums.length - 1</code> we can change it to the current minimum value we have in its connected component and remove that value from the connected component."
   ],
   "starter_code": "class Solution:\n    def lexicographicallySmallestArray(self, nums: List[int], limit: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          5,
+          0,
+          3,
+          4,
+          5
+        ],
+        "limit": 1
+      },
+      "expected": [
+        0,
+        3,
+        1,
+        4,
+        5,
+        5
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "limit": 1
+      },
+      "expected": [
+        0,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          2,
+          8,
+          1,
+          9
+        ],
+        "limit": 3
+      },
+      "expected": [
+        1,
+        2,
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000
+        ],
+        "limit": 1000000000
+      },
+      "expected": [
+        1000000000
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          1,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "limit": 1
+      },
+      "expected": [
+        10,
+        1,
+        100,
+        1000,
+        10000,
+        100000
+      ]
+    }
+  ]
 }

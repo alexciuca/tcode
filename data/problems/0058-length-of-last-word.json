@@ -25,5 +25,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def lengthOfLastWord(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "Hello World"
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "s": "   fly me   to   the moon  "
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "a b c d e f g h i j k l m n o p q r s t u v w x y z"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "luffy is still joyboy"
+      },
+      "expected": 6
+    }
+  ]
 }

@@ -31,5 +31,92 @@
     "Could you use a hash map to achieve a good complexity?"
   ],
   "starter_code": "class Solution:\n    def countWords(self, words1: List[str], words2: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words1": [
+          "leetcode",
+          "is",
+          "amazing",
+          "as",
+          "is"
+        ],
+        "words2": [
+          "amazing",
+          "definitely",
+          "is"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words1": [
+          "b",
+          "bb",
+          "bbb"
+        ],
+        "words2": [
+          "a",
+          "aa",
+          "aaa"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "words1": [
+          "hello",
+          "world",
+          "hello"
+        ],
+        "words2": [
+          "hello",
+          "hello",
+          "world"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words1": [
+          "a"
+        ],
+        "words2": [
+          "a"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words1": [
+          "the",
+          "quick",
+          "brown",
+          "fox",
+          "jumps",
+          "over",
+          "the",
+          "lazy",
+          "dog"
+        ],
+        "words2": [
+          "the",
+          "quick",
+          "brown",
+          "fox",
+          "jumps",
+          "over",
+          "the",
+          "lazy",
+          "dog",
+          "the"
+        ]
+      },
+      "expected": 7
+    }
+  ]
 }

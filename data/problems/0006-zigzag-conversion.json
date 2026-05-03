@@ -31,5 +31,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def convert(self, s: str, numRows: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "PAYPALISHIRING",
+        "numRows": 3
+      },
+      "expected": "PAHNAPLSIIGYIR"
+    },
+    {
+      "args": {
+        "s": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "numRows": 4
+      },
+      "expected": "AGMSYBFHLNRTXZCEIKOQUWDJPV"
+    },
+    {
+      "args": {
+        "s": "A",
+        "numRows": 1
+      },
+      "expected": "A"
+    },
+    {
+      "args": {
+        "s": "AB",
+        "numRows": 1
+      },
+      "expected": "AB"
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "numRows": 10
+      },
+      "expected": "asKbrtJLcquIMdpvHNZeowGOYfnxFPXgmyEQWhlzDRVikACSUjBT"
+    }
+  ]
 }

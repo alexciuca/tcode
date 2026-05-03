@@ -31,5 +31,41 @@
     "After return the first k words as a sentence"
   ],
   "starter_code": "class Solution:\n    def truncateSentence(self, s: str, k: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "Hello how are you Kinda cool",
+        "k": 4
+      },
+      "expected": "Hello how are you"
+    },
+    {
+      "args": {
+        "s": "What is the solution to this problem",
+        "k": 1
+      },
+      "expected": "What"
+    },
+    {
+      "args": {
+        "s": "a",
+        "k": 1
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "Testing edge case with many words here now",
+        "k": 5
+      },
+      "expected": "Testing edge case with many"
+    },
+    {
+      "args": {
+        "s": "The quick brown fox jumps over the lazy dog and runs away very fast indeed",
+        "k": 10
+      },
+      "expected": "The quick brown fox jumps over the lazy dog and"
+    }
+  ]
 }

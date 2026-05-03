@@ -29,5 +29,122 @@
     "For each element, keep track of the sum of indices of the identical elements that have come before and that will come after respectively. Use this to calculate the sum of intervals for that element to the rest of the elements with identical values."
   ],
   "starter_code": "class Solution:\n    def getDistances(self, arr: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          2,
+          1,
+          3,
+          1,
+          2,
+          3,
+          4,
+          2
+        ]
+      },
+      "expected": [
+        11,
+        2,
+        3,
+        2,
+        7,
+        3,
+        0,
+        10
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          10,
+          5,
+          10,
+          10
+        ]
+      },
+      "expected": [
+        5,
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          1
+        ]
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected": [
+        10,
+        7,
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          1,
+          2,
+          3,
+          4,
+          5,
+          1,
+          2,
+          3,
+          4,
+          5,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": [
+        30,
+        30,
+        30,
+        30,
+        30,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        30,
+        30,
+        30,
+        30,
+        30
+      ]
+    }
+  ]
 }

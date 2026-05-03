@@ -28,5 +28,70 @@
     "Store the frequencies of all the integers in a hashmap."
   ],
   "starter_code": "class Solution:\n    def countPairs(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          9999999,
+          9999998,
+          2
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected": 45
+    }
+  ]
 }

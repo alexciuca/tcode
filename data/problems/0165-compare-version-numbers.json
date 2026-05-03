@@ -30,5 +30,41 @@
     "Utilize the substring method to extract each version segment delimited by '.'. Ensure you're extracting the segments correctly by adjusting the start and end indices accordingly."
   ],
   "starter_code": "class Solution:\n    def compareVersion(self, version1: str, version2: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "version1": "1.0",
+        "version2": "1.0.0"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "version1": "1.2.3",
+        "version2": "1.2.4"
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "version1": "1.0.0.0",
+        "version2": "1"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "version1": "1.2",
+        "version2": "1.2.0.0.0"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "version1": "1.0.1",
+        "version2": "1.0.1.0"
+      },
+      "expected": 0
+    }
+  ]
 }

@@ -27,5 +27,107 @@
     "For each of these points check if it is included in one of the ranges."
   ],
   "starter_code": "class Solution:\n    def isCovered(self, ranges: List[List[int]], left: int, right: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "ranges": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "left": 1,
+        "right": 2
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "ranges": [
+          [
+            1,
+            10
+          ]
+        ],
+        "left": 1,
+        "right": 10
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "ranges": [
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "left": 1,
+        "right": 5
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "ranges": [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            16,
+            20
+          ]
+        ],
+        "left": 1,
+        "right": 20
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "left": 1,
+        "right": 5
+      },
+      "expected": true
+    }
+  ]
 }

@@ -33,5 +33,137 @@
     "For each puzzle, count the number of words whose bit-mask is a sub-mask of the puzzle's bit-mask."
   ],
   "starter_code": "class Solution:\n    def findNumOfValidWords(self, words: List[str], puzzles: List[str]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "aaaa",
+          "asas",
+          "bass",
+          "bass",
+          "cas",
+          "cast",
+          "cas",
+          "casa",
+          "task"
+        ],
+        "puzzles": [
+          "aabba",
+          "defka",
+          "fushk",
+          "aecab",
+          "aisab"
+        ]
+      },
+      "expected": [
+        1,
+        0,
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "abc",
+          "def",
+          "ghi"
+        ],
+        "puzzles": [
+          "abcdefg",
+          "hijklmn",
+          "abcdefh"
+        ]
+      },
+      "expected": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "a",
+          "ab",
+          "abc",
+          "abcd"
+        ],
+        "puzzles": [
+          "aaaaaa",
+          "ababab",
+          "abcabc",
+          "abcccc"
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "zzz",
+          "zzzz",
+          "zzzzzz"
+        ],
+        "puzzles": [
+          "zaaaaaa",
+          "zzbbbbb",
+          "zzccccc",
+          "zzdddd"
+        ]
+      },
+      "expected": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "abcdefghijklmnopqrstuvwxyz",
+          "bcdefghijklmnopqrstuvwxyz",
+          "cdefghijklmnopqrstuvwxyz",
+          "defghijklmnopqrstuvwxyz",
+          "efghijklmnopqrstuvwxyz",
+          "fghijklmnopqrstuvwxyz",
+          "ghijklmnopqrstuvwxyz",
+          "hijklmnopqrstuvwxyz",
+          "ijklmnopqrstuvwxyz",
+          "jklmnopqrstuvwxyz"
+        ],
+        "puzzles": [
+          "aaaaaab",
+          "bbbbbbc",
+          "ccccccd",
+          "dddddef",
+          "eeeeeef",
+          "fffgggg",
+          "ggggggh",
+          "hhhiiii",
+          "iiijjjj",
+          "jjjkkk"
+        ]
+      },
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
 }

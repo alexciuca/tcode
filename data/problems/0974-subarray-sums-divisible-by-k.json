@@ -24,5 +24,85 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def subarraysDivByK(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          4,
+          5,
+          0,
+          -2,
+          -3,
+          1
+        ],
+        "k": 5
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "nums": [
+          5
+        ],
+        "k": 9
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          -1,
+          -1,
+          -1
+        ],
+        "k": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "k": 3
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          -5,
+          -10,
+          15,
+          -20,
+          25,
+          100,
+          -50,
+          30,
+          -15,
+          7,
+          8,
+          9,
+          -100,
+          50,
+          25
+        ],
+        "k": 7
+      },
+      "expected": 52
+    }
+  ]
 }

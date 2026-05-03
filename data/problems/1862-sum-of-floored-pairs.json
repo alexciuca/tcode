@@ -27,5 +27,75 @@
     "For each element, iterate through its multiples and multiply frequencies to find the answer."
   ],
   "starter_code": "class Solution:\n    def sumOfFlooredPairs(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          5,
+          9
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums": [
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      "expected": 16
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 25
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          100000
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "expected": 600
+    }
+  ]
 }

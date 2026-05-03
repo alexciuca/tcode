@@ -37,5 +37,186 @@
     "For each query, update <code>nums[index]</code> to <code>value</code>, then merge the segments corresponding to <code>nums[start..n - 1]</code> to compute the <code>x-value</code> for <code>xi</code>."
   ],
   "starter_code": "class Solution:\n    def resultArray(self, nums: List[int], k: int, queries: List[List[int]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          10,
+          5,
+          3,
+          4,
+          5
+        ],
+        "k": 2,
+        "queries": [
+          [
+            0,
+            10,
+            0,
+            0
+          ],
+          [
+            1,
+            5,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        5,
+        1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          200,
+          250
+        ],
+        "k": 3,
+        "queries": [
+          [
+            2,
+            150,
+            0,
+            2
+          ],
+          [
+            0,
+            500,
+            1,
+            1
+          ],
+          [
+            1,
+            250,
+            2,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          1000000000
+        ],
+        "k": 1,
+        "queries": [
+          [
+            1,
+            1000000000,
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        3
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          10,
+          5
+        ],
+        "k": 4,
+        "queries": [
+          [
+            0,
+            5,
+            0,
+            0
+          ],
+          [
+            3,
+            5,
+            3,
+            3
+          ],
+          [
+            1,
+            10,
+            2,
+            2
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          250,
+          5,
+          7,
+          8,
+          9,
+          10,
+          50,
+          12,
+          13,
+          14,
+          15,
+          16,
+          1000000000,
+          17,
+          18,
+          19
+        ],
+        "k": 5,
+        "queries": [
+          [
+            5,
+            100,
+            0,
+            2
+          ],
+          [
+            10,
+            250,
+            5,
+            4
+          ],
+          [
+            0,
+            1000000000,
+            15,
+            1
+          ],
+          [
+            19,
+            50,
+            10,
+            3
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        0,
+        3,
+        0
+      ]
+    }
+  ]
 }

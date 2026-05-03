@@ -23,5 +23,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def strStr(self, haystack: str, needle: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "haystack": "sadbutsad",
+        "needle": "sad"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "haystack": "leetcode",
+        "needle": "leeto"
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "haystack": "a",
+        "needle": "a"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "haystack": "aaaa",
+        "needle": "aa"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "haystack": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "needle": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected": 0
+    }
+  ]
 }

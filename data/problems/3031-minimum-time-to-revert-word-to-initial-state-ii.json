@@ -31,5 +31,41 @@
     "Use Z-function."
   ],
   "starter_code": "class Solution:\n    def minimumTimeToInitialState(self, word: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "abacabad",
+        "k": 3
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "word": "abcabcabc",
+        "k": 2
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "word": "a",
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "aaaa",
+        "k": 2
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "k": 1
+      },
+      "expected": 26
+    }
+  ]
 }

@@ -25,5 +25,36 @@
     "consider n=2^k case first, then solve for all n."
   ],
   "starter_code": "class Solution:\n    def minimumOneBitOperations(self, n: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 3
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 6
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "n": 1073741823
+      },
+      "expected": 715827882
+    }
+  ]
 }

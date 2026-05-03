@@ -22,5 +22,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def toHex(self, num: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": 26
+      },
+      "expected": "1a"
+    },
+    {
+      "args": {
+        "num": -1
+      },
+      "expected": "ffffffff"
+    },
+    {
+      "args": {
+        "num": 0
+      },
+      "expected": "0"
+    },
+    {
+      "args": {
+        "num": -2147483648
+      },
+      "expected": "80000000"
+    },
+    {
+      "args": {
+        "num": 2147483647
+      },
+      "expected": "7fffffff"
+    }
+  ]
 }

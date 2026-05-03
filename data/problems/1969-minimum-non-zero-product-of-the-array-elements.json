@@ -28,5 +28,36 @@
     "If you swap out all the 1s in some element, this will lead to a product of zero."
   ],
   "starter_code": "class Solution:\n    def minNonZeroProduct(self, p: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "p": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "p": 2
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "p": 3
+      },
+      "expected": 117649
+    },
+    {
+      "args": {
+        "p": 10
+      },
+      "expected": 801789131
+    },
+    {
+      "args": {
+        "p": 60
+      },
+      "expected": 645796882
+    }
+  ]
 }

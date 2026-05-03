@@ -23,5 +23,26 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findPoisonedDuration(self, timeSeries: List[int], duration: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "timeSeries": [
+          1,
+          4
+        ],
+        "duration": 2
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "timeSeries": [
+          1,
+          2
+        ],
+        "duration": 2
+      },
+      "expected": 3
+    }
+  ]
 }

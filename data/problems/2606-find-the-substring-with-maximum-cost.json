@@ -31,5 +31,85 @@
     "We can use Kadane’s maximum subarray sum algorithm to find the maximum cost."
   ],
   "starter_code": "class Solution:\n    def maximumCostSubstring(self, s: str, chars: str, vals: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aabcccccdd",
+        "chars": "abcdefghijklmnopqrstuvwxyz",
+        "vals": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      "expected": 27
+    },
+    {
+      "args": {
+        "s": "xyz",
+        "chars": "xyz",
+        "vals": [
+          10,
+          20,
+          30
+        ]
+      },
+      "expected": 60
+    },
+    {
+      "args": {
+        "s": "aaaaaa",
+        "chars": "a",
+        "vals": [
+          -5
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abcdef",
+        "chars": "abc",
+        "vals": [
+          -100,
+          50,
+          -50
+        ]
+      },
+      "expected": 50
+    },
+    {
+      "args": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "chars": "z",
+        "vals": [
+          1000
+        ]
+      },
+      "expected": 99000
+    }
+  ]
 }

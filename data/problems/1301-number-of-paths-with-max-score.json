@@ -28,5 +28,69 @@
     "Use another dynamic programming array to count the number of paths with max score."
   ],
   "starter_code": "class Solution:\n    def pathsWithMaxScore(self, board: List[str]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "board": [
+          "E23",
+          "2X2",
+          "323"
+        ]
+      },
+      "expected": [
+        7,
+        2
+      ]
+    },
+    {
+      "args": {
+        "board": [
+          "E1",
+          "1S"
+        ]
+      },
+      "expected": [
+        1,
+        2
+      ]
+    },
+    {
+      "args": {
+        "board": [
+          "E12345",
+          "1X3X5",
+          "2345S"
+        ]
+      },
+      "expected": [
+        6,
+        2
+      ]
+    },
+    {
+      "args": {
+        "board": [
+          "ES",
+          "SX"
+        ]
+      },
+      "expected": [
+        0,
+        3
+      ]
+    },
+    {
+      "args": {
+        "board": [
+          "E111111111111111111",
+          "1X1X1X1X1X1X1X1X1X1",
+          "1111111111111111111S"
+        ]
+      },
+      "expected": [
+        3,
+        2
+      ]
+    }
+  ]
 }

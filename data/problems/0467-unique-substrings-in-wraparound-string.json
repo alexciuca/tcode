@@ -27,5 +27,30 @@
     "One possible solution might be to consider allocating an array size of 26 for each character in the alphabet. (Credits to @r2ysxu)"
   ],
   "starter_code": "class Solution:\n    def findSubstringInWraproundString(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "p": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "p": "cac"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "p": "zab"
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "p": "zaba"
+      },
+      "expected": 6
+    }
+  ]
 }

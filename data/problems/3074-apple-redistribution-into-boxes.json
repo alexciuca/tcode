@@ -28,5 +28,173 @@
     "Greedily select boxes with the largest capacities to redistribute apples optimally."
   ],
   "starter_code": "class Solution:\n    def minimumBoxes(self, apple: List[int], capacity: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "apple": [
+          1,
+          3,
+          2
+        ],
+        "capacity": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "apple": [
+          5,
+          5,
+          10
+        ],
+        "capacity": [
+          8,
+          7,
+          4,
+          2,
+          2
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "apple": [
+          1
+        ],
+        "capacity": [
+          10,
+          5,
+          5
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "apple": [
+          50
+        ],
+        "capacity": [
+          50
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "apple": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "capacity": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

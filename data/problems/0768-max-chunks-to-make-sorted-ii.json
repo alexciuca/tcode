@@ -27,5 +27,66 @@
     "Each k for which some permutation of arr[:k] is equal to sorted(arr)[:k] is where we should cut each chunk."
   ],
   "starter_code": "class Solution:\n    def maxChunksToSorted(self, arr: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          0,
+          2,
+          0,
+          3
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "arr": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "arr": [
+          100000000,
+          99999999,
+          50000000,
+          1,
+          0,
+          100000000,
+          50000000,
+          99999999
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

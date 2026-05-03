@@ -30,5 +30,57 @@
     "Try collecting the terms for nums[0], nums[1], …, nums[j-1] when computing the power of heroes ending at index j to get the power in a single pass."
   ],
   "starter_code": "class Solution:\n    def sumOfPower(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          4
+        ]
+      },
+      "expected": 99
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          10
+        ]
+      },
+      "expected": 275
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          999999999,
+          1000000000
+        ]
+      },
+      "expected": 2785
+    }
+  ]
 }

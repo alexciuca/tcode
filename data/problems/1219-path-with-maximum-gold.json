@@ -28,5 +28,108 @@
     "Use recursion to try all such paths and find the one with the maximum value."
   ],
   "starter_code": "class Solution:\n    def getMaximumGold(self, grid: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            0,
+            7
+          ],
+          [
+            2,
+            0,
+            4
+          ]
+        ]
+      },
+      "expected": 11
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            0,
+            6,
+            0
+          ],
+          [
+            5,
+            8,
+            7
+          ],
+          [
+            0,
+            9,
+            0
+          ]
+        ]
+      },
+      "expected": 35
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            100,
+            50,
+            0,
+            25
+          ],
+          [
+            0,
+            75,
+            10,
+            0
+          ],
+          [
+            0,
+            0,
+            60,
+            0
+          ],
+          [
+            30,
+            0,
+            0,
+            100
+          ]
+        ]
+      },
+      "expected": 295
+    }
+  ]
 }

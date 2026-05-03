@@ -34,5 +34,41 @@
     "Try all possible candidates in reverse lexicographic order, and check the string for the subsequence condition."
   ],
   "starter_code": "class Solution:\n    def longestSubsequenceRepeatedK(self, s: str, k: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ababab",
+        "k": 2
+      },
+      "expected": "ba"
+    },
+    {
+      "args": {
+        "s": "aabbccdd",
+        "k": 3
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "abcdefghij",
+        "k": 2
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "aaaa",
+        "k": 2
+      },
+      "expected": "aa"
+    },
+    {
+      "args": {
+        "s": "abcabcabcabcabcabcabcabcabcabc",
+        "k": 5
+      },
+      "expected": "abcabc"
+    }
+  ]
 }

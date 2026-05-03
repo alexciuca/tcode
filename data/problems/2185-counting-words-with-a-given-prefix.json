@@ -26,5 +26,62 @@
     "Go through each word in words and increment the answer if pref is a prefix of the word."
   ],
   "starter_code": "class Solution:\n    def prefixCount(self, words: List[str], pref: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "pay",
+          "attention",
+          "practice"
+        ],
+        "pref": "pa"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words": [
+          "hello",
+          "world"
+        ],
+        "pref": "he"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words": [
+          "a",
+          "ab",
+          "abc",
+          "abcd"
+        ],
+        "pref": "abc"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "words": [
+          "test"
+        ],
+        "pref": "testing"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "words": [
+          "apple",
+          "app",
+          "application",
+          "apply",
+          "apricot",
+          "approve"
+        ],
+        "pref": "app"
+      },
+      "expected": 5
+    }
+  ]
 }

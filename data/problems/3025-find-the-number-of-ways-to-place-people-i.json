@@ -33,5 +33,157 @@
     "If the upper-left corner is <code>(x1, y1)</code> and lower-right corner is <code>(x2, y2)</code>, check that there is no point <code>(x, y)</code> such that <code>x1 <= x <= x2</code> and <code>y2 <= y <= y1</code>."
   ],
   "starter_code": "class Solution:\n    def numberOfPairs(self, points: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            50
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "points": [
+          [
+            0,
+            50
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            50,
+            50
+          ],
+          [
+            50,
+            0
+          ]
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      "expected": 8
+    }
+  ]
 }

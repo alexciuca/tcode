@@ -30,5 +30,115 @@
     "Use prefix sum to calculate submatrices sum."
   ],
   "starter_code": "class Solution:\n    def numberOfSubmatrices(self, grid: List[List[str]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          [
+            "X",
+            "Y"
+          ],
+          [
+            "Y",
+            "X"
+          ]
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            "X",
+            "Y",
+            "X"
+          ],
+          [
+            "Y",
+            "X",
+            "Y"
+          ],
+          [
+            "X",
+            "Y",
+            "X"
+          ]
+        ]
+      },
+      "expected": 20
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            ".",
+            ".",
+            "."
+          ],
+          [
+            ".",
+            ".",
+            "."
+          ]
+        ]
+      },
+      "expected": 18
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            "X",
+            "Y",
+            ".",
+            "X",
+            "Y"
+          ],
+          [
+            "Y",
+            "X",
+            ".",
+            "Y",
+            "X"
+          ],
+          [
+            ".",
+            ".",
+            ".",
+            ".",
+            "."
+          ],
+          [
+            "X",
+            "Y",
+            "X",
+            "Y",
+            "X"
+          ],
+          [
+            "Y",
+            "X",
+            "Y",
+            "X",
+            "Y"
+          ]
+        ]
+      },
+      "expected": 146
+    }
+  ]
 }

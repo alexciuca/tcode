@@ -29,5 +29,36 @@
     "Make sure to consider the special case for the center digit (if any) and zeroes. There should not be leading zeroes."
   ],
   "starter_code": "class Solution:\n    def largestPalindromic(self, num: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": "444947137"
+      },
+      "expected": "7449447"
+    },
+    {
+      "args": {
+        "num": "123321"
+      },
+      "expected": "321123"
+    },
+    {
+      "args": {
+        "num": "0"
+      },
+      "expected": "0"
+    },
+    {
+      "args": {
+        "num": "00000"
+      },
+      "expected": "0"
+    },
+    {
+      "args": {
+        "num": "9876543210123456789"
+      },
+      "expected": "9876543210123456789"
+    }
+  ]
 }

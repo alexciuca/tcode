@@ -36,5 +36,238 @@
     "For each person, for each set of skills, we can update our understanding of a minimum set of people needed to perform this set of skills."
   ],
   "starter_code": "class Solution:\n    def smallestSufficientTeam(self, req_skills: List[str], people: List[List[str]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "req_skills": [
+          "java",
+          "python",
+          "golang"
+        ],
+        "people": [
+          [
+            "java"
+          ],
+          [
+            "python"
+          ],
+          [
+            "golang"
+          ],
+          [
+            "java",
+            "python"
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "args": {
+        "req_skills": [
+          "algorithms",
+          "math",
+          "java",
+          "asp",
+          "ruby"
+        ],
+        "people": [
+          [
+            "algorithms"
+          ],
+          [
+            "math"
+          ],
+          [
+            "java"
+          ],
+          [
+            "asp"
+          ],
+          [
+            "ruby"
+          ],
+          [
+            "java",
+            "math"
+          ],
+          [
+            "algorithms",
+            "ruby"
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "args": {
+        "req_skills": [
+          "a"
+        ],
+        "people": [
+          [
+            "a"
+          ]
+        ]
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "args": {
+        "req_skills": [
+          "skill1",
+          "skill2",
+          "skill3",
+          "skill4",
+          "skill5",
+          "skill6"
+        ],
+        "people": [
+          [
+            "skill1",
+            "skill2"
+          ],
+          [
+            "skill3",
+            "skill4"
+          ],
+          [
+            "skill5"
+          ],
+          [
+            "skill6"
+          ],
+          [
+            "skill1",
+            "skill3",
+            "skill5"
+          ],
+          [
+            "skill2",
+            "skill4",
+            "skill6"
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "args": {
+        "req_skills": [
+          "x",
+          "y",
+          "z",
+          "w",
+          "v",
+          "u",
+          "t",
+          "s",
+          "r",
+          "q",
+          "p",
+          "o",
+          "n",
+          "m",
+          "l",
+          "k"
+        ],
+        "people": [
+          [
+            "x",
+            "y",
+            "z"
+          ],
+          [
+            "w",
+            "v",
+            "u"
+          ],
+          [
+            "t",
+            "s",
+            "r"
+          ],
+          [
+            "q",
+            "p",
+            "o"
+          ],
+          [
+            "n",
+            "m"
+          ],
+          [
+            "l",
+            "k"
+          ],
+          [
+            "x",
+            "w",
+            "t",
+            "q",
+            "n"
+          ],
+          [
+            "y",
+            "v",
+            "s",
+            "p",
+            "m"
+          ],
+          [
+            "z",
+            "u",
+            "r",
+            "o",
+            "l"
+          ],
+          [
+            "x",
+            "y",
+            "z",
+            "w",
+            "v",
+            "u",
+            "t",
+            "s"
+          ],
+          [
+            "r",
+            "q",
+            "p",
+            "o",
+            "n",
+            "m",
+            "l",
+            "k"
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ]
 }

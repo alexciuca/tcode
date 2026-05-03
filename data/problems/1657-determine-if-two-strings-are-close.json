@@ -30,5 +30,41 @@
     "Operation 2 allows you to freely reassign the letters' frequencies."
   ],
   "starter_code": "class Solution:\n    def closeStrings(self, word1: str, word2: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word1": "abb",
+        "word2": "bca"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "word1": "abcdefghijklmnopqrstuvwxyz",
+        "word2": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "word1": "a",
+        "word2": "b"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "word1": "aabbcc",
+        "word2": "aabbcc"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "word1": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "zzyyxxwwvvuuttssrrqqppoonnmmllkkjjiihhggffeeddccbbaa"
+      },
+      "expected": true
+    }
+  ]
 }

@@ -30,5 +30,41 @@
     "Get the longest common prefix between them and the longest common suffix."
   ],
   "starter_code": "class Solution:\n    def areSentencesSimilar(self, sentence1: str, sentence2: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "sentence1": "My name is Haley",
+        "sentence2": "My name is John"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "sentence1": "of",
+        "sentence2": "A lot of words"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "sentence1": "Hello world",
+        "sentence2": "Hello world"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "sentence1": "A",
+        "sentence2": "B"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "sentence1": "The quick brown fox jumps over the lazy dog",
+        "sentence2": "The quick brown fox"
+      },
+      "expected": true
+    }
+  ]
 }

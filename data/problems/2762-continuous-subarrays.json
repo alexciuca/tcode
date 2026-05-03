@@ -29,5 +29,72 @@
     "Use a set or map to keep track of the maximum and minimum of subarrays."
   ],
   "starter_code": "class Solution:\n    def continuousSubarrays(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          5,
+          4,
+          2,
+          4
+        ]
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "nums": [
+          65,
+          66,
+          67,
+          66,
+          66,
+          65,
+          64,
+          65,
+          65,
+          64,
+          64,
+          66,
+          67
+        ]
+      },
+      "expected": 62
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          999999999,
+          1000000000,
+          999999999,
+          1000000000
+        ]
+      },
+      "expected": 15
+    }
+  ]
 }

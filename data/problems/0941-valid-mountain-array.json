@@ -26,5 +26,45 @@
     "It's very easy to keep track of a monotonically increasing or decreasing ordering of elements. You just need to be able to determine the start of the valley in the mountain and from that point onwards, it should be a valley i.e. no mini-hills after that. Use this information in regards to the values in the array and you will be able to come up with a straightforward solution."
   ],
   "starter_code": "class Solution:\n    def validMountainArray(self, arr: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": [
+          2,
+          1
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "a": [
+          3,
+          5,
+          5
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "a": [
+          0,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "a": [
+          1,
+          2
+        ]
+      },
+      "expected": false
+    }
+  ]
 }

@@ -22,5 +22,24 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def longestPalindromeSubseq(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "bbbab"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "cbbd"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "abaabaa"
+      },
+      "expected": 6
+    }
+  ]
 }

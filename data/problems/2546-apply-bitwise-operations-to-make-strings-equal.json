@@ -26,5 +26,41 @@
     "If exactly one of the strings is having all 0’s, then it is impossible. And it is possible in all other cases. Why is that true?"
   ],
   "starter_code": "class Solution:\n    def makeStringsEqual(self, s: str, target: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "11",
+        "target": "11"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "10",
+        "target": "01"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "000",
+        "target": "111"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "1010",
+        "target": "0101"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "11111111111111111111111111111111111111111111111111",
+        "target": "00000000000000000000000000000000000000000000000000"
+      },
+      "expected": true
+    }
+  ]
 }

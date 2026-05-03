@@ -29,5 +29,86 @@
     "For each index i such that nums[i] == target calculate abs(i - start)."
   ],
   "starter_code": "class Solution:\n    def getMinDistance(self, nums: List[int], target: int, start: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "target": 5,
+        "start": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "target": 5,
+        "start": 0
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          5,
+          2,
+          8,
+          9
+        ],
+        "target": 8,
+        "start": 1
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "target": 2,
+        "start": 0
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          7,
+          4,
+          6,
+          13,
+          11,
+          9,
+          8,
+          5,
+          3,
+          12,
+          10,
+          14,
+          2,
+          1,
+          15
+        ],
+        "target": 1,
+        "start": 7
+      },
+      "expected": 6
+    }
+  ]
 }

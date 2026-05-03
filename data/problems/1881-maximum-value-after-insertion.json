@@ -29,5 +29,41 @@
     "In the case of minimum, if s[i] > x it's optimal that x is put before s[i]."
   ],
   "starter_code": "class Solution:\n    def maxValue(self, n: str, x: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": "123",
+        "x": 3
+      },
+      "expected": "3123"
+    },
+    {
+      "args": {
+        "n": "99",
+        "x": 9
+      },
+      "expected": "999"
+    },
+    {
+      "args": {
+        "n": "-123",
+        "x": 5
+      },
+      "expected": "-1235"
+    },
+    {
+      "args": {
+        "n": "-999",
+        "x": 1
+      },
+      "expected": "-1999"
+    },
+    {
+      "args": {
+        "n": "1234567890123456789",
+        "x": 5
+      },
+      "expected": "51234567890123456789"
+    }
+  ]
 }

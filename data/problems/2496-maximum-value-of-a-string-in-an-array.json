@@ -26,5 +26,54 @@
     "For all other strings, calculate their length."
   ],
   "starter_code": "class Solution:\n    def maximumValue(self, strs: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "strs": [
+          "alic3",
+          "bob"
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "strs": [
+          "123",
+          "456",
+          "789"
+        ]
+      },
+      "expected": 789
+    },
+    {
+      "args": {
+        "strs": [
+          "a"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "strs": [
+          "999999999",
+          "abcdefghi"
+        ]
+      },
+      "expected": 999999999
+    },
+    {
+      "args": {
+        "strs": [
+          "1a2b3c",
+          "xyz",
+          "100",
+          "zzz",
+          "5d6e7f8g9"
+        ]
+      },
+      "expected": 100
+    }
+  ]
 }

@@ -26,5 +26,41 @@
     "For each year from 1900 to year - 1 sum up 365 or 366 in case of leap years. Then sum up for each month the number of days, consider the case when the current year is leap, finally sum up the days."
   ],
   "starter_code": "class Solution:\n    def daysBetweenDates(self, date1: str, date2: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "date1": "2019-06-29",
+        "date2": "2019-12-31"
+      },
+      "expected": 185
+    },
+    {
+      "args": {
+        "date1": "2020-01-15",
+        "date2": "2020-01-15"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "date1": "1971-01-01",
+        "date2": "1971-12-31"
+      },
+      "expected": 364
+    },
+    {
+      "args": {
+        "date1": "2000-02-29",
+        "date2": "2000-03-01"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "date1": "1971-01-01",
+        "date2": "2100-12-31"
+      },
+      "expected": 47481
+    }
+  ]
 }

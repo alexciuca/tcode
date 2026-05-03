@@ -29,5 +29,62 @@
     "Also check if we have seen <code>arr[i] / 2</code> in case <code>arr[i] % 2 == 0</code>."
   ],
   "starter_code": "class Solution:\n    def checkIfExist(self, arr: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          10,
+          2,
+          5,
+          3
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          7,
+          1,
+          14,
+          11
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          -2,
+          0,
+          10,
+          19,
+          -19,
+          -5
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "arr": [
+          0,
+          0
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          -1000,
+          500,
+          -500,
+          1000,
+          250
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

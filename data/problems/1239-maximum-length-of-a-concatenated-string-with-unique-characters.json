@@ -31,5 +31,68 @@
     "You can use DP."
   ],
   "starter_code": "class Solution:\n    def maxLength(self, arr: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          "un",
+          "iq",
+          "ue"
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "arr": [
+          "cha",
+          "r",
+          "act",
+          "ers"
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "arr": [
+          "abcdefghijklmnopqrstuvwxyz"
+        ]
+      },
+      "expected": 26
+    },
+    {
+      "args": {
+        "arr": [
+          "aa",
+          "bb",
+          "cc"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "arr": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p"
+        ]
+      },
+      "expected": 16
+    }
+  ]
 }

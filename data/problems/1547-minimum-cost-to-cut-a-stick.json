@@ -28,5 +28,66 @@
     "When you try to get the minimum cost between i and j, try all possible cuts k between them, dp[i][j] = min(dp[i][k] + dp[k][j]) + (j - i) for all possible cuts k between them."
   ],
   "starter_code": "class Solution:\n    def minCost(self, n: int, cuts: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 7,
+        "cuts": [
+          1,
+          6,
+          4,
+          5,
+          2
+        ]
+      },
+      "expected": 18
+    },
+    {
+      "args": {
+        "n": 9,
+        "cuts": [
+          5,
+          4,
+          6
+        ]
+      },
+      "expected": 16
+    },
+    {
+      "args": {
+        "n": 2,
+        "cuts": [
+          1
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 100,
+        "cuts": [
+          50
+        ]
+      },
+      "expected": 100
+    },
+    {
+      "args": {
+        "n": 1000000,
+        "cuts": [
+          1,
+          999999,
+          500000,
+          250000,
+          750000,
+          125000,
+          875000,
+          62500,
+          937500,
+          312500
+        ]
+      },
+      "expected": 3125000
+    }
+  ]
 }

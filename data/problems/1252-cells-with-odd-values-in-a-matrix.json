@@ -28,5 +28,123 @@
     "You can accumulate the number you should add to each row and column and then you can count the number of odd cells."
   ],
   "starter_code": "class Solution:\n    def oddCells(self, m: int, n: int, indices: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "m": 2,
+        "n": 3,
+        "indices": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "m": 2,
+        "n": 2,
+        "indices": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "m": 1,
+        "n": 1,
+        "indices": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "m": 3,
+        "n": 3,
+        "indices": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "m": 50,
+        "n": 50,
+        "indices": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ]
+        ]
+      },
+      "expected": 800
+    }
+  ]
 }

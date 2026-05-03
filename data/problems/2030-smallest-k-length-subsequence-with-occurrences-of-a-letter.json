@@ -31,5 +31,51 @@
     "Pop the extra characters out from the stack and return the characters in the stack (reversed)."
   ],
   "starter_code": "class Solution:\n    def smallestSubsequence(self, s: str, k: int, letter: str, repetition: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "dcbacbaca",
+        "k": 4,
+        "letter": "a",
+        "repetition": 2
+      },
+      "expected": "aaca"
+    },
+    {
+      "args": {
+        "s": "bcac",
+        "k": 3,
+        "letter": "c",
+        "repetition": 1
+      },
+      "expected": "bca"
+    },
+    {
+      "args": {
+        "s": "aaaaa",
+        "k": 5,
+        "letter": "a",
+        "repetition": 5
+      },
+      "expected": "aaaaa"
+    },
+    {
+      "args": {
+        "s": "zyxwvutsrqponmlkjihgfedcba",
+        "k": 3,
+        "letter": "a",
+        "repetition": 1
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "k": 26,
+        "letter": "z",
+        "repetition": 3
+      },
+      "expected": "abcdefghijklmnopqrstuvwxyz"
+    }
+  ]
 }

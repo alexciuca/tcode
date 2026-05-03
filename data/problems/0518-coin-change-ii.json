@@ -27,5 +27,45 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def change(self, amount: int, coins: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "amount": 5,
+        "coins": [
+          1,
+          2,
+          5
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "amount": 3,
+        "coins": [
+          2
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "amount": 10,
+        "coins": [
+          10
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "amount": 5000,
+        "coins": [
+          1,
+          2
+        ]
+      },
+      "expected": 2501
+    }
+  ]
 }

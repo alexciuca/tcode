@@ -25,5 +25,36 @@
   ],
   "hints": [],
   "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          1
+        ]
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "head": []
+      },
+      "expected": []
+    }
+  ]
 }

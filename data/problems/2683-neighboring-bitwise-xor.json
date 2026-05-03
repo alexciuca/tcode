@@ -29,5 +29,153 @@
     "The xor-sum of the derived array should be 0 since there is always a duplicate occurrence of each element."
   ],
   "starter_code": "class Solution:\n    def doesValidArrayExist(self, derived: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "derived": [
+          1,
+          0,
+          0
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "derived": [
+          1,
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "derived": [
+          0
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "derived": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "derived": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

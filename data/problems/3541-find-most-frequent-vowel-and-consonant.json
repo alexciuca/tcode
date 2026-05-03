@@ -26,5 +26,36 @@
     "Simulate as described"
   ],
   "starter_code": "class Solution:\n    def maxFreqSum(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aeiou"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "hello"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "programming"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "bcdfghjklmnpqrstvwxyz"
+      },
+      "expected": 1
+    }
+  ]
 }

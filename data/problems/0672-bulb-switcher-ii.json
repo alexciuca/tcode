@@ -27,5 +27,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def flipLights(self, n: int, presses: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 1,
+        "presses": 1
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 3,
+        "presses": 2
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "n": 2,
+        "presses": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 1000,
+        "presses": 1000
+      },
+      "expected": 16
+    },
+    {
+      "args": {
+        "n": 4,
+        "presses": 3
+      },
+      "expected": 15
+    }
+  ]
 }

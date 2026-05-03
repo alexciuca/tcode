@@ -28,5 +28,41 @@
     "You can simulate the boxes by counting for each box the number of balls with digit sum equal to that box number"
   ],
   "starter_code": "class Solution:\n    def countBalls(self, lowLimit: int, highLimit: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "lowLimit": 1,
+        "highLimit": 10
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "lowLimit": 5,
+        "highLimit": 15
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "lowLimit": 1,
+        "highLimit": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "lowLimit": 99990,
+        "highLimit": 100000
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "lowLimit": 1,
+        "highLimit": 100000
+      },
+      "expected": 6000
+    }
+  ]
 }

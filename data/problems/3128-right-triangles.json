@@ -33,5 +33,120 @@
     "For each <code>x, y</code> with <code>grid[x][y] = 1</code> if there are <code>row[x]</code> 1s in the row <code>x</code> and <code>col[y]</code> 1s in column <code>y</code>, the answer should be added by <code>(row[x] - 1) * (col[y] - 1)</code>."
   ],
   "starter_code": "class Solution:\n    def numberOfRightTriangles(self, grid: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            0
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      "expected": 40
+    }
+  ]
 }

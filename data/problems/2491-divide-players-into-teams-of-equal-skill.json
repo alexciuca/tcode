@@ -31,5 +31,165 @@
     "It is always optimal to pair the weakest available player with the strongest available player."
   ],
   "starter_code": "class Solution:\n    def dividePlayers(self, skill: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "skill": [
+          1,
+          2,
+          3,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 22
+    },
+    {
+      "args": {
+        "skill": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "skill": [
+          1,
+          2
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "skill": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "expected": 60
+    },
+    {
+      "args": {
+        "skill": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 50
+    }
+  ]
 }

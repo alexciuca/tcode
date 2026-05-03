@@ -21,5 +21,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def kInversePairs(self, n: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 3,
+        "k": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 3,
+        "k": 1
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 4,
+        "k": 2
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "n": 1,
+        "k": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 10,
+        "k": 5
+      },
+      "expected": 1068
+    }
+  ]
 }

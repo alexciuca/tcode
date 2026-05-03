@@ -24,5 +24,36 @@
     "Try to remap the first non-zero digit to 0 to obtain the minimum number."
   ],
   "starter_code": "class Solution:\n    def minMaxDifference(self, num: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": 2020
+      },
+      "expected": 9090
+    },
+    {
+      "args": {
+        "num": 9669
+      },
+      "expected": 9339
+    },
+    {
+      "args": {
+        "num": 1
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "num": 100000000
+      },
+      "expected": 900000000
+    },
+    {
+      "args": {
+        "num": 5555
+      },
+      "expected": 9999
+    }
+  ]
 }

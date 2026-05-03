@@ -25,5 +25,64 @@
     "Sort the array, then check if the differences of all consecutive elements are equal."
   ],
   "starter_code": "class Solution:\n    def canMakeArithmeticProgression(self, arr: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          1,
+          3,
+          5
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          4
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "arr": [
+          -1000000,
+          0,
+          1000000
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          -100,
+          -50,
+          0,
+          50,
+          100,
+          150,
+          200,
+          250,
+          300,
+          350
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

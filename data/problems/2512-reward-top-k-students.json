@@ -39,5 +39,157 @@
     "Sort the students accordingly to find the top <em>k</em> among them."
   ],
   "starter_code": "class Solution:\n    def topStudents(self, positive_feedback: List[str], negative_feedback: List[str], report: List[str], student_id: List[int], k: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "positive_feedback": [
+          "smart",
+          "brilliant",
+          "excellent"
+        ],
+        "negative_feedback": [
+          "lazy",
+          "slow",
+          "careless"
+        ],
+        "report": [
+          "smart student",
+          "brilliant work",
+          "lazy student",
+          "excellent performance"
+        ],
+        "student_id": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "k": 2
+      },
+      "expected": [
+        1,
+        2
+      ]
+    },
+    {
+      "args": {
+        "positive_feedback": [
+          "good"
+        ],
+        "negative_feedback": [
+          "bad"
+        ],
+        "report": [
+          "good good good",
+          "bad student"
+        ],
+        "student_id": [
+          101,
+          102
+        ],
+        "k": 1
+      },
+      "expected": [
+        101
+      ]
+    },
+    {
+      "args": {
+        "positive_feedback": [
+          "amazing",
+          "wonderful"
+        ],
+        "negative_feedback": [
+          "awful",
+          "terrible"
+        ],
+        "report": [
+          "amazing student",
+          "awful performance",
+          "wonderful work",
+          "amazing amazing wonderful"
+        ],
+        "student_id": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "k": 3
+      },
+      "expected": [
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "args": {
+        "positive_feedback": [
+          "excellent",
+          "great"
+        ],
+        "negative_feedback": [
+          "poor"
+        ],
+        "report": [
+          "excellent",
+          "great great",
+          "poor work excellent",
+          "student work"
+        ],
+        "student_id": [
+          1000000000,
+          999999999,
+          1,
+          2
+        ],
+        "k": 2
+      },
+      "expected": [
+        999999999,
+        1000000000
+      ]
+    },
+    {
+      "args": {
+        "positive_feedback": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "negative_feedback": [
+          "f",
+          "g",
+          "h"
+        ],
+        "report": [
+          "a b c d e",
+          "f g h a",
+          "b c d",
+          "a a a a a",
+          "f f f",
+          "c c c c"
+        ],
+        "student_id": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60
+        ],
+        "k": 5
+      },
+      "expected": [
+        10,
+        40,
+        60,
+        30,
+        20
+      ]
+    }
+  ]
 }

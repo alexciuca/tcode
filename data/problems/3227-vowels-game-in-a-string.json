@@ -28,5 +28,36 @@
     "What if the number of vowels in the initial string is even? What’s the optimal play for Alice’s first turn?"
   ],
   "starter_code": "class Solution:\n    def doesAliceWin(self, s: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aeiou"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "bcdfg"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "aabbccddee"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "aeioubcdfghjklmnpqrstvwxyzaeioubcdfghjklmnpqrstvwxyzaeioubcdfghjklmnpqrstvwxyzaeioubcdfghjklmnpqrstvwxyzaeioubcdfghjklmnpqrstvwxyz"
+      },
+      "expected": true
+    }
+  ]
 }

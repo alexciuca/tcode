@@ -32,5 +32,39 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def wordBreak(self, s: str, wordDict: List[str]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "leetcode",
+        "wordDict": [
+          "leet",
+          "code"
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "applepenapple",
+        "wordDict": [
+          "apple",
+          "pen"
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "catsandog",
+        "wordDict": [
+          "cats",
+          "dog",
+          "sand",
+          "and",
+          "cat"
+        ]
+      },
+      "expected": false
+    }
+  ]
 }

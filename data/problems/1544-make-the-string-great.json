@@ -28,5 +28,24 @@
     "Keep applying the mentioned step to s till the length of the string is not changed."
   ],
   "starter_code": "class Solution:\n    def makeGood(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "leEeetcode"
+      },
+      "expected": "leetcode"
+    },
+    {
+      "args": {
+        "s": "abBAcC"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "s"
+      },
+      "expected": "s"
+    }
+  ]
 }

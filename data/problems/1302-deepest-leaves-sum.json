@@ -27,5 +27,26 @@
     "Traverse the tree again to compute the sum required."
   ],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def deepestLeavesSum(self, root: Optional[TreeNode]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "root": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          null,
+          6,
+          7,
+          null,
+          null,
+          null,
+          null,
+          8
+        ]
+      },
+      "expected": 15
+    }
+  ]
 }

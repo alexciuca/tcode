@@ -23,5 +23,83 @@
   ],
   "hints": [],
   "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "k": 2
+      },
+      "expected": [
+        4,
+        5,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          0,
+          1,
+          2
+        ],
+        "k": 4
+      },
+      "expected": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "head": [],
+        "k": 0
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "head": [
+          1
+        ],
+        "k": 1
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "k": 100000000
+      },
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ]
 }

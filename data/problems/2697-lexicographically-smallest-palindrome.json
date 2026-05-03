@@ -29,5 +29,36 @@
     "To make it lexicographically smallest we can change the character with maximum ASCII value to the one with minimum ASCII value."
   ],
   "starter_code": "class Solution:\n    def makeSmallestPalindrome(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abccccdd"
+      },
+      "expected": "abccccba"
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "dcba"
+      },
+      "expected": "abba"
+    },
+    {
+      "args": {
+        "s": "aabbaa"
+      },
+      "expected": "aabbaa"
+    },
+    {
+      "args": {
+        "s": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected": "abcdefghijklmmlkjihgfedcba"
+    }
+  ]
 }

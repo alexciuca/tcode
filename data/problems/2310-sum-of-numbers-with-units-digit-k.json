@@ -30,5 +30,41 @@
     "Create a method that takes an integer x as a parameter. This method returns the minimum possible size of a set where each number has units digit k and the sum of the numbers in the set is x."
   ],
   "starter_code": "class Solution:\n    def minimumNumbers(self, num: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": 58,
+        "k": 5
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "num": 0,
+        "k": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "num": 37,
+        "k": 2
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "num": 1,
+        "k": 0
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "num": 3000,
+        "k": 9
+      },
+      "expected": 10
+    }
+  ]
 }

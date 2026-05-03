@@ -30,5 +30,36 @@
     "Thus the answer is equal to the max digit."
   ],
   "starter_code": "class Solution:\n    def minPartitions(self, n: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": "165462"
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "n": "238994"
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "n": "1"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": "9"
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "n": "123456789012345678901234567890"
+      },
+      "expected": 9
+    }
+  ]
 }

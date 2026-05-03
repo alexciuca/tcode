@@ -29,5 +29,68 @@
     "To do that efficiently, use the idea of Kadane's algorithm."
   ],
   "starter_code": "class Solution:\n    def maximumSum(self, arr: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          1,
+          -2,
+          0,
+          3
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "arr": [
+          5,
+          -3,
+          5
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "arr": [
+          -1
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "arr": [
+          -5,
+          -2,
+          -3,
+          -1,
+          -4
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          -10,
+          7,
+          8,
+          9,
+          10,
+          -5,
+          15,
+          -3,
+          20
+        ]
+      },
+      "expected": 76
+    }
+  ]
 }

@@ -32,5 +32,82 @@
     "For each index, we can check if it can be picked if <code>nums[i] - nums[j] <= d</code>."
   ],
   "starter_code": "class Solution:\n    def sumOfPowers(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "k": 2
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          10,
+          15
+        ],
+        "k": 3
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "k": 2
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          -5,
+          -3,
+          2,
+          8,
+          10
+        ],
+        "k": 2
+      },
+      "expected": 82
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "k": 3
+      },
+      "expected": 3300
+    }
+  ]
 }

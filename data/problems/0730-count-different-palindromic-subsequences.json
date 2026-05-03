@@ -24,5 +24,36 @@
     "Let dp(i, j) be the answer for the string T = S[i:j+1] including the empty sequence. The answer is the number of unique characters in T, plus palindromes of the form \"a_a\", \"b_b\", \"c_c\", and \"d_d\", where \"_\" represents zero or more characters."
   ],
   "starter_code": "class Solution:\n    def countPalindromicSubsequences(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abcd"
+      },
+      "expected": 20
+    },
+    {
+      "args": {
+        "s": "dcb"
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "s": "aaaa"
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "s": "abacabad"
+      },
+      "expected": 118
+    },
+    {
+      "args": {
+        "s": "aabcccbaa"
+      },
+      "expected": 145
+    }
+  ]
 }

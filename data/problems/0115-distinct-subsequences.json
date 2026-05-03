@@ -22,5 +22,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def numDistinct(self, s: str, t: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "rabbbit",
+        "t": "rabbit"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "babgbag",
+        "t": "bag"
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "s": "a",
+        "t": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aab",
+        "t": "b"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "t": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected": 426384982032100
+    }
+  ]
 }

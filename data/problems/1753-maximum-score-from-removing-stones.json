@@ -28,5 +28,46 @@
     "Note that the limits are small enough for simulation"
   ],
   "starter_code": "class Solution:\n    def maximumScore(self, a: int, b: int, c: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": 2,
+        "b": 4,
+        "c": 6
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "a": 3,
+        "b": 3,
+        "c": 3
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "a": 1,
+        "b": 1,
+        "c": 100000
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "a": 1,
+        "b": 100000,
+        "c": 100000
+      },
+      "expected": 100000
+    },
+    {
+      "args": {
+        "a": 100000,
+        "b": 100000,
+        "c": 100000
+      },
+      "expected": 150000
+    }
+  ]
 }

@@ -25,5 +25,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def intToRoman(self, num: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": 58
+      },
+      "expected": "LVIII"
+    },
+    {
+      "args": {
+        "num": 1994
+      },
+      "expected": "MCMXCIV"
+    },
+    {
+      "args": {
+        "num": 1
+      },
+      "expected": "I"
+    },
+    {
+      "args": {
+        "num": 3999
+      },
+      "expected": "MMMCMXCIX"
+    },
+    {
+      "args": {
+        "num": 444
+      },
+      "expected": "CDXLIV"
+    }
+  ]
 }

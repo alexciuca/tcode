@@ -32,5 +32,96 @@
     "Changing numbers closer to the front is always better"
   ],
   "starter_code": "class Solution:\n    def maximumNumber(self, num: str, change: List[int]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": "132",
+        "change": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected": "867"
+    },
+    {
+      "args": {
+        "num": "2373369",
+        "change": [
+          9,
+          9,
+          9,
+          4,
+          4,
+          3,
+          4,
+          5,
+          3,
+          9
+        ]
+      },
+      "expected": "9473369"
+    },
+    {
+      "args": {
+        "num": "9999",
+        "change": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "expected": "9999"
+    },
+    {
+      "args": {
+        "num": "0",
+        "change": [
+          5,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "expected": "5"
+    },
+    {
+      "args": {
+        "num": "123456789012345678901234567890",
+        "change": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "expected": "999999999999999999999999999999"
+    }
+  ]
 }

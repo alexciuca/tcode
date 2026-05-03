@@ -30,5 +30,108 @@
     "Update the two sets whenever you slide the window, and maintain a sum of the elements in the set with <code>x</code> elements"
   ],
   "starter_code": "class Solution:\n    def findXSum(self, nums: List[int], k: int, x: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          3
+        ],
+        "k": 3,
+        "x": 2
+      },
+      "expected": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "k": 2,
+        "x": 1
+      },
+      "expected": [
+        10,
+        15,
+        20
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000
+        ],
+        "k": 5,
+        "x": 5
+      },
+      "expected": [
+        5000000000
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "k": 1,
+        "x": 1
+      },
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 4,
+        "x": 2
+      },
+      "expected": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    }
+  ]
 }

@@ -25,5 +25,108 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def threeEqualParts(self, arr: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "expected": [
+        0,
+        3
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "expected": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": [
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "expected": [
+        0,
+        5
+      ]
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": [
+        9,
+        20
+      ]
+    }
+  ]
 }

@@ -27,5 +27,36 @@
     "The constraints are small. For all 52 characters, check if they are present in <code>word</code>."
   ],
   "starter_code": "class Solution:\n    def numberOfSpecialChars(self, word: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "aAbBcC"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "word": "ABC"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "word": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "word": "a"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "word": "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"
+      },
+      "expected": 26
+    }
+  ]
 }

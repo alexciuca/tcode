@@ -22,5 +22,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isAdditiveNumber(self, num: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": "112358"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "num": "199100199"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "num": "12"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "num": "0000"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "num": "10203"
+      },
+      "expected": false
+    }
+  ]
 }

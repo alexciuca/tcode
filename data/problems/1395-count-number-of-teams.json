@@ -31,5 +31,69 @@
     "BruteForce, check all possibilities."
   ],
   "starter_code": "class Solution:\n    def numTeams(self, rating: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "rating": [
+          2,
+          5,
+          3,
+          4,
+          1
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "rating": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "rating": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "rating": [
+          1,
+          3,
+          2
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "rating": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected": 120
+    }
+  ]
 }

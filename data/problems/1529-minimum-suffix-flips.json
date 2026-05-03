@@ -28,5 +28,36 @@
     "Consider a strategy where the choice of bulb with number i is increasing. In such a strategy, you no longer need to worry about bulbs that have been set to the left."
   ],
   "starter_code": "class Solution:\n    def minFlips(self, target: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "target": "10"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "target": "01011"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "target": "0"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "target": "1"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "target": "0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101"
+      },
+      "expected": 99
+    }
+  ]
 }

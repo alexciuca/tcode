@@ -26,5 +26,82 @@
     "What does that tell us about the nature of the subarray that we should choose?"
   ],
   "starter_code": "class Solution:\n    def longestSubarray(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          3,
+          2,
+          2
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          4,
+          8,
+          16
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1024,
+          1024,
+          1024,
+          512,
+          1024,
+          1024
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

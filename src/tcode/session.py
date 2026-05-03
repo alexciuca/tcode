@@ -10,7 +10,7 @@ from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
 from tcode.config import SessionConfig
-from tcode.llm import check_complexity, generate_test_cases, get_hint
+from tcode.llm import check_complexity, get_hint
 from tcode.problems import load_problem_by_id
 from tcode.runner import format_results, run_tests
 
@@ -101,26 +101,21 @@ class SessionApp(Screen):
         if self._test_running:
             return
         self._test_running = True
-        self._update_right("Generating test cases...")
+        self._update_right("Running tests...")
         self.run_worker(self._execute_tests, thread=True)
 
     def _execute_tests(self) -> None:
         try:
-            # generate if not cached
             if not self.active_problem.test_cases:
-                cases = generate_test_cases(self.active_problem)
-                self.active_problem.test_cases.extend(cases)  # cache them
+                self.app.call_from_thread(
+                    self._update_right,
+                    "No test cases available for this problem.",
+                )
+                return
 
             results = run_tests(self.code_snapshot, self.active_problem)
             summary = format_results(results)
             self.app.call_from_thread(self._update_right, summary)
-            # uncommment to see the test cases in the UI after running tests
-            # self.app.call_from_thread(
-            #     self._update_right,
-            #     f"Generated cases:\n{json.dumps(
-            #         self.active_problem.test_cases,
-            #         indent=2)}"
-            # )
         except Exception as e:
             self.app.call_from_thread(self._update_right, f"Error: {e}")
         finally:

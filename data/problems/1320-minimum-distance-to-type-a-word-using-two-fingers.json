@@ -25,5 +25,36 @@
     "dp[i][j][k]: smallest movements when you have one finger on i-th char and the other one on j-th char already having written k first characters from word."
   ],
   "starter_code": "class Solution:\n    def minimumDistance(self, word: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "HELLO"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "word": "CAKE"
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "word": "AA"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "word": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      },
+      "expected": 48
+    },
+    {
+      "args": {
+        "word": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
+      },
+      "expected": 0
+    }
+  ]
 }

@@ -37,5 +37,186 @@
     "At node <code>u</code>, process each query <code>[u, k]</code> by calling <code>find_by_order(k − 1)</code> (C++ PBDS) or indexing <code>sorted_list[k-1]</code> (Python <code>SortedList</code>)."
   ],
   "starter_code": "class Solution:\n    def kthSmallest(self, par: List[int], vals: List[int], queries: List[List[int]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "par": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "vals": [
+          5,
+          10,
+          15,
+          7
+        ],
+        "queries": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected": [
+        5,
+        15
+      ]
+    },
+    {
+      "args": {
+        "par": [
+          -1,
+          0,
+          1,
+          1,
+          2
+        ],
+        "vals": [
+          3,
+          8,
+          6,
+          4,
+          9
+        ],
+        "queries": [
+          [
+            2,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      },
+      "expected": [
+        4,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "par": [
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "vals": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "queries": [
+          [
+            0,
+            5
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        -1,
+        0
+      ]
+    },
+    {
+      "args": {
+        "par": [
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "vals": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "queries": [
+          [
+            5,
+            1
+          ],
+          [
+            0,
+            6
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "par": [
+          -1,
+          0,
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5,
+          1
+        ],
+        "vals": [
+          42,
+          17,
+          58,
+          99,
+          11,
+          33,
+          7,
+          22,
+          44,
+          15
+        ],
+        "queries": [
+          [
+            6,
+            4
+          ],
+          [
+            9,
+            8
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            0,
+            10
+          ]
+        ]
+      },
+      "expected": [
+        -1,
+        -1,
+        95,
+        95
+      ]
+    }
+  ]
 }

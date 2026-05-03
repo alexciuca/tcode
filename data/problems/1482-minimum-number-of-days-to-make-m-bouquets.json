@@ -31,5 +31,89 @@
     "We can check easily if we can make enough bouquets at day x if we can get group adjacent flowers at day x."
   ],
   "starter_code": "class Solution:\n    def minDays(self, bloomDay: List[int], m: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "bloomDay": [
+          1,
+          10,
+          3,
+          10,
+          2
+        ],
+        "m": 3,
+        "k": 1
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "bloomDay": [
+          1,
+          10,
+          3,
+          10,
+          2
+        ],
+        "m": 2,
+        "k": 2
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "bloomDay": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "m": 2,
+        "k": 3
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "bloomDay": [
+          1000000000
+        ],
+        "m": 1,
+        "k": 1
+      },
+      "expected": 1000000000
+    },
+    {
+      "args": {
+        "bloomDay": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "m": 10,
+        "k": 2
+      },
+      "expected": 20
+    }
+  ]
 }

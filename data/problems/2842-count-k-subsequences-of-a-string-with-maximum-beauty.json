@@ -32,5 +32,41 @@
     "Powers, combinations, and additions should be done modulo <code>10<sup>9</sup> + 7</code>."
   ],
   "starter_code": "class Solution:\n    def countKSubsequencesWithMaxBeauty(self, s: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aabcb",
+        "k": 3
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "aabcbcbcadcbbcadcbbcadcbbcadcbcd",
+        "k": 2
+      },
+      "expected": 110
+    },
+    {
+      "args": {
+        "s": "aaaa",
+        "k": 1
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "abcdefghij",
+        "k": 10
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aabbccddee",
+        "k": 5
+      },
+      "expected": 32
+    }
+  ]
 }

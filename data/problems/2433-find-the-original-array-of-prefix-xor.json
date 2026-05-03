@@ -25,5 +25,88 @@
     "Notice that arr[i] ^ pref[i-1] = pref[i]. This is the same as the previous equation."
   ],
   "starter_code": "class Solution:\n    def findArray(self, pref: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "pref": [
+          5,
+          2,
+          0,
+          3,
+          1
+        ]
+      },
+      "expected": [
+        5,
+        7,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "args": {
+        "pref": [
+          13,
+          0,
+          6,
+          15
+        ]
+      },
+      "expected": [
+        13,
+        13,
+        6,
+        9
+      ]
+    },
+    {
+      "args": {
+        "pref": [
+          0
+        ]
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "args": {
+        "pref": [
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "expected": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "args": {
+        "pref": [
+          1000000,
+          524288,
+          262144,
+          131072,
+          65536,
+          32768
+        ]
+      },
+      "expected": [
+        1000000,
+        475712,
+        786432,
+        393216,
+        196608,
+        98304
+      ]
+    }
+  ]
 }

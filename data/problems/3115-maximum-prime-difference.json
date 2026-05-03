@@ -27,5 +27,69 @@
     "Find the first and the last prime number in the <code>nums</code>."
   ],
   "starter_code": "class Solution:\n    def maximumPrimeDifference(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          5,
+          8,
+          10
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          3,
+          7,
+          11,
+          13
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          97,
+          2,
+          50,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          97,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ]
+      },
+      "expected": 4
+    }
+  ]
 }

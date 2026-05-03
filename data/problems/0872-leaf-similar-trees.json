@@ -23,5 +23,37 @@
   ],
   "hints": [],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "root1": [
+          3,
+          5,
+          1,
+          6,
+          2,
+          9,
+          8,
+          null,
+          null,
+          7,
+          4
+        ],
+        "root2": [
+          3,
+          6,
+          1,
+          null,
+          null,
+          5,
+          2,
+          7,
+          4,
+          9,
+          8
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

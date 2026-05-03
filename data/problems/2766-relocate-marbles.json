@@ -30,5 +30,152 @@
     "Sequentially process pairs from moveFrom[i] and moveTo[i]. In each step, remove the occurrence of moveFrom[i] and add moveTo[i] into the set."
   ],
   "starter_code": "class Solution:\n    def relocateMarbles(self, nums: List[int], moveFrom: List[int], moveTo: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "moveFrom": [
+          1,
+          6,
+          5
+        ],
+        "moveTo": [
+          5,
+          3,
+          8
+        ]
+      },
+      "expected": [
+        2,
+        3,
+        4,
+        8
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          100
+        ],
+        "moveFrom": [
+          100
+        ],
+        "moveTo": [
+          200
+        ]
+      },
+      "expected": [
+        200
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "moveFrom": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "moveTo": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected": [
+        5
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          999999999
+        ],
+        "moveFrom": [
+          1000000000,
+          999999999,
+          1000000000
+        ],
+        "moveTo": [
+          1,
+          2,
+          1
+        ]
+      },
+      "expected": [
+        1,
+        2
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "moveFrom": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          7,
+          8,
+          9,
+          10
+        ],
+        "moveTo": [
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        11
+      ]
+    }
+  ]
 }

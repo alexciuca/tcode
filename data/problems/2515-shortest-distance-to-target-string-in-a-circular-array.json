@@ -31,5 +31,87 @@
     "Choose the one with the minimum distance."
   ],
   "starter_code": "class Solution:\n    def closestTarget(self, words: List[str], target: str, startIndex: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "hello",
+          "world",
+          "hello",
+          "target"
+        ],
+        "target": "hello",
+        "startIndex": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "words": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "target": "c",
+        "startIndex": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words": [
+          "target"
+        ],
+        "target": "target",
+        "startIndex": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "words": [
+          "abc",
+          "def",
+          "ghi",
+          "jkl",
+          "mno",
+          "abc"
+        ],
+        "target": "abc",
+        "startIndex": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "words": [
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound",
+          "found",
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound",
+          "notfound"
+        ],
+        "target": "found",
+        "startIndex": 0
+      },
+      "expected": 10
+    }
+  ]
 }

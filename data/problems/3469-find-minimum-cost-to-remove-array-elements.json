@@ -26,5 +26,66 @@
     "Define the state as <code>dp[i][j]</code>, where <code>i</code> represents the last remaining element and <code>j</code> represents the starting index of the current prefix."
   ],
   "starter_code": "class Solution:\n    def minCost(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          8,
+          4,
+          6
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          2
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          1000000,
+          999999,
+          999998,
+          999997,
+          999996,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 3000001
+    }
+  ]
 }

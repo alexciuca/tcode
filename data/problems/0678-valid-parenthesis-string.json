@@ -32,5 +32,36 @@
     "How about using 2 stacks instead of 1? Think about it."
   ],
   "starter_code": "class Solution:\n    def checkValidString(self, s: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "()"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "(*))"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "(*)"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "*"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "(**))(*)((*(*))"
+      },
+      "expected": true
+    }
+  ]
 }

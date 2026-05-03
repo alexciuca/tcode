@@ -23,5 +23,65 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def largestRectangleArea(self, heights: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "heights": [
+          2,
+          1,
+          5,
+          6,
+          2,
+          3
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "heights": [
+          2,
+          4
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "heights": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "heights": [
+          10000,
+          10000,
+          10000
+        ]
+      },
+      "expected": 30000
+    },
+    {
+      "args": {
+        "heights": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": 15
+    }
+  ]
 }

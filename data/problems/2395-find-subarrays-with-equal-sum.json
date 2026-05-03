@@ -28,5 +28,77 @@
     "Use a hashset to check if any two sums are equal."
   ],
   "starter_code": "class Solution:\n    def findSubarrays(self, nums: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          4,
+          2,
+          4
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "nums": [
+          -1000000000,
+          1000000000,
+          -1000000000,
+          1000000000
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

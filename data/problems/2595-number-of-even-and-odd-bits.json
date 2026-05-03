@@ -23,5 +23,51 @@
     "Divide n by 2 while n is positive, and if n modulo 2 is 1, add 1 to its corresponding variable."
   ],
   "starter_code": "class Solution:\n    def evenOddBit(self, n: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 2
+      },
+      "expected": [
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "n": 50
+      },
+      "expected": [
+        1,
+        2
+      ]
+    },
+    {
+      "args": {
+        "n": 1
+      },
+      "expected": [
+        1,
+        0
+      ]
+    },
+    {
+      "args": {
+        "n": 1000
+      },
+      "expected": [
+        2,
+        4
+      ]
+    },
+    {
+      "args": {
+        "n": 15
+      },
+      "expected": [
+        2,
+        2
+      ]
+    }
+  ]
 }

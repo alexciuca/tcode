@@ -26,5 +26,36 @@
     "Use if-else to check all the conditions."
   ],
   "starter_code": "class Solution:\n    def isValid(self, word: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "leetcode"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "word": "A1@B"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "word": "ab"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "word": "1"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "word": "aB3@#$"
+      },
+      "expected": false
+    }
+  ]
 }

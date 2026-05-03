@@ -32,5 +32,41 @@
     "Is it possible to solve greedily using divisibility rules?"
   ],
   "starter_code": "class Solution:\n    def largestPalindrome(self, n: int, k: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 1,
+        "k": 1
+      },
+      "expected": "9"
+    },
+    {
+      "args": {
+        "n": 2,
+        "k": 1
+      },
+      "expected": "99"
+    },
+    {
+      "args": {
+        "n": 3,
+        "k": 2
+      },
+      "expected": "898"
+    },
+    {
+      "args": {
+        "n": 1,
+        "k": 9
+      },
+      "expected": "9"
+    },
+    {
+      "args": {
+        "n": 5,
+        "k": 3
+      },
+      "expected": "99999"
+    }
+  ]
 }

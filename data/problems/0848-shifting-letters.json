@@ -25,5 +25,86 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def shiftingLetters(self, s: str, shifts: List[int]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abc",
+        "shifts": [
+          3,
+          5,
+          9
+        ]
+      },
+      "expected": "rpl"
+    },
+    {
+      "args": {
+        "s": "aaa",
+        "shifts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": "gfd"
+    },
+    {
+      "args": {
+        "s": "z",
+        "shifts": [
+          1
+        ]
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "shifts": [
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000
+        ]
+      },
+      "expected": "apetixmbqfujyncrgvkzodshwl"
+    },
+    {
+      "args": {
+        "s": "testing",
+        "shifts": [
+          4,
+          3,
+          2,
+          4,
+          5,
+          1,
+          1
+        ]
+      },
+      "expected": "nufepph"
+    }
+  ]
 }

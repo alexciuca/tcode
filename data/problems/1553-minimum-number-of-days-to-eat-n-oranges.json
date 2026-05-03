@@ -23,5 +23,36 @@
     "In each step, choose between 2 options:\r\nminOranges = 1 + min( (n%2) + f(n/2), (n%3) + f(n/3) )\r\nwhere f(n) is the minimum number of days to eat n oranges."
   ],
   "starter_code": "class Solution:\n    def minDays(self, n: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 7
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "n": 15
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "n": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 2000000000
+      },
+      "expected": 32
+    }
+  ]
 }
