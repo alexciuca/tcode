@@ -166,7 +166,9 @@ class SearchProblems(Screen):
                 f"Page {self.page + 1} / {self.total_pages()}"
             )
             self.query_one("#prev", Button).disabled = self.page == 0
-            self.query_one("#next", Button).disabled = self.page >= self.total_pages() - 1
+            self.query_one("#next", Button).disabled = (
+                self.page >= self.total_pages() - 1
+            )
             cards = self.query(".card")
             if cards:
                 cards.first().focus()

@@ -5,7 +5,7 @@ from pathlib import Path
 from textual.app import ComposeResult
 from textual.containers import Horizontal, ScrollableContainer
 from textual.screen import Screen
-from textual.widgets import Button, Footer, Header, Static
+from textual.widgets import Footer, Header, Static
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
