@@ -18,6 +18,11 @@
     color: cyan;
 }
 
+.card:focus {
+    border: round cyan;
+    color: cyan;
+}
+
 #pagination {
     align: center middle;
     height: auto;

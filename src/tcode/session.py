@@ -77,11 +77,81 @@ class SessionApp(Screen):
             ScrollableContainer(Static("", id="right"), id="right-scroll"),
         )
         yield Footer()
-        yield Button("Back", id="back-button")
 
-    def on_button_pressed(self, event: Button.Pressed) -> None:
-        if event.button.id == "back-button":
-            self.app.pop_screen()
+    def action_hint(self) -> None:
+        if self._llm_loading:
+            return
+        if self.hints_used >= 4:
+            self._update_right(
+                "Maximum hints reached.\n\n"
+                "Try working through it — you have all the information you need."
+            )
+            return
+        self._llm_loading = True
+        self._update_right("Thinking...")
+        self.run_worker(self._fetch_hint, thread=True)
+
+    def _fetch_hint(self) -> None:
+        try:
+            result = get_hint(
+                code=self.code_snapshot,
+                problem=self.active_problem,
+                hints_used=self.hints_used,
+            )
+            self.hints_used += 1
+            self.app.call_from_thread(self._refresh_coach_title)
+            self.app.call_from_thread(
+                self._update_right,
+                f"Hint {self.hints_used}/4\n{'─' * 45}\n\n{result.message}",
+            )
+        except Exception as e:
+            self.app.call_from_thread(self._update_right, f"Error getting hint: {e}")
+        finally:
+            self._llm_loading = False
+
+    def action_run(self) -> None:
+        if self._test_running:
+            return
+        self._test_running = True
+        self._update_right("Running tests...")
+        self.run_worker(self._execute_tests, thread=True)
+
+    def _execute_tests(self) -> None:
+        try:
+            if not self.active_problem.test_cases:
+                self.app.call_from_thread(
+                    self._update_right,
+                    "No test cases available for this problem.",
+                )
+                return
+
+            results = run_tests(self.code_snapshot, self.active_problem)
+            summary = format_results(results)
+            self.app.call_from_thread(self._update_right, summary)
+        except Exception as e:
+            self.app.call_from_thread(self._update_right, f"Error: {e}")
+        finally:
+            self._test_running = False
+
+    def action_complexity(self) -> None:
+        if self._complexity_running:
+            return
+        self._refresh_code_snapshot()
+        self._complexity_running = True
+        self._update_right("Checking complexity...")
+        self.run_worker(self._check_complexity, thread=True)
+
+    def action_reset_hints(self) -> None:
+        self.hints_used = 0
+        self._refresh_coach_title()
+        self._update_right("Hint history reset. You have 4 hints available.")
+
+    def action_toggle_focus(self) -> None:
+        self._focused_pane = 1 - self._focused_pane
+        self.query_one(PANE_IDS[self._focused_pane]).focus()
+
+    def action_quit(self) -> None:
+        self.app.pop_screen()
 
     def action_hint(self) -> None:
         if self._llm_loading:
