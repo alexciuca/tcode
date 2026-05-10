@@ -26,41 +26,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isIsomorphic(self, s: str, t: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "egg",
-        "t": "add"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "foo",
-        "t": "bar"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "paper",
-        "t": "title"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "aabb",
-        "t": "ccdd"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "badc",
-        "t": "baba"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

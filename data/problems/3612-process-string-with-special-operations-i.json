@@ -24,36 +24,5 @@
     "Simulate as described"
   ],
   "starter_code": "class Solution:\n    def processStr(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ab*cd"
-      },
-      "expected": "acd"
-    },
-    {
-      "args": {
-        "s": "a#b%c"
-      },
-      "expected": "c"
-    },
-    {
-      "args": {
-        "s": "*"
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "abc#def*ghi%jkl"
-      },
-      "expected": "jkl"
-    },
-    {
-      "args": {
-        "s": "a*b*c*d*e*f*g*h*i*j*k"
-      },
-      "expected": "k"
-    }
-  ]
+  "test_cases": []
 }

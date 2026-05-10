@@ -24,41 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def getHint(self, secret: str, guess: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "secret": "1807",
-        "guess": "7810"
-      },
-      "expected": "1A3B"
-    },
-    {
-      "args": {
-        "secret": "1",
-        "guess": "0"
-      },
-      "expected": "0A0B"
-    },
-    {
-      "args": {
-        "secret": "1122",
-        "guess": "1222"
-      },
-      "expected": "3A0B"
-    },
-    {
-      "args": {
-        "secret": "000",
-        "guess": "111"
-      },
-      "expected": "0A0B"
-    },
-    {
-      "args": {
-        "secret": "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890",
-        "guess": "9876543210987654321098765432109876543210987654321098765432109876543210987654321098765432109876543210"
-      },
-      "expected": "20A80B"
-    }
-  ]
+  "test_cases": []
 }

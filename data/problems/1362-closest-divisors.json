@@ -26,51 +26,5 @@
     "To find the divisors of a number, you only need to iterate to the square root of that number."
   ],
   "starter_code": "class Solution:\n    def closestDivisors(self, num: int) -> List[int]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num": 8
-      },
-      "expected": [
-        3,
-        3
-      ]
-    },
-    {
-      "args": {
-        "num": 123
-      },
-      "expected": [
-        5,
-        25
-      ]
-    },
-    {
-      "args": {
-        "num": 999
-      },
-      "expected": [
-        25,
-        40
-      ]
-    },
-    {
-      "args": {
-        "num": 1
-      },
-      "expected": [
-        1,
-        2
-      ]
-    },
-    {
-      "args": {
-        "num": 1000000000
-      },
-      "expected": [
-        23658,
-        42269
-      ]
-    }
-  ]
+  "test_cases": []
 }

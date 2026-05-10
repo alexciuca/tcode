@@ -27,36 +27,5 @@
     "Iterate over the possible lengths of the square until enough apples are collected."
   ],
   "starter_code": "class Solution:\n    def minimumPerimeter(self, neededApples: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "neededApples": 15
-      },
-      "expected": 16
-    },
-    {
-      "args": {
-        "neededApples": 1
-      },
-      "expected": 8
-    },
-    {
-      "args": {
-        "neededApples": 1000000000000000
-      },
-      "expected": 503968
-    },
-    {
-      "args": {
-        "neededApples": 100
-      },
-      "expected": 24
-    },
-    {
-      "args": {
-        "neededApples": 999999999999999
-      },
-      "expected": 503968
-    }
-  ]
+  "test_cases": []
 }

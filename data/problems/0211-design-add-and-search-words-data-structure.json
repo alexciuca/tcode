@@ -1,0 +1,30 @@
+{
+  "id": "0211",
+  "slug": "design-add-and-search-words-data-structure",
+  "title": "Design Add and Search Words Data Structure",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Depth-First Search",
+    "Design",
+    "Trie"
+  ],
+  "description": "Design a data structure that supports adding new words and finding if a string matches any previously added string.\nImplement the WordDictionary class:\nExample:\nConstraints:",
+  "constraints": [
+    "1 <= word.length <= 25",
+    "word in addWord consists of lowercase English letters.",
+    "word in search consist of '.' or lowercase English letters.",
+    "There will be at most 2 dots in word for search queries.",
+    "At most 104 calls will be made to addWord and search."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"WordDictionary\",\"addWord\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\"]\n[[],[\"bad\"],[\"dad\"],[\"mad\"],[\"pad\"],[\"bad\"],[\".ad\"],[\"b..\"]]\nOutput\n[null,null,null,null,false,true,true,true]\n\nExplanation\nWordDictionary wordDictionary = new WordDictionary();\nwordDictionary.addWord(\"bad\");\nwordDictionary.addWord(\"dad\");\nwordDictionary.addWord(\"mad\");\nwordDictionary.search(\"pad\"); // return False\nwordDictionary.search(\"bad\"); // return True\nwordDictionary.search(\".ad\"); // return True\nwordDictionary.search(\"b..\"); // return True"
+    }
+  ],
+  "hints": [
+    "You should be familiar with how a Trie works. If not, please work on this problem: <a href=\"https://leetcode.com/problems/implement-trie-prefix-tree/\">Implement Trie (Prefix Tree)</a> first."
+  ],
+  "starter_code": "class WordDictionary:\n\n    def __init__(self):\n        \n\n    def addWord(self, word: str) -> None:\n        \n\n    def search(self, word: str) -> bool:\n        \n\n\n# Your WordDictionary object will be instantiated and called as such:\n# obj = WordDictionary()\n# obj.addWord(word)\n# param_2 = obj.search(word)",
+  "test_cases": []
+}

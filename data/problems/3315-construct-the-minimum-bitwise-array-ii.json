@@ -1,0 +1,31 @@
+{
+  "id": "3315",
+  "slug": "construct-the-minimum-bitwise-array-ii",
+  "title": "Construct the Minimum Bitwise Array II",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "description": "You are given an array nums consisting of n prime integers.\nYou need to construct an array ans of length n, such that, for each index i, the bitwise OR of ans[i] and ans[i] + 1 is equal to nums[i], i.e. ans[i] OR (ans[i] + 1) == nums[i].\nAdditionally, you must minimize each value of ans[i] in the resulting array.\nIf it is not possible to find such a value for ans[i] that satisfies the condition, then set ans[i] = -1.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "2 <= nums[i] <= 109",
+    "nums[i] is a prime number."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [2,3,5,7]\nOutput: [-1,1,4,3]\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [11,13,31]\nOutput: [9,12,15]\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Consider the binary representation of <code>nums[i]</code>.",
+    "Answer is -1 for even <code>nums[i]</code>.",
+    "Try unsetting a single bit from <code>nums[i]</code>."
+  ],
+  "starter_code": "class Solution:\n    def minBitwiseArray(self, nums: List[int]) -> List[int]:\n        ",
+  "test_cases": []
+}

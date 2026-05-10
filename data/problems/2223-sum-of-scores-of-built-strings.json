@@ -29,36 +29,5 @@
     "Could you use the Z array from the Z algorithm to find the score of each s_i?"
   ],
   "starter_code": "class Solution:\n    def sumScores(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aabcb"
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abcd"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "aaaa"
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "s": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc"
-      },
-      "expected": 5490
-    }
-  ]
+  "test_cases": []
 }

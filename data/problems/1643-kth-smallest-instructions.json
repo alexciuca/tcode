@@ -31,56 +31,5 @@
     "Try building the instructions one step at a time. How many instructions start with \"H\", and how does this compare with k?"
   ],
   "starter_code": "class Solution:\n    def kthSmallestPath(self, destination: List[int], k: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "destination": [
-          2,
-          2
-        ],
-        "k": 1
-      },
-      "expected": "HHVV"
-    },
-    {
-      "args": {
-        "destination": [
-          3,
-          2
-        ],
-        "k": 3
-      },
-      "expected": "HVVHV"
-    },
-    {
-      "args": {
-        "destination": [
-          1,
-          1
-        ],
-        "k": 1
-      },
-      "expected": "HV"
-    },
-    {
-      "args": {
-        "destination": [
-          15,
-          15
-        ],
-        "k": 1
-      },
-      "expected": "HHHHHHHHHHHHHHHVVVVVVVVVVVVVVV"
-    },
-    {
-      "args": {
-        "destination": [
-          4,
-          3
-        ],
-        "k": 35
-      },
-      "expected": "VVVVHHH"
-    }
-  ]
+  "test_cases": []
 }

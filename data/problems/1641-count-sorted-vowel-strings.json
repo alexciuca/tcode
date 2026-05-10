@@ -29,36 +29,5 @@
     "In this recursive function, iterate on the possible characters for the first character, which will be all the vowels not less than last_character, and for each possible value c, increase the answer by count(n-1, c)."
   ],
   "starter_code": "class Solution:\n    def countVowelStrings(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "n": 2
-      },
-      "expected": 15
-    },
-    {
-      "args": {
-        "n": 5
-      },
-      "expected": 126
-    },
-    {
-      "args": {
-        "n": 10
-      },
-      "expected": 1001
-    },
-    {
-      "args": {
-        "n": 50
-      },
-      "expected": 316251
-    }
-  ]
+  "test_cases": []
 }

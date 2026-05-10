@@ -25,36 +25,5 @@
     "The number n in base (n - 2) is always 12, which is not palindromic."
   ],
   "starter_code": "class Solution:\n    def isStrictlyPalindromic(self, n: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 4
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "n": 9
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "n": 100
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "n": 10000
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "n": 99999
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

@@ -1,0 +1,32 @@
+{
+  "id": "0676",
+  "slug": "implement-magic-dictionary",
+  "title": "Implement Magic Dictionary",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Design",
+    "Trie"
+  ],
+  "description": "Design a data structure that is initialized with a list of different words. Provided a string, you should determine if you can change exactly one character in this string to match any word in the data structure.\nImplement the MagicDictionary class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= dictionary.length <= 100",
+    "1 <= dictionary[i].length <= 100",
+    "dictionary[i] consists of only lower-case English letters.",
+    "All the strings in dictionary are distinct.",
+    "1 <= searchWord.length <= 100",
+    "searchWord consists of only lower-case English letters.",
+    "buildDict will be called only once before search.",
+    "At most 100 calls will be made to search."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"MagicDictionary\", \"buildDict\", \"search\", \"search\", \"search\", \"search\"]\n[[], [[\"hello\", \"leetcode\"]], [\"hello\"], [\"hhllo\"], [\"hell\"], [\"leetcoded\"]]\nOutput\n[null, null, false, true, false, false]\n\nExplanation\nMagicDictionary magicDictionary = new MagicDictionary();\nmagicDictionary.buildDict([\"hello\", \"leetcode\"]);\nmagicDictionary.search(\"hello\"); // return False\nmagicDictionary.search(\"hhllo\"); // We can change the second 'h' to 'e' to match \"hello\" so we return True\nmagicDictionary.search(\"hell\"); // return False\nmagicDictionary.search(\"leetcoded\"); // return False"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class MagicDictionary:\n\n    def __init__(self):\n        \n\n    def buildDict(self, dictionary: List[str]) -> None:\n        \n\n    def search(self, searchWord: str) -> bool:\n        \n\n\n# Your MagicDictionary object will be instantiated and called as such:\n# obj = MagicDictionary()\n# obj.buildDict(dictionary)\n# param_2 = obj.search(searchWord)",
+  "test_cases": []
+}

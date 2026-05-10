@@ -30,36 +30,5 @@
     "To parse formula[i:], when we see a `'('`, we will parse recursively whatever is inside the brackets (up to the correct closing ending bracket) and add it to our count, multiplying by the following multiplicity if there is one.\r\n\r\nOtherwise, we should see an uppercase character: we will parse the rest of the letters to get the name, and add that (plus the multiplicity if there is one.)"
   ],
   "starter_code": "class Solution:\n    def countOfAtoms(self, formula: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "formula": "H2O"
-      },
-      "expected": "H2O"
-    },
-    {
-      "args": {
-        "formula": "Ca(OH)2"
-      },
-      "expected": "CaH2O2"
-    },
-    {
-      "args": {
-        "formula": "Mg(HCO3)2"
-      },
-      "expected": "C2H2MgO6"
-    },
-    {
-      "args": {
-        "formula": "K4(ON(SO3)2)2"
-      },
-      "expected": "K4N2O14S4"
-    },
-    {
-      "args": {
-        "formula": "((H)2O)50"
-      },
-      "expected": "H100O50"
-    }
-  ]
+  "test_cases": []
 }

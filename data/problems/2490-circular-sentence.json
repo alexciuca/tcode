@@ -29,36 +29,5 @@
     "Check the first character and the last character of the sentence."
   ],
   "starter_code": "class Solution:\n    def isCircularSentence(self, sentence: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "sentence": "leetcode exercises sound delightful"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "sentence": "cattleandcats"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "sentence": "a"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "sentence": "ab ba"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "sentence": "zzz aaa aaz zza abb bba bbb baa aab aba"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

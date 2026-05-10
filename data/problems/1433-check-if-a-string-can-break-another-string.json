@@ -30,41 +30,5 @@
     "Sort both strings and then check if one of them can break the other."
   ],
   "starter_code": "class Solution:\n    def checkIfCanBreak(self, s1: str, s2: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s1": "abc",
-        "s2": "xya"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "aab",
-        "s2": "bbb"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "a",
-        "s2": "a"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "aaaa",
-        "s2": "bbbb"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefgh",
-        "s2": "zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyx"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

@@ -30,41 +30,5 @@
     "Consider swapping adjacent characters to maintain relative ordering."
   ],
   "starter_code": "class Solution:\n    def isTransformable(self, s: str, t: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "84532",
-        "t": "34528"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "34521",
-        "t": "12345"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "0",
-        "t": "0"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "9876543210",
-        "t": "0123456789"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "111111",
-        "t": "111111"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

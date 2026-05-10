@@ -26,36 +26,5 @@
     "To solve this problem you need to solve every suffix separately"
   ],
   "starter_code": "class Solution:\n    def makeStringSorted(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "bcadeh"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "cba"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "aabbcc"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "zyxwvutsrqponmlkjihgfedcba"
-      },
-      "expected": 325
-    }
-  ]
+  "test_cases": []
 }

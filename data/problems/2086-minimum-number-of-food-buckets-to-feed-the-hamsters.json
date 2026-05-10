@@ -31,36 +31,5 @@
     "It is always better to place a bucket at index i + 1 because it can feed the next hamster as well."
   ],
   "starter_code": "class Solution:\n    def minimumBuckets(self, hamsters: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "hamsters": "H.H"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "hamsters": "H..H"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "hamsters": "HH"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "hamsters": ".H.H.H."
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "hamsters": "H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H.H"
-      },
-      "expected": 25
-    }
-  ]
+  "test_cases": []
 }

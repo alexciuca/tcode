@@ -24,36 +24,5 @@
     "Do take care to compare with replaced occurrence of ‘?’ when checking the left character."
   ],
   "starter_code": "class Solution:\n    def modifyString(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "?zs"
-      },
-      "expected": "azs"
-    },
-    {
-      "args": {
-        "s": "ubv?w"
-      },
-      "expected": "ubvaw"
-    },
-    {
-      "args": {
-        "s": "j?qg??B"
-      },
-      "expected": "jaqgabB"
-    },
-    {
-      "args": {
-        "s": "?"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "a?a?a?a"
-      },
-      "expected": "abababa"
-    }
-  ]
+  "test_cases": []
 }

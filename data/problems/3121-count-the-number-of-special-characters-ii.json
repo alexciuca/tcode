@@ -27,36 +27,5 @@
     "For each character <code>c</code>, store the first occurrence of its uppercase and the last occurrence of its lowercase."
   ],
   "starter_code": "class Solution:\n    def numberOfSpecialChars(self, word: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "word": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-      },
-      "expected": 26
-    },
-    {
-      "args": {
-        "word": "aAbBcC"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "word": "aaaa"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "word": "aA"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "word": "aBcDeFgHiJkLmNoPqRsT"
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

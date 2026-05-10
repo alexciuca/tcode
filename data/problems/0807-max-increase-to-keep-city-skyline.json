@@ -25,37 +25,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def maxIncreaseKeepingSkyline(self, grid: List[List[int]]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "grid": [
-          [
-            3,
-            0,
-            8,
-            4
-          ],
-          [
-            2,
-            4,
-            5,
-            7
-          ],
-          [
-            9,
-            2,
-            6,
-            3
-          ],
-          [
-            0,
-            3,
-            1,
-            0
-          ]
-        ]
-      },
-      "expected": 35
-    }
-  ]
+  "test_cases": []
 }

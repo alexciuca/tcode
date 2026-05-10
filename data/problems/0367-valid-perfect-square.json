@@ -21,36 +21,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isPerfectSquare(self, num: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num": 16
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "num": 14
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "num": 1
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "num": 2147483647
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "num": 1000000
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

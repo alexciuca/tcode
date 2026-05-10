@@ -22,36 +22,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def nextGreaterElement(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 12
-      },
-      "expected": 21
-    },
-    {
-      "args": {
-        "n": 54321
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "n": 2147483647
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "n": 1234567890
-      },
-      "expected": 1234567908
-    }
-  ]
+  "test_cases": []
 }

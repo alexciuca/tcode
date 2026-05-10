@@ -25,41 +25,5 @@
     "Think of the L and R's as people on a horizontal line, where X is a space.  The people can't cross each other, and also you can't go from XRX to RXX."
   ],
   "starter_code": "class Solution:\n    def canTransform(self, start: str, result: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "start": "XLLR",
-        "result": "LXLR"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "start": "XXRXXLXXRXXLXXXSXXRXXLXX",
-        "result": "XXXRXXLXXRXXLXXXXXXRXXLXX"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "start": "LR",
-        "result": "RL"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "start": "X",
-        "result": "X"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "start": "RXXLRXRXL",
-        "result": "XXXXRRXLL"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

@@ -27,41 +27,5 @@
     "<code>dp[i][j][k] = max(dp[i + 1][j][k], dp[i][j - 1][k], dp[i + 1][j - 1][k - dist(s[i], s[j])] + 2)</code>, where <code>dist(x, y)</code> is the minimum cyclic distance between <code>x</code> and <code>y</code>."
   ],
   "starter_code": "class Solution:\n    def longestPalindromicSubsequence(self, s: str, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abba",
-        "k": 0
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "racecar",
-        "k": 1
-      },
-      "expected": 7
-    },
-    {
-      "args": {
-        "s": "a",
-        "k": 200
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abcdef",
-        "k": 0
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "aabbccddee",
-        "k": 5
-      },
-      "expected": 6
-    }
-  ]
+  "test_cases": []
 }

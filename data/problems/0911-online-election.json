@@ -1,0 +1,30 @@
+{
+  "id": "0911",
+  "slug": "online-election",
+  "title": "Online Election",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Design"
+  ],
+  "description": "You are given two integer arrays persons and times. In an election, the ith vote was cast for persons[i] at time times[i].\nFor each query at a time t, find the person that was leading the election at time t. Votes cast at time t will count towards our query. In the case of a tie, the most recent vote (among tied candidates) wins.\nImplement the TopVotedCandidate class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= persons.length <= 5000",
+    "times.length == persons.length",
+    "0 <= persons[i] < persons.length",
+    "0 <= times[i] <= 109",
+    "times is sorted in a strictly increasing order.",
+    "times[0] <= t <= 109",
+    "At most 104 calls will be made to q."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"TopVotedCandidate\", \"q\", \"q\", \"q\", \"q\", \"q\", \"q\"]\n[[[0, 1, 1, 0, 0, 1, 0], [0, 5, 10, 15, 20, 25, 30]], [3], [12], [25], [15], [24], [8]]\nOutput\n[null, 0, 1, 1, 0, 0, 1]\n\nExplanation\nTopVotedCandidate topVotedCandidate = new TopVotedCandidate([0, 1, 1, 0, 0, 1, 0], [0, 5, 10, 15, 20, 25, 30]);\ntopVotedCandidate.q(3); // return 0, At time 3, the votes are [0], and 0 is leading.\ntopVotedCandidate.q(12); // return 1, At time 12, the votes are [0,1,1], and 1 is leading.\ntopVotedCandidate.q(25); // return 1, At time 25, the votes are [0,1,1,0,0,1], and 1 is leading (as ties go to the most recent vote.)\ntopVotedCandidate.q(15); // return 0\ntopVotedCandidate.q(24); // return 0\ntopVotedCandidate.q(8); // return 1"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class TopVotedCandidate:\n\n    def __init__(self, persons: List[int], times: List[int]):\n        \n\n    def q(self, t: int) -> int:\n        \n\n\n# Your TopVotedCandidate object will be instantiated and called as such:\n# obj = TopVotedCandidate(persons, times)\n# param_1 = obj.q(t)",
+  "test_cases": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "2311",
+  "slug": "longest-binary-subsequence-less-than-or-equal-to-k",
+  "title": "Longest Binary Subsequence Less Than or Equal to K",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Memoization"
+  ],
+  "description": "You are given a binary string s and a positive integer k.\nReturn the length of the longest subsequence of s that makes up a binary number less than or equal to k.\nNote:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s[i] is either '0' or '1'.",
+    "1 <= k <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"1001010\", k = 5\nOutput: 5\nExplanation: The longest subsequence of s that makes up a binary number less than or equal to 5 is \"00010\", as this number is equal to 2 in decimal.\nNote that \"00100\" and \"00101\" are also possible, which are equal to 4 and 5 in decimal, respectively.\nThe length of this subsequence is 5, so 5 is returned."
+    },
+    {
+      "example_text": "Input: s = \"00101001\", k = 1\nOutput: 6\nExplanation: \"000001\" is the longest subsequence of s that makes up a binary number less than or equal to 1, as this number is equal to 1 in decimal.\nThe length of this subsequence is 6, so 6 is returned."
+    }
+  ],
+  "hints": [
+    "Choosing a subsequence from the string is equivalent to deleting all the other digits.",
+    "If you were to remove a digit, which one should you remove to reduce the value of the string?"
+  ],
+  "starter_code": "class Solution:\n    def longestSubsequence(self, s: str, k: int) -> int:\n        ",
+  "test_cases": []
+}

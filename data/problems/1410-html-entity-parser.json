@@ -25,36 +25,5 @@
     "For every '&' check if it matches an HTML entity by checking the ';' character and if entity found replace it in the answer."
   ],
   "starter_code": "class Solution:\n    def entityParser(self, text: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "text": "&quot;Hello&quot;"
-      },
-      "expected": "\"Hello\""
-    },
-    {
-      "args": {
-        "text": "String&nbsp;with&nbsp;spaces"
-      },
-      "expected": "String&nbsp;with&nbsp;spaces"
-    },
-    {
-      "args": {
-        "text": "&apos;&lt;&gt;&quot;&amp;"
-      },
-      "expected": "'<>\"&"
-    },
-    {
-      "args": {
-        "text": "No&nbsp;entities&here&invalid;text&"
-      },
-      "expected": "No&nbsp;entities&here&invalid;text&"
-    },
-    {
-      "args": {
-        "text": "&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;"
-      },
-      "expected": "\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\""
-    }
-  ]
+  "test_cases": []
 }

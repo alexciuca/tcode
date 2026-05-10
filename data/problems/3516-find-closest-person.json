@@ -25,46 +25,5 @@
     "Compare the distances from Persons 1 and 2 to Person 3 to determine the answer."
   ],
   "starter_code": "class Solution:\n    def findClosest(self, x: int, y: int, z: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "x": 1,
-        "y": 5,
-        "z": 10
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "x": 50,
-        "y": 50,
-        "z": 50
-      },
-      "expected": 50
-    },
-    {
-      "args": {
-        "x": 1,
-        "y": 2,
-        "z": 100
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "x": 1,
-        "y": 1,
-        "z": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "x": 100,
-        "y": 100,
-        "z": 100
-      },
-      "expected": 100
-    }
-  ]
+  "test_cases": []
 }

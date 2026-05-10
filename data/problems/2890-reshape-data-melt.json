@@ -1,0 +1,22 @@
+{
+  "id": "2890",
+  "slug": "reshape-data-melt",
+  "title": "Reshape Data: Melt",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "Write a solution to reshape the data so that each row represents sales data for a product in a specific quarter.\nThe result format is in the following example.\nExample 1:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "DataFrame report\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| product     | object |\n| quarter_1   | int    |\n| quarter_2   | int    |\n| quarter_3   | int    |\n| quarter_4   | int    |\n+-------------+--------+"
+    },
+    {
+      "example_text": "Input:\n+-------------+-----------+-----------+-----------+-----------+\n| product     | quarter_1 | quarter_2 | quarter_3 | quarter_4 |\n+-------------+-----------+-----------+-----------+-----------+\n| Umbrella    | 417       | 224       | 379       | 611       |\n| SleepingBag | 800       | 936       | 93        | 875       |\n+-------------+-----------+-----------+-----------+-----------+\nOutput:\n+-------------+-----------+-------+\n| product     | quarter   | sales |\n+-------------+-----------+-------+\n| Umbrella    | quarter_1 | 417   |\n| SleepingBag | quarter_1 | 800   |\n| Umbrella    | quarter_2 | 224   |\n| SleepingBag | quarter_2 | 936   |\n| Umbrella    | quarter_3 | 379   |\n| SleepingBag | quarter_3 | 93    |\n| Umbrella    | quarter_4 | 611   |\n| SleepingBag | quarter_4 | 875   |\n+-------------+-----------+-------+\nExplanation:\nThe DataFrame is reshaped from wide to long format. Each row represents the sales of a product in a quarter."
+    }
+  ],
+  "hints": [
+    "Consider using a built-in function in pandas library to transform the data"
+  ],
+  "starter_code": "",
+  "test_cases": []
+}

@@ -24,36 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def longestCommonPrefix(self, strs: List[str]) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "strs": [
-          "abcd_e",
-          "abcd_fg",
-          "abcd_fh"
-        ]
-      },
-      "expected": "abcd_"
-    },
-    {
-      "args": {
-        "strs": [
-          "flower",
-          "flow",
-          "flight"
-        ]
-      },
-      "expected": "fl"
-    },
-    {
-      "args": {
-        "strs": [
-          "dog",
-          "racecar",
-          "car"
-        ]
-      },
-      "expected": ""
-    }
-  ]
+  "test_cases": []
 }

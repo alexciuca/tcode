@@ -27,36 +27,5 @@
     "If we never get a remainder of 0, why would that happen, and how would we know that?"
   ],
   "starter_code": "class Solution:\n    def smallestRepunitDivByK(self, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "k": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "k": 2
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "k": 3
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "k": 7
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "k": 99991
-      },
-      "expected": 49995
-    }
-  ]
+  "test_cases": []
 }

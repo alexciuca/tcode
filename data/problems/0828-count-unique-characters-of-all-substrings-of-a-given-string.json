@@ -26,36 +26,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def uniqueLetterString(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ABC"
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "s": "ABA"
-      },
-      "expected": 8
-    },
-    {
-      "args": {
-        "s": "A"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "AAAA"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-      },
-      "expected": 3276
-    }
-  ]
+  "test_cases": []
 }

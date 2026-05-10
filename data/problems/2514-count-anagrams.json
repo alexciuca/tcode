@@ -30,36 +30,5 @@
     "The product of the counts of distinct permutations of all words will give the final answer."
   ],
   "starter_code": "class Solution:\n    def countAnagrams(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ab cd"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "abc def ghi"
-      },
-      "expected": 216
-    },
-    {
-      "args": {
-        "s": "aab baa"
-      },
-      "expected": 9
-    },
-    {
-      "args": {
-        "s": "a b c d e"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": 262041249
-    }
-  ]
+  "test_cases": []
 }

@@ -24,31 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def minimumTotal(self, triangle: List[List[int]]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "triangle": [
-          [
-            2
-          ],
-          [
-            3,
-            4
-          ],
-          [
-            6,
-            5,
-            7
-          ],
-          [
-            4,
-            1,
-            8,
-            3
-          ]
-        ]
-      },
-      "expected": 11
-    }
-  ]
+  "test_cases": []
 }

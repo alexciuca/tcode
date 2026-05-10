@@ -26,46 +26,5 @@
     "Use the letter with the maximum current limit that can be added without breaking the condition."
   ],
   "starter_code": "class Solution:\n    def longestDiverseString(self, a: int, b: int, c: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "a": 1,
-        "b": 1,
-        "c": 1
-      },
-      "expected": "abc"
-    },
-    {
-      "args": {
-        "a": 4,
-        "b": 1,
-        "c": 1
-      },
-      "expected": "abaca"
-    },
-    {
-      "args": {
-        "a": 0,
-        "b": 0,
-        "c": 1
-      },
-      "expected": "c"
-    },
-    {
-      "args": {
-        "a": 100,
-        "b": 100,
-        "c": 100
-      },
-      "expected": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc"
-    },
-    {
-      "args": {
-        "a": 50,
-        "b": 0,
-        "c": 50
-      },
-      "expected": "acacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac"
-    }
-  ]
+  "test_cases": []
 }

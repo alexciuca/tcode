@@ -1,0 +1,25 @@
+{
+  "id": "2666",
+  "slug": "allow-one-function-call",
+  "title": "Allow One Function Call",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "Given a function fn, return a new function that is identical to the original function except that it ensures fn is called at most once.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "calls is a valid JSON array",
+    "1 <= calls.length <= 10",
+    "1 <= calls[i].length <= 100",
+    "2 <= JSON.stringify(calls).length <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: fn = (a,b,c) => (a + b + c), calls = [[1,2,3],[2,3,6]]\nOutput: [{\"calls\":1,\"value\":6}]\nExplanation:\nconst onceFn = once(fn);\nonceFn(1, 2, 3); // 6\nonceFn(2, 3, 6); // undefined, fn was not called"
+    },
+    {
+      "example_text": "Input: fn = (a,b,c) => (a * b * c), calls = [[5,7,4],[2,3,6],[4,6,8]]\nOutput: [{\"calls\":1,\"value\":140}]\nExplanation:\nconst onceFn = once(fn);\nonceFn(5, 7, 4); // 140\nonceFn(2, 3, 6); // undefined, fn was not called\nonceFn(4, 6, 8); // undefined, fn was not called"
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

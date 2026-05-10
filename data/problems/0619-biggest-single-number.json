@@ -1,0 +1,25 @@
+{
+  "id": "0619",
+  "slug": "biggest-single-number",
+  "title": "Biggest Single Number",
+  "difficulty": "Easy",
+  "topics": [
+    "Database"
+  ],
+  "description": "Table: MyNumbers\nA single number is a number that appeared only once in the MyNumbers table.\nFind the largest single number. If there is no single number, report null.\nThe result format is in the following example.\nExample 1:\nExample 2:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| num         | int  |\n+-------------+------+\nThis table may contain duplicates (In other words, there is no primary key for this table in SQL).\nEach row of this table contains an integer."
+    },
+    {
+      "example_text": "Input: \nMyNumbers table:\n+-----+\n| num |\n+-----+\n| 8   |\n| 8   |\n| 3   |\n| 3   |\n| 1   |\n| 4   |\n| 5   |\n| 6   |\n+-----+\nOutput: \n+-----+\n| num |\n+-----+\n| 6   |\n+-----+\nExplanation: The single numbers are 1, 4, 5, and 6.\nSince 6 is the largest single number, we return it."
+    },
+    {
+      "example_text": "Input: \nMyNumbers table:\n+-----+\n| num |\n+-----+\n| 8   |\n| 8   |\n| 7   |\n| 7   |\n| 3   |\n| 3   |\n| 3   |\n+-----+\nOutput: \n+------+\n| num  |\n+------+\n| null |\n+------+\nExplanation: There are no single numbers in the input table so we return null."
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

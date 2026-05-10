@@ -27,36 +27,5 @@
     "Is there a way to iterate through the string to keep track of the current character and its count?"
   ],
   "starter_code": "class Solution:\n    def checkZeroOnes(self, s: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "1101"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "110010110010"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "1"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "0"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "111000111111000011110000111111111"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

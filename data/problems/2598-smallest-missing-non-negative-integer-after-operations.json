@@ -1,0 +1,32 @@
+{
+  "id": "2598",
+  "slug": "smallest-missing-non-negative-integer-after-operations",
+  "title": "Smallest Missing Non-negative Integer After Operations",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Greedy"
+  ],
+  "description": "You are given a 0-indexed integer array nums and an integer value.\nIn one operation, you can add or subtract value from any element of nums.\nThe MEX (minimum excluded) of an array is the smallest missing non-negative integer in it.\nReturn the maximum MEX of nums after applying the mentioned operation any number of times.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length, value <= 105",
+    "-109 <= nums[i] <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,-10,7,13,6,8], value = 5\nOutput: 4\nExplanation: One can achieve this result by applying the following operations:\n- Add value to nums[1] twice to make nums = [1,0,7,13,6,8]\n- Subtract value from nums[2] once to make nums = [1,0,2,13,6,8]\n- Subtract value from nums[3] twice to make nums = [1,0,2,3,6,8]\nThe MEX of nums is 4. It can be shown that 4 is the maximum MEX we can achieve."
+    },
+    {
+      "example_text": "Input: nums = [1,-10,7,13,6,8], value = 7\nOutput: 2\nExplanation: One can achieve this result by applying the following operation:\n- subtract value from nums[2] once to make nums = [1,-10,0,13,6,8]\nThe MEX of nums is 2. It can be shown that 2 is the maximum MEX we can achieve."
+    }
+  ],
+  "hints": [
+    "Think about using modular arithmetic.",
+    "if x = nums[i] (mod value), then we can make nums[i] equal to x  after some number of operations",
+    "How does finding the frequency of (nums[i] mod value) help?"
+  ],
+  "starter_code": "class Solution:\n    def findSmallestInteger(self, nums: List[int], value: int) -> int:\n        ",
+  "test_cases": []
+}

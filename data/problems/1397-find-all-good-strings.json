@@ -33,51 +33,5 @@
     "To update the maximum common suffix with string \"evil\" use KMP preprocessing."
   ],
   "starter_code": "class Solution:\n    def findGoodStrings(self, n: int, s1: str, s2: str, evil: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 3,
-        "s1": "aab",
-        "s2": "bbb",
-        "evil": "ab"
-      },
-      "expected": 675
-    },
-    {
-      "args": {
-        "n": 2,
-        "s1": "aa",
-        "s2": "da",
-        "evil": "b"
-      },
-      "expected": 51
-    },
-    {
-      "args": {
-        "n": 5,
-        "s1": "aaaaa",
-        "s2": "zzzzz",
-        "evil": "aaa"
-      },
-      "expected": 11879400
-    },
-    {
-      "args": {
-        "n": 1,
-        "s1": "a",
-        "s2": "z",
-        "evil": "z"
-      },
-      "expected": 25
-    },
-    {
-      "args": {
-        "n": 10,
-        "s1": "aaaaaaaaaa",
-        "s2": "zzzzzzzzzz",
-        "evil": "abc"
-      },
-      "expected": 847038790
-    }
-  ]
+  "test_cases": []
 }

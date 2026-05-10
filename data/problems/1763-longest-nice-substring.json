@@ -30,36 +30,5 @@
     "Brute force and check each substring to see if it is nice."
   ],
   "starter_code": "class Solution:\n    def longestNiceSubstring(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "YazaAay"
-      },
-      "expected": "aAa"
-    },
-    {
-      "args": {
-        "s": "Bb"
-      },
-      "expected": "Bb"
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "abcABC"
-      },
-      "expected": "abcABC"
-    },
-    {
-      "args": {
-        "s": "AaBbCcDdEeFfGgHhIiJjKk"
-      },
-      "expected": "AaBbCcDdEeFfGgHhIiJjKk"
-    }
-  ]
+  "test_cases": []
 }

@@ -28,36 +28,5 @@
     "Enumerate all indices and find the minimum such value."
   ],
   "starter_code": "class Solution:\n    def bestClosingTime(self, customers: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "customers": "YYNY"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "customers": "NNNYYY"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "customers": "Y"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "customers": "N"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "customers": "YNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYN"
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

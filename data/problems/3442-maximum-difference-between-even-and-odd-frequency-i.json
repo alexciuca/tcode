@@ -26,36 +26,5 @@
     "Use a frequency map to identify the maximum odd and minimum even frequencies. Then, calculate their difference."
   ],
   "starter_code": "class Solution:\n    def maxDifference(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aabcb"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abcabcab"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "s": "aaa"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "aabbcc"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyza"
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

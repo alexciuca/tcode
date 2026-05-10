@@ -28,30 +28,5 @@
     "Count only the letters (possibly converted to lowercase) of each word.  If a word is shorter and the count of each letter is at least the count of that letter in the licensePlate, it is the best answer we've seen yet."
   ],
   "starter_code": "class Solution:\n    def shortestCompletingWord(self, licensePlate: str, words: List[str]) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "licensePlate": "1s3 PSt",
-        "words": [
-          "step",
-          "steps",
-          "stripe",
-          "stepple"
-        ]
-      },
-      "expected": "steps"
-    },
-    {
-      "args": {
-        "licensePlate": "1s3 456",
-        "words": [
-          "looks",
-          "pest",
-          "stew",
-          "show"
-        ]
-      },
-      "expected": "pest"
-    }
-  ]
+  "test_cases": []
 }

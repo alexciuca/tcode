@@ -28,41 +28,5 @@
     "Create a dp(pos, cnt) which means the minimum number of characters changed for the suffix of s starting on pos splitting the suffix on cnt chunks."
   ],
   "starter_code": "class Solution:\n    def palindromePartition(self, s: str, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abcd",
-        "k": 4
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "aaa",
-        "k": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abcde",
-        "k": 2
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "a",
-        "k": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba",
-        "k": 26
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

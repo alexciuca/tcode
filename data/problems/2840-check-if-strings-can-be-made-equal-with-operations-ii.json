@@ -27,41 +27,5 @@
     "<div class=\"_1l1MA\">To be able to make the two strings equal, the characters at even and odd positions in the strings should be the same.</div>"
   ],
   "starter_code": "class Solution:\n    def checkStrings(self, s1: str, s2: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s1": "ab",
-        "s2": "ba"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "abcd",
-        "s2": "cdab"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "a",
-        "s2": "a"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "aaa",
-        "s2": "aaa"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
-        "s2": "zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

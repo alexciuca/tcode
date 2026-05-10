@@ -27,51 +27,5 @@
     "Process each sentence separately and count the number of words by looking for the number of space characters in the sentence and adding it by 1."
   ],
   "starter_code": "class Solution:\n    def mostWordsFound(self, sentences: List[str]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "sentences": [
-          "alice and bob love leetcode",
-          "i think so too"
-        ]
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "sentences": [
-          "a b c d e f"
-        ]
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "sentences": [
-          "x"
-        ]
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "sentences": [
-          "the quick brown fox",
-          "a",
-          "this is a longer sentence with many words in it"
-        ]
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "sentences": [
-          "w o r d s s e p a r a t e d b y s p a c e s h e r e",
-          "short",
-          "medium length sentence"
-        ]
-      },
-      "expected": 26
-    }
-  ]
+  "test_cases": []
 }

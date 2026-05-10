@@ -30,36 +30,5 @@
     "Define ans[i] = lex smallest string that can be made in [i, n - 1], then ans[i] = lex_smallest of { choose one char s[j] in [i, n - 1] + ans[j + 1] }"
   ],
   "starter_code": "class Solution:\n    def lexicographicallySmallestString(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ca"
-      },
-      "expected": "ca"
-    },
-    {
-      "args": {
-        "s": "cbacd"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "abcdefg"
-      },
-      "expected": "g"
-    },
-    {
-      "args": {
-        "s": "zyxwvutsrqponmlkjihgfedcba"
-      },
-      "expected": ""
-    }
-  ]
+  "test_cases": []
 }

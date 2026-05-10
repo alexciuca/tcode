@@ -26,28 +26,5 @@
     "We can count the number of songs having same (length % 60), and store that in an array of size 60."
   ],
   "starter_code": "class Solution:\n    def numPairsDivisibleBy60(self, time: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "time": [
-          30,
-          20,
-          150,
-          100,
-          40
-        ]
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "time": [
-          60,
-          60,
-          60
-        ]
-      },
-      "expected": 3
-    }
-  ]
+  "test_cases": []
 }

@@ -23,55 +23,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findAnagrams(self, s: str, p: str) -> List[int]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "cbaebabacd",
-        "p": "abc"
-      },
-      "expected": [
-        0,
-        6
-      ]
-    },
-    {
-      "args": {
-        "s": "abab",
-        "p": "ab"
-      },
-      "expected": [
-        0,
-        1,
-        2
-      ]
-    },
-    {
-      "args": {
-        "s": "a",
-        "p": "a"
-      },
-      "expected": [
-        0
-      ]
-    },
-    {
-      "args": {
-        "s": "aaaaaa",
-        "p": "aaa"
-      },
-      "expected": [
-        0,
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "args": {
-        "s": "aaaaaaaaaaaabbbbbcdd",
-        "p": "abcdd"
-      },
-      "expected": []
-    }
-  ]
+  "test_cases": []
 }

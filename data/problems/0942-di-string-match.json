@@ -1,0 +1,31 @@
+{
+  "id": "0942",
+  "slug": "di-string-match",
+  "title": "DI String Match",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "description": "A permutation perm of n + 1 integers of all the integers in the range [0, n] can be represented as a string s of length n where:\nGiven a string s, reconstruct the permutation perm and return it. If there are multiple valid permutations perm, return any of them.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s[i] is either 'I' or 'D'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"IDID\"\nOutput: [0,4,1,3,2]"
+    },
+    {
+      "example_text": "Input: s = \"III\"\nOutput: [0,1,2,3]"
+    },
+    {
+      "example_text": "Input: s = \"DDI\"\nOutput: [3,2,0,1]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def diStringMatch(self, s: str) -> List[int]:\n        ",
+  "test_cases": []
+}

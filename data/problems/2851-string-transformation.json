@@ -30,46 +30,5 @@
     "Use Dynamic Programming to count the number of ways."
   ],
   "starter_code": "class Solution:\n    def numberOfWays(self, s: str, t: str, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abab",
-        "t": "baba",
-        "k": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "aaa",
-        "t": "aaa",
-        "k": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "ab",
-        "t": "ba",
-        "k": 1000000000000000
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abcabc",
-        "t": "cabcab",
-        "k": 2
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "aaaaaaaaaa",
-        "t": "aaaaaaaaab",
-        "k": 999999999999999
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

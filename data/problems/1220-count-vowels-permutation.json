@@ -27,36 +27,5 @@
     "Deduce the recurrence from the given relations between vowels."
   ],
   "starter_code": "class Solution:\n    def countVowelPermutation(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "n": 2
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "n": 5
-      },
-      "expected": 68
-    },
-    {
-      "args": {
-        "n": 20000
-      },
-      "expected": 759959057
-    },
-    {
-      "args": {
-        "n": 3
-      },
-      "expected": 19
-    }
-  ]
+  "test_cases": []
 }

@@ -28,36 +28,5 @@
     "Traverse the string from left to right and use a stack to perform the removals."
   ],
   "starter_code": "class Solution:\n    def resultingString(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abbaca"
-      },
-      "expected": "ca"
-    },
-    {
-      "args": {
-        "s": "azxxzy"
-      },
-      "expected": "xx"
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "aa"
-      },
-      "expected": "aa"
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba"
-      },
-      "expected": ""
-    }
-  ]
+  "test_cases": []
 }

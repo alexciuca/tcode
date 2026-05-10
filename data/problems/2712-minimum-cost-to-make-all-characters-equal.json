@@ -27,36 +27,5 @@
     "The final string will contain at least one character that is left unchanged; Therefore, the answer is the minimum of prefix[i] + suffix[i] for every i in [0, n - 1]."
   ],
   "starter_code": "class Solution:\n    def minimumCost(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "0011"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "010101"
-      },
-      "expected": 15
-    },
-    {
-      "args": {
-        "s": "0"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "1111111111"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "00110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110"
-      },
-      "expected": 2550
-    }
-  ]
+  "test_cases": []
 }

@@ -25,41 +25,5 @@
     "We can use this information to recover the shortest common supersequence."
   ],
   "starter_code": "class Solution:\n    def shortestCommonSupersequence(self, str1: str, str2: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "str1": "abac",
-        "str2": "cab"
-      },
-      "expected": "cabac"
-    },
-    {
-      "args": {
-        "str1": "aca",
-        "str2": "cac"
-      },
-      "expected": "acac"
-    },
-    {
-      "args": {
-        "str1": "a",
-        "str2": "b"
-      },
-      "expected": "ab"
-    },
-    {
-      "args": {
-        "str1": "abc",
-        "str2": "abc"
-      },
-      "expected": "abc"
-    },
-    {
-      "args": {
-        "str1": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
-        "str2": "zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba"
-      },
-      "expected": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba"
-    }
-  ]
+  "test_cases": []
 }

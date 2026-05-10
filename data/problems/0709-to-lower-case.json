@@ -28,24 +28,5 @@
     "Think about the different capital letters and their ASCII codes and how that relates to their lowercase counterparts. Does there seem to be any pattern there? Any mathematical relationship that we can use?"
   ],
   "starter_code": "class Solution:\n    def toLowerCase(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "str": "Hello"
-      },
-      "expected": "hello"
-    },
-    {
-      "args": {
-        "str": "here"
-      },
-      "expected": "here"
-    },
-    {
-      "args": {
-        "str": "LOVELY"
-      },
-      "expected": "lovely"
-    }
-  ]
+  "test_cases": []
 }

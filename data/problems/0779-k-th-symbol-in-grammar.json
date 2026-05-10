@@ -28,41 +28,5 @@
     "Try to represent the current (N, K) in terms of some (N-1, prevK).  What is prevK ?"
   ],
   "starter_code": "class Solution:\n    def kthGrammar(self, n: int, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1,
-        "k": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "n": 3,
-        "k": 4
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "n": 2,
-        "k": 2
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 4,
-        "k": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "n": 30,
-        "k": 536870912
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

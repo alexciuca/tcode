@@ -1,0 +1,27 @@
+{
+  "id": "0677",
+  "slug": "map-sum-pairs",
+  "title": "Map Sum Pairs",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "description": "Design a map that allows you to do the following:\nImplement the MapSum class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= key.length, prefix.length <= 50",
+    "key and prefix consist of only lowercase English letters.",
+    "1 <= val <= 1000",
+    "At most 50 calls will be made to insert and sum."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"MapSum\", \"insert\", \"sum\", \"insert\", \"sum\"]\n[[], [\"apple\", 3], [\"ap\"], [\"app\", 2], [\"ap\"]]\nOutput\n[null, null, 3, null, 5]\n\nExplanation\nMapSum mapSum = new MapSum();\nmapSum.insert(\"apple\", 3);  \nmapSum.sum(\"ap\");           // return 3 (apple = 3)\nmapSum.insert(\"app\", 2);    \nmapSum.sum(\"ap\");           // return 5 (apple + app = 3 + 2 = 5)"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class MapSum:\n\n    def __init__(self):\n        \n\n    def insert(self, key: str, val: int) -> None:\n        \n\n    def sum(self, prefix: str) -> int:\n        \n\n\n# Your MapSum object will be instantiated and called as such:\n# obj = MapSum()\n# obj.insert(key,val)\n# param_2 = obj.sum(prefix)",
+  "test_cases": []
+}

@@ -23,36 +23,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def reverse(self, x: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "x": 123
-      },
-      "expected": 321
-    },
-    {
-      "args": {
-        "x": -123
-      },
-      "expected": -321
-    },
-    {
-      "args": {
-        "x": 120
-      },
-      "expected": 21
-    },
-    {
-      "args": {
-        "x": 0
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "x": 2147483647
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

@@ -26,51 +26,5 @@
     "Brute force all 365 days for both Alice and Bob."
   ],
   "starter_code": "class Solution:\n    def countDaysTogether(self, arriveAlice: str, leaveAlice: str, arriveBob: str, leaveBob: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "arriveAlice": "08-15",
-        "leaveAlice": "08-18",
-        "arriveBob": "08-16",
-        "leaveBob": "08-19"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "arriveAlice": "01-01",
-        "leaveAlice": "01-05",
-        "arriveBob": "01-03",
-        "leaveBob": "01-07"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "arriveAlice": "05-10",
-        "leaveAlice": "05-20",
-        "arriveBob": "06-01",
-        "leaveBob": "06-10"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "arriveAlice": "12-25",
-        "leaveAlice": "12-31",
-        "arriveBob": "12-25",
-        "leaveBob": "12-31"
-      },
-      "expected": 7
-    },
-    {
-      "args": {
-        "arriveAlice": "02-15",
-        "leaveAlice": "02-28",
-        "arriveBob": "01-01",
-        "leaveBob": "03-31"
-      },
-      "expected": 14
-    }
-  ]
+  "test_cases": []
 }

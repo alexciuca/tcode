@@ -1,0 +1,31 @@
+{
+  "id": "0284",
+  "slug": "peeking-iterator",
+  "title": "Peeking Iterator",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Design",
+    "Iterator"
+  ],
+  "description": "Design an iterator that supports the peek operation on an existing iterator in addition to the hasNext and the next operations.\nImplement the PeekingIterator class:\nNote: Each language may have a different implementation of the constructor and Iterator, but they all support the int next() and boolean hasNext() functions.\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "1 <= nums[i] <= 1000",
+    "All the calls to next and peek are valid.",
+    "At most 1000 calls will be made to next, hasNext, and peek."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"PeekingIterator\", \"next\", \"peek\", \"next\", \"next\", \"hasNext\"]\n[[[1, 2, 3]], [], [], [], [], []]\nOutput\n[null, 1, 2, 2, 3, false]\n\nExplanation\nPeekingIterator peekingIterator = new PeekingIterator([1, 2, 3]); // [1,2,3]\npeekingIterator.next();    // return 1, the pointer moves to the next element [1,2,3].\npeekingIterator.peek();    // return 2, the pointer does not move [1,2,3].\npeekingIterator.next();    // return 2, the pointer moves to the next element [1,2,3]\npeekingIterator.next();    // return 3, the pointer moves to the next element [1,2,3]\npeekingIterator.hasNext(); // return False"
+    }
+  ],
+  "hints": [
+    "Think of \"looking ahead\". You want to cache the next element.",
+    "Is one variable sufficient? Why or why not?",
+    "Test your design with call order of <code>peek()</code> before <code>next()</code> vs <code>next()</code> before <code>peek()</code>.",
+    "For a clean implementation, check out <a href=\"https://github.com/google/guava/blob/703ef758b8621cfbab16814f01ddcc5324bdea33/guava-gwt/src-super/com/google/common/collect/super/com/google/common/collect/Iterators.java#L1125\" target=\"_blank\">Google's guava library source code</a>."
+  ],
+  "starter_code": "# Below is the interface for Iterator, which is already defined for you.\n#\n# class Iterator:\n#     def __init__(self, nums):\n#         \"\"\"\n#         Initializes an iterator object to the beginning of a list.\n#         :type nums: List[int]\n#         \"\"\"\n#\n#     def hasNext(self):\n#         \"\"\"\n#         Returns true if the iteration has more elements.\n#         :rtype: bool\n#         \"\"\"\n#\n#     def next(self):\n#         \"\"\"\n#         Returns the next element in the iteration.\n#         :rtype: int\n#         \"\"\"\n\nclass PeekingIterator:\n    def __init__(self, iterator):\n        \"\"\"\n        Initialize your data structure here.\n        :type iterator: Iterator\n        \"\"\"\n        \n\n    def peek(self):\n        \"\"\"\n        Returns the next element in the iteration without advancing the iterator.\n        :rtype: int\n        \"\"\"\n        \n\n    def next(self):\n        \"\"\"\n        :rtype: int\n        \"\"\"\n        \n\n    def hasNext(self):\n        \"\"\"\n        :rtype: bool\n        \"\"\"\n        \n\n# Your PeekingIterator object will be instantiated and called as such:\n# iter = PeekingIterator(Iterator(nums))\n# while iter.hasNext():\n#     val = iter.peek()   # Get the next element but not advance the iterator.\n#     iter.next()         # Should return the same value as [val].",
+  "test_cases": []
+}

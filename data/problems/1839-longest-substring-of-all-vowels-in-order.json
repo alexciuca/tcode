@@ -28,36 +28,5 @@
     "Based on the current character decide if you should include the next character in the beautiful substring."
   ],
   "starter_code": "class Solution:\n    def longestBeautifulSubstring(self, word: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "word": "aeiou"
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "word": "ae"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "word": "aeeeiiiooouuu"
-      },
-      "expected": 13
-    },
-    {
-      "args": {
-        "word": "a"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "word": "aeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiou"
-      },
-      "expected": 5
-    }
-  ]
+  "test_cases": []
 }

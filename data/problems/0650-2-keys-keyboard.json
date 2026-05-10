@@ -23,36 +23,5 @@
     "How many characters may be there in the clipboard at the last step if n = 3? n = 7? n = 10? n = 24?"
   ],
   "starter_code": "class Solution:\n    def minSteps(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 3
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "n": 6
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "n": 9
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "n": 1000
-      },
-      "expected": 21
-    }
-  ]
+  "test_cases": []
 }

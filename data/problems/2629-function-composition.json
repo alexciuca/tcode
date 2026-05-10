@@ -1,0 +1,30 @@
+{
+  "id": "2629",
+  "slug": "function-composition",
+  "title": "Function Composition",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "Given an array of functions [f1, f2, f3, ..., fn], return a new function fn that is the function composition of the array of functions.\nThe function composition of [f(x), g(x), h(x)] is fn(x) = f(g(h(x))).\nThe function composition of an empty list of functions is the identity function f(x) = x.\nYou may assume each function in the array accepts one integer as input and returns one integer as output.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "-1000 <= x <= 1000",
+    "0 <= functions.length <= 1000",
+    "all functions accept and return a single integer"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: functions = [x => x + 1, x => x * x, x => 2 * x], x = 4\nOutput: 65\nExplanation:\nEvaluating from right to left ...\nStarting with x = 4.\n2 * (4) = 8\n(8) * (8) = 64\n(64) + 1 = 65"
+    },
+    {
+      "example_text": "Input: functions = [x => 10 * x, x => 10 * x, x => 10 * x], x = 1\nOutput: 1000\nExplanation:\nEvaluating from right to left ...\n10 * (1) = 10\n10 * (10) = 100\n10 * (100) = 1000"
+    },
+    {
+      "example_text": "Input: functions = [], x = 42\nOutput: 42\nExplanation:\nThe composition of zero functions is the identity function"
+    }
+  ],
+  "hints": [
+    "Start by returning a function that takes in a number and returns a number.",
+    "Call each of the functions in the correct order. Each time passing the output of the previous function into the next function."
+  ],
+  "starter_code": "",
+  "test_cases": []
+}

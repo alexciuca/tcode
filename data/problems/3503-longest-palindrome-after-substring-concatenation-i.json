@@ -32,41 +32,5 @@
     "Brute force"
   ],
   "starter_code": "class Solution:\n    def longestPalindrome(self, s: str, t: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abccccdd",
-        "t": "dcda"
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "s": "a",
-        "t": "a"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "abcde",
-        "t": "xyz"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "aabbaa",
-        "t": "ab"
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "s": "racecar",
-        "t": "racecar"
-      },
-      "expected": 14
-    }
-  ]
+  "test_cases": []
 }

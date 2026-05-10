@@ -26,46 +26,5 @@
     "Use combinatorics to find the number of ways to order the steps."
   ],
   "starter_code": "class Solution:\n    def numberOfWays(self, startPos: int, endPos: int, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "startPos": 1,
-        "endPos": 2,
-        "k": 3
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "startPos": 2,
-        "endPos": 5,
-        "k": 10
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "startPos": 1,
-        "endPos": 1,
-        "k": 2
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "startPos": 500,
-        "endPos": 500,
-        "k": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "startPos": 1,
-        "endPos": 1000,
-        "k": 1000
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

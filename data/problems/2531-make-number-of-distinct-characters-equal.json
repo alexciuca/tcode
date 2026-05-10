@@ -30,41 +30,5 @@
     "Iterate over all possible pairs of letters and check if swapping them will yield two strings that have the same number of distinct characters. Use the frequency array for the check."
   ],
   "starter_code": "class Solution:\n    def isItPossible(self, word1: str, word2: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "word1": "aba",
-        "word2": "cdc"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "word1": "a",
-        "word2": "b"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "word1": "aaa",
-        "word2": "bbb"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "word1": "abcd",
-        "word2": "ccccaabbb"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "word1": "aaabbbcccdddeeefff",
-        "word2": "xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyz"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

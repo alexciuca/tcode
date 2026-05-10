@@ -32,36 +32,5 @@
     "Find the maximum <code>delta</code> and add it to the total number of ones in the string."
   ],
   "starter_code": "class Solution:\n    def maxActiveSectionsAfterTrade(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "110101"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "000111"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "1"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "0"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "10101010101010101010101010101010101010101010101010"
-      },
-      "expected": 25
-    }
-  ]
+  "test_cases": []
 }

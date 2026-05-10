@@ -1,0 +1,22 @@
+{
+  "id": "2881",
+  "slug": "create-a-new-column",
+  "title": "Create a New Column",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "A company plans to provide its employees with a bonus.\nWrite a solution to create a new column name bonus that contains the doubled values of the salary column.\nThe result format is in the following example.\nExample 1:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "DataFrame employees\n+-------------+--------+\n| Column Name | Type.  |\n+-------------+--------+\n| name        | object |\n| salary      | int.   |\n+-------------+--------+"
+    },
+    {
+      "example_text": "Input:\nDataFrame employees\n+---------+--------+\n| name    | salary |\n+---------+--------+\n| Piper   | 4548   |\n| Grace   | 28150  |\n| Georgia | 1103   |\n| Willow  | 6593   |\n| Finn    | 74576  |\n| Thomas  | 24433  |\n+---------+--------+\nOutput:\n+---------+--------+--------+\n| name    | salary | bonus  |\n+---------+--------+--------+\n| Piper   | 4548   | 9096   |\n| Grace   | 28150  | 56300  |\n| Georgia | 1103   | 2206   |\n| Willow  | 6593   | 13186  |\n| Finn    | 74576  | 149152 |\n| Thomas  | 24433  | 48866  |\n+---------+--------+--------+\nExplanation: \nA new column bonus is created by doubling the value in the column salary."
+    }
+  ],
+  "hints": [
+    "Consider using the `[]` brackets with the new column name at the left side of the assignment. The calculation of the value is done element-wise."
+  ],
+  "starter_code": "",
+  "test_cases": []
+}

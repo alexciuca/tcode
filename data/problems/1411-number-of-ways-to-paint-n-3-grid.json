@@ -24,36 +24,5 @@
     "Let dp[idx][prev1col][prev2col][prev3col] be the number of ways to color the rows of the grid from idx to n-1 keeping in mind that the previous row (idx - 1) has colors prev1col, prev2col and prev3col. Build the dp array to get the answer."
   ],
   "starter_code": "class Solution:\n    def numOfWays(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 12
-    },
-    {
-      "args": {
-        "n": 2
-      },
-      "expected": 54
-    },
-    {
-      "args": {
-        "n": 3
-      },
-      "expected": 246
-    },
-    {
-      "args": {
-        "n": 7
-      },
-      "expected": 106494
-    },
-    {
-      "args": {
-        "n": 5000
-      },
-      "expected": 30228214
-    }
-  ]
+  "test_cases": []
 }

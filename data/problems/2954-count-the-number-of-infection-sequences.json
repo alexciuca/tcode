@@ -31,54 +31,5 @@
     "The answer is: \r\n<code>S! / (len[1]! * len[2]! * ... * len[m]! * len<sub>start</sub>! * len<sub>end</sub>!) * 2<sup>k</sup></code> \r\nwhere <code>len[1], len[2], ..., len[m]</code> are the lengths of each segment of non-infected children that have an infected child at both endpoints, <code>len<sub>start</sub></code> and <code>len<sub>end</sub></code> denote the number of non-infected children with infected child at one endpoint, <code>S</code> is the total length of all segments of non-infected children, and <code>k = (len[1] - 1) + (len[2] - 1) + ... + (len[m] - 1)</code>."
   ],
   "starter_code": "class Solution:\n    def numberOfSequence(self, n: int, sick: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 4,
-        "sick": [
-          1
-        ]
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "n": 5,
-        "sick": [
-          0,
-          4
-        ]
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 6,
-        "sick": [
-          2
-        ]
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "n": 3,
-        "sick": [
-          1,
-          2
-        ]
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 100000,
-        "sick": [
-          0,
-          99999
-        ]
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

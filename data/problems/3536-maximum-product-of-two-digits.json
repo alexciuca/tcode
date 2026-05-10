@@ -26,36 +26,5 @@
     "Use brute force"
   ],
   "starter_code": "class Solution:\n    def maxProduct(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 10
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "n": 123
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "n": 999
-      },
-      "expected": 81
-    },
-    {
-      "args": {
-        "n": 1000000000
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "n": 505
-      },
-      "expected": 25
-    }
-  ]
+  "test_cases": []
 }

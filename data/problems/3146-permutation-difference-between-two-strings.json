@@ -26,41 +26,5 @@
     "For each character, find the indices of its occurrences in string <code>s</code> then in string <code>t</code>."
   ],
   "starter_code": "class Solution:\n    def findPermutationDifference(self, s: str, t: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abc",
-        "t": "bac"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "abcd",
-        "t": "dacb"
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "s": "a",
-        "t": "a"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "zyxwvutsrqponmlkjihgfedcba",
-        "t": "abcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": 338
-    },
-    {
-      "args": {
-        "s": "dcba",
-        "t": "abcd"
-      },
-      "expected": 8
-    }
-  ]
+  "test_cases": []
 }

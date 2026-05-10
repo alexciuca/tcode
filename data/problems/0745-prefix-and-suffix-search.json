@@ -1,0 +1,33 @@
+{
+  "id": "0745",
+  "slug": "prefix-and-suffix-search",
+  "title": "Prefix and Suffix Search",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "description": "Design a special dictionary that searches the words in it by a prefix and a suffix.\nImplement the WordFilter class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= words.length <= 104",
+    "1 <= words[i].length <= 7",
+    "1 <= pref.length, suff.length <= 7",
+    "words[i], pref and suff consist of lowercase English letters only.",
+    "At most 104 calls will be made to the function f."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"WordFilter\", \"f\"]\n[[[\"apple\"]], [\"a\", \"e\"]]\nOutput\n[null, 0]\nExplanation\nWordFilter wordFilter = new WordFilter([\"apple\"]);\nwordFilter.f(\"a\", \"e\"); // return 0, because the word at index 0 has prefix = \"a\" and suffix = \"e\"."
+    }
+  ],
+  "hints": [
+    "Take \"apple\" as an example, we will insert add \"apple{apple\", \"pple{apple\", \"ple{apple\", \"le{apple\", \"e{apple\", \"{apple\" into the Trie Tree.",
+    "If the query is: prefix = \"app\", suffix = \"le\", we can find it by querying our trie for\r\n\"le { app\".",
+    "We use '{' because in ASCii Table, '{' is next to 'z', so we just need to create new TrieNode[27] instead of 26. Also, compared with traditional Trie, we add the attribute weight in class TrieNode.\r\nYou can still choose any different character."
+  ],
+  "starter_code": "class WordFilter:\n\n    def __init__(self, words: List[str]):\n        \n\n    def f(self, pref: str, suff: str) -> int:\n        \n\n\n# Your WordFilter object will be instantiated and called as such:\n# obj = WordFilter(words)\n# param_1 = obj.f(pref,suff)",
+  "test_cases": []
+}

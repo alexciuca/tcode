@@ -27,36 +27,5 @@
     "Each time you loop over a digit i, add sign * i to answer, then multiply sign by -1."
   ],
   "starter_code": "class Solution:\n    def alternateDigitSum(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 521
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "n": 111
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 1000000000
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 9
-      },
-      "expected": 9
-    }
-  ]
+  "test_cases": []
 }

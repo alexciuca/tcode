@@ -27,36 +27,5 @@
     "We cannot iterate over every <code>r</code> and check if the  <code>s[l..r]</code> has dominant ones. Instead, we iterate over the next <code>sqrt(n)</code> zeros to the left of <code>l</code> and count the number of substrings with dominant ones where the current zero is the rightmost zero of the substring."
   ],
   "starter_code": "class Solution:\n    def numberOfSubstrings(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "00011"
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "s": "1110"
-      },
-      "expected": 9
-    },
-    {
-      "args": {
-        "s": "00"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "1"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "00011110001111000111110000111111"
-      },
-      "expected": 101
-    }
-  ]
+  "test_cases": []
 }

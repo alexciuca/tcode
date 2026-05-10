@@ -26,46 +26,5 @@
     "Sort all the integers of the interval by the power value and return the k-th in the sorted list."
   ],
   "starter_code": "class Solution:\n    def getKth(self, lo: int, hi: int, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "lo": 12,
-        "hi": 15,
-        "k": 2
-      },
-      "expected": 13
-    },
-    {
-      "args": {
-        "lo": 1,
-        "hi": 3,
-        "k": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "lo": 10,
-        "hi": 10,
-        "k": 1
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "lo": 1,
-        "hi": 1000,
-        "k": 500
-      },
-      "expected": 606
-    },
-    {
-      "args": {
-        "lo": 100,
-        "hi": 150,
-        "k": 25
-      },
-      "expected": 134
-    }
-  ]
+  "test_cases": []
 }

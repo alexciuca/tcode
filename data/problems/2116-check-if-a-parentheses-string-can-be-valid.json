@@ -1,0 +1,39 @@
+{
+  "id": "2116",
+  "slug": "check-if-a-parentheses-string-can-be-valid",
+  "title": "Check if a Parentheses String Can Be Valid",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Stack",
+    "Greedy"
+  ],
+  "description": "A parentheses string is a non-empty string consisting only of '(' and ')'. It is valid if any of the following conditions is true:\nYou are given a parentheses string s and a string locked, both of length n. locked is a binary string consisting only of '0's and '1's. For each index i of locked,\nReturn true if you can make s a valid parentheses string. Otherwise, return false.\nExample 1:\nExample 2:\nExample 3:\nExample 4:\nConstraints:",
+  "constraints": [
+    "n == s.length == locked.length",
+    "1 <= n <= 105",
+    "s[i] is either '(' or ')'.",
+    "locked[i] is either '0' or '1'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"))()))\", locked = \"010100\"\nOutput: true\nExplanation: locked[1] == '1' and locked[3] == '1', so we cannot change s[1] or s[3].\nWe change s[0] and s[4] to '(' while leaving s[2] and s[5] unchanged to make s valid."
+    },
+    {
+      "example_text": "Input: s = \"()()\", locked = \"0000\"\nOutput: true\nExplanation: We do not need to make any changes because s is already valid."
+    },
+    {
+      "example_text": "Input: s = \")\", locked = \"0\"\nOutput: false\nExplanation: locked permits us to change s[0]. \nChanging s[0] to either '(' or ')' will not make s valid."
+    },
+    {
+      "example_text": "Input: s = \"(((())(((())\", locked = \"111111010111\"\nOutput: true\nExplanation: locked permits us to change s[6] and s[8]. \nWe change s[6] and s[8] to ')' to make s valid."
+    }
+  ],
+  "hints": [
+    "Can an odd length string ever be valid?",
+    "From left to right, if a locked ')' is encountered, it must be balanced with either a locked '(' or an unlocked index on its left. If neither exist, what conclusion can be drawn? If both exist, which one is more preferable to use?",
+    "After the above, we may have locked indices of '(' and additional unlocked indices. How can you balance out the locked '(' now? What if you cannot balance any locked '('?"
+  ],
+  "starter_code": "class Solution:\n    def canBeValid(self, s: str, locked: str) -> bool:\n        ",
+  "test_cases": []
+}

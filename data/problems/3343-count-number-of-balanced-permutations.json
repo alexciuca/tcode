@@ -1,0 +1,36 @@
+{
+  "id": "3343",
+  "slug": "count-number-of-balanced-permutations",
+  "title": "Count Number of Balanced Permutations",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "description": "You are given a string num. A string of digits is called balanced if the sum of the digits at even indices is equal to the sum of the digits at odd indices.\nReturn the number of distinct permutations of num that are balanced.\nSince the answer may be very large, return it modulo 109 + 7.\nA permutation is a rearrangement of all the characters of a string.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "2 <= num.length <= 80",
+    "num consists of digits '0' to '9' only."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: num = \"123\"\nOutput: 2\nExplanation:"
+    },
+    {
+      "example_text": "Input: num = \"112\"\nOutput: 1\nExplanation:"
+    },
+    {
+      "example_text": "Input: num = \"12345\"\nOutput: 0\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Count frequency of each character in the string.",
+    "Use dynamic programming.",
+    "The states are the characters, sum of even index numbers, and the number of digits used.",
+    "Calculate the sum of odd index numbers without using a state for it."
+  ],
+  "starter_code": "class Solution:\n    def countBalancedPermutations(self, num: str) -> int:\n        ",
+  "test_cases": []
+}

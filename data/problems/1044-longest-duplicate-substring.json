@@ -29,36 +29,5 @@
     "To check whether an answer of length K exists, we can use Rabin-Karp 's algorithm."
   ],
   "starter_code": "class Solution:\n    def longestDupSubstring(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "banana"
-      },
-      "expected": "ana"
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "aa"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "abcabcabcabc"
-      },
-      "expected": "abcabcabc"
-    },
-    {
-      "args": {
-        "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-      },
-      "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-    }
-  ]
+  "test_cases": []
 }

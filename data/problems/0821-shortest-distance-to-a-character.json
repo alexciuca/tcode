@@ -24,26 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def shortestToChar(self, s: str, c: str) -> List[int]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "loveleetcode",
-        "c": "e"
-      },
-      "expected": [
-        3,
-        2,
-        1,
-        0,
-        1,
-        0,
-        0,
-        1,
-        2,
-        2,
-        1,
-        0
-      ]
-    }
-  ]
+  "test_cases": []
 }

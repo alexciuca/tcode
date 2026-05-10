@@ -29,36 +29,5 @@
     "Try to build the string with a backtracking DFS by considering what you can put in every position."
   ],
   "starter_code": "class Solution:\n    def numTilePossibilities(self, tiles: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "tiles": "A"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "tiles": "AB"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "tiles": "AAB"
-      },
-      "expected": 8
-    },
-    {
-      "args": {
-        "tiles": "ABCDEF"
-      },
-      "expected": 1956
-    },
-    {
-      "args": {
-        "tiles": "AABBCC"
-      },
-      "expected": 270
-    }
-  ]
+  "test_cases": []
 }

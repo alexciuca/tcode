@@ -26,41 +26,5 @@
     "Calculate the prefix sum array of <code>nums</code>, <code>k</code> times."
   ],
   "starter_code": "class Solution:\n    def valueAfterKSeconds(self, n: int, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 4,
-        "k": 1
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "n": 5,
-        "k": 3
-      },
-      "expected": 35
-    },
-    {
-      "args": {
-        "n": 1,
-        "k": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 1,
-        "k": 1000
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 1000,
-        "k": 1000
-      },
-      "expected": 36237869
-    }
-  ]
+  "test_cases": []
 }

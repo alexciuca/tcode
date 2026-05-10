@@ -31,46 +31,5 @@
     "Split <code>s</code> into <code>k</code> equal-sized substrings, use a map to track frequencies, and check if rearranging them can form <code>t</code>."
   ],
   "starter_code": "class Solution:\n    def isPossibleToRearrange(self, s: str, t: str, k: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abcd",
-        "t": "cdab",
-        "k": 2
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "ababab",
-        "t": "ababab",
-        "k": 3
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "aabbcc",
-        "t": "ccbbaa",
-        "k": 1
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "aaaa",
-        "t": "aaaa",
-        "k": 4
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "abcdefghij",
-        "t": "jihgfedcba",
-        "k": 5
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

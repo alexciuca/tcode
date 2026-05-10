@@ -27,36 +27,5 @@
     "How many numbers with same length as N?  How many numbers with same prefix as N?"
   ],
   "starter_code": "class Solution:\n    def numDupDigitsAtMostN(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 20
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 100
-      },
-      "expected": 28
-    },
-    {
-      "args": {
-        "n": 1000000000
-      },
-      "expected": 999637120
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "n": 11
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

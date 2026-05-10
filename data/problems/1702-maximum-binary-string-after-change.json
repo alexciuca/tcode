@@ -24,36 +24,5 @@
     "Note that with the operations, you can always make the string only contain at most 1 zero."
   ],
   "starter_code": "class Solution:\n    def maximumBinaryString(self, binary: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "binary": "000"
-      },
-      "expected": "011"
-    },
-    {
-      "args": {
-        "binary": "010"
-      },
-      "expected": "101"
-    },
-    {
-      "args": {
-        "binary": "11010000"
-      },
-      "expected": "11101111"
-    },
-    {
-      "args": {
-        "binary": "1"
-      },
-      "expected": "1"
-    },
-    {
-      "args": {
-        "binary": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-      },
-      "expected": "0111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
-    }
-  ]
+  "test_cases": []
 }

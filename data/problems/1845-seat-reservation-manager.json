@@ -1,0 +1,30 @@
+{
+  "id": "1845",
+  "slug": "seat-reservation-manager",
+  "title": "Seat Reservation Manager",
+  "difficulty": "Medium",
+  "topics": [
+    "Design",
+    "Heap (Priority Queue)"
+  ],
+  "description": "Design a system that manages the reservation state of n seats that are numbered from 1 to n.\nImplement the SeatManager class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 105",
+    "1 <= seatNumber <= n",
+    "For each call to reserve, it is guaranteed that there will be at least one unreserved seat.",
+    "For each call to unreserve, it is guaranteed that seatNumber will be reserved.",
+    "At most 105 calls in total will be made to reserve and unreserve."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"SeatManager\", \"reserve\", \"reserve\", \"unreserve\", \"reserve\", \"reserve\", \"reserve\", \"reserve\", \"unreserve\"]\n[[5], [], [], [2], [], [], [], [], [5]]\nOutput\n[null, 1, 2, null, 2, 3, 4, 5, null]\n\nExplanation\nSeatManager seatManager = new SeatManager(5); // Initializes a SeatManager with 5 seats.\nseatManager.reserve();    // All seats are available, so return the lowest numbered seat, which is 1.\nseatManager.reserve();    // The available seats are [2,3,4,5], so return the lowest of them, which is 2.\nseatManager.unreserve(2); // Unreserve seat 2, so now the available seats are [2,3,4,5].\nseatManager.reserve();    // The available seats are [2,3,4,5], so return the lowest of them, which is 2.\nseatManager.reserve();    // The available seats are [3,4,5], so return the lowest of them, which is 3.\nseatManager.reserve();    // The available seats are [4,5], so return the lowest of them, which is 4.\nseatManager.reserve();    // The only available seat is seat 5, so return 5.\nseatManager.unreserve(5); // Unreserve seat 5, so now the available seats are [5]."
+    }
+  ],
+  "hints": [
+    "You need a data structure that maintains the states of the seats. This data structure should also allow you to get the first available seat and flip the state of a seat in a reasonable time.",
+    "You can let the data structure contain the available seats. Then you want to be able to get the lowest element and erase an element, in a reasonable time.",
+    "Ordered sets support these operations."
+  ],
+  "starter_code": "class SeatManager:\n\n    def __init__(self, n: int):\n        \n\n    def reserve(self) -> int:\n        \n\n    def unreserve(self, seatNumber: int) -> None:\n        \n\n\n# Your SeatManager object will be instantiated and called as such:\n# obj = SeatManager(n)\n# param_1 = obj.reserve()\n# obj.unreserve(seatNumber)",
+  "test_cases": []
+}

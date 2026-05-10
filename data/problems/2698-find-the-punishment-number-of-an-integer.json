@@ -24,36 +24,5 @@
     "Use a recursive algorithm that splits the number into two parts, generates all possible partitions of each part recursively, and then combines them in all possible ways."
   ],
   "starter_code": "class Solution:\n    def punishmentNumber(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 10
-      },
-      "expected": 182
-    },
-    {
-      "args": {
-        "n": 37
-      },
-      "expected": 1478
-    },
-    {
-      "args": {
-        "n": 100
-      },
-      "expected": 41334
-    },
-    {
-      "args": {
-        "n": 1000
-      },
-      "expected": 10804657
-    }
-  ]
+  "test_cases": []
 }

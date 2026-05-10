@@ -1,0 +1,25 @@
+{
+  "id": "1045",
+  "slug": "customers-who-bought-all-products",
+  "title": "Customers Who Bought All Products",
+  "difficulty": "Medium",
+  "topics": [
+    "Database"
+  ],
+  "description": "Table: Customer\nTable: Product\nWrite a solution to report the customer ids from the Customer table that bought all the products in the Product table.\nReturn the result table in any order.\nThe result format is in the following example.\nExample 1:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| customer_id | int     |\n| product_key | int     |\n+-------------+---------+\nThis table may contain duplicates rows. \ncustomer_id is not NULL.\nproduct_key is a foreign key (reference column) to Product table."
+    },
+    {
+      "example_text": "+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| product_key | int     |\n+-------------+---------+\nproduct_key is the primary key (column with unique values) for this table."
+    },
+    {
+      "example_text": "Input: \nCustomer table:\n+-------------+-------------+\n| customer_id | product_key |\n+-------------+-------------+\n| 1           | 5           |\n| 2           | 6           |\n| 3           | 5           |\n| 3           | 6           |\n| 1           | 6           |\n+-------------+-------------+\nProduct table:\n+-------------+\n| product_key |\n+-------------+\n| 5           |\n| 6           |\n+-------------+\nOutput: \n+-------------+\n| customer_id |\n+-------------+\n| 1           |\n| 3           |\n+-------------+\nExplanation: \nThe customers who bought all the products (5 and 6) are customers with IDs 1 and 3."
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

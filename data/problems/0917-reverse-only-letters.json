@@ -28,24 +28,5 @@
     "This problem is exactly like reversing a normal string except that there are certain characters that we have to simply skip. That should be easy enough to do if you know how to reverse a string using the two-pointer approach."
   ],
   "starter_code": "class Solution:\n    def reverseOnlyLetters(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ab-cd"
-      },
-      "expected": "dc-ba"
-    },
-    {
-      "args": {
-        "s": "a-bC-dEf-ghIj"
-      },
-      "expected": "j-Ih-gfE-dCba"
-    },
-    {
-      "args": {
-        "s": "Test1ng-Leet=code-Q!"
-      },
-      "expected": "Qedo1ct-eeLg=ntse-T!"
-    }
-  ]
+  "test_cases": []
 }

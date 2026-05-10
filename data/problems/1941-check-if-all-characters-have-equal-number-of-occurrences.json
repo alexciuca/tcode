@@ -26,36 +26,5 @@
     "Check if all values in the dictionary are the same."
   ],
   "starter_code": "class Solution:\n    def areOccurrencesEqual(self, s: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abacbc"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "aaaa"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "abcd"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "aabbcc"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

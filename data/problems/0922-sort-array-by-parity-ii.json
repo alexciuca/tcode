@@ -1,0 +1,29 @@
+{
+  "id": "0922",
+  "slug": "sort-array-by-parity-ii",
+  "title": "Sort Array By Parity II",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "description": "Given an array of integers nums, half of the integers in nums are odd, and the other half are even.\nSort the array so that whenever nums[i] is odd, i is odd, and whenever nums[i] is even, i is even.\nReturn any answer array that satisfies this condition.\nExample 1:\nExample 2:\nConstraints:\nFollow Up: Could you solve it in-place?",
+  "constraints": [
+    "2 <= nums.length <= 2 * 104",
+    "nums.length is even.",
+    "Half of the integers in nums are even.",
+    "0 <= nums[i] <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [4,2,5,7]\nOutput: [4,5,2,7]\nExplanation: [4,7,2,5], [2,5,4,7], [2,7,4,5] would also have been accepted."
+    },
+    {
+      "example_text": "Input: nums = [2,3]\nOutput: [2,3]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def sortArrayByParityII(self, nums: List[int]) -> List[int]:\n        ",
+  "test_cases": []
+}

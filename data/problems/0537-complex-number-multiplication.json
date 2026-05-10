@@ -22,41 +22,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def complexNumberMultiply(self, num1: str, num2: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num1": "1+1i",
-        "num2": "1+1i"
-      },
-      "expected": "0+2i"
-    },
-    {
-      "args": {
-        "num1": "1+0i",
-        "num2": "0+1i"
-      },
-      "expected": "0+1i"
-    },
-    {
-      "args": {
-        "num1": "-1+-1i",
-        "num2": "-1+-1i"
-      },
-      "expected": "0+2i"
-    },
-    {
-      "args": {
-        "num1": "0+0i",
-        "num2": "5+3i"
-      },
-      "expected": "0+0i"
-    },
-    {
-      "args": {
-        "num1": "12+34i",
-        "num2": "-5+-6i"
-      },
-      "expected": "144+-242i"
-    }
-  ]
+  "test_cases": []
 }

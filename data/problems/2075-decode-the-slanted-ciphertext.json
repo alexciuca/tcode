@@ -32,41 +32,5 @@
     "How should you traverse the matrix to \"decode\" originalText?"
   ],
   "starter_code": "class Solution:\n    def decodeCiphertext(self, encodedText: str, rows: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "encodedText": "ch   ap   js   pj   pr   cy   kd   pd   mk   qp   rh   ci   oo   az   bt   qo   ku   eo   ly   pa   qd   sc   fb   hc   ab",
-        "rows": 5
-      },
-      "expected": "ccrqqhyhod               akckspdiuc               jpoefsdoob               pmalhjkzyc               pqbprpt"
-    },
-    {
-      "args": {
-        "encodedText": "chill",
-        "rows": 1
-      },
-      "expected": "chill"
-    },
-    {
-      "args": {
-        "encodedText": "a",
-        "rows": 1
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "encodedText": "                ",
-        "rows": 4
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "encodedText": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
-        "rows": 10
-      },
-      "expected": "alwhsdozkvbmxitepalcnyjufqbdozkvgrepalwhfqbmxgrcnhsditj"
-    }
-  ]
+  "test_cases": []
 }

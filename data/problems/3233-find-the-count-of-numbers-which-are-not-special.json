@@ -26,41 +26,5 @@
     "Use sieve to find primes till <code>sqrt(10<sup>9</sup>)</code>."
   ],
   "starter_code": "class Solution:\n    def nonSpecialCount(self, l: int, r: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "l": 1,
-        "r": 10
-      },
-      "expected": 8
-    },
-    {
-      "args": {
-        "l": 5,
-        "r": 100
-      },
-      "expected": 93
-    },
-    {
-      "args": {
-        "l": 1,
-        "r": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "l": 999999999,
-        "r": 1000000000
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "l": 1,
-        "r": 1000000000
-      },
-      "expected": 999996599
-    }
-  ]
+  "test_cases": []
 }

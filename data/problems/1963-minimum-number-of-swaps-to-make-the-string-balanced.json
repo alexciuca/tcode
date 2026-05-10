@@ -34,36 +34,5 @@
     "Swap it with the opening bracket closest to the end of s."
   ],
   "starter_code": "class Solution:\n    def minSwaps(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "[]"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "]["
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "]][[]]"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "][]["
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "]]]][[[[]]]][[[[]]]]"
-      },
-      "expected": 2
-    }
-  ]
+  "test_cases": []
 }

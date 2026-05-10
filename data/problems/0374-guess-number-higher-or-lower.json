@@ -1,0 +1,29 @@
+{
+  "id": "0374",
+  "slug": "guess-number-higher-or-lower",
+  "title": "Guess Number Higher or Lower",
+  "difficulty": "Easy",
+  "topics": [
+    "Binary Search",
+    "Interactive"
+  ],
+  "description": "We are playing the Guess Game. The game is as follows:\nI pick a number from 1 to n. You have to guess which number I picked.\nEvery time you guess wrong, I will tell you whether the number I picked is higher or lower than your guess.\nYou call a pre-defined API int guess(int num), which returns three possible results:\nReturn the number that I picked.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 231 - 1",
+    "1 <= pick <= n"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 10, pick = 6\nOutput: 6"
+    },
+    {
+      "example_text": "Input: n = 1, pick = 1\nOutput: 1"
+    },
+    {
+      "example_text": "Input: n = 2, pick = 1\nOutput: 1"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# The guess API is already defined for you.\n# @param num, your guess\n# @return -1 if num is higher than the picked number\n#          1 if num is lower than the picked number\n#          otherwise return 0\n# def guess(num: int) -> int:\n\nclass Solution:\n    def guessNumber(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

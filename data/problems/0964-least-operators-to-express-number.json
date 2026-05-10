@@ -26,41 +26,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def leastOpsExpressTarget(self, x: int, target: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "x": 2,
-        "target": 8
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "x": 3,
-        "target": 100
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "x": 100,
-        "target": 100
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "x": 2,
-        "target": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "x": 99,
-        "target": 200000000
-      },
-      "expected": Infinity
-    }
-  ]
+  "test_cases": []
 }

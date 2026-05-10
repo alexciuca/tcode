@@ -1,0 +1,30 @@
+{
+  "id": "3320",
+  "slug": "count-the-number-of-winning-sequences",
+  "title": "Count The Number of Winning Sequences",
+  "difficulty": "Hard",
+  "topics": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "description": "Alice and Bob are playing a fantasy battle game consisting of n rounds where they summon one of three magical creatures each round: a Fire Dragon, a Water Serpent, or an Earth Golem. In each round, players simultaneously summon their creature and are awarded points as follows:\nYou are given a string s consisting of n characters 'F', 'W', and 'E', representing the sequence of creatures Alice will summon in each round:\nBob’s sequence of moves is unknown, but it is guaranteed that Bob will never summon the same creature in two consecutive rounds. Bob beats Alice if the total number of points awarded to Bob after n rounds is strictly greater than the points awarded to Alice.\nReturn the number of distinct sequences Bob can use to beat Alice.\nSince the answer may be very large, return it modulo 109 + 7.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s[i] is one of 'F', 'W', or 'E'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"FFF\"\nOutput: 3\nExplanation:\nBob can beat Alice by making one of the following sequences of moves: \"WFW\" , \"FWF\" , or \"WEW\" . Note that other winning sequences like \"WWE\" or \"EWW\" are invalid since Bob cannot make the same move twice in a row."
+    },
+    {
+      "example_text": "Input: s = \"FWEFW\"\nOutput: 18\nExplanation:\nBob can beat Alice by making one of the following sequences of moves: \"FWFWF\" , \"FWFWE\" , \"FWEFE\" , \"FWEWE\" , \"FEFWF\" , \"FEFWE\" , \"FEFEW\" , \"FEWFE\" , \"WFEFE\" , \"WFEWE\" , \"WEFWF\" , \"WEFWE\" , \"WEFEF\" , \"WEFEW\" , \"WEWFW\" , \"WEWFE\" , \"EWFWE\" , or \"EWEWE\" ."
+    }
+  ],
+  "hints": [
+    "Use dynamic programming.",
+    "For <code>0 < i < n - 1</code>, <code>-n < j < n</code>, and <code>k</code> in <code>{’F’, ‘W’, ‘E’}</code>, let <code>dp[i][j][k]</code>  be the number of sequences consisting of the first <code>i</code> moves such that the difference between bob’s points and alice’s point is equal to <code>j</code> and the <code>i<sup>th</sup></code> move that Bob played is <code>k</code>.",
+    "The answer is the sum of <code>dp[n - 1][j][k]</code>over all <code>j > 0</code> and over all <code>k</code>."
+  ],
+  "starter_code": "class Solution:\n    def countWinningSequences(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

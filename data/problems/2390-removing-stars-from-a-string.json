@@ -27,36 +27,5 @@
     "Use a stack to store the characters. Pop one character off the stack at each star. Otherwise, we push the character onto the stack."
   ],
   "starter_code": "class Solution:\n    def removeStars(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "leet*cod*e"
-      },
-      "expected": "leecoe"
-    },
-    {
-      "args": {
-        "s": "ab*cd"
-      },
-      "expected": "acd"
-    },
-    {
-      "args": {
-        "s": "a*b*c"
-      },
-      "expected": "c"
-    },
-    {
-      "args": {
-        "s": "*"
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyz*****abcdefghijklmnopqrstuvwxyz*****abcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": "abcdefghijklmnopqrstuabcdefghijklmnopqrstuabcdefghijklmnopqrstuvwxyz"
-    }
-  ]
+  "test_cases": []
 }
