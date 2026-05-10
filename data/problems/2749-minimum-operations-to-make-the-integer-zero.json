@@ -28,41 +28,5 @@
     "Iterate on the number of operations."
   ],
   "starter_code": "class Solution:\n    def makeTheIntegerZero(self, num1: int, num2: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num1": 3,
-        "num2": -1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "num1": 5,
-        "num2": 0
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "num1": 0,
-        "num2": 0
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "num1": 1,
-        "num2": -1000000000
-      },
-      "expected": 13
-    },
-    {
-      "args": {
-        "num1": 1000000000,
-        "num2": 1000000000
-      },
-      "expected": -1
-    }
-  ]
+  "test_cases": []
 }

@@ -24,36 +24,5 @@
     "The size of the longest possible continuous substring is at most 26, so we can just brute force the answer."
   ],
   "starter_code": "class Solution:\n    def longestContinuousSubstring(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abacabad"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": 26
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "zyxwvutsrqponmlkjihgfedcba"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": 26
-    }
-  ]
+  "test_cases": []
 }

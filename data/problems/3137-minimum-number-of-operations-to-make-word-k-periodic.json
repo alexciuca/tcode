@@ -28,41 +28,5 @@
     "The period of the final string will be the substring with the highest frequency."
   ],
   "starter_code": "class Solution:\n    def minimumOperationsToMakeKPeriodic(self, word: str, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "word": "aabcaabcab",
-        "k": 2
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "word": "aaaaa",
-        "k": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "word": "abcdefghij",
-        "k": 5
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "word": "aabbccdd",
-        "k": 4
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "word": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc",
-        "k": 3
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

@@ -24,36 +24,5 @@
     "The number of permutations equals the factorial."
   ],
   "starter_code": "class Solution:\n    def numPrimeArrangements(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 5
-      },
-      "expected": 12
-    },
-    {
-      "args": {
-        "n": 10
-      },
-      "expected": 17280
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 2
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 100
-      },
-      "expected": 682289015
-    }
-  ]
+  "test_cases": []
 }

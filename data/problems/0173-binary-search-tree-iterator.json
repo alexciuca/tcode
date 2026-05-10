@@ -1,0 +1,28 @@
+{
+  "id": "0173",
+  "slug": "binary-search-tree-iterator",
+  "title": "Binary Search Tree Iterator",
+  "difficulty": "Medium",
+  "topics": [
+    "Stack",
+    "Tree",
+    "Design",
+    "Binary Search Tree",
+    "Binary Tree",
+    "Iterator"
+  ],
+  "description": "Implement the BSTIterator class that represents an iterator over the in-order traversal of a binary search tree (BST):\nNotice that by initializing the pointer to a non-existent smallest number, the first call to next() will return the smallest element in the BST.\nYou may assume that next() calls will always be valid. That is, there will be at least a next number in the in-order traversal when next() is called.\nExample 1:\nConstraints:\nFollow up:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [1, 105].",
+    "0 <= Node.val <= 106",
+    "At most 105 calls will be made to hasNext, and next."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"BSTIterator\", \"next\", \"next\", \"hasNext\", \"next\", \"hasNext\", \"next\", \"hasNext\", \"next\", \"hasNext\"]\n[[[7, 3, 15, null, null, 9, 20]], [], [], [], [], [], [], [], [], []]\nOutput\n[null, 3, 7, true, 9, true, 15, true, 20, false]\n\nExplanation\nBSTIterator bSTIterator = new BSTIterator([7, 3, 15, null, null, 9, 20]);\nbSTIterator.next();    // return 3\nbSTIterator.next();    // return 7\nbSTIterator.hasNext(); // return True\nbSTIterator.next();    // return 9\nbSTIterator.hasNext(); // return True\nbSTIterator.next();    // return 15\nbSTIterator.hasNext(); // return True\nbSTIterator.next();    // return 20\nbSTIterator.hasNext(); // return False"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass BSTIterator:\n\n    def __init__(self, root: Optional[TreeNode]):\n        \n\n    def next(self) -> int:\n        \n\n    def hasNext(self) -> bool:\n        \n\n\n# Your BSTIterator object will be instantiated and called as such:\n# obj = BSTIterator(root)\n# param_1 = obj.next()\n# param_2 = obj.hasNext()",
+  "test_cases": []
+}

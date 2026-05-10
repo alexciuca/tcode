@@ -25,41 +25,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def getPermutation(self, n: int, k: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 3,
-        "k": 1
-      },
-      "expected": "123"
-    },
-    {
-      "args": {
-        "n": 3,
-        "k": 6
-      },
-      "expected": "321"
-    },
-    {
-      "args": {
-        "n": 1,
-        "k": 1
-      },
-      "expected": "1"
-    },
-    {
-      "args": {
-        "n": 4,
-        "k": 1
-      },
-      "expected": "1234"
-    },
-    {
-      "args": {
-        "n": 9,
-        "k": 362880
-      },
-      "expected": "987654321"
-    }
-  ]
+  "test_cases": []
 }

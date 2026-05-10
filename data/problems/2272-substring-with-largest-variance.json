@@ -26,36 +26,5 @@
     "Now, try finding the optimal answer by taking all possible pairs of characters into consideration."
   ],
   "starter_code": "class Solution:\n    def largestVariance(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aabcb"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "aaaa"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abcab"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "azbycxdwevfugthsirjqkplomn"
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

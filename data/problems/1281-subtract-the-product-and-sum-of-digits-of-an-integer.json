@@ -24,36 +24,5 @@
     "Generalise modulus operator idea to compute all digits."
   ],
   "starter_code": "class Solution:\n    def subtractProductAndSum(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 234
-      },
-      "expected": 15
-    },
-    {
-      "args": {
-        "n": 4421
-      },
-      "expected": 21
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "n": 10
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "n": 99999
-      },
-      "expected": 59004
-    }
-  ]
+  "test_cases": []
 }

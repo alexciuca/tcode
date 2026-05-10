@@ -25,42 +25,5 @@
     "If the current number is even, we can always subtract a 1 to make it odd.  If the current number is odd, we must subtract an odd number to make it even."
   ],
   "starter_code": "class Solution:\n    def divisorGame(self, n: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "N": 1
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "N": 2
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "N": 3
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "N": 4
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "N": 5
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "N": 6
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

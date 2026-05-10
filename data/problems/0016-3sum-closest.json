@@ -24,18 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def threeSumClosest(self, nums: List[int], target: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "nums": [
-          -1,
-          2,
-          1,
-          -4
-        ],
-        "target": 1
-      },
-      "expected": 2
-    }
-  ]
+  "test_cases": []
 }

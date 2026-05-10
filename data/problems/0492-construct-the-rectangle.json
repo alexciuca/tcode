@@ -25,51 +25,5 @@
     "The W is always less than or equal to the square root of the area, so we start searching at sqrt(area) till we find the result."
   ],
   "starter_code": "class Solution:\n    def constructRectangle(self, area: int) -> List[int]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "area": 12
-      },
-      "expected": [
-        4,
-        3
-      ]
-    },
-    {
-      "args": {
-        "area": 1
-      },
-      "expected": [
-        1,
-        1
-      ]
-    },
-    {
-      "args": {
-        "area": 100
-      },
-      "expected": [
-        10,
-        10
-      ]
-    },
-    {
-      "args": {
-        "area": 9999
-      },
-      "expected": [
-        101,
-        99
-      ]
-    },
-    {
-      "args": {
-        "area": 10000000
-      },
-      "expected": [
-        3200,
-        3125
-      ]
-    }
-  ]
+  "test_cases": []
 }

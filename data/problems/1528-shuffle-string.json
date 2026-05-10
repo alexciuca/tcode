@@ -1,0 +1,32 @@
+{
+  "id": "1528",
+  "slug": "shuffle-string",
+  "title": "Shuffle String",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "String"
+  ],
+  "description": "You are given a string s and an integer array indices of the same length. The string s will be shuffled such that the character at the ith position moves to indices[i] in the shuffled string.\nReturn the shuffled string.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "s.length == indices.length == n",
+    "1 <= n <= 100",
+    "s consists of only lowercase English letters.",
+    "0 <= indices[i] < n",
+    "All values of indices are unique."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"codeleet\", indices = [4,5,6,7,0,2,1,3]\nOutput: \"leetcode\"\nExplanation: As shown, \"codeleet\" becomes \"leetcode\" after shuffling."
+    },
+    {
+      "example_text": "Input: s = \"abc\", indices = [0,1,2]\nOutput: \"abc\"\nExplanation: After shuffling, each character remains in its position."
+    }
+  ],
+  "hints": [
+    "You can create an auxiliary string t of length n.",
+    "Assign t[indexes[i]] to s[i] for each i from 0 to n-1."
+  ],
+  "starter_code": "class Solution:\n    def restoreString(self, s: str, indices: List[int]) -> str:\n        ",
+  "test_cases": []
+}

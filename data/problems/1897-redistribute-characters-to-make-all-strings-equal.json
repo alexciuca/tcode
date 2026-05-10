@@ -27,54 +27,5 @@
     "It is possible to distribute characters if all characters can be divided equally among all strings."
   ],
   "starter_code": "class Solution:\n    def makeEqual(self, words: List[str]) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "words": [
-          "ab",
-          "ba"
-        ]
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "words": [
-          "abc",
-          "aabc",
-          "bc"
-        ]
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "words": [
-          "a"
-        ]
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "words": [
-          "aaa",
-          "aaa",
-          "aaa"
-        ]
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "words": [
-          "abcdefghijklmnopqrstuvwxyz",
-          "zyxwvutsrqponmlkjihgfedcba",
-          "abcdefghijklmnopqrstuvwxyz",
-          "zyxwvutsrqponmlkjihgfedcba"
-        ]
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

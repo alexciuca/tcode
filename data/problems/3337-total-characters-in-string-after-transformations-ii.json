@@ -1,0 +1,35 @@
+{
+  "id": "3337",
+  "slug": "total-characters-in-string-after-transformations-ii",
+  "title": "Total Characters in String After Transformations II",
+  "difficulty": "Hard",
+  "topics": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Counting"
+  ],
+  "description": "You are given a string s consisting of lowercase English letters, an integer t representing the number of transformations to perform, and an array nums of size 26. In one transformation, every character in s is replaced according to the following rules:\nReturn the length of the resulting string after exactly t transformations.\nSince the answer may be very large, return it modulo 109 + 7.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists only of lowercase English letters.",
+    "1 <= t <= 109",
+    "nums.length == 26",
+    "1 <= nums[i] <= 25"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abcyy\", t = 2, nums = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]\nOutput: 7\nExplanation:\nFirst Transformation (t = 1):\nSecond Transformation (t = 2):\nFinal Length of the string: The string is \"cdeabab\" , which has 7 characters."
+    },
+    {
+      "example_text": "Input: s = \"azbk\", t = 1, nums = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]\nOutput: 8\nExplanation:\nFirst Transformation (t = 1):\nFinal Length of the string: The string is \"bcabcdlm\" , which has 8 characters."
+    }
+  ],
+  "hints": [
+    "Model the problem as a matrix multiplication problem.",
+    "Use exponentiation to quickly multiply matrices."
+  ],
+  "starter_code": "class Solution:\n    def lengthAfterTransformations(self, s: str, t: int, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

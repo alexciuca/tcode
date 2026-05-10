@@ -27,36 +27,5 @@
     "Build the string anyway as you wish. Keep in mind that you need to start with the type that have more characters if cntLetters ≠ cntDigits."
   ],
   "starter_code": "class Solution:\n    def reformat(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "5F3Z-2e-9-w"
-      },
-      "expected": "5F3Z2e9w"
-    },
-    {
-      "args": {
-        "s": "2-4A0r-4k"
-      },
-      "expected": "2A4r0k4"
-    },
-    {
-      "args": {
-        "s": "abcd"
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "12345"
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z-1-2-3-4-5"
-      },
-      "expected": ""
-    }
-  ]
+  "test_cases": []
 }

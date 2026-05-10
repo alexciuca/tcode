@@ -31,41 +31,5 @@
     "What about hash table?  An array of size 26?"
   ],
   "starter_code": "class Solution:\n    def checkInclusion(self, s1: str, s2: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s1": "ab",
-        "s2": "eidbaooo"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "ab",
-        "s2": "eidboaoo"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s1": "aab",
-        "s2": "eidabbaooo"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s1": "aab",
-        "s2": "eidaaabooo"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "adc",
-        "s2": "dcda"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

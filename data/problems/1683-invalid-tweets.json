@@ -1,0 +1,22 @@
+{
+  "id": "1683",
+  "slug": "invalid-tweets",
+  "title": "Invalid Tweets",
+  "difficulty": "Easy",
+  "topics": [
+    "Database"
+  ],
+  "description": "Table: Tweets\nWrite a solution to find the IDs of the invalid tweets. The tweet is invalid if the number of characters used in the content of the tweet is strictly greater than 15.\nReturn the result table in any order.\nThe result format is in the following example.\nExample 1:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "+----------------+---------+\n| Column Name    | Type    |\n+----------------+---------+\n| tweet_id       | int     |\n| content        | varchar |\n+----------------+---------+\ntweet_id is the primary key (column with unique values) for this table.\ncontent consists of alphanumeric characters, '!', or ' ' and no other special characters.\nThis table contains all the tweets in a social media app."
+    },
+    {
+      "example_text": "Input: \nTweets table:\n+----------+-----------------------------------+\n| tweet_id | content                           |\n+----------+-----------------------------------+\n| 1        | Let us Code                       |\n| 2        | More than fifteen chars are here! |\n+----------+-----------------------------------+\nOutput: \n+----------+\n| tweet_id |\n+----------+\n| 2        |\n+----------+\nExplanation: \nTweet 1 has length = 11. It is a valid tweet.\nTweet 2 has length = 33. It is an invalid tweet."
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

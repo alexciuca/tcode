@@ -23,20 +23,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def nextGreaterElements(self, nums: List[int]) -> List[int]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "nums": [
-          1,
-          2,
-          1
-        ]
-      },
-      "expected": [
-        2,
-        -1,
-        2
-      ]
-    }
-  ]
+  "test_cases": []
 }

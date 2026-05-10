@@ -35,58 +35,5 @@
     "Can you use Dynamic programming to solve this problem in a better complexity ?"
   ],
   "starter_code": "class Solution:\n    def getProbability(self, balls: List[int]) -> float:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "balls": [
-          1,
-          1
-        ]
-      },
-      "expected": 1.0
-    },
-    {
-      "args": {
-        "balls": [
-          2,
-          2
-        ]
-      },
-      "expected": 1.0
-    },
-    {
-      "args": {
-        "balls": [
-          1,
-          1,
-          1,
-          1
-        ]
-      },
-      "expected": 1.0
-    },
-    {
-      "args": {
-        "balls": [
-          6
-        ]
-      },
-      "expected": 1.0
-    },
-    {
-      "args": {
-        "balls": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          2,
-          2
-        ]
-      },
-      "expected": 0.47619047619047616
-    }
-  ]
+  "test_cases": []
 }

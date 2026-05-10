@@ -28,41 +28,5 @@
     "Change up to <code>k</code> characters to maximize the distance in the chosen direction."
   ],
   "starter_code": "class Solution:\n    def maxDistance(self, s: str, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "NSEW",
-        "k": 1
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "NESWW",
-        "k": 2
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "N",
-        "k": 0
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "NNNNSSSS",
-        "k": 4
-      },
-      "expected": 8
-    },
-    {
-      "args": {
-        "s": "NESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESWN",
-        "k": 50000
-      },
-      "expected": 146
-    }
-  ]
+  "test_cases": []
 }

@@ -26,36 +26,5 @@
     "Notice that days always have a two-word ending, so if you erase the last two characters of this days you'll get the number."
   ],
   "starter_code": "class Solution:\n    def reformatDate(self, date: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "date": "20th Oct 2052"
-      },
-      "expected": "2052-10-20"
-    },
-    {
-      "args": {
-        "date": "1st Jan 1900"
-      },
-      "expected": "1900-01-01"
-    },
-    {
-      "args": {
-        "date": "31st Dec 2099"
-      },
-      "expected": "2099-12-31"
-    },
-    {
-      "args": {
-        "date": "2nd Feb 2000"
-      },
-      "expected": "2000-02-02"
-    },
-    {
-      "args": {
-        "date": "21st Nov 1995"
-      },
-      "expected": "1995-11-21"
-    }
-  ]
+  "test_cases": []
 }

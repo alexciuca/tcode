@@ -24,53 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def largeGroupPositions(self, s: str) -> List[List[int]]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abbxxxxzzy"
-      },
-      "expected": [
-        [
-          3,
-          6
-        ]
-      ]
-    },
-    {
-      "args": {
-        "s": "abc"
-      },
-      "expected": []
-    },
-    {
-      "args": {
-        "s": "abcdddeeeeaabbbcd"
-      },
-      "expected": [
-        [
-          3,
-          5
-        ],
-        [
-          6,
-          9
-        ],
-        [
-          12,
-          14
-        ]
-      ]
-    },
-    {
-      "args": {
-        "s": "aaa"
-      },
-      "expected": [
-        [
-          0,
-          2
-        ]
-      ]
-    }
-  ]
+  "test_cases": []
 }

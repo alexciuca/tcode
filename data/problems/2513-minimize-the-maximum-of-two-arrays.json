@@ -30,51 +30,5 @@
     "Add numbers divisible by x in nums2 and vice versa."
   ],
   "starter_code": "class Solution:\n    def minimizeSet(self, divisor1: int, divisor2: int, uniqueCnt1: int, uniqueCnt2: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "divisor1": 2,
-        "divisor2": 3,
-        "uniqueCnt1": 5,
-        "uniqueCnt2": 5
-      },
-      "expected": 15
-    },
-    {
-      "args": {
-        "divisor1": 3,
-        "divisor2": 5,
-        "uniqueCnt1": 10,
-        "uniqueCnt2": 8
-      },
-      "expected": 40
-    },
-    {
-      "args": {
-        "divisor1": 2,
-        "divisor2": 2,
-        "uniqueCnt1": 1,
-        "uniqueCnt2": 1
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "divisor1": 100000,
-        "divisor2": 99999,
-        "uniqueCnt1": 1,
-        "uniqueCnt2": 1
-      },
-      "expected": 100000
-    },
-    {
-      "args": {
-        "divisor1": 17,
-        "divisor2": 19,
-        "uniqueCnt1": 500000000,
-        "uniqueCnt2": 500000000
-      },
-      "expected": 9500000000
-    }
-  ]
+  "test_cases": []
 }

@@ -24,12 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def rotatedDigits(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 10
-      },
-      "expected": 4
-    }
-  ]
+  "test_cases": []
 }

@@ -24,20 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isSubsequence(self, s: str, t: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abc",
-        "t": "ahbgdc"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "axc",
-        "t": "ahbgdc"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

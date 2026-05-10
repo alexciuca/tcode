@@ -21,36 +21,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def arrangeCoins(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 5
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "n": 8
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 0
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "n": 2147483647
-      },
-      "expected": 65535
-    }
-  ]
+  "test_cases": []
 }

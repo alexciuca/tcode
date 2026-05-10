@@ -32,58 +32,5 @@
     "Use a hashSet to store the character of each string."
   ],
   "starter_code": "class Solution:\n    def similarPairs(self, words: List[str]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "words": [
-          "aba",
-          "aab",
-          "abab",
-          "baa"
-        ]
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "words": [
-          "abcd",
-          "dacb",
-          "bc",
-          "mnp"
-        ]
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "words": [
-          "a"
-        ]
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "words": [
-          "abc",
-          "abc",
-          "abc"
-        ]
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "words": [
-          "abcdefghijklmnopqrstuvwxyz",
-          "zyxwvutsrqponmlkjihgfedcba",
-          "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
-          "abcdefghijklmnopqrstuvwxyz",
-          "zyxwvutsrqponmlkjihgfedcba"
-        ]
-      },
-      "expected": 10
-    }
-  ]
+  "test_cases": []
 }

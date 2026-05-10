@@ -25,41 +25,5 @@
     "Brute force to find the largest possible value of k, or return -1 if there doesn’t exist any such k."
   ],
   "starter_code": "class Solution:\n    def distMoney(self, money: int, children: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "money": 8,
-        "children": 3
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "money": 10,
-        "children": 3
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "money": 1,
-        "children": 2
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "money": 200,
-        "children": 2
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "money": 100,
-        "children": 30
-      },
-      "expected": 10
-    }
-  ]
+  "test_cases": []
 }

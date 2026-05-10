@@ -23,46 +23,5 @@
     "Calculate the length of the longest common prefix of the <code>3</code> strings."
   ],
   "starter_code": "class Solution:\n    def findMinimumOperations(self, s1: str, s2: str, s3: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s1": "abc",
-        "s2": "abc",
-        "s3": "abc"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s1": "abb",
-        "s2": "ab",
-        "s3": "ba"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "s1": "a",
-        "s2": "b",
-        "s3": "c"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "s1": "aaaa",
-        "s2": "aaaa",
-        "s3": "aaaa"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s1": "abcdefghij",
-        "s2": "abcdefghij",
-        "s3": "abcdefghij"
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

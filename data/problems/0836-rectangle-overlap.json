@@ -27,40 +27,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isRectangleOverlap(self, rec1: List[int], rec2: List[int]) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "rec1": [
-          0,
-          0,
-          2,
-          2
-        ],
-        "rec2": [
-          1,
-          1,
-          3,
-          3
-        ]
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "rec1": [
-          0,
-          0,
-          1,
-          1
-        ],
-        "rec2": [
-          1,
-          0,
-          2,
-          1
-        ]
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

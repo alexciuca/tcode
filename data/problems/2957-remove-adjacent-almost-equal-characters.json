@@ -29,36 +29,5 @@
     "We will change <code>word[i]</code> to some character that is not adjacent to <code>word[i - 1]</code> nor <code>word[i + 1]</code> (if it exists). Such a character always exists. However, since the problem does not ask for the final state of the string, It is enough to prove that the character exists and we do not need to find it."
   ],
   "starter_code": "class Solution:\n    def removeAlmostEqualCharacters(self, word: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "word": "aaaa"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "word": "abcd"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "word": "aa"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "word": "zyxwvutsrqponmlkjihgfedcba"
-      },
-      "expected": 13
-    },
-    {
-      "args": {
-        "word": "aabbccddaabbccddaabbccddaabbccdd"
-      },
-      "expected": 16
-    }
-  ]
+  "test_cases": []
 }

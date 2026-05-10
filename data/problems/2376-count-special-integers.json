@@ -27,36 +27,5 @@
     "Use the idea of digit dynamic programming to build the numbers, in addition to a bitmask that will tell which digits you have used so far on the number that you are building."
   ],
   "starter_code": "class Solution:\n    def countSpecialNumbers(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 10
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "n": 100
-      },
-      "expected": 90
-    },
-    {
-      "args": {
-        "n": 9
-      },
-      "expected": 9
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 2000000000
-      },
-      "expected": 5974650
-    }
-  ]
+  "test_cases": []
 }

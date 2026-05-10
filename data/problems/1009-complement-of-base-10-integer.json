@@ -25,36 +25,5 @@
     "A binary number plus its complement will equal 111....111 in binary.  Also, N = 0 is a corner case."
   ],
   "starter_code": "class Solution:\n    def bitwiseComplement(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "N": 5
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "N": 7
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "N": 10
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "N": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "N": 0
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

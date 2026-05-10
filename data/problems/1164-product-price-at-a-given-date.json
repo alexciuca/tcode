@@ -1,0 +1,22 @@
+{
+  "id": "1164",
+  "slug": "product-price-at-a-given-date",
+  "title": "Product Price at a Given Date",
+  "difficulty": "Medium",
+  "topics": [
+    "Database"
+  ],
+  "description": "Table: Products\nInitially, all products have price 10.\nWrite a solution to find the prices of all products on the date 2019-08-16.\nReturn the result table in any order.\nThe result format is in the following example.\nExample 1:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| product_id    | int     |\n| new_price     | int     |\n| change_date   | date    |\n+---------------+---------+\n(product_id, change_date) is the primary key (combination of columns with unique values) of this table.\nEach row of this table indicates that the price of some product was changed to a new price at some date."
+    },
+    {
+      "example_text": "Input: \nProducts table:\n+------------+-----------+-------------+\n| product_id | new_price | change_date |\n+------------+-----------+-------------+\n| 1          | 20        | 2019-08-14  |\n| 2          | 50        | 2019-08-14  |\n| 1          | 30        | 2019-08-15  |\n| 1          | 35        | 2019-08-16  |\n| 2          | 65        | 2019-08-17  |\n| 3          | 20        | 2019-08-18  |\n+------------+-----------+-------------+\nOutput: \n+------------+-------+\n| product_id | price |\n+------------+-------+\n| 2          | 50    |\n| 1          | 35    |\n| 3          | 10    |\n+------------+-------+"
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

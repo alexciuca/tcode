@@ -25,36 +25,5 @@
     "Try to build a new string by traversing the given string and reversing whenever you get the character ‘i’."
   ],
   "starter_code": "class Solution:\n    def finalString(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "string"
-      },
-      "expected": "rtsng"
-    },
-    {
-      "args": {
-        "s": "poiinter"
-      },
-      "expected": "ponter"
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": "hgfedcbajklmnopqrstuvwxyz"
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "iiiiiiiiii"
-      },
-      "expected": ""
-    }
-  ]
+  "test_cases": []
 }

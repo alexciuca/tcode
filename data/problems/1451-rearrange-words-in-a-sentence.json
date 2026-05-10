@@ -27,36 +27,5 @@
     "Store each word and their relative position. Then, sort them by length of words in case of tie by their original order."
   ],
   "starter_code": "class Solution:\n    def arrangeWords(self, text: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "text": "Is This The Real Life"
-      },
-      "expected": "is the this real life"
-    },
-    {
-      "args": {
-        "text": "Leetcode Is Awesome"
-      },
-      "expected": "is awesome leetcode"
-    },
-    {
-      "args": {
-        "text": "A"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "text": "Never Give Up"
-      },
-      "expected": "up give never"
-    },
-    {
-      "args": {
-        "text": "The Quick Brown Fox Jumps Over The Lazy Dog"
-      },
-      "expected": "the fox the dog over lazy quick brown jumps"
-    }
-  ]
+  "test_cases": []
 }

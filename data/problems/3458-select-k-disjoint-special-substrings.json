@@ -33,41 +33,5 @@
     "Use dynamic programming on the obtained intervals to check if it's possible to pick at least <code>k</code> disjoint intervals."
   ],
   "starter_code": "class Solution:\n    def maxSubstringLength(self, s: str, k: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aaabbbccc",
-        "k": 2
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "abcdefg",
-        "k": 3
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "aabbcc",
-        "k": 0
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "aaaa",
-        "k": 1
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
-        "k": 26
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

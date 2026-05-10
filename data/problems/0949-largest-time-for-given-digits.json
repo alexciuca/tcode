@@ -24,39 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def largestTimeFromDigits(self, arr: List[int]) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "a": [
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      "expected": "23:41"
-    },
-    {
-      "args": {
-        "a": [
-          5,
-          5,
-          5,
-          5
-        ]
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "a": [
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      "expected": "00:00"
-    }
-  ]
+  "test_cases": []
 }

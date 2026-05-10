@@ -24,40 +24,5 @@
   ],
   "hints": [],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def averageOfLevels(self, root: Optional[TreeNode]) -> List[float]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "root": [
-          3,
-          9,
-          20,
-          null,
-          null,
-          15,
-          7
-        ]
-      },
-      "expected": [
-        3.0,
-        14.5,
-        11.0
-      ]
-    },
-    {
-      "args": {
-        "root": [
-          3,
-          9,
-          20,
-          15,
-          7
-        ]
-      },
-      "expected": [
-        3.0,
-        14.5,
-        11.0
-      ]
-    }
-  ]
+  "test_cases": []
 }

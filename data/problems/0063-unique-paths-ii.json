@@ -28,28 +28,5 @@
     "assume dp[i][j] is the number of unique paths to reach (i, j). dp[i][j] = dp[i][j -1] + dp[i - 1][j]. Be careful when you encounter an obstacle. set its value in dp to 0."
   ],
   "starter_code": "class Solution:\n    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "obstacleGrid": [
-          [
-            0,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            0,
-            0,
-            0
-          ]
-        ]
-      },
-      "expected": 2
-    }
-  ]
+  "test_cases": []
 }

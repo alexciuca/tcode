@@ -26,52 +26,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def lengthOfLIS(self, nums: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "nums": [
-          10,
-          9,
-          2,
-          5,
-          3,
-          7,
-          101,
-          18
-        ]
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "nums": [
-          10,
-          9,
-          2,
-          8,
-          3,
-          7,
-          101,
-          18
-        ]
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "nums": [
-          10,
-          9,
-          2,
-          8,
-          3,
-          7,
-          101,
-          101,
-          18
-        ]
-      },
-      "expected": 4
-    }
-  ]
+  "test_cases": []
 }

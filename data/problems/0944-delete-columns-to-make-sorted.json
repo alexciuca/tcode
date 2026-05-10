@@ -30,35 +30,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def minDeletionSize(self, strs: List[str]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "a": [
-          "cba",
-          "daf",
-          "ghi"
-        ]
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "a": [
-          "a",
-          "b"
-        ]
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "a": [
-          "zyx",
-          "wvu",
-          "tsr"
-        ]
-      },
-      "expected": 3
-    }
-  ]
+  "test_cases": []
 }

@@ -26,35 +26,5 @@
     "Consider a sequence ending at index <code>i</code. The previous two elements must sum to <code>arr[i]</code>, which can be done in linear time per element."
   ],
   "starter_code": "class Solution:\n    def lenLongestFibSubseq(self, arr: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "A": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ]
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "A": [
-          1,
-          3,
-          7,
-          11,
-          12,
-          14,
-          18
-        ]
-      },
-      "expected": 3
-    }
-  ]
+  "test_cases": []
 }

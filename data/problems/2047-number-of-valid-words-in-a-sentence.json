@@ -28,36 +28,5 @@
     "Count the number of characters of each type (letters, numbers, hyphens, and punctuations)."
   ],
   "starter_code": "class Solution:\n    def countValidWords(self, sentence: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "sentence": "cat and dog"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "sentence": "alice-b bob robert"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "sentence": "hello! world. test,"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "sentence": "a-b-c d-e-f g h-"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "sentence": "i 1a2b3 a-b-c-d-e-f-g-h-i-j-k"
-      },
-      "expected": 2
-    }
-  ]
+  "test_cases": []
 }

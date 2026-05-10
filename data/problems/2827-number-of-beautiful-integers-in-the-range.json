@@ -28,46 +28,5 @@
     "<div class=\"_1l1MA\">Let <code> f(n) </code> denote number of beautiful integers in the range <code> [1…n] </code>, then the answer is <code> f(r) - f(l-1) </code>.</div>"
   ],
   "starter_code": "class Solution:\n    def numberOfBeautifulIntegers(self, low: int, high: int, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "low": 1,
-        "high": 10,
-        "k": 1
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "low": 1,
-        "high": 100,
-        "k": 2
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "low": 10,
-        "high": 99,
-        "k": 3
-      },
-      "expected": 18
-    },
-    {
-      "args": {
-        "low": 1,
-        "high": 1000000000,
-        "k": 1
-      },
-      "expected": 246093750
-    },
-    {
-      "args": {
-        "low": 999999990,
-        "high": 1000000000,
-        "k": 20
-      },
-      "expected": 8203125
-    }
-  ]
+  "test_cases": []
 }

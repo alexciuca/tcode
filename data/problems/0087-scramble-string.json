@@ -26,41 +26,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isScramble(self, s1: str, s2: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s1": "great",
-        "s2": "rgeat"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "abcde",
-        "s2": "caebd"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s1": "a",
-        "s2": "a"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "ab",
-        "s2": "ba"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "eebaacbcbcadaaedceaaacadccd",
-        "s2": "eadcaacabaddaceacbceaabeccd"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

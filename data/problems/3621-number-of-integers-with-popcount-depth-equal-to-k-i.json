@@ -1,0 +1,31 @@
+{
+  "id": "3621",
+  "slug": "number-of-integers-with-popcount-depth-equal-to-k-i",
+  "title": "Number of Integers With Popcount-Depth Equal to K I",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "description": "You are given two integers n and k.\nFor any positive integer x, define the following sequence:\nThis sequence will eventually reach the value 1.\nThe popcount-depth of x is defined as the smallest integer d >= 0 such that pd = 1.\nFor example, if x = 7 (binary representation \"111\"). Then, the sequence is: 7 → 3 → 2 → 1, so the popcount-depth of 7 is 3.\nYour task is to determine the number of integers in the range [1, n] whose popcount-depth is exactly equal to k.\nReturn the number of such integers.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 1015",
+    "0 <= k <= 5"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 4, k = 1\nOutput: 2\nExplanation:\nThe following integers in the range [1, 4] have popcount-depth exactly equal to 1:\nThus, the answer is 2."
+    },
+    {
+      "example_text": "Input: n = 7, k = 2\nOutput: 3\nExplanation:\nThe following integers in the range [1, 7] have popcount-depth exactly equal to 2:\nThus, the answer is 3."
+    }
+  ],
+  "hints": [
+    "Use digit dynamic programming on the binary representation of <code>n</code>: let <code>dp[pos][ones][tight]</code> = number of ways to choose bits from the most significant down to position <code>pos</code> with exactly <code>ones</code> ones so far, where <code>tight</code> indicates whether you're still matching the prefix of <code>n</code>.",
+    "Precompute <code>depth[j]</code> for all <code>j</code> from <code>0</code> to <code>64</code> by repeatedly applying <code>popcount(j)</code> until you reach <code>1</code>.",
+    "After your DP, let <code>dp_final[j]</code> be the count of numbers <= <code>n</code> that have exactly <code>j</code> ones; the answer is the sum of all <code>dp_final[j]</code> for which <code>depth[j] == k</code>."
+  ],
+  "starter_code": "class Solution:\n    def popcountDepth(self, n: int, k: int) -> int:\n        ",
+  "test_cases": []
+}

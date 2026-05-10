@@ -28,58 +28,5 @@
     "A faster approach is to use extra space."
   ],
   "starter_code": "class Solution:\n    def hIndex(self, citations: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "citations": [
-          25,
-          8,
-          5,
-          3,
-          3
-        ]
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "citations": [
-          100
-        ]
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "citations": [
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "citations": [
-          1,
-          1
-        ]
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "citations": [
-          1000,
-          1000,
-          1000,
-          1000,
-          1000
-        ]
-      },
-      "expected": 5
-    }
-  ]
+  "test_cases": []
 }

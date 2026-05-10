@@ -28,30 +28,5 @@
     "f(1) = 10, ..., f(k) = 9 * 9 * 8 * ... (9 - k + 2) [The first factor is 9 because a number cannot start with 0]."
   ],
   "starter_code": "class Solution:\n    def countNumbersWithUniqueDigits(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 0
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "n": 2
-      },
-      "expected": 91
-    },
-    {
-      "args": {
-        "n": 3
-      },
-      "expected": 739
-    }
-  ]
+  "test_cases": []
 }

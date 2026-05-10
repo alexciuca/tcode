@@ -1,0 +1,30 @@
+{
+  "id": "3408",
+  "slug": "design-task-manager",
+  "title": "Design Task Manager",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "description": "There is a task management system that allows users to manage their tasks, each associated with a priority. The system should efficiently handle adding, modifying, executing, and removing tasks.\nImplement the TaskManager class:\nNote that a user may be assigned multiple tasks.\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= tasks.length <= 105",
+    "0 <= userId <= 105",
+    "0 <= taskId <= 105",
+    "0 <= priority <= 109",
+    "0 <= newPriority <= 109",
+    "At most 2 * 105 calls will be made in total to add, edit, rmv, and execTop methods.",
+    "The input is generated such that taskId will be valid."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: [\"TaskManager\", \"add\", \"edit\", \"execTop\", \"rmv\", \"add\", \"execTop\"] [[[[1, 101, 10], [2, 102, 20], [3, 103, 15]]], [4, 104, 5], [102, 8], [], [101], [5, 105, 15], []]\nOutput: [null, null, null, 3, null, null, 5]\nExplanation"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class TaskManager:\n\n    def __init__(self, tasks: List[List[int]]):\n        \n\n    def add(self, userId: int, taskId: int, priority: int) -> None:\n        \n\n    def edit(self, taskId: int, newPriority: int) -> None:\n        \n\n    def rmv(self, taskId: int) -> None:\n        \n\n    def execTop(self) -> int:\n        \n\n\n# Your TaskManager object will be instantiated and called as such:\n# obj = TaskManager(tasks)\n# obj.add(userId,taskId,priority)\n# obj.edit(taskId,newPriority)\n# obj.rmv(taskId)\n# param_4 = obj.execTop()",
+  "test_cases": []
+}

@@ -29,41 +29,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isMatch(self, s: str, p: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aa",
-        "p": "a"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "aa",
-        "p": "a*"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "ab",
-        "p": ".*"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "aab",
-        "p": "c*a*b"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "mississippi",
-        "p": "m*iss*p*."
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

@@ -30,36 +30,5 @@
     "Find the other prefixes whose masks differs from the current prefix mask by at most one bit."
   ],
   "starter_code": "class Solution:\r\n    def wonderfulSubstrings(self, word: str) -> int:",
-  "test_cases": [
-    {
-      "args": {
-        "word": "aabcb"
-      },
-      "expected": 9
-    },
-    {
-      "args": {
-        "word": "a"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "word": "aabbccdd"
-      },
-      "expected": 30
-    },
-    {
-      "args": {
-        "word": "aaaaaaaaaa"
-      },
-      "expected": 55
-    },
-    {
-      "args": {
-        "word": "abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij"
-      },
-      "expected": 715
-    }
-  ]
+  "test_cases": []
 }

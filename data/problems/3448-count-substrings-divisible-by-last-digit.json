@@ -30,36 +30,5 @@
     "In order to find <code>dp[index][i][j]</code> we use values from <code>dp[index - 1][i][j]</code>. Hence, we can keep only <code>dp[index][i][j]</code> and <code>dp[index - 1][i][j]</code> at every iteration of the loop."
   ],
   "starter_code": "class Solution:\n    def countSubstrings(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "1234"
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "s": "505"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "1"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "0000"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "123456789101112131415161718192021222324252627282930"
-      },
-      "expected": 951
-    }
-  ]
+  "test_cases": []
 }

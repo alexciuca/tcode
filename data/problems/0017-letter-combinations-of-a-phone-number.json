@@ -26,38 +26,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def letterCombinations(self, digits: str) -> List[str]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "digits": "23"
-      },
-      "expected": [
-        "ad",
-        "ae",
-        "af",
-        "bd",
-        "be",
-        "bf",
-        "cd",
-        "ce",
-        "cf"
-      ]
-    },
-    {
-      "args": {
-        "digits": ""
-      },
-      "expected": []
-    },
-    {
-      "args": {
-        "digits": "2"
-      },
-      "expected": [
-        "a",
-        "b",
-        "c"
-      ]
-    }
-  ]
+  "test_cases": []
 }

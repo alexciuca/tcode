@@ -27,50 +27,5 @@
   ],
   "hints": [],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "p": [
-          1,
-          2,
-          3
-        ],
-        "q": [
-          1,
-          2,
-          3
-        ]
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "p": [
-          1,
-          2
-        ],
-        "q": [
-          1,
-          null,
-          2
-        ]
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "p": [
-          1,
-          2,
-          1
-        ],
-        "q": [
-          1,
-          1,
-          2
-        ]
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

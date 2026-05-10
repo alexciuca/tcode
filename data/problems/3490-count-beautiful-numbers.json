@@ -1,0 +1,26 @@
+{
+  "id": "3490",
+  "slug": "count-beautiful-numbers",
+  "title": "Count Beautiful Numbers",
+  "difficulty": "Hard",
+  "topics": [
+    "Dynamic Programming"
+  ],
+  "description": "You are given two positive integers, l and r. A positive integer is called beautiful if the product of its digits is divisible by the sum of its digits.\nReturn the count of beautiful numbers between l and r, inclusive.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= l <= r < 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: l = 10, r = 20\nOutput: 2\nExplanation:\nThe beautiful numbers in the range are 10 and 20."
+    },
+    {
+      "example_text": "Input: l = 1, r = 15\nOutput: 10\nExplanation:\nThe beautiful numbers in the range are 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10."
+    }
+  ],
+  "hints": [
+    "Use digit dynamic programming."
+  ],
+  "starter_code": "class Solution:\n    def beautifulNumbers(self, l: int, r: int) -> int:\n        ",
+  "test_cases": []
+}

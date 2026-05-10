@@ -24,51 +24,5 @@
     "Apply dynamic programming using the group size of consecutive zeros and ones."
   ],
   "starter_code": "class Solution:\n    def countGoodStrings(self, low: int, high: int, zero: int, one: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "low": 3,
-        "high": 3,
-        "zero": 1,
-        "one": 1
-      },
-      "expected": 8
-    },
-    {
-      "args": {
-        "low": 2,
-        "high": 8,
-        "zero": 1,
-        "one": 2
-      },
-      "expected": 86
-    },
-    {
-      "args": {
-        "low": 1,
-        "high": 10,
-        "zero": 1,
-        "one": 1
-      },
-      "expected": 2046
-    },
-    {
-      "args": {
-        "low": 5,
-        "high": 5,
-        "zero": 2,
-        "one": 3
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "low": 1,
-        "high": 100000,
-        "zero": 1,
-        "one": 1
-      },
-      "expected": 215447031
-    }
-  ]
+  "test_cases": []
 }

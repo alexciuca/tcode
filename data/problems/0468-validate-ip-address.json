@@ -23,36 +23,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def validIPAddress(self, queryIP: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "queryIP": "172.16.254.1"
-      },
-      "expected": "IPv4"
-    },
-    {
-      "args": {
-        "queryIP": "2001:0db8:85a3:0000:0000:8a2e:0370:7334"
-      },
-      "expected": "IPv6"
-    },
-    {
-      "args": {
-        "queryIP": "256.256.256.256"
-      },
-      "expected": "Neither"
-    },
-    {
-      "args": {
-        "queryIP": "2001:0db8:85a3::8a2e:0370:7334"
-      },
-      "expected": "Neither"
-    },
-    {
-      "args": {
-        "queryIP": "02001:0db8:85a3:0000:0000:8a2e:0370:7334"
-      },
-      "expected": "Neither"
-    }
-  ]
+  "test_cases": []
 }

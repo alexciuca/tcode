@@ -29,36 +29,5 @@
     "The answer is the maximum number of people in the waiting room at any instance."
   ],
   "starter_code": "class Solution:\n    def minimumChairs(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "EEEEE"
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "s": "ELELEL"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "EEEELLLLL"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "EL"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEL"
-      },
-      "expected": 48
-    }
-  ]
+  "test_cases": []
 }

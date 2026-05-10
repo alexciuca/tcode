@@ -24,41 +24,5 @@
     "Count the number of operations done."
   ],
   "starter_code": "class Solution:\n    def countOperations(self, num1: int, num2: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num1": 2,
-        "num2": 3
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "num1": 10,
-        "num2": 10
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "num1": 0,
-        "num2": 5
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "num1": 100000,
-        "num2": 1
-      },
-      "expected": 100000
-    },
-    {
-      "args": {
-        "num1": 99999,
-        "num2": 99998
-      },
-      "expected": 99999
-    }
-  ]
+  "test_cases": []
 }

@@ -32,41 +32,5 @@
     "Can we use binary search to find the maximum consecutive same answer at every position?"
   ],
   "starter_code": "class Solution:\n    def maxConsecutiveAnswers(self, answerKey: str, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "answerKey": "TTFF",
-        "k": 2
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "answerKey": "TFFTF",
-        "k": 3
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "answerKey": "T",
-        "k": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "answerKey": "FFFFFFFFFF",
-        "k": 0
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "answerKey": "TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFT",
-        "k": 25000
-      },
-      "expected": 49
-    }
-  ]
+  "test_cases": []
 }

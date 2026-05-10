@@ -1,0 +1,35 @@
+{
+  "id": "3332",
+  "slug": "maximum-points-tourist-can-earn",
+  "title": "Maximum Points Tourist Can Earn",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "description": "You are given two integers, n and k, along with two 2D integer arrays, stayScore and travelScore.\nA tourist is visiting a country with n cities, where each city is directly connected to every other city. The tourist's journey consists of exactly k 0-indexed days, and they can choose any city as their starting point.\nEach day, the tourist has two choices:\nReturn the maximum possible points the tourist can earn.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 200",
+    "1 <= k <= 200",
+    "n == travelScore.length == travelScore[i].length == stayScore[i].length",
+    "k == stayScore.length",
+    "1 <= stayScore[i][j] <= 100",
+    "0 <= travelScore[i][j] <= 100",
+    "travelScore[i][i] == 0"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 2, k = 1, stayScore = [[2,3]], travelScore = [[0,2],[1,0]]\nOutput: 3\nExplanation:\nThe tourist earns the maximum number of points by starting in city 1 and staying in that city."
+    },
+    {
+      "example_text": "Input: n = 3, k = 2, stayScore = [[3,4,2],[2,1,2]], travelScore = [[0,2,1],[2,0,4],[3,2,0]]\nOutput: 8\nExplanation:\nThe tourist earns the maximum number of points by starting in city 1, staying in that city on day 0, and traveling to city 2 on day 1."
+    }
+  ],
+  "hints": [
+    "Use DP.",
+    "<code>dp[i][j]</code> is the maximum score that you can achieve in your last <code>i</code> actions by starting from city <code>j</code>."
+  ],
+  "starter_code": "class Solution:\n    def maxScore(self, n: int, k: int, stayScore: List[List[int]], travelScore: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

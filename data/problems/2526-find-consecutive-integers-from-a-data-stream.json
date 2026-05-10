@@ -1,0 +1,30 @@
+{
+  "id": "2526",
+  "slug": "find-consecutive-integers-from-a-data-stream",
+  "title": "Find Consecutive Integers from a Data Stream",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "Design",
+    "Queue",
+    "Counting",
+    "Data Stream"
+  ],
+  "description": "For a stream of integers, implement a data structure that checks if the last k integers parsed in the stream are equal to value.\nImplement the DataStream class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= value, num <= 109",
+    "1 <= k <= 105",
+    "At most 105 calls will be made to consec."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"DataStream\", \"consec\", \"consec\", \"consec\", \"consec\"]\n[[4, 3], [4], [4], [4], [3]]\nOutput\n[null, false, false, true, false]\n\nExplanation\nDataStream dataStream = new DataStream(4, 3); //value = 4, k = 3 \ndataStream.consec(4); // Only 1 integer is parsed, so returns False. \ndataStream.consec(4); // Only 2 integers are parsed.\n                      // Since 2 is less than k, returns False. \ndataStream.consec(4); // The 3 integers parsed are all equal to value, so returns True. \ndataStream.consec(3); // The last k integers parsed in the stream are [4,4,3].\n                      // Since 3 is not equal to value, it returns False."
+    }
+  ],
+  "hints": [
+    "Keep track of the last integer which is not equal to <code>value</code>.",
+    "Use a queue-type data structure to store the last <code>k</code> integers."
+  ],
+  "starter_code": "class DataStream:\n\n    def __init__(self, value: int, k: int):\n        \n\n    def consec(self, num: int) -> bool:\n        \n\n\n# Your DataStream object will be instantiated and called as such:\n# obj = DataStream(value, k)\n# param_1 = obj.consec(num)",
+  "test_cases": []
+}

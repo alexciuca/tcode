@@ -32,41 +32,5 @@
     "The number of distinct sub-strings should be exactly 2^k."
   ],
   "starter_code": "class Solution:\n    def hasAllCodes(self, s: str, k: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "00110",
-        "k": 2
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "0110",
-        "k": 1
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "0",
-        "k": 1
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "00",
-        "k": 2
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "0101010101010101010101010101010101010101010101010101010101010101",
-        "k": 20
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

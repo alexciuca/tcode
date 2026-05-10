@@ -1,0 +1,40 @@
+{
+  "id": "3534",
+  "slug": "path-existence-queries-in-a-graph-ii",
+  "title": "Path Existence Queries in a Graph II",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Graph",
+    "Sorting"
+  ],
+  "description": "You are given an integer n representing the number of nodes in a graph, labeled from 0 to n - 1.\nYou are also given an integer array nums of length n and an integer maxDiff.\nAn undirected edge exists between nodes i and j if the absolute difference between nums[i] and nums[j] is at most maxDiff (i.e., |nums[i] - nums[j]| <= maxDiff).\nYou are also given a 2D integer array queries. For each queries[i] = [ui, vi], find the minimum distance between nodes ui and vi. If no path exists between the two nodes, return -1 for that query.\nReturn an array answer, where answer[i] is the result of the ith query.\nNote: The edges between the nodes are unweighted.\nExample 1:\nExample 2:\nThus, the output is [1, 2, -1, 1].\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n == nums.length <= 105",
+    "0 <= nums[i] <= 105",
+    "0 <= maxDiff <= 105",
+    "1 <= queries.length <= 105",
+    "queries[i] == [ui, vi]",
+    "0 <= ui, vi < n"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 5, nums = [1,8,3,4,2], maxDiff = 3, queries = [[0,3],[2,4]]\nOutput: [1,1]\nExplanation:\nThe resulting graph is:\n\nThus, the output is [1, 1] ."
+    },
+    {
+      "example_text": "Input: n = 5, nums = [5,3,1,9,10], maxDiff = 2, queries = [[0,1],[0,2],[2,3],[4,3]]\nOutput: [1,2,-1,1]\nExplanation:\nThe resulting graph is:\n"
+    },
+    {
+      "example_text": "Input: n = 3, nums = [3,6,1], maxDiff = 1, queries = [[0,0],[0,1],[1,2]]\nOutput: [0,-1,-1]\nExplanation:\nThere are no edges between any two nodes because:\nThus, no node can reach any other node, and the output is [0, -1, -1] ."
+    }
+  ],
+  "hints": [
+    "Sort the nodes according to <code>nums[i]</code>.",
+    "Can we use binary jumping?",
+    "Use binary jumping with a sparse table data structure."
+  ],
+  "starter_code": "class Solution:\n    def pathExistenceQueries(self, n: int, nums: List[int], maxDiff: int, queries: List[List[int]]) -> List[int]:\n        ",
+  "test_cases": []
+}

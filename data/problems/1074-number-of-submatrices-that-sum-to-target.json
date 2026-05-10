@@ -31,56 +31,5 @@
     "Using a 2D prefix sum, we can query the sum of any submatrix in O(1) time.\r\nNow for each (r1, r2), we can find the largest sum of a submatrix that uses every row in [r1, r2] in linear time using a sliding window."
   ],
   "starter_code": "class Solution:\n    def numSubmatrixSumTarget(self, matrix: List[List[int]], target: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "matrix": [
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            1,
-            1,
-            1
-          ],
-          [
-            0,
-            1,
-            0
-          ]
-        ],
-        "target": 0
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "matrix": [
-          [
-            1,
-            -1
-          ],
-          [
-            -1,
-            1
-          ]
-        ],
-        "target": 0
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "matrix": [
-          [
-            904
-          ]
-        ],
-        "target": 0
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

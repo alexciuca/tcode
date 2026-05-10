@@ -27,27 +27,5 @@
     "The greatest common divisor must be a prefix of each string, so we can try all prefixes."
   ],
   "starter_code": "class Solution:\n    def gcdOfStrings(self, str1: str, str2: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "str1": "ABCABC",
-        "str2": "ABC"
-      },
-      "expected": "ABC"
-    },
-    {
-      "args": {
-        "str1": "ABABAB",
-        "str2": "ABAB"
-      },
-      "expected": "AB"
-    },
-    {
-      "args": {
-        "str1": "LEET",
-        "str2": "CODE"
-      },
-      "expected": ""
-    }
-  ]
+  "test_cases": []
 }

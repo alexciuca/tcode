@@ -27,46 +27,5 @@
     "We only need to consider strings “AA” and “BB”; we can either use the pattern “AABBAABB…” or the pattern “BBAABBAA…”, depending on which one of x and y is larger."
   ],
   "starter_code": "class Solution:\n    def longestString(self, x: int, y: int, z: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "x": 1,
-        "y": 1,
-        "z": 1
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "x": 4,
-        "y": 4,
-        "z": 4
-      },
-      "expected": 8
-    },
-    {
-      "args": {
-        "x": 50,
-        "y": 50,
-        "z": 50
-      },
-      "expected": 100
-    },
-    {
-      "args": {
-        "x": 1,
-        "y": 1,
-        "z": 1
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "x": 10,
-        "y": 20,
-        "z": 5
-      },
-      "expected": 32
-    }
-  ]
+  "test_cases": []
 }

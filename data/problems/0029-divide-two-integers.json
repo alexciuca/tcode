@@ -22,41 +22,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def divide(self, dividend: int, divisor: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "dividend": 10,
-        "divisor": 3
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "dividend": 7,
-        "divisor": -3
-      },
-      "expected": -2
-    },
-    {
-      "args": {
-        "dividend": -2147483648,
-        "divisor": -1
-      },
-      "expected": 2147483647
-    },
-    {
-      "args": {
-        "dividend": 0,
-        "divisor": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "dividend": -2147483648,
-        "divisor": 1
-      },
-      "expected": -2147483648
-    }
-  ]
+  "test_cases": []
 }

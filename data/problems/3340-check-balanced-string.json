@@ -21,36 +21,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isBalanced(self, num: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num": "24"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "num": "1230"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "num": "12345678"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "num": "1"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "num": "99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

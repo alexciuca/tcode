@@ -1,0 +1,23 @@
+{
+  "id": "1206",
+  "slug": "design-skiplist",
+  "title": "Design Skiplist",
+  "difficulty": "Hard",
+  "topics": [
+    "Linked List",
+    "Design"
+  ],
+  "description": "Design a Skiplist without using any built-in libraries.\nA skiplist is a data structure that takes O(log(n)) time to add, erase and search. Comparing with treap and red-black tree which has the same function and performance, the code length of Skiplist can be comparatively short and the idea behind Skiplists is just simple linked lists.\nFor example, we have a Skiplist containing [30,40,50,60,70,90] and we want to add 80 and 45 into it. The Skiplist works this way:\nArtyom Kalinin [CC BY-SA 3.0], via Wikimedia Commons\nYou can see there are many layers in the Skiplist. Each layer is a sorted linked list. With the help of the top layers, add, erase and search can be faster than O(n). It can be proven that the average time complexity for each operation is O(log(n)) and space complexity is O(n).\nSee more about Skiplist: https://en.wikipedia.org/wiki/Skip_list\nImplement the Skiplist class:\nNote that duplicates may exist in the Skiplist, your code needs to handle this situation.\nExample 1:\nConstraints:",
+  "constraints": [
+    "0 <= num, target <= 2 * 104",
+    "At most 5 * 104 calls will be made to search, add, and erase."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"Skiplist\", \"add\", \"add\", \"add\", \"search\", \"add\", \"search\", \"erase\", \"erase\", \"search\"]\n[[], [1], [2], [3], [0], [4], [1], [0], [1], [1]]\nOutput\n[null, null, null, null, false, null, true, false, true, false]\n\nExplanation\nSkiplist skiplist = new Skiplist();\nskiplist.add(1);\nskiplist.add(2);\nskiplist.add(3);\nskiplist.search(0); // return False\nskiplist.add(4);\nskiplist.search(1); // return True\nskiplist.erase(0);  // return False, 0 is not in skiplist.\nskiplist.erase(1);  // return True\nskiplist.search(1); // return False, 1 has already been erased."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Skiplist:\n\n    def __init__(self):\n        \n\n    def search(self, target: int) -> bool:\n        \n\n    def add(self, num: int) -> None:\n        \n\n    def erase(self, num: int) -> bool:\n        \n\n\n# Your Skiplist object will be instantiated and called as such:\n# obj = Skiplist()\n# param_1 = obj.search(target)\n# obj.add(num)\n# param_3 = obj.erase(num)",
+  "test_cases": []
+}

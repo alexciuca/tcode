@@ -1,0 +1,28 @@
+{
+  "id": "0732",
+  "slug": "my-calendar-iii",
+  "title": "My Calendar III",
+  "difficulty": "Hard",
+  "topics": [
+    "Binary Search",
+    "Design",
+    "Segment Tree",
+    "Prefix Sum",
+    "Ordered Set"
+  ],
+  "description": "A k-booking happens when k events have some non-empty intersection (i.e., there is some time that is common to all k events.)\nYou are given some events [startTime, endTime), after each given event, return an integer k representing the maximum k-booking between all the previous events.\nImplement the MyCalendarThree class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "0 <= startTime < endTime <= 109",
+    "At most 400 calls will be made to book."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"MyCalendarThree\", \"book\", \"book\", \"book\", \"book\", \"book\", \"book\"]\n[[], [10, 20], [50, 60], [10, 40], [5, 15], [5, 10], [25, 55]]\nOutput\n[null, 1, 1, 2, 3, 3, 3]\n\nExplanation\nMyCalendarThree myCalendarThree = new MyCalendarThree();\nmyCalendarThree.book(10, 20); // return 1\nmyCalendarThree.book(50, 60); // return 1\nmyCalendarThree.book(10, 40); // return 2\nmyCalendarThree.book(5, 15); // return 3\nmyCalendarThree.book(5, 10); // return 3\nmyCalendarThree.book(25, 55); // return 3"
+    }
+  ],
+  "hints": [
+    "Treat each interval [start, end) as two events \"start\" and \"end\", and process them in sorted order."
+  ],
+  "starter_code": "class MyCalendarThree:\n\n    def __init__(self):\n        \n\n    def book(self, startTime: int, endTime: int) -> int:\n        \n\n\n# Your MyCalendarThree object will be instantiated and called as such:\n# obj = MyCalendarThree()\n# param_1 = obj.book(startTime,endTime)",
+  "test_cases": []
+}

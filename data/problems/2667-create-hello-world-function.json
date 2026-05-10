@@ -1,0 +1,22 @@
+{
+  "id": "2667",
+  "slug": "create-hello-world-function",
+  "title": "Create Hello World Function",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "Example 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= args.length <= 10"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: args = []\nOutput: \"Hello World\"\nExplanation:\nconst f = createHelloWorld();\nf(); // \"Hello World\"\n\nThe function returned by createHelloWorld should always return \"Hello World\"."
+    },
+    {
+      "example_text": "Input: args = [{},null,42]\nOutput: \"Hello World\"\nExplanation:\nconst f = createHelloWorld();\nf({}, null, 42); // \"Hello World\"\n\nAny arguments could be passed to the function but it should still always return \"Hello World\"."
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

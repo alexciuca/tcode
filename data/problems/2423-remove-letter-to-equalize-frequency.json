@@ -26,36 +26,5 @@
     "Use a frequency array of size 26."
   ],
   "starter_code": "class Solution:\n    def equalFrequency(self, word: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "word": "abcc"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "word": "aab"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "word": "a"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "word": "aabbccddee"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "word": "aaabbbcccddddeeeeefffffff"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

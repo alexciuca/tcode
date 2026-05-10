@@ -1,0 +1,23 @@
+{
+  "id": "2703",
+  "slug": "return-length-of-arguments-passed",
+  "title": "Return Length of Arguments Passed",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "Example 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "args is a valid JSON array",
+    "0 <= args.length <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: args = [5]\nOutput: 1\nExplanation:\nargumentsLength(5); // 1\n\nOne value was passed to the function so it should return 1."
+    },
+    {
+      "example_text": "Input: args = [{}, null, \"3\"]\nOutput: 3\nExplanation: \nargumentsLength({}, null, \"3\"); // 3\n\nThree values were passed to the function so it should return 3."
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2704",
+  "slug": "to-be-or-not-to-be",
+  "title": "To Be Or Not To Be",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "Write a function expect that helps developers test their code. It should take in any value val and return an object with the following two functions.\nExample 1:\nExample 2:\nExample 3:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "Input: func = () => expect(5).toBe(5)\nOutput: {\"value\": true}\nExplanation: 5 === 5 so this expression returns true."
+    },
+    {
+      "example_text": "Input: func = () => expect(5).toBe(null)\nOutput: {\"error\": \"Not Equal\"}\nExplanation: 5 !== null so this expression throw the error \"Not Equal\"."
+    },
+    {
+      "example_text": "Input: func = () => expect(5).notToBe(null)\nOutput: {\"value\": true}\nExplanation: 5 !== null so this expression returns true."
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

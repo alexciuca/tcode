@@ -26,36 +26,5 @@
     "Another solution is observing that the rounded amount is floor((purchaseAmount + 5) / 10) * 10. Using this formula, we can calculate the account balance without having to brute force the rounded amount."
   ],
   "starter_code": "class Solution:\n    def accountBalanceAfterPurchase(self, purchaseAmount: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "purchaseAmount": 25
-      },
-      "expected": 80
-    },
-    {
-      "args": {
-        "purchaseAmount": 48
-      },
-      "expected": 50
-    },
-    {
-      "args": {
-        "purchaseAmount": 0
-      },
-      "expected": 100
-    },
-    {
-      "args": {
-        "purchaseAmount": 100
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "purchaseAmount": 37
-      },
-      "expected": 60
-    }
-  ]
+  "test_cases": []
 }

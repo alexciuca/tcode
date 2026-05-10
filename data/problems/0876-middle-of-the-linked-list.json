@@ -22,31 +22,5 @@
   ],
   "hints": [],
   "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "head": [
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "head": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      },
-      "expected": 4
-    }
-  ]
+  "test_cases": []
 }

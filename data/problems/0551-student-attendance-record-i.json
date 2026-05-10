@@ -21,36 +21,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def checkRecord(self, s: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "PPALLP"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "LALL"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "A"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "PPALLAPPL"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "LLLPPPAAALLLLPPPPPLLLAAA"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

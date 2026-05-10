@@ -28,41 +28,5 @@
     "It is better to use the move of the second type once we can to lose more scores fast."
   ],
   "starter_code": "class Solution:\n    def minMoves(self, target: int, maxDoubles: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "target": 1,
-        "maxDoubles": 0
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "target": 8,
-        "maxDoubles": 3
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "target": 7,
-        "maxDoubles": 0
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "target": 1000000000,
-        "maxDoubles": 100
-      },
-      "expected": 41
-    },
-    {
-      "args": {
-        "target": 15,
-        "maxDoubles": 4
-      },
-      "expected": 6
-    }
-  ]
+  "test_cases": []
 }

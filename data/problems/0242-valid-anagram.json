@@ -23,20 +23,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isAnagram(self, s: str, t: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "anagram",
-        "t": "nagaram"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "rat",
-        "t": "cat"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

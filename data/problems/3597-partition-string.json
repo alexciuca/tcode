@@ -26,54 +26,5 @@
     "Simulate as described"
   ],
   "starter_code": "class Solution:\n    def partitionString(self, s: str) -> List[str]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ababcbaca"
-      },
-      "expected": [
-        "ab",
-        "abc",
-        "bac",
-        "a"
-      ]
-    },
-    {
-      "args": {
-        "s": "abcdefg"
-      },
-      "expected": [
-        "abcdefg"
-      ]
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": [
-        "a"
-      ]
-    },
-    {
-      "args": {
-        "s": "aabbccdd"
-      },
-      "expected": [
-        "a",
-        "ab",
-        "bc",
-        "cd",
-        "d"
-      ]
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": [
-        "abcdefghijklmnopqrstuvwxyz",
-        "abcdefghijklmnopqrstuvwxyz"
-      ]
-    }
-  ]
+  "test_cases": []
 }

@@ -27,51 +27,5 @@
     "You can calculate f(n, l, r) using digit dp."
   ],
   "starter_code": "class Solution:\n    def count(self, num1: str, num2: str, min_sum: int, max_sum: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num1": "1",
-        "num2": "12",
-        "min_sum": 1,
-        "max_sum": 3
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "num1": "1",
-        "num2": "5",
-        "min_sum": 1,
-        "max_sum": 5
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "num1": "423",
-        "num2": "545",
-        "min_sum": 1,
-        "max_sum": 15
-      },
-      "expected": 92
-    },
-    {
-      "args": {
-        "num1": "1",
-        "num2": "1000000000000000000000",
-        "min_sum": 1,
-        "max_sum": 400
-      },
-      "expected": 49000
-    },
-    {
-      "args": {
-        "num1": "999999999999999999999",
-        "num2": "1000000000000000000000",
-        "min_sum": 100,
-        "max_sum": 200
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

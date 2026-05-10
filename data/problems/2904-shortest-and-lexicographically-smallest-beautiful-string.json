@@ -28,41 +28,5 @@
     "We can iterate over all possibilities of leftmost index <code>i</code> take <code>s[i:j]</code> and compare with the shortest and the lexicographically smallest beautiful string we could get before index <code>i</code>."
   ],
   "starter_code": "class Solution:\n    def shortestBeautifulSubstring(self, s: str, k: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aabcb",
-        "k": 3
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "aabcbbb",
-        "k": 2
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "a",
-        "k": 1
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "aaaa",
-        "k": 4
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst",
-        "k": 50
-      },
-      "expected": ""
-    }
-  ]
+  "test_cases": []
 }

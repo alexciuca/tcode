@@ -1,0 +1,28 @@
+{
+  "id": "1309",
+  "slug": "decrypt-string-from-alphabet-to-integer-mapping",
+  "title": "Decrypt String from Alphabet to Integer Mapping",
+  "difficulty": "Easy",
+  "topics": [
+    "String"
+  ],
+  "description": "You are given a string s formed by digits and '#'. We want to map s to English lowercase characters as follows:\nReturn the string formed after mapping.\nThe test cases are generated so that a unique mapping will always exist.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s consists of digits and the '#' letter.",
+    "s will be a valid string such that mapping is always possible."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"10#11#12\"\nOutput: \"jkab\"\nExplanation: \"j\" -> \"10#\" , \"k\" -> \"11#\" , \"a\" -> \"1\" , \"b\" -> \"2\"."
+    },
+    {
+      "example_text": "Input: s = \"1326#\"\nOutput: \"acz\""
+    }
+  ],
+  "hints": [
+    "Scan from right to left, in each step of the scanning check whether there is a trailing \"#\" 2 indexes away."
+  ],
+  "starter_code": "class Solution:\n    def freqAlphabets(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

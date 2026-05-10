@@ -1,0 +1,28 @@
+{
+  "id": "2336",
+  "slug": "smallest-number-in-infinite-set",
+  "title": "Smallest Number in Infinite Set",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "description": "You have a set which contains all positive integers [1, 2, 3, 4, 5, ...].\nImplement the SmallestInfiniteSet class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= num <= 1000",
+    "At most 1000 calls will be made in total to popSmallest and addBack."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"SmallestInfiniteSet\", \"addBack\", \"popSmallest\", \"popSmallest\", \"popSmallest\", \"addBack\", \"popSmallest\", \"popSmallest\", \"popSmallest\"]\n[[], [2], [], [], [], [1], [], [], []]\nOutput\n[null, null, 1, 2, 3, null, 1, 4, 5]\n\nExplanation\nSmallestInfiniteSet smallestInfiniteSet = new SmallestInfiniteSet();\nsmallestInfiniteSet.addBack(2);    // 2 is already in the set, so no change is made.\nsmallestInfiniteSet.popSmallest(); // return 1, since 1 is the smallest number, and remove it from the set.\nsmallestInfiniteSet.popSmallest(); // return 2, and remove it from the set.\nsmallestInfiniteSet.popSmallest(); // return 3, and remove it from the set.\nsmallestInfiniteSet.addBack(1);    // 1 is added back to the set.\nsmallestInfiniteSet.popSmallest(); // return 1, since 1 was added back to the set and\n                                   // is the smallest number, and remove it from the set.\nsmallestInfiniteSet.popSmallest(); // return 4, and remove it from the set.\nsmallestInfiniteSet.popSmallest(); // return 5, and remove it from the set."
+    }
+  ],
+  "hints": [
+    "Based on the constraints, what is the maximum element that can possibly be popped?",
+    "Maintain whether elements are in or not in the set. How many elements do we consider?"
+  ],
+  "starter_code": "class SmallestInfiniteSet:\n\n    def __init__(self):\n        \n\n    def popSmallest(self) -> int:\n        \n\n    def addBack(self, num: int) -> None:\n        \n\n\n# Your SmallestInfiniteSet object will be instantiated and called as such:\n# obj = SmallestInfiniteSet()\n# param_1 = obj.popSmallest()\n# obj.addBack(num)",
+  "test_cases": []
+}

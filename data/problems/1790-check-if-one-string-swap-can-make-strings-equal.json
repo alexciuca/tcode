@@ -30,41 +30,5 @@
     "Check that these positions have the same set of characters."
   ],
   "starter_code": "class Solution:\n    def areAlmostEqual(self, s1: str, s2: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s1": "bank",
-        "s2": "kanb"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "attack",
-        "s2": "defend"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s1": "aa",
-        "s2": "aa"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "abcd",
-        "s2": "dacb"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s1": "a",
-        "s2": "a"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

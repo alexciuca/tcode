@@ -1,0 +1,32 @@
+{
+  "id": "2541",
+  "slug": "minimum-operations-to-make-array-equal-ii",
+  "title": "Minimum Operations to Make Array Equal II",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "description": "You are given two integer arrays nums1 and nums2 of equal length n and an integer k. You can perform the following operation on nums1:\nnums1 is said to be equal to nums2 if for all indices i such that 0 <= i < n, nums1[i] == nums2[i].\nReturn the minimum number of operations required to make nums1 equal to nums2. If it is impossible to make them equal, return -1.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "n == nums1.length == nums2.length",
+    "2 <= n <= 105",
+    "0 <= nums1[i], nums2[j] <= 109",
+    "0 <= k <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums1 = [4,3,1,4], nums2 = [1,3,7,1], k = 3\nOutput: 2\nExplanation: In 2 operations, we can transform nums1 to nums2.\n1st operation: i = 2, j = 0. After applying the operation, nums1 = [1,3,4,4].\n2nd operation: i = 2, j = 3. After applying the operation, nums1 = [1,3,7,1].\nOne can prove that it is impossible to make arrays equal in fewer operations."
+    },
+    {
+      "example_text": "Input: nums1 = [3,8,5,2], nums2 = [2,4,1,6], k = 1\nOutput: -1\nExplanation: It can be proved that it is impossible to make the two arrays equal."
+    }
+  ],
+  "hints": [
+    "What are the cases for which we cannot make nums1 == nums2?",
+    "For minimum moves, if nums1[i] < nums2[i], then we should never decrement nums1[i]. \r\nIf nums1[i] > nums2[i], then we should never increment nums1[i]."
+  ],
+  "starter_code": "class Solution:\n    def minOperations(self, nums1: List[int], nums2: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

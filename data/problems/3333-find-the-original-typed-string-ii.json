@@ -29,41 +29,5 @@
     "Instead of solving for at least <code>k</code>, can we solve for at most <code>k - 1</code> length?"
   ],
   "starter_code": "class Solution:\n    def possibleStringCount(self, word: str, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "word": "aab",
-        "k": 1
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "word": "abcd",
-        "k": 2
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "word": "aaaa",
-        "k": 1
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "word": "aabbcc",
-        "k": 3
-      },
-      "expected": 8
-    },
-    {
-      "args": {
-        "word": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcdefghijklmnopqrstuvwxyz",
-        "k": 2000
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

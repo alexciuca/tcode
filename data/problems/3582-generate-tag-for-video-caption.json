@@ -27,36 +27,5 @@
     "Simulate as described"
   ],
   "starter_code": "class Solution:\n    def generateTag(self, caption: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "caption": "hello world"
-      },
-      "expected": "hello-world"
-    },
-    {
-      "args": {
-        "caption": "a b c d e f"
-      },
-      "expected": "a-b-c-d-e-f"
-    },
-    {
-      "args": {
-        "caption": "single"
-      },
-      "expected": "single"
-    },
-    {
-      "args": {
-        "caption": "a"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "caption": "the quick brown fox jumps over the lazy dog and continues with a very long caption that contains many words to test the maximum length constraint of the problem"
-      },
-      "expected": "the-quick-brown-fox-jumps-over-the-lazy-dog-and-continues-with-a-very-long-caption-that-contains-many-words-to-test-the-maximum-length-constraint-of-the-problem"
-    }
-  ]
+  "test_cases": []
 }

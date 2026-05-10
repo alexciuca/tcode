@@ -1,27 +1,13 @@
-#left-scroll {
+#left {
     width: 1fr;
     height: 1fr;
     border: solid $primary;
-    overflow-y: auto;
-    border-title-color: $primary;
-    border-title-style: bold;
-    border-title-align: left;
-}
-
-#right-scroll {
-    width: 1fr;
-    height: 1fr;
-    border: solid $accent;
-    overflow-y: auto;
-    border-title-color: $accent;
-    border-title-style: bold;
-    border-title-align: left;
-}
-
-#left {
-    padding: 1 2;
+    padding: 1;
 }
 
 #right {
-    padding: 1 2;
+    width: 1fr;
+    height: 1fr;
+    border: solid $primary;
+    padding: 1;
 }

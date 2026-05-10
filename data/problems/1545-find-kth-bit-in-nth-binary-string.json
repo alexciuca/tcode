@@ -25,41 +25,5 @@
     "Since n is small, we can simply simulate the process of constructing S1 to Sn."
   ],
   "starter_code": "class Solution:\n    def findKthBit(self, n: int, k: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1,
-        "k": 1
-      },
-      "expected": "0"
-    },
-    {
-      "args": {
-        "n": 3,
-        "k": 4
-      },
-      "expected": "1"
-    },
-    {
-      "args": {
-        "n": 4,
-        "k": 8
-      },
-      "expected": "1"
-    },
-    {
-      "args": {
-        "n": 2,
-        "k": 1
-      },
-      "expected": "0"
-    },
-    {
-      "args": {
-        "n": 20,
-        "k": 1048575
-      },
-      "expected": "1"
-    }
-  ]
+  "test_cases": []
 }

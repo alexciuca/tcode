@@ -25,41 +25,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findTheDifference(self, s: str, t: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abcd",
-        "t": "abcde"
-      },
-      "expected": "e"
-    },
-    {
-      "args": {
-        "s": "a",
-        "t": "b"
-      },
-      "expected": "\u0003"
-    },
-    {
-      "args": {
-        "s": "",
-        "t": "z"
-      },
-      "expected": "z"
-    },
-    {
-      "args": {
-        "s": "aabbcc",
-        "t": "aabbccc"
-      },
-      "expected": "c"
-    },
-    {
-      "args": {
-        "s": "zyxwvutsrqponmlkjihgfedcba",
-        "t": "zyxwvutsrqponmlkjihgfedcbaa"
-      },
-      "expected": "a"
-    }
-  ]
+  "test_cases": []
 }

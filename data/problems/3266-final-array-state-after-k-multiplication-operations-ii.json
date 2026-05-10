@@ -1,0 +1,33 @@
+{
+  "id": "3266",
+  "slug": "final-array-state-after-k-multiplication-operations-ii",
+  "title": "Final Array State After K Multiplication Operations II",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "description": "You are given an integer array nums, an integer k, and an integer multiplier.\nYou need to perform k operations on nums. In each operation:\nAfter the k operations, apply modulo 109 + 7 to every value in nums.\nReturn an integer array denoting the final state of nums after performing all k operations and then applying the modulo.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 104",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= 109",
+    "1 <= multiplier <= 106"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [2,1,3,5,6], k = 5, multiplier = 2\nOutput: [8,4,6,5,6]\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [100000,2000], k = 2, multiplier = 1000000\nOutput: [999999307,999999993]\nExplanation:"
+    }
+  ],
+  "hints": [
+    "What happens when <code>min(nums) * multiplier > max(nums)</code>?",
+    "A cycle of operations begins.",
+    "Simulate until <code>min(nums) * multiplier > max(nums)</code>, then greedily distribute remaining multiplications."
+  ],
+  "starter_code": "class Solution:\n    def getFinalState(self, nums: List[int], k: int, multiplier: int) -> List[int]:\n        ",
+  "test_cases": []
+}

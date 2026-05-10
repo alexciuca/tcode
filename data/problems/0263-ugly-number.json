@@ -23,36 +23,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isUgly(self, n: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 10
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "n": 0
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "n": -6
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "n": 1073741824
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

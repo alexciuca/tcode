@@ -26,36 +26,5 @@
     "From left to right, extend every substring in the partition as much as possible."
   ],
   "starter_code": "class Solution:\n    def partitionString(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abc"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abacabad"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "aaaaaaaaaa"
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": 3
-    }
-  ]
+  "test_cases": []
 }

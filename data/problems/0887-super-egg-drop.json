@@ -26,41 +26,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def superEggDrop(self, k: int, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "k": 2,
-        "n": 100
-      },
-      "expected": 14
-    },
-    {
-      "args": {
-        "k": 1,
-        "n": 100
-      },
-      "expected": 100
-    },
-    {
-      "args": {
-        "k": 100,
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "k": 2,
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "k": 50,
-        "n": 10000
-      },
-      "expected": 14
-    }
-  ]
+  "test_cases": []
 }

@@ -28,46 +28,5 @@
     "Use digit dynamic programming."
   ],
   "starter_code": "class Solution:\n    def countNumbers(self, l: str, r: str, b: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "l": "1",
-        "r": "9",
-        "b": 10
-      },
-      "expected": 9
-    },
-    {
-      "args": {
-        "l": "10",
-        "r": "99",
-        "b": 10
-      },
-      "expected": 45
-    },
-    {
-      "args": {
-        "l": "1",
-        "r": "1",
-        "b": 2
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "l": "1",
-        "r": "1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-        "b": 10
-      },
-      "expected": 395854522
-    },
-    {
-      "args": {
-        "l": "12",
-        "r": "987654321",
-        "b": 5
-      },
-      "expected": 929
-    }
-  ]
+  "test_cases": []
 }

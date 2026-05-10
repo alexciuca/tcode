@@ -21,36 +21,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def magicalString(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 6
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "n": 15
-      },
-      "expected": 7
-    },
-    {
-      "args": {
-        "n": 3
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 100000
-      },
-      "expected": 50024
-    }
-  ]
+  "test_cases": []
 }

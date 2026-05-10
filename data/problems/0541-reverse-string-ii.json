@@ -23,41 +23,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def reverseStr(self, s: str, k: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abcdefg",
-        "k": 2
-      },
-      "expected": "bacdfeg"
-    },
-    {
-      "args": {
-        "s": "abcd",
-        "k": 2
-      },
-      "expected": "bacd"
-    },
-    {
-      "args": {
-        "s": "a",
-        "k": 1
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnop",
-        "k": 16
-      },
-      "expected": "ponmlkjihgfedcba"
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyz",
-        "k": 3
-      },
-      "expected": "cbadefihgjklonmpqrutsvwxzy"
-    }
-  ]
+  "test_cases": []
 }

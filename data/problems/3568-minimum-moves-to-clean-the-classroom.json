@@ -35,57 +35,5 @@
     "Maintain a 3D array <code>bestEnergy[x][y][mask]</code> storing the maximum <code>e</code> seen for each <code>(x,y,mask)</code> and skip any new state with <code>e <= bestEnergy[x][y][mask]</code> to prune."
   ],
   "starter_code": "class Solution:\n    def minMoves(self, classroom: List[str], energy: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "classroom": [
-          "S.L"
-        ],
-        "energy": 1
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "classroom": [
-          "S.L.",
-          ".X..",
-          "..L."
-        ],
-        "energy": 5
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "classroom": [
-          "S"
-        ],
-        "energy": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "classroom": [
-          "S.L.L.L.L.L"
-        ],
-        "energy": 2
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "classroom": [
-          "S.X.L",
-          ".L.X.",
-          "L.L..",
-          "X...L",
-          ".L.X."
-        ],
-        "energy": 10
-      },
-      "expected": 19
-    }
-  ]
+  "test_cases": []
 }

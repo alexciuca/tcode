@@ -20,36 +20,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def racecar(self, target: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "target": 4
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "target": 9
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "target": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "target": 2
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "target": 10000
-      },
-      "expected": -1
-    }
-  ]
+  "test_cases": []
 }

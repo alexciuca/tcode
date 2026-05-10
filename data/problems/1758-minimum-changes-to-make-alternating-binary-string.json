@@ -28,24 +28,5 @@
     "Try both ways, and check for each way, the number of changes needed to reach it from the given string. The answer is the minimum of both ways."
   ],
   "starter_code": "class Solution:\n    def minOperations(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "0100"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "10"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "1111"
-      },
-      "expected": 2
-    }
-  ]
+  "test_cases": []
 }

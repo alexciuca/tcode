@@ -21,36 +21,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def detectCapitalUse(self, word: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "word": "USA"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "word": "Google"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "word": "hello"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "word": "a"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "word": "HeLLo"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

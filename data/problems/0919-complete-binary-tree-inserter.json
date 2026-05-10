@@ -1,0 +1,28 @@
+{
+  "id": "0919",
+  "slug": "complete-binary-tree-inserter",
+  "title": "Complete Binary Tree Inserter",
+  "difficulty": "Medium",
+  "topics": [
+    "Tree",
+    "Breadth-First Search",
+    "Design",
+    "Binary Tree"
+  ],
+  "description": "A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.\nDesign an algorithm to insert a new node to a complete binary tree keeping it complete after the insertion.\nImplement the CBTInserter class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree will be in the range [1, 1000].",
+    "0 <= Node.val <= 5000",
+    "root is a complete binary tree.",
+    "0 <= val <= 5000",
+    "At most 104 calls will be made to insert and get_root."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"CBTInserter\", \"insert\", \"insert\", \"get_root\"]\n[[[1, 2]], [3], [4], []]\nOutput\n[null, 1, 2, [1, 2, 3, 4]]\n\nExplanation\nCBTInserter cBTInserter = new CBTInserter([1, 2]);\ncBTInserter.insert(3);  // return 1\ncBTInserter.insert(4);  // return 2\ncBTInserter.get_root(); // return [1, 2, 3, 4]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass CBTInserter:\n\n    def __init__(self, root: Optional[TreeNode]):\n        \n\n    def insert(self, val: int) -> int:\n        \n\n    def get_root(self) -> Optional[TreeNode]:\n        \n\n\n# Your CBTInserter object will be instantiated and called as such:\n# obj = CBTInserter(root)\n# param_1 = obj.insert(val)\n# param_2 = obj.get_root()",
+  "test_cases": []
+}

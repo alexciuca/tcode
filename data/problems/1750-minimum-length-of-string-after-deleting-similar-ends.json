@@ -28,36 +28,5 @@
     "Note that if the length is equal 1 the answer is 1"
   ],
   "starter_code": "class Solution:\n    def minimumLength(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ca"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "cabaabac"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "aaa"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabca"
-      },
-      "expected": 212
-    }
-  ]
+  "test_cases": []
 }

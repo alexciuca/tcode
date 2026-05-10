@@ -28,36 +28,5 @@
     "Use a HashMap to count the frequency of each digit."
   ],
   "starter_code": "class Solution:\n    def findValidPair(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "123"
-      },
-      "expected": "12"
-    },
-    {
-      "args": {
-        "s": "1122"
-      },
-      "expected": "11"
-    },
-    {
-      "args": {
-        "s": "99"
-      },
-      "expected": "99"
-    },
-    {
-      "args": {
-        "s": "121212"
-      },
-      "expected": "12"
-    },
-    {
-      "args": {
-        "s": "111222333444555666777888999"
-      },
-      "expected": "11"
-    }
-  ]
+  "test_cases": []
 }

@@ -24,36 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def predictPartyVictory(self, senate: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "senate": "RD"
-      },
-      "expected": "Radiant"
-    },
-    {
-      "args": {
-        "senate": "RDD"
-      },
-      "expected": "Dire"
-    },
-    {
-      "args": {
-        "senate": "RDDR"
-      },
-      "expected": "Radiant"
-    },
-    {
-      "args": {
-        "senate": "R"
-      },
-      "expected": "Radiant"
-    },
-    {
-      "args": {
-        "senate": "RDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRDRD"
-      },
-      "expected": "Radiant"
-    }
-  ]
+  "test_cases": []
 }

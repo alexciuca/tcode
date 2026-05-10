@@ -1,0 +1,32 @@
+{
+  "id": "1106",
+  "slug": "parsing-a-boolean-expression",
+  "title": "Parsing A Boolean Expression",
+  "difficulty": "Hard",
+  "topics": [
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "description": "A boolean expression is an expression that evaluates to either true or false. It can be in one of the following shapes:\nGiven a string expression that represents a boolean expression, return the evaluation of that expression.\nIt is guaranteed that the given expression is valid and follows the given rules.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= expression.length <= 2 * 104",
+    "expression[i] is one following characters: '(', ')', '&', '|', '!', 't', 'f', and ','."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: expression = \"&(|(f))\"\nOutput: false\nExplanation: \nFirst, evaluate |(f) --> f. The expression is now \"&(f)\".\nThen, evaluate &(f) --> f. The expression is now \"f\".\nFinally, return false."
+    },
+    {
+      "example_text": "Input: expression = \"|(f,f,f,t)\"\nOutput: true\nExplanation: The evaluation of (false OR false OR false OR true) is true."
+    },
+    {
+      "example_text": "Input: expression = \"!(&(f,t))\"\nOutput: true\nExplanation: \nFirst, evaluate &(f,t) --> (false AND true) --> false --> f. The expression is now \"!(f)\".\nThen, evaluate !(f) --> NOT false --> true. We return true."
+    }
+  ],
+  "hints": [
+    "Write a function \"parse\" which calls helper functions \"parse_or\", \"parse_and\", \"parse_not\"."
+  ],
+  "starter_code": "class Solution:\n    def parseBoolExpr(self, expression: str) -> bool:\n        ",
+  "test_cases": []
+}

@@ -29,36 +29,5 @@
     "So we can pre-compute three link-list of indices of each a, b, and c."
   ],
   "starter_code": "class Solution:\n    def numberOfSubstrings(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abcabc"
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "s": "aaacb"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "abc"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abcabcabcabc"
-      },
-      "expected": 55
-    },
-    {
-      "args": {
-        "s": "aaaaabbbbbccccc"
-      },
-      "expected": 25
-    }
-  ]
+  "test_cases": []
 }

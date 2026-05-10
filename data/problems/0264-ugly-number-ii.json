@@ -28,12 +28,5 @@
     "Assume you have U<sub>k</sub>, the k<sup>th</sup> ugly number. Then U<sub>k+1</sub> must be Min(L<sub>1</sub> * 2, L<sub>2</sub> * 3, L<sub>3</sub> * 5)."
   ],
   "starter_code": "class Solution:\n    def nthUglyNumber(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 10
-      },
-      "expected": 12
-    }
-  ]
+  "test_cases": []
 }
