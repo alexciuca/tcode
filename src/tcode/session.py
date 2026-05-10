@@ -91,47 +91,12 @@ class SessionApp(Screen):
         self._update_right("Thinking...")
         self.run_worker(self._fetch_hint, thread=True)
 
-    def _fetch_hint(self) -> None:
-        try:
-            result = get_hint(
-                code=self.code_snapshot,
-                problem=self.active_problem,
-                hints_used=self.hints_used,
-            )
-            self.hints_used += 1
-            self.app.call_from_thread(self._refresh_coach_title)
-            self.app.call_from_thread(
-                self._update_right,
-                f"Hint {self.hints_used}/4\n{'─' * 45}\n\n{result.message}",
-            )
-        except Exception as e:
-            self.app.call_from_thread(self._update_right, f"Error getting hint: {e}")
-        finally:
-            self._llm_loading = False
-
     def action_run(self) -> None:
         if self._test_running:
             return
         self._test_running = True
         self._update_right("Running tests...")
         self.run_worker(self._execute_tests, thread=True)
-
-    def _execute_tests(self) -> None:
-        try:
-            if not self.active_problem.test_cases:
-                self.app.call_from_thread(
-                    self._update_right,
-                    "No test cases available for this problem.",
-                )
-                return
-
-            results = run_tests(self.code_snapshot, self.active_problem)
-            summary = format_results(results)
-            self.app.call_from_thread(self._update_right, summary)
-        except Exception as e:
-            self.app.call_from_thread(self._update_right, f"Error: {e}")
-        finally:
-            self._test_running = False
 
     def _fetch_hint(self) -> None:
         try:
