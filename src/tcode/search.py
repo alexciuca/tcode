@@ -4,7 +4,7 @@ from textual.app import ComposeResult
 from textual.containers import Grid, Horizontal
 from textual.events import Click
 from textual.screen import Screen
-from textual.widgets import Button, Footer, Input, Label, Select, Static
+from textual.widgets import Footer, Input, Label, Select, Static
 
 from tcode.config import SessionConfig
 from tcode.problems import load_index, load_problem_by_id
@@ -104,9 +104,7 @@ class SearchProblems(Screen):
                 card.can_focus = True
                 yield card
         with Horizontal(id="pagination"):
-            yield Button("← Prev", id="prev", disabled=True)
             yield Label(f"Page 1 / {self.total_pages()}", id="page-label")
-            yield Button("Next →", id="next")
         yield Footer()
 
     def on_click(self, event: Click) -> None:
@@ -121,14 +119,6 @@ class SearchProblems(Screen):
                     config=SessionConfig(problem_id=problem_id),
                 )
             )
-
-    def on_button_pressed(self, event: Button.Pressed) -> None:
-        if event.button.id == "next" and self.page < self.total_pages() - 1:
-            self.page += 1
-            self.rebuild_grid()
-        elif event.button.id == "prev" and self.page > 0:
-            self.page -= 1
-            self.rebuild_grid()
 
     def on_key(self, event) -> None:
         if event.key == "escape":
@@ -164,10 +154,6 @@ class SearchProblems(Screen):
                 grid.mount(card)
             self.query_one("#page-label", Label).update(
                 f"Page {self.page + 1} / {self.total_pages()}"
-            )
-            self.query_one("#prev", Button).disabled = self.page == 0
-            self.query_one("#next", Button).disabled = (
-                self.page >= self.total_pages() - 1
             )
             cards = self.query(".card")
             if cards:
