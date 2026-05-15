@@ -5,7 +5,7 @@ from pathlib import Path
 from textual.app import ComposeResult
 from textual.containers import Horizontal, ScrollableContainer
 from textual.screen import Screen
-from textual.widgets import Footer, Header, Static
+from textual.widgets import Footer, Header, Static, TextArea
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
@@ -73,8 +73,8 @@ class SessionApp(Screen):
     def compose(self) -> ComposeResult:
         yield Header()
         yield Horizontal(
-            ScrollableContainer(Static("", id="left"), id="left-scroll"),
-            ScrollableContainer(Static("", id="right"), id="right-scroll"),
+            ScrollableContainer(TextArea("", id="left", read_only=True), id="left-scroll"),
+            ScrollableContainer(TextArea("", id="right", read_only=True), id="right-scroll"),
         )
         yield Footer()
 
@@ -255,8 +255,9 @@ class SessionApp(Screen):
                 text += f"  · {self._clean_constraint(c)}\n"
         if p.starter_code:
             text += f"{sep}\nStarter code\n\n{p.starter_code}\n"
-        self.query_one("#left", Static).update(text)
+        self.query_one("#left", TextArea).load_text(text)
 
     def _update_right(self, text: str) -> None:
         self._right_content += f"\n\n{text}" if self._right_content else text
-        self.query_one("#right", Static).update(self._right_content)
+        self.query_one("#right", TextArea).load_text(self._right_content)
+        self.query_one("#right-scroll", ScrollableContainer).scroll_end(animate=False)
