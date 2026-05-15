@@ -5,7 +5,7 @@ from pathlib import Path
 from textual.app import ComposeResult
 from textual.containers import Horizontal, ScrollableContainer
 from textual.screen import Screen
-from textual.widgets import Footer, Header, Static, TextArea
+from textual.widgets import Footer, Header, TextArea
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
@@ -73,8 +73,12 @@ class SessionApp(Screen):
     def compose(self) -> ComposeResult:
         yield Header()
         yield Horizontal(
-            ScrollableContainer(TextArea("", id="left", read_only=True), id="left-scroll"),
-            ScrollableContainer(TextArea("", id="right", read_only=True), id="right-scroll"),
+            ScrollableContainer(
+                TextArea("", id="left", read_only=True), id="left-scroll"
+            ),
+            ScrollableContainer(
+                TextArea("", id="right", read_only=True), id="right-scroll"
+            ),
         )
         yield Footer()
 

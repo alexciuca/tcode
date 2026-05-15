@@ -53,8 +53,7 @@ def import_test_cases() -> None:
 
         if not problem_path.exists():
             print(
-                f"  [{i}/{len(matching_ids)}] SKIP {pid} - "
-                f"file not found: {filename}"
+                f"  [{i}/{len(matching_ids)}] SKIP {pid} - file not found: {filename}"
             )
             skipped += 1
             continue
