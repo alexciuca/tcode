@@ -26,5 +26,76 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def tallestBillboard(self, rods: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "rods": [
+          1,
+          2,
+          3,
+          6
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "rods": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "rods": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ]
+      },
+      "expected": 14
+    },
+    {
+      "args": {
+        "rods": [
+          1,
+          1000
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "rods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "expected": 105
+    }
+  ]
 }

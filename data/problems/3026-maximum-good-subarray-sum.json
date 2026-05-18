@@ -31,5 +31,72 @@
     "For each prefix sum ending at <code>nums[i]</code>, try finding <code>nums[i] - k</code> and <code>nums[i] + k</code> in the HashMap and update the answer."
   ],
   "starter_code": "class Solution:\n    def maximumSubarraySum(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "k": 2
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          -2,
+          8,
+          3,
+          -1
+        ],
+        "k": 3
+      },
+      "expected": 11
+    },
+    {
+      "args": {
+        "nums": [
+          -5,
+          -3,
+          -1,
+          0,
+          2
+        ],
+        "k": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          2,
+          2,
+          3
+        ],
+        "k": 1
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "nums": [
+          -1000000000,
+          1000000000,
+          -1000000000,
+          1000000000,
+          500000000,
+          -500000000
+        ],
+        "k": 3
+      },
+      "expected": 0
+    }
+  ]
 }

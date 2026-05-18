@@ -29,5 +29,36 @@
     "Find the letter than can make the minimum number of instances of the word \"balloon\"."
   ],
   "starter_code": "class Solution:\n    def maxNumberOfBalloons(self, text: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "text": "loonbalxballpoon"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "text": "leetcode"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "text": "balon"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "text": "balloon"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "text": "bbaalloonn"
+      },
+      "expected": 1
+    }
+  ]
 }

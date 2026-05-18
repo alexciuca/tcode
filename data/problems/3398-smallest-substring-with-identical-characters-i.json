@@ -30,5 +30,41 @@
     "Use DP for predicate function"
   ],
   "starter_code": "class Solution:\n    def minLength(self, s: str, numOps: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "0011",
+        "numOps": 2
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "010101",
+        "numOps": 3
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "0",
+        "numOps": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "00000",
+        "numOps": 0
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "s": "0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101",
+        "numOps": 50
+      },
+      "expected": 1
+    }
+  ]
 }

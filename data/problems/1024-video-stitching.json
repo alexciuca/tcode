@@ -30,5 +30,190 @@
     "Let's consider a DP(pos, limit) where pos represents the position of the current interval we are gonna take the decision and limit is the current covered area from [0 - limit]. This DP returns the minimum number of taken intervals or infinite if it's not possible to cover the [0 - T] section."
   ],
   "starter_code": "class Solution:\n    def videoStitching(self, clips: List[List[int]], time: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "clips": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            8,
+            10
+          ]
+        ],
+        "time": 10
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "clips": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            7,
+            10
+          ]
+        ],
+        "time": 5
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "clips": [
+          [
+            0,
+            100
+          ]
+        ],
+        "time": 100
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "clips": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "time": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "clips": [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            9,
+            14
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            11,
+            16
+          ],
+          [
+            12,
+            17
+          ],
+          [
+            13,
+            18
+          ],
+          [
+            14,
+            19
+          ],
+          [
+            15,
+            20
+          ],
+          [
+            16,
+            21
+          ],
+          [
+            17,
+            22
+          ],
+          [
+            18,
+            23
+          ],
+          [
+            19,
+            24
+          ]
+        ],
+        "time": 100
+      },
+      "expected": -1
+    }
+  ]
 }

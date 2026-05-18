@@ -25,5 +25,63 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def minimumLengthEncoding(self, words: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "time",
+          "me",
+          "bell"
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "words": [
+          "t"
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "words": [
+          "abc",
+          "bca",
+          "cab",
+          "abcd"
+        ]
+      },
+      "expected": 17
+    },
+    {
+      "args": {
+        "words": [
+          "a",
+          "a",
+          "a",
+          "a"
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "words": [
+          "abcdefg",
+          "bcdefg",
+          "cdefg",
+          "defg",
+          "efg",
+          "fg",
+          "g",
+          "xyz",
+          "yz",
+          "z"
+        ]
+      },
+      "expected": 12
+    }
+  ]
 }

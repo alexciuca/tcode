@@ -26,5 +26,36 @@
     "Use two HashMap to store the counts of distinct letters in the left and right substring divided by the current index."
   ],
   "starter_code": "class Solution:\n    def numSplits(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ababab"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "aaaa"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aabbccddeeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz"
+      },
+      "expected": 1
+    }
+  ]
 }

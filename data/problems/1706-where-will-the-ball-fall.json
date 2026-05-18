@@ -31,5 +31,150 @@
     "Traverse the path of the ball downwards until you reach the bottom or get stuck."
   ],
   "starter_code": "class Solution:\n    def findBall(self, grid: List[List[int]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1
+          ]
+        ]
+      },
+      "expected": [
+        -1
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        -1
+      ]
+    }
+  ]
 }

@@ -31,5 +31,71 @@
     "How can you use BFS to find the minimum operations?"
   ],
   "starter_code": "class Solution:\n    def minimumOperations(self, nums: List[int], start: int, goal: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          4,
+          12
+        ],
+        "start": 8,
+        "goal": 7
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          -6,
+          3,
+          5,
+          -10
+        ],
+        "start": 0,
+        "goal": 6
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          -1,
+          0,
+          1
+        ],
+        "start": 5,
+        "goal": 4
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          -1000000000,
+          999999999
+        ],
+        "start": 1000,
+        "goal": 0
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          8,
+          16,
+          32,
+          64,
+          128
+        ],
+        "start": 512,
+        "goal": 1
+      },
+      "expected": -1
+    }
+  ]
 }

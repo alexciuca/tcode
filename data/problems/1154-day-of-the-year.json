@@ -25,5 +25,30 @@
     "Have a integer array of how many days there are per month.  February gets one extra day if its a leap year.  Then, we can manually count the ordinal as day + (number of days in months before this one)."
   ],
   "starter_code": "class Solution:\n    def dayOfYear(self, date: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "date": "2019-01-09"
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "date": "2019-02-10"
+      },
+      "expected": 41
+    },
+    {
+      "args": {
+        "date": "2003-03-01"
+      },
+      "expected": 60
+    },
+    {
+      "args": {
+        "date": "2004-03-01"
+      },
+      "expected": 61
+    }
+  ]
 }

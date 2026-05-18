@@ -24,5 +24,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def minimumPartition(self, s: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "165462",
+        "k": 60
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "238182",
+        "k": 5
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "s": "1",
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "999999999",
+        "k": 1
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "s": "111111111111111111111111111111111111111111111111111111",
+        "k": 1000000000
+      },
+      "expected": 6
+    }
+  ]
 }

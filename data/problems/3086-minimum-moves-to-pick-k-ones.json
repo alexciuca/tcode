@@ -31,5 +31,104 @@
     "We only need to be concerned with the indices where <code>nums[i] == 1</code>."
   ],
   "starter_code": "class Solution:\n    def minimumMoves(self, nums: List[int], k: int, maxChanges: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "k": 2,
+        "maxChanges": 0
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "k": 3,
+        "maxChanges": 2
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 3,
+        "maxChanges": 0
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "k": 5,
+        "maxChanges": 2
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "k": 10,
+        "maxChanges": 10
+      },
+      "expected": 18
+    }
+  ]
 }

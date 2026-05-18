@@ -27,5 +27,75 @@
     "Use dynamic programming: the states are (i, m) for the answer of piles[i:] and that given m."
   ],
   "starter_code": "class Solution:\n    def stoneGameII(self, piles: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "piles": [
+          2,
+          7,
+          11,
+          15
+        ]
+      },
+      "expected": 17
+    },
+    {
+      "args": {
+        "piles": [
+          1,
+          100,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 101
+    },
+    {
+      "args": {
+        "piles": [
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "piles": [
+          10000,
+          10000,
+          10000
+        ]
+      },
+      "expected": 20000
+    },
+    {
+      "args": {
+        "piles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "expected": 108
+    }
+  ]
 }

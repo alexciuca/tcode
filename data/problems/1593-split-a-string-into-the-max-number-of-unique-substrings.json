@@ -29,5 +29,36 @@
     "Try each possible substring at every position and backtrack if a complete split is not possible"
   ],
   "starter_code": "class Solution:\n    def maxUniqueSplit(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ababccc"
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "s": "abc"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aaaaaa"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnop"
+      },
+      "expected": 16
+    }
+  ]
 }

@@ -26,5 +26,64 @@
     "What data structure could you use to get the last occurrence of a number in O(1) or O(log n)?"
   ],
   "starter_code": "class Solution:\n    def minimumCardPickup(self, cards: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "cards": [
+          3,
+          4,
+          2,
+          3,
+          4,
+          7
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "cards": [
+          1,
+          0,
+          5,
+          3
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "cards": [
+          5,
+          5
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "cards": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "cards": [
+          1000000,
+          999999,
+          1000000,
+          1,
+          1,
+          1000000
+        ]
+      },
+      "expected": 2
+    }
+  ]
 }

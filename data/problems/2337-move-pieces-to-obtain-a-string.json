@@ -29,5 +29,41 @@
     "Try to match each piece in s with a piece in e."
   ],
   "starter_code": "class Solution:\n    def canChange(self, start: str, target: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "start": "R_L",
+        "target": "_RL"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "start": "R_L_",
+        "target": "_R_L"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "start": "L",
+        "target": "L"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "start": "R_",
+        "target": "_R"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "start": "L_R_L_R_L_R_L_R_L_R_",
+        "target": "_L_R_L_R_L_R_L_R_L_R"
+      },
+      "expected": false
+    }
+  ]
 }

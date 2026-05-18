@@ -28,5 +28,41 @@
     "You should choose the next character from the larger string."
   ],
   "starter_code": "class Solution:\n    def largestMerge(self, word1: str, word2: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word1": "cabaa",
+        "word2": "bcabc"
+      },
+      "expected": "cbcabcabaa"
+    },
+    {
+      "args": {
+        "word1": "abcd",
+        "word2": "cdab"
+      },
+      "expected": "cdabcdab"
+    },
+    {
+      "args": {
+        "word1": "a",
+        "word2": "b"
+      },
+      "expected": "ba"
+    },
+    {
+      "args": {
+        "word1": "zzz",
+        "word2": "aaa"
+      },
+      "expected": "zzzaaa"
+    },
+    {
+      "args": {
+        "word1": "abcdefghijklmnopqrstuvwxyz",
+        "word2": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected": "zyxwvutsrqponmlkjihgfedcbabcdefghijklmnopqrstuvwxyza"
+    }
+  ]
 }

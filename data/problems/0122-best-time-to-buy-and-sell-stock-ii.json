@@ -26,5 +26,32 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def maxProfit(self, prices: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "prices": [
+          7,
+          1,
+          5,
+          3,
+          6,
+          4,
+          5
+        ]
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "prices": [
+          7,
+          6,
+          4,
+          3,
+          1
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

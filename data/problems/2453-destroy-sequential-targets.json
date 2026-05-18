@@ -30,5 +30,67 @@
     "Iterate over nums in sorted order."
   ],
   "starter_code": "class Solution:\n    def destroyTargets(self, nums: List[int], space: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          3,
+          4,
+          5
+        ],
+        "space": 2
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "space": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          6,
+          2,
+          5
+        ],
+        "space": 100
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          6,
+          11,
+          16,
+          21
+        ],
+        "space": 5
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          999999999,
+          1,
+          2,
+          3,
+          1000000000
+        ],
+        "space": 1000000000
+      },
+      "expected": 1000000000
+    }
+  ]
 }

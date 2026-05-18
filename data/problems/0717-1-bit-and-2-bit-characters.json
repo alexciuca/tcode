@@ -23,5 +23,96 @@
     "Keep track of where the next character starts.  At the end, you want to know if you started on the last bit."
   ],
   "starter_code": "class Solution:\n    def isOneBitCharacter(self, bits: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "bits": [
+          0
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "bits": [
+          1,
+          0
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "bits": [
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "bits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

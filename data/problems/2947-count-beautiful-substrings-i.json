@@ -32,5 +32,41 @@
     "Iterate over all substrings and maintain the frequencies of vowels and consonants."
   ],
   "starter_code": "class Solution:\n    def beautifulSubstrings(self, s: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aabcb",
+        "k": 1
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "abcd",
+        "k": 2
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "aaaa",
+        "k": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "a",
+        "k": 1000
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "aeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeioua",
+        "k": 5
+      },
+      "expected": 0
+    }
+  ]
 }

@@ -23,5 +23,51 @@
     "Choose A = i and B = n - i then check if A and B are both No-Zero integers."
   ],
   "starter_code": "class Solution:\n    def getNoZeroIntegers(self, n: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 2
+      },
+      "expected": [
+        1,
+        1
+      ]
+    },
+    {
+      "args": {
+        "n": 11
+      },
+      "expected": [
+        2,
+        9
+      ]
+    },
+    {
+      "args": {
+        "n": 100
+      },
+      "expected": [
+        1,
+        99
+      ]
+    },
+    {
+      "args": {
+        "n": 101
+      },
+      "expected": [
+        2,
+        99
+      ]
+    },
+    {
+      "args": {
+        "n": 10000
+      },
+      "expected": [
+        1,
+        9999
+      ]
+    }
+  ]
 }

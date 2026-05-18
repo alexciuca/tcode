@@ -29,5 +29,36 @@
     "For every cyclic shift we need to count how many 0s and 1s are at each parity and convert the minimum between them for each parity"
   ],
   "starter_code": "class Solution:\n    def minFlips(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "111"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "010"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "0011"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "0"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected": 50
+    }
+  ]
 }

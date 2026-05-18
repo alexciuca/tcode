@@ -28,5 +28,36 @@
     "On the basis of each word's lengths, simulate the process explained in Problem."
   ],
   "starter_code": "class Solution:\n    def capitalizeTitle(self, title: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "title": "capiTalIze tHe titLe"
+      },
+      "expected": "Capitalize The Title"
+    },
+    {
+      "args": {
+        "title": "first letter of each word"
+      },
+      "expected": "First Letter of Each Word"
+    },
+    {
+      "args": {
+        "title": "a"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "title": "ab cd ef"
+      },
+      "expected": "ab cd ef"
+    },
+    {
+      "args": {
+        "title": "tHe QuIcK bRoWn FoX jUmPs OvEr ThE lAzY dOg"
+      },
+      "expected": "The Quick Brown Fox Jumps Over The Lazy Dog"
+    }
+  ]
 }

@@ -28,5 +28,36 @@
     "If the current element is already in the set, return that element."
   ],
   "starter_code": "class Solution:\n    def repeatedCharacter(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abccccdd"
+      },
+      "expected": "c"
+    },
+    {
+      "args": {
+        "s": "abcdd"
+      },
+      "expected": "d"
+    },
+    {
+      "args": {
+        "s": "aa"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyza"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "zzaabbccddeeeffgghhiijjkkllmmnnoo"
+      },
+      "expected": "z"
+    }
+  ]
 }

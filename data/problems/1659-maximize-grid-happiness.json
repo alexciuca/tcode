@@ -31,5 +31,51 @@
     "Assume that the previous columns in the current row already belong to the previous row."
   ],
   "starter_code": "class Solution:\n    def getMaxGridHappiness(self, m: int, n: int, introvertsCount: int, extrovertsCount: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "m": 2,
+        "n": 2,
+        "introvertsCount": 1,
+        "extrovertsCount": 1
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "m": 3,
+        "n": 3,
+        "introvertsCount": 2,
+        "extrovertsCount": 2
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "m": 1,
+        "n": 1,
+        "introvertsCount": 1,
+        "extrovertsCount": 0
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "m": 5,
+        "n": 5,
+        "introvertsCount": 0,
+        "extrovertsCount": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "m": 3,
+        "n": 2,
+        "introvertsCount": 3,
+        "extrovertsCount": 3
+      },
+      "expected": 21
+    }
+  ]
 }

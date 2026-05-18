@@ -25,5 +25,81 @@
   ],
   "hints": [],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "root": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": [
+        "1->2",
+        "1->3"
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          1
+        ]
+      },
+      "expected": [
+        "1"
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          1,
+          2,
+          null,
+          3
+        ]
+      },
+      "expected": [
+        "1->2->3"
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          -100,
+          50,
+          null,
+          null,
+          100
+        ]
+      },
+      "expected": [
+        "-100->50->100"
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5
+        ]
+      },
+      "expected": [
+        "0->1->2->4",
+        "0->1->2->4",
+        "0->1->2->5",
+        "0->1->2->5",
+        "0->1->3",
+        "0->1->3"
+      ]
+    }
+  ]
 }

@@ -22,5 +22,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def reverseBits(self, n: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 2
+      },
+      "expected": 1073741824
+    },
+    {
+      "args": {
+        "n": 8
+      },
+      "expected": 268435456
+    },
+    {
+      "args": {
+        "n": 1073741822
+      },
+      "expected": 2147483644
+    },
+    {
+      "args": {
+        "n": 43981
+      },
+      "expected": 3017080832
+    }
+  ]
 }

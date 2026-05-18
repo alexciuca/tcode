@@ -24,5 +24,36 @@
     "Use brute force, try all possible changes and keep the minimum and maximum values."
   ],
   "starter_code": "class Solution:\n    def maxDiff(self, num: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": 555
+      },
+      "expected": 888
+    },
+    {
+      "args": {
+        "num": 9998
+      },
+      "expected": 8881
+    },
+    {
+      "args": {
+        "num": 1000
+      },
+      "expected": 8000
+    },
+    {
+      "args": {
+        "num": 1111111
+      },
+      "expected": 8888888
+    },
+    {
+      "args": {
+        "num": 100000000
+      },
+      "expected": 800000000
+    }
+  ]
 }

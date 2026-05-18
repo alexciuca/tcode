@@ -32,5 +32,57 @@
     "Any algorithm (i.e., BFS, DFS, or Union-Find Set) should work to find or check connected components"
   ],
   "starter_code": "class Solution:\n    def canTraverseAllPairs(self, nums: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          3,
+          6
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          4,
+          3,
+          12,
+          8
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          7,
+          11
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

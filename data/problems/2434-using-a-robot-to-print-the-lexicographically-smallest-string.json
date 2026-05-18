@@ -31,5 +31,36 @@
     "After the robot writes every “a” on paper, the same holds for other characters “b”, ”c”, …etc."
   ],
   "starter_code": "class Solution:\n    def robotWithString(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "zza"
+      },
+      "expected": "azz"
+    },
+    {
+      "args": {
+        "s": "dcba"
+      },
+      "expected": "abcd"
+    },
+    {
+      "args": {
+        "s": "abcd"
+      },
+      "expected": "abcd"
+    },
+    {
+      "args": {
+        "s": "zzaabb"
+      },
+      "expected": "aabbzz"
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected": "aabcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcb"
+    }
+  ]
 }

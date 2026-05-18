@@ -27,5 +27,36 @@
     "If we cannot find any of the above integers, we return an empty string “”."
   ],
   "starter_code": "class Solution:\n    def largestGoodInteger(self, num: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "num": "6552777321000"
+      },
+      "expected": "777"
+    },
+    {
+      "args": {
+        "num": "2300019"
+      },
+      "expected": "000"
+    },
+    {
+      "args": {
+        "num": "42352338"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "num": "000"
+      },
+      "expected": "000"
+    },
+    {
+      "args": {
+        "num": "999888777666555444333222111000"
+      },
+      "expected": "999"
+    }
+  ]
 }

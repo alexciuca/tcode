@@ -29,5 +29,41 @@
     "For each index in order from <code>0</code> to <code>n - 1</code>, we try all letters from <code>'a'</code> to <code>'z'</code>, selecting the first one as long as the current total distance accumulated is not larger than <code>k</code>."
   ],
   "starter_code": "class Solution:\n    def getSmallestString(self, s: str, k: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aabcdefg",
+        "k": 5
+      },
+      "expected": "aaaabefg"
+    },
+    {
+      "args": {
+        "s": "zzz",
+        "k": 10
+      },
+      "expected": "aaa"
+    },
+    {
+      "args": {
+        "s": "a",
+        "k": 0
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "zyxwvutsrqponmlkjihgfedcba",
+        "k": 2000
+      },
+      "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "args": {
+        "s": "bcdefghijklmnopqrstuvwxyz",
+        "k": 1
+      },
+      "expected": "acdefghijklmnopqrstuvwxyz"
+    }
+  ]
 }

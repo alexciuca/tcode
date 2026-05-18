@@ -33,5 +33,41 @@
     "The answer is the maximum among all replacements."
   ],
   "starter_code": "class Solution:\n    def maxPartitionsAfterOperations(self, s: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ababab",
+        "k": 3
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "aabbcc",
+        "k": 2
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "a",
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "k": 26
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "k": 1
+      },
+      "expected": 52
+    }
+  ]
 }

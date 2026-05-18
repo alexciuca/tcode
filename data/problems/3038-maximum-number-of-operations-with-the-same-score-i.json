@@ -25,5 +25,67 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def maxOperations(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          3,
+          2,
+          1,
+          4,
+          5
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          3,
+          2,
+          6,
+          1,
+          4
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

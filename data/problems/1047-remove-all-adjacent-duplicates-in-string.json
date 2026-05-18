@@ -24,5 +24,12 @@
     "Use a stack to process everything greedily."
   ],
   "starter_code": "class Solution:\n    def removeDuplicates(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "S": "abbaca"
+      },
+      "expected": "ca"
+    }
+  ]
 }

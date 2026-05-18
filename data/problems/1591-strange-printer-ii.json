@@ -31,5 +31,121 @@
     "Try thinking in reverse. Given the grid, how can you tell if a colour was painted last?"
   ],
   "starter_code": "class Solution:\n    def isPrintable(self, targetGrid: List[List[int]]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "targetGrid": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "targetGrid": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "targetGrid": [
+          [
+            1
+          ]
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "targetGrid": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "targetGrid": [
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ]
+        ]
+      },
+      "expected": false
+    }
+  ]
 }

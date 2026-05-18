@@ -26,5 +26,57 @@
     "Try constructing the answer bit by bit."
   ],
   "starter_code": "class Solution:\n    def xorBeauty(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          4,
+          3,
+          7
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          15,
+          45,
+          60
+        ]
+      },
+      "expected": 30
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          999999999,
+          1
+        ]
+      },
+      "expected": 1022
+    },
+    {
+      "args": {
+        "nums": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      "expected": 7
+    }
+  ]
 }

@@ -30,5 +30,65 @@
     "Use the built-in function in the language you are using to find if the pattern exists as a substring in <code>word</code>."
   ],
   "starter_code": "class Solution:\n    def numOfStrings(self, patterns: List[str], word: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "patterns": [
+          "ab",
+          "ba",
+          "aaab",
+          "abab",
+          "baa"
+        ],
+        "word": "aaab"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "patterns": [
+          "a",
+          "b",
+          "c"
+        ],
+        "word": "aab"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "patterns": [
+          "aaa",
+          "aaa",
+          "aaa"
+        ],
+        "word": "aa"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "patterns": [
+          "x",
+          "y",
+          "z"
+        ],
+        "word": "abc"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "patterns": [
+          "a",
+          "ab",
+          "abc",
+          "abcd",
+          "abcde"
+        ],
+        "word": "abcdefghij"
+      },
+      "expected": 5
+    }
+  ]
 }

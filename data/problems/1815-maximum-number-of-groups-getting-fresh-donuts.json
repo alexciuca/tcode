@@ -31,5 +31,91 @@
     "For each i from 0 to batchSize-1, the next DP state is dp[freq`][(r+i)%batchSize] where freq` is freq but with freq[i] decremented by 1. Take the largest of all of the next states and store it in ans. If r == 0, then return ans+1 (because you can form a new partition), otherwise return ans (continuing the current partition)."
   ],
   "starter_code": "class Solution:\n    def maxHappyGroups(self, batchSize: int, groups: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "batchSize": 3,
+        "groups": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "batchSize": 5,
+        "groups": [
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "batchSize": 9,
+        "groups": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "batchSize": 4,
+        "groups": [
+          8,
+          8,
+          8
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "batchSize": 2,
+        "groups": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "expected": 30
+    }
+  ]
 }

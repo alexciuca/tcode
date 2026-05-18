@@ -29,5 +29,36 @@
     "Iterate right to left and count the number of <code>0</code> that have already occurred, whenever you iterate on <code>1</code> add that counter to the answer."
   ],
   "starter_code": "class Solution:\n    def minimumSteps(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "111000"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "010"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "0"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "1"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "11110000111100001111"
+      },
+      "expected": 48
+    }
+  ]
 }

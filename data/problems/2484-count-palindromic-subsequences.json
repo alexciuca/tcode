@@ -28,5 +28,36 @@
     "Iterate over all characters, letting the current character be the center of the palindrome."
   ],
   "starter_code": "class Solution:\n    def countPalindromes(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "103301"
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "s": "0000"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "9"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "12321"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "0123456789012345678901234567890123456789"
+      },
+      "expected": 27722
+    }
+  ]
 }

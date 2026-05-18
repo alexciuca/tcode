@@ -33,5 +33,75 @@
     "Then just go from LEFT to RIGHT index and calculate answer modulo 1e9 + 7."
   ],
   "starter_code": "class Solution:\n    def rangeSum(self, nums: List[int], n: int, left: int, right: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "n": 4,
+        "left": 1,
+        "right": 5
+      },
+      "expected": 13
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ],
+        "n": 1,
+        "left": 1,
+        "right": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          10,
+          15
+        ],
+        "n": 3,
+        "left": 3,
+        "right": 4
+      },
+      "expected": 30
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n": 5,
+        "left": 1,
+        "right": 15
+      },
+      "expected": 35
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "n": 6,
+        "left": 1,
+        "right": 21
+      },
+      "expected": 5600
+    }
+  ]
 }

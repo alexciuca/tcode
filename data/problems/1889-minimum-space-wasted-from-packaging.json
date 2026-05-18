@@ -37,5 +37,118 @@
     "Do we have to order the boxes a certain way to allow us to answer the query quickly?"
   ],
   "starter_code": "class Solution:\n    def minWastedSpace(self, packages: List[int], boxes: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "packages": [
+          2,
+          4,
+          6
+        ],
+        "boxes": [
+          [
+            2,
+            4,
+            6
+          ],
+          [
+            2,
+            4,
+            8
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "packages": [
+          1,
+          2,
+          3,
+          5,
+          8
+        ],
+        "boxes": [
+          [
+            1,
+            5,
+            10
+          ],
+          [
+            2,
+            3,
+            8
+          ]
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "packages": [
+          1
+        ],
+        "boxes": [
+          [
+            2
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "packages": [
+          1,
+          100000
+        ],
+        "boxes": [
+          [
+            1
+          ],
+          [
+            100000
+          ]
+        ]
+      },
+      "expected": 99999
+    },
+    {
+      "args": {
+        "packages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "boxes": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          [
+            11,
+            12,
+            13
+          ]
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

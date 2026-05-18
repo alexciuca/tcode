@@ -24,5 +24,99 @@
     "Based on the label of the current node, find what the label must be for the parent of that node."
   ],
   "starter_code": "class Solution:\n    def pathInZigZagTree(self, label: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "label": 14
+      },
+      "expected": [
+        1,
+        3,
+        4,
+        14
+      ]
+    },
+    {
+      "args": {
+        "label": 26
+      },
+      "expected": [
+        1,
+        2,
+        6,
+        10,
+        26
+      ]
+    },
+    {
+      "args": {
+        "label": 1
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "label": 1000000
+      },
+      "expected": [
+        1,
+        3,
+        4,
+        15,
+        17,
+        61,
+        69,
+        244,
+        279,
+        976,
+        1118,
+        3906,
+        4475,
+        15625,
+        17901,
+        62500,
+        71607,
+        250000,
+        286431,
+        1000000
+      ]
+    },
+    {
+      "args": {
+        "label": 268435455
+      },
+      "expected": [
+        1,
+        3,
+        4,
+        15,
+        16,
+        63,
+        64,
+        255,
+        256,
+        1023,
+        1024,
+        4095,
+        4096,
+        16383,
+        16384,
+        65535,
+        65536,
+        262143,
+        262144,
+        1048575,
+        1048576,
+        4194303,
+        4194304,
+        16777215,
+        16777216,
+        67108863,
+        67108864,
+        268435455
+      ]
+    }
+  ]
 }

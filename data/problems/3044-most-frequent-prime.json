@@ -34,5 +34,135 @@
     "Use recursion to find all possible numbers for each cell and then check for prime."
   ],
   "starter_code": "class Solution:\n    def mostFrequentPrime(self, mat: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "mat": [
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            9
+          ]
+        ]
+      },
+      "expected": 19
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            7,
+            1
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      "expected": 71
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": 11
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            7,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": 11
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            9,
+            8,
+            7,
+            6,
+            5,
+            4
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          [
+            7,
+            8,
+            9,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          [
+            2,
+            3,
+            5,
+            7,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": 11
+    }
+  ]
 }

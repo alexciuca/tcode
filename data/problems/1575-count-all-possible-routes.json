@@ -32,5 +32,82 @@
     "Since the array contains distinct integers fuel will always be spent in each move and so there can be no cycles."
   ],
   "starter_code": "class Solution:\n    def countRoutes(self, locations: List[int], start: int, finish: int, fuel: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "locations": [
+          5,
+          10,
+          15
+        ],
+        "start": 0,
+        "finish": 2,
+        "fuel": 10
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "locations": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "start": 1,
+        "finish": 3,
+        "fuel": 8
+      },
+      "expected": 420
+    },
+    {
+      "args": {
+        "locations": [
+          1,
+          1000000000
+        ],
+        "start": 0,
+        "finish": 1,
+        "fuel": 999999999
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "locations": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60
+        ],
+        "start": 0,
+        "finish": 0,
+        "fuel": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "locations": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "start": 0,
+        "finish": 9,
+        "fuel": 200
+      },
+      "expected": 77785335
+    }
+  ]
 }

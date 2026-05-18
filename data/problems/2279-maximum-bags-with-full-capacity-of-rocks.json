@@ -29,5 +29,90 @@
     "Can you think of a greedy solution?"
   ],
   "starter_code": "class Solution:\n    def maximumBags(self, capacity: List[int], rocks: List[int], additionalRocks: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "capacity": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "rocks": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "additionalRocks": 3
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "capacity": [
+          10,
+          2,
+          8
+        ],
+        "rocks": [
+          2,
+          2,
+          4
+        ],
+        "additionalRocks": 8
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "capacity": [
+          5
+        ],
+        "rocks": [
+          5
+        ],
+        "additionalRocks": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "capacity": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "rocks": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "additionalRocks": 4
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "capacity": [
+          1000000000,
+          999999999,
+          500000000,
+          1,
+          100
+        ],
+        "rocks": [
+          0,
+          1,
+          250000000,
+          0,
+          50
+        ],
+        "additionalRocks": 1000000000
+      },
+      "expected": 3
+    }
+  ]
 }

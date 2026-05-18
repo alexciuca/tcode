@@ -27,5 +27,73 @@
     "Can you remove the largest element in the array? Is that ever helpful?"
   ],
   "starter_code": "class Solution:\n    def maximumPossibleSize(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          4,
+          2,
+          3,
+          5,
+          1
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          100000,
+          50000,
+          75000,
+          25000,
+          200000,
+          1,
+          150000,
+          99999,
+          100001,
+          50001,
+          74999,
+          25001
+        ]
+      },
+      "expected": 2
+    }
+  ]
 }

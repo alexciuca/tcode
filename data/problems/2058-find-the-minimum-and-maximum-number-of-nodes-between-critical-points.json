@@ -27,5 +27,91 @@
     "For each adjacent critical point, calculate the difference and check if it is the minimum distance."
   ],
   "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def nodesBetweenCriticalPoints(self, head: Optional[ListNode]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "head": [
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "expected": [
+        1,
+        2
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          5,
+          3,
+          1,
+          2,
+          5,
+          1,
+          2
+        ]
+      },
+      "expected": [
+        1,
+        3
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          3,
+          1,
+          4,
+          1,
+          5,
+          9,
+          2,
+          6
+        ]
+      },
+      "expected": [
+        1,
+        5
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000
+        ]
+      },
+      "expected": [
+        1,
+        7
+      ]
+    }
+  ]
 }

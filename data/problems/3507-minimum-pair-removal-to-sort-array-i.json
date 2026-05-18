@@ -29,5 +29,75 @@
     "Simulate the operations"
   ],
   "starter_code": "class Solution:\n    def minimumPairRemoval(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          -1000,
+          0,
+          1000,
+          -500,
+          500
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          3,
+          1,
+          4,
+          1,
+          5,
+          9,
+          2,
+          6,
+          5,
+          3,
+          5,
+          8,
+          9,
+          7,
+          9
+        ]
+      },
+      "expected": 4
+    }
+  ]
 }

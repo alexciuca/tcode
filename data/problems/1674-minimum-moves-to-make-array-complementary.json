@@ -32,5 +32,68 @@
     "Create a difference array to efficiently sum all the modifications."
   ],
   "starter_code": "class Solution:\n    def minMoves(self, nums: List[int], limit: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "limit": 4
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "limit": 10
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          100000,
+          1,
+          100000
+        ],
+        "limit": 100000
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "limit": 2
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          50000,
+          1,
+          99999,
+          2,
+          75000,
+          25001
+        ],
+        "limit": 100000
+      },
+      "expected": 1
+    }
+  ]
 }

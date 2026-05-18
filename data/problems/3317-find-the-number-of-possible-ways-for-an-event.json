@@ -29,5 +29,46 @@
     "Use inclusion-exclusion to ensure that no stage has 0 performers."
   ],
   "starter_code": "class Solution:\n    def numberOfWays(self, n: int, x: int, y: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 5,
+        "x": 1,
+        "y": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 3,
+        "x": 2,
+        "y": 1
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "n": 1,
+        "x": 1,
+        "y": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 100,
+        "x": 1000,
+        "y": 1000
+      },
+      "expected": 952671686
+    },
+    {
+      "args": {
+        "n": 1000,
+        "x": 999,
+        "y": 1000
+      },
+      "expected": 954402171
+    }
+  ]
 }

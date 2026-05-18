@@ -31,5 +31,143 @@
     "If it is possible to convert original to a 2D array, keep an index i such that original[i] is the next element to add to the 2D array."
   ],
   "starter_code": "class Solution:\n    def construct2DArray(self, original: List[int], m: int, n: int) -> List[List[int]]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "original": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "m": 2,
+        "n": 2
+      },
+      "expected": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "args": {
+        "original": [
+          1,
+          2,
+          3
+        ],
+        "m": 1,
+        "n": 3
+      },
+      "expected": [
+        [
+          1,
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "args": {
+        "original": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "m": 3,
+        "n": 2
+      },
+      "expected": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "args": {
+        "original": [
+          1,
+          2
+        ],
+        "m": 1,
+        "n": 1
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "original": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "m": 4,
+        "n": 5
+      },
+      "expected": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        [
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        [
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      ]
+    }
+  ]
 }

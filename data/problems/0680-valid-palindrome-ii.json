@@ -26,5 +26,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def validPalindrome(self, s: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abca"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "race"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "ab"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "abcdefghijihgfedcbabcdefghijihgfedcbabcdefghijihgfedcbabcdefghijihgfedcbabcdefghijihgfedcba"
+      },
+      "expected": true
+    }
+  ]
 }

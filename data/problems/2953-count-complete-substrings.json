@@ -28,5 +28,41 @@
     "We still need to check for all characters in the window that <code>abs(word[i] - word[i - 1]) <= 2</code>. We do this by maintaining the values of <code>abs(word[i] - word[i - 1])</code> in the sliding window dynamically in an ordered multiset or priority queue, so that we know the maximum value at each iteration."
   ],
   "starter_code": "class Solution:\n    def countCompleteSubstrings(self, word: str, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "ababab",
+        "k": 2
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "word": "aabbccdd",
+        "k": 2
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "word": "a",
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "aaabbbccc",
+        "k": 3
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "word": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "k": 5
+      },
+      "expected": 1
+    }
+  ]
 }

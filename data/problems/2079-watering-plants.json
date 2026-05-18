@@ -30,5 +30,78 @@
     "Return to refill the container once you meet a plant that needs more water than you have."
   ],
   "starter_code": "class Solution:\n    def wateringPlants(self, plants: List[int], capacity: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "plants": [
+          2,
+          7,
+          11,
+          15
+        ],
+        "capacity": 20
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "plants": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "capacity": 2
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "plants": [
+          1000000
+        ],
+        "capacity": 1000000
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "plants": [
+          5,
+          10,
+          5,
+          10
+        ],
+        "capacity": 15
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "plants": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "capacity": 1000000000
+      },
+      "expected": 19
+    }
+  ]
 }

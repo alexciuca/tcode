@@ -25,5 +25,63 @@
     "note that as the maximum size increases the minimum number of bags decreases so we can binary search the maximum size"
   ],
   "starter_code": "class Solution:\n    def minimumSize(self, nums: List[int], maxOperations: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          9
+        ],
+        "maxOperations": 2
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          4,
+          6,
+          14,
+          7
+        ],
+        "maxOperations": 5
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          7,
+          17,
+          1,
+          13,
+          7,
+          14
+        ],
+        "maxOperations": 4
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "maxOperations": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000
+        ],
+        "maxOperations": 1000000000
+      },
+      "expected": 1
+    }
+  ]
 }

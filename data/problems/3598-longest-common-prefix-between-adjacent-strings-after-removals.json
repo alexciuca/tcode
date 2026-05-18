@@ -28,5 +28,78 @@
     "Use the result of the prefix computation up to <code>i - 1</code> and the suffix computation from <code>i + 1</code> onwards."
   ],
   "starter_code": "class Solution:\n    def longestCommonPrefix(self, words: List[str]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "ab",
+          "aa",
+          "ac"
+        ]
+      },
+      "expected": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "hello",
+          "help",
+          "hero"
+        ]
+      },
+      "expected": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "a"
+        ]
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "abc",
+          "xyz",
+          "def",
+          "ghi"
+        ]
+      },
+      "expected": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "programming",
+          "program",
+          "programmer",
+          "progress",
+          "project"
+        ]
+      },
+      "expected": [
+        7,
+        8,
+        7,
+        7,
+        7
+      ]
+    }
+  ]
 }

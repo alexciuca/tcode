@@ -25,5 +25,124 @@
     "Let <code>x</code> be the number of even numbers, and <code>y</code> be the number of odd numbers. Output <code>0</code> <code>x</code> times, followed by <code>1</code> <code>y</code> times."
   ],
   "starter_code": "class Solution:\n    def transformArray(self, nums: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "expected": [
+        2,
+        4,
+        6,
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          20,
+          30
+        ]
+      },
+      "expected": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          999,
+          1000,
+          1,
+          2
+        ]
+      },
+      "expected": [
+        1000,
+        2,
+        999,
+        1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          3,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51
+        ]
+      },
+      "expected": [
+        5,
+        3,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45,
+        47,
+        49,
+        51
+      ]
+    }
+  ]
 }

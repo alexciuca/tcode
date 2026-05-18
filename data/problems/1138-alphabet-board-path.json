@@ -25,5 +25,36 @@
     "Now for each letter, try moving there in steps, where at each step you check if it is inside the boundaries of the board."
   ],
   "starter_code": "class Solution:\n    def alphabetBoardPath(self, target: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "target": "leet"
+      },
+      "expected": "DDR!UURRR!!DDD!"
+    },
+    {
+      "args": {
+        "target": "code"
+      },
+      "expected": "RR!DDRR!UUL!R!"
+    },
+    {
+      "args": {
+        "target": "a"
+      },
+      "expected": "!"
+    },
+    {
+      "args": {
+        "target": "zzz"
+      },
+      "expected": "DDDDD!!!"
+    },
+    {
+      "args": {
+        "target": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": "!R!R!R!R!DLLLL!R!R!R!R!DLLLL!R!R!R!R!DLLLL!R!R!R!R!DLLLL!R!R!R!R!DLLLL!"
+    }
+  ]
 }

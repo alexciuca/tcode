@@ -24,5 +24,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def brokenCalc(self, startValue: int, target: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "startValue": 1,
+        "target": 8
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "startValue": 8,
+        "target": 7
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "startValue": 1,
+        "target": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "startValue": 1000000000,
+        "target": 1
+      },
+      "expected": 999999999
+    },
+    {
+      "args": {
+        "startValue": 123,
+        "target": 456789
+      },
+      "expected": 31
+    }
+  ]
 }

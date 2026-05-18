@@ -23,5 +23,34 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def letterCasePermutation(self, s: str) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "a1b2"
+      },
+      "expected": [
+        "a1b2",
+        "a1B2",
+        "A1b2",
+        "A1B2"
+      ]
+    },
+    {
+      "args": {
+        "s": "3z4"
+      },
+      "expected": [
+        "3z4",
+        "3Z4"
+      ]
+    },
+    {
+      "args": {
+        "s": "12345"
+      },
+      "expected": [
+        "12345"
+      ]
+    }
+  ]
 }

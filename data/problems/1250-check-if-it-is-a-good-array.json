@@ -29,5 +29,61 @@
     "Can you generalize the formula?.  Check Bézout's lemma."
   ],
   "starter_code": "class Solution:\n    def isGoodArray(self, nums: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          12,
+          25,
+          35,
+          8
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          3,
+          5,
+          7,
+          11
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          999999999,
+          500000000,
+          250000001,
+          125000001
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

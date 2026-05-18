@@ -28,5 +28,36 @@
     "Try delaying a move as long as possible."
   ],
   "starter_code": "class Solution:\n    def minimumMoves(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "XXO"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "OXOX"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "XOXOXOXOXO"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "OOO"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "XXXXXOOOOOXXXXX"
+      },
+      "expected": 4
+    }
+  ]
 }

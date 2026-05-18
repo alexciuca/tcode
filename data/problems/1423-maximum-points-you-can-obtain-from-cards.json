@@ -30,5 +30,87 @@
     "Keep a window of size n - k over the array. The answer is max(answer, total_pts - sumOfCurrentWindow)"
   ],
   "starter_code": "class Solution:\n    def maxScore(self, cardPoints: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "cardPoints": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          1
+        ],
+        "k": 3
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "cardPoints": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "k": 2
+      },
+      "expected": 18
+    },
+    {
+      "args": {
+        "cardPoints": [
+          9999,
+          9999,
+          9999,
+          9999,
+          9999
+        ],
+        "k": 5
+      },
+      "expected": 49995
+    },
+    {
+      "args": {
+        "cardPoints": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "cardPoints": [
+          100,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          100
+        ],
+        "k": 10
+      },
+      "expected": 208
+    }
+  ]
 }

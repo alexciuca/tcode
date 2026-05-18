@@ -23,5 +23,41 @@
     "Convert the given number into base k."
   ],
   "starter_code": "class Solution:\n    def sumBase(self, n: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 34,
+        "k": 6
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "n": 1,
+        "k": 2
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 100,
+        "k": 10
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 15,
+        "k": 2
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "n": 99,
+        "k": 9
+      },
+      "expected": 3
+    }
+  ]
 }

@@ -29,5 +29,135 @@
     "Iterate through each row and keep the count of ones."
   ],
   "starter_code": "class Solution:\n    def rowAndMaximumOnes(self, mat: List[List[int]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "mat": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        2,
+        3
+      ]
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            1
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        0
+      ]
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        5
+      ]
+    }
+  ]
 }

@@ -29,5 +29,96 @@
     "If you perform a horizontal cut, can you count the contribution that it adds to each row cut that comes afterward?"
   ],
   "starter_code": "class Solution:\n    def minimumCost(self, m: int, n: int, horizontalCut: List[int], verticalCut: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "m": 3,
+        "n": 3,
+        "horizontalCut": [
+          1,
+          1
+        ],
+        "verticalCut": [
+          1,
+          1
+        ]
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "m": 2,
+        "n": 2,
+        "horizontalCut": [
+          2
+        ],
+        "verticalCut": [
+          1
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "m": 4,
+        "n": 4,
+        "horizontalCut": [
+          4,
+          3,
+          2
+        ],
+        "verticalCut": [
+          4,
+          3,
+          2
+        ]
+      },
+      "expected": 49
+    },
+    {
+      "args": {
+        "m": 1,
+        "n": 5,
+        "horizontalCut": [],
+        "verticalCut": [
+          5,
+          4,
+          3,
+          2
+        ]
+      },
+      "expected": 14
+    },
+    {
+      "args": {
+        "m": 100000,
+        "n": 100000,
+        "horizontalCut": [
+          1000,
+          999,
+          998,
+          997,
+          996,
+          995,
+          994,
+          993,
+          992,
+          991
+        ],
+        "verticalCut": [
+          1000,
+          999,
+          998,
+          997,
+          996,
+          995,
+          994,
+          993,
+          992,
+          991
+        ]
+      },
+      "expected": 119625
+    }
+  ]
 }

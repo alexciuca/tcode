@@ -29,5 +29,41 @@
     "The product P can be represented as P=10^(x+y) where x is the integral part and y is the fractional part of x+y. Using the property \"if S = A * B, then log(S) = log(A) + log(B)\", we can write x+y = log_10(P) = sum(log_10(i)) for each integer i in [left, right]. Once we obtain the sum, the first five digits can be represented as floor(10^(y+4))."
   ],
   "starter_code": "class Solution:\n    def abbreviateProduct(self, left: int, right: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "left": 1,
+        "right": 4
+      },
+      "expected": "24"
+    },
+    {
+      "args": {
+        "left": 5,
+        "right": 8
+      },
+      "expected": "1680"
+    },
+    {
+      "args": {
+        "left": 1,
+        "right": 1
+      },
+      "expected": "1"
+    },
+    {
+      "args": {
+        "left": 9999,
+        "right": 10000
+      },
+      "expected": "99990000"
+    },
+    {
+      "args": {
+        "left": 1,
+        "right": 10000
+      },
+      "expected": "28462...00000"
+    }
+  ]
 }

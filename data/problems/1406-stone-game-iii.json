@@ -30,5 +30,79 @@
     "Use dynamic programming to simulate the game. If the total score was 0 the game is \"Tie\", and if it has positive value then \"Alice\" wins, otherwise \"Bob\" wins."
   ],
   "starter_code": "class Solution:\n    def stoneGameIII(self, stoneValue: List[int]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "stoneValue": [
+          1,
+          2,
+          3,
+          7
+        ]
+      },
+      "expected": "Bob"
+    },
+    {
+      "args": {
+        "stoneValue": [
+          60,
+          50,
+          40,
+          30,
+          20,
+          10
+        ]
+      },
+      "expected": "Alice"
+    },
+    {
+      "args": {
+        "stoneValue": [
+          -1,
+          -2,
+          -3
+        ]
+      },
+      "expected": "Tie"
+    },
+    {
+      "args": {
+        "stoneValue": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": "Tie"
+    },
+    {
+      "args": {
+        "stoneValue": [
+          100,
+          -50,
+          75,
+          -25,
+          50,
+          -100,
+          200,
+          -150,
+          80,
+          60,
+          40,
+          -30,
+          90,
+          -10,
+          70,
+          55,
+          45,
+          -80,
+          65,
+          35
+        ]
+      },
+      "expected": "Alice"
+    }
+  ]
 }

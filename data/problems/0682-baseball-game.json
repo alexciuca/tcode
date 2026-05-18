@@ -28,5 +28,74 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def calPoints(self, operations: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "operations": [
+          "5",
+          "2",
+          "C",
+          "D",
+          "+"
+        ]
+      },
+      "expected": 30
+    },
+    {
+      "args": {
+        "operations": [
+          "5",
+          "-2",
+          "4",
+          "C",
+          "D",
+          "9",
+          "+"
+        ]
+      },
+      "expected": 13
+    },
+    {
+      "args": {
+        "operations": [
+          "0",
+          "0",
+          "+"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "operations": [
+          "-30000",
+          "D",
+          "+"
+        ]
+      },
+      "expected": -180000
+    },
+    {
+      "args": {
+        "operations": [
+          "1",
+          "2",
+          "+",
+          "3",
+          "D",
+          "+",
+          "C",
+          "4",
+          "5",
+          "+",
+          "D",
+          "D",
+          "C",
+          "10",
+          "+"
+        ]
+      },
+      "expected": 89
+    }
+  ]
 }

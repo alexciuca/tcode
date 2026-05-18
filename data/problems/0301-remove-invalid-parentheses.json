@@ -32,5 +32,107 @@
     "We can count the number of invalid brackets to be deleted and only generate the valid strings in the recusrion."
   ],
   "starter_code": "class Solution:\n    def removeInvalidParentheses(self, s: str) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "()())()"
+      },
+      "expected": [
+        "()()()",
+        "(())()"
+      ]
+    },
+    {
+      "args": {
+        "s": "(a)())()"
+      },
+      "expected": [
+        "(a)()()",
+        "(a())()"
+      ]
+    },
+    {
+      "args": {
+        "s": ")("
+      },
+      "expected": [
+        ""
+      ]
+    },
+    {
+      "args": {
+        "s": "("
+      },
+      "expected": [
+        ""
+      ]
+    },
+    {
+      "args": {
+        "s": "(("
+      },
+      "expected": [
+        ""
+      ]
+    },
+    {
+      "args": {
+        "s": ")"
+      },
+      "expected": [
+        ""
+      ]
+    },
+    {
+      "args": {
+        "s": "))"
+      },
+      "expected": [
+        ""
+      ]
+    },
+    {
+      "args": {
+        "s": "())"
+      },
+      "expected": [
+        "()"
+      ]
+    },
+    {
+      "args": {
+        "s": "()))"
+      },
+      "expected": [
+        "()"
+      ]
+    },
+    {
+      "args": {
+        "s": "(()"
+      },
+      "expected": [
+        "()"
+      ]
+    },
+    {
+      "args": {
+        "s": "((()"
+      },
+      "expected": [
+        "()"
+      ]
+    },
+    {
+      "args": {
+        "s": "(r(()()("
+      },
+      "expected": [
+        "r()()",
+        "r(())",
+        "(r)()",
+        "(r())"
+      ]
+    }
+  ]
 }

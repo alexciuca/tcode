@@ -30,5 +30,41 @@
     "Are there edge cases where a character is present in one string but not the other?"
   ],
   "starter_code": "class Solution:\n    def checkAlmostEquivalent(self, word1: str, word2: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word1": "aaaa",
+        "word2": "bbaa"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "word1": "abcd",
+        "word2": "dcba"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "word1": "a",
+        "word2": "a"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "word1": "zzz",
+        "word2": "aaa"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "word1": "abcdefghijklmnopqrstuvwxyz",
+        "word2": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected": true
+    }
+  ]
 }

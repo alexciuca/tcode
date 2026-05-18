@@ -28,5 +28,36 @@
     "Can you store the count of characters to avoid generating substrings altogether?"
   ],
   "starter_code": "class Solution:\n    def countVowelSubstrings(self, word: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "aeioua"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "word": "aeiou"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "bcdfg"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "word": "a"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "word": "aeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiou"
+      },
+      "expected": 4656
+    }
+  ]
 }

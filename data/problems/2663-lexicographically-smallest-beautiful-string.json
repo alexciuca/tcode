@@ -28,5 +28,41 @@
     "Finally, we are just left with a case to fix palindromic substrings, which come after index i. This can be done with a similar method mentioned in the second hint."
   ],
   "starter_code": "class Solution:\n    def smallestBeautifulString(self, s: str, k: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aabcb",
+        "k": 3
+      },
+      "expected": "aabcc"
+    },
+    {
+      "args": {
+        "s": "abcdefg",
+        "k": 4
+      },
+      "expected": "abdabaa"
+    },
+    {
+      "args": {
+        "s": "zzz",
+        "k": 4
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "aabbccdd",
+        "k": 5
+      },
+      "expected": "aabbccde"
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "k": 26
+      },
+      "expected": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxza"
+    }
+  ]
 }

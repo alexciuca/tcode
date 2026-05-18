@@ -25,5 +25,64 @@
     "We only need to worry about 4 numbers in the array."
   ],
   "starter_code": "class Solution:\r\n    def maxProductDifference(self, nums: List[int]) -> int:",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "expected": 34
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          10000,
+          10000
+        ]
+      },
+      "expected": 99999999
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          25,
+          50,
+          100
+        ]
+      },
+      "expected": 4750
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          5000,
+          9998,
+          9999
+        ]
+      },
+      "expected": 99970000
+    }
+  ]
 }

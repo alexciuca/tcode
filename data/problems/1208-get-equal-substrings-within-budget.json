@@ -32,5 +32,46 @@
     "Use a sliding window to track the longest valid substring."
   ],
   "starter_code": "class Solution:\n    def equalSubstring(self, s: str, t: str, maxCost: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abcd",
+        "t": "bcde",
+        "maxCost": 3
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "aaaa",
+        "t": "bbbb",
+        "maxCost": 10
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "a",
+        "t": "a",
+        "maxCost": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "abcdefghij",
+        "t": "abcdefghij",
+        "maxCost": 0
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "t": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "maxCost": 1000000
+      },
+      "expected": 99
+    }
+  ]
 }

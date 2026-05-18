@@ -26,5 +26,79 @@
     "Keep track of how many positive numbers are missing as you scan the array."
   ],
   "starter_code": "class Solution:\n    def findKthPositive(self, arr: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          2,
+          3,
+          4,
+          7,
+          11
+        ],
+        "k": 5
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "k": 2
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "arr": [
+          3,
+          4,
+          7,
+          8,
+          9,
+          10
+        ],
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "k": 1000
+      },
+      "expected": 1010
+    },
+    {
+      "args": {
+        "arr": [
+          15,
+          23,
+          45,
+          89,
+          123,
+          456,
+          789,
+          999
+        ],
+        "k": 500
+      },
+      "expected": 506
+    }
+  ]
 }

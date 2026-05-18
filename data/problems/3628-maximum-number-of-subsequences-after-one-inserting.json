@@ -26,5 +26,36 @@
     "For each insert position i, compute gains <code>sufCT[i]</code> for ‘L’, <code>preL[i] * sufT[i]</code> for ‘C’, and <code>preLC[i]</code> for ‘T’, and take the maximum of <code>base</code> and <code>base + gain</code>."
   ],
   "starter_code": "class Solution:\n    def numOfSubsequences(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "AABAB"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "A"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "AAAA"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "ABCDEFGHIJ"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      "expected": 0
+    }
+  ]
 }

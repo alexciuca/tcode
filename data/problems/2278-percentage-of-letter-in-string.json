@@ -25,5 +25,41 @@
     "Recall that the percentage is calculated as (occurrences / total) * 100."
   ],
   "starter_code": "class Solution:\n    def percentageLetter(self, s: str, letter: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "foobar",
+        "letter": "o"
+      },
+      "expected": 33
+    },
+    {
+      "args": {
+        "s": "jjjj",
+        "letter": "k"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "a",
+        "letter": "a"
+      },
+      "expected": 100
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "letter": "z"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "letter": "a"
+      },
+      "expected": 100
+    }
+  ]
 }

@@ -27,5 +27,48 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findMinArrowShots(self, points: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "points": [
+          [
+            10,
+            16
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            7,
+            12
+          ]
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "points": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "expected": 2
+    }
+  ]
 }

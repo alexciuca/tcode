@@ -31,5 +31,93 @@
     "<code>j<sub>1</sub></code> and <code>j<sub>2</sub></code> can be updated dynamically, or they can be pre-computed since they are just prefix minimum and maximum."
   ],
   "starter_code": "class Solution:\n    def findIndices(self, nums: List[int], indexDifference: int, valueDifference: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          5,
+          1,
+          4,
+          1,
+          5
+        ],
+        "indexDifference": 2,
+        "valueDifference": 4
+      },
+      "expected": [
+        0,
+        3
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "indexDifference": 1,
+        "valueDifference": 0
+      },
+      "expected": [
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "indexDifference": 3,
+        "valueDifference": 0
+      },
+      "expected": [
+        0,
+        3
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          0,
+          500000000
+        ],
+        "indexDifference": 2,
+        "valueDifference": 999999999
+      },
+      "expected": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          5,
+          3,
+          8,
+          2,
+          7,
+          9,
+          1,
+          4,
+          6
+        ],
+        "indexDifference": 5,
+        "valueDifference": 7
+      },
+      "expected": [
+        0,
+        7
+      ]
+    }
+  ]
 }

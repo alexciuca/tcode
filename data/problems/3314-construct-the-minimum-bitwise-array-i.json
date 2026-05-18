@@ -25,5 +25,108 @@
     "The constraints are small, allowing you to iterate over all potential values for <code>ans[i]</code> directly."
   ],
   "starter_code": "class Solution:\n    def minBitwiseArray(self, nums: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          3,
+          5
+        ]
+      },
+      "expected": [
+        -1,
+        1,
+        4
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          7,
+          11,
+          13
+        ]
+      },
+      "expected": [
+        3,
+        9,
+        12
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          2
+        ]
+      },
+      "expected": [
+        -1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected": [
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37,
+          41,
+          43,
+          47,
+          53,
+          59,
+          61,
+          67,
+          71
+        ]
+      },
+      "expected": [
+        -1,
+        1,
+        4,
+        3,
+        9,
+        12,
+        16,
+        17,
+        19,
+        28,
+        15,
+        36,
+        40,
+        41,
+        39,
+        52,
+        57,
+        60,
+        65,
+        67
+      ]
+    }
+  ]
 }

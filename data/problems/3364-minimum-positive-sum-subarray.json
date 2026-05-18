@@ -29,5 +29,78 @@
     "Check every subarray, since constraints are small."
   ],
   "starter_code": "class Solution:\n    def minimumSumSubarray(self, nums: List[int], l: int, r: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          3,
+          -2,
+          5,
+          -1
+        ],
+        "l": 1,
+        "r": 2
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          1,
+          4,
+          3
+        ],
+        "l": 2,
+        "r": 3
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          -5,
+          -3,
+          -1,
+          2,
+          6
+        ],
+        "l": 1,
+        "r": 5
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          -10,
+          -8,
+          -6,
+          -4
+        ],
+        "l": 1,
+        "r": 4
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "l": 1,
+        "r": 10
+      },
+      "expected": 1
+    }
+  ]
 }

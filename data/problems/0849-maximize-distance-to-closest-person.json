@@ -26,5 +26,31 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def maxDistToClosest(self, seats: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "seats": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "seats": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 3
+    }
+  ]
 }

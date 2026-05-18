@@ -29,5 +29,111 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findReplaceString(self, s: str, indices: List[int], sources: List[str], targets: List[str]) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abcd",
+        "indices": [
+          0,
+          2
+        ],
+        "sources": [
+          "a",
+          "cd"
+        ],
+        "targets": [
+          "eee",
+          "ffff"
+        ]
+      },
+      "expected": "eeebffff"
+    },
+    {
+      "args": {
+        "s": "vmokgggqzp",
+        "indices": [
+          3,
+          2,
+          4
+        ],
+        "sources": [
+          "kg",
+          "mok",
+          "o"
+        ],
+        "targets": [
+          "s",
+          "xxoo",
+          "pop"
+        ]
+      },
+      "expected": "vmosggqzp"
+    },
+    {
+      "args": {
+        "s": "a",
+        "indices": [
+          0
+        ],
+        "sources": [
+          "a"
+        ],
+        "targets": [
+          "b"
+        ]
+      },
+      "expected": "b"
+    },
+    {
+      "args": {
+        "s": "aaa",
+        "indices": [
+          0,
+          1,
+          2
+        ],
+        "sources": [
+          "a",
+          "a",
+          "a"
+        ],
+        "targets": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "expected": "xyz"
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "indices": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25
+        ],
+        "sources": [
+          "a",
+          "f",
+          "k",
+          "p",
+          "u",
+          "z"
+        ],
+        "targets": [
+          "alpha",
+          "foxtrot",
+          "kilo",
+          "papa",
+          "uniform",
+          "zulu"
+        ]
+      },
+      "expected": "alphabcdefoxtrotghijkilolmnopapaqrstuniformvwxyzulu"
+    }
+  ]
 }

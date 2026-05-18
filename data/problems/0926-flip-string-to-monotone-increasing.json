@@ -25,5 +25,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def minFlipsMonoIncr(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "0110"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "010110"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "0"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "1111111111"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101"
+      },
+      "expected": 49
+    }
+  ]
 }

@@ -31,5 +31,75 @@
     "If we have <code>m</code> segments, we can arbitrarily group the neighboring segments. How many ways are there to group these <code>m</code> segments?"
   ],
   "starter_code": "class Solution:\n    def numberOfGoodPartitions(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 16
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected": 1
+    }
+  ]
 }

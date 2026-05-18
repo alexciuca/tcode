@@ -26,5 +26,106 @@
     "The final answer is the sum of <code>dp[i]</code> over all  indices <code>i</code> from <code>0</code> to <code>n - 1</code>."
   ],
   "starter_code": "class Solution:\n    def countAlternatingSubarrays(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          0
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected": 21
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected": 1091
+    }
+  ]
 }

@@ -34,5 +34,74 @@
     "<code>dp[i][j] = 0</code> if for some <code>x</code>, <code>requirements[x][0] == i</code> and <code>requirements[x][1] != j</code>."
   ],
   "starter_code": "class Solution:\n    def numberOfPermutations(self, n: int, requirements: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 3,
+        "requirements": [
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 4,
+        "requirements": [
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 2,
+        "requirements": [
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 5,
+        "requirements": [
+          [
+            1,
+            0
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 6,
+        "requirements": [
+          [
+            2,
+            1
+          ],
+          [
+            5,
+            4
+          ]
+        ]
+      },
+      "expected": 2
+    }
+  ]
 }

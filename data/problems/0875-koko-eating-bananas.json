@@ -26,5 +26,66 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def minEatingSpeed(self, piles: List[int], h: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "piles": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "h": 4
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "piles": [
+          312884132
+        ],
+        "h": 968709470
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "piles": [
+          1,
+          10,
+          3,
+          2
+        ],
+        "h": 8
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "piles": [
+          1000000000
+        ],
+        "h": 2
+      },
+      "expected": 500000000
+    },
+    {
+      "args": {
+        "piles": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "h": 10
+      },
+      "expected": 1
+    }
+  ]
 }

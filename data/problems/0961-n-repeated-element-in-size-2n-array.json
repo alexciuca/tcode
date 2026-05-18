@@ -27,5 +27,45 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def repeatedNTimes(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": [
+          1,
+          2,
+          3,
+          3
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "a": [
+          2,
+          1,
+          2,
+          5,
+          3,
+          2
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "a": [
+          5,
+          1,
+          5,
+          2,
+          5,
+          3,
+          5,
+          4
+        ]
+      },
+      "expected": 5
+    }
+  ]
 }

@@ -36,5 +36,238 @@
     "Note that words.length is small. This means you can iterate over every subset of words (2^N)."
   ],
   "starter_code": "class Solution:\n    def maxScoreWords(self, words: List[str], letters: List[str], score: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "dog",
+          "cat",
+          "dad",
+          "good"
+        ],
+        "letters": [
+          "a",
+          "a",
+          "b",
+          "c",
+          "d",
+          "d",
+          "d",
+          "g",
+          "o",
+          "o"
+        ],
+        "score": [
+          3,
+          2,
+          1,
+          4,
+          5,
+          4,
+          3,
+          2,
+          5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 20
+    },
+    {
+      "args": {
+        "words": [
+          "abc",
+          "def"
+        ],
+        "letters": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "score": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "words": [
+          "xxxz",
+          "abc",
+          "xyz"
+        ],
+        "letters": [
+          "x",
+          "x",
+          "x",
+          "z"
+        ],
+        "score": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          10
+        ]
+      },
+      "expected": 13
+    },
+    {
+      "args": {
+        "words": [
+          "a"
+        ],
+        "letters": [
+          "b",
+          "c",
+          "d"
+        ],
+        "score": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "words": [
+          "ab",
+          "ba",
+          "aaab",
+          "abab",
+          "baa"
+        ],
+        "letters": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "b",
+          "b",
+          "b",
+          "b"
+        ],
+        "score": [
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 23
+    }
+  ]
 }

@@ -32,5 +32,36 @@
     "* If the expression starts with a digit or '-', it's an integer: return it.\r\n\r\n* If the expression starts with a letter, it's a variable.  Recall it by checking the current scope in reverse order.\r\n\r\n* Otherwise, group the tokens (variables or expressions) within this expression by counting the \"balance\" `bal` of the occurrences of `'('` minus the number of occurrences of `')'`.  When the balance is zero, we have ended a token.  For example, `(add 1 (add 2 3))` should have tokens `'1'` and `'(add 2 3)'`.\r\n\r\n* For add and mult expressions, evaluate each token and return the addition or multiplication of them.\r\n\r\n* For let expressions, evaluate each expression sequentially and assign it to the variable in the current scope, then return the evaluation of the final expression."
   ],
   "starter_code": "class Solution:\n    def evaluate(self, expression: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "expression": "(+ 1 2)"
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "expression": "(* 3 (+ 2 3))"
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "expression": "(let x 2 (+ x 1))"
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "expression": "(let x 1 (let y 2 (+ x y)))"
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "expression": "(let a -5 (let b 10 (+ a (let c 3 (* b c)))))"
+      },
+      "expected": null
+    }
+  ]
 }

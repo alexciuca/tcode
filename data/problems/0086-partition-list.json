@@ -23,5 +23,100 @@
   ],
   "hints": [],
   "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "head": [
+          1,
+          4,
+          3,
+          2,
+          5,
+          2
+        ],
+        "x": 3
+      },
+      "expected": [
+        1,
+        2,
+        2,
+        4,
+        3,
+        5
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          4,
+          2,
+          5,
+          2,
+          3
+        ],
+        "x": 3
+      },
+      "expected": [
+        1,
+        2,
+        2,
+        4,
+        5,
+        3
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          3,
+          1,
+          4,
+          2,
+          5,
+          2
+        ],
+        "x": 3
+      },
+      "expected": [
+        1,
+        2,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "args": {
+        "head": [
+          1
+        ],
+        "x": 3
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "head": [],
+        "x": 3
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "head": [
+          2,
+          1
+        ],
+        "x": 2
+      },
+      "expected": [
+        1,
+        2
+      ]
+    }
+  ]
 }

@@ -29,5 +29,92 @@
     "We can figure out what target each subset must sum to.  Then, let's recursively search, where at each call to our function, we choose which of k subsets the next value will join."
   ],
   "starter_code": "class Solution:\n    def canPartitionKSubsets(self, nums: List[int], k: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          5,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1
+        ],
+        "k": 4
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          10,
+          10,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          6,
+          6,
+          6
+        ],
+        "k": 3
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 1
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          15,
+          15,
+          15
+        ],
+        "k": 3
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "nums": [
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "k": 4
+      },
+      "expected": true
+    }
+  ]
 }

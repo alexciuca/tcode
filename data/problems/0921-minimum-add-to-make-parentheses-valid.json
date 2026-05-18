@@ -23,5 +23,30 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def minAddToMakeValid(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "S": "())"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "S": "((("
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "S": "()"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "S": "()))(("
+      },
+      "expected": 4
+    }
+  ]
 }

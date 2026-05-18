@@ -24,5 +24,34 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def search(self, nums: List[int], target: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          -1,
+          0,
+          3,
+          5,
+          9,
+          12
+        ],
+        "target": 9
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          -1,
+          0,
+          3,
+          5,
+          9,
+          12
+        ],
+        "target": 2
+      },
+      "expected": -1
+    }
+  ]
 }

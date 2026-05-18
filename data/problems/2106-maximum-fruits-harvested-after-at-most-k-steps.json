@@ -37,5 +37,115 @@
     "Use a similar strategy for all the paths that go right, then turn and go left."
   ],
   "starter_code": "class Solution:\n    def maxTotalFruits(self, fruits: List[List[int]], startPos: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "fruits": [
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "startPos": 5,
+        "k": 5
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "fruits": [
+          [
+            1,
+            10
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            15,
+            3
+          ]
+        ],
+        "startPos": 0,
+        "k": 20
+      },
+      "expected": 18
+    },
+    {
+      "args": {
+        "fruits": [
+          [
+            0,
+            1
+          ]
+        ],
+        "startPos": 0,
+        "k": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "fruits": [
+          [
+            0,
+            100
+          ],
+          [
+            100,
+            50
+          ],
+          [
+            200,
+            10
+          ]
+        ],
+        "startPos": 150,
+        "k": 75
+      },
+      "expected": 50
+    },
+    {
+      "args": {
+        "fruits": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            100000,
+            1
+          ]
+        ],
+        "startPos": 0,
+        "k": 200000
+      },
+      "expected": 6
+    }
+  ]
 }

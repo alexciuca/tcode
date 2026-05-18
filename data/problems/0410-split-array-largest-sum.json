@@ -26,5 +26,19 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def splitArray(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          7,
+          2,
+          5,
+          10,
+          8
+        ],
+        "m": 2
+      },
+      "expected": 18
+    }
+  ]
 }

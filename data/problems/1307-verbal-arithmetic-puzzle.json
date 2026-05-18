@@ -32,5 +32,59 @@
     "If you set the values of some digits (from right to left), the other digits will be constrained."
   ],
   "starter_code": "class Solution:\n    def isSolvable(self, words: List[str], result: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "SEND",
+          "MORE"
+        ],
+        "result": "MONEY"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "words": [
+          "A",
+          "B"
+        ],
+        "result": "C"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "words": [
+          "ZERO",
+          "ZERO",
+          "ZERO",
+          "ZERO"
+        ],
+        "result": "ZERO"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "words": [
+          "A",
+          "AA"
+        ],
+        "result": "AAA"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "words": [
+          "THIS",
+          "IS",
+          "FUN"
+        ],
+        "result": "FUNNY"
+      },
+      "expected": false
+    }
+  ]
 }

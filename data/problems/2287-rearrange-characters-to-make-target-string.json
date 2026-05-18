@@ -31,5 +31,41 @@
     "We can make floor(x / y) copies of the letter."
   ],
   "starter_code": "class Solution:\n    def rearrangeCharacters(self, s: str, target: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "target": "abc"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aabbccccccde",
+        "target": "abc"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "a",
+        "target": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "zzz",
+        "target": "abcdefghij"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "aaabbbccccccddddddddeeeeeeeeeeeeeeeeeefffffffffffffffffffggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
+        "target": "abcdefghi"
+      },
+      "expected": 3
+    }
+  ]
 }

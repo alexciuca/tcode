@@ -28,5 +28,61 @@
     "The remaining indices from <code>1</code> to <code>n - 1</code> can then be arranged arbitrarily, yielding <code>factorial(n - 1)</code> possible orders."
   ],
   "starter_code": "class Solution:\n    def countPermutations(self, complexity: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "complexity": [
+          5,
+          15,
+          10
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "complexity": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "complexity": [
+          1000000000,
+          1000000000
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "complexity": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 24
+    },
+    {
+      "args": {
+        "complexity": [
+          999999999,
+          1,
+          500000000,
+          250000000,
+          750000000,
+          100
+        ]
+      },
+      "expected": 120
+    }
+  ]
 }

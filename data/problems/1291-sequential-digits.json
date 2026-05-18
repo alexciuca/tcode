@@ -23,5 +23,92 @@
     "Fix the starting digit then do a recursion that tries to append all valid digits."
   ],
   "starter_code": "class Solution:\n    def sequentialDigits(self, low: int, high: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "low": 10,
+        "high": 100
+      },
+      "expected": [
+        12,
+        23,
+        34,
+        45,
+        56,
+        67,
+        78,
+        89
+      ]
+    },
+    {
+      "args": {
+        "low": 100,
+        "high": 300
+      },
+      "expected": [
+        123,
+        234
+      ]
+    },
+    {
+      "args": {
+        "low": 1000000000,
+        "high": 1000000000
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "low": 10,
+        "high": 1000000000
+      },
+      "expected": [
+        12,
+        23,
+        34,
+        45,
+        56,
+        67,
+        78,
+        89,
+        123,
+        234,
+        345,
+        456,
+        567,
+        678,
+        789,
+        1234,
+        2345,
+        3456,
+        4567,
+        5678,
+        6789,
+        12345,
+        23456,
+        34567,
+        45678,
+        56789,
+        123456,
+        234567,
+        345678,
+        456789,
+        1234567,
+        2345678,
+        3456789,
+        12345678,
+        23456789,
+        123456789
+      ]
+    },
+    {
+      "args": {
+        "low": 123456789,
+        "high": 987654321
+      },
+      "expected": [
+        123456789
+      ]
+    }
+  ]
 }

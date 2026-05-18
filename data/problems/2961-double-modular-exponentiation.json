@@ -25,5 +25,152 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def getGoodIndices(self, variables: List[List[int]], target: int) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "variables": [
+          [
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            3,
+            2,
+            2,
+            3
+          ]
+        ],
+        "target": 2
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "variables": [
+          [
+            1,
+            1,
+            1,
+            1000
+          ]
+        ],
+        "target": 1
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "args": {
+        "variables": [
+          [
+            2,
+            10,
+            100,
+            1000
+          ],
+          [
+            3,
+            0,
+            5,
+            7
+          ],
+          [
+            5,
+            5,
+            5,
+            5
+          ]
+        ],
+        "target": 0
+      },
+      "expected": [
+        2
+      ]
+    },
+    {
+      "args": {
+        "variables": [
+          [
+            1000,
+            1000,
+            1000,
+            1000
+          ],
+          [
+            999,
+            999,
+            999,
+            999
+          ],
+          [
+            100,
+            200,
+            300,
+            400
+          ],
+          [
+            50,
+            75,
+            125,
+            1000
+          ]
+        ],
+        "target": 1
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "variables": [
+          [
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            4,
+            4,
+            4,
+            4
+          ],
+          [
+            5,
+            5,
+            5,
+            5
+          ],
+          [
+            10,
+            10,
+            10,
+            10
+          ],
+          [
+            7,
+            8,
+            9,
+            11
+          ]
+        ],
+        "target": 3
+      },
+      "expected": []
+    }
+  ]
 }

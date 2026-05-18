@@ -33,5 +33,71 @@
     "More specifically, use the two pointer technique, moving the right pointer as far as possible to the right until the subarray is not valid (maxValue - minValue > limit), then moving the left pointer until the subarray is valid again (maxValue - minValue <= limit). Keep repeating this process."
   ],
   "starter_code": "class Solution:\n    def longestSubarray(self, nums: List[int], limit: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          8,
+          2,
+          4,
+          7
+        ],
+        "limit": 4
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          1,
+          2,
+          4,
+          7,
+          2
+        ],
+        "limit": 5
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "limit": 0
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000
+        ],
+        "limit": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          5,
+          9,
+          13,
+          17,
+          21,
+          25,
+          29,
+          33,
+          37
+        ],
+        "limit": 8
+      },
+      "expected": 3
+    }
+  ]
 }

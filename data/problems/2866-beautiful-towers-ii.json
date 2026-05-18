@@ -32,5 +32,72 @@
     "For each <code>i</code> from <code>n - 1</code> to <code>0</code>, <code>right[i] = maxHeights * (j - i) + answer[j]</code>, where <code>j</code> is the leftmost index to the right of <code>i</code> such that <code>maxHeights[j] < maxHeights[i] </code>."
   ],
   "starter_code": "class Solution:\n    def maximumSumOfHeights(self, maxHeights: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "maxHeights": [
+          5,
+          3,
+          4,
+          1,
+          1
+        ]
+      },
+      "expected": 13
+    },
+    {
+      "args": {
+        "maxHeights": [
+          6,
+          5,
+          3,
+          9,
+          2,
+          7
+        ]
+      },
+      "expected": 22
+    },
+    {
+      "args": {
+        "maxHeights": [
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "maxHeights": [
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000
+        ]
+      },
+      "expected": 5000000000
+    },
+    {
+      "args": {
+        "maxHeights": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          4,
+          3,
+          2,
+          1,
+          2,
+          3,
+          4,
+          5,
+          100000
+        ]
+      },
+      "expected": 100023
+    }
+  ]
 }

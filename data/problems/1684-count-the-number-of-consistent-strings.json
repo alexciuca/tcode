@@ -34,5 +34,71 @@
     "Constraints are small enough for brute force"
   ],
   "starter_code": "class Solution:\n    def countConsistentStrings(self, allowed: str, words: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "allowed": "ab",
+        "words": [
+          "ad",
+          "bd",
+          "aaab",
+          "baa",
+          "badab"
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "allowed": "abc",
+        "words": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "allowed": "cad",
+        "words": [
+          "cc",
+          "aac",
+          "b",
+          "ba",
+          "bac",
+          "cab",
+          "dad"
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "allowed": "z",
+        "words": [
+          "z",
+          "zz",
+          "zzz"
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "allowed": "abcdefghijklmnopqrstuvwxyz",
+        "words": [
+          "abcdefghijklmnopqrstuvwxyz",
+          "abc",
+          "def",
+          "ghi",
+          "jklmnopqrstuvwxyz",
+          "aabbccdd",
+          "zzzzzzzzzzz"
+        ]
+      },
+      "expected": 7
+    }
+  ]
 }

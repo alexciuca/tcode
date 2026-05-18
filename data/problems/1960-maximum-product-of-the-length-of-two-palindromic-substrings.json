@@ -27,5 +27,36 @@
     "After that, find the maximum palindrome size for each prefix in the string and for each suffix and the answer would be max(prefix[i] * suffix[i + 1])"
   ],
   "starter_code": "class Solution:\n    def maxProduct(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abccccdd"
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "s": "ac"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aaaaaa"
+      },
+      "expected": 25
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "abacabadabacabaeabacabadabacabafabacabadabacabaeabacabadabacaba"
+      },
+      "expected": 1953
+    }
+  ]
 }

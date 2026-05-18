@@ -32,5 +32,77 @@
     "Using a map data structure, for each <code>i = 0, 1, 2, ..., n</code>, we just sum up all <code>map[(count[i] + modulo - k) % modulo]</code> before increasing <code>map[count[i] % modulo]</code>, and the total sum is the final answer."
   ],
   "starter_code": "class Solution:\n    def countInterestingSubarrays(self, nums: List[int], modulo: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          3,
+          2,
+          4,
+          5
+        ],
+        "modulo": 5,
+        "k": 2
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "modulo": 2,
+        "k": 1
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000
+        ],
+        "modulo": 1000000000,
+        "k": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "modulo": 3,
+        "k": 0
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums": [
+          7,
+          14,
+          21,
+          28,
+          35,
+          42,
+          49,
+          56,
+          63,
+          72
+        ],
+        "modulo": 7,
+        "k": 3
+      },
+      "expected": 55
+    }
+  ]
 }

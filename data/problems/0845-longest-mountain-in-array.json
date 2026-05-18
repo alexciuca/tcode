@@ -24,5 +24,75 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def longestMountain(self, arr: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          2,
+          1,
+          4,
+          7,
+          3,
+          2,
+          5
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "arr": [
+          875,
+          884,
+          239,
+          731,
+          723,
+          369
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "arr": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "arr": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          0
+        ]
+      },
+      "expected": 5
+    }
+  ]
 }

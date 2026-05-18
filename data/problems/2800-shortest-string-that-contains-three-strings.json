@@ -26,5 +26,46 @@
     "Check all permutations of the words a, b, and c. For each permutation, begin by appending some letters to the end of the first word to form the second word. Then, proceed to add more letters to generate the third word."
   ],
   "starter_code": "class Solution:\n    def minimumString(self, a: str, b: str, c: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": "abc",
+        "b": "bca",
+        "c": "cab"
+      },
+      "expected": "abcab"
+    },
+    {
+      "args": {
+        "a": "ab",
+        "b": "ba",
+        "c": "aaab"
+      },
+      "expected": "aaaba"
+    },
+    {
+      "args": {
+        "a": "a",
+        "b": "a",
+        "c": "a"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "a": "abcdefghij",
+        "b": "xyz",
+        "c": "pqr"
+      },
+      "expected": "abcdefghijpqrxyz"
+    },
+    {
+      "args": {
+        "a": "aaaa",
+        "b": "aaaa",
+        "c": "aaaa"
+      },
+      "expected": "aaaa"
+    }
+  ]
 }

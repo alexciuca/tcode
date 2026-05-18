@@ -29,5 +29,46 @@
     "Use partial sums to mark the intervals as reachable."
   ],
   "starter_code": "class Solution:\n    def canReach(self, s: str, minJump: int, maxJump: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "011010",
+        "minJump": 2,
+        "maxJump": 3
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "0101",
+        "minJump": 1,
+        "maxJump": 2
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "00111010",
+        "minJump": 3,
+        "maxJump": 4
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "0000000",
+        "minJump": 1,
+        "maxJump": 5
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "01111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+        "minJump": 1,
+        "maxJump": 50
+      },
+      "expected": false
+    }
+  ]
 }

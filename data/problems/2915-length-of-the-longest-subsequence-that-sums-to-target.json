@@ -31,5 +31,69 @@
     "<code>dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - nums[i -1])</code> for all <code>n ≥ i > 0</code> and <code>target ≥ j > nums[i - 1]</code>."
   ],
   "starter_code": "class Solution:\n    def lengthOfLongestSubsequence(self, nums: List[int], target: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "target": 9
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "target": 15
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ],
+        "target": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3
+        ],
+        "target": 100
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "target": 1000
+      },
+      "expected": -1
+    }
+  ]
 }

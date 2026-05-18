@@ -29,5 +29,72 @@
     "Represent the state as DP[pos][mod]: maximum possible sum starting in the position \"pos\" in the array where the current sum modulo 3 is equal to mod."
   ],
   "starter_code": "class Solution:\n    def maxSumDivThree(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          3,
+          6,
+          5,
+          1,
+          8
+        ]
+      },
+      "expected": 18
+    },
+    {
+      "args": {
+        "nums": [
+          4,
+          5,
+          0,
+          7
+        ]
+      },
+      "expected": 12
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "expected": 21
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          10000,
+          10000,
+          10000,
+          10000,
+          9999,
+          9999,
+          9999,
+          9999,
+          9999,
+          9999,
+          9999,
+          9999
+        ]
+      },
+      "expected": 109992
+    }
+  ]
 }

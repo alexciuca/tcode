@@ -27,5 +27,36 @@
     "Keep only the last occurence of each of the most frequent characters."
   ],
   "starter_code": "class Solution:\n    def lastNonEmptyString(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aabcbbca"
+      },
+      "expected": "cc"
+    },
+    {
+      "args": {
+        "s": "abcd"
+      },
+      "expected": "d"
+    },
+    {
+      "args": {
+        "s": "aaaa"
+      },
+      "expected": "aaaa"
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": "zz"
+    }
+  ]
 }

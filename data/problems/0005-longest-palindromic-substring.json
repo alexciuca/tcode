@@ -27,5 +27,30 @@
     "Complexity based hint:</br>\r\nIf we use brute-force and check whether for every start and end position a substring is a palindrome we have O(n^2) start - end pairs and O(n) palindromic checks. Can we reduce the time for palindromic checks to O(1) by reusing some previous computation."
   ],
   "starter_code": "class Solution:\n    def longestPalindrome(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "babad"
+      },
+      "expected": "bab"
+    },
+    {
+      "args": {
+        "s": "cbbd"
+      },
+      "expected": "bb"
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "ac"
+      },
+      "expected": "a"
+    }
+  ]
 }

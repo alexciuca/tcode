@@ -30,5 +30,81 @@
     "Be sure not to return empty strings."
   ],
   "starter_code": "class Solution:\n    def splitWordsBySeparator(self, words: List[str], separator: str) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "hello,world",
+          "how|are",
+          "you"
+        ],
+        "separator": ","
+      },
+      "expected": [
+        "hello",
+        "world",
+        "how|are",
+        "you"
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "$easy$",
+          "#code#",
+          "@problem"
+        ],
+        "separator": "$"
+      },
+      "expected": [
+        "easy",
+        "#code#",
+        "@problem"
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "a"
+        ],
+        "separator": "."
+      },
+      "expected": [
+        "a"
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "|||",
+          "..."
+        ],
+        "separator": "|"
+      },
+      "expected": [
+        "..."
+      ]
+    },
+    {
+      "args": {
+        "words": [
+          "a.b|c$d#e@f",
+          "test,word",
+          "x|y|z",
+          "m.n.o",
+          "p#q@r$s"
+        ],
+        "separator": "#"
+      },
+      "expected": [
+        "a.b|c$d",
+        "e@f",
+        "test,word",
+        "x|y|z",
+        "m.n.o",
+        "p",
+        "q@r$s"
+      ]
+    }
+  ]
 }

@@ -30,5 +30,133 @@
     "After those observations, the problem just becomes a simulation. Create multiset of points <code>[x<sub>i</sub> - y<sub>i</sub>, x<sub>i</sub> + y<sub>i</sub>]</code>, you can iterate on a point you might remove and get the maximum Manhattan distance over all other points."
   ],
   "starter_code": "class Solution:\n    def minimumDistance(self, points: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "points": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "points": [
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "points": [
+          [
+            1,
+            1
+          ],
+          [
+            100000000,
+            100000000
+          ],
+          [
+            50000000,
+            50000000
+          ]
+        ]
+      },
+      "expected": 99999998
+    },
+    {
+      "args": {
+        "points": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "points": [
+          [
+            1,
+            1
+          ],
+          [
+            100000000,
+            100000000
+          ],
+          [
+            1,
+            100000000
+          ],
+          [
+            100000000,
+            1
+          ],
+          [
+            50000000,
+            50000000
+          ],
+          [
+            25000000,
+            75000000
+          ],
+          [
+            75000000,
+            25000000
+          ],
+          [
+            33333333,
+            66666667
+          ],
+          [
+            66666667,
+            33333333
+          ]
+        ]
+      },
+      "expected": 199999998
+    }
+  ]
 }

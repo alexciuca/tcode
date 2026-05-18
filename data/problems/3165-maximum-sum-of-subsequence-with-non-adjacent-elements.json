@@ -31,5 +31,126 @@
     "In order to optimize, we will use segment tree where each node contains the maximum value of (front element has been chosen or not, back element has been chosen or not)."
   ],
   "starter_code": "class Solution:\n    def maximumSumSubsequence(self, nums: List[int], queries: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          8,
+          7,
+          5,
+          10
+        ],
+        "queries": [
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      "expected": 45
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          1,
+          3,
+          2
+        ],
+        "queries": [
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      "expected": 23
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          20,
+          -1
+        ],
+        "queries": [
+          [
+            0,
+            10
+          ],
+          [
+            1,
+            20
+          ]
+        ]
+      },
+      "expected": 40
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "queries": [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          50000,
+          -100000,
+          100000,
+          100000,
+          100000,
+          -50000,
+          25000
+        ],
+        "queries": [
+          [
+            0,
+            50000
+          ],
+          [
+            3,
+            100000
+          ],
+          [
+            5,
+            -50000
+          ],
+          [
+            6,
+            25000
+          ]
+        ]
+      },
+      "expected": 1250000
+    }
+  ]
 }

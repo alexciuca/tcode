@@ -24,5 +24,33 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def largestTriangleArea(self, points: List[List[int]]) -> float:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "expected": 2
+    }
+  ]
 }

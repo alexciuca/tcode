@@ -34,5 +34,127 @@
     "To check if there exists a good subset of rows of size 2, we iterate over two bit-masks, check if both are presented in the array and if they form a good subset, if they do, return their indices as a good subset."
   ],
   "starter_code": "class Solution:\n    def goodSubsetofBinaryMatrix(self, grid: List[List[int]]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        0,
+        1
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ]
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "grid": [
+          [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      "expected": [
+        2
+      ]
+    }
+  ]
 }

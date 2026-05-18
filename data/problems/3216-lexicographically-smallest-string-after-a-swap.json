@@ -24,5 +24,36 @@
     "Try all possible swaps satisfying the constraints and find the one that results in the lexicographically smallest string."
   ],
   "starter_code": "class Solution:\n    def getSmallestString(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "65"
+      },
+      "expected": "65"
+    },
+    {
+      "args": {
+        "s": "321"
+      },
+      "expected": "321"
+    },
+    {
+      "args": {
+        "s": "1234"
+      },
+      "expected": "1234"
+    },
+    {
+      "args": {
+        "s": "99"
+      },
+      "expected": "99"
+    },
+    {
+      "args": {
+        "s": "8675309"
+      },
+      "expected": "6875309"
+    }
+  ]
 }

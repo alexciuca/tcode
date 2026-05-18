@@ -28,5 +28,36 @@
     "Try to remove each integer's leading zeroes and compare the strings to find how many of them are unique."
   ],
   "starter_code": "class Solution:\n    def numDifferentIntegers(self, word: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "abc123def456ghi789"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "word": "a1b01c001"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "0"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "000123abc000"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "word": "a1a1a1b2b2b2c3c3c3d4d4d4e5e5e5f6f6f6g7g7g7h8h8h8i9i9i9j0j0j0"
+      },
+      "expected": 10
+    }
+  ]
 }

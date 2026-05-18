@@ -35,5 +35,146 @@
     "A person’s name should be in the answer list if there are <code>2</code> access times in his/her access time list (after sorting), where the index difference is at least <code>2</code> and the time difference is strictly less than <code>60</code> minutes."
   ],
   "starter_code": "class Solution:\n    def findHighAccessEmployees(self, access_times: List[List[str]]) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "access_times": [
+          [
+            "alice",
+            "0316"
+          ],
+          [
+            "bob",
+            "0315"
+          ],
+          [
+            "alice",
+            "0317"
+          ],
+          [
+            "alice",
+            "0318"
+          ]
+        ]
+      },
+      "expected": [
+        "alice"
+      ]
+    },
+    {
+      "args": {
+        "access_times": [
+          [
+            "john",
+            "0800"
+          ],
+          [
+            "john",
+            "0900"
+          ],
+          [
+            "jane",
+            "0800"
+          ],
+          [
+            "jane",
+            "0801"
+          ],
+          [
+            "jane",
+            "0802"
+          ]
+        ]
+      },
+      "expected": [
+        "jane"
+      ]
+    },
+    {
+      "args": {
+        "access_times": [
+          [
+            "a",
+            "0000"
+          ],
+          [
+            "a",
+            "0001"
+          ],
+          [
+            "a",
+            "0002"
+          ]
+        ]
+      },
+      "expected": [
+        "a"
+      ]
+    },
+    {
+      "args": {
+        "access_times": [
+          [
+            "employee",
+            "2358"
+          ],
+          [
+            "employee",
+            "2359"
+          ],
+          [
+            "employee",
+            "0000"
+          ],
+          [
+            "employee",
+            "0001"
+          ]
+        ]
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "access_times": [
+          [
+            "x",
+            "1200"
+          ],
+          [
+            "y",
+            "1201"
+          ],
+          [
+            "z",
+            "1202"
+          ],
+          [
+            "x",
+            "1203"
+          ],
+          [
+            "x",
+            "1204"
+          ],
+          [
+            "y",
+            "1205"
+          ],
+          [
+            "y",
+            "1206"
+          ],
+          [
+            "z",
+            "1207"
+          ]
+        ]
+      },
+      "expected": [
+        "x",
+        "y"
+      ]
+    }
+  ]
 }

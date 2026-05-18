@@ -22,5 +22,36 @@
     "Use a while loop and divide <code>x</code> by <code>10</code> to find the sum of the digits of <code>x</code>."
   ],
   "starter_code": "class Solution:\n    def sumOfTheDigitsOfHarshadNumber(self, x: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "x": 18
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "x": 19
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "x": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "x": 100
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "x": 12
+      },
+      "expected": 3
+    }
+  ]
 }

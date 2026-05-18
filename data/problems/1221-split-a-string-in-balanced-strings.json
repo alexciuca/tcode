@@ -30,5 +30,36 @@
     "Whenever the balance variable reaches zero then we increase the answer by one."
   ],
   "starter_code": "class Solution:\n    def balancedStringSplit(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "RLRRLLLLRL"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "RLLLLRRRLR"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "LR"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "RRLL"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "RLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRL"
+      },
+      "expected": 261
+    }
+  ]
 }

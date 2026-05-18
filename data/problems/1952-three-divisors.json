@@ -25,5 +25,36 @@
     "Beware of the case of n equal 1 as some solutions might fail in it"
   ],
   "starter_code": "class Solution:\n    def isThree(self, n: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 9
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 4
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 1
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "n": 25
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 10000
+      },
+      "expected": false
+    }
+  ]
 }

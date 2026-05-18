@@ -28,5 +28,36 @@
     "For every substring of length <code>2</code> in <code>s</code>, check if there is a corresponding substring in the reverse of <code>s</code>."
   ],
   "starter_code": "class Solution:\n    def isSubstringPresent(self, s: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abcd"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "aa"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "aba"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "abcddcba"
+      },
+      "expected": true
+    }
+  ]
 }

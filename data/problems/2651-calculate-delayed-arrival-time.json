@@ -24,5 +24,41 @@
     "If the arrival time plus the delayed time is greater than or equal to 24, you can also subtract 24 to get the time in the 24-hour format."
   ],
   "starter_code": "class Solution:\n    def findDelayedArrivalTime(self, arrivalTime: int, delayedTime: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arrivalTime": 15,
+        "delayedTime": 5
+      },
+      "expected": 20
+    },
+    {
+      "args": {
+        "arrivalTime": 23,
+        "delayedTime": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "arrivalTime": 5,
+        "delayedTime": 10
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "arrivalTime": 1,
+        "delayedTime": 24
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "arrivalTime": 20,
+        "delayedTime": 12
+      },
+      "expected": 8
+    }
+  ]
 }

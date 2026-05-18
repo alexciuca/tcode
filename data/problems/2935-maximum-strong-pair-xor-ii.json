@@ -33,5 +33,66 @@
     "Alternatively, use Trie data structure to find the pair with maximum <code>XOR</code>."
   ],
   "starter_code": "class Solution:\n    def maximumStrongPairXor(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          100,
+          1000
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1048575,
+          1048576
+        ]
+      },
+      "expected": 2097151
+    },
+    {
+      "args": {
+        "nums": [
+          1024,
+          2048,
+          4096,
+          8192,
+          16384,
+          32768,
+          65536,
+          131072,
+          262144,
+          524288
+        ]
+      },
+      "expected": 786432
+    }
+  ]
 }

@@ -32,5 +32,108 @@
     "For each row, sort the cumulative ones in non-increasing order and \"fit\" the largest submatrix."
   ],
   "starter_code": "class Solution:\n    def largestSubmatrix(self, matrix: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "matrix": [
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "matrix": [
+          [
+            1
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "matrix": [
+          [
+            0
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "matrix": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "expected": 15
+    }
+  ]
 }

@@ -30,5 +30,41 @@
     "Find a way to reverse a substring of word."
   ],
   "starter_code": "class Solution:\n    def reversePrefix(self, word: str, ch: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "abcdefd",
+        "ch": "d"
+      },
+      "expected": "dcbaefd"
+    },
+    {
+      "args": {
+        "word": "xyxzxe",
+        "ch": "z"
+      },
+      "expected": "zxyxxe"
+    },
+    {
+      "args": {
+        "word": "abcdefg",
+        "ch": "z"
+      },
+      "expected": "abcdefg"
+    },
+    {
+      "args": {
+        "word": "a",
+        "ch": "a"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "word": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "ch": "z"
+      },
+      "expected": "zyxwvutsrqponmlkjihgfedcbaabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+    }
+  ]
 }

@@ -30,5 +30,139 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def validPath(self, n: int, edges: List[List[int]], source: int, destination: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 3,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "source": 0,
+        "destination": 2
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 6,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "source": 0,
+        "destination": 5
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "n": 2,
+        "edges": [],
+        "source": 0,
+        "destination": 1
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "n": 10,
+        "edges": [
+          [
+            4,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            9,
+            5
+          ]
+        ],
+        "source": 5,
+        "destination": 9
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "n": 200000,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "source": 0,
+        "destination": 6
+      },
+      "expected": true
+    }
+  ]
 }

@@ -25,5 +25,67 @@
     "For each string in words, check if it is a prefix of s. If true, increment the answer by 1."
   ],
   "starter_code": "class Solution:\n    def countPrefixes(self, words: List[str], s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "a",
+          "b",
+          "c"
+        ],
+        "s": "aab"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words": [
+          "ab",
+          "ba",
+          "aaab",
+          "abab",
+          "baa"
+        ],
+        "s": "aabaa"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "words": [
+          "a"
+        ],
+        "s": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "words": [
+          "xyz",
+          "abc",
+          "def"
+        ],
+        "s": "ab"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "words": [
+          "a",
+          "aa",
+          "aaa",
+          "aaaa",
+          "aaaaa",
+          "aaaaaa",
+          "aaaaaaa",
+          "aaaaaaaa",
+          "aaaaaaaaa"
+        ],
+        "s": "aaaaaaaaa"
+      },
+      "expected": 9
+    }
+  ]
 }

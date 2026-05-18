@@ -30,5 +30,73 @@
     "After appending a letter, all letters of a string can be rearranged in any possible way. How can we use this to reduce our search space while checking if a string in targetWords can be obtained from a string in startWords?"
   ],
   "starter_code": "class Solution:\n    def wordCount(self, startWords: List[str], targetWords: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "startWords": [
+          "ab",
+          "a"
+        ],
+        "targetWords": [
+          "abc",
+          "abcd",
+          "b"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "startWords": [
+          "cat"
+        ],
+        "targetWords": [
+          "cats",
+          "dog",
+          "cta"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "startWords": [
+          "a"
+        ],
+        "targetWords": [
+          "ab",
+          "ba",
+          "b"
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "startWords": [
+          "abc",
+          "def"
+        ],
+        "targetWords": [
+          "abcd",
+          "defg",
+          "xyz",
+          "abce"
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "startWords": [
+          "abcdefghijklmnopqrstuvwxyz"
+        ],
+        "targetWords": [
+          "abcdefghijklmnopqrstuvwxyza",
+          "bcdefghijklmnopqrstuvwxyza"
+        ]
+      },
+      "expected": 0
+    }
+  ]
 }

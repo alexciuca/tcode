@@ -30,5 +30,36 @@
     "The order does not matter."
   ],
   "starter_code": "class Solution:\n    def reverseParentheses(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "a(bc)de"
+      },
+      "expected": "acbde"
+    },
+    {
+      "args": {
+        "s": "ab(cd(ef)gh)ij"
+      },
+      "expected": "abhgefdcij"
+    },
+    {
+      "args": {
+        "s": "a(b(c(d)e)f)g"
+      },
+      "expected": "afcdebg"
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz(zyxwvutsrqponmlkjihgfedcba)"
+      },
+      "expected": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+    },
+    {
+      "args": {
+        "s": "(())"
+      },
+      "expected": ""
+    }
+  ]
 }

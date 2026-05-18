@@ -26,5 +26,36 @@
   ],
   "hints": [],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          -10,
+          -3,
+          0,
+          5,
+          9
+        ]
+      },
+      "expected": [
+        -10,
+        -3,
+        0,
+        5,
+        9
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          3
+        ]
+      },
+      "expected": [
+        1,
+        3
+      ]
+    }
+  ]
 }

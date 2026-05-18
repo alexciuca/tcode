@@ -29,5 +29,114 @@
     "Use a three-layer loop to check all possible patterns by iterating through all possible starting positions, all indexes less than m, and if the character at the index is repeated k times."
   ],
   "starter_code": "class Solution:\n    def containsPattern(self, arr: List[int], m: int, k: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "m": 2,
+        "k": 3
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          1,
+          2,
+          3
+        ],
+        "m": 3,
+        "k": 2
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "m": 1,
+        "k": 2
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "m": 1,
+        "k": 5
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "m": 10,
+        "k": 2
+      },
+      "expected": false
+    }
+  ]
 }

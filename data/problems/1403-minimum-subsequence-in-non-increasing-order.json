@@ -25,5 +25,114 @@
     "Sort elements and take each element from the largest until accomplish the conditions."
   ],
   "starter_code": "class Solution:\n    def minSubsequence(self, nums: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          10,
+          9,
+          8,
+          4,
+          3
+        ]
+      },
+      "expected": [
+        10,
+        9
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          87,
+          77,
+          72,
+          68,
+          66,
+          65,
+          63,
+          62,
+          60,
+          50
+        ]
+      },
+      "expected": [
+        87,
+        77,
+        72,
+        68,
+        66
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    }
+  ]
 }

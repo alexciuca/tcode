@@ -29,5 +29,46 @@
     "Then the problem is converted to finding Longest Increasing Subsequence in the second array, which can be done in O(n log n)."
   ],
   "starter_code": "class Solution:\n    def minOperations(self, target: List[int], arr: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "target": [
+          5,
+          1,
+          3
+        ],
+        "arr": [
+          9,
+          4,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "target": [
+          6,
+          4,
+          8,
+          1,
+          3,
+          2
+        ],
+        "arr": [
+          4,
+          7,
+          6,
+          2,
+          3,
+          8,
+          6,
+          1
+        ]
+      },
+      "expected": 3
+    }
+  ]
 }

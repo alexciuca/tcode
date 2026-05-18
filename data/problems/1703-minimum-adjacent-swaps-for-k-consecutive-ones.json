@@ -32,5 +32,82 @@
     "When you slide the window across, should you move the group to the right? Once you move the group to the right, it will never need to slide to the left again."
   ],
   "starter_code": "class Solution:\n    def minMoves(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "k": 2
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "k": 3
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 4
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "k": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "k": 5
+      },
+      "expected": 10
+    }
+  ]
 }

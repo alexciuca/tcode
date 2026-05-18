@@ -30,5 +30,41 @@
     "Try every k value from 0 upwards until word is no longer k-repeating."
   ],
   "starter_code": "class Solution:\n    def maxRepeating(self, sequence: str, word: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "sequence": "ababab",
+        "word": "ab"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "sequence": "ababcababab",
+        "word": "ab"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "sequence": "a",
+        "word": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "sequence": "abcdefghij",
+        "word": "xyz"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "sequence": "aaaaaaaaaa",
+        "word": "aa"
+      },
+      "expected": 5
+    }
+  ]
 }

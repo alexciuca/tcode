@@ -26,5 +26,63 @@
     "To calculate GCD, you can use a built-in function or the Euclidean Algorithm."
   ],
   "starter_code": "class Solution:\n    def subarrayGCD(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          9,
+          3,
+          6
+        ],
+        "k": 3
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          4,
+          2,
+          8
+        ],
+        "k": 2
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          10
+        ],
+        "k": 10
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          7,
+          14,
+          21,
+          28
+        ],
+        "k": 7
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "k": 1000000000
+      },
+      "expected": 0
+    }
+  ]
 }

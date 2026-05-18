@@ -33,5 +33,110 @@
     "The amount of money in the ith tax bracket is min(income, upperi) - prev."
   ],
   "starter_code": "class Solution:\n    def calculateTax(self, brackets: List[List[int]], income: int) -> float:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "brackets": [
+          [
+            3,
+            50
+          ],
+          [
+            7,
+            100
+          ],
+          [
+            9,
+            150
+          ]
+        ],
+        "income": 2
+      },
+      "expected": 1.0
+    },
+    {
+      "args": {
+        "brackets": [
+          [
+            3,
+            50
+          ],
+          [
+            7,
+            100
+          ],
+          [
+            9,
+            150
+          ]
+        ],
+        "income": 9
+      },
+      "expected": 8.5
+    },
+    {
+      "args": {
+        "brackets": [
+          [
+            2,
+            5
+          ]
+        ],
+        "income": 0
+      },
+      "expected": 0.0
+    },
+    {
+      "args": {
+        "brackets": [
+          [
+            1,
+            0
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            6,
+            20
+          ]
+        ],
+        "income": 4
+      },
+      "expected": 0.4
+    },
+    {
+      "args": {
+        "brackets": [
+          [
+            10,
+            10
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            50,
+            50
+          ],
+          [
+            100,
+            100
+          ]
+        ],
+        "income": 1000
+      },
+      "expected": 65.0
+    }
+  ]
 }

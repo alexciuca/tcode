@@ -27,5 +27,46 @@
     "You can use a stack to handle erasures"
   ],
   "starter_code": "class Solution:\n    def maximumGain(self, s: str, x: int, y: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aabbaaxybbaxyy",
+        "x": 5,
+        "y": 4
+      },
+      "expected": 14
+    },
+    {
+      "args": {
+        "s": "xy",
+        "x": 10,
+        "y": 10
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "a",
+        "x": 1,
+        "y": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "ababab",
+        "x": 1,
+        "y": 9999
+      },
+      "expected": 19999
+    },
+    {
+      "args": {
+        "s": "aabbccddxxyy",
+        "x": 9000,
+        "y": 8000
+      },
+      "expected": 18000
+    }
+  ]
 }

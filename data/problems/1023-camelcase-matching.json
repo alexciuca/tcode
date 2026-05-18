@@ -33,5 +33,93 @@
     "We have two scenarios: The first one is when `word[pos1] == pattern[pos2]`, then the transition will be just DP(pos1 + 1, pos2 + 1). The second scenario is when `word[pos1]` is lowercase then we can add this character to the pattern so that the transition is just DP(pos1 + 1, pos2)\r\nThe case base is `if (pos1 == n && pos2 == m) return true;` Where n and m are the sizes of the strings word and pattern respectively."
   ],
   "starter_code": "class Solution:\n    def camelMatch(self, queries: List[str], pattern: str) -> List[bool]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "queries": [
+          "FooBar",
+          "FooBarTest",
+          "FootBall",
+          "FrameBuffer",
+          "ForceFeedback"
+        ],
+        "pattern": "FoBa"
+      },
+      "expected": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          "abc",
+          "abcdefg",
+          "aec",
+          "abcd"
+        ],
+        "pattern": "aec"
+      },
+      "expected": [
+        false,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          "a",
+          "A",
+          "aa",
+          "Aa"
+        ],
+        "pattern": "a"
+      },
+      "expected": [
+        true,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          "ABC",
+          "CamelCase",
+          "camelCase",
+          "camelCaseIsGood"
+        ],
+        "pattern": "acase"
+      },
+      "expected": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "args": {
+        "queries": [
+          "abcdefghijklmnopqrstuvwxyz",
+          "AbCdEfGhIjKlMnOpQrStUvWxYz",
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+          "aAbBcCdDeEfFgGhHiIjJkKlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"
+        ],
+        "pattern": "aeiou"
+      },
+      "expected": [
+        true,
+        false,
+        false,
+        false
+      ]
+    }
+  ]
 }

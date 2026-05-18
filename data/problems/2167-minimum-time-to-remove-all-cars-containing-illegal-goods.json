@@ -26,5 +26,36 @@
     "Finally, we can compare the best way to split the operations amongst these two types by finding the minimum time across all onlyFirst[i] + withoutFirst[i + 1]."
   ],
   "starter_code": "class Solution:\n    def minimumTime(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "0010"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "1001"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "0110"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "1"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+      },
+      "expected": 201
+    }
+  ]
 }

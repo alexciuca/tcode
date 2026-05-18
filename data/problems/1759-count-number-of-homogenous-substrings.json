@@ -28,5 +28,36 @@
     "Split the string into substrings where each substring contains only one letter, and apply the formula on each substring's length."
   ],
   "starter_code": "class Solution:\n    def countHomogenous(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abbccccdd"
+      },
+      "expected": 17
+    },
+    {
+      "args": {
+        "s": "abc"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aaaaaaaaaa"
+      },
+      "expected": 55
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 130
+    }
+  ]
 }

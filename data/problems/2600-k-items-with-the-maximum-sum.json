@@ -26,5 +26,51 @@
     "If k > numOnes + numZeroes we are forced to take k - numOnes - numZeroes -1s."
   ],
   "starter_code": "class Solution:\n    def kItemsWithMaximumSum(self, numOnes: int, numZeros: int, numNegOnes: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "numOnes": 3,
+        "numZeros": 2,
+        "numNegOnes": 1,
+        "k": 4
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "numOnes": 5,
+        "numZeros": 0,
+        "numNegOnes": 0,
+        "k": 3
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "numOnes": 0,
+        "numZeros": 0,
+        "numNegOnes": 5,
+        "k": 2
+      },
+      "expected": -2
+    },
+    {
+      "args": {
+        "numOnes": 2,
+        "numZeros": 3,
+        "numNegOnes": 2,
+        "k": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "numOnes": 50,
+        "numZeros": 50,
+        "numNegOnes": 50,
+        "k": 100
+      },
+      "expected": 50
+    }
+  ]
 }

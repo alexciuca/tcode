@@ -32,5 +32,136 @@
     "Sort the array and try to group each <code>3</code> consecutive elements."
   ],
   "starter_code": "class Solution:\n    def divideArray(self, nums: List[int], k: int) -> List[List[int]]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          7
+        ],
+        "k": 3
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8
+        ],
+        "k": 5
+      },
+      "expected": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          7,
+          8
+        ]
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 0
+      },
+      "expected": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "k": 99999
+      },
+      "expected": [
+        [
+          1,
+          2,
+          100000
+        ],
+        [
+          100000,
+          100000,
+          100000
+        ]
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          5,
+          5,
+          10,
+          10,
+          10,
+          15,
+          15,
+          15,
+          20,
+          20,
+          20
+        ],
+        "k": 5
+      },
+      "expected": [
+        [
+          5,
+          5,
+          5
+        ],
+        [
+          10,
+          10,
+          10
+        ],
+        [
+          15,
+          15,
+          15
+        ],
+        [
+          20,
+          20,
+          20
+        ]
+      ]
+    }
+  ]
 }

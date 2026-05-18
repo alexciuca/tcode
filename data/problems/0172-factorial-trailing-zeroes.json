@@ -23,5 +23,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def trailingZeroes(self, n: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 5
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "n": 25
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "n": 100
+      },
+      "expected": 24
+    },
+    {
+      "args": {
+        "n": 10000
+      },
+      "expected": 2499
+    }
+  ]
 }

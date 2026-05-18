@@ -29,5 +29,41 @@
     "Try string matching"
   ],
   "starter_code": "class Solution:\n    def checkPalindromeFormation(self, a: str, b: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "a": "abcd",
+        "b": "cdab"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "a": "aaaa",
+        "b": "aaaa"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "a": "ab",
+        "b": "ba"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "a": "abc",
+        "b": "zzz"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "a": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "b": "zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected": true
+    }
+  ]
 }

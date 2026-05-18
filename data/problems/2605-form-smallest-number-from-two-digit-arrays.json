@@ -27,5 +27,84 @@
     "The resulting number will have either one or two digits. Try to find when each case is possible."
   ],
   "starter_code": "class Solution:\n    def minNumber(self, nums1: List[int], nums2: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums1": [
+          4,
+          1,
+          3
+        ],
+        "nums2": [
+          5,
+          7
+        ]
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "nums1": [
+          3,
+          5,
+          2,
+          6
+        ],
+        "nums2": [
+          3,
+          1,
+          7
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums1": [
+          1,
+          2,
+          3
+        ],
+        "nums2": [
+          4,
+          5,
+          6
+        ]
+      },
+      "expected": 14
+    },
+    {
+      "args": {
+        "nums1": [
+          9,
+          8,
+          7
+        ],
+        "nums2": [
+          9,
+          1,
+          2
+        ]
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "nums1": [
+          1
+        ],
+        "nums2": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "expected": 12
+    }
+  ]
 }

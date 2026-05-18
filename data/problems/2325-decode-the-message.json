@@ -29,5 +29,41 @@
     "Map the characters in the message according to the constructed mapping."
   ],
   "starter_code": "class Solution:\n    def decodeMessage(self, key: str, message: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "key": "the quick brown fox jumps over the lazy dog",
+        "message": "vkbs bs t suohd"
+      },
+      "expected": "this is a sekby"
+    },
+    {
+      "args": {
+        "key": "abcdefghijklmnopqrstuvwxyz",
+        "message": "abc"
+      },
+      "expected": "abc"
+    },
+    {
+      "args": {
+        "key": "zyxwvutsrqponmlkjihgfedcba",
+        "message": "zyx"
+      },
+      "expected": "abc"
+    },
+    {
+      "args": {
+        "key": "a b c d e f g h i j k l m n o p q r s t u v w x y z",
+        "message": "a b c"
+      },
+      "expected": "a b c"
+    },
+    {
+      "args": {
+        "key": "the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog",
+        "message": "vkbs bs t suohd vkbs bs t suohd vkbs bs t suohd vkbs bs t suohd vkbs bs t suohd vkbs bs t suohd vkbs bs t suohd vkbs bs t suohd"
+      },
+      "expected": "this is a sekby this is a sekby this is a sekby this is a sekby this is a sekby this is a sekby this is a sekby this is a sekby"
+    }
+  ]
 }

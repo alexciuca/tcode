@@ -27,5 +27,50 @@
     "Sort the valid substrings by length and greedily take those with the smallest length, discarding the ones that overlap those we took."
   ],
   "starter_code": "class Solution:\n    def maxNumOfSubstrings(self, s: str) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ababab"
+      },
+      "expected": [
+        "aba",
+        "bab"
+      ]
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": []
+    },
+    {
+      "args": {
+        "s": "aaaaaa"
+      },
+      "expected": [
+        "aa",
+        "aa",
+        "aa"
+      ]
+    },
+    {
+      "args": {
+        "s": "abacabad"
+      },
+      "expected": [
+        "aba",
+        "aba"
+      ]
+    },
+    {
+      "args": {
+        "s": "xyxxyxxyx"
+      },
+      "expected": [
+        "xyx",
+        "xyx",
+        "xyx"
+      ]
+    }
+  ]
 }

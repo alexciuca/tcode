@@ -25,5 +25,46 @@
     "We can load at most <code>min(n * n, maxWeight / w)</code> containers."
   ],
   "starter_code": "class Solution:\n    def maxContainers(self, n: int, w: int, maxWeight: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 5,
+        "w": 10,
+        "maxWeight": 50
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "n": 3,
+        "w": 20,
+        "maxWeight": 45
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "n": 1,
+        "w": 1,
+        "maxWeight": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 1000,
+        "w": 1,
+        "maxWeight": 1000000000
+      },
+      "expected": 1000000
+    },
+    {
+      "args": {
+        "n": 100,
+        "w": 999,
+        "maxWeight": 50000
+      },
+      "expected": 50
+    }
+  ]
 }

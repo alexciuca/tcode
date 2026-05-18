@@ -31,5 +31,69 @@
     "Use the sliding window to solve the counting problem in the hint above."
   ],
   "starter_code": "class Solution:\n    def medianOfUniquenessArray(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          1,
+          2,
+          1
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          100000
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 5
+    }
+  ]
 }

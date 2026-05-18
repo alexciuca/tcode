@@ -25,5 +25,83 @@
     "For each subtree, find the minimum value and maximum value of its descendants."
   ],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def maxAncestorDiff(self, root: Optional[TreeNode]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "root": [
+          8,
+          3,
+          10,
+          1,
+          6,
+          null,
+          14,
+          null,
+          null,
+          4,
+          7,
+          13
+        ]
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "root": [
+          1,
+          null,
+          2,
+          null,
+          0,
+          null,
+          3
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "root": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "root": [
+          100000,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "expected": 100000
+    },
+    {
+      "args": {
+        "root": [
+          50000,
+          25000,
+          75000,
+          12500,
+          37500,
+          62500,
+          87500,
+          6250,
+          18750,
+          31250,
+          43750,
+          56250,
+          68750,
+          81250,
+          93750
+        ]
+      },
+      "expected": 43750
+    }
+  ]
 }

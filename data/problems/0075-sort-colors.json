@@ -28,5 +28,85 @@
     "Overwrite array with the total number of 0's, then 1's and followed by 2's."
   ],
   "starter_code": "class Solution:\n    def sortColors(self, nums: List[int]) -> None:\n        \"\"\"\n        Do not return anything, modify nums in-place instead.\n        \"\"\"\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          1,
+          2
+        ]
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected": null
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected": null
+    }
+  ]
 }

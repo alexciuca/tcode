@@ -26,5 +26,85 @@
     "Loop through all triplets, and count the ones that are good."
   ],
   "starter_code": "class Solution:\n    def countGoodTriplets(self, arr: List[int], a: int, b: int, c: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "arr": [
+          3,
+          0,
+          1,
+          1,
+          9
+        ],
+        "a": 3,
+        "b": 4,
+        "c": 5
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "arr": [
+          0,
+          0,
+          0
+        ],
+        "a": 1,
+        "b": 1,
+        "c": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "arr": [
+          100,
+          0,
+          50,
+          25,
+          75,
+          1000
+        ],
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "arr": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "a": 5,
+        "b": 5,
+        "c": 5
+      },
+      "expected": 60
+    }
+  ]
 }

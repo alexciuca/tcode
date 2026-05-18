@@ -29,5 +29,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def maskPII(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "LeetCode@LeetCode.com"
+      },
+      "expected": "l*****e@leetcode.com"
+    },
+    {
+      "args": {
+        "s": "AB@cd.ef"
+      },
+      "expected": "a*****b@cd.ef"
+    },
+    {
+      "args": {
+        "s": "1(234)567-8910"
+      },
+      "expected": "+1***8910"
+    },
+    {
+      "args": {
+        "s": "+1 (234) 567-8910"
+      },
+      "expected": "+1***8910"
+    },
+    {
+      "args": {
+        "s": "a@b.co"
+      },
+      "expected": "a*****a@b.co"
+    }
+  ]
 }

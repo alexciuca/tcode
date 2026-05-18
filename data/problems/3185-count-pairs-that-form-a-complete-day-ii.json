@@ -26,5 +26,76 @@
     "Using an array or a map, for each index <code>j</code> moving from left to right, increase the answer by the count of <code>(24 - hours[j]) % 24</code>, and then increase the count of <code>hours[j]</code>."
   ],
   "starter_code": "class Solution:\n    def countCompleteDayPairs(self, hours: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "hours": [
+          12,
+          12,
+          30,
+          24,
+          24
+        ]
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "hours": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "hours": [
+          24
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "hours": [
+          1000000000,
+          1000000000,
+          1000000000,
+          1000000000
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "hours": [
+          24,
+          48,
+          72,
+          96,
+          120,
+          144,
+          168,
+          192,
+          216,
+          240,
+          264,
+          288,
+          312,
+          336,
+          360,
+          384,
+          408,
+          432,
+          456,
+          480
+        ]
+      },
+      "expected": 190
+    }
+  ]
 }

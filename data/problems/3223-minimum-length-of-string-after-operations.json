@@ -27,5 +27,36 @@
     "Suppose there is a character that occurs at least 3 times in the string, we can repeatedly delete two of these characters until there are at most 2 occurrences left of it."
   ],
   "starter_code": "class Solution:\n    def minimumLength(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "ca"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "cabaabac"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abc"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "s": "aaaaaaaaaa"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 130
+    }
+  ]
 }

@@ -35,5 +35,48 @@
     "When you encounter a closing bracket, check if the top of the stack was the opening for it. If yes, pop it from the stack. Otherwise, return false."
   ],
   "starter_code": "class Solution:\n    def isValid(self, s: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "()"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "()[]{}"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": "(]"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "([)]"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "{[]}"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "s": ")"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "s": "["
+      },
+      "expected": false
+    }
+  ]
 }

@@ -27,5 +27,78 @@
     "Pick the group with the largest sum."
   ],
   "starter_code": "class Solution:\n    def maximumSum(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          8,
+          7,
+          3,
+          5,
+          7,
+          2,
+          4,
+          9
+        ]
+      },
+      "expected": 16
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          10,
+          1,
+          5,
+          2
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "nums": [
+          1000000000,
+          999999999,
+          1000000000
+        ]
+      },
+      "expected": 1000000000
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "expected": 29
+    }
+  ]
 }

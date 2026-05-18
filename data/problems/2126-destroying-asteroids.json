@@ -29,5 +29,77 @@
     "Sort the asteroids in non-decreasing order by mass, then greedily try to collide with the asteroids in that order."
   ],
   "starter_code": "class Solution:\n    def asteroidsDestroyed(self, mass: int, asteroids: List[int]) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "mass": 10,
+        "asteroids": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "mass": 5,
+        "asteroids": [
+          4,
+          4,
+          9,
+          23
+        ]
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "mass": 1,
+        "asteroids": [
+          1
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "mass": 100000,
+        "asteroids": [
+          100000
+        ]
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "mass": 8,
+        "asteroids": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "expected": true
+    }
+  ]
 }

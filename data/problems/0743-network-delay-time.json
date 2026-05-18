@@ -35,5 +35,68 @@
     "We visit each node at some time, and if that time is better than the fastest time we've reached this node, we travel along outgoing edges in sorted order.  Alternatively, we could use Dijkstra's algorithm."
   ],
   "starter_code": "class Solution:\n    def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "times": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ]
+        ],
+        "n": 4,
+        "k": 2
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "times": [
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            1,
+            3,
+            2
+          ]
+        ],
+        "n": 3,
+        "k": 1
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "times": [
+          [
+            1,
+            2,
+            1
+          ]
+        ],
+        "n": 2,
+        "k": 2
+      },
+      "expected": -1
+    }
+  ]
 }

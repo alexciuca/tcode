@@ -30,5 +30,46 @@
     "Finally convert the string with the precalculated information."
   ],
   "starter_code": "class Solution:\n    def smallestEquivalentString(self, s1: str, s2: str, baseStr: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s1": "ab",
+        "s2": "ba",
+        "baseStr": "bab"
+      },
+      "expected": "aaa"
+    },
+    {
+      "args": {
+        "s1": "abc",
+        "s2": "cdc",
+        "baseStr": "abc"
+      },
+      "expected": "aba"
+    },
+    {
+      "args": {
+        "s1": "a",
+        "s2": "a",
+        "baseStr": "z"
+      },
+      "expected": "z"
+    },
+    {
+      "args": {
+        "s1": "aaaa",
+        "s2": "bbbb",
+        "baseStr": "aaaa"
+      },
+      "expected": "aaaa"
+    },
+    {
+      "args": {
+        "s1": "abcdefghijklmnopqrstuvwxyz",
+        "s2": "zyxwvutsrqponmlkjihgfedcba",
+        "baseStr": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": "abcdefghijklmmlkjihgfedcbaabcdefghijklmmlkjihgfedcbaabcdefghijklmmlkjihgfedcba"
+    }
+  ]
 }

@@ -24,5 +24,20 @@
     "Let dp(i, j) be the answer for inputs s1[i:] and s2[j:]."
   ],
   "starter_code": "class Solution:\n    def minimumDeleteSum(self, s1: str, s2: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s1": "sea",
+        "s2": "eat"
+      },
+      "expected": 231
+    },
+    {
+      "args": {
+        "s1": "delete",
+        "s2": "leet"
+      },
+      "expected": 403
+    }
+  ]
 }

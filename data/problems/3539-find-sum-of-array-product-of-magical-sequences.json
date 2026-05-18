@@ -37,5 +37,115 @@
     "How many ways are there to permute a sequence of entities where some are repetitive?"
   ],
   "starter_code": "class Solution:\n    def magicalSum(self, m: int, k: int, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "m": 5,
+        "k": 2,
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 1020
+    },
+    {
+      "args": {
+        "m": 10,
+        "k": 3,
+        "nums": [
+          2,
+          5,
+          7
+        ]
+      },
+      "expected": 26542080
+    },
+    {
+      "args": {
+        "m": 1,
+        "k": 1,
+        "nums": [
+          100000000
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "m": 30,
+        "k": 30,
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 788988038
+    },
+    {
+      "args": {
+        "m": 25,
+        "k": 5,
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      "expected": 449106320
+    }
+  ]
 }

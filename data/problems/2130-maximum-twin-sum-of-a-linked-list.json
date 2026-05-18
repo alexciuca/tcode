@@ -31,5 +31,63 @@
     "Use two different pointers pointing to the first nodes of the two halves of the linked list. The second pointer will point to the first node of the reversed half, which is the (n-1-i)th node in the original linked list. By moving both pointers forward at the same time, we find all twin sums."
   ],
   "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def pairSum(self, head: Optional[ListNode]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "head": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          100000
+        ]
+      },
+      "expected": 100001
+    },
+    {
+      "args": {
+        "head": [
+          100000,
+          1,
+          1,
+          100000
+        ]
+      },
+      "expected": 200000
+    },
+    {
+      "args": {
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "expected": 9
+    }
+  ]
 }

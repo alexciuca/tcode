@@ -25,5 +25,41 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def kSimilarity(self, s1: str, s2: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s1": "ab",
+        "s2": "ba"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s1": "abc",
+        "s2": "abc"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s1": "abac",
+        "s2": "baca"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s1": "aaab",
+        "s2": "abaa"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s1": "abcdefabcdefabcdefabcd",
+        "s2": "bcdefabcdefabcdefabcda"
+      },
+      "expected": 18
+    }
+  ]
 }

@@ -28,5 +28,36 @@
     "When moving to the next letter, you will always go in the direction that takes the least amount of time."
   ],
   "starter_code": "class Solution:\n    def minTimeToType(self, word: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "abc"
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "word": "bza"
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "word": "zjpc"
+      },
+      "expected": 34
+    },
+    {
+      "args": {
+        "word": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "zzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected": 26
+    }
+  ]
 }

@@ -26,5 +26,64 @@
     "While going through the devices, you can maintain the number of previously tested devices, and the current device can be tested if <code>batteryPercentages[i]</code> is greater than the number of tested devices."
   ],
   "starter_code": "class Solution:\n    def countTestedDevices(self, batteryPercentages: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "batteryPercentages": [
+          8,
+          7,
+          6,
+          5
+        ]
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "batteryPercentages": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "batteryPercentages": [
+          100
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "batteryPercentages": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "batteryPercentages": [
+          50,
+          45,
+          40,
+          35,
+          30,
+          25,
+          20,
+          15,
+          10,
+          5
+        ]
+      },
+      "expected": 9
+    }
+  ]
 }

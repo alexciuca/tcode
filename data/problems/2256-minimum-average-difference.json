@@ -25,5 +25,65 @@
     "Create a prefix and/or suffix sum array."
   ],
   "starter_code": "class Solution:\n    def minimumAverageDifference(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          5,
+          3,
+          9,
+          8
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          0
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          100000
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          100000,
+          50000,
+          25000,
+          12500,
+          6250,
+          3125,
+          1562,
+          781,
+          390,
+          195
+        ]
+      },
+      "expected": 9
+    }
+  ]
 }

@@ -31,5 +31,43 @@
     "Maintain the running sum and max value for repeated letters."
   ],
   "starter_code": "class Solution:\n    def minCost(self, colors: str, neededTime: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "colors": "abaac",
+        "neededTime": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "colors": "abc",
+        "neededTime": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "colors": "aabaa",
+        "neededTime": [
+          1,
+          2,
+          3,
+          4,
+          1
+        ]
+      },
+      "expected": 2
+    }
+  ]
 }

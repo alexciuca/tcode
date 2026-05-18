@@ -26,5 +26,72 @@
     "We can notice, that <code> dp[i] = dp[i + k] + energy[i]</code>."
   ],
   "starter_code": "class Solution:\n    def maximumEnergy(self, energy: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "energy": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "k": 2
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "energy": [
+          5,
+          2,
+          -3,
+          1,
+          4
+        ],
+        "k": 3
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "energy": [
+          -5,
+          -10,
+          -1,
+          -2
+        ],
+        "k": 1
+      },
+      "expected": -18
+    },
+    {
+      "args": {
+        "energy": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "k": 2
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "energy": [
+          1000,
+          -1000,
+          1000,
+          -1000,
+          1000,
+          -1000,
+          500
+        ],
+        "k": 4
+      },
+      "expected": 2000
+    }
+  ]
 }

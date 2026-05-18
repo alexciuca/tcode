@@ -26,5 +26,36 @@
     "You can iterate over all substring then iterate over the alphabet and find which character appears most and which appears least using the prefix sum array"
   ],
   "starter_code": "class Solution:\n    def beautySum(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aabcb"
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "aabbcc"
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "s": "aaabbbccc"
+      },
+      "expected": 29
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghij"
+      },
+      "expected": 50155
+    }
+  ]
 }

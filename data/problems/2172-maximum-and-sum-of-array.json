@@ -29,5 +29,76 @@
     "Can you use a bitmask to represent the state of the slots?"
   ],
   "starter_code": "class Solution:\n    def maximumANDSum(self, nums: List[int], numSlots: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "numSlots": 2
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          8,
+          7,
+          6,
+          5,
+          4
+        ],
+        "numSlots": 3
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums": [
+          15,
+          15,
+          15,
+          15
+        ],
+        "numSlots": 2
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ],
+        "numSlots": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          15
+        ],
+        "numSlots": 9
+      },
+      "expected": 87
+    }
+  ]
 }

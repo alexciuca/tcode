@@ -25,5 +25,36 @@
     "Figure out whether you need the ones digit placed or not, then shift by two."
   ],
   "starter_code": "class Solution:\n    def baseNeg2(self, n: int) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 0
+      },
+      "expected": "0"
+    },
+    {
+      "args": {
+        "n": 1
+      },
+      "expected": "1"
+    },
+    {
+      "args": {
+        "n": 2
+      },
+      "expected": "110"
+    },
+    {
+      "args": {
+        "n": 5
+      },
+      "expected": "101"
+    },
+    {
+      "args": {
+        "n": 1000000000
+      },
+      "expected": "1001100111011111101111000000000"
+    }
+  ]
 }

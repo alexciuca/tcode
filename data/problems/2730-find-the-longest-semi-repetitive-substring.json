@@ -27,5 +27,36 @@
     "Since n is small, we can just check every substring, and if the substring is semi-repetitive, maximize the answer with its length."
   ],
   "starter_code": "class Solution:\n    def longestSemiRepetitiveSubstring(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "52"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "5010"
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "s": "1111111"
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "s": "0"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "123456789012345678901234567890"
+      },
+      "expected": 30
+    }
+  ]
 }

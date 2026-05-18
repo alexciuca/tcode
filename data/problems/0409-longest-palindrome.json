@@ -23,5 +23,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def longestPalindrome(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "abccccdd"
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aabbcc"
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "s": "AaBbCc"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      },
+      "expected": 1
+    }
+  ]
 }

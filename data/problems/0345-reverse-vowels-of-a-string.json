@@ -22,5 +22,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def reverseVowels(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "hello"
+      },
+      "expected": "holle"
+    },
+    {
+      "args": {
+        "s": "aA"
+      },
+      "expected": "Aa"
+    },
+    {
+      "args": {
+        "s": "race car"
+      },
+      "expected": "race car"
+    },
+    {
+      "args": {
+        "s": "a"
+      },
+      "expected": "a"
+    },
+    {
+      "args": {
+        "s": "bcdfg"
+      },
+      "expected": "bcdfg"
+    }
+  ]
 }

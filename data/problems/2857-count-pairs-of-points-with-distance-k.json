@@ -28,5 +28,130 @@
     "<div class=\"_1l1MA\">We can iterate over all possible values of <code>x</code> and count the number of points <code>(x<sub>1</sub>, x<sub>2</sub>)</code> and <code>(x<sub>2</sub>, y<sub>2</sub>)</code>.</div>"
   ],
   "starter_code": "class Solution:\n    def countPairs(self, coordinates: List[List[int]], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "coordinates": [
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "k": 5
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "coordinates": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "k": 1
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "coordinates": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "k": 0
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "coordinates": [
+          [
+            1000000,
+            1000000
+          ],
+          [
+            999999,
+            999999
+          ],
+          [
+            1000000,
+            999999
+          ]
+        ],
+        "k": 100
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "coordinates": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            8,
+            15
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            13,
+            84
+          ],
+          [
+            7,
+            24
+          ],
+          [
+            10,
+            30
+          ]
+        ],
+        "k": 25
+      },
+      "expected": 0
+    }
+  ]
 }

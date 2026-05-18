@@ -28,5 +28,24 @@
     "Alternate placing the most common letters."
   ],
   "starter_code": "class Solution:\n    def reorganizeString(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "aab"
+      },
+      "expected": "aba"
+    },
+    {
+      "args": {
+        "s": "aaab"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "s": "vvvlo"
+      },
+      "expected": "vlvov"
+    }
+  ]
 }

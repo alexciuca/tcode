@@ -33,5 +33,91 @@
     "To do that, we need to find the length of the longest path from each of the node’s children."
   ],
   "starter_code": "class Solution:\n    def longestPath(self, parent: List[int], s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "parent": [
+          -1,
+          0,
+          0,
+          1,
+          1,
+          2
+        ],
+        "s": "abacbb"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "parent": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "s": "aaaa"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "parent": [
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "s": "abcdefghij"
+      },
+      "expected": 10
+    },
+    {
+      "args": {
+        "parent": [
+          -1,
+          0,
+          1,
+          1,
+          2
+        ],
+        "s": "aabaa"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "parent": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "s": "abcdefghijklmnopqrst"
+      },
+      "expected": 3
+    }
+  ]
 }

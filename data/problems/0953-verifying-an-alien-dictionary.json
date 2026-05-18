@@ -28,5 +28,37 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isAlienSorted(self, words: List[str], order: str) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "words": [
+          "hello",
+          "leetcode"
+        ],
+        "order": "hlabcdefgijkmnopqrstuvwxyz"
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "words": [
+          "word",
+          "world",
+          "row"
+        ],
+        "order": "worldabcefghijkmnpqstuvxyz"
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "words": [
+          "apple",
+          "app"
+        ],
+        "order": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": false
+    }
+  ]
 }

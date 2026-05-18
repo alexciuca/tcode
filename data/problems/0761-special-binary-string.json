@@ -25,5 +25,36 @@
     "Draw a line from (x, y) to (x+1, y+1) if we see a \"1\", else to (x+1, y-1).\r\nA special substring is just a line that starts and ends at the same y-coordinate, and that is the lowest y-coordinate reached.\r\nCall a mountain a special substring with no special prefixes - ie. only at the beginning and end is the lowest y-coordinate reached.\r\nIf F is the answer function, and S has mountain decomposition M1,M2,M3,...,Mk,  then the answer is:\r\nreverse_sorted(F(M1), F(M2), ..., F(Mk)).\r\nHowever, you'll also need to deal with the case that S is a mountain, such as 11011000 -> 11100100."
   ],
   "starter_code": "class Solution:\n    def makeLargestSpecial(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "11011000"
+      },
+      "expected": "11100100"
+    },
+    {
+      "args": {
+        "s": "1"
+      },
+      "expected": "1"
+    },
+    {
+      "args": {
+        "s": "1100110011"
+      },
+      "expected": "11001100"
+    },
+    {
+      "args": {
+        "s": "110011"
+      },
+      "expected": "1100"
+    },
+    {
+      "args": {
+        "s": "11010011001100110011"
+      },
+      "expected": "110100110011001100"
+    }
+  ]
 }

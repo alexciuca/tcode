@@ -26,5 +26,41 @@
     "<div class=\"_1l1MA\">If the number <code>i</code> is added to the array, then <code>i + k</code> can not be added.</div>"
   ],
   "starter_code": "class Solution:\n    def minimumSum(self, n: int, k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 5,
+        "k": 2
+      },
+      "expected": 15
+    },
+    {
+      "args": {
+        "n": 10,
+        "k": 5
+      },
+      "expected": 71
+    },
+    {
+      "args": {
+        "n": 1,
+        "k": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "n": 50,
+        "k": 50
+      },
+      "expected": 1875
+    },
+    {
+      "args": {
+        "n": 20,
+        "k": 3
+      },
+      "expected": 229
+    }
+  ]
 }

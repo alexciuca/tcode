@@ -31,5 +31,65 @@
     "Define DP[i] as the min extra character if breaking up s[0:i] optimally."
   ],
   "starter_code": "class Solution:\n    def minExtraChar(self, s: str, dictionary: List[str]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "leetscode",
+        "dictionary": [
+          "leet",
+          "code",
+          "leetcode"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "sayhelloworld",
+        "dictionary": [
+          "say",
+          "hello",
+          "world"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "a",
+        "dictionary": [
+          "b",
+          "c"
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "aaaa",
+        "dictionary": [
+          "a",
+          "aa"
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst",
+        "dictionary": [
+          "abc",
+          "def",
+          "ghi",
+          "jkl",
+          "mno",
+          "pqr",
+          "stu",
+          "vwx",
+          "yz"
+        ]
+      },
+      "expected": 2
+    }
+  ]
 }

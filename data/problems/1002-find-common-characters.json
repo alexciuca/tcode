@@ -24,5 +24,33 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def commonChars(self, words: List[str]) -> List[str]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "A": [
+          "bella",
+          "label",
+          "roller"
+        ]
+      },
+      "expected": [
+        "e",
+        "l",
+        "l"
+      ]
+    },
+    {
+      "args": {
+        "A": [
+          "cool",
+          "lock",
+          "cook"
+        ]
+      },
+      "expected": [
+        "c",
+        "o"
+      ]
+    }
+  ]
 }

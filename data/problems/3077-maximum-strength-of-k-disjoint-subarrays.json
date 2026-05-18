@@ -25,5 +25,75 @@
     "The answer is <code>dp[0][k][0]</code>."
   ],
   "starter_code": "class Solution:\n    def maximumStrength(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "k": 1
+      },
+      "expected": 9
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          -3,
+          8,
+          -2,
+          9
+        ],
+        "k": 3
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          -1000000000,
+          -1000000000,
+          -1000000000
+        ],
+        "k": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "k": 1
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          10,
+          -5,
+          20,
+          -3,
+          15,
+          -8,
+          12,
+          -1,
+          18,
+          -4
+        ],
+        "k": 5
+      },
+      "expected": 0
+    }
+  ]
 }

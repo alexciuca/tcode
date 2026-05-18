@@ -27,5 +27,36 @@
     "The optimal way is to map letters to keys evenly."
   ],
   "starter_code": "class Solution:\n    def minimumPushes(self, word: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "word": "abc"
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "word": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": 56
+    },
+    {
+      "args": {
+        "word": "a"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "word": "abcdefgh"
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "word": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected": 56
+    }
+  ]
 }

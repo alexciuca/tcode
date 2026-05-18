@@ -30,5 +30,65 @@
     "This can be divided into 4 cases."
   ],
   "starter_code": "class Solution:\n    def maxValueAfterReverse(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          2,
+          3,
+          1,
+          4
+        ]
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": 8
+    },
+    {
+      "args": {
+        "nums": [
+          -5,
+          -2,
+          0,
+          3,
+          10
+        ]
+      },
+      "expected": 27
+    },
+    {
+      "args": {
+        "nums": [
+          100,
+          -100,
+          50,
+          -50
+        ]
+      },
+      "expected": 500
+    },
+    {
+      "args": {
+        "nums": [
+          -100000,
+          100000,
+          -100000,
+          100000,
+          -100000,
+          100000
+        ]
+      },
+      "expected": 1000000
+    }
+  ]
 }

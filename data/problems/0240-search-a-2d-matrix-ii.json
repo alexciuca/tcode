@@ -29,5 +29,139 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "matrix": [
+          [
+            1,
+            4,
+            7,
+            11
+          ],
+          [
+            2,
+            5,
+            8,
+            12
+          ],
+          [
+            3,
+            6,
+            9,
+            16
+          ],
+          [
+            10,
+            13,
+            14,
+            17
+          ]
+        ],
+        "target": 5
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "matrix": [
+          [
+            1,
+            4,
+            7,
+            11
+          ],
+          [
+            2,
+            5,
+            8,
+            12
+          ],
+          [
+            3,
+            6,
+            9,
+            16
+          ],
+          [
+            10,
+            13,
+            14,
+            17
+          ]
+        ],
+        "target": 20
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "matrix": [
+          [
+            -10,
+            -5,
+            0,
+            5
+          ],
+          [
+            -8,
+            -3,
+            2,
+            8
+          ],
+          [
+            -1,
+            4,
+            7,
+            12
+          ]
+        ],
+        "target": -10
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "matrix": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "target": 1
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "matrix": [
+          [
+            -1000000000,
+            -999999999,
+            0,
+            999999999
+          ],
+          [
+            -999999998,
+            500000000,
+            500000001,
+            1000000000
+          ]
+        ],
+        "target": 1000000000
+      },
+      "expected": true
+    }
+  ]
 }

@@ -33,5 +33,124 @@
     "Scan the list to check if the current element should be deleted by checking the Set."
   ],
   "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def modifiedList(self, nums: List[int], head: Optional[ListNode]) -> Optional[ListNode]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          6
+        ],
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "expected": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          10,
+          15
+        ],
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "head": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "expected": [
+        6
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          100
+        ],
+        "head": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "args": {
+        "nums": [
+          50,
+          100,
+          1,
+          2,
+          3,
+          4,
+          5,
+          10,
+          20,
+          30
+        ],
+        "head": [
+          1,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45
+        ]
+      },
+      "expected": [
+        15,
+        25,
+        35,
+        40,
+        45
+      ]
+    }
+  ]
 }

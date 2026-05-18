@@ -25,5 +25,97 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def calculateMinimumHP(self, dungeon: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "dungeon": [
+          [
+            -3,
+            5
+          ],
+          [
+            -1,
+            -20
+          ]
+        ]
+      },
+      "expected": 19
+    },
+    {
+      "args": {
+        "dungeon": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "dungeon": [
+          [
+            -1000
+          ]
+        ]
+      },
+      "expected": 1001
+    },
+    {
+      "args": {
+        "dungeon": [
+          [
+            1000,
+            -1000
+          ],
+          [
+            -1000,
+            1000
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "dungeon": [
+          [
+            -3,
+            5,
+            -10
+          ],
+          [
+            -1,
+            -20,
+            8
+          ],
+          [
+            2,
+            15,
+            -5,
+            3
+          ],
+          [
+            -10,
+            0,
+            5,
+            -2
+          ]
+        ]
+      },
+      "expected": 5
+    }
+  ]
 }

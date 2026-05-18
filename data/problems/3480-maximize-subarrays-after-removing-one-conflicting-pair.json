@@ -33,5 +33,130 @@
     "Use a segment tree or another suitable data structure to maintain the range update and sum query efficiently."
   ],
   "starter_code": "class Solution:\n    def maxSubarrays(self, n: int, conflictingPairs: List[List[int]]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "n": 5,
+        "conflictingPairs": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      },
+      "expected": 11
+    },
+    {
+      "args": {
+        "n": 4,
+        "conflictingPairs": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "n": 2,
+        "conflictingPairs": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "n": 6,
+        "conflictingPairs": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      "expected": 7
+    },
+    {
+      "args": {
+        "n": 100,
+        "conflictingPairs": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "expected": 3511
+    }
+  ]
 }

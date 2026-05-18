@@ -20,5 +20,18 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def defangIPaddr(self, address: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "address": "1.1.1.1"
+      },
+      "expected": "1[.]1[.]1[.]1"
+    },
+    {
+      "args": {
+        "address": "255.100.50.0"
+      },
+      "expected": "255[.]100[.]50[.]0"
+    }
+  ]
 }

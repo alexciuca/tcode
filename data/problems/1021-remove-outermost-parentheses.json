@@ -28,5 +28,42 @@
     "Can you find the primitive decomposition?  The number of ( and ) characters must be equal."
   ],
   "starter_code": "class Solution:\n    def removeOuterParentheses(self, s: str) -> str:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "S": "(()())(())"
+      },
+      "expected": "()()()"
+    },
+    {
+      "args": {
+        "S": "(()())(())(()(()))"
+      },
+      "expected": "()()()()(())"
+    },
+    {
+      "args": {
+        "S": "()()"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "S": "(())"
+      },
+      "expected": "()"
+    },
+    {
+      "args": {
+        "S": "()"
+      },
+      "expected": ""
+    },
+    {
+      "args": {
+        "S": ""
+      },
+      "expected": ""
+    }
+  ]
 }

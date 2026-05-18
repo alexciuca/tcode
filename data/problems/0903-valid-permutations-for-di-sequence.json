@@ -24,5 +24,36 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def numPermsDISequence(self, s: str) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "s": "DID"
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "s": "DIID"
+      },
+      "expected": 11
+    },
+    {
+      "args": {
+        "s": "I"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "DDDD"
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "s": "IDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDID"
+      },
+      "expected": 510781926
+    }
+  ]
 }

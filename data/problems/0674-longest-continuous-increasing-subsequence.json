@@ -21,5 +21,68 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findLengthOfLCIS(self, nums: List[int]) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          3,
+          5,
+          4,
+          7
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "args": {
+        "nums": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          -5,
+          -3,
+          -1,
+          0,
+          2,
+          5,
+          -2
+        ]
+      },
+      "expected": 6
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected": 10
+    }
+  ]
 }

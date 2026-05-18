@@ -29,5 +29,78 @@
     "Basically, we need to make the first K elements have XOR = 0 and then modify them."
   ],
   "starter_code": "class Solution:\n    def minChanges(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          4,
+          1,
+          2,
+          5
+        ],
+        "k": 2
+      },
+      "expected": 4
+    },
+    {
+      "args": {
+        "nums": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "k": 4
+      },
+      "expected": 0
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ],
+        "k": 1
+      },
+      "expected": Infinity
+    },
+    {
+      "args": {
+        "nums": [
+          1023,
+          1023,
+          1023,
+          1023,
+          1023
+        ],
+        "k": 5
+      },
+      "expected": Infinity
+    },
+    {
+      "args": {
+        "nums": [
+          7,
+          15,
+          3,
+          14,
+          11,
+          2,
+          9,
+          8,
+          6,
+          12,
+          4,
+          5,
+          1,
+          13,
+          10,
+          0
+        ],
+        "k": 4
+      },
+      "expected": 12
+    }
+  ]
 }

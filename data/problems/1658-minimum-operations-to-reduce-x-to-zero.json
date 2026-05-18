@@ -32,5 +32,82 @@
     "Finding the maximum subarray is standard and can be done greedily."
   ],
   "starter_code": "class Solution:\n    def minOperations(self, nums: List[int], x: int) -> int:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          4,
+          2,
+          3
+        ],
+        "x": 5
+      },
+      "expected": 2
+    },
+    {
+      "args": {
+        "nums": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "x": 4
+      },
+      "expected": -1
+    },
+    {
+      "args": {
+        "nums": [
+          1
+        ],
+        "x": 1
+      },
+      "expected": 1
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "x": 15
+      },
+      "expected": 5
+    },
+    {
+      "args": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10000,
+          10000
+        ],
+        "x": 20000
+      },
+      "expected": 2
+    }
+  ]
 }

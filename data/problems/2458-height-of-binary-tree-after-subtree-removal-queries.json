@@ -34,5 +34,119 @@
     "The answers can be precomputed in a single tree traversal after computing the height of each subtree."
   ],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def treeQueries(self, root: Optional[TreeNode], queries: List[int]) -> List[int]:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "root": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "queries": [
+          4,
+          2
+        ]
+      },
+      "expected": [
+        2,
+        2
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          5,
+          8,
+          9,
+          2,
+          1,
+          3,
+          7,
+          4,
+          6
+        ],
+        "queries": [
+          3,
+          2,
+          4,
+          5
+        ]
+      },
+      "expected": [
+        3,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          1,
+          2,
+          null,
+          3,
+          null,
+          4
+        ],
+        "queries": [
+          2,
+          3
+        ]
+      },
+      "expected": [
+        0,
+        0
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "queries": [
+          8,
+          9,
+          10,
+          1
+        ]
+      },
+      "expected": [
+        2,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "args": {
+        "root": [
+          2,
+          1,
+          3
+        ],
+        "queries": [
+          1,
+          3
+        ]
+      },
+      "expected": [
+        1,
+        1
+      ]
+    }
+  ]
 }

@@ -31,5 +31,123 @@
     "You can reduce <code>k</code> shifts to <code>(k % n)</code> shifts as after <code>n</code> shifts the matrix will become similar to the initial matrix."
   ],
   "starter_code": "class Solution:\n    def areSimilar(self, mat: List[List[int]], k: int) -> bool:\n        ",
-  "test_cases": []
+  "test_cases": [
+    {
+      "args": {
+        "mat": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6
+          ],
+          [
+            7,
+            8,
+            9
+          ]
+        ],
+        "k": 1
+      },
+      "expected": false
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "k": 2
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "k": 0
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "k": 50
+      },
+      "expected": true
+    },
+    {
+      "args": {
+        "mat": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          [
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          [
+            21,
+            22,
+            23,
+            24,
+            25
+          ]
+        ],
+        "k": 3
+      },
+      "expected": false
+    }
+  ]
 }
