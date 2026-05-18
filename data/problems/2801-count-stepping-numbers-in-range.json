@@ -29,41 +29,5 @@
     "Finally, calculate the number of stepping numbers that have the same length as x similarly. However, this time we need to maintain whether the prefix (in string) is smaller than or equal to x in the DP state."
   ],
   "starter_code": "class Solution:\n    def countSteppingNumbers(self, low: str, high: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "low": "1",
-        "high": "10"
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "low": "10",
-        "high": "15"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "low": "1",
-        "high": "100"
-      },
-      "expected": 26
-    },
-    {
-      "args": {
-        "low": "9",
-        "high": "9"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "low": "1",
-        "high": "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
-      },
-      "expected": 125046265
-    }
-  ]
+  "test_cases": []
 }

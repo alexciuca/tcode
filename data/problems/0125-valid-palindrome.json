@@ -25,36 +25,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isPalindrome(self, s: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "A man, a plan, a canal: Panama"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "race a car"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": " "
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "0P"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "a."
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

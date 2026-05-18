@@ -27,41 +27,5 @@
     "The maximum number of squares to be placed will be ≤ max(n,m)."
   ],
   "starter_code": "class Solution:\n    def tilingRectangle(self, n: int, m: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 2,
-        "m": 3
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "n": 3,
-        "m": 3
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 6,
-        "m": 9
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "n": 1,
-        "m": 13
-      },
-      "expected": 13
-    },
-    {
-      "args": {
-        "n": 13,
-        "m": 13
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

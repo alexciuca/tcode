@@ -32,41 +32,5 @@
     "Consider a window of size <code>pattern.length</code>. If <code>dp1[i] + i == i + pattern.length - 1 - dp2[i + pattern.length - 1]</code>, what does this signify?"
   ],
   "starter_code": "class Solution:\n    def minStartingIndex(self, s: str, pattern: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abcdefg",
-        "pattern": "bcd"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "aaaa",
-        "pattern": "aa"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abcabcabc",
-        "pattern": "xyz"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "s": "aaaaaaaaaaaaaab",
-        "pattern": "aaab"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
-        "pattern": "zyxwvu"
-      },
-      "expected": -1
-    }
-  ]
+  "test_cases": []
 }

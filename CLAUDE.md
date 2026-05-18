@@ -305,13 +305,22 @@ uv sync
 uv run tcode start --file solution.py
 ```
 
+## Running tests
+
+```bash
+uv run pytest tests/
+```
+
+---
+
 ## Coding conventions
 
 - Type hints on all function signatures
 - Docstrings on all public functions
-- No print statements in production code - use Textual's logging
-- All AI responses parsed as JSON - never parse free text from the AI
-- Keep `llm.py` stateless - pass all context in, get structured output back
+- No print statements in production code — use Textual's logging
+- All AI responses parsed as JSON — never parse free text from the AI
+- Debounce logic must be tested — it's the most failure-prone component
+- Keep `llm.py` stateless — pass all context in, get structured output back
 
 ---
 

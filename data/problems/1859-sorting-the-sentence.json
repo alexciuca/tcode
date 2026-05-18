@@ -28,36 +28,5 @@
     "Sort the words by removing the last character from each word and sorting according to it"
   ],
   "starter_code": "class Solution:\n    def sortSentence(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "is2 This1 test3 a4"
-      },
-      "expected": "This is test a"
-    },
-    {
-      "args": {
-        "s": "Misfits1 is2 This3 test4"
-      },
-      "expected": "Misfits is This test"
-    },
-    {
-      "args": {
-        "s": "a1"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "z9 y8 x7 w6 v5 u4 t3 s2 r1"
-      },
-      "expected": "r s t u v w x y z"
-    },
-    {
-      "args": {
-        "s": "The1 quick2 brown3 fox4 jumps5 over6 lazy7 dog8 today9"
-      },
-      "expected": "The quick brown fox jumps over lazy dog today"
-    }
-  ]
+  "test_cases": []
 }

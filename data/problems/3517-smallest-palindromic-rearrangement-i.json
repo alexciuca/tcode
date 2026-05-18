@@ -30,36 +30,5 @@
     "Construct one half (using <code>s</code>), and then the other half is its reverse to obtain the lexicographically smallest permutation."
   ],
   "starter_code": "class Solution:\n    def smallestPalindrome(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "dccccccc"
-      },
-      "expected": "ccccccc"
-    },
-    {
-      "args": {
-        "s": "abccccba"
-      },
-      "expected": "abccccba"
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "zzzzzzzz"
-      },
-      "expected": "zzzzzzzz"
-    },
-    {
-      "args": {
-        "s": "abacabad"
-      },
-      "expected": "aabcbaa"
-    }
-  ]
+  "test_cases": []
 }

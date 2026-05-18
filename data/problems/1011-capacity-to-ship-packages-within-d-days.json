@@ -27,51 +27,5 @@
     "Binary search on the answer.  We need a function possible(capacity) which returns true if and only if we can do the task in D days."
   ],
   "starter_code": "class Solution:\n    def shipWithinDays(self, weights: List[int], days: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "weights": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ],
-        "D": 5
-      },
-      "expected": 15
-    },
-    {
-      "args": {
-        "weights": [
-          3,
-          2,
-          2,
-          4,
-          1,
-          4
-        ],
-        "D": 3
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "weights": [
-          1,
-          2,
-          3,
-          1,
-          1
-        ],
-        "D": 4
-      },
-      "expected": 3
-    }
-  ]
+  "test_cases": []
 }

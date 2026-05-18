@@ -32,41 +32,5 @@
     "Otherwise you can construct exactly k palindrome strings and answer is true (why ?)."
   ],
   "starter_code": "class Solution:\n    def canConstruct(self, s: str, k: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abccccdd",
-        "k": 3
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "abc",
-        "k": 3
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "a",
-        "k": 1
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "aabbcc",
-        "k": 7
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
-        "k": 50
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

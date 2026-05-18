@@ -27,56 +27,5 @@
     "One obvious thing: the ball will go out of the boundary only by crossing it. Also, there is only one possible way the ball can go out of the boundary from the boundary cell except for corner cells. From the corner cell, the ball can go out in two different ways.\r\n\r\nCan you use this thing to solve the problem?"
   ],
   "starter_code": "class Solution:\n    def findPaths(self, m: int, n: int, maxMove: int, startRow: int, startColumn: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "m": 2,
-        "n": 2,
-        "maxMove": 1,
-        "startRow": 0,
-        "startColumn": 0
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "m": 1,
-        "n": 3,
-        "maxMove": 3,
-        "startRow": 0,
-        "startColumn": 1
-      },
-      "expected": 12
-    },
-    {
-      "args": {
-        "m": 50,
-        "n": 50,
-        "maxMove": 0,
-        "startRow": 25,
-        "startColumn": 25
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "m": 1,
-        "n": 1,
-        "maxMove": 50,
-        "startRow": 0,
-        "startColumn": 0
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "m": 10,
-        "n": 10,
-        "maxMove": 50,
-        "startRow": 0,
-        "startColumn": 0
-      },
-      "expected": 788744843
-    }
-  ]
+  "test_cases": []
 }

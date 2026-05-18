@@ -21,36 +21,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def convertToBase7(self, num: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num": 0
-      },
-      "expected": "0"
-    },
-    {
-      "args": {
-        "num": 7
-      },
-      "expected": "10"
-    },
-    {
-      "args": {
-        "num": 100
-      },
-      "expected": "202"
-    },
-    {
-      "args": {
-        "num": -7
-      },
-      "expected": "-10"
-    },
-    {
-      "args": {
-        "num": -10000000
-      },
-      "expected": "-150666343"
-    }
-  ]
+  "test_cases": []
 }

@@ -25,36 +25,5 @@
     "Other than the number 0 itself, any number that ends with 0 would lose some digits permanently when reversed."
   ],
   "starter_code": "class Solution:\n    def isSameAfterReversals(self, num: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num": 0
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "num": 526
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "num": 1000
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "num": 1000000
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "num": 999999
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

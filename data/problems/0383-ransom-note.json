@@ -26,27 +26,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def canConstruct(self, ransomNote: str, magazine: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "ransomNote": "a",
-        "magazine": "b"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "ransomNote": "aa",
-        "magazine": "ab"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "ransomNote": "aa",
-        "magazine": "aab"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

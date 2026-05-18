@@ -23,46 +23,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def generateKey(self, num1: int, num2: int, num3: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num1": 1234,
-        "num2": 5678,
-        "num3": 9012
-      },
-      "expected": 1012
-    },
-    {
-      "args": {
-        "num1": 987,
-        "num2": 654,
-        "num3": 321
-      },
-      "expected": 321
-    },
-    {
-      "args": {
-        "num1": 1,
-        "num2": 1,
-        "num3": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "num1": 9999,
-        "num2": 9999,
-        "num3": 9999
-      },
-      "expected": 9999
-    },
-    {
-      "args": {
-        "num1": 1000,
-        "num2": 2000,
-        "num3": 3000
-      },
-      "expected": 1000
-    }
-  ]
+  "test_cases": []
 }

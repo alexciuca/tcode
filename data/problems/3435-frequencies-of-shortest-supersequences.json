@@ -1,0 +1,39 @@
+{
+  "id": "3435",
+  "slug": "frequencies-of-shortest-supersequences",
+  "title": "Frequencies of Shortest Supersequences",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "String",
+    "Bit Manipulation",
+    "Graph",
+    "Topological Sort",
+    "Enumeration"
+  ],
+  "description": "You are given an array of strings words. Find all shortest common supersequences (SCS) of words that are not permutations of each other.\nA shortest common supersequence is a string of minimum length that contains each string in words as a subsequence.\nReturn a 2D array of integers freqs that represent all the SCSs. Each freqs[i] is an array of size 26, representing the frequency of each letter in the lowercase English alphabet for a single SCS. You may return the frequency arrays in any order.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= words.length <= 256",
+    "words[i].length == 2",
+    "All strings in words will altogether be composed of no more than 16 unique lowercase letters.",
+    "All strings in words are unique."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: words = [\"ab\",\"ba\"]\nOutput: [[1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]\nExplanation:\nThe two SCSs are \"aba\" and \"bab\" . The output is the letter frequencies for each one."
+    },
+    {
+      "example_text": "Input: words = [\"aa\",\"ac\"]\nOutput: [[2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]\nExplanation:\nThe two SCSs are \"aac\" and \"aca\" . Since they are permutations of each other, keep only \"aac\" ."
+    },
+    {
+      "example_text": "Input: words = [\"aa\",\"bb\",\"cc\"]\nOutput: [[2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]\nExplanation:\n\"aabbcc\" and all its permutations are SCSs."
+    }
+  ],
+  "hints": [
+    "Each SCS contains at most 2 occurrences of each character. Why?",
+    "Construct every subset of possible characters (1 or 2).",
+    "Check if a supersequence could be constructed using Topological Sort."
+  ],
+  "starter_code": "class Solution:\n    def supersequences(self, words: List[str]) -> List[List[int]]:\n        ",
+  "test_cases": []
+}

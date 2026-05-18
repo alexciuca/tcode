@@ -25,41 +25,5 @@
     "Use the operation with the biggest value possible at each step."
   ],
   "starter_code": "class Solution:\n    def convertTime(self, current: str, correct: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "current": "02:30",
-        "correct": "04:35"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "current": "11:00",
-        "correct": "11:01"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "current": "00:00",
-        "correct": "23:59"
-      },
-      "expected": 32
-    },
-    {
-      "args": {
-        "current": "12:00",
-        "correct": "12:00"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "current": "01:15",
-        "correct": "02:46"
-      },
-      "expected": 4
-    }
-  ]
+  "test_cases": []
 }

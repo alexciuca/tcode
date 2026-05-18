@@ -1,0 +1,26 @@
+{
+  "id": "0895",
+  "slug": "maximum-frequency-stack",
+  "title": "Maximum Frequency Stack",
+  "difficulty": "Hard",
+  "topics": [
+    "Hash Table",
+    "Stack",
+    "Design",
+    "Ordered Set"
+  ],
+  "description": "Design a stack-like data structure to push elements to the stack and pop the most frequent element from the stack.\nImplement the FreqStack class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "0 <= val <= 109",
+    "At most 2 * 104 calls will be made to push and pop.",
+    "It is guaranteed that there will be at least one element in the stack before calling pop."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"FreqStack\", \"push\", \"push\", \"push\", \"push\", \"push\", \"push\", \"pop\", \"pop\", \"pop\", \"pop\"]\n[[], [5], [7], [5], [7], [4], [5], [], [], [], []]\nOutput\n[null, null, null, null, null, null, null, 5, 7, 5, 4]\n\nExplanation\nFreqStack freqStack = new FreqStack();\nfreqStack.push(5); // The stack is [5]\nfreqStack.push(7); // The stack is [5,7]\nfreqStack.push(5); // The stack is [5,7,5]\nfreqStack.push(7); // The stack is [5,7,5,7]\nfreqStack.push(4); // The stack is [5,7,5,7,4]\nfreqStack.push(5); // The stack is [5,7,5,7,4,5]\nfreqStack.pop();   // return 5, as 5 is the most frequent. The stack becomes [5,7,5,7,4].\nfreqStack.pop();   // return 7, as 5 and 7 is the most frequent, but 7 is closest to the top. The stack becomes [5,7,5,4].\nfreqStack.pop();   // return 5, as 5 is the most frequent. The stack becomes [5,7,4].\nfreqStack.pop();   // return 4, as 4, 5 and 7 is the most frequent, but 4 is closest to the top. The stack becomes [5,7]."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class FreqStack:\n\n    def __init__(self):\n        \n\n    def push(self, val: int) -> None:\n        \n\n    def pop(self) -> int:\n        \n\n\n# Your FreqStack object will be instantiated and called as such:\n# obj = FreqStack()\n# obj.push(val)\n# param_2 = obj.pop()",
+  "test_cases": []
+}

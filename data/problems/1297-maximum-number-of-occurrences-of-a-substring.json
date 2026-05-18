@@ -29,51 +29,5 @@
     "Find the Maximum Number of Occurrences of a Substring with bruteforce."
   ],
   "starter_code": "class Solution:\n    def maxFreq(self, s: str, maxLetters: int, minSize: int, maxSize: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aababcaab",
-        "maxLetters": 2,
-        "minSize": 3,
-        "maxSize": 4
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "aaaa",
-        "maxLetters": 1,
-        "minSize": 2,
-        "maxSize": 3
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyz",
-        "maxLetters": 26,
-        "minSize": 1,
-        "maxSize": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "a",
-        "maxLetters": 1,
-        "minSize": 1,
-        "maxSize": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc",
-        "maxLetters": 3,
-        "minSize": 2,
-        "maxSize": 5
-      },
-      "expected": 33
-    }
-  ]
+  "test_cases": []
 }

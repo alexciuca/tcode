@@ -24,25 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def minMoves(self, nums: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "nums": [
-          1,
-          2,
-          3
-        ]
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "nums": [
-          1,
-          2
-        ]
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

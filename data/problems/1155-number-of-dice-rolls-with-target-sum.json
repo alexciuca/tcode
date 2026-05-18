@@ -26,46 +26,5 @@
     "Use dynamic programming.  The states are how many dice are remaining, and what sum total you have rolled so far."
   ],
   "starter_code": "class Solution:\n    def numRollsToTarget(self, n: int, k: int, target: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1,
-        "k": 6,
-        "target": 3
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 2,
-        "k": 6,
-        "target": 7
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "n": 1,
-        "k": 1,
-        "target": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 30,
-        "k": 30,
-        "target": 1000
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "n": 3,
-        "k": 4,
-        "target": 2
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

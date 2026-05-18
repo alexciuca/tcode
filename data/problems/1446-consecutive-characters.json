@@ -24,36 +24,5 @@
     "The answer is max(power[i])."
   ],
   "starter_code": "class Solution:\n    def maxPower(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abbccccdd"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "abc"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "aaaa"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "abcdddeeeeaabbbcd"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-      },
-      "expected": 250
-    }
-  ]
+  "test_cases": []
 }

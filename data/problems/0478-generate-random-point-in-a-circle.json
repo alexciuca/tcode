@@ -1,0 +1,26 @@
+{
+  "id": "0478",
+  "slug": "generate-random-point-in-a-circle",
+  "title": "Generate Random Point in a Circle",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Geometry",
+    "Rejection Sampling",
+    "Randomized"
+  ],
+  "description": "Given the radius and the position of the center of a circle, implement the function randPoint which generates a uniform random point inside the circle.\nImplement the Solution class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "0 < radius <= 108",
+    "-107 <= x_center, y_center <= 107",
+    "At most 3 * 104 calls will be made to randPoint."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"Solution\", \"randPoint\", \"randPoint\", \"randPoint\"]\n[[1.0, 0.0, 0.0], [], [], []]\nOutput\n[null, [-0.02493, -0.38077], [0.82314, 0.38945], [0.36572, 0.17248]]\n\nExplanation\nSolution solution = new Solution(1.0, 0.0, 0.0);\nsolution.randPoint(); // return [-0.02493, -0.38077]\nsolution.randPoint(); // return [0.82314, 0.38945]\nsolution.randPoint(); // return [0.36572, 0.17248]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n\n    def __init__(self, radius: float, x_center: float, y_center: float):\n        \n\n    def randPoint(self) -> List[float]:\n        \n\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution(radius, x_center, y_center)\n# param_1 = obj.randPoint()",
+  "test_cases": []
+}

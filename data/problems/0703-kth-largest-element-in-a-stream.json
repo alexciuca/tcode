@@ -1,0 +1,33 @@
+{
+  "id": "0703",
+  "slug": "kth-largest-element-in-a-stream",
+  "title": "Kth Largest Element in a Stream",
+  "difficulty": "Easy",
+  "topics": [
+    "Tree",
+    "Design",
+    "Binary Search Tree",
+    "Heap (Priority Queue)",
+    "Binary Tree",
+    "Data Stream"
+  ],
+  "description": "You are part of a university admissions office and need to keep track of the kth highest test score from applicants in real-time. This helps to determine cut-off marks for interviews and admissions dynamically as new applicants submit their scores.\nYou are tasked to implement a class which, for a given integer k, maintains a stream of test scores and continuously returns the kth highest test score after a new score has been submitted. More specifically, we are looking for the kth highest score in the sorted list of all scores.\nImplement the KthLargest class:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= nums.length <= 104",
+    "1 <= k <= nums.length + 1",
+    "-104 <= nums[i] <= 104",
+    "-104 <= val <= 104",
+    "At most 104 calls will be made to add."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: [\"KthLargest\", \"add\", \"add\", \"add\", \"add\", \"add\"] [[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]\nOutput: [null, 4, 5, 5, 8, 8]\nExplanation:\nKthLargest kthLargest = new KthLargest(3, [4, 5, 8, 2]); kthLargest.add(3); // return 4 kthLargest.add(5); // return 5 kthLargest.add(10); // return 5 kthLargest.add(9); // return 8 kthLargest.add(4); // return 8"
+    },
+    {
+      "example_text": "Input: [\"KthLargest\", \"add\", \"add\", \"add\", \"add\"] [[4, [7, 7, 7, 7, 8, 3]], [2], [10], [9], [9]]\nOutput: [null, 7, 7, 7, 8]\nExplanation:"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class KthLargest:\n\n    def __init__(self, k: int, nums: List[int]):\n        \n\n    def add(self, val: int) -> int:\n        \n\n\n# Your KthLargest object will be instantiated and called as such:\n# obj = KthLargest(k, nums)\n# param_1 = obj.add(val)",
+  "test_cases": []
+}

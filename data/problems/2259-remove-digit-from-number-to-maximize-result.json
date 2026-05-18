@@ -32,41 +32,5 @@
     "To remove a character at index i, concatenate the substring from index 0 to i - 1 and the substring from index i + 1 to number.length - 1."
   ],
   "starter_code": "class Solution:\n    def removeDigit(self, number: str, digit: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "number": "123",
-        "digit": "3"
-      },
-      "expected": "12"
-    },
-    {
-      "args": {
-        "number": "1231",
-        "digit": "1"
-      },
-      "expected": "231"
-    },
-    {
-      "args": {
-        "number": "99",
-        "digit": "9"
-      },
-      "expected": "9"
-    },
-    {
-      "args": {
-        "number": "12",
-        "digit": "2"
-      },
-      "expected": "1"
-    },
-    {
-      "args": {
-        "number": "987654321",
-        "digit": "5"
-      },
-      "expected": "98764321"
-    }
-  ]
+  "test_cases": []
 }

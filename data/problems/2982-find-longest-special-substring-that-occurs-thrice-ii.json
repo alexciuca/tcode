@@ -34,36 +34,5 @@
     "We only need to maintain the top three values for each group. You can use sorting, heap, or brute-force comparison to find the third largest value in each group."
   ],
   "starter_code": "class Solution:\n    def maximumLength(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aaaa"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "abcdef"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "s": "aaabbbccc"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "aaa"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-      },
-      "expected": 50
-    }
-  ]
+  "test_cases": []
 }

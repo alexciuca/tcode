@@ -1,0 +1,22 @@
+{
+  "id": "0595",
+  "slug": "big-countries",
+  "title": "Big Countries",
+  "difficulty": "Easy",
+  "topics": [
+    "Database"
+  ],
+  "description": "Table: World\nA country is big if:\nWrite a solution to find the name, population, and area of the big countries.\nReturn the result table in any order.\nThe result format is in the following example.\nExample 1:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| name        | varchar |\n| continent   | varchar |\n| area        | int     |\n| population  | int     |\n| gdp         | bigint  |\n+-------------+---------+\nname is the primary key (column with unique values) for this table.\nEach row of this table gives information about the name of a country, the continent to which it belongs, its area, the population, and its GDP value."
+    },
+    {
+      "example_text": "Input: \nWorld table:\n+-------------+-----------+---------+------------+--------------+\n| name        | continent | area    | population | gdp          |\n+-------------+-----------+---------+------------+--------------+\n| Afghanistan | Asia      | 652230  | 25500100   | 20343000000  |\n| Albania     | Europe    | 28748   | 2831741    | 12960000000  |\n| Algeria     | Africa    | 2381741 | 37100000   | 188681000000 |\n| Andorra     | Europe    | 468     | 78115      | 3712000000   |\n| Angola      | Africa    | 1246700 | 20609294   | 100990000000 |\n+-------------+-----------+---------+------------+--------------+\nOutput: \n+-------------+------------+---------+\n| name        | population | area    |\n+-------------+------------+---------+\n| Afghanistan | 25500100   | 652230  |\n| Algeria     | 37100000   | 2381741 |\n+-------------+------------+---------+"
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

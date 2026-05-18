@@ -30,46 +30,5 @@
     "Otherwise, we can only set the <code>i<sup>th</sup></code> bit of one of <code>a ^ x</code> or <code>b ^ x</code>. Depending on the previous bits of  <code>a ^ x</code> or <code>b ^ x</code>, we should set the smaller value’s <code>i<sup>th</sup></code> bit."
   ],
   "starter_code": "class Solution:\n    def maximumXorProduct(self, a: int, b: int, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "a": 12,
-        "b": 8,
-        "n": 4
-      },
-      "expected": 165
-    },
-    {
-      "args": {
-        "a": 6,
-        "b": 9,
-        "n": 5
-      },
-      "expected": 552
-    },
-    {
-      "args": {
-        "a": 0,
-        "b": 0,
-        "n": 0
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "a": 1,
-        "b": 1,
-        "n": 50
-      },
-      "expected": 178448631
-    },
-    {
-      "args": {
-        "a": 1125899906842624,
-        "b": 562949953421312,
-        "n": 49
-      },
-      "expected": 217153608
-    }
-  ]
+  "test_cases": []
 }

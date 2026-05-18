@@ -1,0 +1,29 @@
+{
+  "id": "2202",
+  "slug": "maximize-the-topmost-element-after-k-moves",
+  "title": "Maximize the Topmost Element After K Moves",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Greedy"
+  ],
+  "description": "You are given a 0-indexed integer array nums representing the contents of a pile, where nums[0] is the topmost element of the pile.\nIn one move, you can perform either of the following:\nYou are also given an integer k, which denotes the total number of moves to be made.\nReturn the maximum value of the topmost element of the pile possible after exactly k moves. In case it is not possible to obtain a non-empty pile after k moves, return -1.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i], k <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [5,2,2,4,0,6], k = 4\nOutput: 5\nExplanation:\nOne of the ways we can end with 5 at the top of the pile after 4 moves is as follows:\n- Step 1: Remove the topmost element = 5. The pile becomes [2,2,4,0,6].\n- Step 2: Remove the topmost element = 2. The pile becomes [2,4,0,6].\n- Step 3: Remove the topmost element = 2. The pile becomes [4,0,6].\n- Step 4: Add 5 back onto the pile. The pile becomes [5,4,0,6].\nNote that this is not the only way to end with 5 at the top of the pile. It can be shown that 5 is the largest answer possible after 4 moves."
+    },
+    {
+      "example_text": "Input: nums = [2], k = 1\nOutput: -1\nExplanation: \nIn the first move, our only option is to pop the topmost element of the pile.\nSince it is not possible to obtain a non-empty pile after one move, we return -1."
+    }
+  ],
+  "hints": [
+    "For each index i, how can we check if nums[i] can be present at the top of the pile or not after k moves?",
+    "For which conditions will we end up with an empty pile?"
+  ],
+  "starter_code": "class Solution:\n    def maximumTop(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

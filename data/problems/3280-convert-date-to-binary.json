@@ -23,36 +23,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def convertDateToBinary(self, date: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "date": "2024-12-25"
-      },
-      "expected": "11111101000-1100-11001"
-    },
-    {
-      "args": {
-        "date": "1900-01-01"
-      },
-      "expected": "11101101100-1-1"
-    },
-    {
-      "args": {
-        "date": "2100-12-31"
-      },
-      "expected": "100000110100-1100-11111"
-    },
-    {
-      "args": {
-        "date": "2000-02-29"
-      },
-      "expected": "11111010000-10-11101"
-    },
-    {
-      "args": {
-        "date": "1999-06-15"
-      },
-      "expected": "11111001111-110-1111"
-    }
-  ]
+  "test_cases": []
 }

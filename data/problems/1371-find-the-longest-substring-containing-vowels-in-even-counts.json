@@ -30,36 +30,5 @@
     "Precompute the prefix xor for the bitmask of vowels and then get the longest valid substring."
   ],
   "starter_code": "class Solution:\n    def findTheLongestSubstring(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "eleetminicowoep"
-      },
-      "expected": 15
-    },
-    {
-      "args": {
-        "s": "leetcodeisgreat"
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "s": "aeiou"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "bcdfg"
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "s": "aaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbccccccccccccccccccccddddddddddddddddddddeeeeeeeeeeeeeeeeeeee"
-      },
-      "expected": 100
-    }
-  ]
+  "test_cases": []
 }

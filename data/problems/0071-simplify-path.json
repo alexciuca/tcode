@@ -32,36 +32,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def simplifyPath(self, path: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "path": "/a/./b/../../c/"
-      },
-      "expected": "/c"
-    },
-    {
-      "args": {
-        "path": "/a/../../b/../c//./"
-      },
-      "expected": "/c"
-    },
-    {
-      "args": {
-        "path": "/"
-      },
-      "expected": "/"
-    },
-    {
-      "args": {
-        "path": "/a/b/c/../../d"
-      },
-      "expected": "/a/d"
-    },
-    {
-      "args": {
-        "path": "/a/./b/./c/./d/../../e/../././/../b//./c//./././/..\\'/b"
-      },
-      "expected": "/a/b/c/..\\'/b"
-    }
-  ]
+  "test_cases": []
 }

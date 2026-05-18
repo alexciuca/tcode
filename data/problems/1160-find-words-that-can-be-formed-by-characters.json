@@ -30,29 +30,5 @@
     "To form a string using characters from <code>chars</code>, the frequency of each character in <code>chars</code> must be greater than or equal the frequency of that character in the string to be formed."
   ],
   "starter_code": "class Solution:\n    def countCharacters(self, words: List[str], chars: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "words": [
-          "cat",
-          "bt",
-          "hat",
-          "tree"
-        ],
-        "chars": "atach"
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "words": [
-          "hello",
-          "world",
-          "leetcode"
-        ],
-        "chars": "welldonehoneyr"
-      },
-      "expected": 10
-    }
-  ]
+  "test_cases": []
 }

@@ -1,0 +1,32 @@
+{
+  "id": "1802",
+  "slug": "maximum-value-at-a-given-index-in-a-bounded-array",
+  "title": "Maximum Value at a Given Index in a Bounded Array",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Binary Search",
+    "Greedy"
+  ],
+  "description": "You are given three positive integers: n, index, and maxSum. You want to construct an array nums (0-indexed) that satisfies the following conditions:\nReturn nums[index] of the constructed array.\nNote that abs(x) equals x if x >= 0, and -x otherwise.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= maxSum <= 109",
+    "0 <= index < n"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 4, index = 2,  maxSum = 6\nOutput: 2\nExplanation: nums = [1,2,2,1] is one array that satisfies all the conditions.\nThere are no arrays that satisfy all the conditions and have nums[2] == 3, so 2 is the maximum nums[2]."
+    },
+    {
+      "example_text": "Input: n = 6, index = 1,  maxSum = 10\nOutput: 3"
+    }
+  ],
+  "hints": [
+    "What if the problem was instead determining if you could generate a valid array with nums[index] == target?",
+    "To generate the array, set nums[index] to target, nums[index-i] to target-i, and nums[index+i] to target-i. Then, this will give the minimum possible sum, so check if the sum is less than or equal to maxSum.",
+    "n is too large to actually generate the array, so you can use the formula 1 + 2 + ... + n = n * (n+1) / 2 to quickly find the sum of nums[0...index] and nums[index...n-1].",
+    "Binary search for the target. If it is possible, then move the lower bound up. Otherwise, move the upper bound down."
+  ],
+  "starter_code": "class Solution:\n    def maxValue(self, n: int, index: int, maxSum: int) -> int:\n        ",
+  "test_cases": []
+}

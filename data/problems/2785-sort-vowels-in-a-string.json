@@ -25,36 +25,5 @@
     "Replace characters in string s if it's a vowel from the new array."
   ],
   "starter_code": "class Solution:\n    def sortVowels(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "lEetcOde"
-      },
-      "expected": "lEOtcede"
-    },
-    {
-      "args": {
-        "s": "aeiouAEIOU"
-      },
-      "expected": "AEIOUaeiou"
-    },
-    {
-      "args": {
-        "s": "bcdfg"
-      },
-      "expected": "bcdfg"
-    },
-    {
-      "args": {
-        "s": "aAeEiIoOuU"
-      },
-      "expected": "AEIOUaeiou"
-    },
-    {
-      "args": {
-        "s": "aBcDeFgHiJkLmNoPqRsTuVwXyZ"
-      },
-      "expected": "aBcDeFgHiJkLmNoPqRsTuVwXyZ"
-    }
-  ]
+  "test_cases": []
 }

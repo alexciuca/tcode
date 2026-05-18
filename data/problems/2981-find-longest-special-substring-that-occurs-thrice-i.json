@@ -31,36 +31,5 @@
     "Brute force checking all substrings."
   ],
   "starter_code": "class Solution:\n    def maximumLength(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aaaa"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "abcccccdd"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "abc"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "s": "aaaaaaaaaaaa"
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx"
-      },
-      "expected": -1
-    }
-  ]
+  "test_cases": []
 }

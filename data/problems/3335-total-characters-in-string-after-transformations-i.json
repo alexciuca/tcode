@@ -28,41 +28,5 @@
     "Maintain the frequency of each character."
   ],
   "starter_code": "class Solution:\n    def lengthAfterTransformations(self, s: str, t: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abcd",
-        "t": 1
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "aaa",
-        "t": 2
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "z",
-        "t": 1
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "zzz",
-        "t": 100000
-      },
-      "expected": 460849700
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyz",
-        "t": 50000
-      },
-      "expected": 970042322
-    }
-  ]
+  "test_cases": []
 }

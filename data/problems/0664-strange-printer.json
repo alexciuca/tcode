@@ -22,36 +22,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def strangePrinter(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ababc"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "abc"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "aaaa"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abcabcabcabc"
-      },
-      "expected": 9
-    }
-  ]
+  "test_cases": []
 }

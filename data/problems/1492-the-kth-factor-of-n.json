@@ -27,41 +27,5 @@
     "Keep a list of all factors sorted.  Loop i from 1 to n and add i if n % i == 0. Return the kth factor if it exist in this list."
   ],
   "starter_code": "class Solution:\n    def kthFactor(self, n: int, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 12,
-        "k": 3
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "n": 7,
-        "k": 2
-      },
-      "expected": 7
-    },
-    {
-      "args": {
-        "n": 1,
-        "k": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 1000,
-        "k": 10
-      },
-      "expected": 50
-    },
-    {
-      "args": {
-        "n": 100,
-        "k": 9
-      },
-      "expected": 100
-    }
-  ]
+  "test_cases": []
 }

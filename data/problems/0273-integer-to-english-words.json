@@ -29,36 +29,5 @@
     "There are many edge cases. What are some good test cases? Does your code work with input such as 0? Or 1000010? (middle chunk is zero and should not be printed out)"
   ],
   "starter_code": "class Solution:\n    def numberToWords(self, num: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num": 0
-      },
-      "expected": "Zero"
-    },
-    {
-      "args": {
-        "num": 123
-      },
-      "expected": "One Hundred Twenty Three"
-    },
-    {
-      "args": {
-        "num": 1000
-      },
-      "expected": "One Thousand"
-    },
-    {
-      "args": {
-        "num": 1000000
-      },
-      "expected": "One Million"
-    },
-    {
-      "args": {
-        "num": 2147483647
-      },
-      "expected": "Two Billion One Hundred Forty Seven Million Four Hundred Eighty Three Thousand Six Hundred Forty Seven"
-    }
-  ]
+  "test_cases": []
 }

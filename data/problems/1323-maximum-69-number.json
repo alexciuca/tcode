@@ -1,0 +1,32 @@
+{
+  "id": "1323",
+  "slug": "maximum-69-number",
+  "title": "Maximum 69 Number",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Greedy"
+  ],
+  "description": "You are given a positive integer num consisting only of digits 6 and 9.\nReturn the maximum number you can get by changing at most one digit (6 becomes 9, and 9 becomes 6).\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= num <= 104",
+    "num consists of only 6 and 9 digits."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: num = 9669\nOutput: 9969\nExplanation: \nChanging the first digit results in 6669.\nChanging the second digit results in 9969.\nChanging the third digit results in 9699.\nChanging the fourth digit results in 9666.\nThe maximum number is 9969."
+    },
+    {
+      "example_text": "Input: num = 9996\nOutput: 9999\nExplanation: Changing the last digit 6 to 9 results in the maximum number."
+    },
+    {
+      "example_text": "Input: num = 9999\nOutput: 9999\nExplanation: It is better not to apply any change."
+    }
+  ],
+  "hints": [
+    "Convert the number in an array of its digits.",
+    "Brute force on every digit to get the maximum number."
+  ],
+  "starter_code": "class Solution:\n    def maximum69Number (self, num: int) -> int:\n        ",
+  "test_cases": []
+}

@@ -30,41 +30,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findMinStep(self, board: str, hand: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "board": "WWRRBBW",
-        "hand": "WB"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "board": "RBYYBBRRB",
-        "hand": "YRBG"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "board": "R",
-        "hand": "R"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "board": "RRWWRWWW",
-        "hand": "WR"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "board": "RWYYRGWGYYWR",
-        "hand": "GYRBW"
-      },
-      "expected": -1
-    }
-  ]
+  "test_cases": []
 }

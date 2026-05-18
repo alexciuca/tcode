@@ -26,54 +26,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def numSpecialEquivGroups(self, words: List[str]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "a": [
-          "a",
-          "b",
-          "c",
-          "a",
-          "c",
-          "c"
-        ]
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "a": [
-          "aa",
-          "bb",
-          "ab",
-          "ba"
-        ]
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "a": [
-          "abc",
-          "acb",
-          "bac",
-          "bca",
-          "cab",
-          "cba"
-        ]
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "a": [
-          "abcd",
-          "cdab",
-          "adcb",
-          "cbad"
-        ]
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

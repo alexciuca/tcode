@@ -28,41 +28,5 @@
     "Use a two-pointers approach to avoid computing the same information multiple times."
   ],
   "starter_code": "class Solution:\n    def takeCharacters(self, s: str, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aabcacb",
-        "k": 3
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "s": "a",
-        "k": 1
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "s": "aaabbbccc",
-        "k": 0
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abc",
-        "k": 3
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "s": "aaaaaabbbbbcccccaaabbbccc",
-        "k": 5
-      },
-      "expected": 16
-    }
-  ]
+  "test_cases": []
 }

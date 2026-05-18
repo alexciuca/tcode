@@ -1,0 +1,41 @@
+{
+  "id": "3283",
+  "slug": "maximum-number-of-moves-to-kill-all-pawns",
+  "title": "Maximum Number of Moves to Kill All Pawns",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Math",
+    "Bit Manipulation",
+    "Breadth-First Search",
+    "Game Theory",
+    "Bitmask"
+  ],
+  "description": "There is a 50 x 50 chessboard with one knight and some pawns on it. You are given two integers kx and ky where (kx, ky) denotes the position of the knight, and a 2D array positions where positions[i] = [xi, yi] denotes the position of the pawns on the chessboard.\nAlice and Bob play a turn-based game, where Alice goes first. In each player's turn:\nAlice is trying to maximize the sum of the number of moves made by both players until there are no more pawns on the board, whereas Bob tries to minimize them.\nReturn the maximum total number of moves made during the game that Alice can achieve, assuming both players play optimally.\nNote that in one move, a chess knight has eight possible positions it can move to, as illustrated below. Each move is two cells in a cardinal direction, then one cell in an orthogonal direction.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "0 <= kx, ky <= 49",
+    "1 <= positions.length <= 15",
+    "positions[i].length == 2",
+    "0 <= positions[i][0], positions[i][1] <= 49",
+    "All positions[i] are unique.",
+    "The input is generated such that positions[i] != [kx, ky] for all 0 <= i < positions.length."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: kx = 1, ky = 1, positions = [[0,0]]\nOutput: 4\nExplanation:\n\nThe knight takes 4 moves to reach the pawn at (0, 0) ."
+    },
+    {
+      "example_text": "Input: kx = 0, ky = 2, positions = [[1,1],[2,2],[3,3]]\nOutput: 8\nExplanation:\n"
+    },
+    {
+      "example_text": "Input: kx = 0, ky = 0, positions = [[1,2],[2,4]]\nOutput: 3\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Use BFS to preprocess the minimum number of moves to reach one pawn from the other pawns.",
+    "Consider the knight’s original position as another pawn.",
+    "Use DP with a bitmask to store current pawns that have not been captured."
+  ],
+  "starter_code": "class Solution:\n    def maxMoves(self, kx: int, ky: int, positions: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

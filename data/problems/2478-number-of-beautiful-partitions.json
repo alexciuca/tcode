@@ -28,46 +28,5 @@
     "You can also use a dynamic programming approach, let an array dp where dp[i] is the solution of the problem for the prefix of the string ending at index i, the answer of the problem will be dp[n-1]. What are the transitions of this dp?"
   ],
   "starter_code": "class Solution:\n    def beautifulPartitions(self, s: str, k: int, minLength: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "165462",
-        "k": 4,
-        "minLength": 2
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "238182",
-        "k": 5,
-        "minLength": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "1",
-        "k": 1,
-        "minLength": 1
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "111111",
-        "k": 2,
-        "minLength": 3
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789",
-        "k": 3,
-        "minLength": 2
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

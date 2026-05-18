@@ -1,0 +1,29 @@
+{
+  "id": "2930",
+  "slug": "number-of-strings-which-can-be-rearranged-to-contain-substring",
+  "title": "Number of Strings Which Can Be Rearranged to Contain Substring",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "description": "You are given an integer n.\nA string s is called good if it contains only lowercase English characters and it is possible to rearrange the characters of s such that the new string contains \"leet\" as a substring.\nFor example:\nReturn the total number of good strings of length n.\nSince the answer may be large, return it modulo 109 + 7.\nA substring is a contiguous sequence of characters within a string.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 4\nOutput: 12\nExplanation: The 12 strings which can be rearranged to have \"leet\" as a substring are: \"eelt\", \"eetl\", \"elet\", \"elte\", \"etel\", \"etle\", \"leet\", \"lete\", \"ltee\", \"teel\", \"tele\", and \"tlee\"."
+    },
+    {
+      "example_text": "Input: n = 10\nOutput: 83943898\nExplanation: The number of strings with length 10 which can be rearranged to have \"leet\" as a substring is 526083947580. Hence the answer is 526083947580 % (109 + 7) = 83943898."
+    }
+  ],
+  "hints": [
+    "A good string must contain at least one <code>l</code>, one <code>t</code>, and two <code>e</code>.",
+    "Divide the problem into subproblems and use Dynamic Programming."
+  ],
+  "starter_code": "class Solution:\n    def stringCount(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

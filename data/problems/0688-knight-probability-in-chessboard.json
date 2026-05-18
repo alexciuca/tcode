@@ -22,51 +22,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def knightProbability(self, n: int, k: int, row: int, column: int) -> float:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 8,
-        "k": 1,
-        "row": 0,
-        "column": 0
-      },
-      "expected": 0.25
-    },
-    {
-      "args": {
-        "n": 3,
-        "k": 2,
-        "row": 1,
-        "column": 1
-      },
-      "expected": 0.0
-    },
-    {
-      "args": {
-        "n": 1,
-        "k": 0,
-        "row": 0,
-        "column": 0
-      },
-      "expected": 1.0
-    },
-    {
-      "args": {
-        "n": 4,
-        "k": 1,
-        "row": 3,
-        "column": 3
-      },
-      "expected": 0.25
-    },
-    {
-      "args": {
-        "n": 25,
-        "k": 100,
-        "row": 12,
-        "column": 12
-      },
-      "expected": 0.047428760693801315
-    }
-  ]
+  "test_cases": []
 }

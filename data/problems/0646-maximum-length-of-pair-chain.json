@@ -25,25 +25,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findLongestChain(self, pairs: List[List[int]]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "pairs": [
-          [
-            1,
-            2
-          ],
-          [
-            2,
-            3
-          ],
-          [
-            3,
-            4
-          ]
-        ]
-      },
-      "expected": 2
-    }
-  ]
+  "test_cases": []
 }

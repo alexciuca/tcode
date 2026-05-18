@@ -27,36 +27,5 @@
     "s should not have any occurrences of “ba” as a substring."
   ],
   "starter_code": "class Solution:\n    def checkString(self, s: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aaab"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "abab"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "bbb"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "aaaaabbbbb"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

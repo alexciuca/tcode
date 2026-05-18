@@ -25,36 +25,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isValid(self, code: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "code": "<DIV>This is the first line <DIV></DIV></DIV>"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "code": "<div>def new_person():</div><r>ef new_</r>"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "code": "<A>  </A>"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "code": "<a></b>"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "code": "<DIV><DIV><DIV></DIV></DIV></DIV><t></t>"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

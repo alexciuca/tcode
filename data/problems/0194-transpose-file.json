@@ -1,0 +1,22 @@
+{
+  "id": "0194",
+  "slug": "transpose-file",
+  "title": "Transpose File",
+  "difficulty": "Medium",
+  "topics": [
+    "Shell"
+  ],
+  "description": "Given a text file file.txt, transpose its content.\nYou may assume that each row has the same number of columns, and each field is separated by the ' ' character.\nExample:\nIf file.txt has the following content:\nOutput the following:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "name age\nalice 21\nryan 30"
+    },
+    {
+      "example_text": "name alice ryan\nage 21 30"
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

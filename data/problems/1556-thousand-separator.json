@@ -22,36 +22,5 @@
     "Scan from the back of the integer and use dots to connect blocks with length 3 except the last block."
   ],
   "starter_code": "class Solution:\n    def thousandSeparator(self, n: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 0
-      },
-      "expected": "0"
-    },
-    {
-      "args": {
-        "n": 123
-      },
-      "expected": "123"
-    },
-    {
-      "args": {
-        "n": 1234
-      },
-      "expected": "1.234"
-    },
-    {
-      "args": {
-        "n": 1000000
-      },
-      "expected": "1.000.000"
-    },
-    {
-      "args": {
-        "n": 2147483647
-      },
-      "expected": "2.147.483.647"
-    }
-  ]
+  "test_cases": []
 }

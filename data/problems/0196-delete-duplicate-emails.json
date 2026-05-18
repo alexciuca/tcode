@@ -1,0 +1,22 @@
+{
+  "id": "0196",
+  "slug": "delete-duplicate-emails",
+  "title": "Delete Duplicate Emails",
+  "difficulty": "Easy",
+  "topics": [
+    "Database"
+  ],
+  "description": "Table: Person\nWrite a solution to delete all duplicate emails, keeping only one unique email with the smallest id.\nFor SQL users, please note that you are supposed to write a DELETE statement and not a SELECT one.\nFor Pandas users, please note that you are supposed to modify Person in place.\nAfter running your script, the answer shown is the Person table. The driver will first compile and run your piece of code and then show the Person table. The final order of the Person table does not matter.\nThe result format is in the following example.\nExample 1:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| id          | int     |\n| email       | varchar |\n+-------------+---------+\nid is the primary key (column with unique values) for this table.\nEach row of this table contains an email. The emails will not contain uppercase letters."
+    },
+    {
+      "example_text": "Input: \nPerson table:\n+----+------------------+\n| id | email            |\n+----+------------------+\n| 1  | john@example.com |\n| 2  | bob@example.com  |\n| 3  | john@example.com |\n+----+------------------+\nOutput: \n+----+------------------+\n| id | email            |\n+----+------------------+\n| 1  | john@example.com |\n| 2  | bob@example.com  |\n+----+------------------+\nExplanation: john@example.com is repeated two times. We keep the row with the smallest Id = 1."
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

@@ -34,46 +34,5 @@
     "Keep track of already generated sequences so they are not processed again."
   ],
   "starter_code": "class Solution:\n    def findLexSmallestString(self, s: str, a: int, b: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "5525",
-        "a": 9,
-        "b": 2
-      },
-      "expected": "2050"
-    },
-    {
-      "args": {
-        "s": "74087",
-        "a": 7,
-        "b": 2
-      },
-      "expected": "00000"
-    },
-    {
-      "args": {
-        "s": "00",
-        "a": 1,
-        "b": 1
-      },
-      "expected": "00"
-    },
-    {
-      "args": {
-        "s": "9999",
-        "a": 9,
-        "b": 3
-      },
-      "expected": "0000"
-    },
-    {
-      "args": {
-        "s": "123456789",
-        "a": 5,
-        "b": 4
-      },
-      "expected": "012341239"
-    }
-  ]
+  "test_cases": []
 }

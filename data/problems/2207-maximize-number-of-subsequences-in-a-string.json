@@ -27,41 +27,5 @@
     "For each of the above cases, count the number of times the pattern occurs as a subsequence in text. The larger count is the required answer."
   ],
   "starter_code": "class Solution:\n    def maximumSubsequenceCount(self, text: str, pattern: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "text": "abdcdcdcd",
-        "pattern": "cd"
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "text": "aabaa",
-        "pattern": "aa"
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "text": "a",
-        "pattern": "ab"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "text": "aaaaaaaaaa",
-        "pattern": "aa"
-      },
-      "expected": 55
-    },
-    {
-      "args": {
-        "text": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmn",
-        "pattern": "zz"
-      },
-      "expected": 45
-    }
-  ]
+  "test_cases": []
 }

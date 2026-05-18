@@ -29,41 +29,5 @@
     "Try brute-forcing and checking if the palindrome you generated is a \"k-Mirror\" number."
   ],
   "starter_code": "class Solution:\n    def kMirror(self, k: int, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "k": 2,
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "k": 2,
-        "n": 5
-      },
-      "expected": 25
-    },
-    {
-      "args": {
-        "k": 3,
-        "n": 2
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "k": 9,
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "k": 2,
-        "n": 30
-      },
-      "expected": 63601371564
-    }
-  ]
+  "test_cases": []
 }

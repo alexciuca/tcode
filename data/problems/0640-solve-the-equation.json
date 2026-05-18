@@ -28,36 +28,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def solveEquation(self, equation: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "equation": "2x=x"
-      },
-      "expected": "Infinite solutions"
-    },
-    {
-      "args": {
-        "equation": "2x=x+x"
-      },
-      "expected": "Infinite solutions"
-    },
-    {
-      "args": {
-        "equation": "x=0"
-      },
-      "expected": "Infinite solutions"
-    },
-    {
-      "args": {
-        "equation": "0=0"
-      },
-      "expected": "Infinite solutions"
-    },
-    {
-      "args": {
-        "equation": "2x+3x-6x=x+2"
-      },
-      "expected": "Infinite solutions"
-    }
-  ]
+  "test_cases": []
 }

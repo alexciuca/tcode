@@ -26,36 +26,5 @@
     "Traverse the string from left to right and perform the operation every time it is possible."
   ],
   "starter_code": "class Solution:\n    def maxOperations(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "1001"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "10010"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "1"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "0000"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "11111000011110001111"
-      },
-      "expected": 47
-    }
-  ]
+  "test_cases": []
 }

@@ -1,0 +1,31 @@
+{
+  "id": "1825",
+  "slug": "finding-mk-average",
+  "title": "Finding MK Average",
+  "difficulty": "Hard",
+  "topics": [
+    "Design",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Data Stream",
+    "Ordered Set"
+  ],
+  "description": "You are given two integers, m and k, and a stream of integers. You are tasked to implement a data structure that calculates the MKAverage for the stream.\nThe MKAverage can be calculated using these steps:\nImplement the MKAverage class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "3 <= m <= 105",
+    "1 < k*2 < m",
+    "1 <= num <= 105",
+    "At most 105 calls will be made to addElement and calculateMKAverage."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"MKAverage\", \"addElement\", \"addElement\", \"calculateMKAverage\", \"addElement\", \"calculateMKAverage\", \"addElement\", \"addElement\", \"addElement\", \"calculateMKAverage\"]\n[[3, 1], [3], [1], [], [10], [], [5], [5], [5], []]\nOutput\n[null, null, null, -1, null, 3, null, null, null, 5]\n\nExplanation\nMKAverage obj = new MKAverage(3, 1); \nobj.addElement(3);        // current elements are [3]\nobj.addElement(1);        // current elements are [3,1]\nobj.calculateMKAverage(); // return -1, because m = 3 and only 2 elements exist.\nobj.addElement(10);       // current elements are [3,1,10]\nobj.calculateMKAverage(); // The last 3 elements are [3,1,10].\n                          // After removing smallest and largest 1 element the container will be [3].\n                          // The average of [3] equals 3/1 = 3, return 3\nobj.addElement(5);        // current elements are [3,1,10,5]\nobj.addElement(5);        // current elements are [3,1,10,5,5]\nobj.addElement(5);        // current elements are [3,1,10,5,5,5]\nobj.calculateMKAverage(); // The last 3 elements are [5,5,5].\n                          // After removing smallest and largest 1 element the container will be [5].\n                          // The average of [5] equals 5/1 = 5, return 5"
+    }
+  ],
+  "hints": [
+    "At each query, try to save and update the sum of the elements needed to calculate MKAverage.",
+    "You can use BSTs for fast insertion and deletion of the elements."
+  ],
+  "starter_code": "class MKAverage:\n\n    def __init__(self, m: int, k: int):\n        \n\n    def addElement(self, num: int) -> None:\n        \n\n    def calculateMKAverage(self) -> int:\n        \n\n\n# Your MKAverage object will be instantiated and called as such:\n# obj = MKAverage(m, k)\n# obj.addElement(num)\n# param_2 = obj.calculateMKAverage()",
+  "test_cases": []
+}

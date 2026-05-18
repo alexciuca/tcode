@@ -27,41 +27,5 @@
     "For each round check if you were playing."
   ],
   "starter_code": "class Solution:\n    def numberOfRounds(self, loginTime: str, logoutTime: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "loginTime": "09:31",
-        "logoutTime": "10:14"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "loginTime": "21:22",
-        "logoutTime": "21:56"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "loginTime": "23:55",
-        "logoutTime": "00:05"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "loginTime": "00:00",
-        "logoutTime": "23:59"
-      },
-      "expected": 96
-    },
-    {
-      "args": {
-        "loginTime": "12:01",
-        "logoutTime": "12:44"
-      },
-      "expected": 2
-    }
-  ]
+  "test_cases": []
 }

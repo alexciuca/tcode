@@ -1,0 +1,32 @@
+{
+  "id": "3609",
+  "slug": "minimum-moves-to-reach-target-in-grid",
+  "title": "Minimum Moves to Reach Target in Grid",
+  "difficulty": "Hard",
+  "topics": [
+    "Math"
+  ],
+  "description": "You are given four integers sx, sy, tx, and ty, representing two points (sx, sy) and (tx, ty) on an infinitely large 2D grid.\nYou start at (sx, sy).\nAt any point (x, y), define m = max(x, y). You can either:\nReturn the minimum number of moves required to reach (tx, ty). If it is impossible to reach the target, return -1.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "0 <= sx <= tx <= 109",
+    "0 <= sy <= ty <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: sx = 1, sy = 2, tx = 5, ty = 4\nOutput: 2\nExplanation:\nThe optimal path is:\nThus, the minimum number of moves to reach (5, 4) is 2."
+    },
+    {
+      "example_text": "Input: sx = 0, sy = 1, tx = 2, ty = 3\nOutput: 3\nExplanation:\nThe optimal path is:\nThus, the minimum number of moves to reach (2, 3) is 3."
+    },
+    {
+      "example_text": "Input: sx = 1, sy = 1, tx = 2, ty = 2\nOutput: -1\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Work backwards from <code>(tx, ty)</code> to <code>(sx, sy)</code>, undoing one move at each step.",
+    "If the larger coordinate >= 2 × (the smaller), undo by halving the larger; otherwise undo by subtracting the smaller from the larger.",
+    "Count these undo-steps until you hit <code>(sx, sy)</code> (return the count), or return -1 if you drop below or get stuck."
+  ],
+  "starter_code": "class Solution:\n    def minMoves(self, sx: int, sy: int, tx: int, ty: int) -> int:\n        ",
+  "test_cases": []
+}

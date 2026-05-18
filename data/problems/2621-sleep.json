@@ -1,0 +1,26 @@
+{
+  "id": "2621",
+  "slug": "sleep",
+  "title": "Sleep",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "Given a positive integer millis, write an asynchronous function that sleeps for millis milliseconds. It can resolve any value.\nNote that minor deviation from millis in the actual sleep duration is acceptable.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= millis <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: millis = 100\nOutput: 100\nExplanation: It should return a promise that resolves after 100ms.\nlet t = Date.now();\nsleep(100).then(() => {\n  console.log(Date.now() - t); // 100\n});"
+    },
+    {
+      "example_text": "Input: millis = 200\nOutput: 200\nExplanation: It should return a promise that resolves after 200ms."
+    }
+  ],
+  "hints": [
+    "In Javascript, you can execute code after some delay with the setTimeout(fn, sleepTime) function.",
+    "An async function is defined as function which returns a Promise.",
+    "To create a Promise, you can code new Promise((resolve, reject) => {}). When you want the function to return a value, code resolve(value) inside the callback."
+  ],
+  "starter_code": "",
+  "test_cases": []
+}

@@ -26,58 +26,5 @@
     "Does the project with the largest number of milestones affect the number of weeks?"
   ],
   "starter_code": "class Solution:\n    def numberOfWeeks(self, milestones: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "milestones": [
-          1,
-          2,
-          3
-        ]
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "milestones": [
-          5,
-          2,
-          1
-        ]
-      },
-      "expected": 7
-    },
-    {
-      "args": {
-        "milestones": [
-          1000000000
-        ]
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "milestones": [
-          1,
-          1,
-          1,
-          1,
-          1
-        ]
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "milestones": [
-          1000000000,
-          1000000000,
-          1,
-          1,
-          1
-        ]
-      },
-      "expected": 2000000003
-    }
-  ]
+  "test_cases": []
 }

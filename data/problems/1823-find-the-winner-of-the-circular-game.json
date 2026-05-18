@@ -28,41 +28,5 @@
     "In each turn, count k people and remove the last person from the list."
   ],
   "starter_code": "class Solution:\n    def findTheWinner(self, n: int, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 5,
-        "k": 2
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "n": 6,
-        "k": 5
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 1,
-        "k": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 500,
-        "k": 1
-      },
-      "expected": 500
-    },
-    {
-      "args": {
-        "n": 500,
-        "k": 500
-      },
-      "expected": 69
-    }
-  ]
+  "test_cases": []
 }

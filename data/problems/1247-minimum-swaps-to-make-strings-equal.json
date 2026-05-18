@@ -31,41 +31,5 @@
     "So the strategy is, apply case 1 as much as possible, then apply case 2 if the last two unmatched are in this case, or fall into impossible if only one pair of unmatched left. This can be done via a simple math."
   ],
   "starter_code": "class Solution:\n    def minimumSwap(self, s1: str, s2: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s1": "xy",
-        "s2": "yx"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s1": "xxyyxyxyxx",
-        "s2": "xyx yxyxxyx"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s1": "x",
-        "s2": "y"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "s1": "xxxx",
-        "s2": "yyyy"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s1": "xyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxy",
-        "s2": "yxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyx"
-      },
-      "expected": 50
-    }
-  ]
+  "test_cases": []
 }

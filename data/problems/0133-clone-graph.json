@@ -1,0 +1,37 @@
+{
+  "id": "0133",
+  "slug": "clone-graph",
+  "title": "Clone Graph",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph"
+  ],
+  "description": "Given a reference of a node in a connected undirected graph.\nReturn a deep copy (clone) of the graph.\nEach node in the graph contains a value (int) and a list (List[Node]) of its neighbors.\nTest case format:\nFor simplicity, each node's value is the same as the node's index (1-indexed). For example, the first node with val == 1, the second node with val == 2, and so on. The graph is represented in the test case using an adjacency list.\nAn adjacency list is a collection of unordered lists used to represent a finite graph. Each list describes the set of neighbors of a node in the graph.\nThe given node will always be the first node with val = 1. You must return the copy of the given node as a reference to the cloned graph.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the graph is in the range [0, 100].",
+    "1 <= Node.val <= 100",
+    "Node.val is unique for each node.",
+    "There are no repeated edges and no self-loops in the graph.",
+    "The Graph is connected and all nodes can be visited starting from the given node."
+  ],
+  "examples": [
+    {
+      "example_text": "class Node {\n    public int val;\n    public List<Node> neighbors;\n}"
+    },
+    {
+      "example_text": "Input: adjList = [[2,4],[1,3],[2,4],[1,3]]\nOutput: [[2,4],[1,3],[2,4],[1,3]]\nExplanation: There are 4 nodes in the graph.\n1st node (val = 1)'s neighbors are 2nd node (val = 2) and 4th node (val = 4).\n2nd node (val = 2)'s neighbors are 1st node (val = 1) and 3rd node (val = 3).\n3rd node (val = 3)'s neighbors are 2nd node (val = 2) and 4th node (val = 4).\n4th node (val = 4)'s neighbors are 1st node (val = 1) and 3rd node (val = 3)."
+    },
+    {
+      "example_text": "Input: adjList = [[]]\nOutput: [[]]\nExplanation: Note that the input contains one empty list. The graph consists of only one node with val = 1 and it does not have any neighbors."
+    },
+    {
+      "example_text": "Input: adjList = []\nOutput: []\nExplanation: This an empty graph, it does not have any nodes."
+    }
+  ],
+  "hints": [],
+  "starter_code": "\"\"\"\n# Definition for a Node.\nclass Node:\n    def __init__(self, val = 0, neighbors = None):\n        self.val = val\n        self.neighbors = neighbors if neighbors is not None else []\n\"\"\"\n\nfrom typing import Optional\nclass Solution:\n    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:\n        ",
+  "test_cases": []
+}

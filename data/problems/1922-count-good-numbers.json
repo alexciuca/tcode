@@ -27,36 +27,5 @@
     "Exponentiation can be done very fast if we looked at the binary bits of n."
   ],
   "starter_code": "class Solution:\n    def countGoodNumbers(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "n": 4
-      },
-      "expected": 400
-    },
-    {
-      "args": {
-        "n": 10
-      },
-      "expected": 3200000
-    },
-    {
-      "args": {
-        "n": 0
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 1000000000000000
-      },
-      "expected": 711414395
-    }
-  ]
+  "test_cases": []
 }

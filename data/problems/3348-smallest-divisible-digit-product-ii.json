@@ -34,41 +34,5 @@
     "Try to form the string greedily."
   ],
   "starter_code": "class Solution:\n    def smallestNumber(self, num: str, t: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num": "123",
-        "t": 120
-      },
-      "expected": "358"
-    },
-    {
-      "args": {
-        "num": "999",
-        "t": 1000000000000
-      },
-      "expected": "-1"
-    },
-    {
-      "args": {
-        "num": "10",
-        "t": 1
-      },
-      "expected": "10"
-    },
-    {
-      "args": {
-        "num": "54321",
-        "t": 2
-      },
-      "expected": "54321"
-    },
-    {
-      "args": {
-        "num": "2468",
-        "t": 1000000000000000
-      },
-      "expected": "-1"
-    }
-  ]
+  "test_cases": []
 }

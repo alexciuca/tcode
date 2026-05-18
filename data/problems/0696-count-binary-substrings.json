@@ -24,36 +24,5 @@
     "How many valid binary substrings exist in \"000111\", and how many in \"11100\"?  What about \"00011100\"?"
   ],
   "starter_code": "class Solution:\n    def countBinarySubstrings(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "00110011"
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "s": "10101"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "0011"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "0"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "0101010101010101010101010101010101010101010101010101"
-      },
-      "expected": 51
-    }
-  ]
+  "test_cases": []
 }

@@ -27,36 +27,5 @@
     "To reverse a number, first convert it to a string. Then, create a new string that is the reverse of the first one. Finally, convert the new string back into a number."
   ],
   "starter_code": "class Solution:\n    def sumOfNumberAndReverse(self, num: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num": 0
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "num": 36
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "num": 1
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "num": 100000
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "num": 89
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

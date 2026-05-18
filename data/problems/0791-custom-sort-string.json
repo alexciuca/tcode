@@ -25,13 +25,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def customSortString(self, order: str, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "cba",
-        "t": "abcd"
-      },
-      "expected": "cbad"
-    }
-  ]
+  "test_cases": []
 }

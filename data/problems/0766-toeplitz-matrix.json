@@ -26,46 +26,5 @@
     "Check whether each value is equal to the value of it's top-left neighbor."
   ],
   "starter_code": "class Solution:\n    def isToeplitzMatrix(self, matrix: List[List[int]]) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "matrix": [
-          [
-            1,
-            2,
-            3,
-            4
-          ],
-          [
-            5,
-            1,
-            2,
-            3
-          ],
-          [
-            9,
-            5,
-            1,
-            2
-          ]
-        ]
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "matrix": [
-          [
-            1,
-            2
-          ],
-          [
-            2,
-            2
-          ]
-        ]
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

@@ -1,0 +1,35 @@
+{
+  "id": "3242",
+  "slug": "design-neighbor-sum-service",
+  "title": "Design Neighbor Sum Service",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Matrix",
+    "Simulation"
+  ],
+  "description": "You are given a n x n 2D array grid containing distinct elements in the range [0, n2 - 1].\nImplement the NeighborSum class:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "3 <= n == grid.length == grid[0].length <= 10",
+    "0 <= grid[i][j] <= n2 - 1",
+    "All grid[i][j] are distinct.",
+    "value in adjacentSum and diagonalSum will be in the range [0, n2 - 1].",
+    "At most 2 * n2 calls will be made to adjacentSum and diagonalSum."
+  ],
+  "examples": [
+    {
+      "example_text": "Input:\n[\"NeighborSum\", \"adjacentSum\", \"adjacentSum\", \"diagonalSum\", \"diagonalSum\"]\n[[[[0, 1, 2], [3, 4, 5], [6, 7, 8]]], [1], [4], [4], [8]]\nOutput: [null, 6, 16, 16, 4]\nExplanation:\n"
+    },
+    {
+      "example_text": "Input:\n[\"NeighborSum\", \"adjacentSum\", \"diagonalSum\"]\n[[[[1, 2, 0, 3], [4, 7, 15, 6], [8, 9, 10, 11], [12, 13, 14, 5]]], [15], [9]]\nOutput: [null, 23, 45]\nExplanation:\n"
+    }
+  ],
+  "hints": [
+    "Find the cell <code>(i, j)</code> in which the element is present.",
+    "You can store the coordinates for each value."
+  ],
+  "starter_code": "class NeighborSum:\n\n    def __init__(self, grid: List[List[int]]):\n        \n\n    def adjacentSum(self, value: int) -> int:\n        \n\n    def diagonalSum(self, value: int) -> int:\n        \n\n\n# Your NeighborSum object will be instantiated and called as such:\n# obj = NeighborSum(grid)\n# param_1 = obj.adjacentSum(value)\n# param_2 = obj.diagonalSum(value)",
+  "test_cases": []
+}

@@ -26,36 +26,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def longestValidParentheses(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "()"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "((())()())"
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "s": ""
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "()(()"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "()()()()()()()()()()()()()()()()()()()()()()()()()()()()()"
-      },
-      "expected": 58
-    }
-  ]
+  "test_cases": []
 }

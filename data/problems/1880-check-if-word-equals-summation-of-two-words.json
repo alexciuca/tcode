@@ -27,46 +27,5 @@
     "Check if the numerical values satisfies the condition."
   ],
   "starter_code": "class Solution:\n    def isSumEqual(self, firstWord: str, secondWord: str, targetWord: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "firstWord": "acb",
-        "secondWord": "cdc",
-        "targetWord": "dai"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "firstWord": "aaa",
-        "secondWord": "bbb",
-        "targetWord": "ccc"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "firstWord": "a",
-        "secondWord": "b",
-        "targetWord": "c"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "firstWord": "jaaa",
-        "secondWord": "jaaa",
-        "targetWord": "jjjjj"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "firstWord": "abcdefghij",
-        "secondWord": "jihgfedcba",
-        "targetWord": "jajajajaja"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

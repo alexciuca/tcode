@@ -27,51 +27,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def circularArrayLoop(self, nums: List[int]) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "nums": [
-          2,
-          -1,
-          1,
-          2,
-          2
-        ]
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "nums": [
-          -1,
-          2
-        ]
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "nums": [
-          -2,
-          1,
-          -1,
-          -2,
-          -2
-        ]
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "nums": [
-          2,
-          -1,
-          1,
-          2,
-          2
-        ]
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

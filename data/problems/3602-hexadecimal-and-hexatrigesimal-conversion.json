@@ -24,36 +24,5 @@
     "Simulate as described"
   ],
   "starter_code": "class Solution:\n    def concatHex36(self, n: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": "11"
-    },
-    {
-      "args": {
-        "n": 35
-      },
-      "expected": "4C9X2Z"
-    },
-    {
-      "args": {
-        "n": 36
-      },
-      "expected": "5101000"
-    },
-    {
-      "args": {
-        "n": 255
-      },
-      "expected": "FE019VE9R"
-    },
-    {
-      "args": {
-        "n": 1000
-      },
-      "expected": "F4240GJDGXS"
-    }
-  ]
+  "test_cases": []
 }

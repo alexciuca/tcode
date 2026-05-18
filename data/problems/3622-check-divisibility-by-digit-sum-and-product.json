@@ -22,36 +22,5 @@
     "Compute the digits' sum and product, then check if <code>n % (sum + product) == 0</code>."
   ],
   "starter_code": "class Solution:\n    def checkDivisibility(self, n: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 12
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "n": 128
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "n": 1000000
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "n": 999999
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

@@ -1,0 +1,27 @@
+{
+  "id": "0432",
+  "slug": "all-oone-data-structure",
+  "title": "All O`one Data Structure",
+  "difficulty": "Hard",
+  "topics": [
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Doubly-Linked List"
+  ],
+  "description": "Design a data structure to store the strings' count with the ability to return the strings with minimum and maximum counts.\nImplement the AllOne class:\nNote that each function must run in O(1) average time complexity.\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= key.length <= 10",
+    "key consists of lowercase English letters.",
+    "It is guaranteed that for each call to dec, key is existing in the data structure.",
+    "At most 5 * 104 calls will be made to inc, dec, getMaxKey, and getMinKey."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"AllOne\", \"inc\", \"inc\", \"getMaxKey\", \"getMinKey\", \"inc\", \"getMaxKey\", \"getMinKey\"]\n[[], [\"hello\"], [\"hello\"], [], [], [\"leet\"], [], []]\nOutput\n[null, null, null, \"hello\", \"hello\", null, \"hello\", \"leet\"]\n\nExplanation\nAllOne allOne = new AllOne();\nallOne.inc(\"hello\");\nallOne.inc(\"hello\");\nallOne.getMaxKey(); // return \"hello\"\nallOne.getMinKey(); // return \"hello\"\nallOne.inc(\"leet\");\nallOne.getMaxKey(); // return \"hello\"\nallOne.getMinKey(); // return \"leet\""
+    }
+  ],
+  "hints": [],
+  "starter_code": "class AllOne:\n\n    def __init__(self):\n        \n\n    def inc(self, key: str) -> None:\n        \n\n    def dec(self, key: str) -> None:\n        \n\n    def getMaxKey(self) -> str:\n        \n\n    def getMinKey(self) -> str:\n        \n\n\n# Your AllOne object will be instantiated and called as such:\n# obj = AllOne()\n# obj.inc(key)\n# obj.dec(key)\n# param_3 = obj.getMaxKey()\n# param_4 = obj.getMinKey()",
+  "test_cases": []
+}

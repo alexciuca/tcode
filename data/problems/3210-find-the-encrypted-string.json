@@ -24,41 +24,5 @@
     "Make a new string such that for each character in <code>s</code>, character <code>i</code> will correspond to <code>(i + k) % s.length</code> character in the original string."
   ],
   "starter_code": "class Solution:\n    def getEncryptedString(self, s: str, k: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abcd",
-        "k": 1
-      },
-      "expected": "bcda"
-    },
-    {
-      "args": {
-        "s": "aaiougaxamп",
-        "k": 2
-      },
-      "expected": "iougaxamпaa"
-    },
-    {
-      "args": {
-        "s": "a",
-        "k": 1
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "abcdefghij",
-        "k": 10000
-      },
-      "expected": "abcdefghij"
-    },
-    {
-      "args": {
-        "s": "zzzzz",
-        "k": 5
-      },
-      "expected": "zzzzz"
-    }
-  ]
+  "test_cases": []
 }

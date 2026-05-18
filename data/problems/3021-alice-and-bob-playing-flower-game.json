@@ -1,0 +1,26 @@
+{
+  "id": "3021",
+  "slug": "alice-and-bob-playing-flower-game",
+  "title": "Alice and Bob Playing Flower Game",
+  "difficulty": "Medium",
+  "topics": [
+    "Math"
+  ],
+  "description": "Alice and Bob are playing a turn-based game on a circular field surrounded by flowers. The circle represents the field, and there are x flowers in the clockwise direction between Alice and Bob, and y flowers in the anti-clockwise direction between them.\nThe game proceeds as follows:\nGiven two integers, n and m, the task is to compute the number of possible pairs (x, y) that satisfy the conditions:\nReturn the number of possible pairs (x, y) that satisfy the conditions mentioned in the statement.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n, m <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3, m = 2\nOutput: 3\nExplanation: The following pairs satisfy conditions described in the statement: (1,2), (3,2), (2,1)."
+    },
+    {
+      "example_text": "Input: n = 1, m = 1\nOutput: 0\nExplanation: No pairs satisfy the conditions described in the statement."
+    }
+  ],
+  "hints": [
+    "(x, y) is valid if and only if they have different parities."
+  ],
+  "starter_code": "class Solution:\n    def flowerGame(self, n: int, m: int) -> int:\n        ",
+  "test_cases": []
+}

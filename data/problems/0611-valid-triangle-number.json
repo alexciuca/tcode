@@ -25,17 +25,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def triangleNumber(self, nums: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "nums": [
-          2,
-          2,
-          3,
-          4
-        ]
-      },
-      "expected": 3
-    }
-  ]
+  "test_cases": []
 }

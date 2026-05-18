@@ -1,0 +1,28 @@
+{
+  "id": "1622",
+  "slug": "fancy-sequence",
+  "title": "Fancy Sequence",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "Design",
+    "Segment Tree"
+  ],
+  "description": "Write an API that generates fancy sequences using the append, addAll, and multAll operations.\nImplement the Fancy class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= val, inc, m <= 100",
+    "0 <= idx <= 105",
+    "At most 105 calls total will be made to append, addAll, multAll, and getIndex."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"Fancy\", \"append\", \"addAll\", \"append\", \"multAll\", \"getIndex\", \"addAll\", \"append\", \"multAll\", \"getIndex\", \"getIndex\", \"getIndex\"]\n[[], [2], [3], [7], [2], [0], [3], [10], [2], [0], [1], [2]]\nOutput\n[null, null, null, null, null, 10, null, null, null, 26, 34, 20]\n\nExplanation\nFancy fancy = new Fancy();\nfancy.append(2);   // fancy sequence: [2]\nfancy.addAll(3);   // fancy sequence: [2+3] -> [5]\nfancy.append(7);   // fancy sequence: [5, 7]\nfancy.multAll(2);  // fancy sequence: [5*2, 7*2] -> [10, 14]\nfancy.getIndex(0); // return 10\nfancy.addAll(3);   // fancy sequence: [10+3, 14+3] -> [13, 17]\nfancy.append(10);  // fancy sequence: [13, 17, 10]\nfancy.multAll(2);  // fancy sequence: [13*2, 17*2, 10*2] -> [26, 34, 20]\nfancy.getIndex(0); // return 26\nfancy.getIndex(1); // return 34\nfancy.getIndex(2); // return 20"
+    }
+  ],
+  "hints": [
+    "Use two arrays to save the cumulative multipliers at each time point and cumulative sums adjusted by the current multiplier.",
+    "The function getIndex(idx) ask to the current value modulo 10^9+7. Use modular inverse and both arrays to calculate this value."
+  ],
+  "starter_code": "class Fancy:\n\n    def __init__(self):\n        \n\n    def append(self, val: int) -> None:\n        \n\n    def addAll(self, inc: int) -> None:\n        \n\n    def multAll(self, m: int) -> None:\n        \n\n    def getIndex(self, idx: int) -> int:\n        \n\n\n# Your Fancy object will be instantiated and called as such:\n# obj = Fancy()\n# obj.append(val)\n# obj.addAll(inc)\n# obj.multAll(m)\n# param_4 = obj.getIndex(idx)",
+  "test_cases": []
+}

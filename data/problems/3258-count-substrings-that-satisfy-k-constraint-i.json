@@ -28,41 +28,5 @@
     "Using a brute force approach, check each index until a substring satisfying the k-constraint is found, then increment."
   ],
   "starter_code": "class Solution:\n    def countKConstraintSubstrings(self, s: str, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "0101",
-        "k": 2
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "s": "010101",
-        "k": 1
-      },
-      "expected": 15
-    },
-    {
-      "args": {
-        "s": "0",
-        "k": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "1111111111",
-        "k": 5
-      },
-      "expected": 55
-    },
-    {
-      "args": {
-        "s": "00011100001110000111",
-        "k": 3
-      },
-      "expected": 135
-    }
-  ]
+  "test_cases": []
 }

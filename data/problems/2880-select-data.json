@@ -1,0 +1,22 @@
+{
+  "id": "2880",
+  "slug": "select-data",
+  "title": "Select Data",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "Write a solution to select the name and age of the student with student_id = 101.\nThe result format is in the following example.",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "DataFrame students\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| student_id  | int    |\n| name        | object |\n| age         | int    |\n+-------------+--------+"
+    },
+    {
+      "example_text": "Example 1:\nInput:\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 101        | Ulysses | 13  |\n| 53         | William | 10  |\n| 128        | Henry   | 6   |\n| 3          | Henry   | 11  |\n+------------+---------+-----+\nOutput:\n+---------+-----+\n| name    | age | \n+---------+-----+\n| Ulysses | 13  |\n+---------+-----+\nExplanation:\nStudent Ulysses has student_id = 101, we select the name and age."
+    }
+  ],
+  "hints": [
+    "Consider applying both row and column filtering to select the desired data."
+  ],
+  "starter_code": "",
+  "test_cases": []
+}

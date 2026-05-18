@@ -22,41 +22,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def repeatedStringMatch(self, a: str, b: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "a": "ab",
-        "b": "cabab"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "a": "a",
-        "b": "aa"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "a": "abc",
-        "b": "wxyz"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "a": "abcd",
-        "b": "cdabcdab"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "a": "aabaab",
-        "b": "aadaabaab"
-      },
-      "expected": -1
-    }
-  ]
+  "test_cases": []
 }

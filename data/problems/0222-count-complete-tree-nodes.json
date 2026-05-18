@@ -1,0 +1,32 @@
+{
+  "id": "0222",
+  "slug": "count-complete-tree-nodes",
+  "title": "Count Complete Tree Nodes",
+  "difficulty": "Easy",
+  "topics": [
+    "Binary Search",
+    "Bit Manipulation",
+    "Tree",
+    "Binary Tree"
+  ],
+  "description": "Given the root of a complete binary tree, return the number of the nodes in the tree.\nAccording to Wikipedia, every level, except possibly the last, is completely filled in a complete binary tree, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.\nDesign an algorithm that runs in less than O(n) time complexity.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [0, 5 * 104].",
+    "0 <= Node.val <= 5 * 104",
+    "The tree is guaranteed to be complete."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [1,2,3,4,5,6]\nOutput: 6"
+    },
+    {
+      "example_text": "Input: root = []\nOutput: 0"
+    },
+    {
+      "example_text": "Input: root = [1]\nOutput: 1"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def countNodes(self, root: Optional[TreeNode]) -> int:\n        ",
+  "test_cases": []
+}

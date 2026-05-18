@@ -27,55 +27,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def addStrings(self, num1: str, num2: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num1": "11",
-        "num2": "123"
-      },
-      "expected": "134"
-    },
-    {
-      "args": {
-        "num1": "456",
-        "num2": "77"
-      },
-      "expected": "533"
-    },
-    {
-      "args": {
-        "num1": "0",
-        "num2": "0"
-      },
-      "expected": "0"
-    },
-    {
-      "args": {
-        "num1": "123",
-        "num2": "123"
-      },
-      "expected": "246"
-    },
-    {
-      "args": {
-        "num1": "1123",
-        "num2": "123"
-      },
-      "expected": "1246"
-    },
-    {
-      "args": {
-        "num1": "123",
-        "num2": "1123"
-      },
-      "expected": "1246"
-    },
-    {
-      "args": {
-        "num1": "1",
-        "num2": "999"
-      },
-      "expected": "1000"
-    }
-  ]
+  "test_cases": []
 }

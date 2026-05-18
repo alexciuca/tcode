@@ -24,36 +24,5 @@
     "Beware of overflow."
   ],
   "starter_code": "class Solution:\n    def countDigitOne(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 13
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "n": 0
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "n": 824883294
-      },
-      "expected": 767944060
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 111111111
-      },
-      "expected": 100000008
-    }
-  ]
+  "test_cases": []
 }

@@ -28,27 +28,5 @@
     "DP[i][j] = DP[i - 1][j - 1] + 1 , if text1[i] == text2[j]\r\nDP[i][j] = max(DP[i - 1][j], DP[i][j - 1]) , otherwise"
   ],
   "starter_code": "class Solution:\n    def longestCommonSubsequence(self, text1: str, text2: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "text1": "abcde",
-        "text2": "ace"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "text1": "abc",
-        "text2": "abc"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "text1": "abc",
-        "text2": "def"
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

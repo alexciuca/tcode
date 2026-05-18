@@ -30,36 +30,5 @@
     "That means you need to count the amount of each letter and make sure the amount is enough."
   ],
   "starter_code": "class Solution:\n    def balancedString(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "QWER"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "QQWE"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "QQQW"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "QQQQQQQWWWWWWWWEEEEEEERRRRRRR"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "QWQWQWQW"
-      },
-      "expected": 4
-    }
-  ]
+  "test_cases": []
 }

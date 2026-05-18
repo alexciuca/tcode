@@ -1,0 +1,34 @@
+{
+  "id": "3272",
+  "slug": "find-the-count-of-good-integers",
+  "title": "Find the Count of Good Integers",
+  "difficulty": "Hard",
+  "topics": [
+    "Hash Table",
+    "Math",
+    "Combinatorics",
+    "Enumeration"
+  ],
+  "description": "You are given two positive integers n and k.\nAn integer x is called k-palindromic if:\nAn integer is called good if its digits can be rearranged to form a k-palindromic integer. For example, for k = 2, 2020 can be rearranged to form the k-palindromic integer 2002, whereas 1010 cannot be rearranged to form a k-palindromic integer.\nReturn the count of good integers containing n digits.\nNote that any integer must not have leading zeros, neither before nor after rearrangement. For example, 1010 cannot be rearranged to form 101.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 10",
+    "1 <= k <= 9"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3, k = 5\nOutput: 27\nExplanation:\nSome of the good integers are:"
+    },
+    {
+      "example_text": "Input: n = 1, k = 4\nOutput: 2\nExplanation:\nThe two good integers are 4 and 8."
+    },
+    {
+      "example_text": "Input: n = 5, k = 6\nOutput: 2468"
+    }
+  ],
+  "hints": [
+    "How to generate all K-palindromic strings of length <code>n</code>? Do we need to go through all <code>n</code> digits?",
+    "Use permutations to calculate the number of possible rearrangements."
+  ],
+  "starter_code": "class Solution:\n    def countGoodIntegers(self, n: int, k: int) -> int:\n        ",
+  "test_cases": []
+}

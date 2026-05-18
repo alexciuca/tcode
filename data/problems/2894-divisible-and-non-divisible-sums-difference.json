@@ -25,41 +25,5 @@
     "With arithmetic progression we know that the sum of integers in the range <code>[1, n]</code> is <code>n * (n + 1) / 2 </code>."
   ],
   "starter_code": "class Solution:\n    def differenceOfSums(self, n: int, m: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 10,
-        "m": 3
-      },
-      "expected": 19
-    },
-    {
-      "args": {
-        "n": 5,
-        "m": 2
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "n": 1,
-        "m": 1
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "n": 1,
-        "m": 1000
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 1000,
-        "m": 1
-      },
-      "expected": -500500
-    }
-  ]
+  "test_cases": []
 }

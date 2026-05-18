@@ -26,41 +26,5 @@
     "How can we check if we can reach (1, 1) using the GCD value calculate above?"
   ],
   "starter_code": "class Solution:\n    def isReachable(self, targetX: int, targetY: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "targetX": 4,
-        "targetY": 7
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "targetX": 2,
-        "targetY": 4
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "targetX": 1,
-        "targetY": 1
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "targetX": 1000000000,
-        "targetY": 1000000000
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "targetX": 6,
-        "targetY": 9
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

@@ -27,36 +27,5 @@
     "Delete all digits and all marked characters."
   ],
   "starter_code": "class Solution:\n    def clearDigits(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abc"
-      },
-      "expected": "abc"
-    },
-    {
-      "args": {
-        "s": "cb34"
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "a1b2c3"
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "a0b1c2d3e4f5"
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "zzz9yyy8xxx7www6vvv5uuu4ttt3sss2rrr1qqq0ppp"
-      },
-      "expected": "zzyyxxwwvvuuttssrrqqppp"
-    }
-  ]
+  "test_cases": []
 }

@@ -26,36 +26,5 @@
     "Bonus: Try to solve the problem with higher constraints: n ≤ 10^18."
   ],
   "starter_code": "class Solution:\n    def minOperations(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 8
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 39
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "n": 100000
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "n": 15
-      },
-      "expected": 4
-    }
-  ]
+  "test_cases": []
 }

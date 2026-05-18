@@ -20,41 +20,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def findKthNumber(self, n: int, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 13,
-        "k": 3
-      },
-      "expected": 11
-    },
-    {
-      "args": {
-        "n": 100,
-        "k": 10
-      },
-      "expected": 17
-    },
-    {
-      "args": {
-        "n": 1,
-        "k": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 1000000000,
-        "k": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 1000000000,
-        "k": 1000000000
-      },
-      "expected": 999999999
-    }
-  ]
+  "test_cases": []
 }

@@ -22,20 +22,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def minDistance(self, word1: str, word2: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "word1": "horse",
-        "word2": "ros"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "word1": "intention",
-        "word2": "execution"
-      },
-      "expected": 5
-    }
-  ]
+  "test_cases": []
 }

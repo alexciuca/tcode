@@ -27,41 +27,5 @@
     "We only need to check substrings of length at most 30, because 10^9 has 30 bits."
   ],
   "starter_code": "class Solution:\n    def queryString(self, s: str, n: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "0110",
-        "n": 3
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "00110110100010011",
-        "n": 3
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "1",
-        "n": 1
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "0",
-        "n": 1
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "11010110010110101101",
-        "n": 5
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

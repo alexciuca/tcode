@@ -1,0 +1,27 @@
+{
+  "id": "0559",
+  "slug": "maximum-depth-of-n-ary-tree",
+  "title": "Maximum Depth of N-ary Tree",
+  "difficulty": "Easy",
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "description": "Given a n-ary tree, find its maximum depth.\nThe maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.\nNary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value (See examples).\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The total number of nodes is in the range [0, 104].",
+    "The depth of the n-ary tree is less than or equal to 1000."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [1,null,3,2,4,null,5,6]\nOutput: 3"
+    },
+    {
+      "example_text": "Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]\nOutput: 5"
+    }
+  ],
+  "hints": [],
+  "starter_code": "\"\"\"\n# Definition for a Node.\nclass Node:\n    def __init__(self, val: Optional[int] = None, children: Optional[List['Node']] = None):\n        self.val = val\n        self.children = children\n\"\"\"\n\nclass Solution:\n    def maxDepth(self, root: 'Node') -> int:\n        ",
+  "test_cases": []
+}

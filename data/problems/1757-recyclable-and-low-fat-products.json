@@ -1,0 +1,22 @@
+{
+  "id": "1757",
+  "slug": "recyclable-and-low-fat-products",
+  "title": "Recyclable and Low Fat Products",
+  "difficulty": "Easy",
+  "topics": [
+    "Database"
+  ],
+  "description": "Table: Products\nWrite a solution to find the ids of products that are both low fat and recyclable.\nReturn the result table in any order.\nThe result format is in the following example.\nExample 1:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| product_id  | int     |\n| low_fats    | enum    |\n| recyclable  | enum    |\n+-------------+---------+\nproduct_id is the primary key (column with unique values) for this table.\nlow_fats is an ENUM (category) of type ('Y', 'N') where 'Y' means this product is low fat and 'N' means it is not.\nrecyclable is an ENUM (category) of types ('Y', 'N') where 'Y' means this product is recyclable and 'N' means it is not."
+    },
+    {
+      "example_text": "Input: \nProducts table:\n+-------------+----------+------------+\n| product_id  | low_fats | recyclable |\n+-------------+----------+------------+\n| 0           | Y        | N          |\n| 1           | Y        | Y          |\n| 2           | N        | Y          |\n| 3           | Y        | Y          |\n| 4           | N        | N          |\n+-------------+----------+------------+\nOutput: \n+-------------+\n| product_id  |\n+-------------+\n| 1           |\n| 3           |\n+-------------+\nExplanation: Only products 1 and 3 are both low fat and recyclable."
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "0278",
+  "slug": "first-bad-version",
+  "title": "First Bad Version",
+  "difficulty": "Easy",
+  "topics": [
+    "Binary Search",
+    "Interactive"
+  ],
+  "description": "You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.\nSuppose you have n versions [1, 2, ..., n] and you want to find out the first bad one, which causes all the following ones to be bad.\nYou are given an API bool isBadVersion(version) which returns whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= bad <= n <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 5, bad = 4\nOutput: 4\nExplanation:\ncall isBadVersion(3) -> false\ncall isBadVersion(5) -> true\ncall isBadVersion(4) -> true\nThen 4 is the first bad version."
+    },
+    {
+      "example_text": "Input: n = 1, bad = 1\nOutput: 1"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# The isBadVersion API is already defined for you.\n# def isBadVersion(version: int) -> bool:\n\nclass Solution:\n    def firstBadVersion(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

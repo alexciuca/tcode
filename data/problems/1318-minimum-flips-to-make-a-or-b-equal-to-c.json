@@ -27,46 +27,5 @@
     "Check the bits one by one whether they need to be flipped."
   ],
   "starter_code": "class Solution:\n    def minFlips(self, a: int, b: int, c: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "a": 8,
-        "b": 3,
-        "c": 7
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "a": 4,
-        "b": 2,
-        "c": 7
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "a": 1,
-        "b": 1,
-        "c": 0
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "a": 1000000000,
-        "b": 1000000000,
-        "c": 1
-      },
-      "expected": 27
-    },
-    {
-      "args": {
-        "a": 536870911,
-        "b": 536870911,
-        "c": 1073741823
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }
