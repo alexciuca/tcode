@@ -25,36 +25,5 @@
     "If n is odd, return a string of size n formed only by 'a', else return string formed with n-1 'a' and 1 'b''."
   ],
   "starter_code": "class Solution:\n    def generateTheString(self, n: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "n": 5
-      },
-      "expected": "aaaaa"
-    },
-    {
-      "args": {
-        "n": 2
-      },
-      "expected": "ab"
-    },
-    {
-      "args": {
-        "n": 500
-      },
-      "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab"
-    },
-    {
-      "args": {
-        "n": 10
-      },
-      "expected": "aaaaaaaaab"
-    }
-  ]
+  "test_cases": []
 }

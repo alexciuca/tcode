@@ -1,0 +1,22 @@
+{
+  "id": "2887",
+  "slug": "fill-missing-data",
+  "title": "Fill Missing Data",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "Write a solution to fill in the missing value as 0 in the quantity column.\nThe result format is in the following example.",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "DataFrame products\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| name        | object |\n| quantity    | int    |\n| price       | int    |\n+-------------+--------+"
+    },
+    {
+      "example_text": "Example 1:\nInput:+-----------------+----------+-------+\n| name            | quantity | price |\n+-----------------+----------+-------+\n| Wristwatch      | None     | 135   |\n| WirelessEarbuds | None     | 821   |\n| GolfClubs       | 779      | 9319  |\n| Printer         | 849      | 3051  |\n+-----------------+----------+-------+\nOutput:\n+-----------------+----------+-------+\n| name            | quantity | price |\n+-----------------+----------+-------+\n| Wristwatch      | 0        | 135   |\n| WirelessEarbuds | 0        | 821   |\n| GolfClubs       | 779      | 9319  |\n| Printer         | 849      | 3051  |\n+-----------------+----------+-------+\nExplanation: \nThe quantity for Wristwatch and WirelessEarbuds are filled by 0."
+    }
+  ],
+  "hints": [
+    "Consider using a build-in function in pandas library to fill the missing values of specified columns."
+  ],
+  "starter_code": "",
+  "test_cases": []
+}

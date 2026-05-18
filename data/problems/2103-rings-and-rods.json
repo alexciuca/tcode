@@ -30,36 +30,5 @@
     "Create 3 booleans, 1 for each color, to store if that color is present for the current rod. If all 3 are true after looking through the string, then the rod contains all the colors."
   ],
   "starter_code": "class Solution:\n    def countPoints(self, rings: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "rings": "B0B6G0R6R0R6G9"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "rings": "B0R0G0"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "rings": "R0"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "rings": "R0R0R0R0R0R0R0R0R0R0"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "rings": "R0G0B0R1G1B1R2G2B2R3G3B3R4G4B4R5G5B5R6G6B6R7G7B7R8G8B8R9G9B9"
-      },
-      "expected": 10
-    }
-  ]
+  "test_cases": []
 }

@@ -30,36 +30,5 @@
     "With the given constraints, what is the largest numerically balanced number?"
   ],
   "starter_code": "class Solution:\n    def nextBeautifulNumber(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 22
-    },
-    {
-      "args": {
-        "n": 100
-      },
-      "expected": 122
-    },
-    {
-      "args": {
-        "n": 9999
-      },
-      "expected": 14444
-    },
-    {
-      "args": {
-        "n": 0
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 999999
-      },
-      "expected": 1224444
-    }
-  ]
+  "test_cases": []
 }

@@ -1,0 +1,39 @@
+{
+  "id": "3455",
+  "slug": "shortest-matching-substring",
+  "title": "Shortest Matching Substring",
+  "difficulty": "Hard",
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Binary Search",
+    "String Matching"
+  ],
+  "description": "You are given a string s and a pattern string p, where p contains exactly two '*' characters.\nThe '*' in p matches any sequence of zero or more characters.\nReturn the length of the shortest substring in s that matches p. If there is no such substring, return -1.\nExample 1:\nExample 2:\nExample 3:\nExample 4:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "2 <= p.length <= 105",
+    "s contains only lowercase English letters.",
+    "p contains only lowercase English letters and exactly two '*'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abaacbaecebce\", p = \"ba*c*ce\"\nOutput: 8\nExplanation:\nThe shortest matching substring of p in s is \" ba e c eb ce \" ."
+    },
+    {
+      "example_text": "Input: s = \"baccbaadbc\", p = \"cc*baa*adb\"\nOutput: -1\nExplanation:\nThere is no matching substring in s ."
+    },
+    {
+      "example_text": "Input: s = \"a\", p = \"**\"\nOutput: 0\nExplanation:\nThe empty substring is the shortest matching substring."
+    },
+    {
+      "example_text": "Input: s = \"madlogic\", p = \"*adlogi*\"\nOutput: 6\nExplanation:\nThe shortest matching substring of p in s is \" adlogi \" ."
+    }
+  ],
+  "hints": [
+    "The pattern string <code>p</code> can be divided into three segments.",
+    "Use the KMP algorithm to locate all occurrences of each segment in <code>s</code>."
+  ],
+  "starter_code": "class Solution:\n    def shortestMatchingSubstring(self, s: str, p: str) -> int:\n        ",
+  "test_cases": []
+}

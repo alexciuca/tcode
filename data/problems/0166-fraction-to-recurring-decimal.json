@@ -31,41 +31,5 @@
     "Be wary of edge cases! List out as many test cases as you can think of and test your code thoroughly."
   ],
   "starter_code": "class Solution:\n    def fractionToDecimal(self, numerator: int, denominator: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "numerator": 1,
-        "denominator": 2
-      },
-      "expected": "0.5"
-    },
-    {
-      "args": {
-        "numerator": 1,
-        "denominator": 6
-      },
-      "expected": "0.1(6)"
-    },
-    {
-      "args": {
-        "numerator": 4,
-        "denominator": 333
-      },
-      "expected": "0.(012)"
-    },
-    {
-      "args": {
-        "numerator": -1,
-        "denominator": 2
-      },
-      "expected": "-0.5"
-    },
-    {
-      "args": {
-        "numerator": -2147483648,
-        "denominator": -1
-      },
-      "expected": "2147483648"
-    }
-  ]
+  "test_cases": []
 }

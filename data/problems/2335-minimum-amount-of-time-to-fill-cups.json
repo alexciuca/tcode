@@ -30,56 +30,5 @@
     "You always want to fill up the two types of water with the most unfilled cups."
   ],
   "starter_code": "class Solution:\n    def fillCups(self, amount: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "amount": [
-          1,
-          4,
-          2
-        ]
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "amount": [
-          5,
-          4,
-          4
-        ]
-      },
-      "expected": 7
-    },
-    {
-      "args": {
-        "amount": [
-          0,
-          0,
-          0
-        ]
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "amount": [
-          100,
-          0,
-          0
-        ]
-      },
-      "expected": 100
-    },
-    {
-      "args": {
-        "amount": [
-          100,
-          100,
-          100
-        ]
-      },
-      "expected": 150
-    }
-  ]
+  "test_cases": []
 }

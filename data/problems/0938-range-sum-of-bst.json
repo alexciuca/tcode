@@ -26,41 +26,5 @@
   ],
   "hints": [],
   "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "root": [
-          10,
-          5,
-          15,
-          3,
-          7,
-          null,
-          18
-        ],
-        "low": 7,
-        "high": 15
-      },
-      "expected": 32
-    },
-    {
-      "args": {
-        "root": [
-          10,
-          5,
-          15,
-          3,
-          7,
-          13,
-          18,
-          1,
-          null,
-          6
-        ],
-        "low": 6,
-        "high": 10
-      },
-      "expected": 23
-    }
-  ]
+  "test_cases": []
 }

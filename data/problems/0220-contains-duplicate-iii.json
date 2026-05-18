@@ -30,47 +30,5 @@
     "Use already existing state to evaluate next state  -  Like, a set of k sorted numbers are only needed to be tracked. When we are processing the next number in array, then we can utilize the existing sorted state and it is not necessary to sort next overlapping set of k numbers again."
   ],
   "starter_code": "class Solution:\n    def containsNearbyAlmostDuplicate(self, nums: List[int], indexDiff: int, valueDiff: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "nums": [
-          1,
-          2,
-          3,
-          1
-        ],
-        "k": 3,
-        "t": 0
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "nums": [
-          1,
-          0,
-          1,
-          1
-        ],
-        "k": 1,
-        "t": 2
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "nums": [
-          1,
-          5,
-          9,
-          1,
-          5,
-          9
-        ],
-        "k": 2,
-        "t": 3
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

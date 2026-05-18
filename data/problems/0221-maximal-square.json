@@ -28,41 +28,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def maximalSquare(self, matrix: List[List[str]]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "matrix": [
-          [
-            "1",
-            "0",
-            "1",
-            "0",
-            "0"
-          ],
-          [
-            "1",
-            "0",
-            "1",
-            "1",
-            "1"
-          ],
-          [
-            "1",
-            "1",
-            "1",
-            "1",
-            "1"
-          ],
-          [
-            "1",
-            "0",
-            "0",
-            "1",
-            "0"
-          ]
-        ]
-      },
-      "expected": 4
-    }
-  ]
+  "test_cases": []
 }

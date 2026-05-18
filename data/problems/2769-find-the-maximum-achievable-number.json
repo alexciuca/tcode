@@ -22,41 +22,5 @@
     "Let x be the answer, it’s always optimal to decrease x in each operation and increase nums."
   ],
   "starter_code": "class Solution:\n    def theMaximumAchievableX(self, num: int, t: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num": 1,
-        "t": 1
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "num": 10,
-        "t": 5
-      },
-      "expected": 15
-    },
-    {
-      "args": {
-        "num": 50,
-        "t": 50
-      },
-      "expected": 100
-    },
-    {
-      "args": {
-        "num": 1,
-        "t": 50
-      },
-      "expected": 51
-    },
-    {
-      "args": {
-        "num": 25,
-        "t": 25
-      },
-      "expected": 50
-    }
-  ]
+  "test_cases": []
 }

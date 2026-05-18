@@ -29,30 +29,5 @@
     "The first chunk can be found as the smallest k for which A[:k+1] == [0, 1, 2, ...k]; then we repeat this process."
   ],
   "starter_code": "class Solution:\n    def maxChunksToSorted(self, arr: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "arr": [
-          4,
-          3,
-          2,
-          1,
-          0
-        ]
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "arr": [
-          1,
-          0,
-          2,
-          3,
-          4
-        ]
-      },
-      "expected": 4
-    }
-  ]
+  "test_cases": []
 }

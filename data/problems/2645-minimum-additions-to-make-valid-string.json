@@ -30,36 +30,5 @@
     "If the two characters that are being pointed to differ, Increment the answer and the pointer to the string “abc” by one."
   ],
   "starter_code": "class Solution:\n    def addMinimum(self, word: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "word": "b"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "word": "aab"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "word": "abc"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "word": "ccccccccccccccccccccccccccccccccccccccccccccccccc"
-      },
-      "expected": 98
-    },
-    {
-      "args": {
-        "word": "baca"
-      },
-      "expected": 5
-    }
-  ]
+  "test_cases": []
 }

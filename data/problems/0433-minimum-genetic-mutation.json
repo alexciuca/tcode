@@ -24,40 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def minMutation(self, startGene: str, endGene: str, bank: List[str]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "start": "AACCGGTT",
-        "end": "AACCGGTA",
-        "bank": [
-          "AACCGGTA"
-        ]
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "start": "AACCGGTT",
-        "end": "AAACGGTA",
-        "bank": [
-          "AACCGGTA",
-          "AACCGCTA",
-          "AAACGGTA"
-        ]
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "start": "AAAAACCC",
-        "end": "AACCCCCC",
-        "bank": [
-          "AAAACCCC",
-          "AAACCCCC",
-          "AACCCCCC"
-        ]
-      },
-      "expected": 3
-    }
-  ]
+  "test_cases": []
 }

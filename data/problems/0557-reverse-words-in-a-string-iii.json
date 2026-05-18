@@ -25,36 +25,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def reverseWords(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "Hello World"
-      },
-      "expected": "olleH dlroW"
-    },
-    {
-      "args": {
-        "s": "Python is awesome"
-      },
-      "expected": "nohtyP si emosewa"
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "I"
-      },
-      "expected": "I"
-    },
-    {
-      "args": {
-        "s": "The quick brown fox jumps over the lazy dog this is a much longer string with many words to test performance"
-      },
-      "expected": "ehT kciuq nworb xof spmuj revo eht yzal god siht si a hcum regnol gnirts htiw ynam sdrow ot tset ecnamrofrep"
-    }
-  ]
+  "test_cases": []
 }

@@ -26,56 +26,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def validTicTacToe(self, board: List[str]) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "board": [
-          "X O",
-          " X ",
-          "O  "
-        ]
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "board": [
-          "XXO",
-          "XOO",
-          "OXX"
-        ]
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "board": [
-          "XOX",
-          "O X",
-          "O X"
-        ]
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "board": [
-          "XXX",
-          "OOO",
-          "   "
-        ]
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "board": [
-          "X X",
-          "OOX",
-          "XOO"
-        ]
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

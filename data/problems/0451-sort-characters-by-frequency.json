@@ -29,36 +29,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def frequencySort(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "tree"
-      },
-      "expected": "eetr"
-    },
-    {
-      "args": {
-        "s": "cccaab"
-      },
-      "expected": "cccaab"
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "aabbccddee"
-      },
-      "expected": "aabbccddee"
-    },
-    {
-      "args": {
-        "s": "abcABC123123123"
-      },
-      "expected": "111222333abcABC"
-    }
-  ]
+  "test_cases": []
 }

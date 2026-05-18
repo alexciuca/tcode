@@ -1,0 +1,35 @@
+{
+  "id": "2836",
+  "slug": "maximize-value-of-function-in-a-ball-passing-game",
+  "title": "Maximize Value of Function in a Ball Passing Game",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "description": "You are given an integer array receiver of length n and an integer k. n players are playing a ball-passing game.\nYou choose the starting player, i. The game proceeds as follows: player i passes the ball to player receiver[i], who then passes it to receiver[receiver[i]], and so on, for k passes in total. The game's score is the sum of the indices of the players who touched the ball, including repetitions, i.e. i + receiver[i] + receiver[receiver[i]] + ... + receiver(k)[i].\nReturn the maximum possible score.\nNotes:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= receiver.length == n <= 105",
+    "0 <= receiver[i] <= n - 1",
+    "1 <= k <= 1010"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: receiver = [2,0,1], k = 4\nOutput: 6\nExplanation:\nStarting with player i = 2 the initial score is 2:"
+    },
+    {
+      "example_text": "Input: receiver = [1,1,1,2,3], k = 3\nOutput: 10\nExplanation:\nStarting with player i = 4 the initial score is 4:"
+    }
+  ],
+  "hints": [
+    "<div class=\"_1l1MA\">We can solve the problem using binary lifting.</div>",
+    "<div class=\"_1l1MA\">For each player with id <code>x</code> and for every <code>i</code> in the range <code>[0, ceil(log<sub>2</sub>k)]</code>, we can determine the last receiver's id and compute the sum of player ids who receive the ball after <code>2<sup>i</sup></code> passes, starting from <code>x</code>.</div>",
+    "<div class=\"_1l1MA\">Let <code>last_receiver[x][i] =</code> the last receiver's id after <code>2<sup>i</sup></code> passes, and <code>sum[x][i] =</code> the sum of player ids who receive the ball after <code>2<sup>i</sup></code> passes. For all <code>x</code> in the range <code>[0, n - 1]</code>, <code>last_receiver[x][0] = receiver[x]</code>, and <code>sum[x][0] = receiver[x]</code>.</div>",
+    "<div class=\"_1l1MA\">Then for <code>i</code> in range <code>[1, ceil(log<sub>2</sub>k)]</code>, <code>last_receiver[x][i] = last_receiver[last_receiver[x][i - 1]][i - 1]</code> and <code>sum[x][i] = sum[x][i - 1] + sum[last_receiver[x][i - 1]][i - 1]</code>, for all <code>x</code> in the range <code>[0, n - 1]</code>.</div>",
+    "<div class=\"_1l1MA\">Starting from each player id <code>x</code>, we can now go through the powers of <code>2</code> in the binary representation of <code>k</code> and make jumps corresponding to each power, using the pre-computed values, to compute <code>f(x)</code>.</div>",
+    "<div class=\"_1l1MA\">The answer is the maximum <code>f(x)</code> from each player id.</div>"
+  ],
+  "starter_code": "class Solution:\n    def getMaxFunctionValue(self, receiver: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

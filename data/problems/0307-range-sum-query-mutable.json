@@ -1,0 +1,29 @@
+{
+  "id": "0307",
+  "slug": "range-sum-query-mutable",
+  "title": "Range Sum Query - Mutable",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Design",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "description": "Given an integer array nums, handle multiple queries of the following types:\nImplement the NumArray class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 3 * 104",
+    "-100 <= nums[i] <= 100",
+    "0 <= index < nums.length",
+    "-100 <= val <= 100",
+    "0 <= left <= right < nums.length",
+    "At most 3 * 104 calls will be made to update and sumRange."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"NumArray\", \"sumRange\", \"update\", \"sumRange\"]\n[[[1, 3, 5]], [0, 2], [1, 2], [0, 2]]\nOutput\n[null, 9, null, 8]\n\nExplanation\nNumArray numArray = new NumArray([1, 3, 5]);\nnumArray.sumRange(0, 2); // return 1 + 3 + 5 = 9\nnumArray.update(1, 2);   // nums = [1, 2, 5]\nnumArray.sumRange(0, 2); // return 1 + 2 + 5 = 8"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class NumArray:\n\n    def __init__(self, nums: List[int]):\n        \n\n    def update(self, index: int, val: int) -> None:\n        \n\n    def sumRange(self, left: int, right: int) -> int:\n        \n\n\n# Your NumArray object will be instantiated and called as such:\n# obj = NumArray(nums)\n# obj.update(index,val)\n# param_2 = obj.sumRange(left,right)",
+  "test_cases": []
+}

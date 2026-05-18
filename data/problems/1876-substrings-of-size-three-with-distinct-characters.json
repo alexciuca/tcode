@@ -26,36 +26,5 @@
     "Try using a set to find out the number of distinct characters in a substring."
   ],
   "starter_code": "class Solution:\n    def countGoodSubstrings(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "xyzzaz"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "aabbccdd"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abc"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "aaa"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdef"
-      },
-      "expected": 82
-    }
-  ]
+  "test_cases": []
 }

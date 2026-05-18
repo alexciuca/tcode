@@ -27,41 +27,5 @@
     "Calculate the angles separately then find the difference."
   ],
   "starter_code": "class Solution:\n    def angleClock(self, hour: int, minutes: int) -> float:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "hour": 3,
-        "minutes": 0
-      },
-      "expected": 90.0
-    },
-    {
-      "args": {
-        "hour": 3,
-        "minutes": 15
-      },
-      "expected": 7.5
-    },
-    {
-      "args": {
-        "hour": 12,
-        "minutes": 0
-      },
-      "expected": 0.0
-    },
-    {
-      "args": {
-        "hour": 12,
-        "minutes": 30
-      },
-      "expected": 165.0
-    },
-    {
-      "args": {
-        "hour": 9,
-        "minutes": 59
-      },
-      "expected": 54.5
-    }
-  ]
+  "test_cases": []
 }

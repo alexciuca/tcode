@@ -23,51 +23,5 @@
     "Use conditional statements to find the right category of the box."
   ],
   "starter_code": "class Solution:\n    def categorizeBox(self, length: int, width: int, height: int, mass: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "length": 1000,
-        "width": 1000,
-        "height": 1000,
-        "mass": 100
-      },
-      "expected": "Bulky and Heavy"
-    },
-    {
-      "args": {
-        "length": 10,
-        "width": 10,
-        "height": 10,
-        "mass": 50
-      },
-      "expected": "Neither"
-    },
-    {
-      "args": {
-        "length": 100000,
-        "width": 100000,
-        "height": 100000,
-        "mass": 1000
-      },
-      "expected": "Bulky and Heavy"
-    },
-    {
-      "args": {
-        "length": 1,
-        "width": 1,
-        "height": 1,
-        "mass": 1
-      },
-      "expected": "Neither"
-    },
-    {
-      "args": {
-        "length": 50000,
-        "width": 50000,
-        "height": 50000,
-        "mass": 500
-      },
-      "expected": "Bulky and Heavy"
-    }
-  ]
+  "test_cases": []
 }

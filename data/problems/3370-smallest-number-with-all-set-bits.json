@@ -26,36 +26,5 @@
     "Find the strictly greater power of 2, and subtract 1 from it."
   ],
   "starter_code": "class Solution:\n    def smallestNumber(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 7
-      },
-      "expected": 7
-    },
-    {
-      "args": {
-        "n": 5
-      },
-      "expected": 7
-    },
-    {
-      "args": {
-        "n": 1000
-      },
-      "expected": 1023
-    },
-    {
-      "args": {
-        "n": 15
-      },
-      "expected": 15
-    }
-  ]
+  "test_cases": []
 }

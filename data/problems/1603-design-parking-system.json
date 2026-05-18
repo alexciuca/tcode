@@ -1,0 +1,27 @@
+{
+  "id": "1603",
+  "slug": "design-parking-system",
+  "title": "Design Parking System",
+  "difficulty": "Easy",
+  "topics": [
+    "Design",
+    "Simulation",
+    "Counting"
+  ],
+  "description": "Design a parking system for a parking lot. The parking lot has three kinds of parking spaces: big, medium, and small, with a fixed number of slots for each size.\nImplement the ParkingSystem class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "0 <= big, medium, small <= 1000",
+    "carType is 1, 2, or 3",
+    "At most 1000 calls will be made to addCar"
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"ParkingSystem\", \"addCar\", \"addCar\", \"addCar\", \"addCar\"]\n[[1, 1, 0], [1], [2], [3], [1]]\nOutput\n[null, true, true, false, false]\n\nExplanation\nParkingSystem parkingSystem = new ParkingSystem(1, 1, 0);\nparkingSystem.addCar(1); // return true because there is 1 available slot for a big car\nparkingSystem.addCar(2); // return true because there is 1 available slot for a medium car\nparkingSystem.addCar(3); // return false because there is no available slot for a small car\nparkingSystem.addCar(1); // return false because there is no available slot for a big car. It is already occupied."
+    }
+  ],
+  "hints": [
+    "Record number of parking slots still available for each car type."
+  ],
+  "starter_code": "class ParkingSystem:\n\n    def __init__(self, big: int, medium: int, small: int):\n        \n\n    def addCar(self, carType: int) -> bool:\n        \n\n\n# Your ParkingSystem object will be instantiated and called as such:\n# obj = ParkingSystem(big, medium, small)\n# param_1 = obj.addCar(carType)",
+  "test_cases": []
+}

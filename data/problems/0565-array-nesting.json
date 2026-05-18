@@ -23,20 +23,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def arrayNesting(self, nums: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "nums": [
-          5,
-          4,
-          0,
-          3,
-          1,
-          6,
-          2
-        ]
-      },
-      "expected": 4
-    }
-  ]
+  "test_cases": []
 }

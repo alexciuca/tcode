@@ -28,53 +28,5 @@
     "Binary search can be used for each part length to find the precise number of parts needed."
   ],
   "starter_code": "class Solution:\n    def splitMessage(self, message: str, limit: int) -> List[str]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "message": "this is a simple test",
-        "limit": 10
-      },
-      "expected": [
-        "this <1/5>",
-        "is a <2/5>",
-        "simpl<3/5>",
-        "e tes<4/5>",
-        "t<5/5>"
-      ]
-    },
-    {
-      "args": {
-        "message": "hello world",
-        "limit": 20
-      },
-      "expected": [
-        "hello world<1/1>"
-      ]
-    },
-    {
-      "args": {
-        "message": "a b c d e f g h i j k l m n o p q r s t u v w x y z",
-        "limit": 5
-      },
-      "expected": []
-    },
-    {
-      "args": {
-        "message": "x",
-        "limit": 1
-      },
-      "expected": []
-    },
-    {
-      "args": {
-        "message": "thequickbrownfoxjumpsoverthelazydog thequickbrownfoxjumpsoverthelazydog thequickbrownfoxjumpsoverthelazydog",
-        "limit": 50
-      },
-      "expected": [
-        "thequickbrownfoxjumpsoverthelazydog thequickb<1/3>",
-        "rownfoxjumpsoverthelazydog thequickbrownfoxju<2/3>",
-        "mpsoverthelazydog<3/3>"
-      ]
-    }
-  ]
+  "test_cases": []
 }

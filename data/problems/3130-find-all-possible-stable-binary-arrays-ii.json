@@ -1,0 +1,32 @@
+{
+  "id": "3130",
+  "slug": "find-all-possible-stable-binary-arrays-ii",
+  "title": "Find All Possible Stable Binary Arrays II",
+  "difficulty": "Hard",
+  "topics": [
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "description": "You are given 3 positive integers zero, one, and limit.\nA binary array arr is called stable if:\nReturn the total number of stable binary arrays.\nSince the answer may be very large, return it modulo 109 + 7.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= zero, one, limit <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: zero = 1, one = 1, limit = 2\nOutput: 2\nExplanation:\nThe two possible stable binary arrays are [1,0] and [0,1] ."
+    },
+    {
+      "example_text": "Input: zero = 1, one = 2, limit = 1\nOutput: 1\nExplanation:\nThe only possible stable binary array is [1,0,1] ."
+    },
+    {
+      "example_text": "Input: zero = 3, one = 3, limit = 2\nOutput: 14\nExplanation:\nAll the possible stable binary arrays are [0,0,1,0,1,1] , [0,0,1,1,0,1] , [0,1,0,0,1,1] , [0,1,0,1,0,1] , [0,1,0,1,1,0] , [0,1,1,0,0,1] , [0,1,1,0,1,0] , [1,0,0,1,0,1] , [1,0,0,1,1,0] , [1,0,1,0,0,1] , [1,0,1,0,1,0] , [1,0,1,1,0,0] , [1,1,0,0,1,0] , and [1,1,0,1,0,0] ."
+    }
+  ],
+  "hints": [
+    "Let <code>dp[x][y][z = 0/1]</code> be the number of stable arrays with exactly <code>x</code> zeros, <code>y</code> ones, and the last element is <code>z</code>. (0 or 1).\r\n<code>dp[x][y][0] + dp[x][y][1]</code> is the answer for given <code>(x, y)</code>.",
+    "If we have already placed <code>x</code> 1 and <code>y</code> 0, if we place a group of <code>k</code> 0, the number of ways is <code>dp[x-k][y][1]</code>. We can place a group with size <code>i</code>, where <code>i</code> varies from 1 to <code>min(limit, zero - x)</code>.\r\nSimilarly, we can solve by placing a group of ones.",
+    "Speed up the calculation using prefix arrays to store the sum of <code>dp</code> states."
+  ],
+  "starter_code": "class Solution:\n    def numberOfStableArrays(self, zero: int, one: int, limit: int) -> int:\n        ",
+  "test_cases": []
+}

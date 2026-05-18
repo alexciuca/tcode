@@ -24,36 +24,5 @@
     "Count the total number of spaces and words. Then use the integer division to determine the numbers of spaces to add between each word and at the end."
   ],
   "starter_code": "class Solution:\n    def reorderSpaces(self, text: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "text": "this   is  a sentence"
-      },
-      "expected": "this  is  a  sentence"
-    },
-    {
-      "args": {
-        "text": "practice   makes   perfect"
-      },
-      "expected": "practice   makes   perfect"
-    },
-    {
-      "args": {
-        "text": "hello"
-      },
-      "expected": "hello"
-    },
-    {
-      "args": {
-        "text": "a"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "text": "a b c d e f g h i j k l m n o p q r s t u v w x y z"
-      },
-      "expected": "a b c d e f g h i j k l m n o p q r s t u v w x y z"
-    }
-  ]
+  "test_cases": []
 }

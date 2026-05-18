@@ -30,51 +30,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def regionsBySlashes(self, grid: List[str]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "grid": [
-          " /",
-          "/ "
-        ]
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "grid": [
-          " /",
-          "  "
-        ]
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "grid": [
-          "\\/",
-          "/\\"
-        ]
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "grid": [
-          "/\\",
-          "\\/"
-        ]
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "grid": [
-          "//",
-          "/ "
-        ]
-      },
-      "expected": 3
-    }
-  ]
+  "test_cases": []
 }

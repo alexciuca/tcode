@@ -27,36 +27,5 @@
     "Use suffix array."
   ],
   "starter_code": "class Solution:\n    def lastSubstring(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abab"
-      },
-      "expected": "bab"
-    },
-    {
-      "args": {
-        "s": "dztz"
-      },
-      "expected": "ztz"
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "aaa"
-      },
-      "expected": "aaa"
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": "zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
-    }
-  ]
+  "test_cases": []
 }

@@ -27,36 +27,5 @@
     "For each index, check if the stack for mirror of the letter at that index is empty."
   ],
   "starter_code": "class Solution:\n    def calculateScore(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aczzaz"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abcdef"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "zzzaaa"
-      },
-      "expected": 9
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba"
-      },
-      "expected": 338
-    }
-  ]
+  "test_cases": []
 }

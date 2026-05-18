@@ -1,0 +1,34 @@
+{
+  "id": "3405",
+  "slug": "count-the-number-of-arrays-with-k-matching-adjacent-elements",
+  "title": "Count the Number of Arrays with K Matching Adjacent Elements",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "Combinatorics"
+  ],
+  "description": "You are given three integers n, m, k. A good array arr of size n is defined as follows:\nReturn the number of good arrays that can be formed.\nSince the answer may be very large, return it modulo 109 + 7.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 105",
+    "1 <= m <= 105",
+    "0 <= k <= n - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3, m = 2, k = 1\nOutput: 4\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 4, m = 2, k = 2\nOutput: 6\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 5, m = 2, k = 0\nOutput: 2\nExplanation:"
+    }
+  ],
+  "hints": [
+    "The first position <code>arr[0]</code> has <code>m</code> choices.",
+    "For each of the remaining <code>n - 1</code> indices, <code>0 < i < n</code>, select <code>k</code> positions from left to right and set <code>arr[i] = arr[i - 1]</code>.",
+    "For all other indices, <code>set arr[i] != arr[i - 1]</code> with (<code>m - 1</code>) choices for each of the <code>n - 1 - k</code> positions."
+  ],
+  "starter_code": "class Solution:\n    def countGoodArrays(self, n: int, m: int, k: int) -> int:\n        ",
+  "test_cases": []
+}

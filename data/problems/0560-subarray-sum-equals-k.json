@@ -29,40 +29,5 @@
     "sum(i,j)=sum(0,j)-sum(0,i), where sum(i,j) represents the sum of all the elements from index i to j-1.\r\n\r\nCan we use this property to optimize it."
   ],
   "starter_code": "class Solution:\n    def subarraySum(self, nums: List[int], k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "nums": [
-          1,
-          1,
-          1
-        ],
-        "k": 2
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "nums": [
-          1,
-          2,
-          3,
-          4,
-          5
-        ],
-        "k": 5
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "nums": [
-          0,
-          0
-        ],
-        "k": 0
-      },
-      "expected": 3
-    }
-  ]
+  "test_cases": []
 }

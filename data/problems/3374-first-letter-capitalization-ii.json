@@ -1,0 +1,25 @@
+{
+  "id": "3374",
+  "slug": "first-letter-capitalization-ii",
+  "title": "First Letter Capitalization II",
+  "difficulty": "Hard",
+  "topics": [
+    "Database"
+  ],
+  "description": "Table: user_content\nWrite a solution to transform the text in the content_text column by applying the following rules:\nReturn the result table that includes both the original content_text and the modified text following the above rules.\nThe result format is in the following example.\nExample:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| content_id  | int     |\n| content_text| varchar |\n+-------------+---------+\ncontent_id is the unique key for this table.\nEach row contains a unique ID and the corresponding text content."
+    },
+    {
+      "example_text": "+------------+---------------------------------+\n| content_id | content_text                    |\n+------------+---------------------------------+\n| 1          | hello world of SQL              |\n| 2          | the QUICK-brown fox             |\n| 3          | modern-day DATA science         |\n| 4          | web-based FRONT-end development |\n+------------+---------------------------------+"
+    },
+    {
+      "example_text": "+------------+---------------------------------+---------------------------------+\n| content_id | original_text                   | converted_text                  |\n+------------+---------------------------------+---------------------------------+\n| 1          | hello world of SQL              | Hello World Of Sql              |\n| 2          | the QUICK-brown fox             | The Quick-Brown Fox             |\n| 3          | modern-day DATA science         | Modern-Day Data Science         |\n| 4          | web-based FRONT-end development | Web-Based Front-End Development |\n+------------+---------------------------------+---------------------------------+"
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

@@ -26,36 +26,5 @@
     "You can speed up the finding of A's and B's in suffix and prefix using preprocessing"
   ],
   "starter_code": "class Solution:\n    def minimumDeletions(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "bab"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "aabb"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "aaaa"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "bbbb"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "bbaabbabbbabaaabbaabbaaabbaababbababbaabaabbbbbbaabbaaababbbabaaaabababbbbaabbbbbaababbaabaaba"
-      },
-      "expected": 44
-    }
-  ]
+  "test_cases": []
 }

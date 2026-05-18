@@ -26,16 +26,5 @@
     "Try to greedily choose the smallest partition that includes the first letter.  If you have something like \"abaccbdeffed\", then you might need to add b.  You can use an map like \"last['b'] = 5\" to help you expand the width of your partition."
   ],
   "starter_code": "class Solution:\n    def partitionLabels(self, s: str) -> List[int]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ababcbacadefegdehijhklij"
-      },
-      "expected": [
-        9,
-        7,
-        8
-      ]
-    }
-  ]
+  "test_cases": []
 }

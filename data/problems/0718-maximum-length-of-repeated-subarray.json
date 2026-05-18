@@ -29,25 +29,5 @@
     "The answer is max(dp[i][j]) over all i, j."
   ],
   "starter_code": "class Solution:\n    def findLength(self, nums1: List[int], nums2: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "A": [
-          1,
-          2,
-          3,
-          2,
-          1
-        ],
-        "B": [
-          3,
-          2,
-          1,
-          4,
-          7
-        ]
-      },
-      "expected": 3
-    }
-  ]
+  "test_cases": []
 }

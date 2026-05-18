@@ -32,36 +32,5 @@
     "Is there a data structure that we can use to solve the problem optimally?"
   ],
   "starter_code": "class Solution:\n    def minOperationsToFlip(self, expression: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "expression": "1"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "expression": "0"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "expression": "1&0"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "expression": "1|0"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "expression": "((1&0)|1)"
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

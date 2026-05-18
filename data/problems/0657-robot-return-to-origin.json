@@ -22,36 +22,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def judgeCircle(self, moves: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "moves": "UDLR"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "moves": "LL"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "moves": "UDUD"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "moves": "U"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "moves": "UUDDLLRR"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

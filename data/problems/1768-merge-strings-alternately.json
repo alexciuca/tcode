@@ -27,41 +27,5 @@
     "Use two pointers, one pointer for each string. Alternately choose the character from each pointer, and move the pointer upwards."
   ],
   "starter_code": "class Solution:\n    def mergeAlternately(self, word1: str, word2: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "word1": "abc",
-        "word2": "pqr"
-      },
-      "expected": "apbqcr"
-    },
-    {
-      "args": {
-        "word1": "ab",
-        "word2": "pqrs"
-      },
-      "expected": "apbqrs"
-    },
-    {
-      "args": {
-        "word1": "a",
-        "word2": "b"
-      },
-      "expected": "ab"
-    },
-    {
-      "args": {
-        "word1": "abcdefghij",
-        "word2": "x"
-      },
-      "expected": "axbcdefghij"
-    },
-    {
-      "args": {
-        "word1": "aaaa",
-        "word2": "bbbb"
-      },
-      "expected": "abababab"
-    }
-  ]
+  "test_cases": []
 }

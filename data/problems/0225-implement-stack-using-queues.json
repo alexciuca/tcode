@@ -1,0 +1,25 @@
+{
+  "id": "0225",
+  "slug": "implement-stack-using-queues",
+  "title": "Implement Stack using Queues",
+  "difficulty": "Easy",
+  "topics": [
+    "Stack",
+    "Design",
+    "Queue"
+  ],
+  "description": "Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).\nImplement the MyStack class:\nNotes:\nExample 1:\nConstraints:\nFollow-up: Can you implement the stack using only one queue?",
+  "constraints": [
+    "1 <= x <= 9",
+    "At most 100 calls will be made to push, pop, top, and empty.",
+    "All the calls to pop and top are valid."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"MyStack\", \"push\", \"push\", \"top\", \"pop\", \"empty\"]\n[[], [1], [2], [], [], []]\nOutput\n[null, null, null, 2, 2, false]\n\nExplanation\nMyStack myStack = new MyStack();\nmyStack.push(1);\nmyStack.push(2);\nmyStack.top(); // return 2\nmyStack.pop(); // return 2\nmyStack.empty(); // return False"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class MyStack:\n\n    def __init__(self):\n        \n\n    def push(self, x: int) -> None:\n        \n\n    def pop(self) -> int:\n        \n\n    def top(self) -> int:\n        \n\n    def empty(self) -> bool:\n        \n\n\n# Your MyStack object will be instantiated and called as such:\n# obj = MyStack()\n# obj.push(x)\n# param_2 = obj.pop()\n# param_3 = obj.top()\n# param_4 = obj.empty()",
+  "test_cases": []
+}

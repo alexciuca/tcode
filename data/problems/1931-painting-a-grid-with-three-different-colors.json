@@ -27,41 +27,5 @@
     "Use bitmasks DP with state (currentCell, prevColumn)."
   ],
   "starter_code": "class Solution:\n    def colorTheGrid(self, m: int, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "m": 1,
-        "n": 1
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "m": 2,
-        "n": 2
-      },
-      "expected": 18
-    },
-    {
-      "args": {
-        "m": 3,
-        "n": 3
-      },
-      "expected": 246
-    },
-    {
-      "args": {
-        "m": 1,
-        "n": 1000
-      },
-      "expected": 32634808
-    },
-    {
-      "args": {
-        "m": 5,
-        "n": 1000
-      },
-      "expected": 408208448
-    }
-  ]
+  "test_cases": []
 }

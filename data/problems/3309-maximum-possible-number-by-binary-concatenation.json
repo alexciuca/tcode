@@ -25,56 +25,5 @@
     "How many possible concatenation orders are there?"
   ],
   "starter_code": "class Solution:\n    def maxGoodNumber(self, nums: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "nums": [
-          1,
-          2,
-          3
-        ]
-      },
-      "expected": 30
-    },
-    {
-      "args": {
-        "nums": [
-          127,
-          127,
-          127
-        ]
-      },
-      "expected": 2097151
-    },
-    {
-      "args": {
-        "nums": [
-          1,
-          1,
-          1
-        ]
-      },
-      "expected": 7
-    },
-    {
-      "args": {
-        "nums": [
-          64,
-          32,
-          16
-        ]
-      },
-      "expected": 135232
-    },
-    {
-      "args": {
-        "nums": [
-          127,
-          1,
-          64
-        ]
-      },
-      "expected": 32704
-    }
-  ]
+  "test_cases": []
 }

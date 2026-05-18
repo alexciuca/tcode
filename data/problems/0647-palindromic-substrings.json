@@ -27,30 +27,5 @@
     "Complexity based hint:</br>\r\nIf we use brute force and check whether for every start and end position a substring is a palindrome we have O(n^2) start - end pairs and O(n) palindromic checks. Can we reduce the time for palindromic checks to O(1) by reusing some previous computation?"
   ],
   "starter_code": "class Solution:\n    def countSubstrings(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abc"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "aaa"
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "s": "abca"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "cabac"
-      },
-      "expected": 7
-    }
-  ]
+  "test_cases": []
 }

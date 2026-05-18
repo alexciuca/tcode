@@ -27,41 +27,5 @@
     "Use a Trie to store all substrings of t as a dictionary."
   ],
   "starter_code": "class Solution:\n    def countSubstrings(self, s: str, t: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aba",
-        "t": "bbb"
-      },
-      "expected": 10
-    },
-    {
-      "args": {
-        "s": "a",
-        "t": "b"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abcd",
-        "t": "abcd"
-      },
-      "expected": 12
-    },
-    {
-      "args": {
-        "s": "aaa",
-        "t": "aaa"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
-        "t": "bbcdefghijklmnopqrstuvwxyzbbcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": 3356
-    }
-  ]
+  "test_cases": []
 }

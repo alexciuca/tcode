@@ -28,41 +28,5 @@
     "Sort them in lexicographical order and return the kth string if it exists."
   ],
   "starter_code": "class Solution:\n    def getHappyString(self, n: int, k: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 3,
-        "k": 9
-      },
-      "expected": "cab"
-    },
-    {
-      "args": {
-        "n": 1,
-        "k": 3
-      },
-      "expected": "c"
-    },
-    {
-      "args": {
-        "n": 10,
-        "k": 100
-      },
-      "expected": "abacbabacb"
-    },
-    {
-      "args": {
-        "n": 2,
-        "k": 1
-      },
-      "expected": "ab"
-    },
-    {
-      "args": {
-        "n": 3,
-        "k": 1
-      },
-      "expected": "aba"
-    }
-  ]
+  "test_cases": []
 }

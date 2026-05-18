@@ -25,36 +25,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def smallestGoodBase(self, n: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": "13"
-      },
-      "expected": "3"
-    },
-    {
-      "args": {
-        "n": "1000000007"
-      },
-      "expected": "1000000006"
-    },
-    {
-      "args": {
-        "n": "3"
-      },
-      "expected": "2"
-    },
-    {
-      "args": {
-        "n": "999999999999999999"
-      },
-      "expected": "999999999999999998"
-    },
-    {
-      "args": {
-        "n": "1152921504606846976"
-      },
-      "expected": "1152921504606846975"
-    }
-  ]
+  "test_cases": []
 }

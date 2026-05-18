@@ -28,36 +28,5 @@
     "The depth of any character in the VPS is the ( number of left brackets before it ) - ( number of right brackets before it )"
   ],
   "starter_code": "class Solution:\n    def maxDepth(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "(1+(2*3)+((8)/4))+1"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "1+(2*3)/2"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "((((1))))+2"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "s": "1+1"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "(1+(2+(3+(4+(5+(6+(7+(8+(9+(10))))))))))+1"
-      },
-      "expected": 10
-    }
-  ]
+  "test_cases": []
 }

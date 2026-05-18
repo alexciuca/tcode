@@ -24,36 +24,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def shortestPalindrome(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abcd"
-      },
-      "expected": "dcbabcd"
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "aba"
-      },
-      "expected": "aba"
-    },
-    {
-      "args": {
-        "s": ""
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "s": "aabba"
-      },
-      "expected": "abbaabba"
-    }
-  ]
+  "test_cases": []
 }

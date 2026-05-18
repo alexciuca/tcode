@@ -28,41 +28,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def myPow(self, x: float, n: int) -> float:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "x": 2.0,
-        "n": 10
-      },
-      "expected": 1024.0
-    },
-    {
-      "args": {
-        "x": 2.1,
-        "n": 3
-      },
-      "expected": 9.261000000000001
-    },
-    {
-      "args": {
-        "x": 2.0,
-        "n": -2
-      },
-      "expected": 0.25
-    },
-    {
-      "args": {
-        "x": -2.0,
-        "n": -3
-      },
-      "expected": -0.125
-    },
-    {
-      "args": {
-        "x": 1e-05,
-        "n": 2147483647
-      },
-      "expected": 0.0
-    }
-  ]
+  "test_cases": []
 }

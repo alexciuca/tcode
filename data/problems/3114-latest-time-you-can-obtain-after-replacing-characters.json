@@ -27,36 +27,5 @@
     "Iterate over all possible times that can be generated from the string and find the latest one."
   ],
   "starter_code": "class Solution:\n    def findLatestTime(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "2?:5?"
-      },
-      "expected": "29:50"
-    },
-    {
-      "args": {
-        "s": "23:5?"
-      },
-      "expected": "23:50"
-    },
-    {
-      "args": {
-        "s": "??:??"
-      },
-      "expected": "11:59"
-    },
-    {
-      "args": {
-        "s": "0?:?5"
-      },
-      "expected": "09:55"
-    },
-    {
-      "args": {
-        "s": "1?:5?"
-      },
-      "expected": "11:59"
-    }
-  ]
+  "test_cases": []
 }

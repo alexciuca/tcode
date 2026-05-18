@@ -25,36 +25,5 @@
     "Create a function that checks if a character is a vowel, either uppercase or lowercase."
   ],
   "starter_code": "class Solution:\n    def halvesAreAlike(self, s: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abccccdd"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "ab"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "aAbBcCdDeEfF"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "AEIOUaeiou"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

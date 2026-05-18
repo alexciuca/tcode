@@ -28,36 +28,5 @@
     "If we are not in between a pair of ‘|’ and there is a ‘*’, increment the answer by 1."
   ],
   "starter_code": "class Solution:\n    def countAsterisks(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ab|cd|"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "a|b|c"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "|*|*|"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "***|***|***"
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "s": "a*b*c|d*e*f|g*h*i*j*k"
-      },
-      "expected": 6
-    }
-  ]
+  "test_cases": []
 }

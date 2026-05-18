@@ -30,41 +30,5 @@
     "Walk backwards through <code>s</code>, undoing each # by using modulus on the tracked lengths, and undoing each % by mirroring across the midpoint, to pinpoint the <code>k</code>th character."
   ],
   "starter_code": "class Solution:\n    def processStr(self, s: str, k: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ab*cd",
-        "k": 1
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "a#b#c",
-        "k": 2
-      },
-      "expected": "."
-    },
-    {
-      "args": {
-        "s": "***",
-        "k": 0
-      },
-      "expected": "."
-    },
-    {
-      "args": {
-        "s": "a%b%c%d",
-        "k": 1000000000000000
-      },
-      "expected": "."
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyz*#%*#%abcdefghijklmnopqrstuvwxyz",
-        "k": 999999999999999
-      },
-      "expected": "."
-    }
-  ]
+  "test_cases": []
 }

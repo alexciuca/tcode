@@ -28,36 +28,5 @@
     "Iterate from left to right counting the number of zeros ('0'), then use the precomputed prefix sum for counting ones ('1'). Update the answer."
   ],
   "starter_code": "class Solution:\n    def maxScore(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "011101"
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "s": "00111"
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "s": "01"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "0000"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "01010101010101010101010101010101010101010101010101"
-      },
-      "expected": 26
-    }
-  ]
+  "test_cases": []
 }

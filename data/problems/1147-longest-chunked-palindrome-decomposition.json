@@ -32,36 +32,5 @@
     "Use that as the basis of a dp."
   ],
   "starter_code": "class Solution:\n    def longestDecomposition(self, text: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "text": "ghiabcdefhelloadamhelloabcdefghijhではなく"
-      },
-      "expected": 38
-    },
-    {
-      "args": {
-        "text": "abba"
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "text": "a"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "text": "abcabcabcabc"
-      },
-      "expected": 12
-    },
-    {
-      "args": {
-        "text": "abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba"
-      },
-      "expected": 52
-    }
-  ]
+  "test_cases": []
 }

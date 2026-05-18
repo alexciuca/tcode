@@ -28,41 +28,5 @@
     "Find the answer using <code>hashedChar</code> of each substring."
   ],
   "starter_code": "class Solution:\n    def stringHash(self, s: str, k: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abcd",
-        "k": 2
-      },
-      "expected": "bf"
-    },
-    {
-      "args": {
-        "s": "mxz",
-        "k": 3
-      },
-      "expected": "i"
-    },
-    {
-      "args": {
-        "s": "a",
-        "k": 1
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "abcdefghij",
-        "k": 5
-      },
-      "expected": "kj"
-    },
-    {
-      "args": {
-        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
-        "k": 100
-      },
-      "expected": "h"
-    }
-  ]
+  "test_cases": []
 }

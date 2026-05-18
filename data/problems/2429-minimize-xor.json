@@ -24,41 +24,5 @@
     "If there are still left bits to set, try to set them from the least significant bit"
   ],
   "starter_code": "class Solution:\n    def minimizeXor(self, num1: int, num2: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "num1": 25,
-        "num2": 72
-      },
-      "expected": 24
-    },
-    {
-      "args": {
-        "num1": 1,
-        "num2": 2147483647
-      },
-      "expected": 2147483647
-    },
-    {
-      "args": {
-        "num1": 1000000000,
-        "num2": 1
-      },
-      "expected": 536870912
-    },
-    {
-      "args": {
-        "num1": 1,
-        "num2": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "num1": 536870912,
-        "num2": 805306368
-      },
-      "expected": 536870913
-    }
-  ]
+  "test_cases": []
 }

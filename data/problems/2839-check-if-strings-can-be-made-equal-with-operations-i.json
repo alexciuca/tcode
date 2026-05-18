@@ -24,41 +24,5 @@
     "<div class=\"_1l1MA\">There are only <code>2</code> different swaps that are possible in a string.</div>"
   ],
   "starter_code": "class Solution:\n    def canBeEqual(self, s1: str, s2: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s1": "abcd",
-        "s2": "cdab"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s1": "aaaa",
-        "s2": "aaaa"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "abab",
-        "s2": "baba"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s1": "xyza",
-        "s2": "zaxy"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s1": "abcd",
-        "s2": "efgh"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

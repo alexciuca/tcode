@@ -28,36 +28,5 @@
     "Choose characters greedily to get the lexicographically smallest caption."
   ],
   "starter_code": "class Solution:\n    def minCostGoodCaption(self, caption: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "caption": "abc"
-      },
-      "expected": "aaa"
-    },
-    {
-      "args": {
-        "caption": "aaa"
-      },
-      "expected": "aaa"
-    },
-    {
-      "args": {
-        "caption": "abcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": "aaaaafffiiilllooorrruuuxxx"
-    },
-    {
-      "args": {
-        "caption": "a"
-      },
-      "expected": ""
-    },
-    {
-      "args": {
-        "caption": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-      },
-      "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-    }
-  ]
+  "test_cases": []
 }

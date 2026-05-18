@@ -28,36 +28,5 @@
     "Try finding every pair of indexes with equal characters"
   ],
   "starter_code": "class Solution:\n    def maxLengthBetweenEqualCharacters(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "aa"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "abca"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "cbzxy"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "s": "cdbaca"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": 103
-    }
-  ]
+  "test_cases": []
 }

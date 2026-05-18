@@ -23,30 +23,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def binaryGap(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 22
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "n": 5
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "n": 6
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 8
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

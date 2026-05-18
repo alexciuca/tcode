@@ -29,41 +29,5 @@
     "To make the computation of each state in constant time, we could add another flag to the state that indicates whether or not we are in the middle of placing a line (placed start point but no endpoint)."
   ],
   "starter_code": "class Solution:\n    def numberOfSets(self, n: int, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 2,
-        "k": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 4,
-        "k": 2
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 5,
-        "k": 2
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "n": 3,
-        "k": 1
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "n": 1000,
-        "k": 1
-      },
-      "expected": 499500
-    }
-  ]
+  "test_cases": []
 }

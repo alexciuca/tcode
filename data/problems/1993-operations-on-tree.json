@@ -1,0 +1,36 @@
+{
+  "id": "1993",
+  "slug": "operations-on-tree",
+  "title": "Operations on Tree",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design"
+  ],
+  "description": "You are given a tree with n nodes numbered from 0 to n - 1 in the form of a parent array parent where parent[i] is the parent of the ith node. The root of the tree is node 0, so parent[0] = -1 since it has no parent. You want to design a data structure that allows users to lock, unlock, and upgrade nodes in the tree.\nThe data structure should support the following functions:\nImplement the LockingTree class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "n == parent.length",
+    "2 <= n <= 2000",
+    "0 <= parent[i] <= n - 1 for i != 0",
+    "parent[0] == -1",
+    "0 <= num <= n - 1",
+    "1 <= user <= 104",
+    "parent represents a valid tree.",
+    "At most 2000 calls in total will be made to lock, unlock, and upgrade."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"LockingTree\", \"lock\", \"unlock\", \"unlock\", \"lock\", \"upgrade\", \"lock\"]\n[[[-1, 0, 0, 1, 1, 2, 2]], [2, 2], [2, 3], [2, 2], [4, 5], [0, 1], [0, 1]]\nOutput\n[null, true, false, true, true, true, false]\n\nExplanation\nLockingTree lockingTree = new LockingTree([-1, 0, 0, 1, 1, 2, 2]);\nlockingTree.lock(2, 2);    // return true because node 2 is unlocked.\n                           // Node 2 will now be locked by user 2.\nlockingTree.unlock(2, 3);  // return false because user 3 cannot unlock a node locked by user 2.\nlockingTree.unlock(2, 2);  // return true because node 2 was previously locked by user 2.\n                           // Node 2 will now be unlocked.\nlockingTree.lock(4, 5);    // return true because node 4 is unlocked.\n                           // Node 4 will now be locked by user 5.\nlockingTree.upgrade(0, 1); // return true because node 0 is unlocked and has at least one locked descendant (node 4).\n                           // Node 0 will now be locked by user 1 and node 4 will now be unlocked.\nlockingTree.lock(0, 1);    // return false because node 0 is already locked."
+    }
+  ],
+  "hints": [
+    "How can we use the small constraints to help us solve the problem?",
+    "How can we traverse the ancestors and descendants of a node?"
+  ],
+  "starter_code": "class LockingTree:\n\n    def __init__(self, parent: List[int]):\n        \n\n    def lock(self, num: int, user: int) -> bool:\n        \n\n    def unlock(self, num: int, user: int) -> bool:\n        \n\n    def upgrade(self, num: int, user: int) -> bool:\n        \n\n\n# Your LockingTree object will be instantiated and called as such:\n# obj = LockingTree(parent)\n# param_1 = obj.lock(num,user)\n# param_2 = obj.unlock(num,user)\n# param_3 = obj.upgrade(num,user)",
+  "test_cases": []
+}

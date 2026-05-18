@@ -1,0 +1,29 @@
+{
+  "id": "3091",
+  "slug": "apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k",
+  "title": "Apply Operations to Make Sum of Array Greater Than or Equal to k",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Greedy",
+    "Enumeration"
+  ],
+  "description": "You are given a positive integer k. Initially, you have an array nums = [1].\nYou can perform any of the following operations on the array any number of times (possibly zero):\nReturn the minimum number of operations required to make the sum of elements of the final array greater than or equal to k.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= k <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: k = 11\nOutput: 5\nExplanation:\nWe can do the following operations on the array nums = [1] :\nThe sum of the final array is 4 + 4 + 4 = 12 which is greater than or equal to k = 11 . The total number of operations performed is 3 + 2 = 5 ."
+    },
+    {
+      "example_text": "Input: k = 1\nOutput: 0\nExplanation:\nThe sum of the original array is already greater than or equal to 1 , so no operations are needed."
+    }
+  ],
+  "hints": [
+    "It is optimal to make all the increase operations first and all the duplicate operations last.",
+    "Iterate over all possible number of increase operations that can be done and find the corresponding number of duplicate operations."
+  ],
+  "starter_code": "class Solution:\n    def minOperations(self, k: int) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2579",
+  "slug": "count-total-number-of-colored-cells",
+  "title": "Count Total Number of Colored Cells",
+  "difficulty": "Medium",
+  "topics": [
+    "Math"
+  ],
+  "description": "There exists an infinitely large two-dimensional grid of uncolored unit cells. You are given a positive integer n, indicating that you must do the following routine for n minutes:\nBelow is a pictorial representation of the state of the grid after minutes 1, 2, and 3.\nReturn the number of colored cells at the end of n minutes.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 1\nOutput: 1\nExplanation: After 1 minute, there is only 1 blue cell, so we return 1."
+    },
+    {
+      "example_text": "Input: n = 2\nOutput: 5\nExplanation: After 2 minutes, there are 4 colored cells on the boundary and 1 in the center, so we return 5."
+    }
+  ],
+  "hints": [
+    "Derive a mathematical relation between total number of colored cells and the time elapsed in minutes."
+  ],
+  "starter_code": "class Solution:\n    def coloredCells(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

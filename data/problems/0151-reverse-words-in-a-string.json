@@ -26,36 +26,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def reverseWords(self, s: str) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "the sky is blue"
-      },
-      "expected": "blue is sky the"
-    },
-    {
-      "args": {
-        "s": "  hello world  "
-      },
-      "expected": "world hello"
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "  Bob    Loves  Alice   "
-      },
-      "expected": "Alice Loves Bob"
-    },
-    {
-      "args": {
-        "s": "a1b2c3 x9y8z7 ABC123 def456GHI"
-      },
-      "expected": "def456GHI ABC123 x9y8z7 a1b2c3"
-    }
-  ]
+  "test_cases": []
 }

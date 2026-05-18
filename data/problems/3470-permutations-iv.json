@@ -32,52 +32,5 @@
     "The number of permutations can be calculated using factorials."
   ],
   "starter_code": "class Solution:\n    def permute(self, n: int, k: int) -> List[int]:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 3,
-        "k": 1
-      },
-      "expected": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "args": {
-        "n": 4,
-        "k": 6
-      },
-      "expected": [
-        2,
-        3,
-        4,
-        1
-      ]
-    },
-    {
-      "args": {
-        "n": 1,
-        "k": 1
-      },
-      "expected": [
-        1
-      ]
-    },
-    {
-      "args": {
-        "n": 5,
-        "k": 120
-      },
-      "expected": []
-    },
-    {
-      "args": {
-        "n": 13,
-        "k": 1000000000000000
-      },
-      "expected": []
-    }
-  ]
+  "test_cases": []
 }

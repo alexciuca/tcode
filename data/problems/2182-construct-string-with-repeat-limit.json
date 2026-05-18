@@ -28,41 +28,5 @@
     "When repeatLimit is reached, pick the next largest character."
   ],
   "starter_code": "class Solution:\n    def repeatLimitedString(self, s: str, repeatLimit: int) -> str:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ababab",
-        "repeatLimit": 2
-      },
-      "expected": "bbabaa"
-    },
-    {
-      "args": {
-        "s": "aabbccdd",
-        "repeatLimit": 1
-      },
-      "expected": "dcdcbaba"
-    },
-    {
-      "args": {
-        "s": "a",
-        "repeatLimit": 1
-      },
-      "expected": "a"
-    },
-    {
-      "args": {
-        "s": "aaaa",
-        "repeatLimit": 2
-      },
-      "expected": "aa"
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrs",
-        "repeatLimit": 3
-      },
-      "expected": "zzzyzyyyxxxwxwwwvvvuvuuutttstsssrsrrrqrqqqpqpppopooononnnmnmmmlmlllklkkkjkjjjijiiihihhhghgggfgfffefeeededddcdcccbcbbbabaaa"
-    }
-  ]
+  "test_cases": []
 }

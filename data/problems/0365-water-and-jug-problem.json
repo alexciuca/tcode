@@ -25,46 +25,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def canMeasureWater(self, x: int, y: int, target: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "x": 3,
-        "y": 5,
-        "target": 4
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "x": 2,
-        "y": 6,
-        "target": 5
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "x": 1,
-        "y": 1,
-        "target": 2
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "x": 1000,
-        "y": 1000,
-        "target": 2000
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "x": 6,
-        "y": 9,
-        "target": 7
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

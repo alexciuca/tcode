@@ -1,0 +1,27 @@
+{
+  "id": "2695",
+  "slug": "array-wrapper",
+  "title": "Array Wrapper",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "Create a class ArrayWrapper that accepts an array of integers in its constructor. This class should have two features:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "0 <= nums.length <= 1000",
+    "0 <= nums[i] <= 1000",
+    "Note: nums is the array passed to the constructor"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [[1,2],[3,4]], operation = \"Add\"\nOutput: 10\nExplanation:\nconst obj1 = new ArrayWrapper([1,2]);\nconst obj2 = new ArrayWrapper([3,4]);\nobj1 + obj2; // 10"
+    },
+    {
+      "example_text": "Input: nums = [[23,98,42,70]], operation = \"String\"\nOutput: \"[23,98,42,70]\"\nExplanation:\nconst obj = new ArrayWrapper([23,98,42,70]);\nString(obj); // \"[23,98,42,70]\""
+    },
+    {
+      "example_text": "Input: nums = [[],[]], operation = \"Add\"\nOutput: 0\nExplanation:\nconst obj1 = new ArrayWrapper([]);\nconst obj2 = new ArrayWrapper([]);\nobj1 + obj2; // 0"
+    }
+  ],
+  "hints": [],
+  "starter_code": "",
+  "test_cases": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "0449",
+  "slug": "serialize-and-deserialize-bst",
+  "title": "Serialize and Deserialize BST",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "description": "Serialization is converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.\nDesign an algorithm to serialize and deserialize a binary search tree. There is no restriction on how your serialization/deserialization algorithm should work. You need to ensure that a binary search tree can be serialized to a string, and this string can be deserialized to the original tree structure.\nThe encoded string should be as compact as possible.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [0, 104].",
+    "0 <= Node.val <= 104",
+    "The input tree is guaranteed to be a binary search tree."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [2,1,3]\nOutput: [2,1,3]"
+    },
+    {
+      "example_text": "Input: root = []\nOutput: []"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Codec:\n\n    def serialize(self, root: Optional[TreeNode]) -> str:\n        \"\"\"Encodes a tree to a single string.\n        \"\"\"\n        \n\n    def deserialize(self, data: str) -> Optional[TreeNode]:\n        \"\"\"Decodes your encoded data to tree.\n        \"\"\"\n        \n\n# Your Codec object will be instantiated and called as such:\n# Your Codec object will be instantiated and called as such:\n# ser = Codec()\n# deser = Codec()\n# tree = ser.serialize(root)\n# ans = deser.deserialize(tree)\n# return ans",
+  "test_cases": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "0855",
+  "slug": "exam-room",
+  "title": "Exam Room",
+  "difficulty": "Medium",
+  "topics": [
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "description": "There is an exam room with n seats in a single row labeled from 0 to n - 1.\nWhen a student enters the room, they must sit in the seat that maximizes the distance to the closest person. If there are multiple such seats, they sit in the seat with the lowest number. If no one is in the room, then the student sits at seat number 0.\nDesign a class that simulates the mentioned exam room.\nImplement the ExamRoom class:\nExample 1:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 109",
+    "It is guaranteed that there is a student sitting at seat p.",
+    "At most 104 calls will be made to seat and leave."
+  ],
+  "examples": [
+    {
+      "example_text": "Input\n[\"ExamRoom\", \"seat\", \"seat\", \"seat\", \"seat\", \"leave\", \"seat\"]\n[[10], [], [], [], [], [4], []]\nOutput\n[null, 0, 9, 4, 2, null, 5]\n\nExplanation\nExamRoom examRoom = new ExamRoom(10);\nexamRoom.seat(); // return 0, no one is in the room, then the student sits at seat number 0.\nexamRoom.seat(); // return 9, the student sits at the last seat number 9.\nexamRoom.seat(); // return 4, the student sits at the last seat number 4.\nexamRoom.seat(); // return 2, the student sits at the last seat number 2.\nexamRoom.leave(4);\nexamRoom.seat(); // return 5, the student sits at the last seat number 5."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class ExamRoom:\n\n    def __init__(self, n: int):\n        \n\n    def seat(self) -> int:\n        \n\n    def leave(self, p: int) -> None:\n        \n\n\n# Your ExamRoom object will be instantiated and called as such:\n# obj = ExamRoom(n)\n# param_1 = obj.seat()\n# obj.leave(p)",
+  "test_cases": []
+}

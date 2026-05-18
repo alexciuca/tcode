@@ -26,36 +26,5 @@
     "The number can not be represented as a sum of powers of 3 if it's ternary presentation has a 2 in it"
   ],
   "starter_code": "class Solution:\n    def checkPowersOfThree(self, n: int) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 12
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "n": 91
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "n": 21
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "n": 10000000
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

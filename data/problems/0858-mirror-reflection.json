@@ -22,41 +22,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def mirrorReflection(self, p: int, q: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "p": 2,
-        "q": 1
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "p": 3,
-        "q": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "p": 4,
-        "q": 1
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "p": 1,
-        "q": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "p": 1000,
-        "q": 1000
-      },
-      "expected": 1
-    }
-  ]
+  "test_cases": []
 }

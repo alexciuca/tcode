@@ -1,0 +1,22 @@
+{
+  "id": "2888",
+  "slug": "reshape-data-concatenate",
+  "title": "Reshape Data: Concatenate",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "Write a solution to concatenate these two DataFrames vertically into one DataFrame.\nThe result format is in the following example.\nExample 1:",
+  "constraints": [],
+  "examples": [
+    {
+      "example_text": "DataFrame df1\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| student_id  | int    |\n| name        | object |\n| age         | int    |\n+-------------+--------+\n\nDataFrame df2\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| student_id  | int    |\n| name        | object |\n| age         | int    |\n+-------------+--------+"
+    },
+    {
+      "example_text": "Input:\ndf1\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 1          | Mason   | 8   |\n| 2          | Ava     | 6   |\n| 3          | Taylor  | 15  |\n| 4          | Georgia | 17  |\n+------------+---------+-----+\ndf2\n+------------+------+-----+\n| student_id | name | age |\n+------------+------+-----+\n| 5          | Leo  | 7   |\n| 6          | Alex | 7   |\n+------------+------+-----+\nOutput:\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 1          | Mason   | 8   |\n| 2          | Ava     | 6   |\n| 3          | Taylor  | 15  |\n| 4          | Georgia | 17  |\n| 5          | Leo     | 7   |\n| 6          | Alex    | 7   |\n+------------+---------+-----+\nExplanation:\nThe two DataFramess are stacked vertically, and their rows are combined."
+    }
+  ],
+  "hints": [
+    "Consider using a built-in function in pandas library with the appropriate axis argument."
+  ],
+  "starter_code": "",
+  "test_cases": []
+}

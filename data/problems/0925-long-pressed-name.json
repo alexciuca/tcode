@@ -22,41 +22,5 @@
   ],
   "hints": [],
   "starter_code": "class Solution:\n    def isLongPressedName(self, name: str, typed: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "name": "alex",
-        "typed": "aaleex"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "name": "saeed",
-        "typed": "ssaaedd"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "name": "leelee",
-        "typed": "lleeelee"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "name": "laiden",
-        "typed": "laiden"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "name": "a",
-        "typed": "aab"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

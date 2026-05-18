@@ -1,0 +1,36 @@
+{
+  "id": "3606",
+  "slug": "coupon-code-validator",
+  "title": "Coupon Code Validator",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "description": "You are given three arrays of length n that describe the properties of n coupons: code, businessLine, and isActive. The ith coupon has:\nA coupon is considered valid if all of the following conditions hold:\nReturn an array of the codes of all valid coupons, sorted first by their businessLine in the order: \"electronics\", \"grocery\", \"pharmacy\", \"restaurant\", and then by code in lexicographical (ascending) order within each category.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "n == code.length == businessLine.length == isActive.length",
+    "1 <= n <= 100",
+    "0 <= code[i].length, businessLine[i].length <= 100",
+    "code[i] and businessLine[i] consist of printable ASCII characters.",
+    "isActive[i] is either true or false."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: code = [\"SAVE20\",\"\",\"PHARMA5\",\"SAVE@20\"], businessLine = [\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"], isActive = [true,true,true,true]\nOutput: [\"PHARMA5\",\"SAVE20\"]\nExplanation:"
+    },
+    {
+      "example_text": "Input: code = [\"GROCERY15\",\"ELECTRONICS_50\",\"DISCOUNT10\"], businessLine = [\"grocery\",\"electronics\",\"invalid\"], isActive = [false,true,true]\nOutput: [\"ELECTRONICS_50\"]\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Filter out any coupon where <code>isActive[i]</code> is false, <code>code[i]</code> is empty or contains non‑alphanumeric/underscore chars, or <code>businessLine[i]</code> is not in the allowed set",
+    "Store each remaining coupon as a pair <code>(businessLine[i], code[i])</code>",
+    "Define a priority map, e.g. <code>{\"electronics\":0, \"grocery\":1, \"pharmacy\":2, \"restaurant\":3}</code>",
+    "Sort the list of pairs by <code>(priority[businessLine], code)</code> and return the <code>code</code> values in order"
+  ],
+  "starter_code": "class Solution:\n    def validateCoupons(self, code: List[str], businessLine: List[str], isActive: List[bool]) -> List[str]:\n        ",
+  "test_cases": []
+}

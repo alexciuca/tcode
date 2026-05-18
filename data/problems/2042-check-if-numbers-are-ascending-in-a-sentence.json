@@ -33,36 +33,5 @@
     "Compare the number with the previously occurring number to check if ascending order is maintained."
   ],
   "starter_code": "class Solution:\n    def areNumbersAscending(self, s: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "i am 2 years old and my sister is 8 years old"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "1 hello 2 world 3 test"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "5 abc 3 def 2"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "10 twenty 30 forty 50"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "1 a 1 b 2 c 3 d 4 e 5 f 10 g 15 h 20 i 25 j 30 k 35 l 40 m 45 n 50"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

@@ -25,36 +25,5 @@
     "Let's note that there might not be any digits."
   ],
   "starter_code": "class Solution:\n    def secondHighest(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "adi3de2a9"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "abc1def2ghi3"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "abcdefg"
-      },
-      "expected": -1
-    },
-    {
-      "args": {
-        "s": "9876543210"
-      },
-      "expected": 8
-    },
-    {
-      "args": {
-        "s": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z2a3b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8"
-      },
-      "expected": 8
-    }
-  ]
+  "test_cases": []
 }

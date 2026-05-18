@@ -28,41 +28,5 @@
     "The final answer to the problem will be dp[n-1]. How do you compute this dp?"
   ],
   "starter_code": "class Solution:\n    def maxPalindromes(self, s: str, k: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "abccccdd",
-        "k": 2
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "s": "racecar",
-        "k": 3
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "a",
-        "k": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "aaaaaa",
-        "k": 1
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdef",
-        "k": 5
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

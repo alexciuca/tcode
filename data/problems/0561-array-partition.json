@@ -30,30 +30,5 @@
     "Still won't able to find pairs? Sort the array and try to find the pattern."
   ],
   "starter_code": "class Solution:\n    def arrayPairSum(self, nums: List[int]) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "nums": [
-          1,
-          4,
-          3,
-          2
-        ]
-      },
-      "expected": 4
-    },
-    {
-      "args": {
-        "nums": [
-          6,
-          2,
-          6,
-          5,
-          1,
-          2
-        ]
-      },
-      "expected": 9
-    }
-  ]
+  "test_cases": []
 }

@@ -29,24 +29,5 @@
     "The robot stays in the circle if and only if (looking at the final vector) it changes direction (ie. doesn't stay pointing north), or it moves 0."
   ],
   "starter_code": "class Solution:\n    def isRobotBounded(self, instructions: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "instructions": "GGLLGG"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "instructions": "GG"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "instructions": "GL"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

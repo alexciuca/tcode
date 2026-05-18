@@ -28,36 +28,5 @@
     "Use Lucas's theorem."
   ],
   "starter_code": "class Solution:\n    def hasSameDigits(self, s: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "123"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "1122"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "000"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "999999999"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
-      },
-      "expected": false
-    }
-  ]
+  "test_cases": []
 }

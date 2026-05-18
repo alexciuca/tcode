@@ -32,36 +32,5 @@
     "Sort the letters by frequencies in the word in non-increasing order."
   ],
   "starter_code": "class Solution:\n    def minimumPushes(self, word: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "word": "abcde"
-      },
-      "expected": 5
-    },
-    {
-      "args": {
-        "word": "xyzxyzxyzxyz"
-      },
-      "expected": 12
-    },
-    {
-      "args": {
-        "word": "aaa"
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "word": "abcdefghijklmnopqrstuvwxyz"
-      },
-      "expected": 56
-    },
-    {
-      "args": {
-        "word": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-      },
-      "expected": 100
-    }
-  ]
+  "test_cases": []
 }

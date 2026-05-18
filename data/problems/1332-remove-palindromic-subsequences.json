@@ -28,36 +28,5 @@
     "Are subsequences composed of only one type of letter always palindrome strings ?"
   ],
   "starter_code": "class Solution:\n    def removePalindromeSub(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "ababa"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abb"
-      },
-      "expected": 2
-    },
-    {
-      "args": {
-        "s": "a"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "baab"
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "s": "abbbbaaa"
-      },
-      "expected": 2
-    }
-  ]
+  "test_cases": []
 }

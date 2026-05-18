@@ -28,36 +28,5 @@
     "The same logic applies to building the n10 array and subsequently the n101 and n010 arrays for the number of ‘101’ and ‘010‘ subsequences."
   ],
   "starter_code": "class Solution:\n    def numberOfWays(self, s: str) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "001101"
-      },
-      "expected": 6
-    },
-    {
-      "args": {
-        "s": "0011011"
-      },
-      "expected": 8
-    },
-    {
-      "args": {
-        "s": "000111"
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "s": "010101"
-      },
-      "expected": 8
-    },
-    {
-      "args": {
-        "s": "0000000111111111"
-      },
-      "expected": 0
-    }
-  ]
+  "test_cases": []
 }

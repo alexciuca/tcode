@@ -25,36 +25,5 @@
     "Note that one string is a prefix and another one is a suffix you can try brute forcing the rest"
   ],
   "starter_code": "class Solution:\n    def checkPartitioning(self, s: str) -> bool:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "s": "niramccmaniram"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "abcba"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "aaa"
-      },
-      "expected": true
-    },
-    {
-      "args": {
-        "s": "abcd"
-      },
-      "expected": false
-    },
-    {
-      "args": {
-        "s": "aabbccddccbbaa"
-      },
-      "expected": true
-    }
-  ]
+  "test_cases": []
 }

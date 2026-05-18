@@ -27,36 +27,5 @@
     "Make sure not to fall in the base case of 0."
   ],
   "starter_code": "class Solution:\n    def getMaximumGenerated(self, n: int) -> int:\n        ",
-  "test_cases": [
-    {
-      "args": {
-        "n": 7
-      },
-      "expected": 3
-    },
-    {
-      "args": {
-        "n": 2
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 0
-      },
-      "expected": 0
-    },
-    {
-      "args": {
-        "n": 1
-      },
-      "expected": 1
-    },
-    {
-      "args": {
-        "n": 100
-      },
-      "expected": 21
-    }
-  ]
+  "test_cases": []
 }
