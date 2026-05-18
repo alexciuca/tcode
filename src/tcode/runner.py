@@ -121,7 +121,15 @@ def _convert_result(value):
         return _tree_to_list(value)
     if isinstance(value, ListNode):
         return _linked_to_list(value)
-    if isinstance(value, list):
+    if isinstance(value, (list, tuple)):
+        return [_convert_result(v) for v in value]
+    return value
+"""
+
+
+_BASIC_HELPERS = """\
+def _convert_result(value):
+    if isinstance(value, (list, tuple)):
         return [_convert_result(v) for v in value]
     return value
 """
@@ -159,7 +167,7 @@ def _build_harness(
     uses_nodes = _needs_node_helpers(starter_code)
     param_types = _extract_param_types(starter_code) if uses_nodes else {}
 
-    node_block = _NODE_HELPERS if uses_nodes else ""
+    helper_block = _NODE_HELPERS if uses_nodes else _BASIC_HELPERS
     param_types_json = json.dumps(param_types)
 
     if uses_nodes:
@@ -169,15 +177,14 @@ def _build_harness(
         for k, v in args.items():
             hint = param_types.get(k, '')
             converted[k] = _convert_arg(k, v, hint)
-        actual = solution.{method_name}(**converted)
-        actual = _convert_result(actual)"""
+        actual = solution.{method_name}(**converted)"""
     else:
         convert_block = f"        actual = solution.{method_name}(**args)"
 
     return f"""\
 from typing import Dict, List, Optional, Set, Tuple
 
-{node_block}
+{helper_block}
 {code}
 
 import json
@@ -195,6 +202,7 @@ for i, tc in enumerate(test_cases):
     expected = tc["expected"]
     try:
 {convert_block}
+        actual = _convert_result(actual)
         passed = actual == expected
         results.append({{"case": i + 1, "passed": passed, "actual": actual,
         "expected": expected}})

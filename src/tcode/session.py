@@ -1,5 +1,6 @@
 import re
 import time
+from datetime import datetime
 from pathlib import Path
 
 from textual.app import ComposeResult
@@ -12,7 +13,15 @@ from watchdog.observers import Observer
 from tcode.config import SessionConfig
 from tcode.llm import check_complexity, get_hint
 from tcode.problems import load_problem_by_id
+from tcode.profile import (
+    load_profile,
+    mark_problem_seen,
+    record_hint,
+    record_test_run,
+    save_profile,
+)
 from tcode.runner import format_results, run_tests
+from tcode.solution_file import write_starter_code_if_needed
 
 PANE_IDS = ("#left-scroll", "#right-scroll")
 
@@ -46,24 +55,39 @@ class SessionApp(Screen):
         ("r", "reset_hints", "Reset Hints"),
         ("tab", "toggle_focus", "Switch Pane"),
         ("enter", "run", "Run"),
+        ("n", "next_problem", "Next"),
+        ("p", "prev_problem", "Previous"),
         ("q", "quit", "Quit"),
     ]
 
-    def __init__(self, watch_path: Path, config: SessionConfig) -> None:
+    def __init__(
+        self,
+        watch_path: Path,
+        config: SessionConfig,
+        problem_ids: list[str] | None = None,
+    ) -> None:
         super().__init__()
+        if config.problem_id is None:
+            raise RuntimeError("No problem selected.")
         self.config = config
         self.watch_path = watch_path
+        self.problem_ids = problem_ids or [config.problem_id]
+        if config.problem_id not in self.problem_ids:
+            self.problem_ids.insert(0, config.problem_id)
+        self.current_problem_index = self.problem_ids.index(config.problem_id)
         self._right_content = ""
         self._llm_loading = False
         self._complexity_running = False
         self._test_running = False
         self.hints_used = 0
         self._last_failing_cases: set[int] = set()
+        self._session_attempts: set[str] = set()
+        self._session_passes: set[str] = set()
+        self._session_complete = False
+        self._ignore_file_events_until = 0.0
         self.code_snapshot = ""
         self._focused_pane = 1
         self._startup_warning: str | None = None
-        if config.problem_id is None:
-            raise RuntimeError("No problem selected.")
         try:
             self.active_problem = load_problem_by_id(config.problem_id)
         except FileNotFoundError:
@@ -110,6 +134,7 @@ class SessionApp(Screen):
                 hints_used=self.hints_used,
             )
             self.hints_used += 1
+            self._record_hint_used()
             self.app.call_from_thread(self._refresh_coach_title)
             self.app.call_from_thread(
                 self._update_right,
@@ -130,6 +155,11 @@ class SessionApp(Screen):
                 return
 
             results = run_tests(self.code_snapshot, self.active_problem)
+            passed = all(r.passed for r in results)
+            self._session_attempts.add(self.active_problem.id)
+            if passed:
+                self._session_passes.add(self.active_problem.id)
+            self._record_test_results(passed)
             summary = format_results(results)
             self.app.call_from_thread(self._update_right, summary)
         except Exception as e:
@@ -154,6 +184,12 @@ class SessionApp(Screen):
         self._focused_pane = 1 - self._focused_pane
         self.query_one(PANE_IDS[self._focused_pane]).focus()
 
+    def action_next_problem(self) -> None:
+        self._switch_problem(1)
+
+    def action_prev_problem(self) -> None:
+        self._switch_problem(-1)
+
     def action_quit(self) -> None:
         self.app.pop_screen()
 
@@ -162,17 +198,22 @@ class SessionApp(Screen):
         for pane_id in PANE_IDS:
             self.query_one(pane_id).can_focus = True
         self.query_one("#left-scroll").border_title = f" {p.title} · {p.difficulty} "
+        archived_path = self._prepare_initial_solution_file()
         self._refresh_coach_title()
         self._update_left()
+        self._mark_current_problem_seen()
         self._refresh_code_snapshot()
         if self.watch_path.exists():
-            self._update_right(
+            message = (
                 "Ready. Press Enter to run tests, c for complexity, "
                 "or h for a hint.\n\n"
                 + """Your file is being watched, so every time you save, 
                 your code's time complexity will be analyzed to help you 
                 find the fastest solution."""
             )
+            if archived_path:
+                message += f"\n\nPrevious file saved to:\n{archived_path}"
+            self._update_right(message)
         else:
             self._update_right("Save your file to begin.")
         self._start_watching()
@@ -185,6 +226,33 @@ class SessionApp(Screen):
             f" Coach  ·  {remaining} hint{'s' if remaining != 1 else ''} remaining "
         )
 
+    def _mark_current_problem_seen(self) -> None:
+        profile = load_profile()
+        mark_problem_seen(profile, self.active_problem.id)
+        save_profile(profile)
+
+    def _record_hint_used(self) -> None:
+        profile = load_profile()
+        record_hint(profile, self.active_problem.topics)
+        save_profile(profile)
+
+    def _record_test_results(self, passed: bool) -> None:
+        profile = load_profile()
+        record_test_run(profile, self.active_problem.topics, passed)
+        mark_problem_seen(profile, self.active_problem.id)
+        save_profile(profile)
+
+    def _prepare_initial_solution_file(self) -> Path | None:
+        if len(self.problem_ids) <= 1:
+            write_starter_code_if_needed(
+                self.watch_path, self.active_problem.starter_code
+            )
+            return None
+
+        archived_path = self._archive_current_solution()
+        self._write_active_starter(overwrite=True)
+        return archived_path
+
     # setup watchdog file watcher
     def _start_watching(self) -> None:
         if not self.watch_path.parent.exists():
@@ -196,6 +264,8 @@ class SessionApp(Screen):
         self.observer.start()
 
     def _on_file_saved(self) -> None:
+        if time.time() < self._ignore_file_events_until:
+            return
         self._refresh_code_snapshot()
         self.app.call_from_thread(
             self._update_right, "File saved! Checking complexity..."
@@ -229,6 +299,87 @@ class SessionApp(Screen):
         finally:
             self._complexity_running = False
 
+    def _switch_problem(self, step: int) -> None:
+        if len(self.problem_ids) <= 1:
+            self._update_right("No other problems in this session.")
+            return
+
+        next_index = self.current_problem_index + step
+        if next_index >= len(self.problem_ids):
+            self._complete_session()
+            return
+        if next_index < 0:
+            self._update_right("No more problems in that direction.")
+            return
+
+        archived_path = self._archive_current_solution()
+        self.current_problem_index = next_index
+        problem_id = self.problem_ids[self.current_problem_index]
+        self.config.problem_id = problem_id
+        self.active_problem = load_problem_by_id(problem_id)
+        self.hints_used = 0
+        self._refresh_coach_title()
+        self.query_one(
+            "#left-scroll"
+        ).border_title = (
+            f" {self.active_problem.title} · {self.active_problem.difficulty} "
+        )
+        self._write_active_starter(overwrite=True)
+        self._refresh_code_snapshot()
+        self._update_left()
+        self._mark_current_problem_seen()
+        message = f"Switched to {self.active_problem.title}."
+        if archived_path:
+            message += f"\n\nPrevious solution saved to:\n{archived_path}"
+        message += "\n\nThe watched file now contains the new starter code."
+        self._update_right(message)
+
+    def _write_active_starter(self, overwrite: bool) -> bool:
+        starter_code = self.active_problem.starter_code
+        content = starter_code.rstrip() + "\n" if starter_code.strip() else ""
+        self.watch_path.parent.mkdir(parents=True, exist_ok=True)
+        if not overwrite:
+            return write_starter_code_if_needed(self.watch_path, starter_code)
+        self._ignore_file_events_until = time.time() + 1.0
+        self.watch_path.write_text(content, encoding="utf-8")
+        return True
+
+    def _archive_current_solution(self) -> Path | None:
+        self._refresh_code_snapshot()
+        if not self.code_snapshot.strip():
+            return None
+
+        submissions_dir = Path.home() / ".tcode" / "submissions"
+        submissions_dir.mkdir(parents=True, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+        archive_path = (
+            submissions_dir
+            / f"{timestamp}-{self.active_problem.id}-{self.active_problem.slug}.py"
+        )
+        archive_path.write_text(self.code_snapshot, encoding="utf-8")
+        return archive_path
+
+    def _complete_session(self) -> None:
+        if self._session_complete:
+            self._update_right("Session already complete. Press q to return home.")
+            return
+
+        archived_path = self._archive_current_solution()
+        self._session_complete = True
+        attempted = len(self._session_attempts)
+        passed = len(self._session_passes)
+        total = len(self.problem_ids)
+        message = (
+            "Session complete.\n"
+            f"You attempted {attempted}/{total} problems.\n"
+            f"You passed {passed}/{total} problems.\n"
+            "Your profile has been updated.\n"
+            "Press q to return home."
+        )
+        if archived_path:
+            message += f"\n\nFinal solution saved to:\n{archived_path}"
+        self._update_right(message)
+
     def on_unmount(self) -> None:
         if hasattr(self, "observer"):
             self.observer.stop()
@@ -248,7 +399,8 @@ class SessionApp(Screen):
         p = self.active_problem
         description = self._clean_description(p.description)
         sep = f"\n{'─' * 45}\n"
-        text = f"Topics: {', '.join(p.topics)}\n{sep}\n{description}\n"
+        text = self._format_session_plan()
+        text += f"{sep}\nTopics: {', '.join(p.topics)}\n{sep}\n{description}\n"
         if p.examples:
             text += f"{sep}\nExamples\n\n"
             for ex in p.examples:
@@ -260,6 +412,17 @@ class SessionApp(Screen):
         if p.starter_code:
             text += f"{sep}\nStarter code\n\n{p.starter_code}\n"
         self.query_one("#left", TextArea).load_text(text)
+
+    def _format_session_plan(self) -> str:
+        if len(self.problem_ids) <= 1:
+            return ""
+
+        lines = ["Today's Session", ""]
+        for i, problem_id in enumerate(self.problem_ids):
+            marker = "►" if i == self.current_problem_index else "○"
+            problem = load_problem_by_id(problem_id)
+            lines.append(f"{marker} {problem.title} · {problem.difficulty}")
+        return "\n".join(lines)
 
     def _update_right(self, text: str) -> None:
         self._right_content += f"\n\n{text}" if self._right_content else text
