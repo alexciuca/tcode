@@ -1,48 +1,171 @@
-#problems-grid {
-    grid-size: 2;
-    grid-gutter: 1;
-    padding: 1;
-    height: auto;
-    overflow-y: auto;
+Screen {
+    background: #1a1a1a;
+    layout: vertical;
 }
 
-.card {
-    border: round white;
-    padding: 1;
-    height: 6;
-    content-align: center middle;
-}
-
-.card:hover {
-    border: round cyan;
+/* ── Header ─────────────────────────────────────── */
+#page-header {
+    background: #111111;
     color: cyan;
-}
-
-.card:focus {
-    border: round cyan;
-    color: cyan;
-}
-
-#pagination {
-    align: center middle;
-    height: auto;
-    margin: 1;
-}
-
-#page-label{
-    margin: 1
-}
-
-#search-bar-container {
-    height: auto;
+    padding: 1 2;
+    border-bottom: tall #2e2e2e;
     width: 100%;
-    margin: 1;
+    height: 3;
+    content-align: left middle;
+    text-style: bold;
+}
+
+/* ── Search bar row ──────────────────────────────── */
+#search-bar-container {
+    height: 3;
+    width: 100%;
+    padding: 0 1;
+    margin-top: 1;
+    background: #1a1a1a;
 }
 
 #search-bar {
-    width: 2fr;
+    width: 3fr;
+    background: #111111;
+    color: cyan;
+    border: tall #3e3e3e;
+    padding: 0 1;
+}
+
+#search-bar:focus {
+    border: tall cyan;
+}
+
+#search-bar > .input--placeholder {
+    color: #444444;
 }
 
 #difficulty-filter {
     width: 1fr;
+    margin-left: 1;
+    background: #111111;
+    color: cyan;
+    border: none;
+}
+
+#difficulty-filter:focus {
+    border: none;
+}
+
+SelectCurrent {
+    background: #111111;
+    color: cyan;
+    border: tall #2e2e2e;
+    content-align: left middle;
+}
+
+SelectCurrent:focus {
+    border: tall cyan;
+}
+
+SelectOverlay {
+    background: #1a1a1a;
+    border: tall cyan;
+}
+
+SelectOverlay > .option-list--option {
+    color: #cccccc;
+}
+
+SelectOverlay > .option-list--option-highlighted {
+    background: #2e2e2e;
+    color: cyan;
+}
+
+/* ── Results info ────────────────────────────────── */
+#results-info {
+    padding: 0 2;
+    height: 1;
+    color: cyan;
+    background: #1a1a1a;
+    margin-top: 1;
+}
+
+/* ── Grid wrapper ────────────────────────────────── */
+#problems-grid-wrapper {
+    width: 100%;
+    height: 1fr;
+    overflow-y: auto;
+    background: #1a1a1a;
+    padding: 1;
+}
+
+#problems-grid {
+    width: 100%;
+    height: auto;
+    layout: grid;
+    grid-size: 2;
+    grid-gutter: 1 2;
+}
+
+/* ── Cards ───────────────────────────────────────── */
+.card {
+    height: 7;
+    padding: 1 2;
+    background: #222222;
+    border-left: outer #3e3e3e;
+    border: none;
+    color: #cccccc;
+    content-align: left top;
+}
+
+.card:hover {
+    background: #2a2a2a;
+    border-left: outer cyan;
+    color: #ffffff;
+}
+
+.card:focus {
+    background: #252525;
+    border-left: outer #ff8c00;
+    color: #ffffff;
+}
+
+/* ── Pagination ──────────────────────────────────── */
+#pagination {
+    height: 3;
+    width: 100%;
+    align: center middle;
+    background: #111111;
+    border-top: tall #2e2e2e;
+}
+
+.page-btn {
+    width: 5;
+    height: 1;
+    content-align: center middle;
+    color: #ff8c00;
+    padding: 0 1;
+}
+
+.page-btn:hover {
+    color: cyan;
+}
+
+#page-label {
+    color: cyan;
+    height: 1;
+    content-align: center middle;
+    min-width: 12;
+}
+
+/* ── Footer ──────────────────────────────────────── */
+Footer {
+    background: #111111;
+    color: #444444;
+    dock: bottom;
+}
+
+Footer > .footer--key {
+    background: #2e2e2e;
+    color: cyan;
+}
+
+Footer > .footer--highlight {
+    color: #ff8c00;
 }

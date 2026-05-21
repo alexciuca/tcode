@@ -6,7 +6,7 @@ from pathlib import Path
 from textual.app import ComposeResult
 from textual.containers import Horizontal, ScrollableContainer
 from textual.screen import Screen
-from textual.widgets import Footer, Header, TextArea
+from textual.widgets import Footer, Header, RichLog, TextArea
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
@@ -75,7 +75,6 @@ class SessionApp(Screen):
         if config.problem_id not in self.problem_ids:
             self.problem_ids.insert(0, config.problem_id)
         self.current_problem_index = self.problem_ids.index(config.problem_id)
-        self._right_content = ""
         self._llm_loading = False
         self._complexity_running = False
         self._test_running = False
@@ -101,7 +100,7 @@ class SessionApp(Screen):
                 TextArea("", id="left", read_only=True), id="left-scroll"
             ),
             ScrollableContainer(
-                TextArea("", id="right", read_only=True), id="right-scroll"
+                RichLog(id="right", markup=True, wrap=True), id="right-scroll"
             ),
         )
         yield Footer()
@@ -207,9 +206,9 @@ class SessionApp(Screen):
             message = (
                 "Ready. Press Enter to run tests, c for complexity, "
                 "or h for a hint.\n\n"
-                + """Your file is being watched, so every time you save, 
-                your code's time complexity will be analyzed to help you 
-                find the fastest solution."""
+                "Your file is being watched, so every time you save, "
+                "your code's time complexity will be analyzed to help you "
+                "find the fastest solution."
             )
             if archived_path:
                 message += f"\n\nPrevious file saved to:\n{archived_path}"
@@ -253,7 +252,6 @@ class SessionApp(Screen):
         self._write_active_starter(overwrite=True)
         return archived_path
 
-    # setup watchdog file watcher
     def _start_watching(self) -> None:
         if not self.watch_path.parent.exists():
             self._update_right(f"Cannot watch missing folder: {self.watch_path.parent}")
@@ -288,9 +286,7 @@ class SessionApp(Screen):
             prefix = "⚠ " if result.risk_flag else "✓ "
             self.app.call_from_thread(
                 self._update_right,
-                f"Complexity: {prefix}{result.complexity_estimate}\n{'─' * 45}\n\n{
-                    result.explanation
-                }",
+                f"Complexity: {prefix}{result.complexity_estimate}\n{'─' * 45}\n\n{result.explanation}",
             )
         except Exception as e:
             self.app.call_from_thread(
@@ -425,6 +421,6 @@ class SessionApp(Screen):
         return "\n".join(lines)
 
     def _update_right(self, text: str) -> None:
-        self._right_content += f"\n\n{text}" if self._right_content else text
-        self.query_one("#right", TextArea).load_text(self._right_content)
+        log = self.query_one("#right", RichLog)
+        log.write(text)
         self.query_one("#right-scroll", ScrollableContainer).scroll_end(animate=False)
