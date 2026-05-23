@@ -284,9 +284,13 @@ class SessionApp(Screen):
                 code=self.code_snapshot, problem=self.active_problem
             )
             prefix = "⚠ " if result.risk_flag else "✓ "
+            message = (
+                f"Complexity: {prefix}{result.complexity_estimate}\n"
+                f"{'─' * 45}\n\n{result.explanation}"
+            )
             self.app.call_from_thread(
                 self._update_right,
-                f"Complexity: {prefix}{result.complexity_estimate}\n{'─' * 45}\n\n{result.explanation}",
+                message,
             )
         except Exception as e:
             self.app.call_from_thread(

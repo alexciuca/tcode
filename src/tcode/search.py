@@ -66,7 +66,7 @@ class SearchProblems(Screen):
     def action_select_problem(self) -> None:
         focused = self.focused
         if isinstance(focused, Static) and focused.has_class("card"):
-            problem_id = focused.id.split("-")[1]
+            problem_id = focused.problem_id
             problem = load_problem_by_id(problem_id)
             write_starter_code_if_needed(self.app.watch_path, problem.starter_code)
             self.app.push_screen(
@@ -83,15 +83,16 @@ class SearchProblems(Screen):
         super().__init__()
         self.problems = load_index()
         self.page = 0
+        self._rebuild_generation = 0
 
     def get_page(self):
         start = self.page * PAGE_SIZE
         return self.problems[start : start + PAGE_SIZE]
 
     def total_pages(self):
-        return (len(self.problems) + PAGE_SIZE - 1) // PAGE_SIZE
+        return max(1, (len(self.problems) + PAGE_SIZE - 1) // PAGE_SIZE)
 
-    def _make_card(self, p) -> Static:
+    def _make_card(self, p, generation: int = 0) -> Static:
         diff_tag = DIFFICULTY_TAG.get(p.difficulty.lower(), p.difficulty)
         topics_short = ", ".join(p.topics[:3])
         if len(p.topics) > 3:
@@ -101,7 +102,8 @@ class SearchProblems(Screen):
             f"{diff_tag}\n"
             f"[dim]{topics_short}[/dim]"
         )
-        card = Static(content, classes="card", id=f"problem-{p.id}")
+        card = Static(content, classes="card", id=f"problem-{p.id}-{generation}")
+        card.problem_id = p.id
         card.can_focus = True
         return card
 
@@ -119,7 +121,7 @@ class SearchProblems(Screen):
         with Vertical(id="problems-grid-wrapper"):
             with Horizontal(id="problems-grid"):
                 for p in self.get_page():
-                    yield self._make_card(p)
+                    yield self._make_card(p, self._rebuild_generation)
         with Horizontal(id="pagination"):
             yield Static("◀", id="prev-page-btn", classes="page-btn")
             yield Label(
@@ -136,17 +138,24 @@ class SearchProblems(Screen):
             cards.first().focus()
 
     def _update_results_info(self) -> None:
+        if not self.problems:
+            self.query_one("#results-info", Static).update(
+                "[dim]No problems match this filter[/dim]"
+            )
+            return
+
         start = self.page * PAGE_SIZE + 1
         end = min((self.page + 1) * PAGE_SIZE, len(self.problems))
         total = len(self.problems)
         self.query_one("#results-info", Static).update(
-            f"[dim]Showing [bold]{start}–{end}[/bold] of [bold]{total}[/bold] problems[/dim]"
+            f"[dim]Showing [bold]{start}–{end}[/bold] of "
+            f"[bold]{total}[/bold] problems[/dim]"
         )
 
     def on_click(self, event: Click) -> None:
         widget = event.widget
         if isinstance(widget, Static) and widget.has_class("card"):
-            problem_id = widget.id.split("-")[1]
+            problem_id = widget.problem_id
             problem = load_problem_by_id(problem_id)
             write_starter_code_if_needed(self.app.watch_path, problem.starter_code)
             self.app.push_screen(
@@ -207,13 +216,17 @@ class SearchProblems(Screen):
             self.rebuild_grid()
 
     def rebuild_grid(self):
+        self._rebuild_generation += 1
+        generation = self._rebuild_generation
         grid = self.query_one("#problems-grid", Horizontal)
         for card in grid.query(".card"):
             card.remove()
 
         def mount_cards():
+            if generation != self._rebuild_generation:
+                return
             for p in self.get_page():
-                grid.mount(self._make_card(p))
+                grid.mount(self._make_card(p, generation))
             self.query_one("#page-label", Label).update(
                 f"  {self.page + 1} / {self.total_pages()}  "
             )
