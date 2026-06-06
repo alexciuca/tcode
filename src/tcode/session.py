@@ -190,6 +190,7 @@ class SessionApp(Screen):
         self._switch_problem(-1)
 
     def action_quit(self) -> None:
+        self._archive_current_solution()
         self.app.pop_screen()
 
     def on_mount(self) -> None:
