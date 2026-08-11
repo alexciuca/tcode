@@ -10,6 +10,7 @@ from tcode.planner import build_session_plan
 from tcode.profile import load_profile
 from tcode.search import SearchProblems
 from tcode.session import SessionApp
+from tcode.stats import LocalProfileStats
 
 TITLE_ART = """\
  ████████╗ ██████╗ ██████╗ ██████╗ ███████╗
@@ -35,7 +36,8 @@ class TCodeApp(App):
         self.watch_path = watch_path
         self.selected_index = 0
 
-    SCREENS = {"search": SearchProblems}
+    SCREENS = {"search": SearchProblems,
+               "stats": LocalProfileStats}
 
     CSS = """
     Screen {
@@ -126,6 +128,7 @@ class TCodeApp(App):
             with Horizontal(id="buttons-row"):
                 yield Button("🔍  Search Problems", id="search-btn")
                 yield Button("▶   Start Session", id="select-btn")
+                yield Button("📊 My Profile", id="stats-btn")
 
             with Center():
                 yield Static(
@@ -137,6 +140,7 @@ class TCodeApp(App):
         self.buttons = [
             self.query_one("#search-btn", Button),
             self.query_one("#select-btn", Button),
+            self.query_one("#stats-btn", Button)
         ]
 
         self.buttons[self.selected_index].focus()
@@ -155,6 +159,9 @@ class TCodeApp(App):
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "search-btn":
             self.push_screen(SearchProblems())
+        
+        elif event.button.id == "stats-btn":
+            self.push_screen(LocalProfileStats())
 
         elif event.button.id == "select-btn":
             plan = build_session_plan(load_profile())
